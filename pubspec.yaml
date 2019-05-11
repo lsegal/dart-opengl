@@ -1,0 +1,7 @@
+name: opengl_ffi
+description: OpenGL FFI bindings
+version: 0.1.0
+author: root ext <root.ext@gmail.com>
+
+environment:
+  sdk: '>=2.3.0 <3.0.0'
