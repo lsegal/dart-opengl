@@ -1420,38 +1420,59 @@ const int GL_TEXTURE_MAX_ANISOTROPY = 0x84FE;
 const int GL_MAX_TEXTURE_MAX_ANISOTROPY = 0x84FF;
 const int GL_TRANSFORM_FEEDBACK_OVERFLOW = 0x82EC;
 const int GL_TRANSFORM_FEEDBACK_STREAM_OVERFLOW = 0x82ED;
-//GL_EXT
+//GL_ARB_ES2_compatibility
 const int GL_ARB_ES2_compatibility = 1;
+//GL_ARB_ES3_1_compatibility
 const int GL_ARB_ES3_1_compatibility = 1;
+//GL_ARB_ES3_2_compatibility
 const int GL_ARB_ES3_2_compatibility = 1;
 const int GL_PRIMITIVE_BOUNDING_BOX_ARB = 0x92BE;
 const int GL_MULTISAMPLE_LINE_WIDTH_RANGE_ARB = 0x9381;
 const int GL_MULTISAMPLE_LINE_WIDTH_GRANULARITY_ARB = 0x9382;
+//GL_ARB_ES3_compatibility
 const int GL_ARB_ES3_compatibility = 1;
+//GL_ARB_arrays_of_arrays
 const int GL_ARB_arrays_of_arrays = 1;
+//GL_ARB_base_instance
 const int GL_ARB_base_instance = 1;
+//GL_ARB_bindless_texture
 const int GL_ARB_bindless_texture = 1;
 const int GL_UNSIGNED_INT64_ARB = 0x140F;
+//GL_ARB_blend_func_extended
 const int GL_ARB_blend_func_extended = 1;
+//GL_ARB_buffer_storage
 const int GL_ARB_buffer_storage = 1;
+//GL_ARB_cl_event
 const int GL_ARB_cl_event = 1;
 const int GL_SYNC_CL_EVENT_ARB = 0x8240;
 const int GL_SYNC_CL_EVENT_COMPLETE_ARB = 0x8241;
+//GL_ARB_clear_buffer_object
 const int GL_ARB_clear_buffer_object = 1;
+//GL_ARB_clear_texture
 const int GL_ARB_clear_texture = 1;
+//GL_ARB_clip_control
 const int GL_ARB_clip_control = 1;
+//GL_ARB_compressed_texture_pixel_storage
 const int GL_ARB_compressed_texture_pixel_storage = 1;
+//GL_ARB_compute_shader
 const int GL_ARB_compute_shader = 1;
+//GL_ARB_compute_variable_group_size
 const int GL_ARB_compute_variable_group_size = 1;
 const int GL_MAX_COMPUTE_VARIABLE_GROUP_INVOCATIONS_ARB = 0x9344;
 const int GL_MAX_COMPUTE_FIXED_GROUP_INVOCATIONS_ARB = 0x90EB;
 const int GL_MAX_COMPUTE_VARIABLE_GROUP_SIZE_ARB = 0x9345;
 const int GL_MAX_COMPUTE_FIXED_GROUP_SIZE_ARB = 0x91BF;
+//GL_ARB_conditional_render_inverted
 const int GL_ARB_conditional_render_inverted = 1;
+//GL_ARB_conservative_depth
 const int GL_ARB_conservative_depth = 1;
+//GL_ARB_copy_buffer
 const int GL_ARB_copy_buffer = 1;
+//GL_ARB_copy_image
 const int GL_ARB_copy_image = 1;
+//GL_ARB_cull_distance
 const int GL_ARB_cull_distance = 1;
+//GL_ARB_debug_output
 const int GL_ARB_debug_output = 1;
 const int GL_DEBUG_OUTPUT_SYNCHRONOUS_ARB = 0x8242;
 const int GL_DEBUG_NEXT_LOGGED_MESSAGE_LENGTH_ARB = 0x8243;
@@ -1475,23 +1496,41 @@ const int GL_DEBUG_LOGGED_MESSAGES_ARB = 0x9145;
 const int GL_DEBUG_SEVERITY_HIGH_ARB = 0x9146;
 const int GL_DEBUG_SEVERITY_MEDIUM_ARB = 0x9147;
 const int GL_DEBUG_SEVERITY_LOW_ARB = 0x9148;
+//GL_ARB_depth_buffer_float
 const int GL_ARB_depth_buffer_float = 1;
+//GL_ARB_depth_clamp
 const int GL_ARB_depth_clamp = 1;
+//GL_ARB_derivative_control
 const int GL_ARB_derivative_control = 1;
+//GL_ARB_direct_state_access
 const int GL_ARB_direct_state_access = 1;
+//GL_ARB_draw_buffers_blend
 const int GL_ARB_draw_buffers_blend = 1;
+//GL_ARB_draw_elements_base_vertex
 const int GL_ARB_draw_elements_base_vertex = 1;
+//GL_ARB_draw_indirect
 const int GL_ARB_draw_indirect = 1;
+//GL_ARB_draw_instanced
 const int GL_ARB_draw_instanced = 1;
+//GL_ARB_enhanced_layouts
 const int GL_ARB_enhanced_layouts = 1;
+//GL_ARB_explicit_attrib_location
 const int GL_ARB_explicit_attrib_location = 1;
+//GL_ARB_explicit_uniform_location
 const int GL_ARB_explicit_uniform_location = 1;
+//GL_ARB_fragment_coord_conventions
 const int GL_ARB_fragment_coord_conventions = 1;
+//GL_ARB_fragment_layer_viewport
 const int GL_ARB_fragment_layer_viewport = 1;
+//GL_ARB_fragment_shader_interlock
 const int GL_ARB_fragment_shader_interlock = 1;
+//GL_ARB_framebuffer_no_attachments
 const int GL_ARB_framebuffer_no_attachments = 1;
+//GL_ARB_framebuffer_object
 const int GL_ARB_framebuffer_object = 1;
+//GL_ARB_framebuffer_sRGB
 const int GL_ARB_framebuffer_sRGB = 1;
+//GL_ARB_geometry_shader4
 const int GL_ARB_geometry_shader4 = 1;
 const int GL_LINES_ADJACENCY_ARB = 0x000A;
 const int GL_LINE_STRIP_ADJACENCY_ARB = 0x000B;
@@ -1511,13 +1550,19 @@ const int GL_MAX_VERTEX_VARYING_COMPONENTS_ARB = 0x8DDE;
 const int GL_MAX_GEOMETRY_UNIFORM_COMPONENTS_ARB = 0x8DDF;
 const int GL_MAX_GEOMETRY_OUTPUT_VERTICES_ARB = 0x8DE0;
 const int GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS_ARB = 0x8DE1;
+//GL_ARB_get_program_binary
 const int GL_ARB_get_program_binary = 1;
+//GL_ARB_get_texture_sub_image
 const int GL_ARB_get_texture_sub_image = 1;
+//GL_ARB_gl_spirv
 const int GL_ARB_gl_spirv = 1;
 const int GL_SHADER_BINARY_FORMAT_SPIR_V_ARB = 0x9551;
 const int GL_SPIR_V_BINARY_ARB = 0x9552;
+//GL_ARB_gpu_shader5
 const int GL_ARB_gpu_shader5 = 1;
+//GL_ARB_gpu_shader_fp64
 const int GL_ARB_gpu_shader_fp64 = 1;
+//GL_ARB_gpu_shader_int64
 const int GL_ARB_gpu_shader_int64 = 1;
 const int GL_INT64_ARB = 0x140E;
 const int GL_INT64_VEC2_ARB = 0x8FE9;
@@ -1526,14 +1571,20 @@ const int GL_INT64_VEC4_ARB = 0x8FEB;
 const int GL_UNSIGNED_INT64_VEC2_ARB = 0x8FF5;
 const int GL_UNSIGNED_INT64_VEC3_ARB = 0x8FF6;
 const int GL_UNSIGNED_INT64_VEC4_ARB = 0x8FF7;
+//GL_ARB_half_float_vertex
 const int GL_ARB_half_float_vertex = 1;
+//GL_ARB_imaging
 const int GL_ARB_imaging = 1;
+//GL_ARB_indirect_parameters
 const int GL_ARB_indirect_parameters = 1;
 const int GL_PARAMETER_BUFFER_ARB = 0x80EE;
 const int GL_PARAMETER_BUFFER_BINDING_ARB = 0x80EF;
+//GL_ARB_instanced_arrays
 const int GL_ARB_instanced_arrays = 1;
 const int GL_VERTEX_ATTRIB_ARRAY_DIVISOR_ARB = 0x88FE;
+//GL_ARB_internalformat_query
 const int GL_ARB_internalformat_query = 1;
+//GL_ARB_internalformat_query2
 const int GL_ARB_internalformat_query2 = 1;
 const int GL_SRGB_DECODE_ARB = 0x8299;
 const int GL_VIEW_CLASS_EAC_R11 = 0x9383;
@@ -1555,15 +1606,23 @@ const int GL_VIEW_CLASS_ASTC_10x8_RGBA = 0x9392;
 const int GL_VIEW_CLASS_ASTC_10x10_RGBA = 0x9393;
 const int GL_VIEW_CLASS_ASTC_12x10_RGBA = 0x9394;
 const int GL_VIEW_CLASS_ASTC_12x12_RGBA = 0x9395;
+//GL_ARB_invalidate_subdata
 const int GL_ARB_invalidate_subdata = 1;
+//GL_ARB_map_buffer_alignment
 const int GL_ARB_map_buffer_alignment = 1;
+//GL_ARB_map_buffer_range
 const int GL_ARB_map_buffer_range = 1;
+//GL_ARB_multi_bind
 const int GL_ARB_multi_bind = 1;
+//GL_ARB_multi_draw_indirect
 const int GL_ARB_multi_draw_indirect = 1;
+//GL_ARB_occlusion_query2
 const int GL_ARB_occlusion_query2 = 1;
+//GL_ARB_parallel_shader_compile
 const int GL_ARB_parallel_shader_compile = 1;
 const int GL_MAX_SHADER_COMPILER_THREADS_ARB = 0x91B0;
 const int GL_COMPLETION_STATUS_ARB = 0x91B1;
+//GL_ARB_pipeline_statistics_query
 const int GL_ARB_pipeline_statistics_query = 1;
 const int GL_VERTICES_SUBMITTED_ARB = 0x82EE;
 const int GL_PRIMITIVES_SUBMITTED_ARB = 0x82EF;
@@ -1575,17 +1634,25 @@ const int GL_FRAGMENT_SHADER_INVOCATIONS_ARB = 0x82F4;
 const int GL_COMPUTE_SHADER_INVOCATIONS_ARB = 0x82F5;
 const int GL_CLIPPING_INPUT_PRIMITIVES_ARB = 0x82F6;
 const int GL_CLIPPING_OUTPUT_PRIMITIVES_ARB = 0x82F7;
+//GL_ARB_pixel_buffer_object
 const int GL_ARB_pixel_buffer_object = 1;
 const int GL_PIXEL_PACK_BUFFER_ARB = 0x88EB;
 const int GL_PIXEL_UNPACK_BUFFER_ARB = 0x88EC;
 const int GL_PIXEL_PACK_BUFFER_BINDING_ARB = 0x88ED;
 const int GL_PIXEL_UNPACK_BUFFER_BINDING_ARB = 0x88EF;
+//GL_ARB_polygon_offset_clamp
 const int GL_ARB_polygon_offset_clamp = 1;
+//GL_ARB_post_depth_coverage
 const int GL_ARB_post_depth_coverage = 1;
+//GL_ARB_program_interface_query
 const int GL_ARB_program_interface_query = 1;
+//GL_ARB_provoking_vertex
 const int GL_ARB_provoking_vertex = 1;
+//GL_ARB_query_buffer_object
 const int GL_ARB_query_buffer_object = 1;
+//GL_ARB_robust_buffer_access_behavior
 const int GL_ARB_robust_buffer_access_behavior = 1;
+//GL_ARB_robustness
 const int GL_ARB_robustness = 1;
 const int GL_CONTEXT_FLAG_ROBUST_ACCESS_BIT_ARB = 0x00000004;
 const int GL_LOSE_CONTEXT_ON_RESET_ARB = 0x8252;
@@ -1594,7 +1661,9 @@ const int GL_INNOCENT_CONTEXT_RESET_ARB = 0x8254;
 const int GL_UNKNOWN_CONTEXT_RESET_ARB = 0x8255;
 const int GL_RESET_NOTIFICATION_STRATEGY_ARB = 0x8256;
 const int GL_NO_RESET_NOTIFICATION_ARB = 0x8261;
+//GL_ARB_robustness_isolation
 const int GL_ARB_robustness_isolation = 1;
+//GL_ARB_sample_locations
 const int GL_ARB_sample_locations = 1;
 const int GL_SAMPLE_LOCATION_SUBPIXEL_BITS_ARB = 0x933D;
 const int GL_SAMPLE_LOCATION_PIXEL_GRID_WIDTH_ARB = 0x933E;
@@ -1604,37 +1673,62 @@ const int GL_SAMPLE_LOCATION_ARB = 0x8E50;
 const int GL_PROGRAMMABLE_SAMPLE_LOCATION_ARB = 0x9341;
 const int GL_FRAMEBUFFER_PROGRAMMABLE_SAMPLE_LOCATIONS_ARB = 0x9342;
 const int GL_FRAMEBUFFER_SAMPLE_LOCATION_PIXEL_GRID_ARB = 0x9343;
+//GL_ARB_sample_shading
 const int GL_ARB_sample_shading = 1;
 const int GL_SAMPLE_SHADING_ARB = 0x8C36;
 const int GL_MIN_SAMPLE_SHADING_VALUE_ARB = 0x8C37;
+//GL_ARB_sampler_objects
 const int GL_ARB_sampler_objects = 1;
+//GL_ARB_seamless_cube_map
 const int GL_ARB_seamless_cube_map = 1;
+//GL_ARB_seamless_cubemap_per_texture
 const int GL_ARB_seamless_cubemap_per_texture = 1;
+//GL_ARB_separate_shader_objects
 const int GL_ARB_separate_shader_objects = 1;
+//GL_ARB_shader_atomic_counter_ops
 const int GL_ARB_shader_atomic_counter_ops = 1;
+//GL_ARB_shader_atomic_counters
 const int GL_ARB_shader_atomic_counters = 1;
+//GL_ARB_shader_ballot
 const int GL_ARB_shader_ballot = 1;
+//GL_ARB_shader_bit_encoding
 const int GL_ARB_shader_bit_encoding = 1;
+//GL_ARB_shader_clock
 const int GL_ARB_shader_clock = 1;
+//GL_ARB_shader_draw_parameters
 const int GL_ARB_shader_draw_parameters = 1;
+//GL_ARB_shader_group_vote
 const int GL_ARB_shader_group_vote = 1;
+//GL_ARB_shader_image_load_store
 const int GL_ARB_shader_image_load_store = 1;
+//GL_ARB_shader_image_size
 const int GL_ARB_shader_image_size = 1;
+//GL_ARB_shader_precision
 const int GL_ARB_shader_precision = 1;
+//GL_ARB_shader_stencil_export
 const int GL_ARB_shader_stencil_export = 1;
+//GL_ARB_shader_storage_buffer_object
 const int GL_ARB_shader_storage_buffer_object = 1;
+//GL_ARB_shader_subroutine
 const int GL_ARB_shader_subroutine = 1;
+//GL_ARB_shader_texture_image_samples
 const int GL_ARB_shader_texture_image_samples = 1;
+//GL_ARB_shader_viewport_layer_array
 const int GL_ARB_shader_viewport_layer_array = 1;
+//GL_ARB_shading_language_420pack
 const int GL_ARB_shading_language_420pack = 1;
+//GL_ARB_shading_language_include
 const int GL_ARB_shading_language_include = 1;
 const int GL_SHADER_INCLUDE_ARB = 0x8DAE;
 const int GL_NAMED_STRING_LENGTH_ARB = 0x8DE9;
 const int GL_NAMED_STRING_TYPE_ARB = 0x8DEA;
+//GL_ARB_shading_language_packing
 const int GL_ARB_shading_language_packing = 1;
+//GL_ARB_sparse_buffer
 const int GL_ARB_sparse_buffer = 1;
 const int GL_SPARSE_STORAGE_BIT_ARB = 0x0400;
 const int GL_SPARSE_BUFFER_PAGE_SIZE_ARB = 0x82F8;
+//GL_ARB_sparse_texture
 const int GL_ARB_sparse_texture = 1;
 const int GL_TEXTURE_SPARSE_ARB = 0x91A6;
 const int GL_VIRTUAL_PAGE_SIZE_INDEX_ARB = 0x91A7;
@@ -1647,29 +1741,43 @@ const int GL_MAX_SPARSE_TEXTURE_SIZE_ARB = 0x9198;
 const int GL_MAX_SPARSE_3D_TEXTURE_SIZE_ARB = 0x9199;
 const int GL_MAX_SPARSE_ARRAY_TEXTURE_LAYERS_ARB = 0x919A;
 const int GL_SPARSE_TEXTURE_FULL_ARRAY_CUBE_MIPMAPS_ARB = 0x91A9;
+//GL_ARB_sparse_texture2
 const int GL_ARB_sparse_texture2 = 1;
+//GL_ARB_sparse_texture_clamp
 const int GL_ARB_sparse_texture_clamp = 1;
+//GL_ARB_spirv_extensions
 const int GL_ARB_spirv_extensions = 1;
+//GL_ARB_stencil_texturing
 const int GL_ARB_stencil_texturing = 1;
+//GL_ARB_sync
 const int GL_ARB_sync = 1;
+//GL_ARB_tessellation_shader
 const int GL_ARB_tessellation_shader = 1;
+//GL_ARB_texture_barrier
 const int GL_ARB_texture_barrier = 1;
+//GL_ARB_texture_border_clamp
 const int GL_ARB_texture_border_clamp = 1;
 const int GL_CLAMP_TO_BORDER_ARB = 0x812D;
+//GL_ARB_texture_buffer_object
 const int GL_ARB_texture_buffer_object = 1;
 const int GL_TEXTURE_BUFFER_ARB = 0x8C2A;
 const int GL_MAX_TEXTURE_BUFFER_SIZE_ARB = 0x8C2B;
 const int GL_TEXTURE_BINDING_BUFFER_ARB = 0x8C2C;
 const int GL_TEXTURE_BUFFER_DATA_STORE_BINDING_ARB = 0x8C2D;
 const int GL_TEXTURE_BUFFER_FORMAT_ARB = 0x8C2E;
+//GL_ARB_texture_buffer_object_rgb32
 const int GL_ARB_texture_buffer_object_rgb32 = 1;
+//GL_ARB_texture_buffer_range
 const int GL_ARB_texture_buffer_range = 1;
+//GL_ARB_texture_compression_bptc
 const int GL_ARB_texture_compression_bptc = 1;
 const int GL_COMPRESSED_RGBA_BPTC_UNORM_ARB = 0x8E8C;
 const int GL_COMPRESSED_SRGB_ALPHA_BPTC_UNORM_ARB = 0x8E8D;
 const int GL_COMPRESSED_RGB_BPTC_SIGNED_FLOAT_ARB = 0x8E8E;
 const int GL_COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT_ARB = 0x8E8F;
+//GL_ARB_texture_compression_rgtc
 const int GL_ARB_texture_compression_rgtc = 1;
+//GL_ARB_texture_cube_map_array
 const int GL_ARB_texture_cube_map_array = 1;
 const int GL_TEXTURE_CUBE_MAP_ARRAY_ARB = 0x9009;
 const int GL_TEXTURE_BINDING_CUBE_MAP_ARRAY_ARB = 0x900A;
@@ -1678,43 +1786,73 @@ const int GL_SAMPLER_CUBE_MAP_ARRAY_ARB = 0x900C;
 const int GL_SAMPLER_CUBE_MAP_ARRAY_SHADOW_ARB = 0x900D;
 const int GL_INT_SAMPLER_CUBE_MAP_ARRAY_ARB = 0x900E;
 const int GL_UNSIGNED_INT_SAMPLER_CUBE_MAP_ARRAY_ARB = 0x900F;
+//GL_ARB_texture_filter_anisotropic
 const int GL_ARB_texture_filter_anisotropic = 1;
+//GL_ARB_texture_filter_minmax
 const int GL_ARB_texture_filter_minmax = 1;
 const int GL_TEXTURE_REDUCTION_MODE_ARB = 0x9366;
 const int GL_WEIGHTED_AVERAGE_ARB = 0x9367;
+//GL_ARB_texture_gather
 const int GL_ARB_texture_gather = 1;
 const int GL_MIN_PROGRAM_TEXTURE_GATHER_OFFSET_ARB = 0x8E5E;
 const int GL_MAX_PROGRAM_TEXTURE_GATHER_OFFSET_ARB = 0x8E5F;
 const int GL_MAX_PROGRAM_TEXTURE_GATHER_COMPONENTS_ARB = 0x8F9F;
+//GL_ARB_texture_mirror_clamp_to_edge
 const int GL_ARB_texture_mirror_clamp_to_edge = 1;
+//GL_ARB_texture_mirrored_repeat
 const int GL_ARB_texture_mirrored_repeat = 1;
 const int GL_MIRRORED_REPEAT_ARB = 0x8370;
+//GL_ARB_texture_multisample
 const int GL_ARB_texture_multisample = 1;
+//GL_ARB_texture_non_power_of_two
 const int GL_ARB_texture_non_power_of_two = 1;
+//GL_ARB_texture_query_levels
 const int GL_ARB_texture_query_levels = 1;
+//GL_ARB_texture_query_lod
 const int GL_ARB_texture_query_lod = 1;
+//GL_ARB_texture_rg
 const int GL_ARB_texture_rg = 1;
+//GL_ARB_texture_rgb10_a2ui
 const int GL_ARB_texture_rgb10_a2ui = 1;
+//GL_ARB_texture_stencil8
 const int GL_ARB_texture_stencil8 = 1;
+//GL_ARB_texture_storage
 const int GL_ARB_texture_storage = 1;
+//GL_ARB_texture_storage_multisample
 const int GL_ARB_texture_storage_multisample = 1;
+//GL_ARB_texture_swizzle
 const int GL_ARB_texture_swizzle = 1;
+//GL_ARB_texture_view
 const int GL_ARB_texture_view = 1;
+//GL_ARB_timer_query
 const int GL_ARB_timer_query = 1;
+//GL_ARB_transform_feedback2
 const int GL_ARB_transform_feedback2 = 1;
+//GL_ARB_transform_feedback3
 const int GL_ARB_transform_feedback3 = 1;
+//GL_ARB_transform_feedback_instanced
 const int GL_ARB_transform_feedback_instanced = 1;
+//GL_ARB_transform_feedback_overflow_query
 const int GL_ARB_transform_feedback_overflow_query = 1;
 const int GL_TRANSFORM_FEEDBACK_OVERFLOW_ARB = 0x82EC;
 const int GL_TRANSFORM_FEEDBACK_STREAM_OVERFLOW_ARB = 0x82ED;
+//GL_ARB_uniform_buffer_object
 const int GL_ARB_uniform_buffer_object = 1;
+//GL_ARB_vertex_array_bgra
 const int GL_ARB_vertex_array_bgra = 1;
+//GL_ARB_vertex_array_object
 const int GL_ARB_vertex_array_object = 1;
+//GL_ARB_vertex_attrib_64bit
 const int GL_ARB_vertex_attrib_64bit = 1;
+//GL_ARB_vertex_attrib_binding
 const int GL_ARB_vertex_attrib_binding = 1;
+//GL_ARB_vertex_type_10f_11f_11f_rev
 const int GL_ARB_vertex_type_10f_11f_11f_rev = 1;
+//GL_ARB_vertex_type_2_10_10_10_rev
 const int GL_ARB_vertex_type_2_10_10_10_rev = 1;
+//GL_ARB_viewport_array
 const int GL_ARB_viewport_array = 1;
+//GL_KHR_blend_equation_advanced
 const int GL_KHR_blend_equation_advanced = 1;
 const int GL_MULTIPLY_KHR = 0x9294;
 const int GL_SCREEN_KHR = 0x9295;
@@ -1731,18 +1869,26 @@ const int GL_HSL_HUE_KHR = 0x92AD;
 const int GL_HSL_SATURATION_KHR = 0x92AE;
 const int GL_HSL_COLOR_KHR = 0x92AF;
 const int GL_HSL_LUMINOSITY_KHR = 0x92B0;
+//GL_KHR_blend_equation_advanced_coherent
 const int GL_KHR_blend_equation_advanced_coherent = 1;
 const int GL_BLEND_ADVANCED_COHERENT_KHR = 0x9285;
+//GL_KHR_context_flush_control
 const int GL_KHR_context_flush_control = 1;
+//GL_KHR_debug
 const int GL_KHR_debug = 1;
+//GL_KHR_no_error
 const int GL_KHR_no_error = 1;
 const int GL_CONTEXT_FLAG_NO_ERROR_BIT_KHR = 0x00000008;
+//GL_KHR_parallel_shader_compile
 const int GL_KHR_parallel_shader_compile = 1;
 const int GL_MAX_SHADER_COMPILER_THREADS_KHR = 0x91B0;
 const int GL_COMPLETION_STATUS_KHR = 0x91B1;
+//GL_KHR_robust_buffer_access_behavior
 const int GL_KHR_robust_buffer_access_behavior = 1;
+//GL_KHR_robustness
 const int GL_KHR_robustness = 1;
 const int GL_CONTEXT_ROBUST_ACCESS = 0x90F3;
+//GL_KHR_texture_compression_astc_hdr
 const int GL_KHR_texture_compression_astc_hdr = 1;
 const int GL_COMPRESSED_RGBA_ASTC_4x4_KHR = 0x93B0;
 const int GL_COMPRESSED_RGBA_ASTC_5x4_KHR = 0x93B1;
@@ -1772,8 +1918,11 @@ const int GL_COMPRESSED_SRGB8_ALPHA8_ASTC_10x8_KHR = 0x93DA;
 const int GL_COMPRESSED_SRGB8_ALPHA8_ASTC_10x10_KHR = 0x93DB;
 const int GL_COMPRESSED_SRGB8_ALPHA8_ASTC_12x10_KHR = 0x93DC;
 const int GL_COMPRESSED_SRGB8_ALPHA8_ASTC_12x12_KHR = 0x93DD;
+//GL_KHR_texture_compression_astc_ldr
 const int GL_KHR_texture_compression_astc_ldr = 1;
+//GL_KHR_texture_compression_astc_sliced_3d
 const int GL_KHR_texture_compression_astc_sliced_3d = 1;
+//GL_AMD_framebuffer_multisample_advanced
 const int GL_AMD_framebuffer_multisample_advanced = 1;
 const int GL_RENDERBUFFER_STORAGE_SAMPLES_AMD = 0x91B2;
 const int GL_MAX_COLOR_FRAMEBUFFER_SAMPLES_AMD = 0x91B3;
@@ -1781,6 +1930,7 @@ const int GL_MAX_COLOR_FRAMEBUFFER_STORAGE_SAMPLES_AMD = 0x91B4;
 const int GL_MAX_DEPTH_STENCIL_FRAMEBUFFER_SAMPLES_AMD = 0x91B5;
 const int GL_NUM_SUPPORTED_MULTISAMPLE_MODES_AMD = 0x91B6;
 const int GL_SUPPORTED_MULTISAMPLE_MODES_AMD = 0x91B7;
+//GL_AMD_performance_monitor
 const int GL_AMD_performance_monitor = 1;
 const int GL_COUNTER_TYPE_AMD = 0x8BC0;
 const int GL_COUNTER_RANGE_AMD = 0x8BC1;
@@ -1789,12 +1939,15 @@ const int GL_PERCENTAGE_AMD = 0x8BC3;
 const int GL_PERFMON_RESULT_AVAILABLE_AMD = 0x8BC4;
 const int GL_PERFMON_RESULT_SIZE_AMD = 0x8BC5;
 const int GL_PERFMON_RESULT_AMD = 0x8BC6;
+//GL_APPLE_rgb_422
 const int GL_APPLE_rgb_422 = 1;
 const int GL_RGB_422_APPLE = 0x8A1F;
 const int GL_UNSIGNED_SHORT_8_8_APPLE = 0x85BA;
 const int GL_UNSIGNED_SHORT_8_8_REV_APPLE = 0x85BB;
 const int GL_RGB_RAW_422_APPLE = 0x8A51;
+//GL_EXT_EGL_image_storage
 const int GL_EXT_EGL_image_storage = 1;
+//GL_EXT_debug_label
 const int GL_EXT_debug_label = 1;
 const int GL_PROGRAM_PIPELINE_OBJECT_EXT = 0x8A4F;
 const int GL_PROGRAM_OBJECT_EXT = 0x8B40;
@@ -1802,15 +1955,21 @@ const int GL_SHADER_OBJECT_EXT = 0x8B48;
 const int GL_BUFFER_OBJECT_EXT = 0x9151;
 const int GL_QUERY_OBJECT_EXT = 0x9153;
 const int GL_VERTEX_ARRAY_OBJECT_EXT = 0x9154;
+//GL_EXT_debug_marker
 const int GL_EXT_debug_marker = 1;
+//GL_EXT_direct_state_access
 const int GL_EXT_direct_state_access = 1;
 const int GL_PROGRAM_MATRIX_EXT = 0x8E2D;
 const int GL_TRANSPOSE_PROGRAM_MATRIX_EXT = 0x8E2E;
 const int GL_PROGRAM_MATRIX_STACK_DEPTH_EXT = 0x8E2F;
+//GL_EXT_draw_instanced
 const int GL_EXT_draw_instanced = 1;
+//GL_EXT_polygon_offset_clamp
 const int GL_EXT_polygon_offset_clamp = 1;
 const int GL_POLYGON_OFFSET_CLAMP_EXT = 0x8E1B;
+//GL_EXT_post_depth_coverage
 const int GL_EXT_post_depth_coverage = 1;
+//GL_EXT_raster_multisample
 const int GL_EXT_raster_multisample = 1;
 const int GL_RASTER_MULTISAMPLE_EXT = 0x9327;
 const int GL_RASTER_SAMPLES_EXT = 0x9328;
@@ -1818,26 +1977,35 @@ const int GL_MAX_RASTER_SAMPLES_EXT = 0x9329;
 const int GL_RASTER_FIXED_SAMPLE_LOCATIONS_EXT = 0x932A;
 const int GL_MULTISAMPLE_RASTERIZATION_ALLOWED_EXT = 0x932B;
 const int GL_EFFECTIVE_RASTER_SAMPLES_EXT = 0x932C;
+//GL_EXT_separate_shader_objects
 const int GL_EXT_separate_shader_objects = 1;
 const int GL_ACTIVE_PROGRAM_EXT = 0x8B8D;
+//GL_EXT_shader_framebuffer_fetch
 const int GL_EXT_shader_framebuffer_fetch = 1;
 const int GL_FRAGMENT_SHADER_DISCARDS_SAMPLES_EXT = 0x8A52;
+//GL_EXT_shader_framebuffer_fetch_non_coherent
 const int GL_EXT_shader_framebuffer_fetch_non_coherent = 1;
+//GL_EXT_shader_integer_mix
 const int GL_EXT_shader_integer_mix = 1;
+//GL_EXT_texture_compression_s3tc
 const int GL_EXT_texture_compression_s3tc = 1;
 const int GL_COMPRESSED_RGB_S3TC_DXT1_EXT = 0x83F0;
 const int GL_COMPRESSED_RGBA_S3TC_DXT1_EXT = 0x83F1;
 const int GL_COMPRESSED_RGBA_S3TC_DXT3_EXT = 0x83F2;
 const int GL_COMPRESSED_RGBA_S3TC_DXT5_EXT = 0x83F3;
+//GL_EXT_texture_filter_minmax
 const int GL_EXT_texture_filter_minmax = 1;
 const int GL_TEXTURE_REDUCTION_MODE_EXT = 0x9366;
 const int GL_WEIGHTED_AVERAGE_EXT = 0x9367;
+//GL_EXT_texture_sRGB_R8
 const int GL_EXT_texture_sRGB_R8 = 1;
 const int GL_SR8_EXT = 0x8FBD;
+//GL_EXT_texture_sRGB_decode
 const int GL_EXT_texture_sRGB_decode = 1;
 const int GL_TEXTURE_SRGB_DECODE_EXT = 0x8A48;
 const int GL_DECODE_EXT = 0x8A49;
 const int GL_SKIP_DECODE_EXT = 0x8A4A;
+//GL_EXT_window_rectangles
 const int GL_EXT_window_rectangles = 1;
 const int GL_INCLUSIVE_EXT = 0x8F10;
 const int GL_EXCLUSIVE_EXT = 0x8F11;
@@ -1845,11 +2013,15 @@ const int GL_WINDOW_RECTANGLE_EXT = 0x8F12;
 const int GL_WINDOW_RECTANGLE_MODE_EXT = 0x8F13;
 const int GL_MAX_WINDOW_RECTANGLES_EXT = 0x8F14;
 const int GL_NUM_WINDOW_RECTANGLES_EXT = 0x8F15;
+//GL_INTEL_blackhole_render
 const int GL_INTEL_blackhole_render = 1;
 const int GL_BLACKHOLE_RENDER_INTEL = 0x83FC;
+//GL_INTEL_conservative_rasterization
 const int GL_INTEL_conservative_rasterization = 1;
 const int GL_CONSERVATIVE_RASTERIZATION_INTEL = 0x83FE;
+//GL_INTEL_framebuffer_CMAA
 const int GL_INTEL_framebuffer_CMAA = 1;
+//GL_INTEL_performance_query
 const int GL_INTEL_performance_query = 1;
 const int GL_PERFQUERY_SINGLE_CONTEXT_INTEL = 0x00000000;
 const int GL_PERFQUERY_GLOBAL_CONTEXT_INTEL = 0x00000001;
@@ -1871,9 +2043,13 @@ const int GL_PERFQUERY_QUERY_NAME_LENGTH_MAX_INTEL = 0x94FD;
 const int GL_PERFQUERY_COUNTER_NAME_LENGTH_MAX_INTEL = 0x94FE;
 const int GL_PERFQUERY_COUNTER_DESC_LENGTH_MAX_INTEL = 0x94FF;
 const int GL_PERFQUERY_GPA_EXTENDED_COUNTERS_INTEL = 0x9500;
+//GL_NV_bindless_multi_draw_indirect
 const int GL_NV_bindless_multi_draw_indirect = 1;
+//GL_NV_bindless_multi_draw_indirect_count
 const int GL_NV_bindless_multi_draw_indirect_count = 1;
+//GL_NV_bindless_texture
 const int GL_NV_bindless_texture = 1;
+//GL_NV_blend_equation_advanced
 const int GL_NV_blend_equation_advanced = 1;
 const int GL_BLEND_OVERLAP_NV = 0x9281;
 const int GL_BLEND_PREMULTIPLIED_SRC_NV = 0x9280;
@@ -1924,15 +2100,19 @@ const int GL_SRC_OVER_NV = 0x9288;
 const int GL_UNCORRELATED_NV = 0x9282;
 const int GL_VIVIDLIGHT_NV = 0x92A6;
 const int GL_XOR_NV = 0x1506;
+//GL_NV_blend_equation_advanced_coherent
 const int GL_NV_blend_equation_advanced_coherent = 1;
 const int GL_BLEND_ADVANCED_COHERENT_NV = 0x9285;
+//GL_NV_blend_minmax_factor
 const int GL_NV_blend_minmax_factor = 1;
 const int GL_FACTOR_MIN_AMD = 0x901C;
 const int GL_FACTOR_MAX_AMD = 0x901D;
+//GL_NV_clip_space_w_scaling
 const int GL_NV_clip_space_w_scaling = 1;
 const int GL_VIEWPORT_POSITION_W_SCALE_NV = 0x937C;
 const int GL_VIEWPORT_POSITION_W_SCALE_X_COEFF_NV = 0x937D;
 const int GL_VIEWPORT_POSITION_W_SCALE_Y_COEFF_NV = 0x937E;
+//GL_NV_command_list
 const int GL_NV_command_list = 1;
 const int GL_TERMINATE_SEQUENCE_COMMAND_NV = 0x0000;
 const int GL_NOP_COMMAND_NV = 0x0001;
@@ -1953,36 +2133,49 @@ const int GL_ALPHA_REF_COMMAND_NV = 0x000F;
 const int GL_VIEWPORT_COMMAND_NV = 0x0010;
 const int GL_SCISSOR_COMMAND_NV = 0x0011;
 const int GL_FRONT_FACE_COMMAND_NV = 0x0012;
+//GL_NV_compute_shader_derivatives
 const int GL_NV_compute_shader_derivatives = 1;
+//GL_NV_conditional_render
 const int GL_NV_conditional_render = 1;
 const int GL_QUERY_WAIT_NV = 0x8E13;
 const int GL_QUERY_NO_WAIT_NV = 0x8E14;
 const int GL_QUERY_BY_REGION_WAIT_NV = 0x8E15;
 const int GL_QUERY_BY_REGION_NO_WAIT_NV = 0x8E16;
+//GL_NV_conservative_raster
 const int GL_NV_conservative_raster = 1;
 const int GL_CONSERVATIVE_RASTERIZATION_NV = 0x9346;
 const int GL_SUBPIXEL_PRECISION_BIAS_X_BITS_NV = 0x9347;
 const int GL_SUBPIXEL_PRECISION_BIAS_Y_BITS_NV = 0x9348;
 const int GL_MAX_SUBPIXEL_PRECISION_BIAS_BITS_NV = 0x9349;
+//GL_NV_conservative_raster_dilate
 const int GL_NV_conservative_raster_dilate = 1;
 const int GL_CONSERVATIVE_RASTER_DILATE_NV = 0x9379;
 const int GL_CONSERVATIVE_RASTER_DILATE_RANGE_NV = 0x937A;
 const int GL_CONSERVATIVE_RASTER_DILATE_GRANULARITY_NV = 0x937B;
+//GL_NV_conservative_raster_pre_snap
 const int GL_NV_conservative_raster_pre_snap = 1;
 const int GL_CONSERVATIVE_RASTER_MODE_PRE_SNAP_NV = 0x9550;
+//GL_NV_conservative_raster_pre_snap_triangles
 const int GL_NV_conservative_raster_pre_snap_triangles = 1;
 const int GL_CONSERVATIVE_RASTER_MODE_NV = 0x954D;
 const int GL_CONSERVATIVE_RASTER_MODE_POST_SNAP_NV = 0x954E;
 const int GL_CONSERVATIVE_RASTER_MODE_PRE_SNAP_TRIANGLES_NV = 0x954F;
+//GL_NV_conservative_raster_underestimation
 const int GL_NV_conservative_raster_underestimation = 1;
+//GL_NV_draw_vulkan_image
 const int GL_NV_draw_vulkan_image = 1;
+//GL_NV_fill_rectangle
 const int GL_NV_fill_rectangle = 1;
 const int GL_FILL_RECTANGLE_NV = 0x933C;
+//GL_NV_fragment_coverage_to_color
 const int GL_NV_fragment_coverage_to_color = 1;
 const int GL_FRAGMENT_COVERAGE_TO_COLOR_NV = 0x92DD;
 const int GL_FRAGMENT_COVERAGE_COLOR_NV = 0x92DE;
+//GL_NV_fragment_shader_barycentric
 const int GL_NV_fragment_shader_barycentric = 1;
+//GL_NV_fragment_shader_interlock
 const int GL_NV_fragment_shader_interlock = 1;
+//GL_NV_framebuffer_mixed_samples
 const int GL_NV_framebuffer_mixed_samples = 1;
 const int GL_COVERAGE_MODULATION_TABLE_NV = 0x9331;
 const int GL_COLOR_SAMPLES_NV = 0x8E20;
@@ -1992,12 +2185,15 @@ const int GL_MIXED_DEPTH_SAMPLES_SUPPORTED_NV = 0x932F;
 const int GL_MIXED_STENCIL_SAMPLES_SUPPORTED_NV = 0x9330;
 const int GL_COVERAGE_MODULATION_NV = 0x9332;
 const int GL_COVERAGE_MODULATION_TABLE_SIZE_NV = 0x9333;
+//GL_NV_framebuffer_multisample_coverage
 const int GL_NV_framebuffer_multisample_coverage = 1;
 const int GL_RENDERBUFFER_COVERAGE_SAMPLES_NV = 0x8CAB;
 const int GL_RENDERBUFFER_COLOR_SAMPLES_NV = 0x8E10;
 const int GL_MAX_MULTISAMPLE_COVERAGE_MODES_NV = 0x8E11;
 const int GL_MULTISAMPLE_COVERAGE_MODES_NV = 0x8E12;
+//GL_NV_geometry_shader_passthrough
 const int GL_NV_geometry_shader_passthrough = 1;
+//GL_NV_gpu_shader5
 const int GL_NV_gpu_shader5 = 1;
 const int GL_INT64_NV = 0x140E;
 const int GL_UNSIGNED_INT64_NV = 0x140F;
@@ -2027,11 +2223,13 @@ const int GL_FLOAT16_NV = 0x8FF8;
 const int GL_FLOAT16_VEC2_NV = 0x8FF9;
 const int GL_FLOAT16_VEC3_NV = 0x8FFA;
 const int GL_FLOAT16_VEC4_NV = 0x8FFB;
+//GL_NV_internalformat_sample_query
 const int GL_NV_internalformat_sample_query = 1;
 const int GL_MULTISAMPLES_NV = 0x9371;
 const int GL_SUPERSAMPLE_SCALE_X_NV = 0x9372;
 const int GL_SUPERSAMPLE_SCALE_Y_NV = 0x9373;
 const int GL_CONFORMANT_NV = 0x9374;
+//GL_NV_memory_attachment
 const int GL_NV_memory_attachment = 1;
 const int GL_ATTACHED_MEMORY_OBJECT_NV = 0x95A4;
 const int GL_ATTACHED_MEMORY_OFFSET_NV = 0x95A5;
@@ -2043,6 +2241,7 @@ const int GL_DETACHED_TEXTURES_NV = 0x95AA;
 const int GL_DETACHED_BUFFERS_NV = 0x95AB;
 const int GL_MAX_DETACHED_TEXTURES_NV = 0x95AC;
 const int GL_MAX_DETACHED_BUFFERS_NV = 0x95AD;
+//GL_NV_mesh_shader
 const int GL_NV_mesh_shader = 1;
 const int GL_MESH_SHADER_NV = 0x9559;
 const int GL_TASK_SHADER_NV = 0x955A;
@@ -2092,6 +2291,7 @@ const int GL_MESH_SUBROUTINE_UNIFORM_NV = 0x957E;
 const int GL_TASK_SUBROUTINE_UNIFORM_NV = 0x957F;
 const int GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_MESH_SHADER_NV = 0x959E;
 const int GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TASK_SHADER_NV = 0x959F;
+//GL_NV_path_rendering
 const int GL_NV_path_rendering = 1;
 const int GL_PATH_FORMAT_SVG_NV = 0x9070;
 const int GL_PATH_FORMAT_PS_NV = 0x9071;
@@ -2246,10 +2446,13 @@ const int GL_PATH_PROJECTION_MATRIX_NV = 0x0BA7;
 const int GL_PATH_MAX_PROJECTION_STACK_DEPTH_NV = 0x0D38;
 const int GL_PATH_TRANSPOSE_PROJECTION_MATRIX_NV = 0x84E4;
 const int GL_FRAGMENT_INPUT_NV = 0x936D;
+//GL_NV_path_rendering_shared_edge
 const int GL_NV_path_rendering_shared_edge = 1;
 const int GL_SHARED_EDGE_NV = 0xC0;
+//GL_NV_representative_fragment_test
 const int GL_NV_representative_fragment_test = 1;
 const int GL_REPRESENTATIVE_FRAGMENT_TEST_NV = 0x937F;
+//GL_NV_sample_locations
 const int GL_NV_sample_locations = 1;
 const int GL_SAMPLE_LOCATION_SUBPIXEL_BITS_NV = 0x933D;
 const int GL_SAMPLE_LOCATION_PIXEL_GRID_WIDTH_NV = 0x933E;
@@ -2259,27 +2462,40 @@ const int GL_SAMPLE_LOCATION_NV = 0x8E50;
 const int GL_PROGRAMMABLE_SAMPLE_LOCATION_NV = 0x9341;
 const int GL_FRAMEBUFFER_PROGRAMMABLE_SAMPLE_LOCATIONS_NV = 0x9342;
 const int GL_FRAMEBUFFER_SAMPLE_LOCATION_PIXEL_GRID_NV = 0x9343;
+//GL_NV_sample_mask_override_coverage
 const int GL_NV_sample_mask_override_coverage = 1;
+//GL_NV_scissor_exclusive
 const int GL_NV_scissor_exclusive = 1;
 const int GL_SCISSOR_TEST_EXCLUSIVE_NV = 0x9555;
 const int GL_SCISSOR_BOX_EXCLUSIVE_NV = 0x9556;
+//GL_NV_shader_atomic_counters
 const int GL_NV_shader_atomic_counters = 1;
+//GL_NV_shader_atomic_float
 const int GL_NV_shader_atomic_float = 1;
+//GL_NV_shader_atomic_float64
 const int GL_NV_shader_atomic_float64 = 1;
+//GL_NV_shader_atomic_fp16_vector
 const int GL_NV_shader_atomic_fp16_vector = 1;
+//GL_NV_shader_atomic_int64
 const int GL_NV_shader_atomic_int64 = 1;
+//GL_NV_shader_buffer_load
 const int GL_NV_shader_buffer_load = 1;
 const int GL_BUFFER_GPU_ADDRESS_NV = 0x8F1D;
 const int GL_GPU_ADDRESS_NV = 0x8F34;
 const int GL_MAX_SHADER_BUFFER_ADDRESS_NV = 0x8F35;
+//GL_NV_shader_buffer_store
 const int GL_NV_shader_buffer_store = 1;
 const int GL_SHADER_GLOBAL_ACCESS_BARRIER_BIT_NV = 0x00000010;
+//GL_NV_shader_texture_footprint
 const int GL_NV_shader_texture_footprint = 1;
+//GL_NV_shader_thread_group
 const int GL_NV_shader_thread_group = 1;
 const int GL_WARP_SIZE_NV = 0x9339;
 const int GL_WARPS_PER_SM_NV = 0x933A;
 const int GL_SM_COUNT_NV = 0x933B;
+//GL_NV_shader_thread_shuffle
 const int GL_NV_shader_thread_shuffle = 1;
+//GL_NV_shading_rate_image
 const int GL_NV_shading_rate_image = 1;
 const int GL_SHADING_RATE_IMAGE_NV = 0x9563;
 const int GL_SHADING_RATE_NO_INVOCATIONS_NV = 0x9564;
@@ -2302,14 +2518,20 @@ const int GL_MAX_COARSE_FRAGMENT_SAMPLES_NV = 0x955F;
 const int GL_SHADING_RATE_SAMPLE_ORDER_DEFAULT_NV = 0x95AE;
 const int GL_SHADING_RATE_SAMPLE_ORDER_PIXEL_MAJOR_NV = 0x95AF;
 const int GL_SHADING_RATE_SAMPLE_ORDER_SAMPLE_MAJOR_NV = 0x95B0;
+//GL_NV_stereo_view_rendering
 const int GL_NV_stereo_view_rendering = 1;
+//GL_NV_texture_barrier
 const int GL_NV_texture_barrier = 1;
+//GL_NV_texture_rectangle_compressed
 const int GL_NV_texture_rectangle_compressed = 1;
+//GL_NV_uniform_buffer_unified_memory
 const int GL_NV_uniform_buffer_unified_memory = 1;
 const int GL_UNIFORM_BUFFER_UNIFIED_NV = 0x936E;
 const int GL_UNIFORM_BUFFER_ADDRESS_NV = 0x936F;
 const int GL_UNIFORM_BUFFER_LENGTH_NV = 0x9370;
+//GL_NV_vertex_attrib_integer_64bit
 const int GL_NV_vertex_attrib_integer_64bit = 1;
+//GL_NV_vertex_buffer_unified_memory
 const int GL_NV_vertex_buffer_unified_memory = 1;
 const int GL_VERTEX_ATTRIB_ARRAY_UNIFIED_NV = 0x8F1E;
 const int GL_ELEMENT_ARRAY_UNIFIED_NV = 0x8F1F;
@@ -2336,7 +2558,9 @@ const int GL_ELEMENT_ARRAY_LENGTH_NV = 0x8F33;
 const int GL_DRAW_INDIRECT_UNIFIED_NV = 0x8F40;
 const int GL_DRAW_INDIRECT_ADDRESS_NV = 0x8F41;
 const int GL_DRAW_INDIRECT_LENGTH_NV = 0x8F42;
+//GL_NV_viewport_array2
 const int GL_NV_viewport_array2 = 1;
+//GL_NV_viewport_swizzle
 const int GL_NV_viewport_swizzle = 1;
 const int GL_VIEWPORT_SWIZZLE_POSITIVE_X_NV = 0x9350;
 const int GL_VIEWPORT_SWIZZLE_NEGATIVE_X_NV = 0x9351;
@@ -2350,13 +2574,16 @@ const int GL_VIEWPORT_SWIZZLE_X_NV = 0x9358;
 const int GL_VIEWPORT_SWIZZLE_Y_NV = 0x9359;
 const int GL_VIEWPORT_SWIZZLE_Z_NV = 0x935A;
 const int GL_VIEWPORT_SWIZZLE_W_NV = 0x935B;
+//GL_OVR_multiview
 const int GL_OVR_multiview = 1;
 const int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_NUM_VIEWS_OVR = 0x9630;
 const int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_BASE_VIEW_INDEX_OVR = 0x9632;
 const int GL_MAX_VIEWS_OVR = 0x9631;
 const int GL_FRAMEBUFFER_INCOMPLETE_VIEW_TARGETS_OVR = 0x9633;
+//GL_OVR_multiview2
 const int GL_OVR_multiview2 = 1;
 
+//GL_VERSION_1_0
 typedef GlCullFaceNative = Void Function(Uint32 mode);
 typedef GlCullFace = void Function(int mode);
 
@@ -2501,6 +2728,7 @@ typedef GlDepthRange = void Function(double n, double f);
 typedef GlViewportNative = Void Function(Int32 x, Int32 y, Int32 width, Int32 height);
 typedef GlViewport = void Function(int x, int y, int width, int height);
 
+//GL_VERSION_1_1
 typedef GlDrawArraysNative = Void Function(Uint32 mode, Int32 first, Int32 count);
 typedef GlDrawArrays = void Function(int mode, int first, int count);
 
@@ -2543,6 +2771,7 @@ typedef GlGenTextures = void Function(int n, Pointer textures);
 typedef GlIsTextureNative = Uint8 Function(Uint32 texture);
 typedef GlIsTexture = int Function(int texture);
 
+//GL_VERSION_1_2
 typedef GlDrawRangeElementsNative = Void Function(Uint32 mode, Uint32 start, Uint32 end, Int32 count, Uint32 type, Pointer indices);
 typedef GlDrawRangeElements = void Function(int mode, int start, int end, int count, int type, Pointer indices);
 
@@ -2555,6 +2784,7 @@ typedef GlTexSubImage3D = void Function(int target, int level, int xoffset, int 
 typedef GlCopyTexSubImage3DNative = Void Function(Uint32 target, Int32 level, Int32 xoffset, Int32 yoffset, Int32 zoffset, Int32 x, Int32 y, Int32 width, Int32 height);
 typedef GlCopyTexSubImage3D = void Function(int target, int level, int xoffset, int yoffset, int zoffset, int x, int y, int width, int height);
 
+//GL_VERSION_1_3
 typedef GlActiveTextureNative = Void Function(Uint32 texture);
 typedef GlActiveTexture = void Function(int texture);
 
@@ -2582,6 +2812,7 @@ typedef GlCompressedTexSubImage1D = void Function(int target, int level, int xof
 typedef GlGetCompressedTexImageNative = Void Function(Uint32 target, Int32 level, Pointer img);
 typedef GlGetCompressedTexImage = void Function(int target, int level, Pointer img);
 
+//GL_VERSION_1_4
 typedef GlBlendFuncSeparateNative = Void Function(Uint32 sfactorRGB, Uint32 dfactorRGB, Uint32 sfactorAlpha, Uint32 dfactorAlpha);
 typedef GlBlendFuncSeparate = void Function(int sfactorRGB, int dfactorRGB, int sfactorAlpha, int dfactorAlpha);
 
@@ -2609,6 +2840,7 @@ typedef GlBlendColor = void Function(double red, double green, double blue, doub
 typedef GlBlendEquationNative = Void Function(Uint32 mode);
 typedef GlBlendEquation = void Function(int mode);
 
+//GL_VERSION_1_5
 typedef GlGenQueriesNative = Void Function(Int32 n, Pointer ids);
 typedef GlGenQueries = void Function(int n, Pointer ids);
 
@@ -2666,6 +2898,7 @@ typedef GlGetBufferParameteriv = void Function(int target, int pname, Pointer pa
 typedef GlGetBufferPointervNative = Void Function(Uint32 target, Uint32 pname, Pointer params);
 typedef GlGetBufferPointerv = void Function(int target, int pname, Pointer params);
 
+//GL_VERSION_2_0
 typedef GlBlendEquationSeparateNative = Void Function(Uint32 modeRGB, Uint32 modeAlpha);
 typedef GlBlendEquationSeparate = void Function(int modeRGB, int modeAlpha);
 
@@ -2945,6 +3178,7 @@ typedef GlVertexAttrib4usv = void Function(int index, Pointer v);
 typedef GlVertexAttribPointerNative = Void Function(Uint32 index, Int32 size, Uint32 type, Uint8 normalized, Int32 stride, Uint32 pointer);
 typedef GlVertexAttribPointer = void Function(int index, int size, int type, int normalized, int stride, int pointer);
 
+//GL_VERSION_2_1
 typedef GlUniformMatrix2x3fvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer value);
 typedef GlUniformMatrix2x3fv = void Function(int location, int count, int transpose, Pointer value);
 
@@ -2963,6 +3197,7 @@ typedef GlUniformMatrix3x4fv = void Function(int location, int count, int transp
 typedef GlUniformMatrix4x3fvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer value);
 typedef GlUniformMatrix4x3fv = void Function(int location, int count, int transpose, Pointer value);
 
+//GL_VERSION_3_0
 typedef GlColorMaskiNative = Void Function(Uint32 index, Uint8 r, Uint8 g, Uint8 b, Uint8 a);
 typedef GlColorMaski = void Function(int index, int r, int g, int b, int a);
 
@@ -3215,6 +3450,7 @@ typedef GlGenVertexArrays = void Function(int n, Pointer arrays);
 typedef GlIsVertexArrayNative = Uint8 Function(Uint32 array);
 typedef GlIsVertexArray = int Function(int array);
 
+//GL_VERSION_3_1
 typedef GlDrawArraysInstancedNative = Void Function(Uint32 mode, Int32 first, Int32 count, Int32 instancecount);
 typedef GlDrawArraysInstanced = void Function(int mode, int first, int count, int instancecount);
 
@@ -3251,6 +3487,7 @@ typedef GlGetActiveUniformBlockName = void Function(int program, int uniformBloc
 typedef GlUniformBlockBindingNative = Void Function(Uint32 program, Uint32 uniformBlockIndex, Uint32 uniformBlockBinding);
 typedef GlUniformBlockBinding = void Function(int program, int uniformBlockIndex, int uniformBlockBinding);
 
+//GL_VERSION_3_2
 typedef GlDrawElementsBaseVertexNative = Void Function(Uint32 mode, Int32 count, Uint32 type, Pointer indices, Int32 basevertex);
 typedef GlDrawElementsBaseVertex = void Function(int mode, int count, int type, Pointer indices, int basevertex);
 
@@ -3308,6 +3545,7 @@ typedef GlGetMultisamplefv = void Function(int pname, int index, Pointer val);
 typedef GlSampleMaskiNative = Void Function(Uint32 maskNumber, Uint32 mask);
 typedef GlSampleMaski = void Function(int maskNumber, int mask);
 
+//GL_VERSION_3_3
 typedef GlBindFragDataLocationIndexedNative = Void Function(Uint32 program, Uint32 colorNumber, Uint32 index, Pointer name);
 typedef GlBindFragDataLocationIndexed = void Function(int program, int colorNumber, int index, /*String*/ Pointer name);
 
@@ -3392,6 +3630,7 @@ typedef GlVertexAttribP4ui = void Function(int index, int type, int normalized, 
 typedef GlVertexAttribP4uivNative = Void Function(Uint32 index, Uint32 type, Uint8 normalized, Pointer value);
 typedef GlVertexAttribP4uiv = void Function(int index, int type, int normalized, Pointer value);
 
+//GL_VERSION_4_0
 typedef GlMinSampleShadingNative = Void Function(Float value);
 typedef GlMinSampleShading = void Function(double value);
 
@@ -3530,6 +3769,7 @@ typedef GlEndQueryIndexed = void Function(int target, int index);
 typedef GlGetQueryIndexedivNative = Void Function(Uint32 target, Uint32 index, Uint32 pname, Pointer params);
 typedef GlGetQueryIndexediv = void Function(int target, int index, int pname, Pointer params);
 
+//GL_VERSION_4_1
 typedef GlReleaseShaderCompilerNative = Void Function();
 typedef GlReleaseShaderCompiler = void Function();
 
@@ -3794,6 +4034,7 @@ typedef GlGetFloati_v = void Function(int target, int index, Pointer data);
 typedef GlGetDoublei_vNative = Void Function(Uint32 target, Uint32 index, Pointer data);
 typedef GlGetDoublei_v = void Function(int target, int index, Pointer data);
 
+//GL_VERSION_4_2
 typedef GlDrawArraysInstancedBaseInstanceNative = Void Function(Uint32 mode, Int32 first, Int32 count, Int32 instancecount, Uint32 baseinstance);
 typedef GlDrawArraysInstancedBaseInstance = void Function(int mode, int first, int count, int instancecount, int baseinstance);
 
@@ -3830,6 +4071,7 @@ typedef GlDrawTransformFeedbackInstanced = void Function(int mode, int id, int i
 typedef GlDrawTransformFeedbackStreamInstancedNative = Void Function(Uint32 mode, Uint32 id, Uint32 stream, Int32 instancecount);
 typedef GlDrawTransformFeedbackStreamInstanced = void Function(int mode, int id, int stream, int instancecount);
 
+//GL_VERSION_4_3
 typedef GlClearBufferDataNative = Void Function(Uint32 target, Uint32 internalformat, Uint32 format, Uint32 type, Pointer data);
 typedef GlClearBufferData = void Function(int target, int internalformat, int format, int type, Pointer data);
 
@@ -3959,6 +4201,7 @@ typedef GlObjectPtrLabel = void Function(Pointer ptr, int length, /*String*/ Poi
 typedef GlGetObjectPtrLabelNative = Void Function(Pointer ptr, Int32 bufSize, Pointer length, Pointer label);
 typedef GlGetObjectPtrLabel = void Function(Pointer ptr, int bufSize, Pointer length, Pointer label);
 
+//GL_VERSION_4_4
 typedef GlBufferStorageNative = Void Function(Uint32 target, Int64 size, Pointer data, Uint32 flags);
 typedef GlBufferStorage = void Function(int target, int size, Pointer data, int flags);
 
@@ -3986,6 +4229,7 @@ typedef GlBindImageTextures = void Function(int first, int count, Pointer textur
 typedef GlBindVertexBuffersNative = Void Function(Uint32 first, Int32 count, Pointer buffers, Pointer offsets, Pointer strides);
 typedef GlBindVertexBuffers = void Function(int first, int count, Pointer buffers, Pointer offsets, Pointer strides);
 
+//GL_VERSION_4_5
 typedef GlClipControlNative = Void Function(Uint32 origin, Uint32 depth);
 typedef GlClipControl = void Function(int origin, int depth);
 
@@ -4316,6 +4560,7 @@ typedef GlReadnPixels = void Function(int x, int y, int width, int height, int f
 typedef GlTextureBarrierNative = Void Function();
 typedef GlTextureBarrier = void Function();
 
+//GL_VERSION_4_6
 typedef GlSpecializeShaderNative = Void Function(Uint32 shader, Pointer pEntryPoint, Uint32 numSpecializationConstants, Pointer pConstantIndex, Pointer pConstantValue);
 typedef GlSpecializeShader = void Function(int shader, /*String*/ Pointer pEntryPoint, int numSpecializationConstants, Pointer pConstantIndex, Pointer pConstantValue);
 
@@ -4328,9 +4573,11 @@ typedef GlMultiDrawElementsIndirectCount = void Function(int mode, int type, Poi
 typedef GlPolygonOffsetClampNative = Void Function(Float factor, Float units, Float clamp);
 typedef GlPolygonOffsetClamp = void Function(double factor, double units, double clamp);
 
+//GL_ARB_ES3_2_compatibility
 typedef GlPrimitiveBoundingBoxARBNative = Void Function(Float minX, Float minY, Float minZ, Float minW, Float maxX, Float maxY, Float maxZ, Float maxW);
 typedef GlPrimitiveBoundingBoxARB = void Function(double minX, double minY, double minZ, double minW, double maxX, double maxY, double maxZ, double maxW);
 
+//GL_ARB_bindless_texture
 typedef GlGetTextureHandleARBNative = Uint64 Function(Uint32 texture);
 typedef GlGetTextureHandleARB = int Function(int texture);
 
@@ -4379,12 +4626,15 @@ typedef GlVertexAttribL1ui64vARB = void Function(int index, Pointer v);
 typedef GlGetVertexAttribLui64vARBNative = Void Function(Uint32 index, Uint32 pname, Pointer params);
 typedef GlGetVertexAttribLui64vARB = void Function(int index, int pname, Pointer params);
 
+//GL_ARB_cl_event
 typedef GlCreateSyncFromCLeventARBNative = Pointer Function(Pointer context, Pointer event, Uint32 flags);
 typedef GlCreateSyncFromCLeventARB = Pointer Function(Pointer context, Pointer event, int flags);
 
+//GL_ARB_compute_variable_group_size
 typedef GlDispatchComputeGroupSizeARBNative = Void Function(Uint32 num_groups_x, Uint32 num_groups_y, Uint32 num_groups_z, Uint32 group_size_x, Uint32 group_size_y, Uint32 group_size_z);
 typedef GlDispatchComputeGroupSizeARB = void Function(int num_groups_x, int num_groups_y, int num_groups_z, int group_size_x, int group_size_y, int group_size_z);
 
+//GL_ARB_debug_output
 typedef GlDebugMessageControlARBNative = Void Function(Uint32 source, Uint32 type, Uint32 severity, Int32 count, Pointer ids, Uint8 enabled);
 typedef GlDebugMessageControlARB = void Function(int source, int type, int severity, int count, Pointer ids, int enabled);
 
@@ -4397,6 +4647,7 @@ typedef GlDebugMessageCallbackARB = void Function(Pointer callback, Pointer user
 typedef GlGetDebugMessageLogARBNative = Uint32 Function(Uint32 count, Int32 bufSize, Pointer sources, Pointer types, Pointer ids, Pointer severities, Pointer lengths, Pointer messageLog);
 typedef GlGetDebugMessageLogARB = int Function(int count, int bufSize, Pointer sources, Pointer types, Pointer ids, Pointer severities, Pointer lengths, Pointer messageLog);
 
+//GL_ARB_draw_buffers_blend
 typedef GlBlendEquationiARBNative = Void Function(Uint32 buf, Uint32 mode);
 typedef GlBlendEquationiARB = void Function(int buf, int mode);
 
@@ -4409,12 +4660,14 @@ typedef GlBlendFunciARB = void Function(int buf, int src, int dst);
 typedef GlBlendFuncSeparateiARBNative = Void Function(Uint32 buf, Uint32 srcRGB, Uint32 dstRGB, Uint32 srcAlpha, Uint32 dstAlpha);
 typedef GlBlendFuncSeparateiARB = void Function(int buf, int srcRGB, int dstRGB, int srcAlpha, int dstAlpha);
 
+//GL_ARB_draw_instanced
 typedef GlDrawArraysInstancedARBNative = Void Function(Uint32 mode, Int32 first, Int32 count, Int32 primcount);
 typedef GlDrawArraysInstancedARB = void Function(int mode, int first, int count, int primcount);
 
 typedef GlDrawElementsInstancedARBNative = Void Function(Uint32 mode, Int32 count, Uint32 type, Pointer indices, Int32 primcount);
 typedef GlDrawElementsInstancedARB = void Function(int mode, int count, int type, Pointer indices, int primcount);
 
+//GL_ARB_geometry_shader4
 typedef GlProgramParameteriARBNative = Void Function(Uint32 program, Uint32 pname, Int32 value);
 typedef GlProgramParameteriARB = void Function(int program, int pname, int value);
 
@@ -4427,9 +4680,11 @@ typedef GlFramebufferTextureLayerARB = void Function(int target, int attachment,
 typedef GlFramebufferTextureFaceARBNative = Void Function(Uint32 target, Uint32 attachment, Uint32 texture, Int32 level, Uint32 face);
 typedef GlFramebufferTextureFaceARB = void Function(int target, int attachment, int texture, int level, int face);
 
+//GL_ARB_gl_spirv
 typedef GlSpecializeShaderARBNative = Void Function(Uint32 shader, Pointer pEntryPoint, Uint32 numSpecializationConstants, Pointer pConstantIndex, Pointer pConstantValue);
 typedef GlSpecializeShaderARB = void Function(int shader, /*String*/ Pointer pEntryPoint, int numSpecializationConstants, Pointer pConstantIndex, Pointer pConstantValue);
 
+//GL_ARB_gpu_shader_int64
 typedef GlUniform1i64ARBNative = Void Function(Int32 location, Int64 x);
 typedef GlUniform1i64ARB = void Function(int location, int x);
 
@@ -4538,18 +4793,22 @@ typedef GlProgramUniform3ui64vARB = void Function(int program, int location, int
 typedef GlProgramUniform4ui64vARBNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
 typedef GlProgramUniform4ui64vARB = void Function(int program, int location, int count, Pointer value);
 
+//GL_ARB_indirect_parameters
 typedef GlMultiDrawArraysIndirectCountARBNative = Void Function(Uint32 mode, Pointer indirect, Int64 drawcount, Int32 maxdrawcount, Int32 stride);
 typedef GlMultiDrawArraysIndirectCountARB = void Function(int mode, Pointer indirect, int drawcount, int maxdrawcount, int stride);
 
 typedef GlMultiDrawElementsIndirectCountARBNative = Void Function(Uint32 mode, Uint32 type, Pointer indirect, Int64 drawcount, Int32 maxdrawcount, Int32 stride);
 typedef GlMultiDrawElementsIndirectCountARB = void Function(int mode, int type, Pointer indirect, int drawcount, int maxdrawcount, int stride);
 
+//GL_ARB_instanced_arrays
 typedef GlVertexAttribDivisorARBNative = Void Function(Uint32 index, Uint32 divisor);
 typedef GlVertexAttribDivisorARB = void Function(int index, int divisor);
 
+//GL_ARB_parallel_shader_compile
 typedef GlMaxShaderCompilerThreadsARBNative = Void Function(Uint32 count);
 typedef GlMaxShaderCompilerThreadsARB = void Function(int count);
 
+//GL_ARB_robustness
 typedef GlGetGraphicsResetStatusARBNative = Uint32 Function();
 typedef GlGetGraphicsResetStatusARB = int Function();
 
@@ -4574,6 +4833,7 @@ typedef GlGetnUniformuivARB = void Function(int program, int location, int bufSi
 typedef GlGetnUniformdvARBNative = Void Function(Uint32 program, Int32 location, Int32 bufSize, Pointer params);
 typedef GlGetnUniformdvARB = void Function(int program, int location, int bufSize, Pointer params);
 
+//GL_ARB_sample_locations
 typedef GlFramebufferSampleLocationsfvARBNative = Void Function(Uint32 target, Uint32 start, Int32 count, Pointer v);
 typedef GlFramebufferSampleLocationsfvARB = void Function(int target, int start, int count, Pointer v);
 
@@ -4583,9 +4843,11 @@ typedef GlNamedFramebufferSampleLocationsfvARB = void Function(int framebuffer, 
 typedef GlEvaluateDepthValuesARBNative = Void Function();
 typedef GlEvaluateDepthValuesARB = void Function();
 
+//GL_ARB_sample_shading
 typedef GlMinSampleShadingARBNative = Void Function(Float value);
 typedef GlMinSampleShadingARB = void Function(double value);
 
+//GL_ARB_shading_language_include
 typedef GlNamedStringARBNative = Void Function(Uint32 type, Int32 namelen, Pointer name, Int32 stringlen, Pointer string);
 typedef GlNamedStringARB = void Function(int type, int namelen, /*String*/ Pointer name, int stringlen, /*String*/ Pointer string);
 
@@ -4604,6 +4866,7 @@ typedef GlGetNamedStringARB = void Function(int namelen, /*String*/ Pointer name
 typedef GlGetNamedStringivARBNative = Void Function(Int32 namelen, Pointer name, Uint32 pname, Pointer params);
 typedef GlGetNamedStringivARB = void Function(int namelen, /*String*/ Pointer name, int pname, Pointer params);
 
+//GL_ARB_sparse_buffer
 typedef GlBufferPageCommitmentARBNative = Void Function(Uint32 target, Int64 offset, Int64 size, Uint8 commit);
 typedef GlBufferPageCommitmentARB = void Function(int target, int offset, int size, int commit);
 
@@ -4613,24 +4876,30 @@ typedef GlNamedBufferPageCommitmentEXT = void Function(int buffer, int offset, i
 typedef GlNamedBufferPageCommitmentARBNative = Void Function(Uint32 buffer, Int64 offset, Int64 size, Uint8 commit);
 typedef GlNamedBufferPageCommitmentARB = void Function(int buffer, int offset, int size, int commit);
 
+//GL_ARB_sparse_texture
 typedef GlTexPageCommitmentARBNative = Void Function(Uint32 target, Int32 level, Int32 xoffset, Int32 yoffset, Int32 zoffset, Int32 width, Int32 height, Int32 depth, Uint8 commit);
 typedef GlTexPageCommitmentARB = void Function(int target, int level, int xoffset, int yoffset, int zoffset, int width, int height, int depth, int commit);
 
+//GL_ARB_texture_buffer_object
 typedef GlTexBufferARBNative = Void Function(Uint32 target, Uint32 internalformat, Uint32 buffer);
 typedef GlTexBufferARB = void Function(int target, int internalformat, int buffer);
 
+//GL_KHR_blend_equation_advanced
 typedef GlBlendBarrierKHRNative = Void Function();
 typedef GlBlendBarrierKHR = void Function();
 
+//GL_KHR_parallel_shader_compile
 typedef GlMaxShaderCompilerThreadsKHRNative = Void Function(Uint32 count);
 typedef GlMaxShaderCompilerThreadsKHR = void Function(int count);
 
+//GL_AMD_framebuffer_multisample_advanced
 typedef GlRenderbufferStorageMultisampleAdvancedAMDNative = Void Function(Uint32 target, Int32 samples, Int32 storageSamples, Uint32 internalformat, Int32 width, Int32 height);
 typedef GlRenderbufferStorageMultisampleAdvancedAMD = void Function(int target, int samples, int storageSamples, int internalformat, int width, int height);
 
 typedef GlNamedRenderbufferStorageMultisampleAdvancedAMDNative = Void Function(Uint32 renderbuffer, Int32 samples, Int32 storageSamples, Uint32 internalformat, Int32 width, Int32 height);
 typedef GlNamedRenderbufferStorageMultisampleAdvancedAMD = void Function(int renderbuffer, int samples, int storageSamples, int internalformat, int width, int height);
 
+//GL_AMD_performance_monitor
 typedef GlGetPerfMonitorGroupsAMDNative = Void Function(Pointer numGroups, Int32 groupsSize, Pointer groups);
 typedef GlGetPerfMonitorGroupsAMD = void Function(Pointer numGroups, int groupsSize, Pointer groups);
 
@@ -4664,18 +4933,21 @@ typedef GlEndPerfMonitorAMD = void Function(int monitor);
 typedef GlGetPerfMonitorCounterDataAMDNative = Void Function(Uint32 monitor, Uint32 pname, Int32 dataSize, Pointer data, Pointer bytesWritten);
 typedef GlGetPerfMonitorCounterDataAMD = void Function(int monitor, int pname, int dataSize, Pointer data, Pointer bytesWritten);
 
+//GL_EXT_EGL_image_storage
 typedef GlEGLImageTargetTexStorageEXTNative = Void Function(Uint32 target, Pointer image, Pointer attrib_list);
 typedef GlEGLImageTargetTexStorageEXT = void Function(int target, Pointer image, Pointer attrib_list);
 
 typedef GlEGLImageTargetTextureStorageEXTNative = Void Function(Uint32 texture, Pointer image, Pointer attrib_list);
 typedef GlEGLImageTargetTextureStorageEXT = void Function(int texture, Pointer image, Pointer attrib_list);
 
+//GL_EXT_debug_label
 typedef GlLabelObjectEXTNative = Void Function(Uint32 type, Uint32 object, Int32 length, Pointer label);
 typedef GlLabelObjectEXT = void Function(int type, int object, int length, /*String*/ Pointer label);
 
 typedef GlGetObjectLabelEXTNative = Void Function(Uint32 type, Uint32 object, Int32 bufSize, Pointer length, Pointer label);
 typedef GlGetObjectLabelEXT = void Function(int type, int object, int bufSize, Pointer length, Pointer label);
 
+//GL_EXT_debug_marker
 typedef GlInsertEventMarkerEXTNative = Void Function(Int32 length, Pointer marker);
 typedef GlInsertEventMarkerEXT = void Function(int length, /*String*/ Pointer marker);
 
@@ -4685,6 +4957,7 @@ typedef GlPushGroupMarkerEXT = void Function(int length, /*String*/ Pointer mark
 typedef GlPopGroupMarkerEXTNative = Void Function();
 typedef GlPopGroupMarkerEXT = void Function();
 
+//GL_EXT_direct_state_access
 typedef GlMatrixLoadfEXTNative = Void Function(Uint32 mode, Pointer m);
 typedef GlMatrixLoadfEXT = void Function(int mode, Pointer m);
 
@@ -5450,18 +5723,22 @@ typedef GlTexturePageCommitmentEXT = void Function(int texture, int level, int x
 typedef GlVertexArrayVertexAttribDivisorEXTNative = Void Function(Uint32 vaobj, Uint32 index, Uint32 divisor);
 typedef GlVertexArrayVertexAttribDivisorEXT = void Function(int vaobj, int index, int divisor);
 
+//GL_EXT_draw_instanced
 typedef GlDrawArraysInstancedEXTNative = Void Function(Uint32 mode, Int32 start, Int32 count, Int32 primcount);
 typedef GlDrawArraysInstancedEXT = void Function(int mode, int start, int count, int primcount);
 
 typedef GlDrawElementsInstancedEXTNative = Void Function(Uint32 mode, Int32 count, Uint32 type, Pointer indices, Int32 primcount);
 typedef GlDrawElementsInstancedEXT = void Function(int mode, int count, int type, Pointer indices, int primcount);
 
+//GL_EXT_polygon_offset_clamp
 typedef GlPolygonOffsetClampEXTNative = Void Function(Float factor, Float units, Float clamp);
 typedef GlPolygonOffsetClampEXT = void Function(double factor, double units, double clamp);
 
+//GL_EXT_raster_multisample
 typedef GlRasterSamplesEXTNative = Void Function(Uint32 samples, Uint8 fixedsamplelocations);
 typedef GlRasterSamplesEXT = void Function(int samples, int fixedsamplelocations);
 
+//GL_EXT_separate_shader_objects
 typedef GlUseShaderProgramEXTNative = Void Function(Uint32 type, Uint32 program);
 typedef GlUseShaderProgramEXT = void Function(int type, int program);
 
@@ -5471,15 +5748,19 @@ typedef GlActiveProgramEXT = void Function(int program);
 typedef GlCreateShaderProgramEXTNative = Uint32 Function(Uint32 type, Pointer string);
 typedef GlCreateShaderProgramEXT = int Function(int type, /*String*/ Pointer string);
 
+//GL_EXT_shader_framebuffer_fetch_non_coherent
 typedef GlFramebufferFetchBarrierEXTNative = Void Function();
 typedef GlFramebufferFetchBarrierEXT = void Function();
 
+//GL_EXT_window_rectangles
 typedef GlWindowRectanglesEXTNative = Void Function(Uint32 mode, Int32 count, Pointer box);
 typedef GlWindowRectanglesEXT = void Function(int mode, int count, Pointer box);
 
+//GL_INTEL_framebuffer_CMAA
 typedef GlApplyFramebufferAttachmentCMAAINTELNative = Void Function();
 typedef GlApplyFramebufferAttachmentCMAAINTEL = void Function();
 
+//GL_INTEL_performance_query
 typedef GlBeginPerfQueryINTELNative = Void Function(Uint32 queryHandle);
 typedef GlBeginPerfQueryINTEL = void Function(int queryHandle);
 
@@ -5510,18 +5791,21 @@ typedef GlGetPerfQueryIdByNameINTEL = void Function(Pointer queryName, Pointer q
 typedef GlGetPerfQueryInfoINTELNative = Void Function(Uint32 queryId, Uint32 queryNameLength, Pointer queryName, Pointer dataSize, Pointer noCounters, Pointer noInstances, Pointer capsMask);
 typedef GlGetPerfQueryInfoINTEL = void Function(int queryId, int queryNameLength, Pointer queryName, Pointer dataSize, Pointer noCounters, Pointer noInstances, Pointer capsMask);
 
+//GL_NV_bindless_multi_draw_indirect
 typedef GlMultiDrawArraysIndirectBindlessNVNative = Void Function(Uint32 mode, Pointer indirect, Int32 drawCount, Int32 stride, Int32 vertexBufferCount);
 typedef GlMultiDrawArraysIndirectBindlessNV = void Function(int mode, Pointer indirect, int drawCount, int stride, int vertexBufferCount);
 
 typedef GlMultiDrawElementsIndirectBindlessNVNative = Void Function(Uint32 mode, Uint32 type, Pointer indirect, Int32 drawCount, Int32 stride, Int32 vertexBufferCount);
 typedef GlMultiDrawElementsIndirectBindlessNV = void Function(int mode, int type, Pointer indirect, int drawCount, int stride, int vertexBufferCount);
 
+//GL_NV_bindless_multi_draw_indirect_count
 typedef GlMultiDrawArraysIndirectBindlessCountNVNative = Void Function(Uint32 mode, Pointer indirect, Int32 drawCount, Int32 maxDrawCount, Int32 stride, Int32 vertexBufferCount);
 typedef GlMultiDrawArraysIndirectBindlessCountNV = void Function(int mode, Pointer indirect, int drawCount, int maxDrawCount, int stride, int vertexBufferCount);
 
 typedef GlMultiDrawElementsIndirectBindlessCountNVNative = Void Function(Uint32 mode, Uint32 type, Pointer indirect, Int32 drawCount, Int32 maxDrawCount, Int32 stride, Int32 vertexBufferCount);
 typedef GlMultiDrawElementsIndirectBindlessCountNV = void Function(int mode, int type, Pointer indirect, int drawCount, int maxDrawCount, int stride, int vertexBufferCount);
 
+//GL_NV_bindless_texture
 typedef GlGetTextureHandleNVNative = Uint64 Function(Uint32 texture);
 typedef GlGetTextureHandleNV = int Function(int texture);
 
@@ -5561,15 +5845,18 @@ typedef GlIsTextureHandleResidentNV = int Function(int handle);
 typedef GlIsImageHandleResidentNVNative = Uint8 Function(Uint64 handle);
 typedef GlIsImageHandleResidentNV = int Function(int handle);
 
+//GL_NV_blend_equation_advanced
 typedef GlBlendParameteriNVNative = Void Function(Uint32 pname, Int32 value);
 typedef GlBlendParameteriNV = void Function(int pname, int value);
 
 typedef GlBlendBarrierNVNative = Void Function();
 typedef GlBlendBarrierNV = void Function();
 
+//GL_NV_clip_space_w_scaling
 typedef GlViewportPositionWScaleNVNative = Void Function(Uint32 index, Float xcoeff, Float ycoeff);
 typedef GlViewportPositionWScaleNV = void Function(int index, double xcoeff, double ycoeff);
 
+//GL_NV_command_list
 typedef GlCreateStatesNVNative = Void Function(Int32 n, Pointer states);
 typedef GlCreateStatesNV = void Function(int n, Pointer states);
 
@@ -5621,21 +5908,26 @@ typedef GlCompileCommandListNV = void Function(int list);
 typedef GlCallCommandListNVNative = Void Function(Uint32 list);
 typedef GlCallCommandListNV = void Function(int list);
 
+//GL_NV_conditional_render
 typedef GlBeginConditionalRenderNVNative = Void Function(Uint32 id, Uint32 mode);
 typedef GlBeginConditionalRenderNV = void Function(int id, int mode);
 
 typedef GlEndConditionalRenderNVNative = Void Function();
 typedef GlEndConditionalRenderNV = void Function();
 
+//GL_NV_conservative_raster
 typedef GlSubpixelPrecisionBiasNVNative = Void Function(Uint32 xbits, Uint32 ybits);
 typedef GlSubpixelPrecisionBiasNV = void Function(int xbits, int ybits);
 
+//GL_NV_conservative_raster_dilate
 typedef GlConservativeRasterParameterfNVNative = Void Function(Uint32 pname, Float value);
 typedef GlConservativeRasterParameterfNV = void Function(int pname, double value);
 
+//GL_NV_conservative_raster_pre_snap_triangles
 typedef GlConservativeRasterParameteriNVNative = Void Function(Uint32 pname, Int32 param);
 typedef GlConservativeRasterParameteriNV = void Function(int pname, int param);
 
+//GL_NV_draw_vulkan_image
 typedef GlDrawVkImageNVNative = Void Function(Uint64 vkImage, Uint32 sampler, Float x0, Float y0, Float x1, Float y1, Float z, Float s0, Float t0, Float s1, Float t1);
 typedef GlDrawVkImageNV = void Function(int vkImage, int sampler, double x0, double y0, double x1, double y1, double z, double s0, double t0, double s1, double t1);
 
@@ -5651,9 +5943,11 @@ typedef GlSignalVkSemaphoreNV = void Function(int vkSemaphore);
 typedef GlSignalVkFenceNVNative = Void Function(Uint64 vkFence);
 typedef GlSignalVkFenceNV = void Function(int vkFence);
 
+//GL_NV_fragment_coverage_to_color
 typedef GlFragmentCoverageColorNVNative = Void Function(Uint32 color);
 typedef GlFragmentCoverageColorNV = void Function(int color);
 
+//GL_NV_framebuffer_mixed_samples
 typedef GlCoverageModulationTableNVNative = Void Function(Int32 n, Pointer v);
 typedef GlCoverageModulationTableNV = void Function(int n, Pointer v);
 
@@ -5663,9 +5957,11 @@ typedef GlGetCoverageModulationTableNV = void Function(int bufsize, Pointer v);
 typedef GlCoverageModulationNVNative = Void Function(Uint32 components);
 typedef GlCoverageModulationNV = void Function(int components);
 
+//GL_NV_framebuffer_multisample_coverage
 typedef GlRenderbufferStorageMultisampleCoverageNVNative = Void Function(Uint32 target, Int32 coverageSamples, Int32 colorSamples, Uint32 internalformat, Int32 width, Int32 height);
 typedef GlRenderbufferStorageMultisampleCoverageNV = void Function(int target, int coverageSamples, int colorSamples, int internalformat, int width, int height);
 
+//GL_NV_gpu_shader5
 typedef GlUniform1i64NVNative = Void Function(Int32 location, Int64 x);
 typedef GlUniform1i64NV = void Function(int location, int x);
 
@@ -5765,9 +6061,11 @@ typedef GlProgramUniform3ui64vNV = void Function(int program, int location, int 
 typedef GlProgramUniform4ui64vNVNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
 typedef GlProgramUniform4ui64vNV = void Function(int program, int location, int count, Pointer value);
 
+//GL_NV_internalformat_sample_query
 typedef GlGetInternalformatSampleivNVNative = Void Function(Uint32 target, Uint32 internalformat, Int32 samples, Uint32 pname, Int32 bufSize, Pointer params);
 typedef GlGetInternalformatSampleivNV = void Function(int target, int internalformat, int samples, int pname, int bufSize, Pointer params);
 
+//GL_NV_memory_attachment
 typedef GlGetMemoryObjectDetachedResourcesuivNVNative = Void Function(Uint32 memory, Uint32 pname, Int32 first, Int32 count, Pointer params);
 typedef GlGetMemoryObjectDetachedResourcesuivNV = void Function(int memory, int pname, int first, int count, Pointer params);
 
@@ -5786,6 +6084,7 @@ typedef GlTextureAttachMemoryNV = void Function(int texture, int memory, int off
 typedef GlNamedBufferAttachMemoryNVNative = Void Function(Uint32 buffer, Uint32 memory, Uint64 offset);
 typedef GlNamedBufferAttachMemoryNV = void Function(int buffer, int memory, int offset);
 
+//GL_NV_mesh_shader
 typedef GlDrawMeshTasksNVNative = Void Function(Uint32 first, Uint32 count);
 typedef GlDrawMeshTasksNV = void Function(int first, int count);
 
@@ -5798,6 +6097,7 @@ typedef GlMultiDrawMeshTasksIndirectNV = void Function(int indirect, int drawcou
 typedef GlMultiDrawMeshTasksIndirectCountNVNative = Void Function(Int64 indirect, Int64 drawcount, Int32 maxdrawcount, Int32 stride);
 typedef GlMultiDrawMeshTasksIndirectCountNV = void Function(int indirect, int drawcount, int maxdrawcount, int stride);
 
+//GL_NV_path_rendering
 typedef GlGenPathsNVNative = Uint32 Function(Int32 range);
 typedef GlGenPathsNV = int Function(int range);
 
@@ -5969,6 +6269,7 @@ typedef GlProgramPathFragmentInputGenNV = void Function(int program, int locatio
 typedef GlGetProgramResourcefvNVNative = Void Function(Uint32 program, Uint32 programInterface, Uint32 index, Int32 propCount, Pointer props, Int32 bufSize, Pointer length, Pointer params);
 typedef GlGetProgramResourcefvNV = void Function(int program, int programInterface, int index, int propCount, Pointer props, int bufSize, Pointer length, Pointer params);
 
+//GL_NV_sample_locations
 typedef GlFramebufferSampleLocationsfvNVNative = Void Function(Uint32 target, Uint32 start, Int32 count, Pointer v);
 typedef GlFramebufferSampleLocationsfvNV = void Function(int target, int start, int count, Pointer v);
 
@@ -5978,12 +6279,14 @@ typedef GlNamedFramebufferSampleLocationsfvNV = void Function(int framebuffer, i
 typedef GlResolveDepthValuesNVNative = Void Function();
 typedef GlResolveDepthValuesNV = void Function();
 
+//GL_NV_scissor_exclusive
 typedef GlScissorExclusiveNVNative = Void Function(Int32 x, Int32 y, Int32 width, Int32 height);
 typedef GlScissorExclusiveNV = void Function(int x, int y, int width, int height);
 
 typedef GlScissorExclusiveArrayvNVNative = Void Function(Uint32 first, Int32 count, Pointer v);
 typedef GlScissorExclusiveArrayvNV = void Function(int first, int count, Pointer v);
 
+//GL_NV_shader_buffer_load
 typedef GlMakeBufferResidentNVNative = Void Function(Uint32 target, Uint32 access);
 typedef GlMakeBufferResidentNV = void Function(int target, int access);
 
@@ -6026,6 +6329,7 @@ typedef GlProgramUniformui64NV = void Function(int program, int location, int va
 typedef GlProgramUniformui64vNVNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
 typedef GlProgramUniformui64vNV = void Function(int program, int location, int count, Pointer value);
 
+//GL_NV_shading_rate_image
 typedef GlBindShadingRateImageNVNative = Void Function(Uint32 texture);
 typedef GlBindShadingRateImageNV = void Function(int texture);
 
@@ -6047,9 +6351,11 @@ typedef GlShadingRateSampleOrderNV = void Function(int order);
 typedef GlShadingRateSampleOrderCustomNVNative = Void Function(Uint32 rate, Uint32 samples, Pointer locations);
 typedef GlShadingRateSampleOrderCustomNV = void Function(int rate, int samples, Pointer locations);
 
+//GL_NV_texture_barrier
 typedef GlTextureBarrierNVNative = Void Function();
 typedef GlTextureBarrierNV = void Function();
 
+//GL_NV_vertex_attrib_integer_64bit
 typedef GlVertexAttribL1i64NVNative = Void Function(Uint32 index, Int64 x);
 typedef GlVertexAttribL1i64NV = void Function(int index, int x);
 
@@ -6107,6 +6413,7 @@ typedef GlGetVertexAttribLui64vNV = void Function(int index, int pname, Pointer 
 typedef GlVertexAttribLFormatNVNative = Void Function(Uint32 index, Int32 size, Uint32 type, Int32 stride);
 typedef GlVertexAttribLFormatNV = void Function(int index, int size, int type, int stride);
 
+//GL_NV_vertex_buffer_unified_memory
 typedef GlBufferAddressRangeNVNative = Void Function(Uint32 pname, Uint32 index, Uint64 address, Int64 length);
 typedef GlBufferAddressRangeNV = void Function(int pname, int index, int address, int length);
 
@@ -6143,8 +6450,10 @@ typedef GlVertexAttribIFormatNV = void Function(int index, int size, int type, i
 typedef GlGetIntegerui64i_vNVNative = Void Function(Uint32 value, Uint32 index, Pointer result);
 typedef GlGetIntegerui64i_vNV = void Function(int value, int index, Pointer result);
 
+//GL_NV_viewport_swizzle
 typedef GlViewportSwizzleNVNative = Void Function(Uint32 index, Uint32 swizzlex, Uint32 swizzley, Uint32 swizzlez, Uint32 swizzlew);
 typedef GlViewportSwizzleNV = void Function(int index, int swizzlex, int swizzley, int swizzlez, int swizzlew);
 
+//GL_OVR_multiview
 typedef GlFramebufferTextureMultiviewOVRNative = Void Function(Uint32 target, Uint32 attachment, Uint32 texture, Int32 level, Int32 baseViewIndex, Int32 numViews);
 typedef GlFramebufferTextureMultiviewOVR = void Function(int target, int attachment, int texture, int level, int baseViewIndex, int numViews);
