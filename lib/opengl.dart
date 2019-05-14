@@ -14,4 +14,4 @@
 
 library opengl;
 
-export 'src/opengl_header.dart';
+export 'src/opengl_ffi.dart';
