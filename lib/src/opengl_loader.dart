@@ -14,7 +14,7 @@
 
 import 'dart:ffi';
 import 'dart:io';
-import 'opengl_ffi.dart';
+import 'opengl_header.dart';
 import 'c_utils.dart';
 
 GlCullFace glCullFace;
