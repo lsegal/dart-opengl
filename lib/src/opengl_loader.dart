@@ -1282,7 +1282,7 @@ GlGetIntegerui64i_vNV glGetIntegerui64i_vNV;
 GlViewportSwizzleNV glViewportSwizzleNV;
 GlFramebufferTextureMultiviewOVR glFramebufferTextureMultiviewOVR;
 
-void init() {
+void initOpenGL() {
   var gl = DynamicLibrary.open(Platform.isWindows ? 'Opengl32.dll' : 'libGL.so');
   var wglGetProcAddress = gl.lookupFunction<Int64 Function(CString name), int Function(CString name)>('wglGetProcAddress');
 
