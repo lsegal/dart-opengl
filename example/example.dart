@@ -4,7 +4,7 @@ void main() {
   // create OpenGL context and make it current
   //...
   
-  // load OpenGL dynamic libarary and init all OpenGL functions
+  // load OpenGL dynamic library and init all OpenGL functions
   initOpenGL();
 
   // use OpenGL
