@@ -17,7 +17,7 @@ class CString extends Pointer<Uint8> {
     }
     return Utf8Decoder().convert(units);
   }
-  
+
   factory CString.fromUtf8(String s) {
     CString result = allocate<Uint8>(count: s.length + 1).cast();
     List<int> units = Utf8Encoder().convert(s);
@@ -43,14 +43,11 @@ class CString extends Pointer<Uint8> {
   }
 }
 
-
 class CBufferX {
   CBuffer pointer;
   int _elementSizeInBytes;
 
-  CBufferX() {
-
-  }
+  CBufferX() {}
 
   factory CBufferX.fromTyped(TypedData d) {
     CBufferX result = new CBufferX();
@@ -61,20 +58,24 @@ class CBufferX {
 
   operator [](int i) {
     switch (_elementSizeInBytes) {
-      case 1: return pointer.cast<Pointer<Int8>>().elementAt(i).load<int>();
-      case 2: return pointer.cast<Pointer<Int16>>().elementAt(i).load<int>();
-      case 4: return pointer.cast<Pointer<Int32>>().elementAt(i).load<int>();
-      case 8: return pointer.cast<Pointer<Int64>>().elementAt(i).load<int>();
+      case 1:
+        return pointer.cast<Pointer<Int8>>().elementAt(i).load<int>();
+      case 2:
+        return pointer.cast<Pointer<Int16>>().elementAt(i).load<int>();
+      case 4:
+        return pointer.cast<Pointer<Int32>>().elementAt(i).load<int>();
+      case 8:
+        return pointer.cast<Pointer<Int64>>().elementAt(i).load<int>();
     }
   }
 }
 
-class CBuffer extends Pointer<Uint8> {  
+class CBuffer extends Pointer<Uint8> {
   factory CBuffer.fromTyped(TypedData d) {
     CBuffer result = allocate<Uint8>(count: d.lengthInBytes).cast();
     List<int> bytes = d.buffer.asUint8List();
     for (int i = 0; i < d.lengthInBytes; i++) result.elementAt(i).store(bytes[i]);
-    links.add(result); 
+    links.add(result);
     return result;
   }
 }
@@ -84,7 +85,7 @@ class CStringList extends Pointer<IntPtr> {
     CStringList result = allocate<IntPtr>(count: l.length).cast();
     List<int> pointers = l.map((s) => CString.fromUtf8(s).address).toList();
     for (int i = 0; i < l.length; i++) result.elementAt(i).store(pointers[i]);
-    links.add(result);  
+    links.add(result);
     return result;
   }
 }

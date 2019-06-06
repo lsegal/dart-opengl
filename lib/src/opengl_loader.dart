@@ -1284,8 +1284,7 @@ GlFramebufferTextureMultiviewOVR glFramebufferTextureMultiviewOVR;
 
 void initOpenGL() {
   var gl = DynamicLibrary.open(Platform.isWindows ? 'Opengl32' : 'GL');
-  var glGetProcAddress = gl.lookupFunction<Int64 Function(CString name), int Function(CString name)>(
-    Platform.isWindows ? 'wglGetProcAddress' : 'glXGetProcAddress');
+  var glGetProcAddress = gl.lookupFunction<Int64 Function(CString name), int Function(CString name)>(Platform.isWindows ? 'wglGetProcAddress' : 'glXGetProcAddress');
 
   glCullFace = gl.lookupFunction<GlCullFaceNative, GlCullFace>('glCullFace');
   glFrontFace = gl.lookupFunction<GlFrontFaceNative, GlFrontFace>('glFrontFace');
