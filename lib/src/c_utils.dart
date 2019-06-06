@@ -21,7 +21,9 @@ class CString extends Pointer<Uint8> {
   factory CString.fromUtf8(String s) {
     CString result = allocate<Uint8>(count: s.length + 1).cast();
     List<int> units = Utf8Encoder().convert(s);
-    for (int i = 0; i < s.length; i++) result.elementAt(i).store(units[i]);
+    for (int i = 0; i < s.length; i++) {
+      result.elementAt(i).store(units[i]);
+    }
     result.elementAt(s.length).store(0);
     links.add(result);
     return result;
@@ -29,7 +31,9 @@ class CString extends Pointer<Uint8> {
 
   factory CString.fromLength(int length) {
     CString result = allocate<Uint8>(count: length).cast();
-    for (int i = 0; i < length; i++) result.elementAt(i).store(0);
+    for (int i = 0; i < length; i++) { 
+      result.elementAt(i).store(0);
+    }
     return result;
   }
 
@@ -47,7 +51,7 @@ class CBufferX {
   CBuffer pointer;
   int _elementSizeInBytes;
 
-  CBufferX() {}
+  CBufferX();
 
   factory CBufferX.fromTyped(TypedData d) {
     CBufferX result = new CBufferX();
@@ -74,7 +78,9 @@ class CBuffer extends Pointer<Uint8> {
   factory CBuffer.fromTyped(TypedData d) {
     CBuffer result = allocate<Uint8>(count: d.lengthInBytes).cast();
     List<int> bytes = d.buffer.asUint8List();
-    for (int i = 0; i < d.lengthInBytes; i++) result.elementAt(i).store(bytes[i]);
+    for (int i = 0; i < d.lengthInBytes; i++) {
+      result.elementAt(i).store(bytes[i]);
+    }
     links.add(result);
     return result;
   }
@@ -84,7 +90,9 @@ class CStringList extends Pointer<IntPtr> {
   factory CStringList.fromList(List<String> l) {
     CStringList result = allocate<IntPtr>(count: l.length).cast();
     List<int> pointers = l.map((s) => CString.fromUtf8(s).address).toList();
-    for (int i = 0; i < l.length; i++) result.elementAt(i).store(pointers[i]);
+    for (int i = 0; i < l.length; i++) {
+      result.elementAt(i).store(pointers[i]);
+    }
     links.add(result);
     return result;
   }
