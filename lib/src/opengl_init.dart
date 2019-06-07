@@ -13,8 +13,8 @@
 //  limitations under the License.
 
 import 'dart:ffi';
-import 'dart:io';
 import 'opengl_header.dart';
+import 'opengl_library.dart';
 import 'c_utils.dart';
 
 GlCullFace glCullFace;
@@ -1283,9 +1283,7 @@ GlViewportSwizzleNV glViewportSwizzleNV;
 GlFramebufferTextureMultiviewOVR glFramebufferTextureMultiviewOVR;
 
 void initOpenGL() {
-  var gl = DynamicLibrary.open(Platform.isWindows ? 'Opengl32' : 'GL');
-  var glGetProcAddress = gl.lookupFunction<Int64 Function(CString name), int Function(CString name)>(Platform.isWindows ? 'wglGetProcAddress' : 'glXGetProcAddress');
-
+  var gl = loadLibrary();
   glCullFace = gl.lookupFunction<GlCullFaceNative, GlCullFace>('glCullFace');
   glFrontFace = gl.lookupFunction<GlFrontFaceNative, GlFrontFace>('glFrontFace');
   glHint = gl.lookupFunction<GlHintNative, GlHint>('glHint');
@@ -2551,3 +2549,4 @@ void initOpenGL() {
   glViewportSwizzleNV = fromAddress<Pointer<NativeFunction<GlViewportSwizzleNVNative>>>(glGetProcAddress(CString.fromUtf8('glViewportSwizzleNV'))).asFunction<GlViewportSwizzleNV>();
   glFramebufferTextureMultiviewOVR = fromAddress<Pointer<NativeFunction<GlFramebufferTextureMultiviewOVRNative>>>(glGetProcAddress(CString.fromUtf8('glFramebufferTextureMultiviewOVR'))).asFunction<GlFramebufferTextureMultiviewOVR>();
 }
+
