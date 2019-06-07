@@ -9,20 +9,28 @@ GlGetProcAddress glGetProcAddress;
 
 DynamicLibrary loadLibrary() {
   var gl;
-  if (Platform.isWindows) {
-    gl = DynamicLibrary.open('Opengl32.dll');
-  } else if (Platform.isLinux) {
-    gl = DynamicLibrary.open('libGL.so.1');
+  try {
+    if (Platform.isWindows) {
+      gl = DynamicLibrary.open('Opengl32.dll');
+    } else if (Platform.isLinux) {
+      gl = DynamicLibrary.open('libGL.so.1');
+    }
+  } catch(ex) {
+    throw new Exception('failed to load OpenGL library');
   }
 
-  var glGetProcAddressName;
-  if (Platform.isWindows) {
-    glGetProcAddressName = 'wglGetProcAddress';
-  } else if (Platform.isLinux) {
-    glGetProcAddressName = 'glXGetProcAddress';
+  try {
+    var glGetProcAddressName;
+    if (Platform.isWindows) {
+      glGetProcAddressName = 'wglGetProcAddress';
+    } else if (Platform.isLinux) {
+      glGetProcAddressName = 'glXGetProcAddress';
+    }
+    glGetProcAddress = gl.lookupFunction<GlGetProcAddressNative, GlGetProcAddress>(glGetProcAddressName);
+  } catch(ex) {
+    throw new Exception('failed to loookup $glGetProcAddress function');
   }
-  
-  glGetProcAddress = gl.lookupFunction<GlGetProcAddressNative, GlGetProcAddress>(glGetProcAddressName);
+
   return gl;
 }
 
