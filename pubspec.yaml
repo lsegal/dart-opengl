@@ -1,6 +1,6 @@
 name: opengl
 description: OpenGL 4.6 FFI bindings for Dart. Supports Windows and Linux desktops.
-version: 0.1.0+1
+version: 0.1.0+2
 author: root ext <root.ext@gmail.com>
 homepage: https://gitlab.com/ext/dart-opengl
 

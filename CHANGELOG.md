@@ -1,3 +1,7 @@
+## 0.1.0+2
+
+- add GLFW example
+
 ## 0.1.0+1
 
 - add change log
