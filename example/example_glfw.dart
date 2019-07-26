@@ -1,3 +1,4 @@
+import 'package:glfw/glfw.dart';
 import 'package:opengl/opengl.dart';
 import 'package:opengl/src/opengl_init.dart';
 import 'package:opengl/src/c_utils.dart';
@@ -21,7 +22,7 @@ void main() {
   glClearColor(0.0, 0.7, 0.99, 0.0);
   glViewport(0, 0, 600, 400);
 
-  while (glfwWindowShouldClose(window) != 1)
+  while (glfwWindowShouldClose(window) != GLFW_TRUE)
   {
       glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
