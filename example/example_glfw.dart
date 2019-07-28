@@ -9,8 +9,27 @@ void main() {
   initGlfw();
 
   glfwInit();
-  print('GLFW: ${CString.fromPointer(glfwGetVersionString()).toUtf8()}');
-  var window = glfwCreateWindow(600, 400, CString.fromUtf8('Dart FFI + GLFW + OpenGL'), null, null);
+  print('GLFW: ${CString.fromPointer(glfwGetVersionString()).toString()}');
+
+  var monitor = glfwGetPrimaryMonitor();
+  var vm = glfwGetVideoMode(monitor).cast<GLFWvidmode>();
+  var name = glfwGetMonitorName(monitor).cast<CString>().toString();
+  print(name);
+
+  bool isFullscreen = false;
+  glfwWindowHint(GLFW_RED_BITS, vm.redBits);
+  glfwWindowHint(GLFW_GREEN_BITS, vm.greenBits);
+  glfwWindowHint(GLFW_BLUE_BITS, vm.blueBits);
+  glfwWindowHint(GLFW_REFRESH_RATE, vm.refreshRate);
+  //glfwWindowHint(GLFW_DECORATED, GLFW_FALSE);
+  //glfwWindowHint(GLFW_FLOATING, GLFW_TRUE);
+  glfwWindowHint(GLFW_TRANSPARENT_FRAMEBUFFER, GLFW_TRUE);
+  
+
+  var window = glfwCreateWindow(isFullscreen ? vm.width : 480, 
+    isFullscreen ? vm.height : 480, CString.fromString('Dart FFI + GLFW + OpenGL'), 
+    isFullscreen ? monitor : null, null);
+  if (isFullscreen) glfwSetWindowPos(window, 0, 0); 
   glfwMakeContextCurrent(window);
 
   // load OpenGL dynamic library and init all its functions
@@ -19,7 +38,7 @@ void main() {
   print("GL_RENDERER: ${CString.fromPointer(glGetString(GL_RENDERER))}");
   print("GL_VERSION: ${CString.fromPointer(glGetString(GL_VERSION))}");
   
-  glClearColor(0.0, 0.7, 0.99, 0.0);
+  glClearColor(0.1, 0.1, 0.1, 0.4);
   glViewport(0, 0, 600, 400);
 
   while (glfwWindowShouldClose(window) != GLFW_TRUE)

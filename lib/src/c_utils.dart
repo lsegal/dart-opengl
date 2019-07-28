@@ -5,9 +5,32 @@ import 'dart:convert';
 List<Pointer> links = [];
 
 class CString extends Pointer<Uint8> {
-  CString elementAt(int index) => super.elementAt(index).cast();
+  
+  factory CString.fromBytes(List<int> bytes) {
+    CString result = allocate<Uint8>(count: bytes.length + 1).cast();
+    for (int i = 0; i < bytes.length; i++) {
+      result.elementAt(i).store(bytes[i]);
+    }
+    result.elementAt(bytes.length).store(0);
+    links.add(result);    
+    return result;
+  }
+  
+  factory CString.fromString(String s) {
+    List<int> bytes = Utf8Encoder().convert(s);
+    return CString.fromBytes(bytes);
+  }
 
-  String toUtf8({int length}) {
+  factory CString.filled(int length, {int char = 0}) {
+    return CString.fromBytes(List.filled(length, char));
+  }
+
+  factory CString.fromPointer(Pointer pointer) {
+    CString result = fromAddress(pointer.address);
+    return result;
+  }
+
+  String toString({int length}) {
     List<int> units = [];
     int len = 0;
     while (true) {
@@ -17,45 +40,46 @@ class CString extends Pointer<Uint8> {
     }
     return Utf8Decoder().convert(units);
   }
+}
 
-  factory CString.fromUtf8(String s) {
-    CString result = allocate<Uint8>(count: s.length + 1).cast();
-    List<int> units = Utf8Encoder().convert(s);
-    for (int i = 0; i < s.length; i++) {
-      result.elementAt(i).store(units[i]);
+class CBuffer extends Pointer<Uint8> {  
+  factory CBuffer.fromBytes(List<int> bytes) {
+    CBuffer result = allocate<Uint8>(count: bytes.length).cast();
+    for (int i = 0; i < bytes.length; i++) {
+      result.elementAt(i).store(bytes[i]);
     }
-    result.elementAt(s.length).store(0);
     links.add(result);
     return result;
   }
 
-  factory CString.fromLength(int length) {
-    CString result = allocate<Uint8>(count: length).cast();
-    for (int i = 0; i < length; i++) { 
-      result.elementAt(i).store(0);
-    }
-    return result;
-  }
-
-  factory CString.fromPointer(Pointer pointer) {
-    CString result = fromAddress(pointer.address);
-    return result;
-  }
-
-  String toString() {
-    return toUtf8();
+  factory CBuffer.fromTyped(TypedData data) {
+    List<int> bytes = data.buffer.asUint8List();
+    return CBuffer.fromBytes(bytes);
   }
 }
 
-class CBufferX {
-  CBuffer pointer;
+class CStringList extends Pointer<IntPtr> {
+  factory CStringList.fromList(List<String> l) {
+    CStringList result = allocate<IntPtr>(count: l.length).cast();
+    List<int> pointers = l.map((s) => CString.fromString(s).address).toList();
+    for (int i = 0; i < l.length; i++) {
+      result.elementAt(i).store(pointers[i]);
+    }
+    links.add(result);
+    return result;
+  }  
+}
+
+
+class CIntArray {
+  CBuffer buffer;
   int _elementSizeInBytes;
 
-  CBufferX();
+  CIntArray();
 
-  factory CBufferX.fromTyped(TypedData d) {
-    CBufferX result = new CBufferX();
-    result.pointer = CBuffer.fromTyped(d);
+  factory CIntArray.fromTyped(TypedData d) {
+    CIntArray result = new CIntArray();
+    result.buffer = CBuffer.fromTyped(d);
     result._elementSizeInBytes = d.elementSizeInBytes;
     return result;
   }
@@ -63,37 +87,13 @@ class CBufferX {
   operator [](int i) {
     switch (_elementSizeInBytes) {
       case 1:
-        return pointer.cast<Pointer<Int8>>().elementAt(i).load<int>();
+        return buffer.cast<Pointer<Int8>>().elementAt(i).load<int>();
       case 2:
-        return pointer.cast<Pointer<Int16>>().elementAt(i).load<int>();
+        return buffer.cast<Pointer<Int16>>().elementAt(i).load<int>();
       case 4:
-        return pointer.cast<Pointer<Int32>>().elementAt(i).load<int>();
+        return buffer.cast<Pointer<Int32>>().elementAt(i).load<int>();
       case 8:
-        return pointer.cast<Pointer<Int64>>().elementAt(i).load<int>();
+        return buffer.cast<Pointer<Int64>>().elementAt(i).load<int>();
     }
-  }
-}
-
-class CBuffer extends Pointer<Uint8> {
-  factory CBuffer.fromTyped(TypedData d) {
-    CBuffer result = allocate<Uint8>(count: d.lengthInBytes).cast();
-    List<int> bytes = d.buffer.asUint8List();
-    for (int i = 0; i < d.lengthInBytes; i++) {
-      result.elementAt(i).store(bytes[i]);
-    }
-    links.add(result);
-    return result;
-  }
-}
-
-class CStringList extends Pointer<IntPtr> {
-  factory CStringList.fromList(List<String> l) {
-    CStringList result = allocate<IntPtr>(count: l.length).cast();
-    List<int> pointers = l.map((s) => CString.fromUtf8(s).address).toList();
-    for (int i = 0; i < l.length; i++) {
-      result.elementAt(i).store(pointers[i]);
-    }
-    links.add(result);
-    return result;
   }
 }
