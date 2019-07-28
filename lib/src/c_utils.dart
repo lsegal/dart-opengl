@@ -2,8 +2,6 @@ import 'dart:ffi';
 import 'dart:typed_data';
 import 'dart:convert';
 
-List<Pointer> links = [];
-
 class CString extends Pointer<Uint8> {
   
   factory CString.fromBytes(List<int> bytes) {
@@ -12,7 +10,6 @@ class CString extends Pointer<Uint8> {
       result.elementAt(i).store(bytes[i]);
     }
     result.elementAt(bytes.length).store(0);
-    links.add(result);    
     return result;
   }
   
@@ -22,7 +19,7 @@ class CString extends Pointer<Uint8> {
   }
 
   factory CString.filled(int length, {int char = 0}) {
-    return CString.fromBytes(List.filled(length, char));
+    return CString.fromBytes(List.filled(length-1, char));
   }
 
   factory CString.fromPointer(Pointer pointer) {
@@ -48,7 +45,6 @@ class CBuffer extends Pointer<Uint8> {
     for (int i = 0; i < bytes.length; i++) {
       result.elementAt(i).store(bytes[i]);
     }
-    links.add(result);
     return result;
   }
 
@@ -65,11 +61,9 @@ class CStringList extends Pointer<IntPtr> {
     for (int i = 0; i < l.length; i++) {
       result.elementAt(i).store(pointers[i]);
     }
-    links.add(result);
     return result;
   }  
 }
-
 
 class CIntArray {
   CBuffer buffer;
@@ -77,10 +71,10 @@ class CIntArray {
 
   CIntArray();
 
-  factory CIntArray.fromTyped(TypedData d) {
+  factory CIntArray.fromTyped(TypedData data) {
     CIntArray result = new CIntArray();
-    result.buffer = CBuffer.fromTyped(d);
-    result._elementSizeInBytes = d.elementSizeInBytes;
+    result.buffer = CBuffer.fromTyped(data);
+    result._elementSizeInBytes = data.elementSizeInBytes;
     return result;
   }
 
