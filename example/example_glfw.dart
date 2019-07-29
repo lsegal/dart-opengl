@@ -16,19 +16,21 @@ void main() {
   print('$monitorName ${videomode.width}x${videomode.height}');
     
   bool isFullscreen = false;
+  bool isFullscreenExclusive = false;
   glfwWindowHint(GLFW_RED_BITS, videomode.redBits);
   glfwWindowHint(GLFW_GREEN_BITS, videomode.greenBits);
   glfwWindowHint(GLFW_BLUE_BITS, videomode.blueBits);
   glfwWindowHint(GLFW_REFRESH_RATE, videomode.refreshRate);
-      
+  if (isFullscreen) glfwWindowHint(GLFW_DECORATED, GLFW_FALSE);
+        
   var window = glfwCreateWindow(
     isFullscreen ? videomode.width : 640, 
     isFullscreen ? videomode.height : 480, 
     CString.fromString('Dart FFI + GLFW + OpenGL'), 
-    isFullscreen ? monitor : null, null);
+    (isFullscreen && isFullscreenExclusive) ? monitor : null, null);
   if (isFullscreen) glfwSetWindowPos(window, 0, 0); 
   glfwMakeContextCurrent(window);
-
+  
   // load OpenGL dynamic library and init all its functions
   initOpenGL();
   print("GL_VENDOR: ${CString.fromPointer(glGetString(GL_VENDOR))}");
