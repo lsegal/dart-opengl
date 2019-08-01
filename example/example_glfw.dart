@@ -1,7 +1,7 @@
 import 'package:glfw/glfw.dart';
 import 'package:opengl/opengl.dart';
+import 'package:ffi_utils/ffi_utils.dart';
 import 'package:opengl/src/opengl_init.dart';
-import 'package:opengl/src/c_utils.dart';
 import 'package:glfw/src/glfw_init.dart';
 
 void main() {

@@ -15,7 +15,7 @@
 import 'dart:ffi';
 import 'opengl_header.dart';
 import 'opengl_library.dart';
-import 'c_utils.dart';
+import 'package:ffi_utils/ffi_utils.dart';
 
 GlCullFace glCullFace;
 GlFrontFace glFrontFace;
