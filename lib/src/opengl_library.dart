@@ -1,6 +1,6 @@
 import 'dart:ffi';
 import 'dart:io';
-import 'ffi_utils.dart';
+import 'package:ffi_utils/ffi_utils.dart';
 
 typedef GlGetProcAddressNative = Int64 Function(Pointer<CString> name);
 typedef GlGetProcAddress = int Function(Pointer<CString> name);
@@ -8,12 +8,14 @@ typedef GlGetProcAddress = int Function(Pointer<CString> name);
 GlGetProcAddress glGetProcAddress;
 
 DynamicLibrary loadLibrary() {
-  var gl;
+  DynamicLibrary gl;
   try {
     if (Platform.isWindows) {
       gl = DynamicLibrary.open('Opengl32.dll');
     } else if (Platform.isLinux) {
       gl = DynamicLibrary.open('libGL.so.1');
+    } else {
+      throw UnsupportedError('');
     }
   } catch(ex) {
     throw Exception('failed to load OpenGL library');

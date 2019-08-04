@@ -2,7 +2,7 @@ import 'dart:ffi';
 
 import 'package:glfw/glfw.dart';
 import 'package:opengl/opengl.dart';
-import 'package:opengl/src/ffi_utils.dart';
+import 'package:ffi_utils/ffi_utils.dart';
 import 'package:opengl/src/opengl_init.dart';
 import 'package:glfw/src/glfw_init.dart';
 
@@ -21,9 +21,9 @@ void main() {
   
   // load OpenGL dynamic library and init all its functions
   initOpenGL();
-  print("GL_VENDOR: ${CString.fromUtf8(glGetString(GL_VENDOR))}");
-  print("GL_RENDERER: ${CString.fromUtf8(glGetString(GL_RENDERER))}");
-  print("GL_VERSION: ${CString.fromUtf8(glGetString(GL_VERSION))}");
+  print("GL_VENDOR: ${CString.fromUtf8(glGetString(GL_VENDOR).cast())}");
+  print("GL_RENDERER: ${CString.fromUtf8(glGetString(GL_RENDERER).cast())}");
+  print("GL_VERSION: ${CString.fromUtf8(glGetString(GL_VERSION).cast())}");
   
   glClearColor(0.0, 0.7, 0.99, 0.0);
   glViewport(0, 0, 600, 400);
