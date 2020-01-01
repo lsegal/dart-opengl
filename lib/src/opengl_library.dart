@@ -14,9 +14,9 @@ DynamicLibrary loadLibrary() {
     } else if (Platform.isLinux) {
       gl = DynamicLibrary.open('libGL.so.1');
     } else {
-      throw UnsupportedError('');
+      throw UnsupportedError('unsupported platform ${Platform.operatingSystem}');
     }
-  } catch(ex) {
+  } catch (ex) {
     throw Exception('failed to load OpenGL library');
   }
 
@@ -26,9 +26,11 @@ DynamicLibrary loadLibrary() {
       glGetProcAddressName = 'wglGetProcAddress';
     } else if (Platform.isLinux) {
       glGetProcAddressName = 'glXGetProcAddress';
+    } else {
+      throw UnsupportedError('unsupported platform ${Platform.operatingSystem}');
     }
     glGetProcAddress = gl.lookupFunction<GlGetProcAddressNative, GlGetProcAddress>(glGetProcAddressName);
-  } catch(ex) {
+  } catch (ex) {
     throw Exception('failed to loookup $glGetProcAddressName function');
   }
 
