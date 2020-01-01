@@ -11,16 +11,16 @@ packages:
   ffi_utils:
     dependency: "direct main"
     description:
-      path: "..\\dart-ffi_utils"
-      relative: true
-    source: path
-    version: "0.2.0"
+      name: ffi_utils
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.0"
   glfw:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
-      path: "..\\dart-glfw"
-      relative: true
-    source: path
+      name: glfw
+      url: "https://pub.dartlang.org"
+    source: hosted
     version: "0.2.0"
   pedantic:
     dependency: "direct dev"
