@@ -10,20 +10,20 @@ void main() {
   initGlfw();
 
   glfwInit();
-  print('GLFW: ${CString.fromUtf8(glfwGetVersionString().cast<CString>())}');
+  print('GLFW: ${NativeString.fromPointer(glfwGetVersionString())}');
         
   var window = glfwCreateWindow(
     640, 
     480, 
-    CString.toUtf8('Dart FFI + GLFW + OpenGL'), 
+    NativeString.fromString('Dart FFI + GLFW + OpenGL'), 
     nullptr.cast(), nullptr.cast());
   glfwMakeContextCurrent(window);
   
   // load OpenGL dynamic library and init all its functions
   initOpenGL();
-  print("GL_VENDOR: ${CString.fromUtf8(glGetString(GL_VENDOR).cast())}");
-  print("GL_RENDERER: ${CString.fromUtf8(glGetString(GL_RENDERER).cast())}");
-  print("GL_VERSION: ${CString.fromUtf8(glGetString(GL_VERSION).cast())}");
+  print("GL_VENDOR: ${NativeString.fromPointer(glGetString(GL_VENDOR))}");
+  print("GL_RENDERER: ${NativeString.fromPointer(glGetString(GL_RENDERER))}");
+  print("GL_VERSION: ${NativeString.fromPointer(glGetString(GL_VERSION))}");
   
   glClearColor(0.0, 0.7, 0.99, 0.0);
   glViewport(0, 0, 600, 400);

@@ -1,9 +1,8 @@
 import 'dart:ffi';
 import 'dart:io';
-import 'package:ffi_utils/ffi_utils.dart';
 
-typedef GlGetProcAddressNative = Int64 Function(Pointer<CString> name);
-typedef GlGetProcAddress = int Function(Pointer<CString> name);
+typedef GlGetProcAddressNative = Int64 Function(Pointer name);
+typedef GlGetProcAddress = int Function(Pointer name);
 
 GlGetProcAddress glGetProcAddress;
 
