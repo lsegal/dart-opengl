@@ -1,5 +1,4 @@
 import 'package:opengl/opengl.dart';
-import 'package:opengl/src/opengl_init.dart';
 
 void main() {
   // create OpenGL context and make it current
