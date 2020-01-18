@@ -10,11 +10,7 @@ void main() {
   glfwInit();
   print('GLFW: ${NativeString.fromPointer(glfwGetVersionString())}');
 
-  var window = glfwCreateWindow(
-    640, 
-    480, 
-    NativeString.fromString('Dart FFI + GLFW + OpenGL'), 
-    nullptr.cast(), nullptr.cast());
+  var window = glfwCreateWindow(640, 480, NativeString.fromString('Dart FFI + GLFW + OpenGL'), nullptr, nullptr);
   glfwMakeContextCurrent(window);
 
   // load OpenGL dynamic library and init all its functions
