@@ -16,7 +16,7 @@ packages:
     source: hosted
     version: "0.1.0"
   glfw:
-    dependency: "direct main"
+    dependency: "direct dev"
     description:
       name: glfw
       url: "https://pub.dartlang.org"
