@@ -28,6 +28,8 @@ DynamicLibrary loadLibrary() {
     name = 'Opengl32.dll';
   } else if (Platform.isLinux) {
     name = 'libGL.so.1';
+  } else if (Platform.isMacOS) {
+    name = '/System/Library/Frameworks/OpenGL.framework/Versions/Current/OpenGL';
   } else {
     throw UnsupportedError('unsupported platform ${Platform.operatingSystem}');
   }
@@ -43,13 +45,12 @@ DynamicLibrary loadLibrary() {
     glGetProcAddressName = 'wglGetProcAddress';
   } else if (Platform.isLinux) {
     glGetProcAddressName = 'glXGetProcAddress';
-  } else {
-    throw UnsupportedError('unsupported platform ${Platform.operatingSystem}');
   }
 
   try {    
-    glGetProcAddress = library.lookupFunction<GlGetProcAddressNative, GlGetProcAddress>(glGetProcAddressName);
-    if (glGetProcAddress == null) throw Error();
+    if (glGetProcAddressName != null) {
+      glGetProcAddress = library.lookupFunction<GlGetProcAddressNative, GlGetProcAddress>(glGetProcAddressName);
+    }
   } catch (ex) {
     throw Exception('failed to loookup $glGetProcAddressName function');
   }
@@ -57,3 +58,6 @@ DynamicLibrary loadLibrary() {
   return library;
 }
 
+Object tryCall(Function f) {
+  try { return f(); } catch(ex) { return null; }
+}

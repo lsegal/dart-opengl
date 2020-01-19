@@ -1283,1270 +1283,5062 @@ GlViewportSwizzleNV glViewportSwizzleNV;
 GlFramebufferTextureMultiviewOVR glFramebufferTextureMultiviewOVR;
 
 void initOpenGL() {
-  var gl = loadLibrary();
-  glCullFace = gl.lookupFunction<GlCullFaceNative, GlCullFace>('glCullFace');
-  glFrontFace = gl.lookupFunction<GlFrontFaceNative, GlFrontFace>('glFrontFace');
-  glHint = gl.lookupFunction<GlHintNative, GlHint>('glHint');
-  glLineWidth = gl.lookupFunction<GlLineWidthNative, GlLineWidth>('glLineWidth');
-  glPointSize = gl.lookupFunction<GlPointSizeNative, GlPointSize>('glPointSize');
-  glPolygonMode = gl.lookupFunction<GlPolygonModeNative, GlPolygonMode>('glPolygonMode');
-  glScissor = gl.lookupFunction<GlScissorNative, GlScissor>('glScissor');
-  glTexParameterf = gl.lookupFunction<GlTexParameterfNative, GlTexParameterf>('glTexParameterf');
-  glTexParameterfv = gl.lookupFunction<GlTexParameterfvNative, GlTexParameterfv>('glTexParameterfv');
-  glTexParameteri = gl.lookupFunction<GlTexParameteriNative, GlTexParameteri>('glTexParameteri');
-  glTexParameteriv = gl.lookupFunction<GlTexParameterivNative, GlTexParameteriv>('glTexParameteriv');
-  glTexImage1D = gl.lookupFunction<GlTexImage1DNative, GlTexImage1D>('glTexImage1D');
-  glTexImage2D = gl.lookupFunction<GlTexImage2DNative, GlTexImage2D>('glTexImage2D');
-  glDrawBuffer = gl.lookupFunction<GlDrawBufferNative, GlDrawBuffer>('glDrawBuffer');
-  glClear = gl.lookupFunction<GlClearNative, GlClear>('glClear');
-  glClearColor = gl.lookupFunction<GlClearColorNative, GlClearColor>('glClearColor');
-  glClearStencil = gl.lookupFunction<GlClearStencilNative, GlClearStencil>('glClearStencil');
-  glClearDepth = gl.lookupFunction<GlClearDepthNative, GlClearDepth>('glClearDepth');
-  glStencilMask = gl.lookupFunction<GlStencilMaskNative, GlStencilMask>('glStencilMask');
-  glColorMask = gl.lookupFunction<GlColorMaskNative, GlColorMask>('glColorMask');
-  glDepthMask = gl.lookupFunction<GlDepthMaskNative, GlDepthMask>('glDepthMask');
-  glDisable = gl.lookupFunction<GlDisableNative, GlDisable>('glDisable');
-  glEnable = gl.lookupFunction<GlEnableNative, GlEnable>('glEnable');
-  glFinish = gl.lookupFunction<GlFinishNative, GlFinish>('glFinish');
-  glFlush = gl.lookupFunction<GlFlushNative, GlFlush>('glFlush');
-  glBlendFunc = gl.lookupFunction<GlBlendFuncNative, GlBlendFunc>('glBlendFunc');
-  glLogicOp = gl.lookupFunction<GlLogicOpNative, GlLogicOp>('glLogicOp');
-  glStencilFunc = gl.lookupFunction<GlStencilFuncNative, GlStencilFunc>('glStencilFunc');
-  glStencilOp = gl.lookupFunction<GlStencilOpNative, GlStencilOp>('glStencilOp');
-  glDepthFunc = gl.lookupFunction<GlDepthFuncNative, GlDepthFunc>('glDepthFunc');
-  glPixelStoref = gl.lookupFunction<GlPixelStorefNative, GlPixelStoref>('glPixelStoref');
-  glPixelStorei = gl.lookupFunction<GlPixelStoreiNative, GlPixelStorei>('glPixelStorei');
-  glReadBuffer = gl.lookupFunction<GlReadBufferNative, GlReadBuffer>('glReadBuffer');
-  glReadPixels = gl.lookupFunction<GlReadPixelsNative, GlReadPixels>('glReadPixels');
-  glGetBooleanv = gl.lookupFunction<GlGetBooleanvNative, GlGetBooleanv>('glGetBooleanv');
-  glGetDoublev = gl.lookupFunction<GlGetDoublevNative, GlGetDoublev>('glGetDoublev');
-  glGetError = gl.lookupFunction<GlGetErrorNative, GlGetError>('glGetError');
-  glGetFloatv = gl.lookupFunction<GlGetFloatvNative, GlGetFloatv>('glGetFloatv');
-  glGetIntegerv = gl.lookupFunction<GlGetIntegervNative, GlGetIntegerv>('glGetIntegerv');
-  glGetString = gl.lookupFunction<GlGetStringNative, GlGetString>('glGetString');
-  glGetTexImage = gl.lookupFunction<GlGetTexImageNative, GlGetTexImage>('glGetTexImage');
-  glGetTexParameterfv = gl.lookupFunction<GlGetTexParameterfvNative, GlGetTexParameterfv>('glGetTexParameterfv');
-  glGetTexParameteriv = gl.lookupFunction<GlGetTexParameterivNative, GlGetTexParameteriv>('glGetTexParameteriv');
-  glGetTexLevelParameterfv = gl.lookupFunction<GlGetTexLevelParameterfvNative, GlGetTexLevelParameterfv>('glGetTexLevelParameterfv');
-  glGetTexLevelParameteriv = gl.lookupFunction<GlGetTexLevelParameterivNative, GlGetTexLevelParameteriv>('glGetTexLevelParameteriv');
-  glIsEnabled = gl.lookupFunction<GlIsEnabledNative, GlIsEnabled>('glIsEnabled');
-  glDepthRange = gl.lookupFunction<GlDepthRangeNative, GlDepthRange>('glDepthRange');
-  glViewport = gl.lookupFunction<GlViewportNative, GlViewport>('glViewport');
-  glDrawArrays = gl.lookupFunction<GlDrawArraysNative, GlDrawArrays>('glDrawArrays');
-  glDrawElements = gl.lookupFunction<GlDrawElementsNative, GlDrawElements>('glDrawElements');
-  glGetPointerv = gl.lookupFunction<GlGetPointervNative, GlGetPointerv>('glGetPointerv');
-  glPolygonOffset = gl.lookupFunction<GlPolygonOffsetNative, GlPolygonOffset>('glPolygonOffset');
-  glCopyTexImage1D = gl.lookupFunction<GlCopyTexImage1DNative, GlCopyTexImage1D>('glCopyTexImage1D');
-  glCopyTexImage2D = gl.lookupFunction<GlCopyTexImage2DNative, GlCopyTexImage2D>('glCopyTexImage2D');
-  glCopyTexSubImage1D = gl.lookupFunction<GlCopyTexSubImage1DNative, GlCopyTexSubImage1D>('glCopyTexSubImage1D');
-  glCopyTexSubImage2D = gl.lookupFunction<GlCopyTexSubImage2DNative, GlCopyTexSubImage2D>('glCopyTexSubImage2D');
-  glTexSubImage1D = gl.lookupFunction<GlTexSubImage1DNative, GlTexSubImage1D>('glTexSubImage1D');
-  glTexSubImage2D = gl.lookupFunction<GlTexSubImage2DNative, GlTexSubImage2D>('glTexSubImage2D');
-  glBindTexture = gl.lookupFunction<GlBindTextureNative, GlBindTexture>('glBindTexture');
-  glDeleteTextures = gl.lookupFunction<GlDeleteTexturesNative, GlDeleteTextures>('glDeleteTextures');
-  glGenTextures = gl.lookupFunction<GlGenTexturesNative, GlGenTextures>('glGenTextures');
-  glIsTexture = gl.lookupFunction<GlIsTextureNative, GlIsTexture>('glIsTexture');
-  glDrawRangeElements = Pointer<NativeFunction<GlDrawRangeElementsNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawRangeElements'))).asFunction<GlDrawRangeElements>();
-  glTexImage3D = Pointer<NativeFunction<GlTexImage3DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexImage3D'))).asFunction<GlTexImage3D>();
-  glTexSubImage3D = Pointer<NativeFunction<GlTexSubImage3DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexSubImage3D'))).asFunction<GlTexSubImage3D>();
-  glCopyTexSubImage3D = Pointer<NativeFunction<GlCopyTexSubImage3DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyTexSubImage3D'))).asFunction<GlCopyTexSubImage3D>();
-  glActiveTexture = Pointer<NativeFunction<GlActiveTextureNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glActiveTexture'))).asFunction<GlActiveTexture>();
-  glSampleCoverage = Pointer<NativeFunction<GlSampleCoverageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSampleCoverage'))).asFunction<GlSampleCoverage>();
-  glCompressedTexImage3D = Pointer<NativeFunction<GlCompressedTexImage3DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTexImage3D'))).asFunction<GlCompressedTexImage3D>();
-  glCompressedTexImage2D = Pointer<NativeFunction<GlCompressedTexImage2DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTexImage2D'))).asFunction<GlCompressedTexImage2D>();
-  glCompressedTexImage1D = Pointer<NativeFunction<GlCompressedTexImage1DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTexImage1D'))).asFunction<GlCompressedTexImage1D>();
-  glCompressedTexSubImage3D = Pointer<NativeFunction<GlCompressedTexSubImage3DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTexSubImage3D'))).asFunction<GlCompressedTexSubImage3D>();
-  glCompressedTexSubImage2D = Pointer<NativeFunction<GlCompressedTexSubImage2DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTexSubImage2D'))).asFunction<GlCompressedTexSubImage2D>();
-  glCompressedTexSubImage1D = Pointer<NativeFunction<GlCompressedTexSubImage1DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTexSubImage1D'))).asFunction<GlCompressedTexSubImage1D>();
-  glGetCompressedTexImage = Pointer<NativeFunction<GlGetCompressedTexImageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetCompressedTexImage'))).asFunction<GlGetCompressedTexImage>();
-  glBlendFuncSeparate = Pointer<NativeFunction<GlBlendFuncSeparateNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendFuncSeparate'))).asFunction<GlBlendFuncSeparate>();
-  glMultiDrawArrays = Pointer<NativeFunction<GlMultiDrawArraysNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawArrays'))).asFunction<GlMultiDrawArrays>();
-  glMultiDrawElements = Pointer<NativeFunction<GlMultiDrawElementsNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawElements'))).asFunction<GlMultiDrawElements>();
-  glPointParameterf = Pointer<NativeFunction<GlPointParameterfNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPointParameterf'))).asFunction<GlPointParameterf>();
-  glPointParameterfv = Pointer<NativeFunction<GlPointParameterfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPointParameterfv'))).asFunction<GlPointParameterfv>();
-  glPointParameteri = Pointer<NativeFunction<GlPointParameteriNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPointParameteri'))).asFunction<GlPointParameteri>();
-  glPointParameteriv = Pointer<NativeFunction<GlPointParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPointParameteriv'))).asFunction<GlPointParameteriv>();
-  glBlendColor = Pointer<NativeFunction<GlBlendColorNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendColor'))).asFunction<GlBlendColor>();
-  glBlendEquation = Pointer<NativeFunction<GlBlendEquationNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendEquation'))).asFunction<GlBlendEquation>();
-  glGenQueries = Pointer<NativeFunction<GlGenQueriesNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenQueries'))).asFunction<GlGenQueries>();
-  glDeleteQueries = Pointer<NativeFunction<GlDeleteQueriesNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteQueries'))).asFunction<GlDeleteQueries>();
-  glIsQuery = Pointer<NativeFunction<GlIsQueryNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsQuery'))).asFunction<GlIsQuery>();
-  glBeginQuery = Pointer<NativeFunction<GlBeginQueryNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBeginQuery'))).asFunction<GlBeginQuery>();
-  glEndQuery = Pointer<NativeFunction<GlEndQueryNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEndQuery'))).asFunction<GlEndQuery>();
-  glGetQueryiv = Pointer<NativeFunction<GlGetQueryivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetQueryiv'))).asFunction<GlGetQueryiv>();
-  glGetQueryObjectiv = Pointer<NativeFunction<GlGetQueryObjectivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetQueryObjectiv'))).asFunction<GlGetQueryObjectiv>();
-  glGetQueryObjectuiv = Pointer<NativeFunction<GlGetQueryObjectuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetQueryObjectuiv'))).asFunction<GlGetQueryObjectuiv>();
-  glBindBuffer = Pointer<NativeFunction<GlBindBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindBuffer'))).asFunction<GlBindBuffer>();
-  glDeleteBuffers = Pointer<NativeFunction<GlDeleteBuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteBuffers'))).asFunction<GlDeleteBuffers>();
-  glGenBuffers = Pointer<NativeFunction<GlGenBuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenBuffers'))).asFunction<GlGenBuffers>();
-  glIsBuffer = Pointer<NativeFunction<GlIsBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsBuffer'))).asFunction<GlIsBuffer>();
-  glBufferData = Pointer<NativeFunction<GlBufferDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBufferData'))).asFunction<GlBufferData>();
-  glBufferSubData = Pointer<NativeFunction<GlBufferSubDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBufferSubData'))).asFunction<GlBufferSubData>();
-  glGetBufferSubData = Pointer<NativeFunction<GlGetBufferSubDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetBufferSubData'))).asFunction<GlGetBufferSubData>();
-  glMapBuffer = Pointer<NativeFunction<GlMapBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMapBuffer'))).asFunction<GlMapBuffer>();
-  glUnmapBuffer = Pointer<NativeFunction<GlUnmapBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUnmapBuffer'))).asFunction<GlUnmapBuffer>();
-  glGetBufferParameteriv = Pointer<NativeFunction<GlGetBufferParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetBufferParameteriv'))).asFunction<GlGetBufferParameteriv>();
-  glGetBufferPointerv = Pointer<NativeFunction<GlGetBufferPointervNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetBufferPointerv'))).asFunction<GlGetBufferPointerv>();
-  glBlendEquationSeparate = Pointer<NativeFunction<GlBlendEquationSeparateNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendEquationSeparate'))).asFunction<GlBlendEquationSeparate>();
-  glDrawBuffers = Pointer<NativeFunction<GlDrawBuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawBuffers'))).asFunction<GlDrawBuffers>();
-  glStencilOpSeparate = Pointer<NativeFunction<GlStencilOpSeparateNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilOpSeparate'))).asFunction<GlStencilOpSeparate>();
-  glStencilFuncSeparate = Pointer<NativeFunction<GlStencilFuncSeparateNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilFuncSeparate'))).asFunction<GlStencilFuncSeparate>();
-  glStencilMaskSeparate = Pointer<NativeFunction<GlStencilMaskSeparateNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilMaskSeparate'))).asFunction<GlStencilMaskSeparate>();
-  glAttachShader = Pointer<NativeFunction<GlAttachShaderNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glAttachShader'))).asFunction<GlAttachShader>();
-  glBindAttribLocation = Pointer<NativeFunction<GlBindAttribLocationNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindAttribLocation'))).asFunction<GlBindAttribLocation>();
-  glCompileShader = Pointer<NativeFunction<GlCompileShaderNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompileShader'))).asFunction<GlCompileShader>();
-  glCreateProgram = Pointer<NativeFunction<GlCreateProgramNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateProgram'))).asFunction<GlCreateProgram>();
-  glCreateShader = Pointer<NativeFunction<GlCreateShaderNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateShader'))).asFunction<GlCreateShader>();
-  glDeleteProgram = Pointer<NativeFunction<GlDeleteProgramNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteProgram'))).asFunction<GlDeleteProgram>();
-  glDeleteShader = Pointer<NativeFunction<GlDeleteShaderNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteShader'))).asFunction<GlDeleteShader>();
-  glDetachShader = Pointer<NativeFunction<GlDetachShaderNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDetachShader'))).asFunction<GlDetachShader>();
-  glDisableVertexAttribArray = Pointer<NativeFunction<GlDisableVertexAttribArrayNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDisableVertexAttribArray'))).asFunction<GlDisableVertexAttribArray>();
-  glEnableVertexAttribArray = Pointer<NativeFunction<GlEnableVertexAttribArrayNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEnableVertexAttribArray'))).asFunction<GlEnableVertexAttribArray>();
-  glGetActiveAttrib = Pointer<NativeFunction<GlGetActiveAttribNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetActiveAttrib'))).asFunction<GlGetActiveAttrib>();
-  glGetActiveUniform = Pointer<NativeFunction<GlGetActiveUniformNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetActiveUniform'))).asFunction<GlGetActiveUniform>();
-  glGetAttachedShaders = Pointer<NativeFunction<GlGetAttachedShadersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetAttachedShaders'))).asFunction<GlGetAttachedShaders>();
-  glGetAttribLocation = Pointer<NativeFunction<GlGetAttribLocationNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetAttribLocation'))).asFunction<GlGetAttribLocation>();
-  glGetProgramiv = Pointer<NativeFunction<GlGetProgramivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramiv'))).asFunction<GlGetProgramiv>();
-  glGetProgramInfoLog = Pointer<NativeFunction<GlGetProgramInfoLogNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramInfoLog'))).asFunction<GlGetProgramInfoLog>();
-  glGetShaderiv = Pointer<NativeFunction<GlGetShaderivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetShaderiv'))).asFunction<GlGetShaderiv>();
-  glGetShaderInfoLog = Pointer<NativeFunction<GlGetShaderInfoLogNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetShaderInfoLog'))).asFunction<GlGetShaderInfoLog>();
-  glGetShaderSource = Pointer<NativeFunction<GlGetShaderSourceNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetShaderSource'))).asFunction<GlGetShaderSource>();
-  glGetUniformLocation = Pointer<NativeFunction<GlGetUniformLocationNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetUniformLocation'))).asFunction<GlGetUniformLocation>();
-  glGetUniformfv = Pointer<NativeFunction<GlGetUniformfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetUniformfv'))).asFunction<GlGetUniformfv>();
-  glGetUniformiv = Pointer<NativeFunction<GlGetUniformivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetUniformiv'))).asFunction<GlGetUniformiv>();
-  glGetVertexAttribdv = Pointer<NativeFunction<GlGetVertexAttribdvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexAttribdv'))).asFunction<GlGetVertexAttribdv>();
-  glGetVertexAttribfv = Pointer<NativeFunction<GlGetVertexAttribfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexAttribfv'))).asFunction<GlGetVertexAttribfv>();
-  glGetVertexAttribiv = Pointer<NativeFunction<GlGetVertexAttribivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexAttribiv'))).asFunction<GlGetVertexAttribiv>();
-  glGetVertexAttribPointerv = Pointer<NativeFunction<GlGetVertexAttribPointervNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexAttribPointerv'))).asFunction<GlGetVertexAttribPointerv>();
-  glIsProgram = Pointer<NativeFunction<GlIsProgramNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsProgram'))).asFunction<GlIsProgram>();
-  glIsShader = Pointer<NativeFunction<GlIsShaderNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsShader'))).asFunction<GlIsShader>();
-  glLinkProgram = Pointer<NativeFunction<GlLinkProgramNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glLinkProgram'))).asFunction<GlLinkProgram>();
-  glShaderSource = Pointer<NativeFunction<GlShaderSourceNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glShaderSource'))).asFunction<GlShaderSource>();
-  glUseProgram = Pointer<NativeFunction<GlUseProgramNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUseProgram'))).asFunction<GlUseProgram>();
-  glUniform1f = Pointer<NativeFunction<GlUniform1fNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1f'))).asFunction<GlUniform1f>();
-  glUniform2f = Pointer<NativeFunction<GlUniform2fNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2f'))).asFunction<GlUniform2f>();
-  glUniform3f = Pointer<NativeFunction<GlUniform3fNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3f'))).asFunction<GlUniform3f>();
-  glUniform4f = Pointer<NativeFunction<GlUniform4fNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4f'))).asFunction<GlUniform4f>();
-  glUniform1i = Pointer<NativeFunction<GlUniform1iNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1i'))).asFunction<GlUniform1i>();
-  glUniform2i = Pointer<NativeFunction<GlUniform2iNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2i'))).asFunction<GlUniform2i>();
-  glUniform3i = Pointer<NativeFunction<GlUniform3iNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3i'))).asFunction<GlUniform3i>();
-  glUniform4i = Pointer<NativeFunction<GlUniform4iNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4i'))).asFunction<GlUniform4i>();
-  glUniform1fv = Pointer<NativeFunction<GlUniform1fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1fv'))).asFunction<GlUniform1fv>();
-  glUniform2fv = Pointer<NativeFunction<GlUniform2fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2fv'))).asFunction<GlUniform2fv>();
-  glUniform3fv = Pointer<NativeFunction<GlUniform3fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3fv'))).asFunction<GlUniform3fv>();
-  glUniform4fv = Pointer<NativeFunction<GlUniform4fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4fv'))).asFunction<GlUniform4fv>();
-  glUniform1iv = Pointer<NativeFunction<GlUniform1ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1iv'))).asFunction<GlUniform1iv>();
-  glUniform2iv = Pointer<NativeFunction<GlUniform2ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2iv'))).asFunction<GlUniform2iv>();
-  glUniform3iv = Pointer<NativeFunction<GlUniform3ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3iv'))).asFunction<GlUniform3iv>();
-  glUniform4iv = Pointer<NativeFunction<GlUniform4ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4iv'))).asFunction<GlUniform4iv>();
-  glUniformMatrix2fv = Pointer<NativeFunction<GlUniformMatrix2fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix2fv'))).asFunction<GlUniformMatrix2fv>();
-  glUniformMatrix3fv = Pointer<NativeFunction<GlUniformMatrix3fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix3fv'))).asFunction<GlUniformMatrix3fv>();
-  glUniformMatrix4fv = Pointer<NativeFunction<GlUniformMatrix4fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix4fv'))).asFunction<GlUniformMatrix4fv>();
-  glValidateProgram = Pointer<NativeFunction<GlValidateProgramNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glValidateProgram'))).asFunction<GlValidateProgram>();
-  glVertexAttrib1d = Pointer<NativeFunction<GlVertexAttrib1dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib1d'))).asFunction<GlVertexAttrib1d>();
-  glVertexAttrib1dv = Pointer<NativeFunction<GlVertexAttrib1dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib1dv'))).asFunction<GlVertexAttrib1dv>();
-  glVertexAttrib1f = Pointer<NativeFunction<GlVertexAttrib1fNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib1f'))).asFunction<GlVertexAttrib1f>();
-  glVertexAttrib1fv = Pointer<NativeFunction<GlVertexAttrib1fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib1fv'))).asFunction<GlVertexAttrib1fv>();
-  glVertexAttrib1s = Pointer<NativeFunction<GlVertexAttrib1sNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib1s'))).asFunction<GlVertexAttrib1s>();
-  glVertexAttrib1sv = Pointer<NativeFunction<GlVertexAttrib1svNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib1sv'))).asFunction<GlVertexAttrib1sv>();
-  glVertexAttrib2d = Pointer<NativeFunction<GlVertexAttrib2dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib2d'))).asFunction<GlVertexAttrib2d>();
-  glVertexAttrib2dv = Pointer<NativeFunction<GlVertexAttrib2dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib2dv'))).asFunction<GlVertexAttrib2dv>();
-  glVertexAttrib2f = Pointer<NativeFunction<GlVertexAttrib2fNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib2f'))).asFunction<GlVertexAttrib2f>();
-  glVertexAttrib2fv = Pointer<NativeFunction<GlVertexAttrib2fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib2fv'))).asFunction<GlVertexAttrib2fv>();
-  glVertexAttrib2s = Pointer<NativeFunction<GlVertexAttrib2sNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib2s'))).asFunction<GlVertexAttrib2s>();
-  glVertexAttrib2sv = Pointer<NativeFunction<GlVertexAttrib2svNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib2sv'))).asFunction<GlVertexAttrib2sv>();
-  glVertexAttrib3d = Pointer<NativeFunction<GlVertexAttrib3dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib3d'))).asFunction<GlVertexAttrib3d>();
-  glVertexAttrib3dv = Pointer<NativeFunction<GlVertexAttrib3dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib3dv'))).asFunction<GlVertexAttrib3dv>();
-  glVertexAttrib3f = Pointer<NativeFunction<GlVertexAttrib3fNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib3f'))).asFunction<GlVertexAttrib3f>();
-  glVertexAttrib3fv = Pointer<NativeFunction<GlVertexAttrib3fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib3fv'))).asFunction<GlVertexAttrib3fv>();
-  glVertexAttrib3s = Pointer<NativeFunction<GlVertexAttrib3sNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib3s'))).asFunction<GlVertexAttrib3s>();
-  glVertexAttrib3sv = Pointer<NativeFunction<GlVertexAttrib3svNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib3sv'))).asFunction<GlVertexAttrib3sv>();
-  glVertexAttrib4Nbv = Pointer<NativeFunction<GlVertexAttrib4NbvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4Nbv'))).asFunction<GlVertexAttrib4Nbv>();
-  glVertexAttrib4Niv = Pointer<NativeFunction<GlVertexAttrib4NivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4Niv'))).asFunction<GlVertexAttrib4Niv>();
-  glVertexAttrib4Nsv = Pointer<NativeFunction<GlVertexAttrib4NsvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4Nsv'))).asFunction<GlVertexAttrib4Nsv>();
-  glVertexAttrib4Nub = Pointer<NativeFunction<GlVertexAttrib4NubNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4Nub'))).asFunction<GlVertexAttrib4Nub>();
-  glVertexAttrib4Nubv = Pointer<NativeFunction<GlVertexAttrib4NubvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4Nubv'))).asFunction<GlVertexAttrib4Nubv>();
-  glVertexAttrib4Nuiv = Pointer<NativeFunction<GlVertexAttrib4NuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4Nuiv'))).asFunction<GlVertexAttrib4Nuiv>();
-  glVertexAttrib4Nusv = Pointer<NativeFunction<GlVertexAttrib4NusvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4Nusv'))).asFunction<GlVertexAttrib4Nusv>();
-  glVertexAttrib4bv = Pointer<NativeFunction<GlVertexAttrib4bvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4bv'))).asFunction<GlVertexAttrib4bv>();
-  glVertexAttrib4d = Pointer<NativeFunction<GlVertexAttrib4dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4d'))).asFunction<GlVertexAttrib4d>();
-  glVertexAttrib4dv = Pointer<NativeFunction<GlVertexAttrib4dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4dv'))).asFunction<GlVertexAttrib4dv>();
-  glVertexAttrib4f = Pointer<NativeFunction<GlVertexAttrib4fNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4f'))).asFunction<GlVertexAttrib4f>();
-  glVertexAttrib4fv = Pointer<NativeFunction<GlVertexAttrib4fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4fv'))).asFunction<GlVertexAttrib4fv>();
-  glVertexAttrib4iv = Pointer<NativeFunction<GlVertexAttrib4ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4iv'))).asFunction<GlVertexAttrib4iv>();
-  glVertexAttrib4s = Pointer<NativeFunction<GlVertexAttrib4sNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4s'))).asFunction<GlVertexAttrib4s>();
-  glVertexAttrib4sv = Pointer<NativeFunction<GlVertexAttrib4svNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4sv'))).asFunction<GlVertexAttrib4sv>();
-  glVertexAttrib4ubv = Pointer<NativeFunction<GlVertexAttrib4ubvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4ubv'))).asFunction<GlVertexAttrib4ubv>();
-  glVertexAttrib4uiv = Pointer<NativeFunction<GlVertexAttrib4uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4uiv'))).asFunction<GlVertexAttrib4uiv>();
-  glVertexAttrib4usv = Pointer<NativeFunction<GlVertexAttrib4usvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4usv'))).asFunction<GlVertexAttrib4usv>();
-  glVertexAttribPointer = Pointer<NativeFunction<GlVertexAttribPointerNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribPointer'))).asFunction<GlVertexAttribPointer>();
-  glUniformMatrix2x3fv = Pointer<NativeFunction<GlUniformMatrix2x3fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix2x3fv'))).asFunction<GlUniformMatrix2x3fv>();
-  glUniformMatrix3x2fv = Pointer<NativeFunction<GlUniformMatrix3x2fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix3x2fv'))).asFunction<GlUniformMatrix3x2fv>();
-  glUniformMatrix2x4fv = Pointer<NativeFunction<GlUniformMatrix2x4fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix2x4fv'))).asFunction<GlUniformMatrix2x4fv>();
-  glUniformMatrix4x2fv = Pointer<NativeFunction<GlUniformMatrix4x2fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix4x2fv'))).asFunction<GlUniformMatrix4x2fv>();
-  glUniformMatrix3x4fv = Pointer<NativeFunction<GlUniformMatrix3x4fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix3x4fv'))).asFunction<GlUniformMatrix3x4fv>();
-  glUniformMatrix4x3fv = Pointer<NativeFunction<GlUniformMatrix4x3fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix4x3fv'))).asFunction<GlUniformMatrix4x3fv>();
-  glColorMaski = Pointer<NativeFunction<GlColorMaskiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glColorMaski'))).asFunction<GlColorMaski>();
-  glGetBooleani_v = Pointer<NativeFunction<GlGetBooleani_vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetBooleani_v'))).asFunction<GlGetBooleani_v>();
-  glGetIntegeri_v = Pointer<NativeFunction<GlGetIntegeri_vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetIntegeri_v'))).asFunction<GlGetIntegeri_v>();
-  glEnablei = Pointer<NativeFunction<GlEnableiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEnablei'))).asFunction<GlEnablei>();
-  glDisablei = Pointer<NativeFunction<GlDisableiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDisablei'))).asFunction<GlDisablei>();
-  glIsEnabledi = Pointer<NativeFunction<GlIsEnablediNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsEnabledi'))).asFunction<GlIsEnabledi>();
-  glBeginTransformFeedback = Pointer<NativeFunction<GlBeginTransformFeedbackNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBeginTransformFeedback'))).asFunction<GlBeginTransformFeedback>();
-  glEndTransformFeedback = Pointer<NativeFunction<GlEndTransformFeedbackNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEndTransformFeedback'))).asFunction<GlEndTransformFeedback>();
-  glBindBufferRange = Pointer<NativeFunction<GlBindBufferRangeNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindBufferRange'))).asFunction<GlBindBufferRange>();
-  glBindBufferBase = Pointer<NativeFunction<GlBindBufferBaseNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindBufferBase'))).asFunction<GlBindBufferBase>();
-  glTransformFeedbackVaryings = Pointer<NativeFunction<GlTransformFeedbackVaryingsNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTransformFeedbackVaryings'))).asFunction<GlTransformFeedbackVaryings>();
-  glGetTransformFeedbackVarying = Pointer<NativeFunction<GlGetTransformFeedbackVaryingNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTransformFeedbackVarying'))).asFunction<GlGetTransformFeedbackVarying>();
-  glClampColor = Pointer<NativeFunction<GlClampColorNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClampColor'))).asFunction<GlClampColor>();
-  glBeginConditionalRender = Pointer<NativeFunction<GlBeginConditionalRenderNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBeginConditionalRender'))).asFunction<GlBeginConditionalRender>();
-  glEndConditionalRender = Pointer<NativeFunction<GlEndConditionalRenderNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEndConditionalRender'))).asFunction<GlEndConditionalRender>();
-  glVertexAttribIPointer = Pointer<NativeFunction<GlVertexAttribIPointerNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribIPointer'))).asFunction<GlVertexAttribIPointer>();
-  glGetVertexAttribIiv = Pointer<NativeFunction<GlGetVertexAttribIivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexAttribIiv'))).asFunction<GlGetVertexAttribIiv>();
-  glGetVertexAttribIuiv = Pointer<NativeFunction<GlGetVertexAttribIuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexAttribIuiv'))).asFunction<GlGetVertexAttribIuiv>();
-  glVertexAttribI1i = Pointer<NativeFunction<GlVertexAttribI1iNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI1i'))).asFunction<GlVertexAttribI1i>();
-  glVertexAttribI2i = Pointer<NativeFunction<GlVertexAttribI2iNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI2i'))).asFunction<GlVertexAttribI2i>();
-  glVertexAttribI3i = Pointer<NativeFunction<GlVertexAttribI3iNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI3i'))).asFunction<GlVertexAttribI3i>();
-  glVertexAttribI4i = Pointer<NativeFunction<GlVertexAttribI4iNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI4i'))).asFunction<GlVertexAttribI4i>();
-  glVertexAttribI1ui = Pointer<NativeFunction<GlVertexAttribI1uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI1ui'))).asFunction<GlVertexAttribI1ui>();
-  glVertexAttribI2ui = Pointer<NativeFunction<GlVertexAttribI2uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI2ui'))).asFunction<GlVertexAttribI2ui>();
-  glVertexAttribI3ui = Pointer<NativeFunction<GlVertexAttribI3uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI3ui'))).asFunction<GlVertexAttribI3ui>();
-  glVertexAttribI4ui = Pointer<NativeFunction<GlVertexAttribI4uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI4ui'))).asFunction<GlVertexAttribI4ui>();
-  glVertexAttribI1iv = Pointer<NativeFunction<GlVertexAttribI1ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI1iv'))).asFunction<GlVertexAttribI1iv>();
-  glVertexAttribI2iv = Pointer<NativeFunction<GlVertexAttribI2ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI2iv'))).asFunction<GlVertexAttribI2iv>();
-  glVertexAttribI3iv = Pointer<NativeFunction<GlVertexAttribI3ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI3iv'))).asFunction<GlVertexAttribI3iv>();
-  glVertexAttribI4iv = Pointer<NativeFunction<GlVertexAttribI4ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI4iv'))).asFunction<GlVertexAttribI4iv>();
-  glVertexAttribI1uiv = Pointer<NativeFunction<GlVertexAttribI1uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI1uiv'))).asFunction<GlVertexAttribI1uiv>();
-  glVertexAttribI2uiv = Pointer<NativeFunction<GlVertexAttribI2uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI2uiv'))).asFunction<GlVertexAttribI2uiv>();
-  glVertexAttribI3uiv = Pointer<NativeFunction<GlVertexAttribI3uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI3uiv'))).asFunction<GlVertexAttribI3uiv>();
-  glVertexAttribI4uiv = Pointer<NativeFunction<GlVertexAttribI4uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI4uiv'))).asFunction<GlVertexAttribI4uiv>();
-  glVertexAttribI4bv = Pointer<NativeFunction<GlVertexAttribI4bvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI4bv'))).asFunction<GlVertexAttribI4bv>();
-  glVertexAttribI4sv = Pointer<NativeFunction<GlVertexAttribI4svNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI4sv'))).asFunction<GlVertexAttribI4sv>();
-  glVertexAttribI4ubv = Pointer<NativeFunction<GlVertexAttribI4ubvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI4ubv'))).asFunction<GlVertexAttribI4ubv>();
-  glVertexAttribI4usv = Pointer<NativeFunction<GlVertexAttribI4usvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI4usv'))).asFunction<GlVertexAttribI4usv>();
-  glGetUniformuiv = Pointer<NativeFunction<GlGetUniformuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetUniformuiv'))).asFunction<GlGetUniformuiv>();
-  glBindFragDataLocation = Pointer<NativeFunction<GlBindFragDataLocationNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindFragDataLocation'))).asFunction<GlBindFragDataLocation>();
-  glGetFragDataLocation = Pointer<NativeFunction<GlGetFragDataLocationNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetFragDataLocation'))).asFunction<GlGetFragDataLocation>();
-  glUniform1ui = Pointer<NativeFunction<GlUniform1uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1ui'))).asFunction<GlUniform1ui>();
-  glUniform2ui = Pointer<NativeFunction<GlUniform2uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2ui'))).asFunction<GlUniform2ui>();
-  glUniform3ui = Pointer<NativeFunction<GlUniform3uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3ui'))).asFunction<GlUniform3ui>();
-  glUniform4ui = Pointer<NativeFunction<GlUniform4uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4ui'))).asFunction<GlUniform4ui>();
-  glUniform1uiv = Pointer<NativeFunction<GlUniform1uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1uiv'))).asFunction<GlUniform1uiv>();
-  glUniform2uiv = Pointer<NativeFunction<GlUniform2uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2uiv'))).asFunction<GlUniform2uiv>();
-  glUniform3uiv = Pointer<NativeFunction<GlUniform3uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3uiv'))).asFunction<GlUniform3uiv>();
-  glUniform4uiv = Pointer<NativeFunction<GlUniform4uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4uiv'))).asFunction<GlUniform4uiv>();
-  glTexParameterIiv = Pointer<NativeFunction<GlTexParameterIivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexParameterIiv'))).asFunction<GlTexParameterIiv>();
-  glTexParameterIuiv = Pointer<NativeFunction<GlTexParameterIuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexParameterIuiv'))).asFunction<GlTexParameterIuiv>();
-  glGetTexParameterIiv = Pointer<NativeFunction<GlGetTexParameterIivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTexParameterIiv'))).asFunction<GlGetTexParameterIiv>();
-  glGetTexParameterIuiv = Pointer<NativeFunction<GlGetTexParameterIuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTexParameterIuiv'))).asFunction<GlGetTexParameterIuiv>();
-  glClearBufferiv = Pointer<NativeFunction<GlClearBufferivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearBufferiv'))).asFunction<GlClearBufferiv>();
-  glClearBufferuiv = Pointer<NativeFunction<GlClearBufferuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearBufferuiv'))).asFunction<GlClearBufferuiv>();
-  glClearBufferfv = Pointer<NativeFunction<GlClearBufferfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearBufferfv'))).asFunction<GlClearBufferfv>();
-  glClearBufferfi = Pointer<NativeFunction<GlClearBufferfiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearBufferfi'))).asFunction<GlClearBufferfi>();
-  glGetStringi = Pointer<NativeFunction<GlGetStringiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetStringi'))).asFunction<GlGetStringi>();
-  glIsRenderbuffer = Pointer<NativeFunction<GlIsRenderbufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsRenderbuffer'))).asFunction<GlIsRenderbuffer>();
-  glBindRenderbuffer = Pointer<NativeFunction<GlBindRenderbufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindRenderbuffer'))).asFunction<GlBindRenderbuffer>();
-  glDeleteRenderbuffers = Pointer<NativeFunction<GlDeleteRenderbuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteRenderbuffers'))).asFunction<GlDeleteRenderbuffers>();
-  glGenRenderbuffers = Pointer<NativeFunction<GlGenRenderbuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenRenderbuffers'))).asFunction<GlGenRenderbuffers>();
-  glRenderbufferStorage = Pointer<NativeFunction<GlRenderbufferStorageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glRenderbufferStorage'))).asFunction<GlRenderbufferStorage>();
-  glGetRenderbufferParameteriv = Pointer<NativeFunction<GlGetRenderbufferParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetRenderbufferParameteriv'))).asFunction<GlGetRenderbufferParameteriv>();
-  glIsFramebuffer = Pointer<NativeFunction<GlIsFramebufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsFramebuffer'))).asFunction<GlIsFramebuffer>();
-  glBindFramebuffer = Pointer<NativeFunction<GlBindFramebufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindFramebuffer'))).asFunction<GlBindFramebuffer>();
-  glDeleteFramebuffers = Pointer<NativeFunction<GlDeleteFramebuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteFramebuffers'))).asFunction<GlDeleteFramebuffers>();
-  glGenFramebuffers = Pointer<NativeFunction<GlGenFramebuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenFramebuffers'))).asFunction<GlGenFramebuffers>();
-  glCheckFramebufferStatus = Pointer<NativeFunction<GlCheckFramebufferStatusNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCheckFramebufferStatus'))).asFunction<GlCheckFramebufferStatus>();
-  glFramebufferTexture1D = Pointer<NativeFunction<GlFramebufferTexture1DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferTexture1D'))).asFunction<GlFramebufferTexture1D>();
-  glFramebufferTexture2D = Pointer<NativeFunction<GlFramebufferTexture2DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferTexture2D'))).asFunction<GlFramebufferTexture2D>();
-  glFramebufferTexture3D = Pointer<NativeFunction<GlFramebufferTexture3DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferTexture3D'))).asFunction<GlFramebufferTexture3D>();
-  glFramebufferRenderbuffer = Pointer<NativeFunction<GlFramebufferRenderbufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferRenderbuffer'))).asFunction<GlFramebufferRenderbuffer>();
-  glGetFramebufferAttachmentParameteriv = Pointer<NativeFunction<GlGetFramebufferAttachmentParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetFramebufferAttachmentParameteriv'))).asFunction<GlGetFramebufferAttachmentParameteriv>();
-  glGenerateMipmap = Pointer<NativeFunction<GlGenerateMipmapNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenerateMipmap'))).asFunction<GlGenerateMipmap>();
-  glBlitFramebuffer = Pointer<NativeFunction<GlBlitFramebufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlitFramebuffer'))).asFunction<GlBlitFramebuffer>();
-  glRenderbufferStorageMultisample = Pointer<NativeFunction<GlRenderbufferStorageMultisampleNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glRenderbufferStorageMultisample'))).asFunction<GlRenderbufferStorageMultisample>();
-  glFramebufferTextureLayer = Pointer<NativeFunction<GlFramebufferTextureLayerNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferTextureLayer'))).asFunction<GlFramebufferTextureLayer>();
-  glMapBufferRange = Pointer<NativeFunction<GlMapBufferRangeNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMapBufferRange'))).asFunction<GlMapBufferRange>();
-  glFlushMappedBufferRange = Pointer<NativeFunction<GlFlushMappedBufferRangeNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFlushMappedBufferRange'))).asFunction<GlFlushMappedBufferRange>();
-  glBindVertexArray = Pointer<NativeFunction<GlBindVertexArrayNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindVertexArray'))).asFunction<GlBindVertexArray>();
-  glDeleteVertexArrays = Pointer<NativeFunction<GlDeleteVertexArraysNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteVertexArrays'))).asFunction<GlDeleteVertexArrays>();
-  glGenVertexArrays = Pointer<NativeFunction<GlGenVertexArraysNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenVertexArrays'))).asFunction<GlGenVertexArrays>();
-  glIsVertexArray = Pointer<NativeFunction<GlIsVertexArrayNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsVertexArray'))).asFunction<GlIsVertexArray>();
-  glDrawArraysInstanced = Pointer<NativeFunction<GlDrawArraysInstancedNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawArraysInstanced'))).asFunction<GlDrawArraysInstanced>();
-  glDrawElementsInstanced = Pointer<NativeFunction<GlDrawElementsInstancedNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawElementsInstanced'))).asFunction<GlDrawElementsInstanced>();
-  glTexBuffer = Pointer<NativeFunction<GlTexBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexBuffer'))).asFunction<GlTexBuffer>();
-  glPrimitiveRestartIndex = Pointer<NativeFunction<GlPrimitiveRestartIndexNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPrimitiveRestartIndex'))).asFunction<GlPrimitiveRestartIndex>();
-  glCopyBufferSubData = Pointer<NativeFunction<GlCopyBufferSubDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyBufferSubData'))).asFunction<GlCopyBufferSubData>();
-  glGetUniformIndices = Pointer<NativeFunction<GlGetUniformIndicesNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetUniformIndices'))).asFunction<GlGetUniformIndices>();
-  glGetActiveUniformsiv = Pointer<NativeFunction<GlGetActiveUniformsivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetActiveUniformsiv'))).asFunction<GlGetActiveUniformsiv>();
-  glGetActiveUniformName = Pointer<NativeFunction<GlGetActiveUniformNameNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetActiveUniformName'))).asFunction<GlGetActiveUniformName>();
-  glGetUniformBlockIndex = Pointer<NativeFunction<GlGetUniformBlockIndexNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetUniformBlockIndex'))).asFunction<GlGetUniformBlockIndex>();
-  glGetActiveUniformBlockiv = Pointer<NativeFunction<GlGetActiveUniformBlockivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetActiveUniformBlockiv'))).asFunction<GlGetActiveUniformBlockiv>();
-  glGetActiveUniformBlockName = Pointer<NativeFunction<GlGetActiveUniformBlockNameNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetActiveUniformBlockName'))).asFunction<GlGetActiveUniformBlockName>();
-  glUniformBlockBinding = Pointer<NativeFunction<GlUniformBlockBindingNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformBlockBinding'))).asFunction<GlUniformBlockBinding>();
-  glDrawElementsBaseVertex = Pointer<NativeFunction<GlDrawElementsBaseVertexNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawElementsBaseVertex'))).asFunction<GlDrawElementsBaseVertex>();
-  glDrawRangeElementsBaseVertex = Pointer<NativeFunction<GlDrawRangeElementsBaseVertexNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawRangeElementsBaseVertex'))).asFunction<GlDrawRangeElementsBaseVertex>();
-  glDrawElementsInstancedBaseVertex = Pointer<NativeFunction<GlDrawElementsInstancedBaseVertexNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawElementsInstancedBaseVertex'))).asFunction<GlDrawElementsInstancedBaseVertex>();
-  glMultiDrawElementsBaseVertex = Pointer<NativeFunction<GlMultiDrawElementsBaseVertexNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawElementsBaseVertex'))).asFunction<GlMultiDrawElementsBaseVertex>();
-  glProvokingVertex = Pointer<NativeFunction<GlProvokingVertexNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProvokingVertex'))).asFunction<GlProvokingVertex>();
-  glFenceSync = Pointer<NativeFunction<GlFenceSyncNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFenceSync'))).asFunction<GlFenceSync>();
-  glIsSync = Pointer<NativeFunction<GlIsSyncNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsSync'))).asFunction<GlIsSync>();
-  glDeleteSync = Pointer<NativeFunction<GlDeleteSyncNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteSync'))).asFunction<GlDeleteSync>();
-  glClientWaitSync = Pointer<NativeFunction<GlClientWaitSyncNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClientWaitSync'))).asFunction<GlClientWaitSync>();
-  glWaitSync = Pointer<NativeFunction<GlWaitSyncNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glWaitSync'))).asFunction<GlWaitSync>();
-  glGetInteger64v = Pointer<NativeFunction<GlGetInteger64vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetInteger64v'))).asFunction<GlGetInteger64v>();
-  glGetSynciv = Pointer<NativeFunction<GlGetSyncivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetSynciv'))).asFunction<GlGetSynciv>();
-  glGetInteger64i_v = Pointer<NativeFunction<GlGetInteger64i_vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetInteger64i_v'))).asFunction<GlGetInteger64i_v>();
-  glGetBufferParameteri64v = Pointer<NativeFunction<GlGetBufferParameteri64vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetBufferParameteri64v'))).asFunction<GlGetBufferParameteri64v>();
-  glFramebufferTexture = Pointer<NativeFunction<GlFramebufferTextureNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferTexture'))).asFunction<GlFramebufferTexture>();
-  glTexImage2DMultisample = Pointer<NativeFunction<GlTexImage2DMultisampleNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexImage2DMultisample'))).asFunction<GlTexImage2DMultisample>();
-  glTexImage3DMultisample = Pointer<NativeFunction<GlTexImage3DMultisampleNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexImage3DMultisample'))).asFunction<GlTexImage3DMultisample>();
-  glGetMultisamplefv = Pointer<NativeFunction<GlGetMultisamplefvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultisamplefv'))).asFunction<GlGetMultisamplefv>();
-  glSampleMaski = Pointer<NativeFunction<GlSampleMaskiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSampleMaski'))).asFunction<GlSampleMaski>();
-  glBindFragDataLocationIndexed = Pointer<NativeFunction<GlBindFragDataLocationIndexedNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindFragDataLocationIndexed'))).asFunction<GlBindFragDataLocationIndexed>();
-  glGetFragDataIndex = Pointer<NativeFunction<GlGetFragDataIndexNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetFragDataIndex'))).asFunction<GlGetFragDataIndex>();
-  glGenSamplers = Pointer<NativeFunction<GlGenSamplersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenSamplers'))).asFunction<GlGenSamplers>();
-  glDeleteSamplers = Pointer<NativeFunction<GlDeleteSamplersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteSamplers'))).asFunction<GlDeleteSamplers>();
-  glIsSampler = Pointer<NativeFunction<GlIsSamplerNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsSampler'))).asFunction<GlIsSampler>();
-  glBindSampler = Pointer<NativeFunction<GlBindSamplerNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindSampler'))).asFunction<GlBindSampler>();
-  glSamplerParameteri = Pointer<NativeFunction<GlSamplerParameteriNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSamplerParameteri'))).asFunction<GlSamplerParameteri>();
-  glSamplerParameteriv = Pointer<NativeFunction<GlSamplerParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSamplerParameteriv'))).asFunction<GlSamplerParameteriv>();
-  glSamplerParameterf = Pointer<NativeFunction<GlSamplerParameterfNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSamplerParameterf'))).asFunction<GlSamplerParameterf>();
-  glSamplerParameterfv = Pointer<NativeFunction<GlSamplerParameterfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSamplerParameterfv'))).asFunction<GlSamplerParameterfv>();
-  glSamplerParameterIiv = Pointer<NativeFunction<GlSamplerParameterIivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSamplerParameterIiv'))).asFunction<GlSamplerParameterIiv>();
-  glSamplerParameterIuiv = Pointer<NativeFunction<GlSamplerParameterIuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSamplerParameterIuiv'))).asFunction<GlSamplerParameterIuiv>();
-  glGetSamplerParameteriv = Pointer<NativeFunction<GlGetSamplerParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetSamplerParameteriv'))).asFunction<GlGetSamplerParameteriv>();
-  glGetSamplerParameterIiv = Pointer<NativeFunction<GlGetSamplerParameterIivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetSamplerParameterIiv'))).asFunction<GlGetSamplerParameterIiv>();
-  glGetSamplerParameterfv = Pointer<NativeFunction<GlGetSamplerParameterfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetSamplerParameterfv'))).asFunction<GlGetSamplerParameterfv>();
-  glGetSamplerParameterIuiv = Pointer<NativeFunction<GlGetSamplerParameterIuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetSamplerParameterIuiv'))).asFunction<GlGetSamplerParameterIuiv>();
-  glQueryCounter = Pointer<NativeFunction<GlQueryCounterNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glQueryCounter'))).asFunction<GlQueryCounter>();
-  glGetQueryObjecti64v = Pointer<NativeFunction<GlGetQueryObjecti64vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetQueryObjecti64v'))).asFunction<GlGetQueryObjecti64v>();
-  glGetQueryObjectui64v = Pointer<NativeFunction<GlGetQueryObjectui64vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetQueryObjectui64v'))).asFunction<GlGetQueryObjectui64v>();
-  glVertexAttribDivisor = Pointer<NativeFunction<GlVertexAttribDivisorNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribDivisor'))).asFunction<GlVertexAttribDivisor>();
-  glVertexAttribP1ui = Pointer<NativeFunction<GlVertexAttribP1uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribP1ui'))).asFunction<GlVertexAttribP1ui>();
-  glVertexAttribP1uiv = Pointer<NativeFunction<GlVertexAttribP1uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribP1uiv'))).asFunction<GlVertexAttribP1uiv>();
-  glVertexAttribP2ui = Pointer<NativeFunction<GlVertexAttribP2uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribP2ui'))).asFunction<GlVertexAttribP2ui>();
-  glVertexAttribP2uiv = Pointer<NativeFunction<GlVertexAttribP2uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribP2uiv'))).asFunction<GlVertexAttribP2uiv>();
-  glVertexAttribP3ui = Pointer<NativeFunction<GlVertexAttribP3uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribP3ui'))).asFunction<GlVertexAttribP3ui>();
-  glVertexAttribP3uiv = Pointer<NativeFunction<GlVertexAttribP3uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribP3uiv'))).asFunction<GlVertexAttribP3uiv>();
-  glVertexAttribP4ui = Pointer<NativeFunction<GlVertexAttribP4uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribP4ui'))).asFunction<GlVertexAttribP4ui>();
-  glVertexAttribP4uiv = Pointer<NativeFunction<GlVertexAttribP4uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribP4uiv'))).asFunction<GlVertexAttribP4uiv>();
-  glMinSampleShading = Pointer<NativeFunction<GlMinSampleShadingNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMinSampleShading'))).asFunction<GlMinSampleShading>();
-  glBlendEquationi = Pointer<NativeFunction<GlBlendEquationiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendEquationi'))).asFunction<GlBlendEquationi>();
-  glBlendEquationSeparatei = Pointer<NativeFunction<GlBlendEquationSeparateiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendEquationSeparatei'))).asFunction<GlBlendEquationSeparatei>();
-  glBlendFunci = Pointer<NativeFunction<GlBlendFunciNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendFunci'))).asFunction<GlBlendFunci>();
-  glBlendFuncSeparatei = Pointer<NativeFunction<GlBlendFuncSeparateiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendFuncSeparatei'))).asFunction<GlBlendFuncSeparatei>();
-  glDrawArraysIndirect = Pointer<NativeFunction<GlDrawArraysIndirectNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawArraysIndirect'))).asFunction<GlDrawArraysIndirect>();
-  glDrawElementsIndirect = Pointer<NativeFunction<GlDrawElementsIndirectNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawElementsIndirect'))).asFunction<GlDrawElementsIndirect>();
-  glUniform1d = Pointer<NativeFunction<GlUniform1dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1d'))).asFunction<GlUniform1d>();
-  glUniform2d = Pointer<NativeFunction<GlUniform2dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2d'))).asFunction<GlUniform2d>();
-  glUniform3d = Pointer<NativeFunction<GlUniform3dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3d'))).asFunction<GlUniform3d>();
-  glUniform4d = Pointer<NativeFunction<GlUniform4dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4d'))).asFunction<GlUniform4d>();
-  glUniform1dv = Pointer<NativeFunction<GlUniform1dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1dv'))).asFunction<GlUniform1dv>();
-  glUniform2dv = Pointer<NativeFunction<GlUniform2dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2dv'))).asFunction<GlUniform2dv>();
-  glUniform3dv = Pointer<NativeFunction<GlUniform3dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3dv'))).asFunction<GlUniform3dv>();
-  glUniform4dv = Pointer<NativeFunction<GlUniform4dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4dv'))).asFunction<GlUniform4dv>();
-  glUniformMatrix2dv = Pointer<NativeFunction<GlUniformMatrix2dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix2dv'))).asFunction<GlUniformMatrix2dv>();
-  glUniformMatrix3dv = Pointer<NativeFunction<GlUniformMatrix3dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix3dv'))).asFunction<GlUniformMatrix3dv>();
-  glUniformMatrix4dv = Pointer<NativeFunction<GlUniformMatrix4dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix4dv'))).asFunction<GlUniformMatrix4dv>();
-  glUniformMatrix2x3dv = Pointer<NativeFunction<GlUniformMatrix2x3dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix2x3dv'))).asFunction<GlUniformMatrix2x3dv>();
-  glUniformMatrix2x4dv = Pointer<NativeFunction<GlUniformMatrix2x4dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix2x4dv'))).asFunction<GlUniformMatrix2x4dv>();
-  glUniformMatrix3x2dv = Pointer<NativeFunction<GlUniformMatrix3x2dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix3x2dv'))).asFunction<GlUniformMatrix3x2dv>();
-  glUniformMatrix3x4dv = Pointer<NativeFunction<GlUniformMatrix3x4dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix3x4dv'))).asFunction<GlUniformMatrix3x4dv>();
-  glUniformMatrix4x2dv = Pointer<NativeFunction<GlUniformMatrix4x2dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix4x2dv'))).asFunction<GlUniformMatrix4x2dv>();
-  glUniformMatrix4x3dv = Pointer<NativeFunction<GlUniformMatrix4x3dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix4x3dv'))).asFunction<GlUniformMatrix4x3dv>();
-  glGetUniformdv = Pointer<NativeFunction<GlGetUniformdvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetUniformdv'))).asFunction<GlGetUniformdv>();
-  glGetSubroutineUniformLocation = Pointer<NativeFunction<GlGetSubroutineUniformLocationNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetSubroutineUniformLocation'))).asFunction<GlGetSubroutineUniformLocation>();
-  glGetSubroutineIndex = Pointer<NativeFunction<GlGetSubroutineIndexNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetSubroutineIndex'))).asFunction<GlGetSubroutineIndex>();
-  glGetActiveSubroutineUniformiv = Pointer<NativeFunction<GlGetActiveSubroutineUniformivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetActiveSubroutineUniformiv'))).asFunction<GlGetActiveSubroutineUniformiv>();
-  glGetActiveSubroutineUniformName = Pointer<NativeFunction<GlGetActiveSubroutineUniformNameNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetActiveSubroutineUniformName'))).asFunction<GlGetActiveSubroutineUniformName>();
-  glGetActiveSubroutineName = Pointer<NativeFunction<GlGetActiveSubroutineNameNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetActiveSubroutineName'))).asFunction<GlGetActiveSubroutineName>();
-  glUniformSubroutinesuiv = Pointer<NativeFunction<GlUniformSubroutinesuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformSubroutinesuiv'))).asFunction<GlUniformSubroutinesuiv>();
-  glGetUniformSubroutineuiv = Pointer<NativeFunction<GlGetUniformSubroutineuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetUniformSubroutineuiv'))).asFunction<GlGetUniformSubroutineuiv>();
-  glGetProgramStageiv = Pointer<NativeFunction<GlGetProgramStageivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramStageiv'))).asFunction<GlGetProgramStageiv>();
-  glPatchParameteri = Pointer<NativeFunction<GlPatchParameteriNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPatchParameteri'))).asFunction<GlPatchParameteri>();
-  glPatchParameterfv = Pointer<NativeFunction<GlPatchParameterfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPatchParameterfv'))).asFunction<GlPatchParameterfv>();
-  glBindTransformFeedback = Pointer<NativeFunction<GlBindTransformFeedbackNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindTransformFeedback'))).asFunction<GlBindTransformFeedback>();
-  glDeleteTransformFeedbacks = Pointer<NativeFunction<GlDeleteTransformFeedbacksNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteTransformFeedbacks'))).asFunction<GlDeleteTransformFeedbacks>();
-  glGenTransformFeedbacks = Pointer<NativeFunction<GlGenTransformFeedbacksNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenTransformFeedbacks'))).asFunction<GlGenTransformFeedbacks>();
-  glIsTransformFeedback = Pointer<NativeFunction<GlIsTransformFeedbackNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsTransformFeedback'))).asFunction<GlIsTransformFeedback>();
-  glPauseTransformFeedback = Pointer<NativeFunction<GlPauseTransformFeedbackNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPauseTransformFeedback'))).asFunction<GlPauseTransformFeedback>();
-  glResumeTransformFeedback = Pointer<NativeFunction<GlResumeTransformFeedbackNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glResumeTransformFeedback'))).asFunction<GlResumeTransformFeedback>();
-  glDrawTransformFeedback = Pointer<NativeFunction<GlDrawTransformFeedbackNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawTransformFeedback'))).asFunction<GlDrawTransformFeedback>();
-  glDrawTransformFeedbackStream = Pointer<NativeFunction<GlDrawTransformFeedbackStreamNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawTransformFeedbackStream'))).asFunction<GlDrawTransformFeedbackStream>();
-  glBeginQueryIndexed = Pointer<NativeFunction<GlBeginQueryIndexedNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBeginQueryIndexed'))).asFunction<GlBeginQueryIndexed>();
-  glEndQueryIndexed = Pointer<NativeFunction<GlEndQueryIndexedNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEndQueryIndexed'))).asFunction<GlEndQueryIndexed>();
-  glGetQueryIndexediv = Pointer<NativeFunction<GlGetQueryIndexedivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetQueryIndexediv'))).asFunction<GlGetQueryIndexediv>();
-  glReleaseShaderCompiler = Pointer<NativeFunction<GlReleaseShaderCompilerNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glReleaseShaderCompiler'))).asFunction<GlReleaseShaderCompiler>();
-  glShaderBinary = Pointer<NativeFunction<GlShaderBinaryNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glShaderBinary'))).asFunction<GlShaderBinary>();
-  glGetShaderPrecisionFormat = Pointer<NativeFunction<GlGetShaderPrecisionFormatNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetShaderPrecisionFormat'))).asFunction<GlGetShaderPrecisionFormat>();
-  glDepthRangef = Pointer<NativeFunction<GlDepthRangefNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDepthRangef'))).asFunction<GlDepthRangef>();
-  glClearDepthf = Pointer<NativeFunction<GlClearDepthfNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearDepthf'))).asFunction<GlClearDepthf>();
-  glGetProgramBinary = Pointer<NativeFunction<GlGetProgramBinaryNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramBinary'))).asFunction<GlGetProgramBinary>();
-  glProgramBinary = Pointer<NativeFunction<GlProgramBinaryNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramBinary'))).asFunction<GlProgramBinary>();
-  glProgramParameteri = Pointer<NativeFunction<GlProgramParameteriNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramParameteri'))).asFunction<GlProgramParameteri>();
-  glUseProgramStages = Pointer<NativeFunction<GlUseProgramStagesNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUseProgramStages'))).asFunction<GlUseProgramStages>();
-  glActiveShaderProgram = Pointer<NativeFunction<GlActiveShaderProgramNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glActiveShaderProgram'))).asFunction<GlActiveShaderProgram>();
-  glCreateShaderProgramv = Pointer<NativeFunction<GlCreateShaderProgramvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateShaderProgramv'))).asFunction<GlCreateShaderProgramv>();
-  glBindProgramPipeline = Pointer<NativeFunction<GlBindProgramPipelineNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindProgramPipeline'))).asFunction<GlBindProgramPipeline>();
-  glDeleteProgramPipelines = Pointer<NativeFunction<GlDeleteProgramPipelinesNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteProgramPipelines'))).asFunction<GlDeleteProgramPipelines>();
-  glGenProgramPipelines = Pointer<NativeFunction<GlGenProgramPipelinesNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenProgramPipelines'))).asFunction<GlGenProgramPipelines>();
-  glIsProgramPipeline = Pointer<NativeFunction<GlIsProgramPipelineNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsProgramPipeline'))).asFunction<GlIsProgramPipeline>();
-  glGetProgramPipelineiv = Pointer<NativeFunction<GlGetProgramPipelineivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramPipelineiv'))).asFunction<GlGetProgramPipelineiv>();
-  glProgramUniform1i = Pointer<NativeFunction<GlProgramUniform1iNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1i'))).asFunction<GlProgramUniform1i>();
-  glProgramUniform1iv = Pointer<NativeFunction<GlProgramUniform1ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1iv'))).asFunction<GlProgramUniform1iv>();
-  glProgramUniform1f = Pointer<NativeFunction<GlProgramUniform1fNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1f'))).asFunction<GlProgramUniform1f>();
-  glProgramUniform1fv = Pointer<NativeFunction<GlProgramUniform1fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1fv'))).asFunction<GlProgramUniform1fv>();
-  glProgramUniform1d = Pointer<NativeFunction<GlProgramUniform1dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1d'))).asFunction<GlProgramUniform1d>();
-  glProgramUniform1dv = Pointer<NativeFunction<GlProgramUniform1dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1dv'))).asFunction<GlProgramUniform1dv>();
-  glProgramUniform1ui = Pointer<NativeFunction<GlProgramUniform1uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1ui'))).asFunction<GlProgramUniform1ui>();
-  glProgramUniform1uiv = Pointer<NativeFunction<GlProgramUniform1uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1uiv'))).asFunction<GlProgramUniform1uiv>();
-  glProgramUniform2i = Pointer<NativeFunction<GlProgramUniform2iNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2i'))).asFunction<GlProgramUniform2i>();
-  glProgramUniform2iv = Pointer<NativeFunction<GlProgramUniform2ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2iv'))).asFunction<GlProgramUniform2iv>();
-  glProgramUniform2f = Pointer<NativeFunction<GlProgramUniform2fNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2f'))).asFunction<GlProgramUniform2f>();
-  glProgramUniform2fv = Pointer<NativeFunction<GlProgramUniform2fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2fv'))).asFunction<GlProgramUniform2fv>();
-  glProgramUniform2d = Pointer<NativeFunction<GlProgramUniform2dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2d'))).asFunction<GlProgramUniform2d>();
-  glProgramUniform2dv = Pointer<NativeFunction<GlProgramUniform2dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2dv'))).asFunction<GlProgramUniform2dv>();
-  glProgramUniform2ui = Pointer<NativeFunction<GlProgramUniform2uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2ui'))).asFunction<GlProgramUniform2ui>();
-  glProgramUniform2uiv = Pointer<NativeFunction<GlProgramUniform2uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2uiv'))).asFunction<GlProgramUniform2uiv>();
-  glProgramUniform3i = Pointer<NativeFunction<GlProgramUniform3iNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3i'))).asFunction<GlProgramUniform3i>();
-  glProgramUniform3iv = Pointer<NativeFunction<GlProgramUniform3ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3iv'))).asFunction<GlProgramUniform3iv>();
-  glProgramUniform3f = Pointer<NativeFunction<GlProgramUniform3fNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3f'))).asFunction<GlProgramUniform3f>();
-  glProgramUniform3fv = Pointer<NativeFunction<GlProgramUniform3fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3fv'))).asFunction<GlProgramUniform3fv>();
-  glProgramUniform3d = Pointer<NativeFunction<GlProgramUniform3dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3d'))).asFunction<GlProgramUniform3d>();
-  glProgramUniform3dv = Pointer<NativeFunction<GlProgramUniform3dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3dv'))).asFunction<GlProgramUniform3dv>();
-  glProgramUniform3ui = Pointer<NativeFunction<GlProgramUniform3uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3ui'))).asFunction<GlProgramUniform3ui>();
-  glProgramUniform3uiv = Pointer<NativeFunction<GlProgramUniform3uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3uiv'))).asFunction<GlProgramUniform3uiv>();
-  glProgramUniform4i = Pointer<NativeFunction<GlProgramUniform4iNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4i'))).asFunction<GlProgramUniform4i>();
-  glProgramUniform4iv = Pointer<NativeFunction<GlProgramUniform4ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4iv'))).asFunction<GlProgramUniform4iv>();
-  glProgramUniform4f = Pointer<NativeFunction<GlProgramUniform4fNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4f'))).asFunction<GlProgramUniform4f>();
-  glProgramUniform4fv = Pointer<NativeFunction<GlProgramUniform4fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4fv'))).asFunction<GlProgramUniform4fv>();
-  glProgramUniform4d = Pointer<NativeFunction<GlProgramUniform4dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4d'))).asFunction<GlProgramUniform4d>();
-  glProgramUniform4dv = Pointer<NativeFunction<GlProgramUniform4dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4dv'))).asFunction<GlProgramUniform4dv>();
-  glProgramUniform4ui = Pointer<NativeFunction<GlProgramUniform4uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4ui'))).asFunction<GlProgramUniform4ui>();
-  glProgramUniform4uiv = Pointer<NativeFunction<GlProgramUniform4uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4uiv'))).asFunction<GlProgramUniform4uiv>();
-  glProgramUniformMatrix2fv = Pointer<NativeFunction<GlProgramUniformMatrix2fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix2fv'))).asFunction<GlProgramUniformMatrix2fv>();
-  glProgramUniformMatrix3fv = Pointer<NativeFunction<GlProgramUniformMatrix3fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix3fv'))).asFunction<GlProgramUniformMatrix3fv>();
-  glProgramUniformMatrix4fv = Pointer<NativeFunction<GlProgramUniformMatrix4fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix4fv'))).asFunction<GlProgramUniformMatrix4fv>();
-  glProgramUniformMatrix2dv = Pointer<NativeFunction<GlProgramUniformMatrix2dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix2dv'))).asFunction<GlProgramUniformMatrix2dv>();
-  glProgramUniformMatrix3dv = Pointer<NativeFunction<GlProgramUniformMatrix3dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix3dv'))).asFunction<GlProgramUniformMatrix3dv>();
-  glProgramUniformMatrix4dv = Pointer<NativeFunction<GlProgramUniformMatrix4dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix4dv'))).asFunction<GlProgramUniformMatrix4dv>();
-  glProgramUniformMatrix2x3fv = Pointer<NativeFunction<GlProgramUniformMatrix2x3fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix2x3fv'))).asFunction<GlProgramUniformMatrix2x3fv>();
-  glProgramUniformMatrix3x2fv = Pointer<NativeFunction<GlProgramUniformMatrix3x2fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix3x2fv'))).asFunction<GlProgramUniformMatrix3x2fv>();
-  glProgramUniformMatrix2x4fv = Pointer<NativeFunction<GlProgramUniformMatrix2x4fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix2x4fv'))).asFunction<GlProgramUniformMatrix2x4fv>();
-  glProgramUniformMatrix4x2fv = Pointer<NativeFunction<GlProgramUniformMatrix4x2fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix4x2fv'))).asFunction<GlProgramUniformMatrix4x2fv>();
-  glProgramUniformMatrix3x4fv = Pointer<NativeFunction<GlProgramUniformMatrix3x4fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix3x4fv'))).asFunction<GlProgramUniformMatrix3x4fv>();
-  glProgramUniformMatrix4x3fv = Pointer<NativeFunction<GlProgramUniformMatrix4x3fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix4x3fv'))).asFunction<GlProgramUniformMatrix4x3fv>();
-  glProgramUniformMatrix2x3dv = Pointer<NativeFunction<GlProgramUniformMatrix2x3dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix2x3dv'))).asFunction<GlProgramUniformMatrix2x3dv>();
-  glProgramUniformMatrix3x2dv = Pointer<NativeFunction<GlProgramUniformMatrix3x2dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix3x2dv'))).asFunction<GlProgramUniformMatrix3x2dv>();
-  glProgramUniformMatrix2x4dv = Pointer<NativeFunction<GlProgramUniformMatrix2x4dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix2x4dv'))).asFunction<GlProgramUniformMatrix2x4dv>();
-  glProgramUniformMatrix4x2dv = Pointer<NativeFunction<GlProgramUniformMatrix4x2dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix4x2dv'))).asFunction<GlProgramUniformMatrix4x2dv>();
-  glProgramUniformMatrix3x4dv = Pointer<NativeFunction<GlProgramUniformMatrix3x4dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix3x4dv'))).asFunction<GlProgramUniformMatrix3x4dv>();
-  glProgramUniformMatrix4x3dv = Pointer<NativeFunction<GlProgramUniformMatrix4x3dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix4x3dv'))).asFunction<GlProgramUniformMatrix4x3dv>();
-  glValidateProgramPipeline = Pointer<NativeFunction<GlValidateProgramPipelineNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glValidateProgramPipeline'))).asFunction<GlValidateProgramPipeline>();
-  glGetProgramPipelineInfoLog = Pointer<NativeFunction<GlGetProgramPipelineInfoLogNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramPipelineInfoLog'))).asFunction<GlGetProgramPipelineInfoLog>();
-  glVertexAttribL1d = Pointer<NativeFunction<GlVertexAttribL1dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL1d'))).asFunction<GlVertexAttribL1d>();
-  glVertexAttribL2d = Pointer<NativeFunction<GlVertexAttribL2dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL2d'))).asFunction<GlVertexAttribL2d>();
-  glVertexAttribL3d = Pointer<NativeFunction<GlVertexAttribL3dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL3d'))).asFunction<GlVertexAttribL3d>();
-  glVertexAttribL4d = Pointer<NativeFunction<GlVertexAttribL4dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL4d'))).asFunction<GlVertexAttribL4d>();
-  glVertexAttribL1dv = Pointer<NativeFunction<GlVertexAttribL1dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL1dv'))).asFunction<GlVertexAttribL1dv>();
-  glVertexAttribL2dv = Pointer<NativeFunction<GlVertexAttribL2dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL2dv'))).asFunction<GlVertexAttribL2dv>();
-  glVertexAttribL3dv = Pointer<NativeFunction<GlVertexAttribL3dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL3dv'))).asFunction<GlVertexAttribL3dv>();
-  glVertexAttribL4dv = Pointer<NativeFunction<GlVertexAttribL4dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL4dv'))).asFunction<GlVertexAttribL4dv>();
-  glVertexAttribLPointer = Pointer<NativeFunction<GlVertexAttribLPointerNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribLPointer'))).asFunction<GlVertexAttribLPointer>();
-  glGetVertexAttribLdv = Pointer<NativeFunction<GlGetVertexAttribLdvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexAttribLdv'))).asFunction<GlGetVertexAttribLdv>();
-  glViewportArrayv = Pointer<NativeFunction<GlViewportArrayvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glViewportArrayv'))).asFunction<GlViewportArrayv>();
-  glViewportIndexedf = Pointer<NativeFunction<GlViewportIndexedfNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glViewportIndexedf'))).asFunction<GlViewportIndexedf>();
-  glViewportIndexedfv = Pointer<NativeFunction<GlViewportIndexedfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glViewportIndexedfv'))).asFunction<GlViewportIndexedfv>();
-  glScissorArrayv = Pointer<NativeFunction<GlScissorArrayvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glScissorArrayv'))).asFunction<GlScissorArrayv>();
-  glScissorIndexed = Pointer<NativeFunction<GlScissorIndexedNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glScissorIndexed'))).asFunction<GlScissorIndexed>();
-  glScissorIndexedv = Pointer<NativeFunction<GlScissorIndexedvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glScissorIndexedv'))).asFunction<GlScissorIndexedv>();
-  glDepthRangeArrayv = Pointer<NativeFunction<GlDepthRangeArrayvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDepthRangeArrayv'))).asFunction<GlDepthRangeArrayv>();
-  glDepthRangeIndexed = Pointer<NativeFunction<GlDepthRangeIndexedNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDepthRangeIndexed'))).asFunction<GlDepthRangeIndexed>();
-  glGetFloati_v = Pointer<NativeFunction<GlGetFloati_vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetFloati_v'))).asFunction<GlGetFloati_v>();
-  glGetDoublei_v = Pointer<NativeFunction<GlGetDoublei_vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetDoublei_v'))).asFunction<GlGetDoublei_v>();
-  glDrawArraysInstancedBaseInstance = Pointer<NativeFunction<GlDrawArraysInstancedBaseInstanceNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawArraysInstancedBaseInstance'))).asFunction<GlDrawArraysInstancedBaseInstance>();
-  glDrawElementsInstancedBaseInstance = Pointer<NativeFunction<GlDrawElementsInstancedBaseInstanceNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawElementsInstancedBaseInstance'))).asFunction<GlDrawElementsInstancedBaseInstance>();
-  glDrawElementsInstancedBaseVertexBaseInstance = Pointer<NativeFunction<GlDrawElementsInstancedBaseVertexBaseInstanceNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawElementsInstancedBaseVertexBaseInstance'))).asFunction<GlDrawElementsInstancedBaseVertexBaseInstance>();
-  glGetInternalformativ = Pointer<NativeFunction<GlGetInternalformativNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetInternalformativ'))).asFunction<GlGetInternalformativ>();
-  glGetActiveAtomicCounterBufferiv = Pointer<NativeFunction<GlGetActiveAtomicCounterBufferivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetActiveAtomicCounterBufferiv'))).asFunction<GlGetActiveAtomicCounterBufferiv>();
-  glBindImageTexture = Pointer<NativeFunction<GlBindImageTextureNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindImageTexture'))).asFunction<GlBindImageTexture>();
-  glMemoryBarrier = Pointer<NativeFunction<GlMemoryBarrierNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMemoryBarrier'))).asFunction<GlMemoryBarrier>();
-  glTexStorage1D = Pointer<NativeFunction<GlTexStorage1DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexStorage1D'))).asFunction<GlTexStorage1D>();
-  glTexStorage2D = Pointer<NativeFunction<GlTexStorage2DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexStorage2D'))).asFunction<GlTexStorage2D>();
-  glTexStorage3D = Pointer<NativeFunction<GlTexStorage3DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexStorage3D'))).asFunction<GlTexStorage3D>();
-  glDrawTransformFeedbackInstanced = Pointer<NativeFunction<GlDrawTransformFeedbackInstancedNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawTransformFeedbackInstanced'))).asFunction<GlDrawTransformFeedbackInstanced>();
-  glDrawTransformFeedbackStreamInstanced = Pointer<NativeFunction<GlDrawTransformFeedbackStreamInstancedNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawTransformFeedbackStreamInstanced'))).asFunction<GlDrawTransformFeedbackStreamInstanced>();
-  glClearBufferData = Pointer<NativeFunction<GlClearBufferDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearBufferData'))).asFunction<GlClearBufferData>();
-  glClearBufferSubData = Pointer<NativeFunction<GlClearBufferSubDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearBufferSubData'))).asFunction<GlClearBufferSubData>();
-  glDispatchCompute = Pointer<NativeFunction<GlDispatchComputeNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDispatchCompute'))).asFunction<GlDispatchCompute>();
-  glDispatchComputeIndirect = Pointer<NativeFunction<GlDispatchComputeIndirectNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDispatchComputeIndirect'))).asFunction<GlDispatchComputeIndirect>();
-  glCopyImageSubData = Pointer<NativeFunction<GlCopyImageSubDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyImageSubData'))).asFunction<GlCopyImageSubData>();
-  glFramebufferParameteri = Pointer<NativeFunction<GlFramebufferParameteriNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferParameteri'))).asFunction<GlFramebufferParameteri>();
-  glGetFramebufferParameteriv = Pointer<NativeFunction<GlGetFramebufferParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetFramebufferParameteriv'))).asFunction<GlGetFramebufferParameteriv>();
-  glGetInternalformati64v = Pointer<NativeFunction<GlGetInternalformati64vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetInternalformati64v'))).asFunction<GlGetInternalformati64v>();
-  glInvalidateTexSubImage = Pointer<NativeFunction<GlInvalidateTexSubImageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glInvalidateTexSubImage'))).asFunction<GlInvalidateTexSubImage>();
-  glInvalidateTexImage = Pointer<NativeFunction<GlInvalidateTexImageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glInvalidateTexImage'))).asFunction<GlInvalidateTexImage>();
-  glInvalidateBufferSubData = Pointer<NativeFunction<GlInvalidateBufferSubDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glInvalidateBufferSubData'))).asFunction<GlInvalidateBufferSubData>();
-  glInvalidateBufferData = Pointer<NativeFunction<GlInvalidateBufferDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glInvalidateBufferData'))).asFunction<GlInvalidateBufferData>();
-  glInvalidateFramebuffer = Pointer<NativeFunction<GlInvalidateFramebufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glInvalidateFramebuffer'))).asFunction<GlInvalidateFramebuffer>();
-  glInvalidateSubFramebuffer = Pointer<NativeFunction<GlInvalidateSubFramebufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glInvalidateSubFramebuffer'))).asFunction<GlInvalidateSubFramebuffer>();
-  glMultiDrawArraysIndirect = Pointer<NativeFunction<GlMultiDrawArraysIndirectNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawArraysIndirect'))).asFunction<GlMultiDrawArraysIndirect>();
-  glMultiDrawElementsIndirect = Pointer<NativeFunction<GlMultiDrawElementsIndirectNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawElementsIndirect'))).asFunction<GlMultiDrawElementsIndirect>();
-  glGetProgramInterfaceiv = Pointer<NativeFunction<GlGetProgramInterfaceivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramInterfaceiv'))).asFunction<GlGetProgramInterfaceiv>();
-  glGetProgramResourceIndex = Pointer<NativeFunction<GlGetProgramResourceIndexNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramResourceIndex'))).asFunction<GlGetProgramResourceIndex>();
-  glGetProgramResourceName = Pointer<NativeFunction<GlGetProgramResourceNameNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramResourceName'))).asFunction<GlGetProgramResourceName>();
-  glGetProgramResourceiv = Pointer<NativeFunction<GlGetProgramResourceivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramResourceiv'))).asFunction<GlGetProgramResourceiv>();
-  glGetProgramResourceLocation = Pointer<NativeFunction<GlGetProgramResourceLocationNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramResourceLocation'))).asFunction<GlGetProgramResourceLocation>();
-  glGetProgramResourceLocationIndex = Pointer<NativeFunction<GlGetProgramResourceLocationIndexNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramResourceLocationIndex'))).asFunction<GlGetProgramResourceLocationIndex>();
-  glShaderStorageBlockBinding = Pointer<NativeFunction<GlShaderStorageBlockBindingNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glShaderStorageBlockBinding'))).asFunction<GlShaderStorageBlockBinding>();
-  glTexBufferRange = Pointer<NativeFunction<GlTexBufferRangeNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexBufferRange'))).asFunction<GlTexBufferRange>();
-  glTexStorage2DMultisample = Pointer<NativeFunction<GlTexStorage2DMultisampleNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexStorage2DMultisample'))).asFunction<GlTexStorage2DMultisample>();
-  glTexStorage3DMultisample = Pointer<NativeFunction<GlTexStorage3DMultisampleNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexStorage3DMultisample'))).asFunction<GlTexStorage3DMultisample>();
-  glTextureView = Pointer<NativeFunction<GlTextureViewNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureView'))).asFunction<GlTextureView>();
-  glBindVertexBuffer = Pointer<NativeFunction<GlBindVertexBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindVertexBuffer'))).asFunction<GlBindVertexBuffer>();
-  glVertexAttribFormat = Pointer<NativeFunction<GlVertexAttribFormatNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribFormat'))).asFunction<GlVertexAttribFormat>();
-  glVertexAttribIFormat = Pointer<NativeFunction<GlVertexAttribIFormatNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribIFormat'))).asFunction<GlVertexAttribIFormat>();
-  glVertexAttribLFormat = Pointer<NativeFunction<GlVertexAttribLFormatNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribLFormat'))).asFunction<GlVertexAttribLFormat>();
-  glVertexAttribBinding = Pointer<NativeFunction<GlVertexAttribBindingNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribBinding'))).asFunction<GlVertexAttribBinding>();
-  glVertexBindingDivisor = Pointer<NativeFunction<GlVertexBindingDivisorNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexBindingDivisor'))).asFunction<GlVertexBindingDivisor>();
-  glDebugMessageControl = Pointer<NativeFunction<GlDebugMessageControlNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDebugMessageControl'))).asFunction<GlDebugMessageControl>();
-  glDebugMessageInsert = Pointer<NativeFunction<GlDebugMessageInsertNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDebugMessageInsert'))).asFunction<GlDebugMessageInsert>();
-  glDebugMessageCallback = Pointer<NativeFunction<GlDebugMessageCallbackNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDebugMessageCallback'))).asFunction<GlDebugMessageCallback>();
-  glGetDebugMessageLog = Pointer<NativeFunction<GlGetDebugMessageLogNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetDebugMessageLog'))).asFunction<GlGetDebugMessageLog>();
-  glPushDebugGroup = Pointer<NativeFunction<GlPushDebugGroupNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPushDebugGroup'))).asFunction<GlPushDebugGroup>();
-  glPopDebugGroup = Pointer<NativeFunction<GlPopDebugGroupNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPopDebugGroup'))).asFunction<GlPopDebugGroup>();
-  glObjectLabel = Pointer<NativeFunction<GlObjectLabelNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glObjectLabel'))).asFunction<GlObjectLabel>();
-  glGetObjectLabel = Pointer<NativeFunction<GlGetObjectLabelNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetObjectLabel'))).asFunction<GlGetObjectLabel>();
-  glObjectPtrLabel = Pointer<NativeFunction<GlObjectPtrLabelNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glObjectPtrLabel'))).asFunction<GlObjectPtrLabel>();
-  glGetObjectPtrLabel = Pointer<NativeFunction<GlGetObjectPtrLabelNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetObjectPtrLabel'))).asFunction<GlGetObjectPtrLabel>();
-  glBufferStorage = Pointer<NativeFunction<GlBufferStorageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBufferStorage'))).asFunction<GlBufferStorage>();
-  glClearTexImage = Pointer<NativeFunction<GlClearTexImageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearTexImage'))).asFunction<GlClearTexImage>();
-  glClearTexSubImage = Pointer<NativeFunction<GlClearTexSubImageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearTexSubImage'))).asFunction<GlClearTexSubImage>();
-  glBindBuffersBase = Pointer<NativeFunction<GlBindBuffersBaseNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindBuffersBase'))).asFunction<GlBindBuffersBase>();
-  glBindBuffersRange = Pointer<NativeFunction<GlBindBuffersRangeNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindBuffersRange'))).asFunction<GlBindBuffersRange>();
-  glBindTextures = Pointer<NativeFunction<GlBindTexturesNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindTextures'))).asFunction<GlBindTextures>();
-  glBindSamplers = Pointer<NativeFunction<GlBindSamplersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindSamplers'))).asFunction<GlBindSamplers>();
-  glBindImageTextures = Pointer<NativeFunction<GlBindImageTexturesNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindImageTextures'))).asFunction<GlBindImageTextures>();
-  glBindVertexBuffers = Pointer<NativeFunction<GlBindVertexBuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindVertexBuffers'))).asFunction<GlBindVertexBuffers>();
-  glClipControl = Pointer<NativeFunction<GlClipControlNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClipControl'))).asFunction<GlClipControl>();
-  glCreateTransformFeedbacks = Pointer<NativeFunction<GlCreateTransformFeedbacksNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateTransformFeedbacks'))).asFunction<GlCreateTransformFeedbacks>();
-  glTransformFeedbackBufferBase = Pointer<NativeFunction<GlTransformFeedbackBufferBaseNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTransformFeedbackBufferBase'))).asFunction<GlTransformFeedbackBufferBase>();
-  glTransformFeedbackBufferRange = Pointer<NativeFunction<GlTransformFeedbackBufferRangeNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTransformFeedbackBufferRange'))).asFunction<GlTransformFeedbackBufferRange>();
-  glGetTransformFeedbackiv = Pointer<NativeFunction<GlGetTransformFeedbackivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTransformFeedbackiv'))).asFunction<GlGetTransformFeedbackiv>();
-  glGetTransformFeedbacki_v = Pointer<NativeFunction<GlGetTransformFeedbacki_vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTransformFeedbacki_v'))).asFunction<GlGetTransformFeedbacki_v>();
-  glGetTransformFeedbacki64_v = Pointer<NativeFunction<GlGetTransformFeedbacki64_vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTransformFeedbacki64_v'))).asFunction<GlGetTransformFeedbacki64_v>();
-  glCreateBuffers = Pointer<NativeFunction<GlCreateBuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateBuffers'))).asFunction<GlCreateBuffers>();
-  glNamedBufferStorage = Pointer<NativeFunction<GlNamedBufferStorageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedBufferStorage'))).asFunction<GlNamedBufferStorage>();
-  glNamedBufferData = Pointer<NativeFunction<GlNamedBufferDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedBufferData'))).asFunction<GlNamedBufferData>();
-  glNamedBufferSubData = Pointer<NativeFunction<GlNamedBufferSubDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedBufferSubData'))).asFunction<GlNamedBufferSubData>();
-  glCopyNamedBufferSubData = Pointer<NativeFunction<GlCopyNamedBufferSubDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyNamedBufferSubData'))).asFunction<GlCopyNamedBufferSubData>();
-  glClearNamedBufferData = Pointer<NativeFunction<GlClearNamedBufferDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearNamedBufferData'))).asFunction<GlClearNamedBufferData>();
-  glClearNamedBufferSubData = Pointer<NativeFunction<GlClearNamedBufferSubDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearNamedBufferSubData'))).asFunction<GlClearNamedBufferSubData>();
-  glMapNamedBuffer = Pointer<NativeFunction<GlMapNamedBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMapNamedBuffer'))).asFunction<GlMapNamedBuffer>();
-  glMapNamedBufferRange = Pointer<NativeFunction<GlMapNamedBufferRangeNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMapNamedBufferRange'))).asFunction<GlMapNamedBufferRange>();
-  glUnmapNamedBuffer = Pointer<NativeFunction<GlUnmapNamedBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUnmapNamedBuffer'))).asFunction<GlUnmapNamedBuffer>();
-  glFlushMappedNamedBufferRange = Pointer<NativeFunction<GlFlushMappedNamedBufferRangeNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFlushMappedNamedBufferRange'))).asFunction<GlFlushMappedNamedBufferRange>();
-  glGetNamedBufferParameteriv = Pointer<NativeFunction<GlGetNamedBufferParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedBufferParameteriv'))).asFunction<GlGetNamedBufferParameteriv>();
-  glGetNamedBufferParameteri64v = Pointer<NativeFunction<GlGetNamedBufferParameteri64vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedBufferParameteri64v'))).asFunction<GlGetNamedBufferParameteri64v>();
-  glGetNamedBufferPointerv = Pointer<NativeFunction<GlGetNamedBufferPointervNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedBufferPointerv'))).asFunction<GlGetNamedBufferPointerv>();
-  glGetNamedBufferSubData = Pointer<NativeFunction<GlGetNamedBufferSubDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedBufferSubData'))).asFunction<GlGetNamedBufferSubData>();
-  glCreateFramebuffers = Pointer<NativeFunction<GlCreateFramebuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateFramebuffers'))).asFunction<GlCreateFramebuffers>();
-  glNamedFramebufferRenderbuffer = Pointer<NativeFunction<GlNamedFramebufferRenderbufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferRenderbuffer'))).asFunction<GlNamedFramebufferRenderbuffer>();
-  glNamedFramebufferParameteri = Pointer<NativeFunction<GlNamedFramebufferParameteriNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferParameteri'))).asFunction<GlNamedFramebufferParameteri>();
-  glNamedFramebufferTexture = Pointer<NativeFunction<GlNamedFramebufferTextureNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferTexture'))).asFunction<GlNamedFramebufferTexture>();
-  glNamedFramebufferTextureLayer = Pointer<NativeFunction<GlNamedFramebufferTextureLayerNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferTextureLayer'))).asFunction<GlNamedFramebufferTextureLayer>();
-  glNamedFramebufferDrawBuffer = Pointer<NativeFunction<GlNamedFramebufferDrawBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferDrawBuffer'))).asFunction<GlNamedFramebufferDrawBuffer>();
-  glNamedFramebufferDrawBuffers = Pointer<NativeFunction<GlNamedFramebufferDrawBuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferDrawBuffers'))).asFunction<GlNamedFramebufferDrawBuffers>();
-  glNamedFramebufferReadBuffer = Pointer<NativeFunction<GlNamedFramebufferReadBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferReadBuffer'))).asFunction<GlNamedFramebufferReadBuffer>();
-  glInvalidateNamedFramebufferData = Pointer<NativeFunction<GlInvalidateNamedFramebufferDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glInvalidateNamedFramebufferData'))).asFunction<GlInvalidateNamedFramebufferData>();
-  glInvalidateNamedFramebufferSubData = Pointer<NativeFunction<GlInvalidateNamedFramebufferSubDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glInvalidateNamedFramebufferSubData'))).asFunction<GlInvalidateNamedFramebufferSubData>();
-  glClearNamedFramebufferiv = Pointer<NativeFunction<GlClearNamedFramebufferivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearNamedFramebufferiv'))).asFunction<GlClearNamedFramebufferiv>();
-  glClearNamedFramebufferuiv = Pointer<NativeFunction<GlClearNamedFramebufferuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearNamedFramebufferuiv'))).asFunction<GlClearNamedFramebufferuiv>();
-  glClearNamedFramebufferfv = Pointer<NativeFunction<GlClearNamedFramebufferfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearNamedFramebufferfv'))).asFunction<GlClearNamedFramebufferfv>();
-  glClearNamedFramebufferfi = Pointer<NativeFunction<GlClearNamedFramebufferfiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearNamedFramebufferfi'))).asFunction<GlClearNamedFramebufferfi>();
-  glBlitNamedFramebuffer = Pointer<NativeFunction<GlBlitNamedFramebufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlitNamedFramebuffer'))).asFunction<GlBlitNamedFramebuffer>();
-  glCheckNamedFramebufferStatus = Pointer<NativeFunction<GlCheckNamedFramebufferStatusNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCheckNamedFramebufferStatus'))).asFunction<GlCheckNamedFramebufferStatus>();
-  glGetNamedFramebufferParameteriv = Pointer<NativeFunction<GlGetNamedFramebufferParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedFramebufferParameteriv'))).asFunction<GlGetNamedFramebufferParameteriv>();
-  glGetNamedFramebufferAttachmentParameteriv = Pointer<NativeFunction<GlGetNamedFramebufferAttachmentParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedFramebufferAttachmentParameteriv'))).asFunction<GlGetNamedFramebufferAttachmentParameteriv>();
-  glCreateRenderbuffers = Pointer<NativeFunction<GlCreateRenderbuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateRenderbuffers'))).asFunction<GlCreateRenderbuffers>();
-  glNamedRenderbufferStorage = Pointer<NativeFunction<GlNamedRenderbufferStorageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedRenderbufferStorage'))).asFunction<GlNamedRenderbufferStorage>();
-  glNamedRenderbufferStorageMultisample = Pointer<NativeFunction<GlNamedRenderbufferStorageMultisampleNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedRenderbufferStorageMultisample'))).asFunction<GlNamedRenderbufferStorageMultisample>();
-  glGetNamedRenderbufferParameteriv = Pointer<NativeFunction<GlGetNamedRenderbufferParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedRenderbufferParameteriv'))).asFunction<GlGetNamedRenderbufferParameteriv>();
-  glCreateTextures = Pointer<NativeFunction<GlCreateTexturesNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateTextures'))).asFunction<GlCreateTextures>();
-  glTextureBuffer = Pointer<NativeFunction<GlTextureBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureBuffer'))).asFunction<GlTextureBuffer>();
-  glTextureBufferRange = Pointer<NativeFunction<GlTextureBufferRangeNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureBufferRange'))).asFunction<GlTextureBufferRange>();
-  glTextureStorage1D = Pointer<NativeFunction<GlTextureStorage1DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureStorage1D'))).asFunction<GlTextureStorage1D>();
-  glTextureStorage2D = Pointer<NativeFunction<GlTextureStorage2DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureStorage2D'))).asFunction<GlTextureStorage2D>();
-  glTextureStorage3D = Pointer<NativeFunction<GlTextureStorage3DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureStorage3D'))).asFunction<GlTextureStorage3D>();
-  glTextureStorage2DMultisample = Pointer<NativeFunction<GlTextureStorage2DMultisampleNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureStorage2DMultisample'))).asFunction<GlTextureStorage2DMultisample>();
-  glTextureStorage3DMultisample = Pointer<NativeFunction<GlTextureStorage3DMultisampleNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureStorage3DMultisample'))).asFunction<GlTextureStorage3DMultisample>();
-  glTextureSubImage1D = Pointer<NativeFunction<GlTextureSubImage1DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureSubImage1D'))).asFunction<GlTextureSubImage1D>();
-  glTextureSubImage2D = Pointer<NativeFunction<GlTextureSubImage2DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureSubImage2D'))).asFunction<GlTextureSubImage2D>();
-  glTextureSubImage3D = Pointer<NativeFunction<GlTextureSubImage3DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureSubImage3D'))).asFunction<GlTextureSubImage3D>();
-  glCompressedTextureSubImage1D = Pointer<NativeFunction<GlCompressedTextureSubImage1DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTextureSubImage1D'))).asFunction<GlCompressedTextureSubImage1D>();
-  glCompressedTextureSubImage2D = Pointer<NativeFunction<GlCompressedTextureSubImage2DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTextureSubImage2D'))).asFunction<GlCompressedTextureSubImage2D>();
-  glCompressedTextureSubImage3D = Pointer<NativeFunction<GlCompressedTextureSubImage3DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTextureSubImage3D'))).asFunction<GlCompressedTextureSubImage3D>();
-  glCopyTextureSubImage1D = Pointer<NativeFunction<GlCopyTextureSubImage1DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyTextureSubImage1D'))).asFunction<GlCopyTextureSubImage1D>();
-  glCopyTextureSubImage2D = Pointer<NativeFunction<GlCopyTextureSubImage2DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyTextureSubImage2D'))).asFunction<GlCopyTextureSubImage2D>();
-  glCopyTextureSubImage3D = Pointer<NativeFunction<GlCopyTextureSubImage3DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyTextureSubImage3D'))).asFunction<GlCopyTextureSubImage3D>();
-  glTextureParameterf = Pointer<NativeFunction<GlTextureParameterfNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureParameterf'))).asFunction<GlTextureParameterf>();
-  glTextureParameterfv = Pointer<NativeFunction<GlTextureParameterfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureParameterfv'))).asFunction<GlTextureParameterfv>();
-  glTextureParameteri = Pointer<NativeFunction<GlTextureParameteriNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureParameteri'))).asFunction<GlTextureParameteri>();
-  glTextureParameterIiv = Pointer<NativeFunction<GlTextureParameterIivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureParameterIiv'))).asFunction<GlTextureParameterIiv>();
-  glTextureParameterIuiv = Pointer<NativeFunction<GlTextureParameterIuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureParameterIuiv'))).asFunction<GlTextureParameterIuiv>();
-  glTextureParameteriv = Pointer<NativeFunction<GlTextureParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureParameteriv'))).asFunction<GlTextureParameteriv>();
-  glGenerateTextureMipmap = Pointer<NativeFunction<GlGenerateTextureMipmapNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenerateTextureMipmap'))).asFunction<GlGenerateTextureMipmap>();
-  glBindTextureUnit = Pointer<NativeFunction<GlBindTextureUnitNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindTextureUnit'))).asFunction<GlBindTextureUnit>();
-  glGetTextureImage = Pointer<NativeFunction<GlGetTextureImageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureImage'))).asFunction<GlGetTextureImage>();
-  glGetCompressedTextureImage = Pointer<NativeFunction<GlGetCompressedTextureImageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetCompressedTextureImage'))).asFunction<GlGetCompressedTextureImage>();
-  glGetTextureLevelParameterfv = Pointer<NativeFunction<GlGetTextureLevelParameterfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureLevelParameterfv'))).asFunction<GlGetTextureLevelParameterfv>();
-  glGetTextureLevelParameteriv = Pointer<NativeFunction<GlGetTextureLevelParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureLevelParameteriv'))).asFunction<GlGetTextureLevelParameteriv>();
-  glGetTextureParameterfv = Pointer<NativeFunction<GlGetTextureParameterfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureParameterfv'))).asFunction<GlGetTextureParameterfv>();
-  glGetTextureParameterIiv = Pointer<NativeFunction<GlGetTextureParameterIivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureParameterIiv'))).asFunction<GlGetTextureParameterIiv>();
-  glGetTextureParameterIuiv = Pointer<NativeFunction<GlGetTextureParameterIuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureParameterIuiv'))).asFunction<GlGetTextureParameterIuiv>();
-  glGetTextureParameteriv = Pointer<NativeFunction<GlGetTextureParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureParameteriv'))).asFunction<GlGetTextureParameteriv>();
-  glCreateVertexArrays = Pointer<NativeFunction<GlCreateVertexArraysNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateVertexArrays'))).asFunction<GlCreateVertexArrays>();
-  glDisableVertexArrayAttrib = Pointer<NativeFunction<GlDisableVertexArrayAttribNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDisableVertexArrayAttrib'))).asFunction<GlDisableVertexArrayAttrib>();
-  glEnableVertexArrayAttrib = Pointer<NativeFunction<GlEnableVertexArrayAttribNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEnableVertexArrayAttrib'))).asFunction<GlEnableVertexArrayAttrib>();
-  glVertexArrayElementBuffer = Pointer<NativeFunction<GlVertexArrayElementBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayElementBuffer'))).asFunction<GlVertexArrayElementBuffer>();
-  glVertexArrayVertexBuffer = Pointer<NativeFunction<GlVertexArrayVertexBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayVertexBuffer'))).asFunction<GlVertexArrayVertexBuffer>();
-  glVertexArrayVertexBuffers = Pointer<NativeFunction<GlVertexArrayVertexBuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayVertexBuffers'))).asFunction<GlVertexArrayVertexBuffers>();
-  glVertexArrayAttribBinding = Pointer<NativeFunction<GlVertexArrayAttribBindingNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayAttribBinding'))).asFunction<GlVertexArrayAttribBinding>();
-  glVertexArrayAttribFormat = Pointer<NativeFunction<GlVertexArrayAttribFormatNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayAttribFormat'))).asFunction<GlVertexArrayAttribFormat>();
-  glVertexArrayAttribIFormat = Pointer<NativeFunction<GlVertexArrayAttribIFormatNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayAttribIFormat'))).asFunction<GlVertexArrayAttribIFormat>();
-  glVertexArrayAttribLFormat = Pointer<NativeFunction<GlVertexArrayAttribLFormatNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayAttribLFormat'))).asFunction<GlVertexArrayAttribLFormat>();
-  glVertexArrayBindingDivisor = Pointer<NativeFunction<GlVertexArrayBindingDivisorNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayBindingDivisor'))).asFunction<GlVertexArrayBindingDivisor>();
-  glGetVertexArrayiv = Pointer<NativeFunction<GlGetVertexArrayivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexArrayiv'))).asFunction<GlGetVertexArrayiv>();
-  glGetVertexArrayIndexediv = Pointer<NativeFunction<GlGetVertexArrayIndexedivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexArrayIndexediv'))).asFunction<GlGetVertexArrayIndexediv>();
-  glGetVertexArrayIndexed64iv = Pointer<NativeFunction<GlGetVertexArrayIndexed64ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexArrayIndexed64iv'))).asFunction<GlGetVertexArrayIndexed64iv>();
-  glCreateSamplers = Pointer<NativeFunction<GlCreateSamplersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateSamplers'))).asFunction<GlCreateSamplers>();
-  glCreateProgramPipelines = Pointer<NativeFunction<GlCreateProgramPipelinesNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateProgramPipelines'))).asFunction<GlCreateProgramPipelines>();
-  glCreateQueries = Pointer<NativeFunction<GlCreateQueriesNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateQueries'))).asFunction<GlCreateQueries>();
-  glGetQueryBufferObjecti64v = Pointer<NativeFunction<GlGetQueryBufferObjecti64vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetQueryBufferObjecti64v'))).asFunction<GlGetQueryBufferObjecti64v>();
-  glGetQueryBufferObjectiv = Pointer<NativeFunction<GlGetQueryBufferObjectivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetQueryBufferObjectiv'))).asFunction<GlGetQueryBufferObjectiv>();
-  glGetQueryBufferObjectui64v = Pointer<NativeFunction<GlGetQueryBufferObjectui64vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetQueryBufferObjectui64v'))).asFunction<GlGetQueryBufferObjectui64v>();
-  glGetQueryBufferObjectuiv = Pointer<NativeFunction<GlGetQueryBufferObjectuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetQueryBufferObjectuiv'))).asFunction<GlGetQueryBufferObjectuiv>();
-  glMemoryBarrierByRegion = Pointer<NativeFunction<GlMemoryBarrierByRegionNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMemoryBarrierByRegion'))).asFunction<GlMemoryBarrierByRegion>();
-  glGetTextureSubImage = Pointer<NativeFunction<GlGetTextureSubImageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureSubImage'))).asFunction<GlGetTextureSubImage>();
-  glGetCompressedTextureSubImage = Pointer<NativeFunction<GlGetCompressedTextureSubImageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetCompressedTextureSubImage'))).asFunction<GlGetCompressedTextureSubImage>();
-  glGetGraphicsResetStatus = Pointer<NativeFunction<GlGetGraphicsResetStatusNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetGraphicsResetStatus'))).asFunction<GlGetGraphicsResetStatus>();
-  glGetnCompressedTexImage = Pointer<NativeFunction<GlGetnCompressedTexImageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnCompressedTexImage'))).asFunction<GlGetnCompressedTexImage>();
-  glGetnTexImage = Pointer<NativeFunction<GlGetnTexImageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnTexImage'))).asFunction<GlGetnTexImage>();
-  glGetnUniformdv = Pointer<NativeFunction<GlGetnUniformdvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnUniformdv'))).asFunction<GlGetnUniformdv>();
-  glGetnUniformfv = Pointer<NativeFunction<GlGetnUniformfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnUniformfv'))).asFunction<GlGetnUniformfv>();
-  glGetnUniformiv = Pointer<NativeFunction<GlGetnUniformivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnUniformiv'))).asFunction<GlGetnUniformiv>();
-  glGetnUniformuiv = Pointer<NativeFunction<GlGetnUniformuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnUniformuiv'))).asFunction<GlGetnUniformuiv>();
-  glReadnPixels = Pointer<NativeFunction<GlReadnPixelsNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glReadnPixels'))).asFunction<GlReadnPixels>();
-  glTextureBarrier = Pointer<NativeFunction<GlTextureBarrierNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureBarrier'))).asFunction<GlTextureBarrier>();
-  glSpecializeShader = Pointer<NativeFunction<GlSpecializeShaderNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSpecializeShader'))).asFunction<GlSpecializeShader>();
-  glMultiDrawArraysIndirectCount = Pointer<NativeFunction<GlMultiDrawArraysIndirectCountNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawArraysIndirectCount'))).asFunction<GlMultiDrawArraysIndirectCount>();
-  glMultiDrawElementsIndirectCount = Pointer<NativeFunction<GlMultiDrawElementsIndirectCountNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawElementsIndirectCount'))).asFunction<GlMultiDrawElementsIndirectCount>();
-  glPolygonOffsetClamp = Pointer<NativeFunction<GlPolygonOffsetClampNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPolygonOffsetClamp'))).asFunction<GlPolygonOffsetClamp>();
-  glPrimitiveBoundingBoxARB = Pointer<NativeFunction<GlPrimitiveBoundingBoxARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPrimitiveBoundingBoxARB'))).asFunction<GlPrimitiveBoundingBoxARB>();
-  glGetTextureHandleARB = Pointer<NativeFunction<GlGetTextureHandleARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureHandleARB'))).asFunction<GlGetTextureHandleARB>();
-  glGetTextureSamplerHandleARB = Pointer<NativeFunction<GlGetTextureSamplerHandleARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureSamplerHandleARB'))).asFunction<GlGetTextureSamplerHandleARB>();
-  glMakeTextureHandleResidentARB = Pointer<NativeFunction<GlMakeTextureHandleResidentARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMakeTextureHandleResidentARB'))).asFunction<GlMakeTextureHandleResidentARB>();
-  glMakeTextureHandleNonResidentARB = Pointer<NativeFunction<GlMakeTextureHandleNonResidentARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMakeTextureHandleNonResidentARB'))).asFunction<GlMakeTextureHandleNonResidentARB>();
-  glGetImageHandleARB = Pointer<NativeFunction<GlGetImageHandleARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetImageHandleARB'))).asFunction<GlGetImageHandleARB>();
-  glMakeImageHandleResidentARB = Pointer<NativeFunction<GlMakeImageHandleResidentARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMakeImageHandleResidentARB'))).asFunction<GlMakeImageHandleResidentARB>();
-  glMakeImageHandleNonResidentARB = Pointer<NativeFunction<GlMakeImageHandleNonResidentARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMakeImageHandleNonResidentARB'))).asFunction<GlMakeImageHandleNonResidentARB>();
-  glUniformHandleui64ARB = Pointer<NativeFunction<GlUniformHandleui64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformHandleui64ARB'))).asFunction<GlUniformHandleui64ARB>();
-  glUniformHandleui64vARB = Pointer<NativeFunction<GlUniformHandleui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformHandleui64vARB'))).asFunction<GlUniformHandleui64vARB>();
-  glProgramUniformHandleui64ARB = Pointer<NativeFunction<GlProgramUniformHandleui64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformHandleui64ARB'))).asFunction<GlProgramUniformHandleui64ARB>();
-  glProgramUniformHandleui64vARB = Pointer<NativeFunction<GlProgramUniformHandleui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformHandleui64vARB'))).asFunction<GlProgramUniformHandleui64vARB>();
-  glIsTextureHandleResidentARB = Pointer<NativeFunction<GlIsTextureHandleResidentARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsTextureHandleResidentARB'))).asFunction<GlIsTextureHandleResidentARB>();
-  glIsImageHandleResidentARB = Pointer<NativeFunction<GlIsImageHandleResidentARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsImageHandleResidentARB'))).asFunction<GlIsImageHandleResidentARB>();
-  glVertexAttribL1ui64ARB = Pointer<NativeFunction<GlVertexAttribL1ui64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL1ui64ARB'))).asFunction<GlVertexAttribL1ui64ARB>();
-  glVertexAttribL1ui64vARB = Pointer<NativeFunction<GlVertexAttribL1ui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL1ui64vARB'))).asFunction<GlVertexAttribL1ui64vARB>();
-  glGetVertexAttribLui64vARB = Pointer<NativeFunction<GlGetVertexAttribLui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexAttribLui64vARB'))).asFunction<GlGetVertexAttribLui64vARB>();
-  glCreateSyncFromCLeventARB = Pointer<NativeFunction<GlCreateSyncFromCLeventARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateSyncFromCLeventARB'))).asFunction<GlCreateSyncFromCLeventARB>();
-  glDispatchComputeGroupSizeARB = Pointer<NativeFunction<GlDispatchComputeGroupSizeARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDispatchComputeGroupSizeARB'))).asFunction<GlDispatchComputeGroupSizeARB>();
-  glDebugMessageControlARB = Pointer<NativeFunction<GlDebugMessageControlARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDebugMessageControlARB'))).asFunction<GlDebugMessageControlARB>();
-  glDebugMessageInsertARB = Pointer<NativeFunction<GlDebugMessageInsertARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDebugMessageInsertARB'))).asFunction<GlDebugMessageInsertARB>();
-  glDebugMessageCallbackARB = Pointer<NativeFunction<GlDebugMessageCallbackARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDebugMessageCallbackARB'))).asFunction<GlDebugMessageCallbackARB>();
-  glGetDebugMessageLogARB = Pointer<NativeFunction<GlGetDebugMessageLogARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetDebugMessageLogARB'))).asFunction<GlGetDebugMessageLogARB>();
-  glBlendEquationiARB = Pointer<NativeFunction<GlBlendEquationiARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendEquationiARB'))).asFunction<GlBlendEquationiARB>();
-  glBlendEquationSeparateiARB = Pointer<NativeFunction<GlBlendEquationSeparateiARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendEquationSeparateiARB'))).asFunction<GlBlendEquationSeparateiARB>();
-  glBlendFunciARB = Pointer<NativeFunction<GlBlendFunciARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendFunciARB'))).asFunction<GlBlendFunciARB>();
-  glBlendFuncSeparateiARB = Pointer<NativeFunction<GlBlendFuncSeparateiARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendFuncSeparateiARB'))).asFunction<GlBlendFuncSeparateiARB>();
-  glDrawArraysInstancedARB = Pointer<NativeFunction<GlDrawArraysInstancedARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawArraysInstancedARB'))).asFunction<GlDrawArraysInstancedARB>();
-  glDrawElementsInstancedARB = Pointer<NativeFunction<GlDrawElementsInstancedARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawElementsInstancedARB'))).asFunction<GlDrawElementsInstancedARB>();
-  glProgramParameteriARB = Pointer<NativeFunction<GlProgramParameteriARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramParameteriARB'))).asFunction<GlProgramParameteriARB>();
-  glFramebufferTextureARB = Pointer<NativeFunction<GlFramebufferTextureARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferTextureARB'))).asFunction<GlFramebufferTextureARB>();
-  glFramebufferTextureLayerARB = Pointer<NativeFunction<GlFramebufferTextureLayerARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferTextureLayerARB'))).asFunction<GlFramebufferTextureLayerARB>();
-  glFramebufferTextureFaceARB = Pointer<NativeFunction<GlFramebufferTextureFaceARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferTextureFaceARB'))).asFunction<GlFramebufferTextureFaceARB>();
-  glSpecializeShaderARB = Pointer<NativeFunction<GlSpecializeShaderARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSpecializeShaderARB'))).asFunction<GlSpecializeShaderARB>();
-  glUniform1i64ARB = Pointer<NativeFunction<GlUniform1i64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1i64ARB'))).asFunction<GlUniform1i64ARB>();
-  glUniform2i64ARB = Pointer<NativeFunction<GlUniform2i64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2i64ARB'))).asFunction<GlUniform2i64ARB>();
-  glUniform3i64ARB = Pointer<NativeFunction<GlUniform3i64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3i64ARB'))).asFunction<GlUniform3i64ARB>();
-  glUniform4i64ARB = Pointer<NativeFunction<GlUniform4i64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4i64ARB'))).asFunction<GlUniform4i64ARB>();
-  glUniform1i64vARB = Pointer<NativeFunction<GlUniform1i64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1i64vARB'))).asFunction<GlUniform1i64vARB>();
-  glUniform2i64vARB = Pointer<NativeFunction<GlUniform2i64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2i64vARB'))).asFunction<GlUniform2i64vARB>();
-  glUniform3i64vARB = Pointer<NativeFunction<GlUniform3i64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3i64vARB'))).asFunction<GlUniform3i64vARB>();
-  glUniform4i64vARB = Pointer<NativeFunction<GlUniform4i64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4i64vARB'))).asFunction<GlUniform4i64vARB>();
-  glUniform1ui64ARB = Pointer<NativeFunction<GlUniform1ui64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1ui64ARB'))).asFunction<GlUniform1ui64ARB>();
-  glUniform2ui64ARB = Pointer<NativeFunction<GlUniform2ui64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2ui64ARB'))).asFunction<GlUniform2ui64ARB>();
-  glUniform3ui64ARB = Pointer<NativeFunction<GlUniform3ui64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3ui64ARB'))).asFunction<GlUniform3ui64ARB>();
-  glUniform4ui64ARB = Pointer<NativeFunction<GlUniform4ui64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4ui64ARB'))).asFunction<GlUniform4ui64ARB>();
-  glUniform1ui64vARB = Pointer<NativeFunction<GlUniform1ui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1ui64vARB'))).asFunction<GlUniform1ui64vARB>();
-  glUniform2ui64vARB = Pointer<NativeFunction<GlUniform2ui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2ui64vARB'))).asFunction<GlUniform2ui64vARB>();
-  glUniform3ui64vARB = Pointer<NativeFunction<GlUniform3ui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3ui64vARB'))).asFunction<GlUniform3ui64vARB>();
-  glUniform4ui64vARB = Pointer<NativeFunction<GlUniform4ui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4ui64vARB'))).asFunction<GlUniform4ui64vARB>();
-  glGetUniformi64vARB = Pointer<NativeFunction<GlGetUniformi64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetUniformi64vARB'))).asFunction<GlGetUniformi64vARB>();
-  glGetUniformui64vARB = Pointer<NativeFunction<GlGetUniformui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetUniformui64vARB'))).asFunction<GlGetUniformui64vARB>();
-  glGetnUniformi64vARB = Pointer<NativeFunction<GlGetnUniformi64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnUniformi64vARB'))).asFunction<GlGetnUniformi64vARB>();
-  glGetnUniformui64vARB = Pointer<NativeFunction<GlGetnUniformui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnUniformui64vARB'))).asFunction<GlGetnUniformui64vARB>();
-  glProgramUniform1i64ARB = Pointer<NativeFunction<GlProgramUniform1i64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1i64ARB'))).asFunction<GlProgramUniform1i64ARB>();
-  glProgramUniform2i64ARB = Pointer<NativeFunction<GlProgramUniform2i64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2i64ARB'))).asFunction<GlProgramUniform2i64ARB>();
-  glProgramUniform3i64ARB = Pointer<NativeFunction<GlProgramUniform3i64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3i64ARB'))).asFunction<GlProgramUniform3i64ARB>();
-  glProgramUniform4i64ARB = Pointer<NativeFunction<GlProgramUniform4i64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4i64ARB'))).asFunction<GlProgramUniform4i64ARB>();
-  glProgramUniform1i64vARB = Pointer<NativeFunction<GlProgramUniform1i64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1i64vARB'))).asFunction<GlProgramUniform1i64vARB>();
-  glProgramUniform2i64vARB = Pointer<NativeFunction<GlProgramUniform2i64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2i64vARB'))).asFunction<GlProgramUniform2i64vARB>();
-  glProgramUniform3i64vARB = Pointer<NativeFunction<GlProgramUniform3i64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3i64vARB'))).asFunction<GlProgramUniform3i64vARB>();
-  glProgramUniform4i64vARB = Pointer<NativeFunction<GlProgramUniform4i64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4i64vARB'))).asFunction<GlProgramUniform4i64vARB>();
-  glProgramUniform1ui64ARB = Pointer<NativeFunction<GlProgramUniform1ui64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1ui64ARB'))).asFunction<GlProgramUniform1ui64ARB>();
-  glProgramUniform2ui64ARB = Pointer<NativeFunction<GlProgramUniform2ui64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2ui64ARB'))).asFunction<GlProgramUniform2ui64ARB>();
-  glProgramUniform3ui64ARB = Pointer<NativeFunction<GlProgramUniform3ui64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3ui64ARB'))).asFunction<GlProgramUniform3ui64ARB>();
-  glProgramUniform4ui64ARB = Pointer<NativeFunction<GlProgramUniform4ui64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4ui64ARB'))).asFunction<GlProgramUniform4ui64ARB>();
-  glProgramUniform1ui64vARB = Pointer<NativeFunction<GlProgramUniform1ui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1ui64vARB'))).asFunction<GlProgramUniform1ui64vARB>();
-  glProgramUniform2ui64vARB = Pointer<NativeFunction<GlProgramUniform2ui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2ui64vARB'))).asFunction<GlProgramUniform2ui64vARB>();
-  glProgramUniform3ui64vARB = Pointer<NativeFunction<GlProgramUniform3ui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3ui64vARB'))).asFunction<GlProgramUniform3ui64vARB>();
-  glProgramUniform4ui64vARB = Pointer<NativeFunction<GlProgramUniform4ui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4ui64vARB'))).asFunction<GlProgramUniform4ui64vARB>();
-  glMultiDrawArraysIndirectCountARB = Pointer<NativeFunction<GlMultiDrawArraysIndirectCountARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawArraysIndirectCountARB'))).asFunction<GlMultiDrawArraysIndirectCountARB>();
-  glMultiDrawElementsIndirectCountARB = Pointer<NativeFunction<GlMultiDrawElementsIndirectCountARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawElementsIndirectCountARB'))).asFunction<GlMultiDrawElementsIndirectCountARB>();
-  glVertexAttribDivisorARB = Pointer<NativeFunction<GlVertexAttribDivisorARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribDivisorARB'))).asFunction<GlVertexAttribDivisorARB>();
-  glMaxShaderCompilerThreadsARB = Pointer<NativeFunction<GlMaxShaderCompilerThreadsARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMaxShaderCompilerThreadsARB'))).asFunction<GlMaxShaderCompilerThreadsARB>();
-  glGetGraphicsResetStatusARB = Pointer<NativeFunction<GlGetGraphicsResetStatusARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetGraphicsResetStatusARB'))).asFunction<GlGetGraphicsResetStatusARB>();
-  glGetnTexImageARB = Pointer<NativeFunction<GlGetnTexImageARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnTexImageARB'))).asFunction<GlGetnTexImageARB>();
-  glReadnPixelsARB = Pointer<NativeFunction<GlReadnPixelsARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glReadnPixelsARB'))).asFunction<GlReadnPixelsARB>();
-  glGetnCompressedTexImageARB = Pointer<NativeFunction<GlGetnCompressedTexImageARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnCompressedTexImageARB'))).asFunction<GlGetnCompressedTexImageARB>();
-  glGetnUniformfvARB = Pointer<NativeFunction<GlGetnUniformfvARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnUniformfvARB'))).asFunction<GlGetnUniformfvARB>();
-  glGetnUniformivARB = Pointer<NativeFunction<GlGetnUniformivARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnUniformivARB'))).asFunction<GlGetnUniformivARB>();
-  glGetnUniformuivARB = Pointer<NativeFunction<GlGetnUniformuivARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnUniformuivARB'))).asFunction<GlGetnUniformuivARB>();
-  glGetnUniformdvARB = Pointer<NativeFunction<GlGetnUniformdvARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnUniformdvARB'))).asFunction<GlGetnUniformdvARB>();
-  glFramebufferSampleLocationsfvARB = Pointer<NativeFunction<GlFramebufferSampleLocationsfvARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferSampleLocationsfvARB'))).asFunction<GlFramebufferSampleLocationsfvARB>();
-  glNamedFramebufferSampleLocationsfvARB = Pointer<NativeFunction<GlNamedFramebufferSampleLocationsfvARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferSampleLocationsfvARB'))).asFunction<GlNamedFramebufferSampleLocationsfvARB>();
-  glEvaluateDepthValuesARB = Pointer<NativeFunction<GlEvaluateDepthValuesARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEvaluateDepthValuesARB'))).asFunction<GlEvaluateDepthValuesARB>();
-  glMinSampleShadingARB = Pointer<NativeFunction<GlMinSampleShadingARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMinSampleShadingARB'))).asFunction<GlMinSampleShadingARB>();
-  glNamedStringARB = Pointer<NativeFunction<GlNamedStringARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedStringARB'))).asFunction<GlNamedStringARB>();
-  glDeleteNamedStringARB = Pointer<NativeFunction<GlDeleteNamedStringARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteNamedStringARB'))).asFunction<GlDeleteNamedStringARB>();
-  glCompileShaderIncludeARB = Pointer<NativeFunction<GlCompileShaderIncludeARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompileShaderIncludeARB'))).asFunction<GlCompileShaderIncludeARB>();
-  glIsNamedStringARB = Pointer<NativeFunction<GlIsNamedStringARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsNamedStringARB'))).asFunction<GlIsNamedStringARB>();
-  glGetNamedStringARB = Pointer<NativeFunction<GlGetNamedStringARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedStringARB'))).asFunction<GlGetNamedStringARB>();
-  glGetNamedStringivARB = Pointer<NativeFunction<GlGetNamedStringivARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedStringivARB'))).asFunction<GlGetNamedStringivARB>();
-  glBufferPageCommitmentARB = Pointer<NativeFunction<GlBufferPageCommitmentARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBufferPageCommitmentARB'))).asFunction<GlBufferPageCommitmentARB>();
-  glNamedBufferPageCommitmentEXT = Pointer<NativeFunction<GlNamedBufferPageCommitmentEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedBufferPageCommitmentEXT'))).asFunction<GlNamedBufferPageCommitmentEXT>();
-  glNamedBufferPageCommitmentARB = Pointer<NativeFunction<GlNamedBufferPageCommitmentARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedBufferPageCommitmentARB'))).asFunction<GlNamedBufferPageCommitmentARB>();
-  glTexPageCommitmentARB = Pointer<NativeFunction<GlTexPageCommitmentARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexPageCommitmentARB'))).asFunction<GlTexPageCommitmentARB>();
-  glTexBufferARB = Pointer<NativeFunction<GlTexBufferARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexBufferARB'))).asFunction<GlTexBufferARB>();
-  glBlendBarrierKHR = Pointer<NativeFunction<GlBlendBarrierKHRNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendBarrierKHR'))).asFunction<GlBlendBarrierKHR>();
-  glMaxShaderCompilerThreadsKHR = Pointer<NativeFunction<GlMaxShaderCompilerThreadsKHRNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMaxShaderCompilerThreadsKHR'))).asFunction<GlMaxShaderCompilerThreadsKHR>();
-  glRenderbufferStorageMultisampleAdvancedAMD = Pointer<NativeFunction<GlRenderbufferStorageMultisampleAdvancedAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glRenderbufferStorageMultisampleAdvancedAMD'))).asFunction<GlRenderbufferStorageMultisampleAdvancedAMD>();
-  glNamedRenderbufferStorageMultisampleAdvancedAMD = Pointer<NativeFunction<GlNamedRenderbufferStorageMultisampleAdvancedAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedRenderbufferStorageMultisampleAdvancedAMD'))).asFunction<GlNamedRenderbufferStorageMultisampleAdvancedAMD>();
-  glGetPerfMonitorGroupsAMD = Pointer<NativeFunction<GlGetPerfMonitorGroupsAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPerfMonitorGroupsAMD'))).asFunction<GlGetPerfMonitorGroupsAMD>();
-  glGetPerfMonitorCountersAMD = Pointer<NativeFunction<GlGetPerfMonitorCountersAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPerfMonitorCountersAMD'))).asFunction<GlGetPerfMonitorCountersAMD>();
-  glGetPerfMonitorGroupStringAMD = Pointer<NativeFunction<GlGetPerfMonitorGroupStringAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPerfMonitorGroupStringAMD'))).asFunction<GlGetPerfMonitorGroupStringAMD>();
-  glGetPerfMonitorCounterStringAMD = Pointer<NativeFunction<GlGetPerfMonitorCounterStringAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPerfMonitorCounterStringAMD'))).asFunction<GlGetPerfMonitorCounterStringAMD>();
-  glGetPerfMonitorCounterInfoAMD = Pointer<NativeFunction<GlGetPerfMonitorCounterInfoAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPerfMonitorCounterInfoAMD'))).asFunction<GlGetPerfMonitorCounterInfoAMD>();
-  glGenPerfMonitorsAMD = Pointer<NativeFunction<GlGenPerfMonitorsAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenPerfMonitorsAMD'))).asFunction<GlGenPerfMonitorsAMD>();
-  glDeletePerfMonitorsAMD = Pointer<NativeFunction<GlDeletePerfMonitorsAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeletePerfMonitorsAMD'))).asFunction<GlDeletePerfMonitorsAMD>();
-  glSelectPerfMonitorCountersAMD = Pointer<NativeFunction<GlSelectPerfMonitorCountersAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSelectPerfMonitorCountersAMD'))).asFunction<GlSelectPerfMonitorCountersAMD>();
-  glBeginPerfMonitorAMD = Pointer<NativeFunction<GlBeginPerfMonitorAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBeginPerfMonitorAMD'))).asFunction<GlBeginPerfMonitorAMD>();
-  glEndPerfMonitorAMD = Pointer<NativeFunction<GlEndPerfMonitorAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEndPerfMonitorAMD'))).asFunction<GlEndPerfMonitorAMD>();
-  glGetPerfMonitorCounterDataAMD = Pointer<NativeFunction<GlGetPerfMonitorCounterDataAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPerfMonitorCounterDataAMD'))).asFunction<GlGetPerfMonitorCounterDataAMD>();
-  glEGLImageTargetTexStorageEXT = Pointer<NativeFunction<GlEGLImageTargetTexStorageEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEGLImageTargetTexStorageEXT'))).asFunction<GlEGLImageTargetTexStorageEXT>();
-  glEGLImageTargetTextureStorageEXT = Pointer<NativeFunction<GlEGLImageTargetTextureStorageEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEGLImageTargetTextureStorageEXT'))).asFunction<GlEGLImageTargetTextureStorageEXT>();
-  glLabelObjectEXT = Pointer<NativeFunction<GlLabelObjectEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glLabelObjectEXT'))).asFunction<GlLabelObjectEXT>();
-  glGetObjectLabelEXT = Pointer<NativeFunction<GlGetObjectLabelEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetObjectLabelEXT'))).asFunction<GlGetObjectLabelEXT>();
-  glInsertEventMarkerEXT = Pointer<NativeFunction<GlInsertEventMarkerEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glInsertEventMarkerEXT'))).asFunction<GlInsertEventMarkerEXT>();
-  glPushGroupMarkerEXT = Pointer<NativeFunction<GlPushGroupMarkerEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPushGroupMarkerEXT'))).asFunction<GlPushGroupMarkerEXT>();
-  glPopGroupMarkerEXT = Pointer<NativeFunction<GlPopGroupMarkerEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPopGroupMarkerEXT'))).asFunction<GlPopGroupMarkerEXT>();
-  glMatrixLoadfEXT = Pointer<NativeFunction<GlMatrixLoadfEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixLoadfEXT'))).asFunction<GlMatrixLoadfEXT>();
-  glMatrixLoaddEXT = Pointer<NativeFunction<GlMatrixLoaddEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixLoaddEXT'))).asFunction<GlMatrixLoaddEXT>();
-  glMatrixMultfEXT = Pointer<NativeFunction<GlMatrixMultfEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixMultfEXT'))).asFunction<GlMatrixMultfEXT>();
-  glMatrixMultdEXT = Pointer<NativeFunction<GlMatrixMultdEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixMultdEXT'))).asFunction<GlMatrixMultdEXT>();
-  glMatrixLoadIdentityEXT = Pointer<NativeFunction<GlMatrixLoadIdentityEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixLoadIdentityEXT'))).asFunction<GlMatrixLoadIdentityEXT>();
-  glMatrixRotatefEXT = Pointer<NativeFunction<GlMatrixRotatefEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixRotatefEXT'))).asFunction<GlMatrixRotatefEXT>();
-  glMatrixRotatedEXT = Pointer<NativeFunction<GlMatrixRotatedEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixRotatedEXT'))).asFunction<GlMatrixRotatedEXT>();
-  glMatrixScalefEXT = Pointer<NativeFunction<GlMatrixScalefEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixScalefEXT'))).asFunction<GlMatrixScalefEXT>();
-  glMatrixScaledEXT = Pointer<NativeFunction<GlMatrixScaledEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixScaledEXT'))).asFunction<GlMatrixScaledEXT>();
-  glMatrixTranslatefEXT = Pointer<NativeFunction<GlMatrixTranslatefEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixTranslatefEXT'))).asFunction<GlMatrixTranslatefEXT>();
-  glMatrixTranslatedEXT = Pointer<NativeFunction<GlMatrixTranslatedEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixTranslatedEXT'))).asFunction<GlMatrixTranslatedEXT>();
-  glMatrixFrustumEXT = Pointer<NativeFunction<GlMatrixFrustumEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixFrustumEXT'))).asFunction<GlMatrixFrustumEXT>();
-  glMatrixOrthoEXT = Pointer<NativeFunction<GlMatrixOrthoEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixOrthoEXT'))).asFunction<GlMatrixOrthoEXT>();
-  glMatrixPopEXT = Pointer<NativeFunction<GlMatrixPopEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixPopEXT'))).asFunction<GlMatrixPopEXT>();
-  glMatrixPushEXT = Pointer<NativeFunction<GlMatrixPushEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixPushEXT'))).asFunction<GlMatrixPushEXT>();
-  glClientAttribDefaultEXT = Pointer<NativeFunction<GlClientAttribDefaultEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClientAttribDefaultEXT'))).asFunction<GlClientAttribDefaultEXT>();
-  glPushClientAttribDefaultEXT = Pointer<NativeFunction<GlPushClientAttribDefaultEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPushClientAttribDefaultEXT'))).asFunction<GlPushClientAttribDefaultEXT>();
-  glTextureParameterfEXT = Pointer<NativeFunction<GlTextureParameterfEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureParameterfEXT'))).asFunction<GlTextureParameterfEXT>();
-  glTextureParameterfvEXT = Pointer<NativeFunction<GlTextureParameterfvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureParameterfvEXT'))).asFunction<GlTextureParameterfvEXT>();
-  glTextureParameteriEXT = Pointer<NativeFunction<GlTextureParameteriEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureParameteriEXT'))).asFunction<GlTextureParameteriEXT>();
-  glTextureParameterivEXT = Pointer<NativeFunction<GlTextureParameterivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureParameterivEXT'))).asFunction<GlTextureParameterivEXT>();
-  glTextureImage1DEXT = Pointer<NativeFunction<GlTextureImage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureImage1DEXT'))).asFunction<GlTextureImage1DEXT>();
-  glTextureImage2DEXT = Pointer<NativeFunction<GlTextureImage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureImage2DEXT'))).asFunction<GlTextureImage2DEXT>();
-  glTextureSubImage1DEXT = Pointer<NativeFunction<GlTextureSubImage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureSubImage1DEXT'))).asFunction<GlTextureSubImage1DEXT>();
-  glTextureSubImage2DEXT = Pointer<NativeFunction<GlTextureSubImage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureSubImage2DEXT'))).asFunction<GlTextureSubImage2DEXT>();
-  glCopyTextureImage1DEXT = Pointer<NativeFunction<GlCopyTextureImage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyTextureImage1DEXT'))).asFunction<GlCopyTextureImage1DEXT>();
-  glCopyTextureImage2DEXT = Pointer<NativeFunction<GlCopyTextureImage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyTextureImage2DEXT'))).asFunction<GlCopyTextureImage2DEXT>();
-  glCopyTextureSubImage1DEXT = Pointer<NativeFunction<GlCopyTextureSubImage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyTextureSubImage1DEXT'))).asFunction<GlCopyTextureSubImage1DEXT>();
-  glCopyTextureSubImage2DEXT = Pointer<NativeFunction<GlCopyTextureSubImage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyTextureSubImage2DEXT'))).asFunction<GlCopyTextureSubImage2DEXT>();
-  glGetTextureImageEXT = Pointer<NativeFunction<GlGetTextureImageEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureImageEXT'))).asFunction<GlGetTextureImageEXT>();
-  glGetTextureParameterfvEXT = Pointer<NativeFunction<GlGetTextureParameterfvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureParameterfvEXT'))).asFunction<GlGetTextureParameterfvEXT>();
-  glGetTextureParameterivEXT = Pointer<NativeFunction<GlGetTextureParameterivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureParameterivEXT'))).asFunction<GlGetTextureParameterivEXT>();
-  glGetTextureLevelParameterfvEXT = Pointer<NativeFunction<GlGetTextureLevelParameterfvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureLevelParameterfvEXT'))).asFunction<GlGetTextureLevelParameterfvEXT>();
-  glGetTextureLevelParameterivEXT = Pointer<NativeFunction<GlGetTextureLevelParameterivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureLevelParameterivEXT'))).asFunction<GlGetTextureLevelParameterivEXT>();
-  glTextureImage3DEXT = Pointer<NativeFunction<GlTextureImage3DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureImage3DEXT'))).asFunction<GlTextureImage3DEXT>();
-  glTextureSubImage3DEXT = Pointer<NativeFunction<GlTextureSubImage3DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureSubImage3DEXT'))).asFunction<GlTextureSubImage3DEXT>();
-  glCopyTextureSubImage3DEXT = Pointer<NativeFunction<GlCopyTextureSubImage3DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyTextureSubImage3DEXT'))).asFunction<GlCopyTextureSubImage3DEXT>();
-  glBindMultiTextureEXT = Pointer<NativeFunction<GlBindMultiTextureEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindMultiTextureEXT'))).asFunction<GlBindMultiTextureEXT>();
-  glMultiTexCoordPointerEXT = Pointer<NativeFunction<GlMultiTexCoordPointerEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexCoordPointerEXT'))).asFunction<GlMultiTexCoordPointerEXT>();
-  glMultiTexEnvfEXT = Pointer<NativeFunction<GlMultiTexEnvfEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexEnvfEXT'))).asFunction<GlMultiTexEnvfEXT>();
-  glMultiTexEnvfvEXT = Pointer<NativeFunction<GlMultiTexEnvfvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexEnvfvEXT'))).asFunction<GlMultiTexEnvfvEXT>();
-  glMultiTexEnviEXT = Pointer<NativeFunction<GlMultiTexEnviEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexEnviEXT'))).asFunction<GlMultiTexEnviEXT>();
-  glMultiTexEnvivEXT = Pointer<NativeFunction<GlMultiTexEnvivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexEnvivEXT'))).asFunction<GlMultiTexEnvivEXT>();
-  glMultiTexGendEXT = Pointer<NativeFunction<GlMultiTexGendEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexGendEXT'))).asFunction<GlMultiTexGendEXT>();
-  glMultiTexGendvEXT = Pointer<NativeFunction<GlMultiTexGendvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexGendvEXT'))).asFunction<GlMultiTexGendvEXT>();
-  glMultiTexGenfEXT = Pointer<NativeFunction<GlMultiTexGenfEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexGenfEXT'))).asFunction<GlMultiTexGenfEXT>();
-  glMultiTexGenfvEXT = Pointer<NativeFunction<GlMultiTexGenfvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexGenfvEXT'))).asFunction<GlMultiTexGenfvEXT>();
-  glMultiTexGeniEXT = Pointer<NativeFunction<GlMultiTexGeniEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexGeniEXT'))).asFunction<GlMultiTexGeniEXT>();
-  glMultiTexGenivEXT = Pointer<NativeFunction<GlMultiTexGenivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexGenivEXT'))).asFunction<GlMultiTexGenivEXT>();
-  glGetMultiTexEnvfvEXT = Pointer<NativeFunction<GlGetMultiTexEnvfvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultiTexEnvfvEXT'))).asFunction<GlGetMultiTexEnvfvEXT>();
-  glGetMultiTexEnvivEXT = Pointer<NativeFunction<GlGetMultiTexEnvivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultiTexEnvivEXT'))).asFunction<GlGetMultiTexEnvivEXT>();
-  glGetMultiTexGendvEXT = Pointer<NativeFunction<GlGetMultiTexGendvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultiTexGendvEXT'))).asFunction<GlGetMultiTexGendvEXT>();
-  glGetMultiTexGenfvEXT = Pointer<NativeFunction<GlGetMultiTexGenfvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultiTexGenfvEXT'))).asFunction<GlGetMultiTexGenfvEXT>();
-  glGetMultiTexGenivEXT = Pointer<NativeFunction<GlGetMultiTexGenivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultiTexGenivEXT'))).asFunction<GlGetMultiTexGenivEXT>();
-  glMultiTexParameteriEXT = Pointer<NativeFunction<GlMultiTexParameteriEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexParameteriEXT'))).asFunction<GlMultiTexParameteriEXT>();
-  glMultiTexParameterivEXT = Pointer<NativeFunction<GlMultiTexParameterivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexParameterivEXT'))).asFunction<GlMultiTexParameterivEXT>();
-  glMultiTexParameterfEXT = Pointer<NativeFunction<GlMultiTexParameterfEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexParameterfEXT'))).asFunction<GlMultiTexParameterfEXT>();
-  glMultiTexParameterfvEXT = Pointer<NativeFunction<GlMultiTexParameterfvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexParameterfvEXT'))).asFunction<GlMultiTexParameterfvEXT>();
-  glMultiTexImage1DEXT = Pointer<NativeFunction<GlMultiTexImage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexImage1DEXT'))).asFunction<GlMultiTexImage1DEXT>();
-  glMultiTexImage2DEXT = Pointer<NativeFunction<GlMultiTexImage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexImage2DEXT'))).asFunction<GlMultiTexImage2DEXT>();
-  glMultiTexSubImage1DEXT = Pointer<NativeFunction<GlMultiTexSubImage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexSubImage1DEXT'))).asFunction<GlMultiTexSubImage1DEXT>();
-  glMultiTexSubImage2DEXT = Pointer<NativeFunction<GlMultiTexSubImage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexSubImage2DEXT'))).asFunction<GlMultiTexSubImage2DEXT>();
-  glCopyMultiTexImage1DEXT = Pointer<NativeFunction<GlCopyMultiTexImage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyMultiTexImage1DEXT'))).asFunction<GlCopyMultiTexImage1DEXT>();
-  glCopyMultiTexImage2DEXT = Pointer<NativeFunction<GlCopyMultiTexImage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyMultiTexImage2DEXT'))).asFunction<GlCopyMultiTexImage2DEXT>();
-  glCopyMultiTexSubImage1DEXT = Pointer<NativeFunction<GlCopyMultiTexSubImage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyMultiTexSubImage1DEXT'))).asFunction<GlCopyMultiTexSubImage1DEXT>();
-  glCopyMultiTexSubImage2DEXT = Pointer<NativeFunction<GlCopyMultiTexSubImage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyMultiTexSubImage2DEXT'))).asFunction<GlCopyMultiTexSubImage2DEXT>();
-  glGetMultiTexImageEXT = Pointer<NativeFunction<GlGetMultiTexImageEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultiTexImageEXT'))).asFunction<GlGetMultiTexImageEXT>();
-  glGetMultiTexParameterfvEXT = Pointer<NativeFunction<GlGetMultiTexParameterfvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultiTexParameterfvEXT'))).asFunction<GlGetMultiTexParameterfvEXT>();
-  glGetMultiTexParameterivEXT = Pointer<NativeFunction<GlGetMultiTexParameterivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultiTexParameterivEXT'))).asFunction<GlGetMultiTexParameterivEXT>();
-  glGetMultiTexLevelParameterfvEXT = Pointer<NativeFunction<GlGetMultiTexLevelParameterfvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultiTexLevelParameterfvEXT'))).asFunction<GlGetMultiTexLevelParameterfvEXT>();
-  glGetMultiTexLevelParameterivEXT = Pointer<NativeFunction<GlGetMultiTexLevelParameterivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultiTexLevelParameterivEXT'))).asFunction<GlGetMultiTexLevelParameterivEXT>();
-  glMultiTexImage3DEXT = Pointer<NativeFunction<GlMultiTexImage3DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexImage3DEXT'))).asFunction<GlMultiTexImage3DEXT>();
-  glMultiTexSubImage3DEXT = Pointer<NativeFunction<GlMultiTexSubImage3DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexSubImage3DEXT'))).asFunction<GlMultiTexSubImage3DEXT>();
-  glCopyMultiTexSubImage3DEXT = Pointer<NativeFunction<GlCopyMultiTexSubImage3DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyMultiTexSubImage3DEXT'))).asFunction<GlCopyMultiTexSubImage3DEXT>();
-  glEnableClientStateIndexedEXT = Pointer<NativeFunction<GlEnableClientStateIndexedEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEnableClientStateIndexedEXT'))).asFunction<GlEnableClientStateIndexedEXT>();
-  glDisableClientStateIndexedEXT = Pointer<NativeFunction<GlDisableClientStateIndexedEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDisableClientStateIndexedEXT'))).asFunction<GlDisableClientStateIndexedEXT>();
-  glGetFloatIndexedvEXT = Pointer<NativeFunction<GlGetFloatIndexedvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetFloatIndexedvEXT'))).asFunction<GlGetFloatIndexedvEXT>();
-  glGetDoubleIndexedvEXT = Pointer<NativeFunction<GlGetDoubleIndexedvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetDoubleIndexedvEXT'))).asFunction<GlGetDoubleIndexedvEXT>();
-  glGetPointerIndexedvEXT = Pointer<NativeFunction<GlGetPointerIndexedvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPointerIndexedvEXT'))).asFunction<GlGetPointerIndexedvEXT>();
-  glEnableIndexedEXT = Pointer<NativeFunction<GlEnableIndexedEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEnableIndexedEXT'))).asFunction<GlEnableIndexedEXT>();
-  glDisableIndexedEXT = Pointer<NativeFunction<GlDisableIndexedEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDisableIndexedEXT'))).asFunction<GlDisableIndexedEXT>();
-  glIsEnabledIndexedEXT = Pointer<NativeFunction<GlIsEnabledIndexedEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsEnabledIndexedEXT'))).asFunction<GlIsEnabledIndexedEXT>();
-  glGetIntegerIndexedvEXT = Pointer<NativeFunction<GlGetIntegerIndexedvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetIntegerIndexedvEXT'))).asFunction<GlGetIntegerIndexedvEXT>();
-  glGetBooleanIndexedvEXT = Pointer<NativeFunction<GlGetBooleanIndexedvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetBooleanIndexedvEXT'))).asFunction<GlGetBooleanIndexedvEXT>();
-  glCompressedTextureImage3DEXT = Pointer<NativeFunction<GlCompressedTextureImage3DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTextureImage3DEXT'))).asFunction<GlCompressedTextureImage3DEXT>();
-  glCompressedTextureImage2DEXT = Pointer<NativeFunction<GlCompressedTextureImage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTextureImage2DEXT'))).asFunction<GlCompressedTextureImage2DEXT>();
-  glCompressedTextureImage1DEXT = Pointer<NativeFunction<GlCompressedTextureImage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTextureImage1DEXT'))).asFunction<GlCompressedTextureImage1DEXT>();
-  glCompressedTextureSubImage3DEXT = Pointer<NativeFunction<GlCompressedTextureSubImage3DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTextureSubImage3DEXT'))).asFunction<GlCompressedTextureSubImage3DEXT>();
-  glCompressedTextureSubImage2DEXT = Pointer<NativeFunction<GlCompressedTextureSubImage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTextureSubImage2DEXT'))).asFunction<GlCompressedTextureSubImage2DEXT>();
-  glCompressedTextureSubImage1DEXT = Pointer<NativeFunction<GlCompressedTextureSubImage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTextureSubImage1DEXT'))).asFunction<GlCompressedTextureSubImage1DEXT>();
-  glGetCompressedTextureImageEXT = Pointer<NativeFunction<GlGetCompressedTextureImageEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetCompressedTextureImageEXT'))).asFunction<GlGetCompressedTextureImageEXT>();
-  glCompressedMultiTexImage3DEXT = Pointer<NativeFunction<GlCompressedMultiTexImage3DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedMultiTexImage3DEXT'))).asFunction<GlCompressedMultiTexImage3DEXT>();
-  glCompressedMultiTexImage2DEXT = Pointer<NativeFunction<GlCompressedMultiTexImage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedMultiTexImage2DEXT'))).asFunction<GlCompressedMultiTexImage2DEXT>();
-  glCompressedMultiTexImage1DEXT = Pointer<NativeFunction<GlCompressedMultiTexImage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedMultiTexImage1DEXT'))).asFunction<GlCompressedMultiTexImage1DEXT>();
-  glCompressedMultiTexSubImage3DEXT = Pointer<NativeFunction<GlCompressedMultiTexSubImage3DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedMultiTexSubImage3DEXT'))).asFunction<GlCompressedMultiTexSubImage3DEXT>();
-  glCompressedMultiTexSubImage2DEXT = Pointer<NativeFunction<GlCompressedMultiTexSubImage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedMultiTexSubImage2DEXT'))).asFunction<GlCompressedMultiTexSubImage2DEXT>();
-  glCompressedMultiTexSubImage1DEXT = Pointer<NativeFunction<GlCompressedMultiTexSubImage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedMultiTexSubImage1DEXT'))).asFunction<GlCompressedMultiTexSubImage1DEXT>();
-  glGetCompressedMultiTexImageEXT = Pointer<NativeFunction<GlGetCompressedMultiTexImageEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetCompressedMultiTexImageEXT'))).asFunction<GlGetCompressedMultiTexImageEXT>();
-  glMatrixLoadTransposefEXT = Pointer<NativeFunction<GlMatrixLoadTransposefEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixLoadTransposefEXT'))).asFunction<GlMatrixLoadTransposefEXT>();
-  glMatrixLoadTransposedEXT = Pointer<NativeFunction<GlMatrixLoadTransposedEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixLoadTransposedEXT'))).asFunction<GlMatrixLoadTransposedEXT>();
-  glMatrixMultTransposefEXT = Pointer<NativeFunction<GlMatrixMultTransposefEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixMultTransposefEXT'))).asFunction<GlMatrixMultTransposefEXT>();
-  glMatrixMultTransposedEXT = Pointer<NativeFunction<GlMatrixMultTransposedEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixMultTransposedEXT'))).asFunction<GlMatrixMultTransposedEXT>();
-  glNamedBufferDataEXT = Pointer<NativeFunction<GlNamedBufferDataEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedBufferDataEXT'))).asFunction<GlNamedBufferDataEXT>();
-  glNamedBufferSubDataEXT = Pointer<NativeFunction<GlNamedBufferSubDataEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedBufferSubDataEXT'))).asFunction<GlNamedBufferSubDataEXT>();
-  glMapNamedBufferEXT = Pointer<NativeFunction<GlMapNamedBufferEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMapNamedBufferEXT'))).asFunction<GlMapNamedBufferEXT>();
-  glUnmapNamedBufferEXT = Pointer<NativeFunction<GlUnmapNamedBufferEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUnmapNamedBufferEXT'))).asFunction<GlUnmapNamedBufferEXT>();
-  glGetNamedBufferParameterivEXT = Pointer<NativeFunction<GlGetNamedBufferParameterivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedBufferParameterivEXT'))).asFunction<GlGetNamedBufferParameterivEXT>();
-  glGetNamedBufferPointervEXT = Pointer<NativeFunction<GlGetNamedBufferPointervEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedBufferPointervEXT'))).asFunction<GlGetNamedBufferPointervEXT>();
-  glGetNamedBufferSubDataEXT = Pointer<NativeFunction<GlGetNamedBufferSubDataEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedBufferSubDataEXT'))).asFunction<GlGetNamedBufferSubDataEXT>();
-  glProgramUniform1fEXT = Pointer<NativeFunction<GlProgramUniform1fEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1fEXT'))).asFunction<GlProgramUniform1fEXT>();
-  glProgramUniform2fEXT = Pointer<NativeFunction<GlProgramUniform2fEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2fEXT'))).asFunction<GlProgramUniform2fEXT>();
-  glProgramUniform3fEXT = Pointer<NativeFunction<GlProgramUniform3fEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3fEXT'))).asFunction<GlProgramUniform3fEXT>();
-  glProgramUniform4fEXT = Pointer<NativeFunction<GlProgramUniform4fEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4fEXT'))).asFunction<GlProgramUniform4fEXT>();
-  glProgramUniform1iEXT = Pointer<NativeFunction<GlProgramUniform1iEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1iEXT'))).asFunction<GlProgramUniform1iEXT>();
-  glProgramUniform2iEXT = Pointer<NativeFunction<GlProgramUniform2iEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2iEXT'))).asFunction<GlProgramUniform2iEXT>();
-  glProgramUniform3iEXT = Pointer<NativeFunction<GlProgramUniform3iEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3iEXT'))).asFunction<GlProgramUniform3iEXT>();
-  glProgramUniform4iEXT = Pointer<NativeFunction<GlProgramUniform4iEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4iEXT'))).asFunction<GlProgramUniform4iEXT>();
-  glProgramUniform1fvEXT = Pointer<NativeFunction<GlProgramUniform1fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1fvEXT'))).asFunction<GlProgramUniform1fvEXT>();
-  glProgramUniform2fvEXT = Pointer<NativeFunction<GlProgramUniform2fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2fvEXT'))).asFunction<GlProgramUniform2fvEXT>();
-  glProgramUniform3fvEXT = Pointer<NativeFunction<GlProgramUniform3fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3fvEXT'))).asFunction<GlProgramUniform3fvEXT>();
-  glProgramUniform4fvEXT = Pointer<NativeFunction<GlProgramUniform4fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4fvEXT'))).asFunction<GlProgramUniform4fvEXT>();
-  glProgramUniform1ivEXT = Pointer<NativeFunction<GlProgramUniform1ivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1ivEXT'))).asFunction<GlProgramUniform1ivEXT>();
-  glProgramUniform2ivEXT = Pointer<NativeFunction<GlProgramUniform2ivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2ivEXT'))).asFunction<GlProgramUniform2ivEXT>();
-  glProgramUniform3ivEXT = Pointer<NativeFunction<GlProgramUniform3ivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3ivEXT'))).asFunction<GlProgramUniform3ivEXT>();
-  glProgramUniform4ivEXT = Pointer<NativeFunction<GlProgramUniform4ivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4ivEXT'))).asFunction<GlProgramUniform4ivEXT>();
-  glProgramUniformMatrix2fvEXT = Pointer<NativeFunction<GlProgramUniformMatrix2fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix2fvEXT'))).asFunction<GlProgramUniformMatrix2fvEXT>();
-  glProgramUniformMatrix3fvEXT = Pointer<NativeFunction<GlProgramUniformMatrix3fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix3fvEXT'))).asFunction<GlProgramUniformMatrix3fvEXT>();
-  glProgramUniformMatrix4fvEXT = Pointer<NativeFunction<GlProgramUniformMatrix4fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix4fvEXT'))).asFunction<GlProgramUniformMatrix4fvEXT>();
-  glProgramUniformMatrix2x3fvEXT = Pointer<NativeFunction<GlProgramUniformMatrix2x3fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix2x3fvEXT'))).asFunction<GlProgramUniformMatrix2x3fvEXT>();
-  glProgramUniformMatrix3x2fvEXT = Pointer<NativeFunction<GlProgramUniformMatrix3x2fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix3x2fvEXT'))).asFunction<GlProgramUniformMatrix3x2fvEXT>();
-  glProgramUniformMatrix2x4fvEXT = Pointer<NativeFunction<GlProgramUniformMatrix2x4fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix2x4fvEXT'))).asFunction<GlProgramUniformMatrix2x4fvEXT>();
-  glProgramUniformMatrix4x2fvEXT = Pointer<NativeFunction<GlProgramUniformMatrix4x2fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix4x2fvEXT'))).asFunction<GlProgramUniformMatrix4x2fvEXT>();
-  glProgramUniformMatrix3x4fvEXT = Pointer<NativeFunction<GlProgramUniformMatrix3x4fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix3x4fvEXT'))).asFunction<GlProgramUniformMatrix3x4fvEXT>();
-  glProgramUniformMatrix4x3fvEXT = Pointer<NativeFunction<GlProgramUniformMatrix4x3fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix4x3fvEXT'))).asFunction<GlProgramUniformMatrix4x3fvEXT>();
-  glTextureBufferEXT = Pointer<NativeFunction<GlTextureBufferEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureBufferEXT'))).asFunction<GlTextureBufferEXT>();
-  glMultiTexBufferEXT = Pointer<NativeFunction<GlMultiTexBufferEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexBufferEXT'))).asFunction<GlMultiTexBufferEXT>();
-  glTextureParameterIivEXT = Pointer<NativeFunction<GlTextureParameterIivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureParameterIivEXT'))).asFunction<GlTextureParameterIivEXT>();
-  glTextureParameterIuivEXT = Pointer<NativeFunction<GlTextureParameterIuivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureParameterIuivEXT'))).asFunction<GlTextureParameterIuivEXT>();
-  glGetTextureParameterIivEXT = Pointer<NativeFunction<GlGetTextureParameterIivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureParameterIivEXT'))).asFunction<GlGetTextureParameterIivEXT>();
-  glGetTextureParameterIuivEXT = Pointer<NativeFunction<GlGetTextureParameterIuivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureParameterIuivEXT'))).asFunction<GlGetTextureParameterIuivEXT>();
-  glMultiTexParameterIivEXT = Pointer<NativeFunction<GlMultiTexParameterIivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexParameterIivEXT'))).asFunction<GlMultiTexParameterIivEXT>();
-  glMultiTexParameterIuivEXT = Pointer<NativeFunction<GlMultiTexParameterIuivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexParameterIuivEXT'))).asFunction<GlMultiTexParameterIuivEXT>();
-  glGetMultiTexParameterIivEXT = Pointer<NativeFunction<GlGetMultiTexParameterIivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultiTexParameterIivEXT'))).asFunction<GlGetMultiTexParameterIivEXT>();
-  glGetMultiTexParameterIuivEXT = Pointer<NativeFunction<GlGetMultiTexParameterIuivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultiTexParameterIuivEXT'))).asFunction<GlGetMultiTexParameterIuivEXT>();
-  glProgramUniform1uiEXT = Pointer<NativeFunction<GlProgramUniform1uiEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1uiEXT'))).asFunction<GlProgramUniform1uiEXT>();
-  glProgramUniform2uiEXT = Pointer<NativeFunction<GlProgramUniform2uiEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2uiEXT'))).asFunction<GlProgramUniform2uiEXT>();
-  glProgramUniform3uiEXT = Pointer<NativeFunction<GlProgramUniform3uiEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3uiEXT'))).asFunction<GlProgramUniform3uiEXT>();
-  glProgramUniform4uiEXT = Pointer<NativeFunction<GlProgramUniform4uiEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4uiEXT'))).asFunction<GlProgramUniform4uiEXT>();
-  glProgramUniform1uivEXT = Pointer<NativeFunction<GlProgramUniform1uivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1uivEXT'))).asFunction<GlProgramUniform1uivEXT>();
-  glProgramUniform2uivEXT = Pointer<NativeFunction<GlProgramUniform2uivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2uivEXT'))).asFunction<GlProgramUniform2uivEXT>();
-  glProgramUniform3uivEXT = Pointer<NativeFunction<GlProgramUniform3uivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3uivEXT'))).asFunction<GlProgramUniform3uivEXT>();
-  glProgramUniform4uivEXT = Pointer<NativeFunction<GlProgramUniform4uivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4uivEXT'))).asFunction<GlProgramUniform4uivEXT>();
-  glNamedProgramLocalParameters4fvEXT = Pointer<NativeFunction<GlNamedProgramLocalParameters4fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedProgramLocalParameters4fvEXT'))).asFunction<GlNamedProgramLocalParameters4fvEXT>();
-  glNamedProgramLocalParameterI4iEXT = Pointer<NativeFunction<GlNamedProgramLocalParameterI4iEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedProgramLocalParameterI4iEXT'))).asFunction<GlNamedProgramLocalParameterI4iEXT>();
-  glNamedProgramLocalParameterI4ivEXT = Pointer<NativeFunction<GlNamedProgramLocalParameterI4ivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedProgramLocalParameterI4ivEXT'))).asFunction<GlNamedProgramLocalParameterI4ivEXT>();
-  glNamedProgramLocalParametersI4ivEXT = Pointer<NativeFunction<GlNamedProgramLocalParametersI4ivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedProgramLocalParametersI4ivEXT'))).asFunction<GlNamedProgramLocalParametersI4ivEXT>();
-  glNamedProgramLocalParameterI4uiEXT = Pointer<NativeFunction<GlNamedProgramLocalParameterI4uiEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedProgramLocalParameterI4uiEXT'))).asFunction<GlNamedProgramLocalParameterI4uiEXT>();
-  glNamedProgramLocalParameterI4uivEXT = Pointer<NativeFunction<GlNamedProgramLocalParameterI4uivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedProgramLocalParameterI4uivEXT'))).asFunction<GlNamedProgramLocalParameterI4uivEXT>();
-  glNamedProgramLocalParametersI4uivEXT = Pointer<NativeFunction<GlNamedProgramLocalParametersI4uivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedProgramLocalParametersI4uivEXT'))).asFunction<GlNamedProgramLocalParametersI4uivEXT>();
-  glGetNamedProgramLocalParameterIivEXT = Pointer<NativeFunction<GlGetNamedProgramLocalParameterIivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedProgramLocalParameterIivEXT'))).asFunction<GlGetNamedProgramLocalParameterIivEXT>();
-  glGetNamedProgramLocalParameterIuivEXT = Pointer<NativeFunction<GlGetNamedProgramLocalParameterIuivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedProgramLocalParameterIuivEXT'))).asFunction<GlGetNamedProgramLocalParameterIuivEXT>();
-  glEnableClientStateiEXT = Pointer<NativeFunction<GlEnableClientStateiEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEnableClientStateiEXT'))).asFunction<GlEnableClientStateiEXT>();
-  glDisableClientStateiEXT = Pointer<NativeFunction<GlDisableClientStateiEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDisableClientStateiEXT'))).asFunction<GlDisableClientStateiEXT>();
-  glGetFloati_vEXT = Pointer<NativeFunction<GlGetFloati_vEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetFloati_vEXT'))).asFunction<GlGetFloati_vEXT>();
-  glGetDoublei_vEXT = Pointer<NativeFunction<GlGetDoublei_vEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetDoublei_vEXT'))).asFunction<GlGetDoublei_vEXT>();
-  glGetPointeri_vEXT = Pointer<NativeFunction<GlGetPointeri_vEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPointeri_vEXT'))).asFunction<GlGetPointeri_vEXT>();
-  glNamedProgramStringEXT = Pointer<NativeFunction<GlNamedProgramStringEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedProgramStringEXT'))).asFunction<GlNamedProgramStringEXT>();
-  glNamedProgramLocalParameter4dEXT = Pointer<NativeFunction<GlNamedProgramLocalParameter4dEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedProgramLocalParameter4dEXT'))).asFunction<GlNamedProgramLocalParameter4dEXT>();
-  glNamedProgramLocalParameter4dvEXT = Pointer<NativeFunction<GlNamedProgramLocalParameter4dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedProgramLocalParameter4dvEXT'))).asFunction<GlNamedProgramLocalParameter4dvEXT>();
-  glNamedProgramLocalParameter4fEXT = Pointer<NativeFunction<GlNamedProgramLocalParameter4fEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedProgramLocalParameter4fEXT'))).asFunction<GlNamedProgramLocalParameter4fEXT>();
-  glNamedProgramLocalParameter4fvEXT = Pointer<NativeFunction<GlNamedProgramLocalParameter4fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedProgramLocalParameter4fvEXT'))).asFunction<GlNamedProgramLocalParameter4fvEXT>();
-  glGetNamedProgramLocalParameterdvEXT = Pointer<NativeFunction<GlGetNamedProgramLocalParameterdvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedProgramLocalParameterdvEXT'))).asFunction<GlGetNamedProgramLocalParameterdvEXT>();
-  glGetNamedProgramLocalParameterfvEXT = Pointer<NativeFunction<GlGetNamedProgramLocalParameterfvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedProgramLocalParameterfvEXT'))).asFunction<GlGetNamedProgramLocalParameterfvEXT>();
-  glGetNamedProgramivEXT = Pointer<NativeFunction<GlGetNamedProgramivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedProgramivEXT'))).asFunction<GlGetNamedProgramivEXT>();
-  glGetNamedProgramStringEXT = Pointer<NativeFunction<GlGetNamedProgramStringEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedProgramStringEXT'))).asFunction<GlGetNamedProgramStringEXT>();
-  glNamedRenderbufferStorageEXT = Pointer<NativeFunction<GlNamedRenderbufferStorageEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedRenderbufferStorageEXT'))).asFunction<GlNamedRenderbufferStorageEXT>();
-  glGetNamedRenderbufferParameterivEXT = Pointer<NativeFunction<GlGetNamedRenderbufferParameterivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedRenderbufferParameterivEXT'))).asFunction<GlGetNamedRenderbufferParameterivEXT>();
-  glNamedRenderbufferStorageMultisampleEXT = Pointer<NativeFunction<GlNamedRenderbufferStorageMultisampleEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedRenderbufferStorageMultisampleEXT'))).asFunction<GlNamedRenderbufferStorageMultisampleEXT>();
-  glNamedRenderbufferStorageMultisampleCoverageEXT = Pointer<NativeFunction<GlNamedRenderbufferStorageMultisampleCoverageEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedRenderbufferStorageMultisampleCoverageEXT'))).asFunction<GlNamedRenderbufferStorageMultisampleCoverageEXT>();
-  glCheckNamedFramebufferStatusEXT = Pointer<NativeFunction<GlCheckNamedFramebufferStatusEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCheckNamedFramebufferStatusEXT'))).asFunction<GlCheckNamedFramebufferStatusEXT>();
-  glNamedFramebufferTexture1DEXT = Pointer<NativeFunction<GlNamedFramebufferTexture1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferTexture1DEXT'))).asFunction<GlNamedFramebufferTexture1DEXT>();
-  glNamedFramebufferTexture2DEXT = Pointer<NativeFunction<GlNamedFramebufferTexture2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferTexture2DEXT'))).asFunction<GlNamedFramebufferTexture2DEXT>();
-  glNamedFramebufferTexture3DEXT = Pointer<NativeFunction<GlNamedFramebufferTexture3DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferTexture3DEXT'))).asFunction<GlNamedFramebufferTexture3DEXT>();
-  glNamedFramebufferRenderbufferEXT = Pointer<NativeFunction<GlNamedFramebufferRenderbufferEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferRenderbufferEXT'))).asFunction<GlNamedFramebufferRenderbufferEXT>();
-  glGetNamedFramebufferAttachmentParameterivEXT = Pointer<NativeFunction<GlGetNamedFramebufferAttachmentParameterivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedFramebufferAttachmentParameterivEXT'))).asFunction<GlGetNamedFramebufferAttachmentParameterivEXT>();
-  glGenerateTextureMipmapEXT = Pointer<NativeFunction<GlGenerateTextureMipmapEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenerateTextureMipmapEXT'))).asFunction<GlGenerateTextureMipmapEXT>();
-  glGenerateMultiTexMipmapEXT = Pointer<NativeFunction<GlGenerateMultiTexMipmapEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenerateMultiTexMipmapEXT'))).asFunction<GlGenerateMultiTexMipmapEXT>();
-  glFramebufferDrawBufferEXT = Pointer<NativeFunction<GlFramebufferDrawBufferEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferDrawBufferEXT'))).asFunction<GlFramebufferDrawBufferEXT>();
-  glFramebufferDrawBuffersEXT = Pointer<NativeFunction<GlFramebufferDrawBuffersEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferDrawBuffersEXT'))).asFunction<GlFramebufferDrawBuffersEXT>();
-  glFramebufferReadBufferEXT = Pointer<NativeFunction<GlFramebufferReadBufferEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferReadBufferEXT'))).asFunction<GlFramebufferReadBufferEXT>();
-  glGetFramebufferParameterivEXT = Pointer<NativeFunction<GlGetFramebufferParameterivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetFramebufferParameterivEXT'))).asFunction<GlGetFramebufferParameterivEXT>();
-  glNamedCopyBufferSubDataEXT = Pointer<NativeFunction<GlNamedCopyBufferSubDataEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedCopyBufferSubDataEXT'))).asFunction<GlNamedCopyBufferSubDataEXT>();
-  glNamedFramebufferTextureEXT = Pointer<NativeFunction<GlNamedFramebufferTextureEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferTextureEXT'))).asFunction<GlNamedFramebufferTextureEXT>();
-  glNamedFramebufferTextureLayerEXT = Pointer<NativeFunction<GlNamedFramebufferTextureLayerEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferTextureLayerEXT'))).asFunction<GlNamedFramebufferTextureLayerEXT>();
-  glNamedFramebufferTextureFaceEXT = Pointer<NativeFunction<GlNamedFramebufferTextureFaceEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferTextureFaceEXT'))).asFunction<GlNamedFramebufferTextureFaceEXT>();
-  glTextureRenderbufferEXT = Pointer<NativeFunction<GlTextureRenderbufferEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureRenderbufferEXT'))).asFunction<GlTextureRenderbufferEXT>();
-  glMultiTexRenderbufferEXT = Pointer<NativeFunction<GlMultiTexRenderbufferEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexRenderbufferEXT'))).asFunction<GlMultiTexRenderbufferEXT>();
-  glVertexArrayVertexOffsetEXT = Pointer<NativeFunction<GlVertexArrayVertexOffsetEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayVertexOffsetEXT'))).asFunction<GlVertexArrayVertexOffsetEXT>();
-  glVertexArrayColorOffsetEXT = Pointer<NativeFunction<GlVertexArrayColorOffsetEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayColorOffsetEXT'))).asFunction<GlVertexArrayColorOffsetEXT>();
-  glVertexArrayEdgeFlagOffsetEXT = Pointer<NativeFunction<GlVertexArrayEdgeFlagOffsetEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayEdgeFlagOffsetEXT'))).asFunction<GlVertexArrayEdgeFlagOffsetEXT>();
-  glVertexArrayIndexOffsetEXT = Pointer<NativeFunction<GlVertexArrayIndexOffsetEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayIndexOffsetEXT'))).asFunction<GlVertexArrayIndexOffsetEXT>();
-  glVertexArrayNormalOffsetEXT = Pointer<NativeFunction<GlVertexArrayNormalOffsetEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayNormalOffsetEXT'))).asFunction<GlVertexArrayNormalOffsetEXT>();
-  glVertexArrayTexCoordOffsetEXT = Pointer<NativeFunction<GlVertexArrayTexCoordOffsetEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayTexCoordOffsetEXT'))).asFunction<GlVertexArrayTexCoordOffsetEXT>();
-  glVertexArrayMultiTexCoordOffsetEXT = Pointer<NativeFunction<GlVertexArrayMultiTexCoordOffsetEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayMultiTexCoordOffsetEXT'))).asFunction<GlVertexArrayMultiTexCoordOffsetEXT>();
-  glVertexArrayFogCoordOffsetEXT = Pointer<NativeFunction<GlVertexArrayFogCoordOffsetEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayFogCoordOffsetEXT'))).asFunction<GlVertexArrayFogCoordOffsetEXT>();
-  glVertexArraySecondaryColorOffsetEXT = Pointer<NativeFunction<GlVertexArraySecondaryColorOffsetEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArraySecondaryColorOffsetEXT'))).asFunction<GlVertexArraySecondaryColorOffsetEXT>();
-  glVertexArrayVertexAttribOffsetEXT = Pointer<NativeFunction<GlVertexArrayVertexAttribOffsetEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayVertexAttribOffsetEXT'))).asFunction<GlVertexArrayVertexAttribOffsetEXT>();
-  glVertexArrayVertexAttribIOffsetEXT = Pointer<NativeFunction<GlVertexArrayVertexAttribIOffsetEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayVertexAttribIOffsetEXT'))).asFunction<GlVertexArrayVertexAttribIOffsetEXT>();
-  glEnableVertexArrayEXT = Pointer<NativeFunction<GlEnableVertexArrayEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEnableVertexArrayEXT'))).asFunction<GlEnableVertexArrayEXT>();
-  glDisableVertexArrayEXT = Pointer<NativeFunction<GlDisableVertexArrayEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDisableVertexArrayEXT'))).asFunction<GlDisableVertexArrayEXT>();
-  glEnableVertexArrayAttribEXT = Pointer<NativeFunction<GlEnableVertexArrayAttribEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEnableVertexArrayAttribEXT'))).asFunction<GlEnableVertexArrayAttribEXT>();
-  glDisableVertexArrayAttribEXT = Pointer<NativeFunction<GlDisableVertexArrayAttribEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDisableVertexArrayAttribEXT'))).asFunction<GlDisableVertexArrayAttribEXT>();
-  glGetVertexArrayIntegervEXT = Pointer<NativeFunction<GlGetVertexArrayIntegervEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexArrayIntegervEXT'))).asFunction<GlGetVertexArrayIntegervEXT>();
-  glGetVertexArrayPointervEXT = Pointer<NativeFunction<GlGetVertexArrayPointervEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexArrayPointervEXT'))).asFunction<GlGetVertexArrayPointervEXT>();
-  glGetVertexArrayIntegeri_vEXT = Pointer<NativeFunction<GlGetVertexArrayIntegeri_vEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexArrayIntegeri_vEXT'))).asFunction<GlGetVertexArrayIntegeri_vEXT>();
-  glGetVertexArrayPointeri_vEXT = Pointer<NativeFunction<GlGetVertexArrayPointeri_vEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexArrayPointeri_vEXT'))).asFunction<GlGetVertexArrayPointeri_vEXT>();
-  glMapNamedBufferRangeEXT = Pointer<NativeFunction<GlMapNamedBufferRangeEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMapNamedBufferRangeEXT'))).asFunction<GlMapNamedBufferRangeEXT>();
-  glFlushMappedNamedBufferRangeEXT = Pointer<NativeFunction<GlFlushMappedNamedBufferRangeEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFlushMappedNamedBufferRangeEXT'))).asFunction<GlFlushMappedNamedBufferRangeEXT>();
-  glNamedBufferStorageEXT = Pointer<NativeFunction<GlNamedBufferStorageEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedBufferStorageEXT'))).asFunction<GlNamedBufferStorageEXT>();
-  glClearNamedBufferDataEXT = Pointer<NativeFunction<GlClearNamedBufferDataEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearNamedBufferDataEXT'))).asFunction<GlClearNamedBufferDataEXT>();
-  glClearNamedBufferSubDataEXT = Pointer<NativeFunction<GlClearNamedBufferSubDataEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearNamedBufferSubDataEXT'))).asFunction<GlClearNamedBufferSubDataEXT>();
-  glNamedFramebufferParameteriEXT = Pointer<NativeFunction<GlNamedFramebufferParameteriEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferParameteriEXT'))).asFunction<GlNamedFramebufferParameteriEXT>();
-  glGetNamedFramebufferParameterivEXT = Pointer<NativeFunction<GlGetNamedFramebufferParameterivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedFramebufferParameterivEXT'))).asFunction<GlGetNamedFramebufferParameterivEXT>();
-  glProgramUniform1dEXT = Pointer<NativeFunction<GlProgramUniform1dEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1dEXT'))).asFunction<GlProgramUniform1dEXT>();
-  glProgramUniform2dEXT = Pointer<NativeFunction<GlProgramUniform2dEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2dEXT'))).asFunction<GlProgramUniform2dEXT>();
-  glProgramUniform3dEXT = Pointer<NativeFunction<GlProgramUniform3dEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3dEXT'))).asFunction<GlProgramUniform3dEXT>();
-  glProgramUniform4dEXT = Pointer<NativeFunction<GlProgramUniform4dEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4dEXT'))).asFunction<GlProgramUniform4dEXT>();
-  glProgramUniform1dvEXT = Pointer<NativeFunction<GlProgramUniform1dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1dvEXT'))).asFunction<GlProgramUniform1dvEXT>();
-  glProgramUniform2dvEXT = Pointer<NativeFunction<GlProgramUniform2dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2dvEXT'))).asFunction<GlProgramUniform2dvEXT>();
-  glProgramUniform3dvEXT = Pointer<NativeFunction<GlProgramUniform3dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3dvEXT'))).asFunction<GlProgramUniform3dvEXT>();
-  glProgramUniform4dvEXT = Pointer<NativeFunction<GlProgramUniform4dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4dvEXT'))).asFunction<GlProgramUniform4dvEXT>();
-  glProgramUniformMatrix2dvEXT = Pointer<NativeFunction<GlProgramUniformMatrix2dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix2dvEXT'))).asFunction<GlProgramUniformMatrix2dvEXT>();
-  glProgramUniformMatrix3dvEXT = Pointer<NativeFunction<GlProgramUniformMatrix3dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix3dvEXT'))).asFunction<GlProgramUniformMatrix3dvEXT>();
-  glProgramUniformMatrix4dvEXT = Pointer<NativeFunction<GlProgramUniformMatrix4dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix4dvEXT'))).asFunction<GlProgramUniformMatrix4dvEXT>();
-  glProgramUniformMatrix2x3dvEXT = Pointer<NativeFunction<GlProgramUniformMatrix2x3dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix2x3dvEXT'))).asFunction<GlProgramUniformMatrix2x3dvEXT>();
-  glProgramUniformMatrix2x4dvEXT = Pointer<NativeFunction<GlProgramUniformMatrix2x4dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix2x4dvEXT'))).asFunction<GlProgramUniformMatrix2x4dvEXT>();
-  glProgramUniformMatrix3x2dvEXT = Pointer<NativeFunction<GlProgramUniformMatrix3x2dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix3x2dvEXT'))).asFunction<GlProgramUniformMatrix3x2dvEXT>();
-  glProgramUniformMatrix3x4dvEXT = Pointer<NativeFunction<GlProgramUniformMatrix3x4dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix3x4dvEXT'))).asFunction<GlProgramUniformMatrix3x4dvEXT>();
-  glProgramUniformMatrix4x2dvEXT = Pointer<NativeFunction<GlProgramUniformMatrix4x2dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix4x2dvEXT'))).asFunction<GlProgramUniformMatrix4x2dvEXT>();
-  glProgramUniformMatrix4x3dvEXT = Pointer<NativeFunction<GlProgramUniformMatrix4x3dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix4x3dvEXT'))).asFunction<GlProgramUniformMatrix4x3dvEXT>();
-  glTextureBufferRangeEXT = Pointer<NativeFunction<GlTextureBufferRangeEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureBufferRangeEXT'))).asFunction<GlTextureBufferRangeEXT>();
-  glTextureStorage1DEXT = Pointer<NativeFunction<GlTextureStorage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureStorage1DEXT'))).asFunction<GlTextureStorage1DEXT>();
-  glTextureStorage2DEXT = Pointer<NativeFunction<GlTextureStorage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureStorage2DEXT'))).asFunction<GlTextureStorage2DEXT>();
-  glTextureStorage3DEXT = Pointer<NativeFunction<GlTextureStorage3DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureStorage3DEXT'))).asFunction<GlTextureStorage3DEXT>();
-  glTextureStorage2DMultisampleEXT = Pointer<NativeFunction<GlTextureStorage2DMultisampleEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureStorage2DMultisampleEXT'))).asFunction<GlTextureStorage2DMultisampleEXT>();
-  glTextureStorage3DMultisampleEXT = Pointer<NativeFunction<GlTextureStorage3DMultisampleEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureStorage3DMultisampleEXT'))).asFunction<GlTextureStorage3DMultisampleEXT>();
-  glVertexArrayBindVertexBufferEXT = Pointer<NativeFunction<GlVertexArrayBindVertexBufferEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayBindVertexBufferEXT'))).asFunction<GlVertexArrayBindVertexBufferEXT>();
-  glVertexArrayVertexAttribFormatEXT = Pointer<NativeFunction<GlVertexArrayVertexAttribFormatEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayVertexAttribFormatEXT'))).asFunction<GlVertexArrayVertexAttribFormatEXT>();
-  glVertexArrayVertexAttribIFormatEXT = Pointer<NativeFunction<GlVertexArrayVertexAttribIFormatEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayVertexAttribIFormatEXT'))).asFunction<GlVertexArrayVertexAttribIFormatEXT>();
-  glVertexArrayVertexAttribLFormatEXT = Pointer<NativeFunction<GlVertexArrayVertexAttribLFormatEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayVertexAttribLFormatEXT'))).asFunction<GlVertexArrayVertexAttribLFormatEXT>();
-  glVertexArrayVertexAttribBindingEXT = Pointer<NativeFunction<GlVertexArrayVertexAttribBindingEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayVertexAttribBindingEXT'))).asFunction<GlVertexArrayVertexAttribBindingEXT>();
-  glVertexArrayVertexBindingDivisorEXT = Pointer<NativeFunction<GlVertexArrayVertexBindingDivisorEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayVertexBindingDivisorEXT'))).asFunction<GlVertexArrayVertexBindingDivisorEXT>();
-  glVertexArrayVertexAttribLOffsetEXT = Pointer<NativeFunction<GlVertexArrayVertexAttribLOffsetEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayVertexAttribLOffsetEXT'))).asFunction<GlVertexArrayVertexAttribLOffsetEXT>();
-  glTexturePageCommitmentEXT = Pointer<NativeFunction<GlTexturePageCommitmentEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexturePageCommitmentEXT'))).asFunction<GlTexturePageCommitmentEXT>();
-  glVertexArrayVertexAttribDivisorEXT = Pointer<NativeFunction<GlVertexArrayVertexAttribDivisorEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayVertexAttribDivisorEXT'))).asFunction<GlVertexArrayVertexAttribDivisorEXT>();
-  glDrawArraysInstancedEXT = Pointer<NativeFunction<GlDrawArraysInstancedEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawArraysInstancedEXT'))).asFunction<GlDrawArraysInstancedEXT>();
-  glDrawElementsInstancedEXT = Pointer<NativeFunction<GlDrawElementsInstancedEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawElementsInstancedEXT'))).asFunction<GlDrawElementsInstancedEXT>();
-  glPolygonOffsetClampEXT = Pointer<NativeFunction<GlPolygonOffsetClampEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPolygonOffsetClampEXT'))).asFunction<GlPolygonOffsetClampEXT>();
-  glRasterSamplesEXT = Pointer<NativeFunction<GlRasterSamplesEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glRasterSamplesEXT'))).asFunction<GlRasterSamplesEXT>();
-  glUseShaderProgramEXT = Pointer<NativeFunction<GlUseShaderProgramEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUseShaderProgramEXT'))).asFunction<GlUseShaderProgramEXT>();
-  glActiveProgramEXT = Pointer<NativeFunction<GlActiveProgramEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glActiveProgramEXT'))).asFunction<GlActiveProgramEXT>();
-  glCreateShaderProgramEXT = Pointer<NativeFunction<GlCreateShaderProgramEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateShaderProgramEXT'))).asFunction<GlCreateShaderProgramEXT>();
-  glFramebufferFetchBarrierEXT = Pointer<NativeFunction<GlFramebufferFetchBarrierEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferFetchBarrierEXT'))).asFunction<GlFramebufferFetchBarrierEXT>();
-  glWindowRectanglesEXT = Pointer<NativeFunction<GlWindowRectanglesEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glWindowRectanglesEXT'))).asFunction<GlWindowRectanglesEXT>();
-  glApplyFramebufferAttachmentCMAAINTEL = Pointer<NativeFunction<GlApplyFramebufferAttachmentCMAAINTELNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glApplyFramebufferAttachmentCMAAINTEL'))).asFunction<GlApplyFramebufferAttachmentCMAAINTEL>();
-  glBeginPerfQueryINTEL = Pointer<NativeFunction<GlBeginPerfQueryINTELNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBeginPerfQueryINTEL'))).asFunction<GlBeginPerfQueryINTEL>();
-  glCreatePerfQueryINTEL = Pointer<NativeFunction<GlCreatePerfQueryINTELNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreatePerfQueryINTEL'))).asFunction<GlCreatePerfQueryINTEL>();
-  glDeletePerfQueryINTEL = Pointer<NativeFunction<GlDeletePerfQueryINTELNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeletePerfQueryINTEL'))).asFunction<GlDeletePerfQueryINTEL>();
-  glEndPerfQueryINTEL = Pointer<NativeFunction<GlEndPerfQueryINTELNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEndPerfQueryINTEL'))).asFunction<GlEndPerfQueryINTEL>();
-  glGetFirstPerfQueryIdINTEL = Pointer<NativeFunction<GlGetFirstPerfQueryIdINTELNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetFirstPerfQueryIdINTEL'))).asFunction<GlGetFirstPerfQueryIdINTEL>();
-  glGetNextPerfQueryIdINTEL = Pointer<NativeFunction<GlGetNextPerfQueryIdINTELNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNextPerfQueryIdINTEL'))).asFunction<GlGetNextPerfQueryIdINTEL>();
-  glGetPerfCounterInfoINTEL = Pointer<NativeFunction<GlGetPerfCounterInfoINTELNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPerfCounterInfoINTEL'))).asFunction<GlGetPerfCounterInfoINTEL>();
-  glGetPerfQueryDataINTEL = Pointer<NativeFunction<GlGetPerfQueryDataINTELNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPerfQueryDataINTEL'))).asFunction<GlGetPerfQueryDataINTEL>();
-  glGetPerfQueryIdByNameINTEL = Pointer<NativeFunction<GlGetPerfQueryIdByNameINTELNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPerfQueryIdByNameINTEL'))).asFunction<GlGetPerfQueryIdByNameINTEL>();
-  glGetPerfQueryInfoINTEL = Pointer<NativeFunction<GlGetPerfQueryInfoINTELNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPerfQueryInfoINTEL'))).asFunction<GlGetPerfQueryInfoINTEL>();
-  glMultiDrawArraysIndirectBindlessNV = Pointer<NativeFunction<GlMultiDrawArraysIndirectBindlessNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawArraysIndirectBindlessNV'))).asFunction<GlMultiDrawArraysIndirectBindlessNV>();
-  glMultiDrawElementsIndirectBindlessNV = Pointer<NativeFunction<GlMultiDrawElementsIndirectBindlessNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawElementsIndirectBindlessNV'))).asFunction<GlMultiDrawElementsIndirectBindlessNV>();
-  glMultiDrawArraysIndirectBindlessCountNV = Pointer<NativeFunction<GlMultiDrawArraysIndirectBindlessCountNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawArraysIndirectBindlessCountNV'))).asFunction<GlMultiDrawArraysIndirectBindlessCountNV>();
-  glMultiDrawElementsIndirectBindlessCountNV = Pointer<NativeFunction<GlMultiDrawElementsIndirectBindlessCountNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawElementsIndirectBindlessCountNV'))).asFunction<GlMultiDrawElementsIndirectBindlessCountNV>();
-  glGetTextureHandleNV = Pointer<NativeFunction<GlGetTextureHandleNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureHandleNV'))).asFunction<GlGetTextureHandleNV>();
-  glGetTextureSamplerHandleNV = Pointer<NativeFunction<GlGetTextureSamplerHandleNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureSamplerHandleNV'))).asFunction<GlGetTextureSamplerHandleNV>();
-  glMakeTextureHandleResidentNV = Pointer<NativeFunction<GlMakeTextureHandleResidentNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMakeTextureHandleResidentNV'))).asFunction<GlMakeTextureHandleResidentNV>();
-  glMakeTextureHandleNonResidentNV = Pointer<NativeFunction<GlMakeTextureHandleNonResidentNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMakeTextureHandleNonResidentNV'))).asFunction<GlMakeTextureHandleNonResidentNV>();
-  glGetImageHandleNV = Pointer<NativeFunction<GlGetImageHandleNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetImageHandleNV'))).asFunction<GlGetImageHandleNV>();
-  glMakeImageHandleResidentNV = Pointer<NativeFunction<GlMakeImageHandleResidentNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMakeImageHandleResidentNV'))).asFunction<GlMakeImageHandleResidentNV>();
-  glMakeImageHandleNonResidentNV = Pointer<NativeFunction<GlMakeImageHandleNonResidentNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMakeImageHandleNonResidentNV'))).asFunction<GlMakeImageHandleNonResidentNV>();
-  glUniformHandleui64NV = Pointer<NativeFunction<GlUniformHandleui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformHandleui64NV'))).asFunction<GlUniformHandleui64NV>();
-  glUniformHandleui64vNV = Pointer<NativeFunction<GlUniformHandleui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformHandleui64vNV'))).asFunction<GlUniformHandleui64vNV>();
-  glProgramUniformHandleui64NV = Pointer<NativeFunction<GlProgramUniformHandleui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformHandleui64NV'))).asFunction<GlProgramUniformHandleui64NV>();
-  glProgramUniformHandleui64vNV = Pointer<NativeFunction<GlProgramUniformHandleui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformHandleui64vNV'))).asFunction<GlProgramUniformHandleui64vNV>();
-  glIsTextureHandleResidentNV = Pointer<NativeFunction<GlIsTextureHandleResidentNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsTextureHandleResidentNV'))).asFunction<GlIsTextureHandleResidentNV>();
-  glIsImageHandleResidentNV = Pointer<NativeFunction<GlIsImageHandleResidentNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsImageHandleResidentNV'))).asFunction<GlIsImageHandleResidentNV>();
-  glBlendParameteriNV = Pointer<NativeFunction<GlBlendParameteriNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendParameteriNV'))).asFunction<GlBlendParameteriNV>();
-  glBlendBarrierNV = Pointer<NativeFunction<GlBlendBarrierNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendBarrierNV'))).asFunction<GlBlendBarrierNV>();
-  glViewportPositionWScaleNV = Pointer<NativeFunction<GlViewportPositionWScaleNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glViewportPositionWScaleNV'))).asFunction<GlViewportPositionWScaleNV>();
-  glCreateStatesNV = Pointer<NativeFunction<GlCreateStatesNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateStatesNV'))).asFunction<GlCreateStatesNV>();
-  glDeleteStatesNV = Pointer<NativeFunction<GlDeleteStatesNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteStatesNV'))).asFunction<GlDeleteStatesNV>();
-  glIsStateNV = Pointer<NativeFunction<GlIsStateNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsStateNV'))).asFunction<GlIsStateNV>();
-  glStateCaptureNV = Pointer<NativeFunction<GlStateCaptureNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStateCaptureNV'))).asFunction<GlStateCaptureNV>();
-  glGetCommandHeaderNV = Pointer<NativeFunction<GlGetCommandHeaderNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetCommandHeaderNV'))).asFunction<GlGetCommandHeaderNV>();
-  glGetStageIndexNV = Pointer<NativeFunction<GlGetStageIndexNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetStageIndexNV'))).asFunction<GlGetStageIndexNV>();
-  glDrawCommandsNV = Pointer<NativeFunction<GlDrawCommandsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawCommandsNV'))).asFunction<GlDrawCommandsNV>();
-  glDrawCommandsAddressNV = Pointer<NativeFunction<GlDrawCommandsAddressNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawCommandsAddressNV'))).asFunction<GlDrawCommandsAddressNV>();
-  glDrawCommandsStatesNV = Pointer<NativeFunction<GlDrawCommandsStatesNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawCommandsStatesNV'))).asFunction<GlDrawCommandsStatesNV>();
-  glDrawCommandsStatesAddressNV = Pointer<NativeFunction<GlDrawCommandsStatesAddressNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawCommandsStatesAddressNV'))).asFunction<GlDrawCommandsStatesAddressNV>();
-  glCreateCommandListsNV = Pointer<NativeFunction<GlCreateCommandListsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateCommandListsNV'))).asFunction<GlCreateCommandListsNV>();
-  glDeleteCommandListsNV = Pointer<NativeFunction<GlDeleteCommandListsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteCommandListsNV'))).asFunction<GlDeleteCommandListsNV>();
-  glIsCommandListNV = Pointer<NativeFunction<GlIsCommandListNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsCommandListNV'))).asFunction<GlIsCommandListNV>();
-  glListDrawCommandsStatesClientNV = Pointer<NativeFunction<GlListDrawCommandsStatesClientNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glListDrawCommandsStatesClientNV'))).asFunction<GlListDrawCommandsStatesClientNV>();
-  glCommandListSegmentsNV = Pointer<NativeFunction<GlCommandListSegmentsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCommandListSegmentsNV'))).asFunction<GlCommandListSegmentsNV>();
-  glCompileCommandListNV = Pointer<NativeFunction<GlCompileCommandListNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompileCommandListNV'))).asFunction<GlCompileCommandListNV>();
-  glCallCommandListNV = Pointer<NativeFunction<GlCallCommandListNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCallCommandListNV'))).asFunction<GlCallCommandListNV>();
-  glBeginConditionalRenderNV = Pointer<NativeFunction<GlBeginConditionalRenderNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBeginConditionalRenderNV'))).asFunction<GlBeginConditionalRenderNV>();
-  glEndConditionalRenderNV = Pointer<NativeFunction<GlEndConditionalRenderNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEndConditionalRenderNV'))).asFunction<GlEndConditionalRenderNV>();
-  glSubpixelPrecisionBiasNV = Pointer<NativeFunction<GlSubpixelPrecisionBiasNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSubpixelPrecisionBiasNV'))).asFunction<GlSubpixelPrecisionBiasNV>();
-  glConservativeRasterParameterfNV = Pointer<NativeFunction<GlConservativeRasterParameterfNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glConservativeRasterParameterfNV'))).asFunction<GlConservativeRasterParameterfNV>();
-  glConservativeRasterParameteriNV = Pointer<NativeFunction<GlConservativeRasterParameteriNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glConservativeRasterParameteriNV'))).asFunction<GlConservativeRasterParameteriNV>();
-  glDrawVkImageNV = Pointer<NativeFunction<GlDrawVkImageNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawVkImageNV'))).asFunction<GlDrawVkImageNV>();
-  glGetVkProcAddrNV = Pointer<NativeFunction<GlGetVkProcAddrNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVkProcAddrNV'))).asFunction<GlGetVkProcAddrNV>();
-  glWaitVkSemaphoreNV = Pointer<NativeFunction<GlWaitVkSemaphoreNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glWaitVkSemaphoreNV'))).asFunction<GlWaitVkSemaphoreNV>();
-  glSignalVkSemaphoreNV = Pointer<NativeFunction<GlSignalVkSemaphoreNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSignalVkSemaphoreNV'))).asFunction<GlSignalVkSemaphoreNV>();
-  glSignalVkFenceNV = Pointer<NativeFunction<GlSignalVkFenceNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSignalVkFenceNV'))).asFunction<GlSignalVkFenceNV>();
-  glFragmentCoverageColorNV = Pointer<NativeFunction<GlFragmentCoverageColorNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFragmentCoverageColorNV'))).asFunction<GlFragmentCoverageColorNV>();
-  glCoverageModulationTableNV = Pointer<NativeFunction<GlCoverageModulationTableNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCoverageModulationTableNV'))).asFunction<GlCoverageModulationTableNV>();
-  glGetCoverageModulationTableNV = Pointer<NativeFunction<GlGetCoverageModulationTableNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetCoverageModulationTableNV'))).asFunction<GlGetCoverageModulationTableNV>();
-  glCoverageModulationNV = Pointer<NativeFunction<GlCoverageModulationNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCoverageModulationNV'))).asFunction<GlCoverageModulationNV>();
-  glRenderbufferStorageMultisampleCoverageNV = Pointer<NativeFunction<GlRenderbufferStorageMultisampleCoverageNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glRenderbufferStorageMultisampleCoverageNV'))).asFunction<GlRenderbufferStorageMultisampleCoverageNV>();
-  glUniform1i64NV = Pointer<NativeFunction<GlUniform1i64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1i64NV'))).asFunction<GlUniform1i64NV>();
-  glUniform2i64NV = Pointer<NativeFunction<GlUniform2i64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2i64NV'))).asFunction<GlUniform2i64NV>();
-  glUniform3i64NV = Pointer<NativeFunction<GlUniform3i64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3i64NV'))).asFunction<GlUniform3i64NV>();
-  glUniform4i64NV = Pointer<NativeFunction<GlUniform4i64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4i64NV'))).asFunction<GlUniform4i64NV>();
-  glUniform1i64vNV = Pointer<NativeFunction<GlUniform1i64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1i64vNV'))).asFunction<GlUniform1i64vNV>();
-  glUniform2i64vNV = Pointer<NativeFunction<GlUniform2i64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2i64vNV'))).asFunction<GlUniform2i64vNV>();
-  glUniform3i64vNV = Pointer<NativeFunction<GlUniform3i64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3i64vNV'))).asFunction<GlUniform3i64vNV>();
-  glUniform4i64vNV = Pointer<NativeFunction<GlUniform4i64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4i64vNV'))).asFunction<GlUniform4i64vNV>();
-  glUniform1ui64NV = Pointer<NativeFunction<GlUniform1ui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1ui64NV'))).asFunction<GlUniform1ui64NV>();
-  glUniform2ui64NV = Pointer<NativeFunction<GlUniform2ui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2ui64NV'))).asFunction<GlUniform2ui64NV>();
-  glUniform3ui64NV = Pointer<NativeFunction<GlUniform3ui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3ui64NV'))).asFunction<GlUniform3ui64NV>();
-  glUniform4ui64NV = Pointer<NativeFunction<GlUniform4ui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4ui64NV'))).asFunction<GlUniform4ui64NV>();
-  glUniform1ui64vNV = Pointer<NativeFunction<GlUniform1ui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1ui64vNV'))).asFunction<GlUniform1ui64vNV>();
-  glUniform2ui64vNV = Pointer<NativeFunction<GlUniform2ui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2ui64vNV'))).asFunction<GlUniform2ui64vNV>();
-  glUniform3ui64vNV = Pointer<NativeFunction<GlUniform3ui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3ui64vNV'))).asFunction<GlUniform3ui64vNV>();
-  glUniform4ui64vNV = Pointer<NativeFunction<GlUniform4ui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4ui64vNV'))).asFunction<GlUniform4ui64vNV>();
-  glGetUniformi64vNV = Pointer<NativeFunction<GlGetUniformi64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetUniformi64vNV'))).asFunction<GlGetUniformi64vNV>();
-  glProgramUniform1i64NV = Pointer<NativeFunction<GlProgramUniform1i64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1i64NV'))).asFunction<GlProgramUniform1i64NV>();
-  glProgramUniform2i64NV = Pointer<NativeFunction<GlProgramUniform2i64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2i64NV'))).asFunction<GlProgramUniform2i64NV>();
-  glProgramUniform3i64NV = Pointer<NativeFunction<GlProgramUniform3i64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3i64NV'))).asFunction<GlProgramUniform3i64NV>();
-  glProgramUniform4i64NV = Pointer<NativeFunction<GlProgramUniform4i64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4i64NV'))).asFunction<GlProgramUniform4i64NV>();
-  glProgramUniform1i64vNV = Pointer<NativeFunction<GlProgramUniform1i64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1i64vNV'))).asFunction<GlProgramUniform1i64vNV>();
-  glProgramUniform2i64vNV = Pointer<NativeFunction<GlProgramUniform2i64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2i64vNV'))).asFunction<GlProgramUniform2i64vNV>();
-  glProgramUniform3i64vNV = Pointer<NativeFunction<GlProgramUniform3i64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3i64vNV'))).asFunction<GlProgramUniform3i64vNV>();
-  glProgramUniform4i64vNV = Pointer<NativeFunction<GlProgramUniform4i64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4i64vNV'))).asFunction<GlProgramUniform4i64vNV>();
-  glProgramUniform1ui64NV = Pointer<NativeFunction<GlProgramUniform1ui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1ui64NV'))).asFunction<GlProgramUniform1ui64NV>();
-  glProgramUniform2ui64NV = Pointer<NativeFunction<GlProgramUniform2ui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2ui64NV'))).asFunction<GlProgramUniform2ui64NV>();
-  glProgramUniform3ui64NV = Pointer<NativeFunction<GlProgramUniform3ui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3ui64NV'))).asFunction<GlProgramUniform3ui64NV>();
-  glProgramUniform4ui64NV = Pointer<NativeFunction<GlProgramUniform4ui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4ui64NV'))).asFunction<GlProgramUniform4ui64NV>();
-  glProgramUniform1ui64vNV = Pointer<NativeFunction<GlProgramUniform1ui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1ui64vNV'))).asFunction<GlProgramUniform1ui64vNV>();
-  glProgramUniform2ui64vNV = Pointer<NativeFunction<GlProgramUniform2ui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2ui64vNV'))).asFunction<GlProgramUniform2ui64vNV>();
-  glProgramUniform3ui64vNV = Pointer<NativeFunction<GlProgramUniform3ui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3ui64vNV'))).asFunction<GlProgramUniform3ui64vNV>();
-  glProgramUniform4ui64vNV = Pointer<NativeFunction<GlProgramUniform4ui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4ui64vNV'))).asFunction<GlProgramUniform4ui64vNV>();
-  glGetInternalformatSampleivNV = Pointer<NativeFunction<GlGetInternalformatSampleivNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetInternalformatSampleivNV'))).asFunction<GlGetInternalformatSampleivNV>();
-  glGetMemoryObjectDetachedResourcesuivNV = Pointer<NativeFunction<GlGetMemoryObjectDetachedResourcesuivNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMemoryObjectDetachedResourcesuivNV'))).asFunction<GlGetMemoryObjectDetachedResourcesuivNV>();
-  glResetMemoryObjectParameterNV = Pointer<NativeFunction<GlResetMemoryObjectParameterNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glResetMemoryObjectParameterNV'))).asFunction<GlResetMemoryObjectParameterNV>();
-  glTexAttachMemoryNV = Pointer<NativeFunction<GlTexAttachMemoryNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexAttachMemoryNV'))).asFunction<GlTexAttachMemoryNV>();
-  glBufferAttachMemoryNV = Pointer<NativeFunction<GlBufferAttachMemoryNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBufferAttachMemoryNV'))).asFunction<GlBufferAttachMemoryNV>();
-  glTextureAttachMemoryNV = Pointer<NativeFunction<GlTextureAttachMemoryNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureAttachMemoryNV'))).asFunction<GlTextureAttachMemoryNV>();
-  glNamedBufferAttachMemoryNV = Pointer<NativeFunction<GlNamedBufferAttachMemoryNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedBufferAttachMemoryNV'))).asFunction<GlNamedBufferAttachMemoryNV>();
-  glDrawMeshTasksNV = Pointer<NativeFunction<GlDrawMeshTasksNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawMeshTasksNV'))).asFunction<GlDrawMeshTasksNV>();
-  glDrawMeshTasksIndirectNV = Pointer<NativeFunction<GlDrawMeshTasksIndirectNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawMeshTasksIndirectNV'))).asFunction<GlDrawMeshTasksIndirectNV>();
-  glMultiDrawMeshTasksIndirectNV = Pointer<NativeFunction<GlMultiDrawMeshTasksIndirectNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawMeshTasksIndirectNV'))).asFunction<GlMultiDrawMeshTasksIndirectNV>();
-  glMultiDrawMeshTasksIndirectCountNV = Pointer<NativeFunction<GlMultiDrawMeshTasksIndirectCountNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawMeshTasksIndirectCountNV'))).asFunction<GlMultiDrawMeshTasksIndirectCountNV>();
-  glGenPathsNV = Pointer<NativeFunction<GlGenPathsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenPathsNV'))).asFunction<GlGenPathsNV>();
-  glDeletePathsNV = Pointer<NativeFunction<GlDeletePathsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeletePathsNV'))).asFunction<GlDeletePathsNV>();
-  glIsPathNV = Pointer<NativeFunction<GlIsPathNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsPathNV'))).asFunction<GlIsPathNV>();
-  glPathCommandsNV = Pointer<NativeFunction<GlPathCommandsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathCommandsNV'))).asFunction<GlPathCommandsNV>();
-  glPathCoordsNV = Pointer<NativeFunction<GlPathCoordsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathCoordsNV'))).asFunction<GlPathCoordsNV>();
-  glPathSubCommandsNV = Pointer<NativeFunction<GlPathSubCommandsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathSubCommandsNV'))).asFunction<GlPathSubCommandsNV>();
-  glPathSubCoordsNV = Pointer<NativeFunction<GlPathSubCoordsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathSubCoordsNV'))).asFunction<GlPathSubCoordsNV>();
-  glPathStringNV = Pointer<NativeFunction<GlPathStringNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathStringNV'))).asFunction<GlPathStringNV>();
-  glPathGlyphsNV = Pointer<NativeFunction<GlPathGlyphsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathGlyphsNV'))).asFunction<GlPathGlyphsNV>();
-  glPathGlyphRangeNV = Pointer<NativeFunction<GlPathGlyphRangeNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathGlyphRangeNV'))).asFunction<GlPathGlyphRangeNV>();
-  glWeightPathsNV = Pointer<NativeFunction<GlWeightPathsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glWeightPathsNV'))).asFunction<GlWeightPathsNV>();
-  glCopyPathNV = Pointer<NativeFunction<GlCopyPathNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyPathNV'))).asFunction<GlCopyPathNV>();
-  glInterpolatePathsNV = Pointer<NativeFunction<GlInterpolatePathsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glInterpolatePathsNV'))).asFunction<GlInterpolatePathsNV>();
-  glTransformPathNV = Pointer<NativeFunction<GlTransformPathNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTransformPathNV'))).asFunction<GlTransformPathNV>();
-  glPathParameterivNV = Pointer<NativeFunction<GlPathParameterivNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathParameterivNV'))).asFunction<GlPathParameterivNV>();
-  glPathParameteriNV = Pointer<NativeFunction<GlPathParameteriNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathParameteriNV'))).asFunction<GlPathParameteriNV>();
-  glPathParameterfvNV = Pointer<NativeFunction<GlPathParameterfvNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathParameterfvNV'))).asFunction<GlPathParameterfvNV>();
-  glPathParameterfNV = Pointer<NativeFunction<GlPathParameterfNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathParameterfNV'))).asFunction<GlPathParameterfNV>();
-  glPathDashArrayNV = Pointer<NativeFunction<GlPathDashArrayNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathDashArrayNV'))).asFunction<GlPathDashArrayNV>();
-  glPathStencilFuncNV = Pointer<NativeFunction<GlPathStencilFuncNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathStencilFuncNV'))).asFunction<GlPathStencilFuncNV>();
-  glPathStencilDepthOffsetNV = Pointer<NativeFunction<GlPathStencilDepthOffsetNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathStencilDepthOffsetNV'))).asFunction<GlPathStencilDepthOffsetNV>();
-  glStencilFillPathNV = Pointer<NativeFunction<GlStencilFillPathNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilFillPathNV'))).asFunction<GlStencilFillPathNV>();
-  glStencilStrokePathNV = Pointer<NativeFunction<GlStencilStrokePathNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilStrokePathNV'))).asFunction<GlStencilStrokePathNV>();
-  glStencilFillPathInstancedNV = Pointer<NativeFunction<GlStencilFillPathInstancedNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilFillPathInstancedNV'))).asFunction<GlStencilFillPathInstancedNV>();
-  glStencilStrokePathInstancedNV = Pointer<NativeFunction<GlStencilStrokePathInstancedNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilStrokePathInstancedNV'))).asFunction<GlStencilStrokePathInstancedNV>();
-  glPathCoverDepthFuncNV = Pointer<NativeFunction<GlPathCoverDepthFuncNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathCoverDepthFuncNV'))).asFunction<GlPathCoverDepthFuncNV>();
-  glCoverFillPathNV = Pointer<NativeFunction<GlCoverFillPathNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCoverFillPathNV'))).asFunction<GlCoverFillPathNV>();
-  glCoverStrokePathNV = Pointer<NativeFunction<GlCoverStrokePathNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCoverStrokePathNV'))).asFunction<GlCoverStrokePathNV>();
-  glCoverFillPathInstancedNV = Pointer<NativeFunction<GlCoverFillPathInstancedNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCoverFillPathInstancedNV'))).asFunction<GlCoverFillPathInstancedNV>();
-  glCoverStrokePathInstancedNV = Pointer<NativeFunction<GlCoverStrokePathInstancedNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCoverStrokePathInstancedNV'))).asFunction<GlCoverStrokePathInstancedNV>();
-  glGetPathParameterivNV = Pointer<NativeFunction<GlGetPathParameterivNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPathParameterivNV'))).asFunction<GlGetPathParameterivNV>();
-  glGetPathParameterfvNV = Pointer<NativeFunction<GlGetPathParameterfvNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPathParameterfvNV'))).asFunction<GlGetPathParameterfvNV>();
-  glGetPathCommandsNV = Pointer<NativeFunction<GlGetPathCommandsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPathCommandsNV'))).asFunction<GlGetPathCommandsNV>();
-  glGetPathCoordsNV = Pointer<NativeFunction<GlGetPathCoordsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPathCoordsNV'))).asFunction<GlGetPathCoordsNV>();
-  glGetPathDashArrayNV = Pointer<NativeFunction<GlGetPathDashArrayNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPathDashArrayNV'))).asFunction<GlGetPathDashArrayNV>();
-  glGetPathMetricsNV = Pointer<NativeFunction<GlGetPathMetricsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPathMetricsNV'))).asFunction<GlGetPathMetricsNV>();
-  glGetPathMetricRangeNV = Pointer<NativeFunction<GlGetPathMetricRangeNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPathMetricRangeNV'))).asFunction<GlGetPathMetricRangeNV>();
-  glGetPathSpacingNV = Pointer<NativeFunction<GlGetPathSpacingNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPathSpacingNV'))).asFunction<GlGetPathSpacingNV>();
-  glIsPointInFillPathNV = Pointer<NativeFunction<GlIsPointInFillPathNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsPointInFillPathNV'))).asFunction<GlIsPointInFillPathNV>();
-  glIsPointInStrokePathNV = Pointer<NativeFunction<GlIsPointInStrokePathNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsPointInStrokePathNV'))).asFunction<GlIsPointInStrokePathNV>();
-  glGetPathLengthNV = Pointer<NativeFunction<GlGetPathLengthNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPathLengthNV'))).asFunction<GlGetPathLengthNV>();
-  glPointAlongPathNV = Pointer<NativeFunction<GlPointAlongPathNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPointAlongPathNV'))).asFunction<GlPointAlongPathNV>();
-  glMatrixLoad3x2fNV = Pointer<NativeFunction<GlMatrixLoad3x2fNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixLoad3x2fNV'))).asFunction<GlMatrixLoad3x2fNV>();
-  glMatrixLoad3x3fNV = Pointer<NativeFunction<GlMatrixLoad3x3fNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixLoad3x3fNV'))).asFunction<GlMatrixLoad3x3fNV>();
-  glMatrixLoadTranspose3x3fNV = Pointer<NativeFunction<GlMatrixLoadTranspose3x3fNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixLoadTranspose3x3fNV'))).asFunction<GlMatrixLoadTranspose3x3fNV>();
-  glMatrixMult3x2fNV = Pointer<NativeFunction<GlMatrixMult3x2fNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixMult3x2fNV'))).asFunction<GlMatrixMult3x2fNV>();
-  glMatrixMult3x3fNV = Pointer<NativeFunction<GlMatrixMult3x3fNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixMult3x3fNV'))).asFunction<GlMatrixMult3x3fNV>();
-  glMatrixMultTranspose3x3fNV = Pointer<NativeFunction<GlMatrixMultTranspose3x3fNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixMultTranspose3x3fNV'))).asFunction<GlMatrixMultTranspose3x3fNV>();
-  glStencilThenCoverFillPathNV = Pointer<NativeFunction<GlStencilThenCoverFillPathNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilThenCoverFillPathNV'))).asFunction<GlStencilThenCoverFillPathNV>();
-  glStencilThenCoverStrokePathNV = Pointer<NativeFunction<GlStencilThenCoverStrokePathNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilThenCoverStrokePathNV'))).asFunction<GlStencilThenCoverStrokePathNV>();
-  glStencilThenCoverFillPathInstancedNV = Pointer<NativeFunction<GlStencilThenCoverFillPathInstancedNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilThenCoverFillPathInstancedNV'))).asFunction<GlStencilThenCoverFillPathInstancedNV>();
-  glStencilThenCoverStrokePathInstancedNV = Pointer<NativeFunction<GlStencilThenCoverStrokePathInstancedNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilThenCoverStrokePathInstancedNV'))).asFunction<GlStencilThenCoverStrokePathInstancedNV>();
-  glPathGlyphIndexRangeNV = Pointer<NativeFunction<GlPathGlyphIndexRangeNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathGlyphIndexRangeNV'))).asFunction<GlPathGlyphIndexRangeNV>();
-  glPathGlyphIndexArrayNV = Pointer<NativeFunction<GlPathGlyphIndexArrayNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathGlyphIndexArrayNV'))).asFunction<GlPathGlyphIndexArrayNV>();
-  glPathMemoryGlyphIndexArrayNV = Pointer<NativeFunction<GlPathMemoryGlyphIndexArrayNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathMemoryGlyphIndexArrayNV'))).asFunction<GlPathMemoryGlyphIndexArrayNV>();
-  glProgramPathFragmentInputGenNV = Pointer<NativeFunction<GlProgramPathFragmentInputGenNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramPathFragmentInputGenNV'))).asFunction<GlProgramPathFragmentInputGenNV>();
-  glGetProgramResourcefvNV = Pointer<NativeFunction<GlGetProgramResourcefvNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramResourcefvNV'))).asFunction<GlGetProgramResourcefvNV>();
-  glFramebufferSampleLocationsfvNV = Pointer<NativeFunction<GlFramebufferSampleLocationsfvNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferSampleLocationsfvNV'))).asFunction<GlFramebufferSampleLocationsfvNV>();
-  glNamedFramebufferSampleLocationsfvNV = Pointer<NativeFunction<GlNamedFramebufferSampleLocationsfvNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferSampleLocationsfvNV'))).asFunction<GlNamedFramebufferSampleLocationsfvNV>();
-  glResolveDepthValuesNV = Pointer<NativeFunction<GlResolveDepthValuesNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glResolveDepthValuesNV'))).asFunction<GlResolveDepthValuesNV>();
-  glScissorExclusiveNV = Pointer<NativeFunction<GlScissorExclusiveNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glScissorExclusiveNV'))).asFunction<GlScissorExclusiveNV>();
-  glScissorExclusiveArrayvNV = Pointer<NativeFunction<GlScissorExclusiveArrayvNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glScissorExclusiveArrayvNV'))).asFunction<GlScissorExclusiveArrayvNV>();
-  glMakeBufferResidentNV = Pointer<NativeFunction<GlMakeBufferResidentNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMakeBufferResidentNV'))).asFunction<GlMakeBufferResidentNV>();
-  glMakeBufferNonResidentNV = Pointer<NativeFunction<GlMakeBufferNonResidentNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMakeBufferNonResidentNV'))).asFunction<GlMakeBufferNonResidentNV>();
-  glIsBufferResidentNV = Pointer<NativeFunction<GlIsBufferResidentNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsBufferResidentNV'))).asFunction<GlIsBufferResidentNV>();
-  glMakeNamedBufferResidentNV = Pointer<NativeFunction<GlMakeNamedBufferResidentNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMakeNamedBufferResidentNV'))).asFunction<GlMakeNamedBufferResidentNV>();
-  glMakeNamedBufferNonResidentNV = Pointer<NativeFunction<GlMakeNamedBufferNonResidentNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMakeNamedBufferNonResidentNV'))).asFunction<GlMakeNamedBufferNonResidentNV>();
-  glIsNamedBufferResidentNV = Pointer<NativeFunction<GlIsNamedBufferResidentNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsNamedBufferResidentNV'))).asFunction<GlIsNamedBufferResidentNV>();
-  glGetBufferParameterui64vNV = Pointer<NativeFunction<GlGetBufferParameterui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetBufferParameterui64vNV'))).asFunction<GlGetBufferParameterui64vNV>();
-  glGetNamedBufferParameterui64vNV = Pointer<NativeFunction<GlGetNamedBufferParameterui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedBufferParameterui64vNV'))).asFunction<GlGetNamedBufferParameterui64vNV>();
-  glGetIntegerui64vNV = Pointer<NativeFunction<GlGetIntegerui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetIntegerui64vNV'))).asFunction<GlGetIntegerui64vNV>();
-  glUniformui64NV = Pointer<NativeFunction<GlUniformui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformui64NV'))).asFunction<GlUniformui64NV>();
-  glUniformui64vNV = Pointer<NativeFunction<GlUniformui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformui64vNV'))).asFunction<GlUniformui64vNV>();
-  glGetUniformui64vNV = Pointer<NativeFunction<GlGetUniformui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetUniformui64vNV'))).asFunction<GlGetUniformui64vNV>();
-  glProgramUniformui64NV = Pointer<NativeFunction<GlProgramUniformui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformui64NV'))).asFunction<GlProgramUniformui64NV>();
-  glProgramUniformui64vNV = Pointer<NativeFunction<GlProgramUniformui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformui64vNV'))).asFunction<GlProgramUniformui64vNV>();
-  glBindShadingRateImageNV = Pointer<NativeFunction<GlBindShadingRateImageNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindShadingRateImageNV'))).asFunction<GlBindShadingRateImageNV>();
-  glGetShadingRateImagePaletteNV = Pointer<NativeFunction<GlGetShadingRateImagePaletteNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetShadingRateImagePaletteNV'))).asFunction<GlGetShadingRateImagePaletteNV>();
-  glGetShadingRateSampleLocationivNV = Pointer<NativeFunction<GlGetShadingRateSampleLocationivNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetShadingRateSampleLocationivNV'))).asFunction<GlGetShadingRateSampleLocationivNV>();
-  glShadingRateImageBarrierNV = Pointer<NativeFunction<GlShadingRateImageBarrierNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glShadingRateImageBarrierNV'))).asFunction<GlShadingRateImageBarrierNV>();
-  glShadingRateImagePaletteNV = Pointer<NativeFunction<GlShadingRateImagePaletteNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glShadingRateImagePaletteNV'))).asFunction<GlShadingRateImagePaletteNV>();
-  glShadingRateSampleOrderNV = Pointer<NativeFunction<GlShadingRateSampleOrderNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glShadingRateSampleOrderNV'))).asFunction<GlShadingRateSampleOrderNV>();
-  glShadingRateSampleOrderCustomNV = Pointer<NativeFunction<GlShadingRateSampleOrderCustomNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glShadingRateSampleOrderCustomNV'))).asFunction<GlShadingRateSampleOrderCustomNV>();
-  glTextureBarrierNV = Pointer<NativeFunction<GlTextureBarrierNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureBarrierNV'))).asFunction<GlTextureBarrierNV>();
-  glVertexAttribL1i64NV = Pointer<NativeFunction<GlVertexAttribL1i64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL1i64NV'))).asFunction<GlVertexAttribL1i64NV>();
-  glVertexAttribL2i64NV = Pointer<NativeFunction<GlVertexAttribL2i64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL2i64NV'))).asFunction<GlVertexAttribL2i64NV>();
-  glVertexAttribL3i64NV = Pointer<NativeFunction<GlVertexAttribL3i64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL3i64NV'))).asFunction<GlVertexAttribL3i64NV>();
-  glVertexAttribL4i64NV = Pointer<NativeFunction<GlVertexAttribL4i64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL4i64NV'))).asFunction<GlVertexAttribL4i64NV>();
-  glVertexAttribL1i64vNV = Pointer<NativeFunction<GlVertexAttribL1i64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL1i64vNV'))).asFunction<GlVertexAttribL1i64vNV>();
-  glVertexAttribL2i64vNV = Pointer<NativeFunction<GlVertexAttribL2i64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL2i64vNV'))).asFunction<GlVertexAttribL2i64vNV>();
-  glVertexAttribL3i64vNV = Pointer<NativeFunction<GlVertexAttribL3i64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL3i64vNV'))).asFunction<GlVertexAttribL3i64vNV>();
-  glVertexAttribL4i64vNV = Pointer<NativeFunction<GlVertexAttribL4i64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL4i64vNV'))).asFunction<GlVertexAttribL4i64vNV>();
-  glVertexAttribL1ui64NV = Pointer<NativeFunction<GlVertexAttribL1ui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL1ui64NV'))).asFunction<GlVertexAttribL1ui64NV>();
-  glVertexAttribL2ui64NV = Pointer<NativeFunction<GlVertexAttribL2ui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL2ui64NV'))).asFunction<GlVertexAttribL2ui64NV>();
-  glVertexAttribL3ui64NV = Pointer<NativeFunction<GlVertexAttribL3ui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL3ui64NV'))).asFunction<GlVertexAttribL3ui64NV>();
-  glVertexAttribL4ui64NV = Pointer<NativeFunction<GlVertexAttribL4ui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL4ui64NV'))).asFunction<GlVertexAttribL4ui64NV>();
-  glVertexAttribL1ui64vNV = Pointer<NativeFunction<GlVertexAttribL1ui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL1ui64vNV'))).asFunction<GlVertexAttribL1ui64vNV>();
-  glVertexAttribL2ui64vNV = Pointer<NativeFunction<GlVertexAttribL2ui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL2ui64vNV'))).asFunction<GlVertexAttribL2ui64vNV>();
-  glVertexAttribL3ui64vNV = Pointer<NativeFunction<GlVertexAttribL3ui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL3ui64vNV'))).asFunction<GlVertexAttribL3ui64vNV>();
-  glVertexAttribL4ui64vNV = Pointer<NativeFunction<GlVertexAttribL4ui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL4ui64vNV'))).asFunction<GlVertexAttribL4ui64vNV>();
-  glGetVertexAttribLi64vNV = Pointer<NativeFunction<GlGetVertexAttribLi64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexAttribLi64vNV'))).asFunction<GlGetVertexAttribLi64vNV>();
-  glGetVertexAttribLui64vNV = Pointer<NativeFunction<GlGetVertexAttribLui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexAttribLui64vNV'))).asFunction<GlGetVertexAttribLui64vNV>();
-  glVertexAttribLFormatNV = Pointer<NativeFunction<GlVertexAttribLFormatNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribLFormatNV'))).asFunction<GlVertexAttribLFormatNV>();
-  glBufferAddressRangeNV = Pointer<NativeFunction<GlBufferAddressRangeNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBufferAddressRangeNV'))).asFunction<GlBufferAddressRangeNV>();
-  glVertexFormatNV = Pointer<NativeFunction<GlVertexFormatNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexFormatNV'))).asFunction<GlVertexFormatNV>();
-  glNormalFormatNV = Pointer<NativeFunction<GlNormalFormatNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNormalFormatNV'))).asFunction<GlNormalFormatNV>();
-  glColorFormatNV = Pointer<NativeFunction<GlColorFormatNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glColorFormatNV'))).asFunction<GlColorFormatNV>();
-  glIndexFormatNV = Pointer<NativeFunction<GlIndexFormatNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIndexFormatNV'))).asFunction<GlIndexFormatNV>();
-  glTexCoordFormatNV = Pointer<NativeFunction<GlTexCoordFormatNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexCoordFormatNV'))).asFunction<GlTexCoordFormatNV>();
-  glEdgeFlagFormatNV = Pointer<NativeFunction<GlEdgeFlagFormatNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEdgeFlagFormatNV'))).asFunction<GlEdgeFlagFormatNV>();
-  glSecondaryColorFormatNV = Pointer<NativeFunction<GlSecondaryColorFormatNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSecondaryColorFormatNV'))).asFunction<GlSecondaryColorFormatNV>();
-  glFogCoordFormatNV = Pointer<NativeFunction<GlFogCoordFormatNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFogCoordFormatNV'))).asFunction<GlFogCoordFormatNV>();
-  glVertexAttribFormatNV = Pointer<NativeFunction<GlVertexAttribFormatNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribFormatNV'))).asFunction<GlVertexAttribFormatNV>();
-  glVertexAttribIFormatNV = Pointer<NativeFunction<GlVertexAttribIFormatNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribIFormatNV'))).asFunction<GlVertexAttribIFormatNV>();
-  glGetIntegerui64i_vNV = Pointer<NativeFunction<GlGetIntegerui64i_vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetIntegerui64i_vNV'))).asFunction<GlGetIntegerui64i_vNV>();
-  glViewportSwizzleNV = Pointer<NativeFunction<GlViewportSwizzleNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glViewportSwizzleNV'))).asFunction<GlViewportSwizzleNV>();
-  glFramebufferTextureMultiviewOVR = Pointer<NativeFunction<GlFramebufferTextureMultiviewOVRNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferTextureMultiviewOVR'))).asFunction<GlFramebufferTextureMultiviewOVR>();
+  var lib = loadLibrary();
+  glCullFace =  tryCall(() => lib.lookupFunction<GlCullFaceNative, GlCullFace>('glCullFace'));
+  if (glCullFace == null && glGetProcAddress != null) {
+    glCullFace =  tryCall(() => Pointer<NativeFunction<GlCullFaceNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCullFace'))).asFunction<GlCullFace>());
+  }
+  glFrontFace =  tryCall(() => lib.lookupFunction<GlFrontFaceNative, GlFrontFace>('glFrontFace'));
+  if (glFrontFace == null && glGetProcAddress != null) {
+    glFrontFace =  tryCall(() => Pointer<NativeFunction<GlFrontFaceNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFrontFace'))).asFunction<GlFrontFace>());
+  }
+  glHint =  tryCall(() => lib.lookupFunction<GlHintNative, GlHint>('glHint'));
+  if (glHint == null && glGetProcAddress != null) {
+    glHint =  tryCall(() => Pointer<NativeFunction<GlHintNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glHint'))).asFunction<GlHint>());
+  }
+  glLineWidth =  tryCall(() => lib.lookupFunction<GlLineWidthNative, GlLineWidth>('glLineWidth'));
+  if (glLineWidth == null && glGetProcAddress != null) {
+    glLineWidth =  tryCall(() => Pointer<NativeFunction<GlLineWidthNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glLineWidth'))).asFunction<GlLineWidth>());
+  }
+  glPointSize =  tryCall(() => lib.lookupFunction<GlPointSizeNative, GlPointSize>('glPointSize'));
+  if (glPointSize == null && glGetProcAddress != null) {
+    glPointSize =  tryCall(() => Pointer<NativeFunction<GlPointSizeNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPointSize'))).asFunction<GlPointSize>());
+  }
+  glPolygonMode =  tryCall(() => lib.lookupFunction<GlPolygonModeNative, GlPolygonMode>('glPolygonMode'));
+  if (glPolygonMode == null && glGetProcAddress != null) {
+    glPolygonMode =  tryCall(() => Pointer<NativeFunction<GlPolygonModeNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPolygonMode'))).asFunction<GlPolygonMode>());
+  }
+  glScissor =  tryCall(() => lib.lookupFunction<GlScissorNative, GlScissor>('glScissor'));
+  if (glScissor == null && glGetProcAddress != null) {
+    glScissor =  tryCall(() => Pointer<NativeFunction<GlScissorNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glScissor'))).asFunction<GlScissor>());
+  }
+  glTexParameterf =  tryCall(() => lib.lookupFunction<GlTexParameterfNative, GlTexParameterf>('glTexParameterf'));
+  if (glTexParameterf == null && glGetProcAddress != null) {
+    glTexParameterf =  tryCall(() => Pointer<NativeFunction<GlTexParameterfNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexParameterf'))).asFunction<GlTexParameterf>());
+  }
+  glTexParameterfv =  tryCall(() => lib.lookupFunction<GlTexParameterfvNative, GlTexParameterfv>('glTexParameterfv'));
+  if (glTexParameterfv == null && glGetProcAddress != null) {
+    glTexParameterfv =  tryCall(() => Pointer<NativeFunction<GlTexParameterfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexParameterfv'))).asFunction<GlTexParameterfv>());
+  }
+  glTexParameteri =  tryCall(() => lib.lookupFunction<GlTexParameteriNative, GlTexParameteri>('glTexParameteri'));
+  if (glTexParameteri == null && glGetProcAddress != null) {
+    glTexParameteri =  tryCall(() => Pointer<NativeFunction<GlTexParameteriNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexParameteri'))).asFunction<GlTexParameteri>());
+  }
+  glTexParameteriv =  tryCall(() => lib.lookupFunction<GlTexParameterivNative, GlTexParameteriv>('glTexParameteriv'));
+  if (glTexParameteriv == null && glGetProcAddress != null) {
+    glTexParameteriv =  tryCall(() => Pointer<NativeFunction<GlTexParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexParameteriv'))).asFunction<GlTexParameteriv>());
+  }
+  glTexImage1D =  tryCall(() => lib.lookupFunction<GlTexImage1DNative, GlTexImage1D>('glTexImage1D'));
+  if (glTexImage1D == null && glGetProcAddress != null) {
+    glTexImage1D =  tryCall(() => Pointer<NativeFunction<GlTexImage1DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexImage1D'))).asFunction<GlTexImage1D>());
+  }
+  glTexImage2D =  tryCall(() => lib.lookupFunction<GlTexImage2DNative, GlTexImage2D>('glTexImage2D'));
+  if (glTexImage2D == null && glGetProcAddress != null) {
+    glTexImage2D =  tryCall(() => Pointer<NativeFunction<GlTexImage2DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexImage2D'))).asFunction<GlTexImage2D>());
+  }
+  glDrawBuffer =  tryCall(() => lib.lookupFunction<GlDrawBufferNative, GlDrawBuffer>('glDrawBuffer'));
+  if (glDrawBuffer == null && glGetProcAddress != null) {
+    glDrawBuffer =  tryCall(() => Pointer<NativeFunction<GlDrawBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawBuffer'))).asFunction<GlDrawBuffer>());
+  }
+  glClear =  tryCall(() => lib.lookupFunction<GlClearNative, GlClear>('glClear'));
+  if (glClear == null && glGetProcAddress != null) {
+    glClear =  tryCall(() => Pointer<NativeFunction<GlClearNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClear'))).asFunction<GlClear>());
+  }
+  glClearColor =  tryCall(() => lib.lookupFunction<GlClearColorNative, GlClearColor>('glClearColor'));
+  if (glClearColor == null && glGetProcAddress != null) {
+    glClearColor =  tryCall(() => Pointer<NativeFunction<GlClearColorNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearColor'))).asFunction<GlClearColor>());
+  }
+  glClearStencil =  tryCall(() => lib.lookupFunction<GlClearStencilNative, GlClearStencil>('glClearStencil'));
+  if (glClearStencil == null && glGetProcAddress != null) {
+    glClearStencil =  tryCall(() => Pointer<NativeFunction<GlClearStencilNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearStencil'))).asFunction<GlClearStencil>());
+  }
+  glClearDepth =  tryCall(() => lib.lookupFunction<GlClearDepthNative, GlClearDepth>('glClearDepth'));
+  if (glClearDepth == null && glGetProcAddress != null) {
+    glClearDepth =  tryCall(() => Pointer<NativeFunction<GlClearDepthNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearDepth'))).asFunction<GlClearDepth>());
+  }
+  glStencilMask =  tryCall(() => lib.lookupFunction<GlStencilMaskNative, GlStencilMask>('glStencilMask'));
+  if (glStencilMask == null && glGetProcAddress != null) {
+    glStencilMask =  tryCall(() => Pointer<NativeFunction<GlStencilMaskNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilMask'))).asFunction<GlStencilMask>());
+  }
+  glColorMask =  tryCall(() => lib.lookupFunction<GlColorMaskNative, GlColorMask>('glColorMask'));
+  if (glColorMask == null && glGetProcAddress != null) {
+    glColorMask =  tryCall(() => Pointer<NativeFunction<GlColorMaskNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glColorMask'))).asFunction<GlColorMask>());
+  }
+  glDepthMask =  tryCall(() => lib.lookupFunction<GlDepthMaskNative, GlDepthMask>('glDepthMask'));
+  if (glDepthMask == null && glGetProcAddress != null) {
+    glDepthMask =  tryCall(() => Pointer<NativeFunction<GlDepthMaskNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDepthMask'))).asFunction<GlDepthMask>());
+  }
+  glDisable =  tryCall(() => lib.lookupFunction<GlDisableNative, GlDisable>('glDisable'));
+  if (glDisable == null && glGetProcAddress != null) {
+    glDisable =  tryCall(() => Pointer<NativeFunction<GlDisableNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDisable'))).asFunction<GlDisable>());
+  }
+  glEnable =  tryCall(() => lib.lookupFunction<GlEnableNative, GlEnable>('glEnable'));
+  if (glEnable == null && glGetProcAddress != null) {
+    glEnable =  tryCall(() => Pointer<NativeFunction<GlEnableNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEnable'))).asFunction<GlEnable>());
+  }
+  glFinish =  tryCall(() => lib.lookupFunction<GlFinishNative, GlFinish>('glFinish'));
+  if (glFinish == null && glGetProcAddress != null) {
+    glFinish =  tryCall(() => Pointer<NativeFunction<GlFinishNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFinish'))).asFunction<GlFinish>());
+  }
+  glFlush =  tryCall(() => lib.lookupFunction<GlFlushNative, GlFlush>('glFlush'));
+  if (glFlush == null && glGetProcAddress != null) {
+    glFlush =  tryCall(() => Pointer<NativeFunction<GlFlushNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFlush'))).asFunction<GlFlush>());
+  }
+  glBlendFunc =  tryCall(() => lib.lookupFunction<GlBlendFuncNative, GlBlendFunc>('glBlendFunc'));
+  if (glBlendFunc == null && glGetProcAddress != null) {
+    glBlendFunc =  tryCall(() => Pointer<NativeFunction<GlBlendFuncNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendFunc'))).asFunction<GlBlendFunc>());
+  }
+  glLogicOp =  tryCall(() => lib.lookupFunction<GlLogicOpNative, GlLogicOp>('glLogicOp'));
+  if (glLogicOp == null && glGetProcAddress != null) {
+    glLogicOp =  tryCall(() => Pointer<NativeFunction<GlLogicOpNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glLogicOp'))).asFunction<GlLogicOp>());
+  }
+  glStencilFunc =  tryCall(() => lib.lookupFunction<GlStencilFuncNative, GlStencilFunc>('glStencilFunc'));
+  if (glStencilFunc == null && glGetProcAddress != null) {
+    glStencilFunc =  tryCall(() => Pointer<NativeFunction<GlStencilFuncNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilFunc'))).asFunction<GlStencilFunc>());
+  }
+  glStencilOp =  tryCall(() => lib.lookupFunction<GlStencilOpNative, GlStencilOp>('glStencilOp'));
+  if (glStencilOp == null && glGetProcAddress != null) {
+    glStencilOp =  tryCall(() => Pointer<NativeFunction<GlStencilOpNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilOp'))).asFunction<GlStencilOp>());
+  }
+  glDepthFunc =  tryCall(() => lib.lookupFunction<GlDepthFuncNative, GlDepthFunc>('glDepthFunc'));
+  if (glDepthFunc == null && glGetProcAddress != null) {
+    glDepthFunc =  tryCall(() => Pointer<NativeFunction<GlDepthFuncNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDepthFunc'))).asFunction<GlDepthFunc>());
+  }
+  glPixelStoref =  tryCall(() => lib.lookupFunction<GlPixelStorefNative, GlPixelStoref>('glPixelStoref'));
+  if (glPixelStoref == null && glGetProcAddress != null) {
+    glPixelStoref =  tryCall(() => Pointer<NativeFunction<GlPixelStorefNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPixelStoref'))).asFunction<GlPixelStoref>());
+  }
+  glPixelStorei =  tryCall(() => lib.lookupFunction<GlPixelStoreiNative, GlPixelStorei>('glPixelStorei'));
+  if (glPixelStorei == null && glGetProcAddress != null) {
+    glPixelStorei =  tryCall(() => Pointer<NativeFunction<GlPixelStoreiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPixelStorei'))).asFunction<GlPixelStorei>());
+  }
+  glReadBuffer =  tryCall(() => lib.lookupFunction<GlReadBufferNative, GlReadBuffer>('glReadBuffer'));
+  if (glReadBuffer == null && glGetProcAddress != null) {
+    glReadBuffer =  tryCall(() => Pointer<NativeFunction<GlReadBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glReadBuffer'))).asFunction<GlReadBuffer>());
+  }
+  glReadPixels =  tryCall(() => lib.lookupFunction<GlReadPixelsNative, GlReadPixels>('glReadPixels'));
+  if (glReadPixels == null && glGetProcAddress != null) {
+    glReadPixels =  tryCall(() => Pointer<NativeFunction<GlReadPixelsNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glReadPixels'))).asFunction<GlReadPixels>());
+  }
+  glGetBooleanv =  tryCall(() => lib.lookupFunction<GlGetBooleanvNative, GlGetBooleanv>('glGetBooleanv'));
+  if (glGetBooleanv == null && glGetProcAddress != null) {
+    glGetBooleanv =  tryCall(() => Pointer<NativeFunction<GlGetBooleanvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetBooleanv'))).asFunction<GlGetBooleanv>());
+  }
+  glGetDoublev =  tryCall(() => lib.lookupFunction<GlGetDoublevNative, GlGetDoublev>('glGetDoublev'));
+  if (glGetDoublev == null && glGetProcAddress != null) {
+    glGetDoublev =  tryCall(() => Pointer<NativeFunction<GlGetDoublevNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetDoublev'))).asFunction<GlGetDoublev>());
+  }
+  glGetError =  tryCall(() => lib.lookupFunction<GlGetErrorNative, GlGetError>('glGetError'));
+  if (glGetError == null && glGetProcAddress != null) {
+    glGetError =  tryCall(() => Pointer<NativeFunction<GlGetErrorNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetError'))).asFunction<GlGetError>());
+  }
+  glGetFloatv =  tryCall(() => lib.lookupFunction<GlGetFloatvNative, GlGetFloatv>('glGetFloatv'));
+  if (glGetFloatv == null && glGetProcAddress != null) {
+    glGetFloatv =  tryCall(() => Pointer<NativeFunction<GlGetFloatvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetFloatv'))).asFunction<GlGetFloatv>());
+  }
+  glGetIntegerv =  tryCall(() => lib.lookupFunction<GlGetIntegervNative, GlGetIntegerv>('glGetIntegerv'));
+  if (glGetIntegerv == null && glGetProcAddress != null) {
+    glGetIntegerv =  tryCall(() => Pointer<NativeFunction<GlGetIntegervNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetIntegerv'))).asFunction<GlGetIntegerv>());
+  }
+  glGetString =  tryCall(() => lib.lookupFunction<GlGetStringNative, GlGetString>('glGetString'));
+  if (glGetString == null && glGetProcAddress != null) {
+    glGetString =  tryCall(() => Pointer<NativeFunction<GlGetStringNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetString'))).asFunction<GlGetString>());
+  }
+  glGetTexImage =  tryCall(() => lib.lookupFunction<GlGetTexImageNative, GlGetTexImage>('glGetTexImage'));
+  if (glGetTexImage == null && glGetProcAddress != null) {
+    glGetTexImage =  tryCall(() => Pointer<NativeFunction<GlGetTexImageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTexImage'))).asFunction<GlGetTexImage>());
+  }
+  glGetTexParameterfv =  tryCall(() => lib.lookupFunction<GlGetTexParameterfvNative, GlGetTexParameterfv>('glGetTexParameterfv'));
+  if (glGetTexParameterfv == null && glGetProcAddress != null) {
+    glGetTexParameterfv =  tryCall(() => Pointer<NativeFunction<GlGetTexParameterfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTexParameterfv'))).asFunction<GlGetTexParameterfv>());
+  }
+  glGetTexParameteriv =  tryCall(() => lib.lookupFunction<GlGetTexParameterivNative, GlGetTexParameteriv>('glGetTexParameteriv'));
+  if (glGetTexParameteriv == null && glGetProcAddress != null) {
+    glGetTexParameteriv =  tryCall(() => Pointer<NativeFunction<GlGetTexParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTexParameteriv'))).asFunction<GlGetTexParameteriv>());
+  }
+  glGetTexLevelParameterfv =  tryCall(() => lib.lookupFunction<GlGetTexLevelParameterfvNative, GlGetTexLevelParameterfv>('glGetTexLevelParameterfv'));
+  if (glGetTexLevelParameterfv == null && glGetProcAddress != null) {
+    glGetTexLevelParameterfv =  tryCall(() => Pointer<NativeFunction<GlGetTexLevelParameterfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTexLevelParameterfv'))).asFunction<GlGetTexLevelParameterfv>());
+  }
+  glGetTexLevelParameteriv =  tryCall(() => lib.lookupFunction<GlGetTexLevelParameterivNative, GlGetTexLevelParameteriv>('glGetTexLevelParameteriv'));
+  if (glGetTexLevelParameteriv == null && glGetProcAddress != null) {
+    glGetTexLevelParameteriv =  tryCall(() => Pointer<NativeFunction<GlGetTexLevelParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTexLevelParameteriv'))).asFunction<GlGetTexLevelParameteriv>());
+  }
+  glIsEnabled =  tryCall(() => lib.lookupFunction<GlIsEnabledNative, GlIsEnabled>('glIsEnabled'));
+  if (glIsEnabled == null && glGetProcAddress != null) {
+    glIsEnabled =  tryCall(() => Pointer<NativeFunction<GlIsEnabledNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsEnabled'))).asFunction<GlIsEnabled>());
+  }
+  glDepthRange =  tryCall(() => lib.lookupFunction<GlDepthRangeNative, GlDepthRange>('glDepthRange'));
+  if (glDepthRange == null && glGetProcAddress != null) {
+    glDepthRange =  tryCall(() => Pointer<NativeFunction<GlDepthRangeNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDepthRange'))).asFunction<GlDepthRange>());
+  }
+  glViewport =  tryCall(() => lib.lookupFunction<GlViewportNative, GlViewport>('glViewport'));
+  if (glViewport == null && glGetProcAddress != null) {
+    glViewport =  tryCall(() => Pointer<NativeFunction<GlViewportNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glViewport'))).asFunction<GlViewport>());
+  }
+  glDrawArrays =  tryCall(() => lib.lookupFunction<GlDrawArraysNative, GlDrawArrays>('glDrawArrays'));
+  if (glDrawArrays == null && glGetProcAddress != null) {
+    glDrawArrays =  tryCall(() => Pointer<NativeFunction<GlDrawArraysNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawArrays'))).asFunction<GlDrawArrays>());
+  }
+  glDrawElements =  tryCall(() => lib.lookupFunction<GlDrawElementsNative, GlDrawElements>('glDrawElements'));
+  if (glDrawElements == null && glGetProcAddress != null) {
+    glDrawElements =  tryCall(() => Pointer<NativeFunction<GlDrawElementsNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawElements'))).asFunction<GlDrawElements>());
+  }
+  glGetPointerv =  tryCall(() => lib.lookupFunction<GlGetPointervNative, GlGetPointerv>('glGetPointerv'));
+  if (glGetPointerv == null && glGetProcAddress != null) {
+    glGetPointerv =  tryCall(() => Pointer<NativeFunction<GlGetPointervNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPointerv'))).asFunction<GlGetPointerv>());
+  }
+  glPolygonOffset =  tryCall(() => lib.lookupFunction<GlPolygonOffsetNative, GlPolygonOffset>('glPolygonOffset'));
+  if (glPolygonOffset == null && glGetProcAddress != null) {
+    glPolygonOffset =  tryCall(() => Pointer<NativeFunction<GlPolygonOffsetNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPolygonOffset'))).asFunction<GlPolygonOffset>());
+  }
+  glCopyTexImage1D =  tryCall(() => lib.lookupFunction<GlCopyTexImage1DNative, GlCopyTexImage1D>('glCopyTexImage1D'));
+  if (glCopyTexImage1D == null && glGetProcAddress != null) {
+    glCopyTexImage1D =  tryCall(() => Pointer<NativeFunction<GlCopyTexImage1DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyTexImage1D'))).asFunction<GlCopyTexImage1D>());
+  }
+  glCopyTexImage2D =  tryCall(() => lib.lookupFunction<GlCopyTexImage2DNative, GlCopyTexImage2D>('glCopyTexImage2D'));
+  if (glCopyTexImage2D == null && glGetProcAddress != null) {
+    glCopyTexImage2D =  tryCall(() => Pointer<NativeFunction<GlCopyTexImage2DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyTexImage2D'))).asFunction<GlCopyTexImage2D>());
+  }
+  glCopyTexSubImage1D =  tryCall(() => lib.lookupFunction<GlCopyTexSubImage1DNative, GlCopyTexSubImage1D>('glCopyTexSubImage1D'));
+  if (glCopyTexSubImage1D == null && glGetProcAddress != null) {
+    glCopyTexSubImage1D =  tryCall(() => Pointer<NativeFunction<GlCopyTexSubImage1DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyTexSubImage1D'))).asFunction<GlCopyTexSubImage1D>());
+  }
+  glCopyTexSubImage2D =  tryCall(() => lib.lookupFunction<GlCopyTexSubImage2DNative, GlCopyTexSubImage2D>('glCopyTexSubImage2D'));
+  if (glCopyTexSubImage2D == null && glGetProcAddress != null) {
+    glCopyTexSubImage2D =  tryCall(() => Pointer<NativeFunction<GlCopyTexSubImage2DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyTexSubImage2D'))).asFunction<GlCopyTexSubImage2D>());
+  }
+  glTexSubImage1D =  tryCall(() => lib.lookupFunction<GlTexSubImage1DNative, GlTexSubImage1D>('glTexSubImage1D'));
+  if (glTexSubImage1D == null && glGetProcAddress != null) {
+    glTexSubImage1D =  tryCall(() => Pointer<NativeFunction<GlTexSubImage1DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexSubImage1D'))).asFunction<GlTexSubImage1D>());
+  }
+  glTexSubImage2D =  tryCall(() => lib.lookupFunction<GlTexSubImage2DNative, GlTexSubImage2D>('glTexSubImage2D'));
+  if (glTexSubImage2D == null && glGetProcAddress != null) {
+    glTexSubImage2D =  tryCall(() => Pointer<NativeFunction<GlTexSubImage2DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexSubImage2D'))).asFunction<GlTexSubImage2D>());
+  }
+  glBindTexture =  tryCall(() => lib.lookupFunction<GlBindTextureNative, GlBindTexture>('glBindTexture'));
+  if (glBindTexture == null && glGetProcAddress != null) {
+    glBindTexture =  tryCall(() => Pointer<NativeFunction<GlBindTextureNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindTexture'))).asFunction<GlBindTexture>());
+  }
+  glDeleteTextures =  tryCall(() => lib.lookupFunction<GlDeleteTexturesNative, GlDeleteTextures>('glDeleteTextures'));
+  if (glDeleteTextures == null && glGetProcAddress != null) {
+    glDeleteTextures =  tryCall(() => Pointer<NativeFunction<GlDeleteTexturesNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteTextures'))).asFunction<GlDeleteTextures>());
+  }
+  glGenTextures =  tryCall(() => lib.lookupFunction<GlGenTexturesNative, GlGenTextures>('glGenTextures'));
+  if (glGenTextures == null && glGetProcAddress != null) {
+    glGenTextures =  tryCall(() => Pointer<NativeFunction<GlGenTexturesNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenTextures'))).asFunction<GlGenTextures>());
+  }
+  glIsTexture =  tryCall(() => lib.lookupFunction<GlIsTextureNative, GlIsTexture>('glIsTexture'));
+  if (glIsTexture == null && glGetProcAddress != null) {
+    glIsTexture =  tryCall(() => Pointer<NativeFunction<GlIsTextureNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsTexture'))).asFunction<GlIsTexture>());
+  }
+  glDrawRangeElements =  tryCall(() => lib.lookupFunction<GlDrawRangeElementsNative, GlDrawRangeElements>('glDrawRangeElements'));
+  if (glDrawRangeElements == null && glGetProcAddress != null) {
+    glDrawRangeElements =  tryCall(() => Pointer<NativeFunction<GlDrawRangeElementsNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawRangeElements'))).asFunction<GlDrawRangeElements>());
+  }
+  glTexImage3D =  tryCall(() => lib.lookupFunction<GlTexImage3DNative, GlTexImage3D>('glTexImage3D'));
+  if (glTexImage3D == null && glGetProcAddress != null) {
+    glTexImage3D =  tryCall(() => Pointer<NativeFunction<GlTexImage3DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexImage3D'))).asFunction<GlTexImage3D>());
+  }
+  glTexSubImage3D =  tryCall(() => lib.lookupFunction<GlTexSubImage3DNative, GlTexSubImage3D>('glTexSubImage3D'));
+  if (glTexSubImage3D == null && glGetProcAddress != null) {
+    glTexSubImage3D =  tryCall(() => Pointer<NativeFunction<GlTexSubImage3DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexSubImage3D'))).asFunction<GlTexSubImage3D>());
+  }
+  glCopyTexSubImage3D =  tryCall(() => lib.lookupFunction<GlCopyTexSubImage3DNative, GlCopyTexSubImage3D>('glCopyTexSubImage3D'));
+  if (glCopyTexSubImage3D == null && glGetProcAddress != null) {
+    glCopyTexSubImage3D =  tryCall(() => Pointer<NativeFunction<GlCopyTexSubImage3DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyTexSubImage3D'))).asFunction<GlCopyTexSubImage3D>());
+  }
+  glActiveTexture =  tryCall(() => lib.lookupFunction<GlActiveTextureNative, GlActiveTexture>('glActiveTexture'));
+  if (glActiveTexture == null && glGetProcAddress != null) {
+    glActiveTexture =  tryCall(() => Pointer<NativeFunction<GlActiveTextureNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glActiveTexture'))).asFunction<GlActiveTexture>());
+  }
+  glSampleCoverage =  tryCall(() => lib.lookupFunction<GlSampleCoverageNative, GlSampleCoverage>('glSampleCoverage'));
+  if (glSampleCoverage == null && glGetProcAddress != null) {
+    glSampleCoverage =  tryCall(() => Pointer<NativeFunction<GlSampleCoverageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSampleCoverage'))).asFunction<GlSampleCoverage>());
+  }
+  glCompressedTexImage3D =  tryCall(() => lib.lookupFunction<GlCompressedTexImage3DNative, GlCompressedTexImage3D>('glCompressedTexImage3D'));
+  if (glCompressedTexImage3D == null && glGetProcAddress != null) {
+    glCompressedTexImage3D =  tryCall(() => Pointer<NativeFunction<GlCompressedTexImage3DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTexImage3D'))).asFunction<GlCompressedTexImage3D>());
+  }
+  glCompressedTexImage2D =  tryCall(() => lib.lookupFunction<GlCompressedTexImage2DNative, GlCompressedTexImage2D>('glCompressedTexImage2D'));
+  if (glCompressedTexImage2D == null && glGetProcAddress != null) {
+    glCompressedTexImage2D =  tryCall(() => Pointer<NativeFunction<GlCompressedTexImage2DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTexImage2D'))).asFunction<GlCompressedTexImage2D>());
+  }
+  glCompressedTexImage1D =  tryCall(() => lib.lookupFunction<GlCompressedTexImage1DNative, GlCompressedTexImage1D>('glCompressedTexImage1D'));
+  if (glCompressedTexImage1D == null && glGetProcAddress != null) {
+    glCompressedTexImage1D =  tryCall(() => Pointer<NativeFunction<GlCompressedTexImage1DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTexImage1D'))).asFunction<GlCompressedTexImage1D>());
+  }
+  glCompressedTexSubImage3D =  tryCall(() => lib.lookupFunction<GlCompressedTexSubImage3DNative, GlCompressedTexSubImage3D>('glCompressedTexSubImage3D'));
+  if (glCompressedTexSubImage3D == null && glGetProcAddress != null) {
+    glCompressedTexSubImage3D =  tryCall(() => Pointer<NativeFunction<GlCompressedTexSubImage3DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTexSubImage3D'))).asFunction<GlCompressedTexSubImage3D>());
+  }
+  glCompressedTexSubImage2D =  tryCall(() => lib.lookupFunction<GlCompressedTexSubImage2DNative, GlCompressedTexSubImage2D>('glCompressedTexSubImage2D'));
+  if (glCompressedTexSubImage2D == null && glGetProcAddress != null) {
+    glCompressedTexSubImage2D =  tryCall(() => Pointer<NativeFunction<GlCompressedTexSubImage2DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTexSubImage2D'))).asFunction<GlCompressedTexSubImage2D>());
+  }
+  glCompressedTexSubImage1D =  tryCall(() => lib.lookupFunction<GlCompressedTexSubImage1DNative, GlCompressedTexSubImage1D>('glCompressedTexSubImage1D'));
+  if (glCompressedTexSubImage1D == null && glGetProcAddress != null) {
+    glCompressedTexSubImage1D =  tryCall(() => Pointer<NativeFunction<GlCompressedTexSubImage1DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTexSubImage1D'))).asFunction<GlCompressedTexSubImage1D>());
+  }
+  glGetCompressedTexImage =  tryCall(() => lib.lookupFunction<GlGetCompressedTexImageNative, GlGetCompressedTexImage>('glGetCompressedTexImage'));
+  if (glGetCompressedTexImage == null && glGetProcAddress != null) {
+    glGetCompressedTexImage =  tryCall(() => Pointer<NativeFunction<GlGetCompressedTexImageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetCompressedTexImage'))).asFunction<GlGetCompressedTexImage>());
+  }
+  glBlendFuncSeparate =  tryCall(() => lib.lookupFunction<GlBlendFuncSeparateNative, GlBlendFuncSeparate>('glBlendFuncSeparate'));
+  if (glBlendFuncSeparate == null && glGetProcAddress != null) {
+    glBlendFuncSeparate =  tryCall(() => Pointer<NativeFunction<GlBlendFuncSeparateNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendFuncSeparate'))).asFunction<GlBlendFuncSeparate>());
+  }
+  glMultiDrawArrays =  tryCall(() => lib.lookupFunction<GlMultiDrawArraysNative, GlMultiDrawArrays>('glMultiDrawArrays'));
+  if (glMultiDrawArrays == null && glGetProcAddress != null) {
+    glMultiDrawArrays =  tryCall(() => Pointer<NativeFunction<GlMultiDrawArraysNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawArrays'))).asFunction<GlMultiDrawArrays>());
+  }
+  glMultiDrawElements =  tryCall(() => lib.lookupFunction<GlMultiDrawElementsNative, GlMultiDrawElements>('glMultiDrawElements'));
+  if (glMultiDrawElements == null && glGetProcAddress != null) {
+    glMultiDrawElements =  tryCall(() => Pointer<NativeFunction<GlMultiDrawElementsNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawElements'))).asFunction<GlMultiDrawElements>());
+  }
+  glPointParameterf =  tryCall(() => lib.lookupFunction<GlPointParameterfNative, GlPointParameterf>('glPointParameterf'));
+  if (glPointParameterf == null && glGetProcAddress != null) {
+    glPointParameterf =  tryCall(() => Pointer<NativeFunction<GlPointParameterfNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPointParameterf'))).asFunction<GlPointParameterf>());
+  }
+  glPointParameterfv =  tryCall(() => lib.lookupFunction<GlPointParameterfvNative, GlPointParameterfv>('glPointParameterfv'));
+  if (glPointParameterfv == null && glGetProcAddress != null) {
+    glPointParameterfv =  tryCall(() => Pointer<NativeFunction<GlPointParameterfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPointParameterfv'))).asFunction<GlPointParameterfv>());
+  }
+  glPointParameteri =  tryCall(() => lib.lookupFunction<GlPointParameteriNative, GlPointParameteri>('glPointParameteri'));
+  if (glPointParameteri == null && glGetProcAddress != null) {
+    glPointParameteri =  tryCall(() => Pointer<NativeFunction<GlPointParameteriNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPointParameteri'))).asFunction<GlPointParameteri>());
+  }
+  glPointParameteriv =  tryCall(() => lib.lookupFunction<GlPointParameterivNative, GlPointParameteriv>('glPointParameteriv'));
+  if (glPointParameteriv == null && glGetProcAddress != null) {
+    glPointParameteriv =  tryCall(() => Pointer<NativeFunction<GlPointParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPointParameteriv'))).asFunction<GlPointParameteriv>());
+  }
+  glBlendColor =  tryCall(() => lib.lookupFunction<GlBlendColorNative, GlBlendColor>('glBlendColor'));
+  if (glBlendColor == null && glGetProcAddress != null) {
+    glBlendColor =  tryCall(() => Pointer<NativeFunction<GlBlendColorNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendColor'))).asFunction<GlBlendColor>());
+  }
+  glBlendEquation =  tryCall(() => lib.lookupFunction<GlBlendEquationNative, GlBlendEquation>('glBlendEquation'));
+  if (glBlendEquation == null && glGetProcAddress != null) {
+    glBlendEquation =  tryCall(() => Pointer<NativeFunction<GlBlendEquationNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendEquation'))).asFunction<GlBlendEquation>());
+  }
+  glGenQueries =  tryCall(() => lib.lookupFunction<GlGenQueriesNative, GlGenQueries>('glGenQueries'));
+  if (glGenQueries == null && glGetProcAddress != null) {
+    glGenQueries =  tryCall(() => Pointer<NativeFunction<GlGenQueriesNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenQueries'))).asFunction<GlGenQueries>());
+  }
+  glDeleteQueries =  tryCall(() => lib.lookupFunction<GlDeleteQueriesNative, GlDeleteQueries>('glDeleteQueries'));
+  if (glDeleteQueries == null && glGetProcAddress != null) {
+    glDeleteQueries =  tryCall(() => Pointer<NativeFunction<GlDeleteQueriesNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteQueries'))).asFunction<GlDeleteQueries>());
+  }
+  glIsQuery =  tryCall(() => lib.lookupFunction<GlIsQueryNative, GlIsQuery>('glIsQuery'));
+  if (glIsQuery == null && glGetProcAddress != null) {
+    glIsQuery =  tryCall(() => Pointer<NativeFunction<GlIsQueryNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsQuery'))).asFunction<GlIsQuery>());
+  }
+  glBeginQuery =  tryCall(() => lib.lookupFunction<GlBeginQueryNative, GlBeginQuery>('glBeginQuery'));
+  if (glBeginQuery == null && glGetProcAddress != null) {
+    glBeginQuery =  tryCall(() => Pointer<NativeFunction<GlBeginQueryNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBeginQuery'))).asFunction<GlBeginQuery>());
+  }
+  glEndQuery =  tryCall(() => lib.lookupFunction<GlEndQueryNative, GlEndQuery>('glEndQuery'));
+  if (glEndQuery == null && glGetProcAddress != null) {
+    glEndQuery =  tryCall(() => Pointer<NativeFunction<GlEndQueryNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEndQuery'))).asFunction<GlEndQuery>());
+  }
+  glGetQueryiv =  tryCall(() => lib.lookupFunction<GlGetQueryivNative, GlGetQueryiv>('glGetQueryiv'));
+  if (glGetQueryiv == null && glGetProcAddress != null) {
+    glGetQueryiv =  tryCall(() => Pointer<NativeFunction<GlGetQueryivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetQueryiv'))).asFunction<GlGetQueryiv>());
+  }
+  glGetQueryObjectiv =  tryCall(() => lib.lookupFunction<GlGetQueryObjectivNative, GlGetQueryObjectiv>('glGetQueryObjectiv'));
+  if (glGetQueryObjectiv == null && glGetProcAddress != null) {
+    glGetQueryObjectiv =  tryCall(() => Pointer<NativeFunction<GlGetQueryObjectivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetQueryObjectiv'))).asFunction<GlGetQueryObjectiv>());
+  }
+  glGetQueryObjectuiv =  tryCall(() => lib.lookupFunction<GlGetQueryObjectuivNative, GlGetQueryObjectuiv>('glGetQueryObjectuiv'));
+  if (glGetQueryObjectuiv == null && glGetProcAddress != null) {
+    glGetQueryObjectuiv =  tryCall(() => Pointer<NativeFunction<GlGetQueryObjectuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetQueryObjectuiv'))).asFunction<GlGetQueryObjectuiv>());
+  }
+  glBindBuffer =  tryCall(() => lib.lookupFunction<GlBindBufferNative, GlBindBuffer>('glBindBuffer'));
+  if (glBindBuffer == null && glGetProcAddress != null) {
+    glBindBuffer =  tryCall(() => Pointer<NativeFunction<GlBindBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindBuffer'))).asFunction<GlBindBuffer>());
+  }
+  glDeleteBuffers =  tryCall(() => lib.lookupFunction<GlDeleteBuffersNative, GlDeleteBuffers>('glDeleteBuffers'));
+  if (glDeleteBuffers == null && glGetProcAddress != null) {
+    glDeleteBuffers =  tryCall(() => Pointer<NativeFunction<GlDeleteBuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteBuffers'))).asFunction<GlDeleteBuffers>());
+  }
+  glGenBuffers =  tryCall(() => lib.lookupFunction<GlGenBuffersNative, GlGenBuffers>('glGenBuffers'));
+  if (glGenBuffers == null && glGetProcAddress != null) {
+    glGenBuffers =  tryCall(() => Pointer<NativeFunction<GlGenBuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenBuffers'))).asFunction<GlGenBuffers>());
+  }
+  glIsBuffer =  tryCall(() => lib.lookupFunction<GlIsBufferNative, GlIsBuffer>('glIsBuffer'));
+  if (glIsBuffer == null && glGetProcAddress != null) {
+    glIsBuffer =  tryCall(() => Pointer<NativeFunction<GlIsBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsBuffer'))).asFunction<GlIsBuffer>());
+  }
+  glBufferData =  tryCall(() => lib.lookupFunction<GlBufferDataNative, GlBufferData>('glBufferData'));
+  if (glBufferData == null && glGetProcAddress != null) {
+    glBufferData =  tryCall(() => Pointer<NativeFunction<GlBufferDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBufferData'))).asFunction<GlBufferData>());
+  }
+  glBufferSubData =  tryCall(() => lib.lookupFunction<GlBufferSubDataNative, GlBufferSubData>('glBufferSubData'));
+  if (glBufferSubData == null && glGetProcAddress != null) {
+    glBufferSubData =  tryCall(() => Pointer<NativeFunction<GlBufferSubDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBufferSubData'))).asFunction<GlBufferSubData>());
+  }
+  glGetBufferSubData =  tryCall(() => lib.lookupFunction<GlGetBufferSubDataNative, GlGetBufferSubData>('glGetBufferSubData'));
+  if (glGetBufferSubData == null && glGetProcAddress != null) {
+    glGetBufferSubData =  tryCall(() => Pointer<NativeFunction<GlGetBufferSubDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetBufferSubData'))).asFunction<GlGetBufferSubData>());
+  }
+  glMapBuffer =  tryCall(() => lib.lookupFunction<GlMapBufferNative, GlMapBuffer>('glMapBuffer'));
+  if (glMapBuffer == null && glGetProcAddress != null) {
+    glMapBuffer =  tryCall(() => Pointer<NativeFunction<GlMapBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMapBuffer'))).asFunction<GlMapBuffer>());
+  }
+  glUnmapBuffer =  tryCall(() => lib.lookupFunction<GlUnmapBufferNative, GlUnmapBuffer>('glUnmapBuffer'));
+  if (glUnmapBuffer == null && glGetProcAddress != null) {
+    glUnmapBuffer =  tryCall(() => Pointer<NativeFunction<GlUnmapBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUnmapBuffer'))).asFunction<GlUnmapBuffer>());
+  }
+  glGetBufferParameteriv =  tryCall(() => lib.lookupFunction<GlGetBufferParameterivNative, GlGetBufferParameteriv>('glGetBufferParameteriv'));
+  if (glGetBufferParameteriv == null && glGetProcAddress != null) {
+    glGetBufferParameteriv =  tryCall(() => Pointer<NativeFunction<GlGetBufferParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetBufferParameteriv'))).asFunction<GlGetBufferParameteriv>());
+  }
+  glGetBufferPointerv =  tryCall(() => lib.lookupFunction<GlGetBufferPointervNative, GlGetBufferPointerv>('glGetBufferPointerv'));
+  if (glGetBufferPointerv == null && glGetProcAddress != null) {
+    glGetBufferPointerv =  tryCall(() => Pointer<NativeFunction<GlGetBufferPointervNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetBufferPointerv'))).asFunction<GlGetBufferPointerv>());
+  }
+  glBlendEquationSeparate =  tryCall(() => lib.lookupFunction<GlBlendEquationSeparateNative, GlBlendEquationSeparate>('glBlendEquationSeparate'));
+  if (glBlendEquationSeparate == null && glGetProcAddress != null) {
+    glBlendEquationSeparate =  tryCall(() => Pointer<NativeFunction<GlBlendEquationSeparateNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendEquationSeparate'))).asFunction<GlBlendEquationSeparate>());
+  }
+  glDrawBuffers =  tryCall(() => lib.lookupFunction<GlDrawBuffersNative, GlDrawBuffers>('glDrawBuffers'));
+  if (glDrawBuffers == null && glGetProcAddress != null) {
+    glDrawBuffers =  tryCall(() => Pointer<NativeFunction<GlDrawBuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawBuffers'))).asFunction<GlDrawBuffers>());
+  }
+  glStencilOpSeparate =  tryCall(() => lib.lookupFunction<GlStencilOpSeparateNative, GlStencilOpSeparate>('glStencilOpSeparate'));
+  if (glStencilOpSeparate == null && glGetProcAddress != null) {
+    glStencilOpSeparate =  tryCall(() => Pointer<NativeFunction<GlStencilOpSeparateNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilOpSeparate'))).asFunction<GlStencilOpSeparate>());
+  }
+  glStencilFuncSeparate =  tryCall(() => lib.lookupFunction<GlStencilFuncSeparateNative, GlStencilFuncSeparate>('glStencilFuncSeparate'));
+  if (glStencilFuncSeparate == null && glGetProcAddress != null) {
+    glStencilFuncSeparate =  tryCall(() => Pointer<NativeFunction<GlStencilFuncSeparateNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilFuncSeparate'))).asFunction<GlStencilFuncSeparate>());
+  }
+  glStencilMaskSeparate =  tryCall(() => lib.lookupFunction<GlStencilMaskSeparateNative, GlStencilMaskSeparate>('glStencilMaskSeparate'));
+  if (glStencilMaskSeparate == null && glGetProcAddress != null) {
+    glStencilMaskSeparate =  tryCall(() => Pointer<NativeFunction<GlStencilMaskSeparateNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilMaskSeparate'))).asFunction<GlStencilMaskSeparate>());
+  }
+  glAttachShader =  tryCall(() => lib.lookupFunction<GlAttachShaderNative, GlAttachShader>('glAttachShader'));
+  if (glAttachShader == null && glGetProcAddress != null) {
+    glAttachShader =  tryCall(() => Pointer<NativeFunction<GlAttachShaderNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glAttachShader'))).asFunction<GlAttachShader>());
+  }
+  glBindAttribLocation =  tryCall(() => lib.lookupFunction<GlBindAttribLocationNative, GlBindAttribLocation>('glBindAttribLocation'));
+  if (glBindAttribLocation == null && glGetProcAddress != null) {
+    glBindAttribLocation =  tryCall(() => Pointer<NativeFunction<GlBindAttribLocationNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindAttribLocation'))).asFunction<GlBindAttribLocation>());
+  }
+  glCompileShader =  tryCall(() => lib.lookupFunction<GlCompileShaderNative, GlCompileShader>('glCompileShader'));
+  if (glCompileShader == null && glGetProcAddress != null) {
+    glCompileShader =  tryCall(() => Pointer<NativeFunction<GlCompileShaderNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompileShader'))).asFunction<GlCompileShader>());
+  }
+  glCreateProgram =  tryCall(() => lib.lookupFunction<GlCreateProgramNative, GlCreateProgram>('glCreateProgram'));
+  if (glCreateProgram == null && glGetProcAddress != null) {
+    glCreateProgram =  tryCall(() => Pointer<NativeFunction<GlCreateProgramNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateProgram'))).asFunction<GlCreateProgram>());
+  }
+  glCreateShader =  tryCall(() => lib.lookupFunction<GlCreateShaderNative, GlCreateShader>('glCreateShader'));
+  if (glCreateShader == null && glGetProcAddress != null) {
+    glCreateShader =  tryCall(() => Pointer<NativeFunction<GlCreateShaderNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateShader'))).asFunction<GlCreateShader>());
+  }
+  glDeleteProgram =  tryCall(() => lib.lookupFunction<GlDeleteProgramNative, GlDeleteProgram>('glDeleteProgram'));
+  if (glDeleteProgram == null && glGetProcAddress != null) {
+    glDeleteProgram =  tryCall(() => Pointer<NativeFunction<GlDeleteProgramNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteProgram'))).asFunction<GlDeleteProgram>());
+  }
+  glDeleteShader =  tryCall(() => lib.lookupFunction<GlDeleteShaderNative, GlDeleteShader>('glDeleteShader'));
+  if (glDeleteShader == null && glGetProcAddress != null) {
+    glDeleteShader =  tryCall(() => Pointer<NativeFunction<GlDeleteShaderNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteShader'))).asFunction<GlDeleteShader>());
+  }
+  glDetachShader =  tryCall(() => lib.lookupFunction<GlDetachShaderNative, GlDetachShader>('glDetachShader'));
+  if (glDetachShader == null && glGetProcAddress != null) {
+    glDetachShader =  tryCall(() => Pointer<NativeFunction<GlDetachShaderNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDetachShader'))).asFunction<GlDetachShader>());
+  }
+  glDisableVertexAttribArray =  tryCall(() => lib.lookupFunction<GlDisableVertexAttribArrayNative, GlDisableVertexAttribArray>('glDisableVertexAttribArray'));
+  if (glDisableVertexAttribArray == null && glGetProcAddress != null) {
+    glDisableVertexAttribArray =  tryCall(() => Pointer<NativeFunction<GlDisableVertexAttribArrayNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDisableVertexAttribArray'))).asFunction<GlDisableVertexAttribArray>());
+  }
+  glEnableVertexAttribArray =  tryCall(() => lib.lookupFunction<GlEnableVertexAttribArrayNative, GlEnableVertexAttribArray>('glEnableVertexAttribArray'));
+  if (glEnableVertexAttribArray == null && glGetProcAddress != null) {
+    glEnableVertexAttribArray =  tryCall(() => Pointer<NativeFunction<GlEnableVertexAttribArrayNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEnableVertexAttribArray'))).asFunction<GlEnableVertexAttribArray>());
+  }
+  glGetActiveAttrib =  tryCall(() => lib.lookupFunction<GlGetActiveAttribNative, GlGetActiveAttrib>('glGetActiveAttrib'));
+  if (glGetActiveAttrib == null && glGetProcAddress != null) {
+    glGetActiveAttrib =  tryCall(() => Pointer<NativeFunction<GlGetActiveAttribNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetActiveAttrib'))).asFunction<GlGetActiveAttrib>());
+  }
+  glGetActiveUniform =  tryCall(() => lib.lookupFunction<GlGetActiveUniformNative, GlGetActiveUniform>('glGetActiveUniform'));
+  if (glGetActiveUniform == null && glGetProcAddress != null) {
+    glGetActiveUniform =  tryCall(() => Pointer<NativeFunction<GlGetActiveUniformNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetActiveUniform'))).asFunction<GlGetActiveUniform>());
+  }
+  glGetAttachedShaders =  tryCall(() => lib.lookupFunction<GlGetAttachedShadersNative, GlGetAttachedShaders>('glGetAttachedShaders'));
+  if (glGetAttachedShaders == null && glGetProcAddress != null) {
+    glGetAttachedShaders =  tryCall(() => Pointer<NativeFunction<GlGetAttachedShadersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetAttachedShaders'))).asFunction<GlGetAttachedShaders>());
+  }
+  glGetAttribLocation =  tryCall(() => lib.lookupFunction<GlGetAttribLocationNative, GlGetAttribLocation>('glGetAttribLocation'));
+  if (glGetAttribLocation == null && glGetProcAddress != null) {
+    glGetAttribLocation =  tryCall(() => Pointer<NativeFunction<GlGetAttribLocationNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetAttribLocation'))).asFunction<GlGetAttribLocation>());
+  }
+  glGetProgramiv =  tryCall(() => lib.lookupFunction<GlGetProgramivNative, GlGetProgramiv>('glGetProgramiv'));
+  if (glGetProgramiv == null && glGetProcAddress != null) {
+    glGetProgramiv =  tryCall(() => Pointer<NativeFunction<GlGetProgramivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramiv'))).asFunction<GlGetProgramiv>());
+  }
+  glGetProgramInfoLog =  tryCall(() => lib.lookupFunction<GlGetProgramInfoLogNative, GlGetProgramInfoLog>('glGetProgramInfoLog'));
+  if (glGetProgramInfoLog == null && glGetProcAddress != null) {
+    glGetProgramInfoLog =  tryCall(() => Pointer<NativeFunction<GlGetProgramInfoLogNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramInfoLog'))).asFunction<GlGetProgramInfoLog>());
+  }
+  glGetShaderiv =  tryCall(() => lib.lookupFunction<GlGetShaderivNative, GlGetShaderiv>('glGetShaderiv'));
+  if (glGetShaderiv == null && glGetProcAddress != null) {
+    glGetShaderiv =  tryCall(() => Pointer<NativeFunction<GlGetShaderivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetShaderiv'))).asFunction<GlGetShaderiv>());
+  }
+  glGetShaderInfoLog =  tryCall(() => lib.lookupFunction<GlGetShaderInfoLogNative, GlGetShaderInfoLog>('glGetShaderInfoLog'));
+  if (glGetShaderInfoLog == null && glGetProcAddress != null) {
+    glGetShaderInfoLog =  tryCall(() => Pointer<NativeFunction<GlGetShaderInfoLogNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetShaderInfoLog'))).asFunction<GlGetShaderInfoLog>());
+  }
+  glGetShaderSource =  tryCall(() => lib.lookupFunction<GlGetShaderSourceNative, GlGetShaderSource>('glGetShaderSource'));
+  if (glGetShaderSource == null && glGetProcAddress != null) {
+    glGetShaderSource =  tryCall(() => Pointer<NativeFunction<GlGetShaderSourceNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetShaderSource'))).asFunction<GlGetShaderSource>());
+  }
+  glGetUniformLocation =  tryCall(() => lib.lookupFunction<GlGetUniformLocationNative, GlGetUniformLocation>('glGetUniformLocation'));
+  if (glGetUniformLocation == null && glGetProcAddress != null) {
+    glGetUniformLocation =  tryCall(() => Pointer<NativeFunction<GlGetUniformLocationNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetUniformLocation'))).asFunction<GlGetUniformLocation>());
+  }
+  glGetUniformfv =  tryCall(() => lib.lookupFunction<GlGetUniformfvNative, GlGetUniformfv>('glGetUniformfv'));
+  if (glGetUniformfv == null && glGetProcAddress != null) {
+    glGetUniformfv =  tryCall(() => Pointer<NativeFunction<GlGetUniformfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetUniformfv'))).asFunction<GlGetUniformfv>());
+  }
+  glGetUniformiv =  tryCall(() => lib.lookupFunction<GlGetUniformivNative, GlGetUniformiv>('glGetUniformiv'));
+  if (glGetUniformiv == null && glGetProcAddress != null) {
+    glGetUniformiv =  tryCall(() => Pointer<NativeFunction<GlGetUniformivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetUniformiv'))).asFunction<GlGetUniformiv>());
+  }
+  glGetVertexAttribdv =  tryCall(() => lib.lookupFunction<GlGetVertexAttribdvNative, GlGetVertexAttribdv>('glGetVertexAttribdv'));
+  if (glGetVertexAttribdv == null && glGetProcAddress != null) {
+    glGetVertexAttribdv =  tryCall(() => Pointer<NativeFunction<GlGetVertexAttribdvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexAttribdv'))).asFunction<GlGetVertexAttribdv>());
+  }
+  glGetVertexAttribfv =  tryCall(() => lib.lookupFunction<GlGetVertexAttribfvNative, GlGetVertexAttribfv>('glGetVertexAttribfv'));
+  if (glGetVertexAttribfv == null && glGetProcAddress != null) {
+    glGetVertexAttribfv =  tryCall(() => Pointer<NativeFunction<GlGetVertexAttribfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexAttribfv'))).asFunction<GlGetVertexAttribfv>());
+  }
+  glGetVertexAttribiv =  tryCall(() => lib.lookupFunction<GlGetVertexAttribivNative, GlGetVertexAttribiv>('glGetVertexAttribiv'));
+  if (glGetVertexAttribiv == null && glGetProcAddress != null) {
+    glGetVertexAttribiv =  tryCall(() => Pointer<NativeFunction<GlGetVertexAttribivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexAttribiv'))).asFunction<GlGetVertexAttribiv>());
+  }
+  glGetVertexAttribPointerv =  tryCall(() => lib.lookupFunction<GlGetVertexAttribPointervNative, GlGetVertexAttribPointerv>('glGetVertexAttribPointerv'));
+  if (glGetVertexAttribPointerv == null && glGetProcAddress != null) {
+    glGetVertexAttribPointerv =  tryCall(() => Pointer<NativeFunction<GlGetVertexAttribPointervNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexAttribPointerv'))).asFunction<GlGetVertexAttribPointerv>());
+  }
+  glIsProgram =  tryCall(() => lib.lookupFunction<GlIsProgramNative, GlIsProgram>('glIsProgram'));
+  if (glIsProgram == null && glGetProcAddress != null) {
+    glIsProgram =  tryCall(() => Pointer<NativeFunction<GlIsProgramNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsProgram'))).asFunction<GlIsProgram>());
+  }
+  glIsShader =  tryCall(() => lib.lookupFunction<GlIsShaderNative, GlIsShader>('glIsShader'));
+  if (glIsShader == null && glGetProcAddress != null) {
+    glIsShader =  tryCall(() => Pointer<NativeFunction<GlIsShaderNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsShader'))).asFunction<GlIsShader>());
+  }
+  glLinkProgram =  tryCall(() => lib.lookupFunction<GlLinkProgramNative, GlLinkProgram>('glLinkProgram'));
+  if (glLinkProgram == null && glGetProcAddress != null) {
+    glLinkProgram =  tryCall(() => Pointer<NativeFunction<GlLinkProgramNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glLinkProgram'))).asFunction<GlLinkProgram>());
+  }
+  glShaderSource =  tryCall(() => lib.lookupFunction<GlShaderSourceNative, GlShaderSource>('glShaderSource'));
+  if (glShaderSource == null && glGetProcAddress != null) {
+    glShaderSource =  tryCall(() => Pointer<NativeFunction<GlShaderSourceNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glShaderSource'))).asFunction<GlShaderSource>());
+  }
+  glUseProgram =  tryCall(() => lib.lookupFunction<GlUseProgramNative, GlUseProgram>('glUseProgram'));
+  if (glUseProgram == null && glGetProcAddress != null) {
+    glUseProgram =  tryCall(() => Pointer<NativeFunction<GlUseProgramNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUseProgram'))).asFunction<GlUseProgram>());
+  }
+  glUniform1f =  tryCall(() => lib.lookupFunction<GlUniform1fNative, GlUniform1f>('glUniform1f'));
+  if (glUniform1f == null && glGetProcAddress != null) {
+    glUniform1f =  tryCall(() => Pointer<NativeFunction<GlUniform1fNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1f'))).asFunction<GlUniform1f>());
+  }
+  glUniform2f =  tryCall(() => lib.lookupFunction<GlUniform2fNative, GlUniform2f>('glUniform2f'));
+  if (glUniform2f == null && glGetProcAddress != null) {
+    glUniform2f =  tryCall(() => Pointer<NativeFunction<GlUniform2fNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2f'))).asFunction<GlUniform2f>());
+  }
+  glUniform3f =  tryCall(() => lib.lookupFunction<GlUniform3fNative, GlUniform3f>('glUniform3f'));
+  if (glUniform3f == null && glGetProcAddress != null) {
+    glUniform3f =  tryCall(() => Pointer<NativeFunction<GlUniform3fNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3f'))).asFunction<GlUniform3f>());
+  }
+  glUniform4f =  tryCall(() => lib.lookupFunction<GlUniform4fNative, GlUniform4f>('glUniform4f'));
+  if (glUniform4f == null && glGetProcAddress != null) {
+    glUniform4f =  tryCall(() => Pointer<NativeFunction<GlUniform4fNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4f'))).asFunction<GlUniform4f>());
+  }
+  glUniform1i =  tryCall(() => lib.lookupFunction<GlUniform1iNative, GlUniform1i>('glUniform1i'));
+  if (glUniform1i == null && glGetProcAddress != null) {
+    glUniform1i =  tryCall(() => Pointer<NativeFunction<GlUniform1iNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1i'))).asFunction<GlUniform1i>());
+  }
+  glUniform2i =  tryCall(() => lib.lookupFunction<GlUniform2iNative, GlUniform2i>('glUniform2i'));
+  if (glUniform2i == null && glGetProcAddress != null) {
+    glUniform2i =  tryCall(() => Pointer<NativeFunction<GlUniform2iNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2i'))).asFunction<GlUniform2i>());
+  }
+  glUniform3i =  tryCall(() => lib.lookupFunction<GlUniform3iNative, GlUniform3i>('glUniform3i'));
+  if (glUniform3i == null && glGetProcAddress != null) {
+    glUniform3i =  tryCall(() => Pointer<NativeFunction<GlUniform3iNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3i'))).asFunction<GlUniform3i>());
+  }
+  glUniform4i =  tryCall(() => lib.lookupFunction<GlUniform4iNative, GlUniform4i>('glUniform4i'));
+  if (glUniform4i == null && glGetProcAddress != null) {
+    glUniform4i =  tryCall(() => Pointer<NativeFunction<GlUniform4iNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4i'))).asFunction<GlUniform4i>());
+  }
+  glUniform1fv =  tryCall(() => lib.lookupFunction<GlUniform1fvNative, GlUniform1fv>('glUniform1fv'));
+  if (glUniform1fv == null && glGetProcAddress != null) {
+    glUniform1fv =  tryCall(() => Pointer<NativeFunction<GlUniform1fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1fv'))).asFunction<GlUniform1fv>());
+  }
+  glUniform2fv =  tryCall(() => lib.lookupFunction<GlUniform2fvNative, GlUniform2fv>('glUniform2fv'));
+  if (glUniform2fv == null && glGetProcAddress != null) {
+    glUniform2fv =  tryCall(() => Pointer<NativeFunction<GlUniform2fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2fv'))).asFunction<GlUniform2fv>());
+  }
+  glUniform3fv =  tryCall(() => lib.lookupFunction<GlUniform3fvNative, GlUniform3fv>('glUniform3fv'));
+  if (glUniform3fv == null && glGetProcAddress != null) {
+    glUniform3fv =  tryCall(() => Pointer<NativeFunction<GlUniform3fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3fv'))).asFunction<GlUniform3fv>());
+  }
+  glUniform4fv =  tryCall(() => lib.lookupFunction<GlUniform4fvNative, GlUniform4fv>('glUniform4fv'));
+  if (glUniform4fv == null && glGetProcAddress != null) {
+    glUniform4fv =  tryCall(() => Pointer<NativeFunction<GlUniform4fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4fv'))).asFunction<GlUniform4fv>());
+  }
+  glUniform1iv =  tryCall(() => lib.lookupFunction<GlUniform1ivNative, GlUniform1iv>('glUniform1iv'));
+  if (glUniform1iv == null && glGetProcAddress != null) {
+    glUniform1iv =  tryCall(() => Pointer<NativeFunction<GlUniform1ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1iv'))).asFunction<GlUniform1iv>());
+  }
+  glUniform2iv =  tryCall(() => lib.lookupFunction<GlUniform2ivNative, GlUniform2iv>('glUniform2iv'));
+  if (glUniform2iv == null && glGetProcAddress != null) {
+    glUniform2iv =  tryCall(() => Pointer<NativeFunction<GlUniform2ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2iv'))).asFunction<GlUniform2iv>());
+  }
+  glUniform3iv =  tryCall(() => lib.lookupFunction<GlUniform3ivNative, GlUniform3iv>('glUniform3iv'));
+  if (glUniform3iv == null && glGetProcAddress != null) {
+    glUniform3iv =  tryCall(() => Pointer<NativeFunction<GlUniform3ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3iv'))).asFunction<GlUniform3iv>());
+  }
+  glUniform4iv =  tryCall(() => lib.lookupFunction<GlUniform4ivNative, GlUniform4iv>('glUniform4iv'));
+  if (glUniform4iv == null && glGetProcAddress != null) {
+    glUniform4iv =  tryCall(() => Pointer<NativeFunction<GlUniform4ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4iv'))).asFunction<GlUniform4iv>());
+  }
+  glUniformMatrix2fv =  tryCall(() => lib.lookupFunction<GlUniformMatrix2fvNative, GlUniformMatrix2fv>('glUniformMatrix2fv'));
+  if (glUniformMatrix2fv == null && glGetProcAddress != null) {
+    glUniformMatrix2fv =  tryCall(() => Pointer<NativeFunction<GlUniformMatrix2fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix2fv'))).asFunction<GlUniformMatrix2fv>());
+  }
+  glUniformMatrix3fv =  tryCall(() => lib.lookupFunction<GlUniformMatrix3fvNative, GlUniformMatrix3fv>('glUniformMatrix3fv'));
+  if (glUniformMatrix3fv == null && glGetProcAddress != null) {
+    glUniformMatrix3fv =  tryCall(() => Pointer<NativeFunction<GlUniformMatrix3fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix3fv'))).asFunction<GlUniformMatrix3fv>());
+  }
+  glUniformMatrix4fv =  tryCall(() => lib.lookupFunction<GlUniformMatrix4fvNative, GlUniformMatrix4fv>('glUniformMatrix4fv'));
+  if (glUniformMatrix4fv == null && glGetProcAddress != null) {
+    glUniformMatrix4fv =  tryCall(() => Pointer<NativeFunction<GlUniformMatrix4fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix4fv'))).asFunction<GlUniformMatrix4fv>());
+  }
+  glValidateProgram =  tryCall(() => lib.lookupFunction<GlValidateProgramNative, GlValidateProgram>('glValidateProgram'));
+  if (glValidateProgram == null && glGetProcAddress != null) {
+    glValidateProgram =  tryCall(() => Pointer<NativeFunction<GlValidateProgramNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glValidateProgram'))).asFunction<GlValidateProgram>());
+  }
+  glVertexAttrib1d =  tryCall(() => lib.lookupFunction<GlVertexAttrib1dNative, GlVertexAttrib1d>('glVertexAttrib1d'));
+  if (glVertexAttrib1d == null && glGetProcAddress != null) {
+    glVertexAttrib1d =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib1dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib1d'))).asFunction<GlVertexAttrib1d>());
+  }
+  glVertexAttrib1dv =  tryCall(() => lib.lookupFunction<GlVertexAttrib1dvNative, GlVertexAttrib1dv>('glVertexAttrib1dv'));
+  if (glVertexAttrib1dv == null && glGetProcAddress != null) {
+    glVertexAttrib1dv =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib1dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib1dv'))).asFunction<GlVertexAttrib1dv>());
+  }
+  glVertexAttrib1f =  tryCall(() => lib.lookupFunction<GlVertexAttrib1fNative, GlVertexAttrib1f>('glVertexAttrib1f'));
+  if (glVertexAttrib1f == null && glGetProcAddress != null) {
+    glVertexAttrib1f =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib1fNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib1f'))).asFunction<GlVertexAttrib1f>());
+  }
+  glVertexAttrib1fv =  tryCall(() => lib.lookupFunction<GlVertexAttrib1fvNative, GlVertexAttrib1fv>('glVertexAttrib1fv'));
+  if (glVertexAttrib1fv == null && glGetProcAddress != null) {
+    glVertexAttrib1fv =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib1fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib1fv'))).asFunction<GlVertexAttrib1fv>());
+  }
+  glVertexAttrib1s =  tryCall(() => lib.lookupFunction<GlVertexAttrib1sNative, GlVertexAttrib1s>('glVertexAttrib1s'));
+  if (glVertexAttrib1s == null && glGetProcAddress != null) {
+    glVertexAttrib1s =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib1sNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib1s'))).asFunction<GlVertexAttrib1s>());
+  }
+  glVertexAttrib1sv =  tryCall(() => lib.lookupFunction<GlVertexAttrib1svNative, GlVertexAttrib1sv>('glVertexAttrib1sv'));
+  if (glVertexAttrib1sv == null && glGetProcAddress != null) {
+    glVertexAttrib1sv =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib1svNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib1sv'))).asFunction<GlVertexAttrib1sv>());
+  }
+  glVertexAttrib2d =  tryCall(() => lib.lookupFunction<GlVertexAttrib2dNative, GlVertexAttrib2d>('glVertexAttrib2d'));
+  if (glVertexAttrib2d == null && glGetProcAddress != null) {
+    glVertexAttrib2d =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib2dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib2d'))).asFunction<GlVertexAttrib2d>());
+  }
+  glVertexAttrib2dv =  tryCall(() => lib.lookupFunction<GlVertexAttrib2dvNative, GlVertexAttrib2dv>('glVertexAttrib2dv'));
+  if (glVertexAttrib2dv == null && glGetProcAddress != null) {
+    glVertexAttrib2dv =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib2dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib2dv'))).asFunction<GlVertexAttrib2dv>());
+  }
+  glVertexAttrib2f =  tryCall(() => lib.lookupFunction<GlVertexAttrib2fNative, GlVertexAttrib2f>('glVertexAttrib2f'));
+  if (glVertexAttrib2f == null && glGetProcAddress != null) {
+    glVertexAttrib2f =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib2fNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib2f'))).asFunction<GlVertexAttrib2f>());
+  }
+  glVertexAttrib2fv =  tryCall(() => lib.lookupFunction<GlVertexAttrib2fvNative, GlVertexAttrib2fv>('glVertexAttrib2fv'));
+  if (glVertexAttrib2fv == null && glGetProcAddress != null) {
+    glVertexAttrib2fv =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib2fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib2fv'))).asFunction<GlVertexAttrib2fv>());
+  }
+  glVertexAttrib2s =  tryCall(() => lib.lookupFunction<GlVertexAttrib2sNative, GlVertexAttrib2s>('glVertexAttrib2s'));
+  if (glVertexAttrib2s == null && glGetProcAddress != null) {
+    glVertexAttrib2s =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib2sNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib2s'))).asFunction<GlVertexAttrib2s>());
+  }
+  glVertexAttrib2sv =  tryCall(() => lib.lookupFunction<GlVertexAttrib2svNative, GlVertexAttrib2sv>('glVertexAttrib2sv'));
+  if (glVertexAttrib2sv == null && glGetProcAddress != null) {
+    glVertexAttrib2sv =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib2svNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib2sv'))).asFunction<GlVertexAttrib2sv>());
+  }
+  glVertexAttrib3d =  tryCall(() => lib.lookupFunction<GlVertexAttrib3dNative, GlVertexAttrib3d>('glVertexAttrib3d'));
+  if (glVertexAttrib3d == null && glGetProcAddress != null) {
+    glVertexAttrib3d =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib3dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib3d'))).asFunction<GlVertexAttrib3d>());
+  }
+  glVertexAttrib3dv =  tryCall(() => lib.lookupFunction<GlVertexAttrib3dvNative, GlVertexAttrib3dv>('glVertexAttrib3dv'));
+  if (glVertexAttrib3dv == null && glGetProcAddress != null) {
+    glVertexAttrib3dv =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib3dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib3dv'))).asFunction<GlVertexAttrib3dv>());
+  }
+  glVertexAttrib3f =  tryCall(() => lib.lookupFunction<GlVertexAttrib3fNative, GlVertexAttrib3f>('glVertexAttrib3f'));
+  if (glVertexAttrib3f == null && glGetProcAddress != null) {
+    glVertexAttrib3f =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib3fNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib3f'))).asFunction<GlVertexAttrib3f>());
+  }
+  glVertexAttrib3fv =  tryCall(() => lib.lookupFunction<GlVertexAttrib3fvNative, GlVertexAttrib3fv>('glVertexAttrib3fv'));
+  if (glVertexAttrib3fv == null && glGetProcAddress != null) {
+    glVertexAttrib3fv =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib3fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib3fv'))).asFunction<GlVertexAttrib3fv>());
+  }
+  glVertexAttrib3s =  tryCall(() => lib.lookupFunction<GlVertexAttrib3sNative, GlVertexAttrib3s>('glVertexAttrib3s'));
+  if (glVertexAttrib3s == null && glGetProcAddress != null) {
+    glVertexAttrib3s =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib3sNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib3s'))).asFunction<GlVertexAttrib3s>());
+  }
+  glVertexAttrib3sv =  tryCall(() => lib.lookupFunction<GlVertexAttrib3svNative, GlVertexAttrib3sv>('glVertexAttrib3sv'));
+  if (glVertexAttrib3sv == null && glGetProcAddress != null) {
+    glVertexAttrib3sv =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib3svNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib3sv'))).asFunction<GlVertexAttrib3sv>());
+  }
+  glVertexAttrib4Nbv =  tryCall(() => lib.lookupFunction<GlVertexAttrib4NbvNative, GlVertexAttrib4Nbv>('glVertexAttrib4Nbv'));
+  if (glVertexAttrib4Nbv == null && glGetProcAddress != null) {
+    glVertexAttrib4Nbv =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib4NbvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4Nbv'))).asFunction<GlVertexAttrib4Nbv>());
+  }
+  glVertexAttrib4Niv =  tryCall(() => lib.lookupFunction<GlVertexAttrib4NivNative, GlVertexAttrib4Niv>('glVertexAttrib4Niv'));
+  if (glVertexAttrib4Niv == null && glGetProcAddress != null) {
+    glVertexAttrib4Niv =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib4NivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4Niv'))).asFunction<GlVertexAttrib4Niv>());
+  }
+  glVertexAttrib4Nsv =  tryCall(() => lib.lookupFunction<GlVertexAttrib4NsvNative, GlVertexAttrib4Nsv>('glVertexAttrib4Nsv'));
+  if (glVertexAttrib4Nsv == null && glGetProcAddress != null) {
+    glVertexAttrib4Nsv =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib4NsvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4Nsv'))).asFunction<GlVertexAttrib4Nsv>());
+  }
+  glVertexAttrib4Nub =  tryCall(() => lib.lookupFunction<GlVertexAttrib4NubNative, GlVertexAttrib4Nub>('glVertexAttrib4Nub'));
+  if (glVertexAttrib4Nub == null && glGetProcAddress != null) {
+    glVertexAttrib4Nub =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib4NubNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4Nub'))).asFunction<GlVertexAttrib4Nub>());
+  }
+  glVertexAttrib4Nubv =  tryCall(() => lib.lookupFunction<GlVertexAttrib4NubvNative, GlVertexAttrib4Nubv>('glVertexAttrib4Nubv'));
+  if (glVertexAttrib4Nubv == null && glGetProcAddress != null) {
+    glVertexAttrib4Nubv =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib4NubvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4Nubv'))).asFunction<GlVertexAttrib4Nubv>());
+  }
+  glVertexAttrib4Nuiv =  tryCall(() => lib.lookupFunction<GlVertexAttrib4NuivNative, GlVertexAttrib4Nuiv>('glVertexAttrib4Nuiv'));
+  if (glVertexAttrib4Nuiv == null && glGetProcAddress != null) {
+    glVertexAttrib4Nuiv =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib4NuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4Nuiv'))).asFunction<GlVertexAttrib4Nuiv>());
+  }
+  glVertexAttrib4Nusv =  tryCall(() => lib.lookupFunction<GlVertexAttrib4NusvNative, GlVertexAttrib4Nusv>('glVertexAttrib4Nusv'));
+  if (glVertexAttrib4Nusv == null && glGetProcAddress != null) {
+    glVertexAttrib4Nusv =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib4NusvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4Nusv'))).asFunction<GlVertexAttrib4Nusv>());
+  }
+  glVertexAttrib4bv =  tryCall(() => lib.lookupFunction<GlVertexAttrib4bvNative, GlVertexAttrib4bv>('glVertexAttrib4bv'));
+  if (glVertexAttrib4bv == null && glGetProcAddress != null) {
+    glVertexAttrib4bv =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib4bvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4bv'))).asFunction<GlVertexAttrib4bv>());
+  }
+  glVertexAttrib4d =  tryCall(() => lib.lookupFunction<GlVertexAttrib4dNative, GlVertexAttrib4d>('glVertexAttrib4d'));
+  if (glVertexAttrib4d == null && glGetProcAddress != null) {
+    glVertexAttrib4d =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib4dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4d'))).asFunction<GlVertexAttrib4d>());
+  }
+  glVertexAttrib4dv =  tryCall(() => lib.lookupFunction<GlVertexAttrib4dvNative, GlVertexAttrib4dv>('glVertexAttrib4dv'));
+  if (glVertexAttrib4dv == null && glGetProcAddress != null) {
+    glVertexAttrib4dv =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib4dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4dv'))).asFunction<GlVertexAttrib4dv>());
+  }
+  glVertexAttrib4f =  tryCall(() => lib.lookupFunction<GlVertexAttrib4fNative, GlVertexAttrib4f>('glVertexAttrib4f'));
+  if (glVertexAttrib4f == null && glGetProcAddress != null) {
+    glVertexAttrib4f =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib4fNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4f'))).asFunction<GlVertexAttrib4f>());
+  }
+  glVertexAttrib4fv =  tryCall(() => lib.lookupFunction<GlVertexAttrib4fvNative, GlVertexAttrib4fv>('glVertexAttrib4fv'));
+  if (glVertexAttrib4fv == null && glGetProcAddress != null) {
+    glVertexAttrib4fv =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib4fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4fv'))).asFunction<GlVertexAttrib4fv>());
+  }
+  glVertexAttrib4iv =  tryCall(() => lib.lookupFunction<GlVertexAttrib4ivNative, GlVertexAttrib4iv>('glVertexAttrib4iv'));
+  if (glVertexAttrib4iv == null && glGetProcAddress != null) {
+    glVertexAttrib4iv =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib4ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4iv'))).asFunction<GlVertexAttrib4iv>());
+  }
+  glVertexAttrib4s =  tryCall(() => lib.lookupFunction<GlVertexAttrib4sNative, GlVertexAttrib4s>('glVertexAttrib4s'));
+  if (glVertexAttrib4s == null && glGetProcAddress != null) {
+    glVertexAttrib4s =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib4sNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4s'))).asFunction<GlVertexAttrib4s>());
+  }
+  glVertexAttrib4sv =  tryCall(() => lib.lookupFunction<GlVertexAttrib4svNative, GlVertexAttrib4sv>('glVertexAttrib4sv'));
+  if (glVertexAttrib4sv == null && glGetProcAddress != null) {
+    glVertexAttrib4sv =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib4svNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4sv'))).asFunction<GlVertexAttrib4sv>());
+  }
+  glVertexAttrib4ubv =  tryCall(() => lib.lookupFunction<GlVertexAttrib4ubvNative, GlVertexAttrib4ubv>('glVertexAttrib4ubv'));
+  if (glVertexAttrib4ubv == null && glGetProcAddress != null) {
+    glVertexAttrib4ubv =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib4ubvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4ubv'))).asFunction<GlVertexAttrib4ubv>());
+  }
+  glVertexAttrib4uiv =  tryCall(() => lib.lookupFunction<GlVertexAttrib4uivNative, GlVertexAttrib4uiv>('glVertexAttrib4uiv'));
+  if (glVertexAttrib4uiv == null && glGetProcAddress != null) {
+    glVertexAttrib4uiv =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib4uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4uiv'))).asFunction<GlVertexAttrib4uiv>());
+  }
+  glVertexAttrib4usv =  tryCall(() => lib.lookupFunction<GlVertexAttrib4usvNative, GlVertexAttrib4usv>('glVertexAttrib4usv'));
+  if (glVertexAttrib4usv == null && glGetProcAddress != null) {
+    glVertexAttrib4usv =  tryCall(() => Pointer<NativeFunction<GlVertexAttrib4usvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttrib4usv'))).asFunction<GlVertexAttrib4usv>());
+  }
+  glVertexAttribPointer =  tryCall(() => lib.lookupFunction<GlVertexAttribPointerNative, GlVertexAttribPointer>('glVertexAttribPointer'));
+  if (glVertexAttribPointer == null && glGetProcAddress != null) {
+    glVertexAttribPointer =  tryCall(() => Pointer<NativeFunction<GlVertexAttribPointerNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribPointer'))).asFunction<GlVertexAttribPointer>());
+  }
+  glUniformMatrix2x3fv =  tryCall(() => lib.lookupFunction<GlUniformMatrix2x3fvNative, GlUniformMatrix2x3fv>('glUniformMatrix2x3fv'));
+  if (glUniformMatrix2x3fv == null && glGetProcAddress != null) {
+    glUniformMatrix2x3fv =  tryCall(() => Pointer<NativeFunction<GlUniformMatrix2x3fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix2x3fv'))).asFunction<GlUniformMatrix2x3fv>());
+  }
+  glUniformMatrix3x2fv =  tryCall(() => lib.lookupFunction<GlUniformMatrix3x2fvNative, GlUniformMatrix3x2fv>('glUniformMatrix3x2fv'));
+  if (glUniformMatrix3x2fv == null && glGetProcAddress != null) {
+    glUniformMatrix3x2fv =  tryCall(() => Pointer<NativeFunction<GlUniformMatrix3x2fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix3x2fv'))).asFunction<GlUniformMatrix3x2fv>());
+  }
+  glUniformMatrix2x4fv =  tryCall(() => lib.lookupFunction<GlUniformMatrix2x4fvNative, GlUniformMatrix2x4fv>('glUniformMatrix2x4fv'));
+  if (glUniformMatrix2x4fv == null && glGetProcAddress != null) {
+    glUniformMatrix2x4fv =  tryCall(() => Pointer<NativeFunction<GlUniformMatrix2x4fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix2x4fv'))).asFunction<GlUniformMatrix2x4fv>());
+  }
+  glUniformMatrix4x2fv =  tryCall(() => lib.lookupFunction<GlUniformMatrix4x2fvNative, GlUniformMatrix4x2fv>('glUniformMatrix4x2fv'));
+  if (glUniformMatrix4x2fv == null && glGetProcAddress != null) {
+    glUniformMatrix4x2fv =  tryCall(() => Pointer<NativeFunction<GlUniformMatrix4x2fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix4x2fv'))).asFunction<GlUniformMatrix4x2fv>());
+  }
+  glUniformMatrix3x4fv =  tryCall(() => lib.lookupFunction<GlUniformMatrix3x4fvNative, GlUniformMatrix3x4fv>('glUniformMatrix3x4fv'));
+  if (glUniformMatrix3x4fv == null && glGetProcAddress != null) {
+    glUniformMatrix3x4fv =  tryCall(() => Pointer<NativeFunction<GlUniformMatrix3x4fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix3x4fv'))).asFunction<GlUniformMatrix3x4fv>());
+  }
+  glUniformMatrix4x3fv =  tryCall(() => lib.lookupFunction<GlUniformMatrix4x3fvNative, GlUniformMatrix4x3fv>('glUniformMatrix4x3fv'));
+  if (glUniformMatrix4x3fv == null && glGetProcAddress != null) {
+    glUniformMatrix4x3fv =  tryCall(() => Pointer<NativeFunction<GlUniformMatrix4x3fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix4x3fv'))).asFunction<GlUniformMatrix4x3fv>());
+  }
+  glColorMaski =  tryCall(() => lib.lookupFunction<GlColorMaskiNative, GlColorMaski>('glColorMaski'));
+  if (glColorMaski == null && glGetProcAddress != null) {
+    glColorMaski =  tryCall(() => Pointer<NativeFunction<GlColorMaskiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glColorMaski'))).asFunction<GlColorMaski>());
+  }
+  glGetBooleani_v =  tryCall(() => lib.lookupFunction<GlGetBooleani_vNative, GlGetBooleani_v>('glGetBooleani_v'));
+  if (glGetBooleani_v == null && glGetProcAddress != null) {
+    glGetBooleani_v =  tryCall(() => Pointer<NativeFunction<GlGetBooleani_vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetBooleani_v'))).asFunction<GlGetBooleani_v>());
+  }
+  glGetIntegeri_v =  tryCall(() => lib.lookupFunction<GlGetIntegeri_vNative, GlGetIntegeri_v>('glGetIntegeri_v'));
+  if (glGetIntegeri_v == null && glGetProcAddress != null) {
+    glGetIntegeri_v =  tryCall(() => Pointer<NativeFunction<GlGetIntegeri_vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetIntegeri_v'))).asFunction<GlGetIntegeri_v>());
+  }
+  glEnablei =  tryCall(() => lib.lookupFunction<GlEnableiNative, GlEnablei>('glEnablei'));
+  if (glEnablei == null && glGetProcAddress != null) {
+    glEnablei =  tryCall(() => Pointer<NativeFunction<GlEnableiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEnablei'))).asFunction<GlEnablei>());
+  }
+  glDisablei =  tryCall(() => lib.lookupFunction<GlDisableiNative, GlDisablei>('glDisablei'));
+  if (glDisablei == null && glGetProcAddress != null) {
+    glDisablei =  tryCall(() => Pointer<NativeFunction<GlDisableiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDisablei'))).asFunction<GlDisablei>());
+  }
+  glIsEnabledi =  tryCall(() => lib.lookupFunction<GlIsEnablediNative, GlIsEnabledi>('glIsEnabledi'));
+  if (glIsEnabledi == null && glGetProcAddress != null) {
+    glIsEnabledi =  tryCall(() => Pointer<NativeFunction<GlIsEnablediNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsEnabledi'))).asFunction<GlIsEnabledi>());
+  }
+  glBeginTransformFeedback =  tryCall(() => lib.lookupFunction<GlBeginTransformFeedbackNative, GlBeginTransformFeedback>('glBeginTransformFeedback'));
+  if (glBeginTransformFeedback == null && glGetProcAddress != null) {
+    glBeginTransformFeedback =  tryCall(() => Pointer<NativeFunction<GlBeginTransformFeedbackNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBeginTransformFeedback'))).asFunction<GlBeginTransformFeedback>());
+  }
+  glEndTransformFeedback =  tryCall(() => lib.lookupFunction<GlEndTransformFeedbackNative, GlEndTransformFeedback>('glEndTransformFeedback'));
+  if (glEndTransformFeedback == null && glGetProcAddress != null) {
+    glEndTransformFeedback =  tryCall(() => Pointer<NativeFunction<GlEndTransformFeedbackNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEndTransformFeedback'))).asFunction<GlEndTransformFeedback>());
+  }
+  glBindBufferRange =  tryCall(() => lib.lookupFunction<GlBindBufferRangeNative, GlBindBufferRange>('glBindBufferRange'));
+  if (glBindBufferRange == null && glGetProcAddress != null) {
+    glBindBufferRange =  tryCall(() => Pointer<NativeFunction<GlBindBufferRangeNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindBufferRange'))).asFunction<GlBindBufferRange>());
+  }
+  glBindBufferBase =  tryCall(() => lib.lookupFunction<GlBindBufferBaseNative, GlBindBufferBase>('glBindBufferBase'));
+  if (glBindBufferBase == null && glGetProcAddress != null) {
+    glBindBufferBase =  tryCall(() => Pointer<NativeFunction<GlBindBufferBaseNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindBufferBase'))).asFunction<GlBindBufferBase>());
+  }
+  glTransformFeedbackVaryings =  tryCall(() => lib.lookupFunction<GlTransformFeedbackVaryingsNative, GlTransformFeedbackVaryings>('glTransformFeedbackVaryings'));
+  if (glTransformFeedbackVaryings == null && glGetProcAddress != null) {
+    glTransformFeedbackVaryings =  tryCall(() => Pointer<NativeFunction<GlTransformFeedbackVaryingsNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTransformFeedbackVaryings'))).asFunction<GlTransformFeedbackVaryings>());
+  }
+  glGetTransformFeedbackVarying =  tryCall(() => lib.lookupFunction<GlGetTransformFeedbackVaryingNative, GlGetTransformFeedbackVarying>('glGetTransformFeedbackVarying'));
+  if (glGetTransformFeedbackVarying == null && glGetProcAddress != null) {
+    glGetTransformFeedbackVarying =  tryCall(() => Pointer<NativeFunction<GlGetTransformFeedbackVaryingNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTransformFeedbackVarying'))).asFunction<GlGetTransformFeedbackVarying>());
+  }
+  glClampColor =  tryCall(() => lib.lookupFunction<GlClampColorNative, GlClampColor>('glClampColor'));
+  if (glClampColor == null && glGetProcAddress != null) {
+    glClampColor =  tryCall(() => Pointer<NativeFunction<GlClampColorNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClampColor'))).asFunction<GlClampColor>());
+  }
+  glBeginConditionalRender =  tryCall(() => lib.lookupFunction<GlBeginConditionalRenderNative, GlBeginConditionalRender>('glBeginConditionalRender'));
+  if (glBeginConditionalRender == null && glGetProcAddress != null) {
+    glBeginConditionalRender =  tryCall(() => Pointer<NativeFunction<GlBeginConditionalRenderNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBeginConditionalRender'))).asFunction<GlBeginConditionalRender>());
+  }
+  glEndConditionalRender =  tryCall(() => lib.lookupFunction<GlEndConditionalRenderNative, GlEndConditionalRender>('glEndConditionalRender'));
+  if (glEndConditionalRender == null && glGetProcAddress != null) {
+    glEndConditionalRender =  tryCall(() => Pointer<NativeFunction<GlEndConditionalRenderNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEndConditionalRender'))).asFunction<GlEndConditionalRender>());
+  }
+  glVertexAttribIPointer =  tryCall(() => lib.lookupFunction<GlVertexAttribIPointerNative, GlVertexAttribIPointer>('glVertexAttribIPointer'));
+  if (glVertexAttribIPointer == null && glGetProcAddress != null) {
+    glVertexAttribIPointer =  tryCall(() => Pointer<NativeFunction<GlVertexAttribIPointerNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribIPointer'))).asFunction<GlVertexAttribIPointer>());
+  }
+  glGetVertexAttribIiv =  tryCall(() => lib.lookupFunction<GlGetVertexAttribIivNative, GlGetVertexAttribIiv>('glGetVertexAttribIiv'));
+  if (glGetVertexAttribIiv == null && glGetProcAddress != null) {
+    glGetVertexAttribIiv =  tryCall(() => Pointer<NativeFunction<GlGetVertexAttribIivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexAttribIiv'))).asFunction<GlGetVertexAttribIiv>());
+  }
+  glGetVertexAttribIuiv =  tryCall(() => lib.lookupFunction<GlGetVertexAttribIuivNative, GlGetVertexAttribIuiv>('glGetVertexAttribIuiv'));
+  if (glGetVertexAttribIuiv == null && glGetProcAddress != null) {
+    glGetVertexAttribIuiv =  tryCall(() => Pointer<NativeFunction<GlGetVertexAttribIuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexAttribIuiv'))).asFunction<GlGetVertexAttribIuiv>());
+  }
+  glVertexAttribI1i =  tryCall(() => lib.lookupFunction<GlVertexAttribI1iNative, GlVertexAttribI1i>('glVertexAttribI1i'));
+  if (glVertexAttribI1i == null && glGetProcAddress != null) {
+    glVertexAttribI1i =  tryCall(() => Pointer<NativeFunction<GlVertexAttribI1iNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI1i'))).asFunction<GlVertexAttribI1i>());
+  }
+  glVertexAttribI2i =  tryCall(() => lib.lookupFunction<GlVertexAttribI2iNative, GlVertexAttribI2i>('glVertexAttribI2i'));
+  if (glVertexAttribI2i == null && glGetProcAddress != null) {
+    glVertexAttribI2i =  tryCall(() => Pointer<NativeFunction<GlVertexAttribI2iNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI2i'))).asFunction<GlVertexAttribI2i>());
+  }
+  glVertexAttribI3i =  tryCall(() => lib.lookupFunction<GlVertexAttribI3iNative, GlVertexAttribI3i>('glVertexAttribI3i'));
+  if (glVertexAttribI3i == null && glGetProcAddress != null) {
+    glVertexAttribI3i =  tryCall(() => Pointer<NativeFunction<GlVertexAttribI3iNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI3i'))).asFunction<GlVertexAttribI3i>());
+  }
+  glVertexAttribI4i =  tryCall(() => lib.lookupFunction<GlVertexAttribI4iNative, GlVertexAttribI4i>('glVertexAttribI4i'));
+  if (glVertexAttribI4i == null && glGetProcAddress != null) {
+    glVertexAttribI4i =  tryCall(() => Pointer<NativeFunction<GlVertexAttribI4iNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI4i'))).asFunction<GlVertexAttribI4i>());
+  }
+  glVertexAttribI1ui =  tryCall(() => lib.lookupFunction<GlVertexAttribI1uiNative, GlVertexAttribI1ui>('glVertexAttribI1ui'));
+  if (glVertexAttribI1ui == null && glGetProcAddress != null) {
+    glVertexAttribI1ui =  tryCall(() => Pointer<NativeFunction<GlVertexAttribI1uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI1ui'))).asFunction<GlVertexAttribI1ui>());
+  }
+  glVertexAttribI2ui =  tryCall(() => lib.lookupFunction<GlVertexAttribI2uiNative, GlVertexAttribI2ui>('glVertexAttribI2ui'));
+  if (glVertexAttribI2ui == null && glGetProcAddress != null) {
+    glVertexAttribI2ui =  tryCall(() => Pointer<NativeFunction<GlVertexAttribI2uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI2ui'))).asFunction<GlVertexAttribI2ui>());
+  }
+  glVertexAttribI3ui =  tryCall(() => lib.lookupFunction<GlVertexAttribI3uiNative, GlVertexAttribI3ui>('glVertexAttribI3ui'));
+  if (glVertexAttribI3ui == null && glGetProcAddress != null) {
+    glVertexAttribI3ui =  tryCall(() => Pointer<NativeFunction<GlVertexAttribI3uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI3ui'))).asFunction<GlVertexAttribI3ui>());
+  }
+  glVertexAttribI4ui =  tryCall(() => lib.lookupFunction<GlVertexAttribI4uiNative, GlVertexAttribI4ui>('glVertexAttribI4ui'));
+  if (glVertexAttribI4ui == null && glGetProcAddress != null) {
+    glVertexAttribI4ui =  tryCall(() => Pointer<NativeFunction<GlVertexAttribI4uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI4ui'))).asFunction<GlVertexAttribI4ui>());
+  }
+  glVertexAttribI1iv =  tryCall(() => lib.lookupFunction<GlVertexAttribI1ivNative, GlVertexAttribI1iv>('glVertexAttribI1iv'));
+  if (glVertexAttribI1iv == null && glGetProcAddress != null) {
+    glVertexAttribI1iv =  tryCall(() => Pointer<NativeFunction<GlVertexAttribI1ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI1iv'))).asFunction<GlVertexAttribI1iv>());
+  }
+  glVertexAttribI2iv =  tryCall(() => lib.lookupFunction<GlVertexAttribI2ivNative, GlVertexAttribI2iv>('glVertexAttribI2iv'));
+  if (glVertexAttribI2iv == null && glGetProcAddress != null) {
+    glVertexAttribI2iv =  tryCall(() => Pointer<NativeFunction<GlVertexAttribI2ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI2iv'))).asFunction<GlVertexAttribI2iv>());
+  }
+  glVertexAttribI3iv =  tryCall(() => lib.lookupFunction<GlVertexAttribI3ivNative, GlVertexAttribI3iv>('glVertexAttribI3iv'));
+  if (glVertexAttribI3iv == null && glGetProcAddress != null) {
+    glVertexAttribI3iv =  tryCall(() => Pointer<NativeFunction<GlVertexAttribI3ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI3iv'))).asFunction<GlVertexAttribI3iv>());
+  }
+  glVertexAttribI4iv =  tryCall(() => lib.lookupFunction<GlVertexAttribI4ivNative, GlVertexAttribI4iv>('glVertexAttribI4iv'));
+  if (glVertexAttribI4iv == null && glGetProcAddress != null) {
+    glVertexAttribI4iv =  tryCall(() => Pointer<NativeFunction<GlVertexAttribI4ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI4iv'))).asFunction<GlVertexAttribI4iv>());
+  }
+  glVertexAttribI1uiv =  tryCall(() => lib.lookupFunction<GlVertexAttribI1uivNative, GlVertexAttribI1uiv>('glVertexAttribI1uiv'));
+  if (glVertexAttribI1uiv == null && glGetProcAddress != null) {
+    glVertexAttribI1uiv =  tryCall(() => Pointer<NativeFunction<GlVertexAttribI1uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI1uiv'))).asFunction<GlVertexAttribI1uiv>());
+  }
+  glVertexAttribI2uiv =  tryCall(() => lib.lookupFunction<GlVertexAttribI2uivNative, GlVertexAttribI2uiv>('glVertexAttribI2uiv'));
+  if (glVertexAttribI2uiv == null && glGetProcAddress != null) {
+    glVertexAttribI2uiv =  tryCall(() => Pointer<NativeFunction<GlVertexAttribI2uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI2uiv'))).asFunction<GlVertexAttribI2uiv>());
+  }
+  glVertexAttribI3uiv =  tryCall(() => lib.lookupFunction<GlVertexAttribI3uivNative, GlVertexAttribI3uiv>('glVertexAttribI3uiv'));
+  if (glVertexAttribI3uiv == null && glGetProcAddress != null) {
+    glVertexAttribI3uiv =  tryCall(() => Pointer<NativeFunction<GlVertexAttribI3uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI3uiv'))).asFunction<GlVertexAttribI3uiv>());
+  }
+  glVertexAttribI4uiv =  tryCall(() => lib.lookupFunction<GlVertexAttribI4uivNative, GlVertexAttribI4uiv>('glVertexAttribI4uiv'));
+  if (glVertexAttribI4uiv == null && glGetProcAddress != null) {
+    glVertexAttribI4uiv =  tryCall(() => Pointer<NativeFunction<GlVertexAttribI4uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI4uiv'))).asFunction<GlVertexAttribI4uiv>());
+  }
+  glVertexAttribI4bv =  tryCall(() => lib.lookupFunction<GlVertexAttribI4bvNative, GlVertexAttribI4bv>('glVertexAttribI4bv'));
+  if (glVertexAttribI4bv == null && glGetProcAddress != null) {
+    glVertexAttribI4bv =  tryCall(() => Pointer<NativeFunction<GlVertexAttribI4bvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI4bv'))).asFunction<GlVertexAttribI4bv>());
+  }
+  glVertexAttribI4sv =  tryCall(() => lib.lookupFunction<GlVertexAttribI4svNative, GlVertexAttribI4sv>('glVertexAttribI4sv'));
+  if (glVertexAttribI4sv == null && glGetProcAddress != null) {
+    glVertexAttribI4sv =  tryCall(() => Pointer<NativeFunction<GlVertexAttribI4svNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI4sv'))).asFunction<GlVertexAttribI4sv>());
+  }
+  glVertexAttribI4ubv =  tryCall(() => lib.lookupFunction<GlVertexAttribI4ubvNative, GlVertexAttribI4ubv>('glVertexAttribI4ubv'));
+  if (glVertexAttribI4ubv == null && glGetProcAddress != null) {
+    glVertexAttribI4ubv =  tryCall(() => Pointer<NativeFunction<GlVertexAttribI4ubvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI4ubv'))).asFunction<GlVertexAttribI4ubv>());
+  }
+  glVertexAttribI4usv =  tryCall(() => lib.lookupFunction<GlVertexAttribI4usvNative, GlVertexAttribI4usv>('glVertexAttribI4usv'));
+  if (glVertexAttribI4usv == null && glGetProcAddress != null) {
+    glVertexAttribI4usv =  tryCall(() => Pointer<NativeFunction<GlVertexAttribI4usvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribI4usv'))).asFunction<GlVertexAttribI4usv>());
+  }
+  glGetUniformuiv =  tryCall(() => lib.lookupFunction<GlGetUniformuivNative, GlGetUniformuiv>('glGetUniformuiv'));
+  if (glGetUniformuiv == null && glGetProcAddress != null) {
+    glGetUniformuiv =  tryCall(() => Pointer<NativeFunction<GlGetUniformuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetUniformuiv'))).asFunction<GlGetUniformuiv>());
+  }
+  glBindFragDataLocation =  tryCall(() => lib.lookupFunction<GlBindFragDataLocationNative, GlBindFragDataLocation>('glBindFragDataLocation'));
+  if (glBindFragDataLocation == null && glGetProcAddress != null) {
+    glBindFragDataLocation =  tryCall(() => Pointer<NativeFunction<GlBindFragDataLocationNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindFragDataLocation'))).asFunction<GlBindFragDataLocation>());
+  }
+  glGetFragDataLocation =  tryCall(() => lib.lookupFunction<GlGetFragDataLocationNative, GlGetFragDataLocation>('glGetFragDataLocation'));
+  if (glGetFragDataLocation == null && glGetProcAddress != null) {
+    glGetFragDataLocation =  tryCall(() => Pointer<NativeFunction<GlGetFragDataLocationNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetFragDataLocation'))).asFunction<GlGetFragDataLocation>());
+  }
+  glUniform1ui =  tryCall(() => lib.lookupFunction<GlUniform1uiNative, GlUniform1ui>('glUniform1ui'));
+  if (glUniform1ui == null && glGetProcAddress != null) {
+    glUniform1ui =  tryCall(() => Pointer<NativeFunction<GlUniform1uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1ui'))).asFunction<GlUniform1ui>());
+  }
+  glUniform2ui =  tryCall(() => lib.lookupFunction<GlUniform2uiNative, GlUniform2ui>('glUniform2ui'));
+  if (glUniform2ui == null && glGetProcAddress != null) {
+    glUniform2ui =  tryCall(() => Pointer<NativeFunction<GlUniform2uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2ui'))).asFunction<GlUniform2ui>());
+  }
+  glUniform3ui =  tryCall(() => lib.lookupFunction<GlUniform3uiNative, GlUniform3ui>('glUniform3ui'));
+  if (glUniform3ui == null && glGetProcAddress != null) {
+    glUniform3ui =  tryCall(() => Pointer<NativeFunction<GlUniform3uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3ui'))).asFunction<GlUniform3ui>());
+  }
+  glUniform4ui =  tryCall(() => lib.lookupFunction<GlUniform4uiNative, GlUniform4ui>('glUniform4ui'));
+  if (glUniform4ui == null && glGetProcAddress != null) {
+    glUniform4ui =  tryCall(() => Pointer<NativeFunction<GlUniform4uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4ui'))).asFunction<GlUniform4ui>());
+  }
+  glUniform1uiv =  tryCall(() => lib.lookupFunction<GlUniform1uivNative, GlUniform1uiv>('glUniform1uiv'));
+  if (glUniform1uiv == null && glGetProcAddress != null) {
+    glUniform1uiv =  tryCall(() => Pointer<NativeFunction<GlUniform1uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1uiv'))).asFunction<GlUniform1uiv>());
+  }
+  glUniform2uiv =  tryCall(() => lib.lookupFunction<GlUniform2uivNative, GlUniform2uiv>('glUniform2uiv'));
+  if (glUniform2uiv == null && glGetProcAddress != null) {
+    glUniform2uiv =  tryCall(() => Pointer<NativeFunction<GlUniform2uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2uiv'))).asFunction<GlUniform2uiv>());
+  }
+  glUniform3uiv =  tryCall(() => lib.lookupFunction<GlUniform3uivNative, GlUniform3uiv>('glUniform3uiv'));
+  if (glUniform3uiv == null && glGetProcAddress != null) {
+    glUniform3uiv =  tryCall(() => Pointer<NativeFunction<GlUniform3uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3uiv'))).asFunction<GlUniform3uiv>());
+  }
+  glUniform4uiv =  tryCall(() => lib.lookupFunction<GlUniform4uivNative, GlUniform4uiv>('glUniform4uiv'));
+  if (glUniform4uiv == null && glGetProcAddress != null) {
+    glUniform4uiv =  tryCall(() => Pointer<NativeFunction<GlUniform4uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4uiv'))).asFunction<GlUniform4uiv>());
+  }
+  glTexParameterIiv =  tryCall(() => lib.lookupFunction<GlTexParameterIivNative, GlTexParameterIiv>('glTexParameterIiv'));
+  if (glTexParameterIiv == null && glGetProcAddress != null) {
+    glTexParameterIiv =  tryCall(() => Pointer<NativeFunction<GlTexParameterIivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexParameterIiv'))).asFunction<GlTexParameterIiv>());
+  }
+  glTexParameterIuiv =  tryCall(() => lib.lookupFunction<GlTexParameterIuivNative, GlTexParameterIuiv>('glTexParameterIuiv'));
+  if (glTexParameterIuiv == null && glGetProcAddress != null) {
+    glTexParameterIuiv =  tryCall(() => Pointer<NativeFunction<GlTexParameterIuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexParameterIuiv'))).asFunction<GlTexParameterIuiv>());
+  }
+  glGetTexParameterIiv =  tryCall(() => lib.lookupFunction<GlGetTexParameterIivNative, GlGetTexParameterIiv>('glGetTexParameterIiv'));
+  if (glGetTexParameterIiv == null && glGetProcAddress != null) {
+    glGetTexParameterIiv =  tryCall(() => Pointer<NativeFunction<GlGetTexParameterIivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTexParameterIiv'))).asFunction<GlGetTexParameterIiv>());
+  }
+  glGetTexParameterIuiv =  tryCall(() => lib.lookupFunction<GlGetTexParameterIuivNative, GlGetTexParameterIuiv>('glGetTexParameterIuiv'));
+  if (glGetTexParameterIuiv == null && glGetProcAddress != null) {
+    glGetTexParameterIuiv =  tryCall(() => Pointer<NativeFunction<GlGetTexParameterIuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTexParameterIuiv'))).asFunction<GlGetTexParameterIuiv>());
+  }
+  glClearBufferiv =  tryCall(() => lib.lookupFunction<GlClearBufferivNative, GlClearBufferiv>('glClearBufferiv'));
+  if (glClearBufferiv == null && glGetProcAddress != null) {
+    glClearBufferiv =  tryCall(() => Pointer<NativeFunction<GlClearBufferivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearBufferiv'))).asFunction<GlClearBufferiv>());
+  }
+  glClearBufferuiv =  tryCall(() => lib.lookupFunction<GlClearBufferuivNative, GlClearBufferuiv>('glClearBufferuiv'));
+  if (glClearBufferuiv == null && glGetProcAddress != null) {
+    glClearBufferuiv =  tryCall(() => Pointer<NativeFunction<GlClearBufferuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearBufferuiv'))).asFunction<GlClearBufferuiv>());
+  }
+  glClearBufferfv =  tryCall(() => lib.lookupFunction<GlClearBufferfvNative, GlClearBufferfv>('glClearBufferfv'));
+  if (glClearBufferfv == null && glGetProcAddress != null) {
+    glClearBufferfv =  tryCall(() => Pointer<NativeFunction<GlClearBufferfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearBufferfv'))).asFunction<GlClearBufferfv>());
+  }
+  glClearBufferfi =  tryCall(() => lib.lookupFunction<GlClearBufferfiNative, GlClearBufferfi>('glClearBufferfi'));
+  if (glClearBufferfi == null && glGetProcAddress != null) {
+    glClearBufferfi =  tryCall(() => Pointer<NativeFunction<GlClearBufferfiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearBufferfi'))).asFunction<GlClearBufferfi>());
+  }
+  glGetStringi =  tryCall(() => lib.lookupFunction<GlGetStringiNative, GlGetStringi>('glGetStringi'));
+  if (glGetStringi == null && glGetProcAddress != null) {
+    glGetStringi =  tryCall(() => Pointer<NativeFunction<GlGetStringiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetStringi'))).asFunction<GlGetStringi>());
+  }
+  glIsRenderbuffer =  tryCall(() => lib.lookupFunction<GlIsRenderbufferNative, GlIsRenderbuffer>('glIsRenderbuffer'));
+  if (glIsRenderbuffer == null && glGetProcAddress != null) {
+    glIsRenderbuffer =  tryCall(() => Pointer<NativeFunction<GlIsRenderbufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsRenderbuffer'))).asFunction<GlIsRenderbuffer>());
+  }
+  glBindRenderbuffer =  tryCall(() => lib.lookupFunction<GlBindRenderbufferNative, GlBindRenderbuffer>('glBindRenderbuffer'));
+  if (glBindRenderbuffer == null && glGetProcAddress != null) {
+    glBindRenderbuffer =  tryCall(() => Pointer<NativeFunction<GlBindRenderbufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindRenderbuffer'))).asFunction<GlBindRenderbuffer>());
+  }
+  glDeleteRenderbuffers =  tryCall(() => lib.lookupFunction<GlDeleteRenderbuffersNative, GlDeleteRenderbuffers>('glDeleteRenderbuffers'));
+  if (glDeleteRenderbuffers == null && glGetProcAddress != null) {
+    glDeleteRenderbuffers =  tryCall(() => Pointer<NativeFunction<GlDeleteRenderbuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteRenderbuffers'))).asFunction<GlDeleteRenderbuffers>());
+  }
+  glGenRenderbuffers =  tryCall(() => lib.lookupFunction<GlGenRenderbuffersNative, GlGenRenderbuffers>('glGenRenderbuffers'));
+  if (glGenRenderbuffers == null && glGetProcAddress != null) {
+    glGenRenderbuffers =  tryCall(() => Pointer<NativeFunction<GlGenRenderbuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenRenderbuffers'))).asFunction<GlGenRenderbuffers>());
+  }
+  glRenderbufferStorage =  tryCall(() => lib.lookupFunction<GlRenderbufferStorageNative, GlRenderbufferStorage>('glRenderbufferStorage'));
+  if (glRenderbufferStorage == null && glGetProcAddress != null) {
+    glRenderbufferStorage =  tryCall(() => Pointer<NativeFunction<GlRenderbufferStorageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glRenderbufferStorage'))).asFunction<GlRenderbufferStorage>());
+  }
+  glGetRenderbufferParameteriv =  tryCall(() => lib.lookupFunction<GlGetRenderbufferParameterivNative, GlGetRenderbufferParameteriv>('glGetRenderbufferParameteriv'));
+  if (glGetRenderbufferParameteriv == null && glGetProcAddress != null) {
+    glGetRenderbufferParameteriv =  tryCall(() => Pointer<NativeFunction<GlGetRenderbufferParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetRenderbufferParameteriv'))).asFunction<GlGetRenderbufferParameteriv>());
+  }
+  glIsFramebuffer =  tryCall(() => lib.lookupFunction<GlIsFramebufferNative, GlIsFramebuffer>('glIsFramebuffer'));
+  if (glIsFramebuffer == null && glGetProcAddress != null) {
+    glIsFramebuffer =  tryCall(() => Pointer<NativeFunction<GlIsFramebufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsFramebuffer'))).asFunction<GlIsFramebuffer>());
+  }
+  glBindFramebuffer =  tryCall(() => lib.lookupFunction<GlBindFramebufferNative, GlBindFramebuffer>('glBindFramebuffer'));
+  if (glBindFramebuffer == null && glGetProcAddress != null) {
+    glBindFramebuffer =  tryCall(() => Pointer<NativeFunction<GlBindFramebufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindFramebuffer'))).asFunction<GlBindFramebuffer>());
+  }
+  glDeleteFramebuffers =  tryCall(() => lib.lookupFunction<GlDeleteFramebuffersNative, GlDeleteFramebuffers>('glDeleteFramebuffers'));
+  if (glDeleteFramebuffers == null && glGetProcAddress != null) {
+    glDeleteFramebuffers =  tryCall(() => Pointer<NativeFunction<GlDeleteFramebuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteFramebuffers'))).asFunction<GlDeleteFramebuffers>());
+  }
+  glGenFramebuffers =  tryCall(() => lib.lookupFunction<GlGenFramebuffersNative, GlGenFramebuffers>('glGenFramebuffers'));
+  if (glGenFramebuffers == null && glGetProcAddress != null) {
+    glGenFramebuffers =  tryCall(() => Pointer<NativeFunction<GlGenFramebuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenFramebuffers'))).asFunction<GlGenFramebuffers>());
+  }
+  glCheckFramebufferStatus =  tryCall(() => lib.lookupFunction<GlCheckFramebufferStatusNative, GlCheckFramebufferStatus>('glCheckFramebufferStatus'));
+  if (glCheckFramebufferStatus == null && glGetProcAddress != null) {
+    glCheckFramebufferStatus =  tryCall(() => Pointer<NativeFunction<GlCheckFramebufferStatusNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCheckFramebufferStatus'))).asFunction<GlCheckFramebufferStatus>());
+  }
+  glFramebufferTexture1D =  tryCall(() => lib.lookupFunction<GlFramebufferTexture1DNative, GlFramebufferTexture1D>('glFramebufferTexture1D'));
+  if (glFramebufferTexture1D == null && glGetProcAddress != null) {
+    glFramebufferTexture1D =  tryCall(() => Pointer<NativeFunction<GlFramebufferTexture1DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferTexture1D'))).asFunction<GlFramebufferTexture1D>());
+  }
+  glFramebufferTexture2D =  tryCall(() => lib.lookupFunction<GlFramebufferTexture2DNative, GlFramebufferTexture2D>('glFramebufferTexture2D'));
+  if (glFramebufferTexture2D == null && glGetProcAddress != null) {
+    glFramebufferTexture2D =  tryCall(() => Pointer<NativeFunction<GlFramebufferTexture2DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferTexture2D'))).asFunction<GlFramebufferTexture2D>());
+  }
+  glFramebufferTexture3D =  tryCall(() => lib.lookupFunction<GlFramebufferTexture3DNative, GlFramebufferTexture3D>('glFramebufferTexture3D'));
+  if (glFramebufferTexture3D == null && glGetProcAddress != null) {
+    glFramebufferTexture3D =  tryCall(() => Pointer<NativeFunction<GlFramebufferTexture3DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferTexture3D'))).asFunction<GlFramebufferTexture3D>());
+  }
+  glFramebufferRenderbuffer =  tryCall(() => lib.lookupFunction<GlFramebufferRenderbufferNative, GlFramebufferRenderbuffer>('glFramebufferRenderbuffer'));
+  if (glFramebufferRenderbuffer == null && glGetProcAddress != null) {
+    glFramebufferRenderbuffer =  tryCall(() => Pointer<NativeFunction<GlFramebufferRenderbufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferRenderbuffer'))).asFunction<GlFramebufferRenderbuffer>());
+  }
+  glGetFramebufferAttachmentParameteriv =  tryCall(() => lib.lookupFunction<GlGetFramebufferAttachmentParameterivNative, GlGetFramebufferAttachmentParameteriv>('glGetFramebufferAttachmentParameteriv'));
+  if (glGetFramebufferAttachmentParameteriv == null && glGetProcAddress != null) {
+    glGetFramebufferAttachmentParameteriv =  tryCall(() => Pointer<NativeFunction<GlGetFramebufferAttachmentParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetFramebufferAttachmentParameteriv'))).asFunction<GlGetFramebufferAttachmentParameteriv>());
+  }
+  glGenerateMipmap =  tryCall(() => lib.lookupFunction<GlGenerateMipmapNative, GlGenerateMipmap>('glGenerateMipmap'));
+  if (glGenerateMipmap == null && glGetProcAddress != null) {
+    glGenerateMipmap =  tryCall(() => Pointer<NativeFunction<GlGenerateMipmapNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenerateMipmap'))).asFunction<GlGenerateMipmap>());
+  }
+  glBlitFramebuffer =  tryCall(() => lib.lookupFunction<GlBlitFramebufferNative, GlBlitFramebuffer>('glBlitFramebuffer'));
+  if (glBlitFramebuffer == null && glGetProcAddress != null) {
+    glBlitFramebuffer =  tryCall(() => Pointer<NativeFunction<GlBlitFramebufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlitFramebuffer'))).asFunction<GlBlitFramebuffer>());
+  }
+  glRenderbufferStorageMultisample =  tryCall(() => lib.lookupFunction<GlRenderbufferStorageMultisampleNative, GlRenderbufferStorageMultisample>('glRenderbufferStorageMultisample'));
+  if (glRenderbufferStorageMultisample == null && glGetProcAddress != null) {
+    glRenderbufferStorageMultisample =  tryCall(() => Pointer<NativeFunction<GlRenderbufferStorageMultisampleNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glRenderbufferStorageMultisample'))).asFunction<GlRenderbufferStorageMultisample>());
+  }
+  glFramebufferTextureLayer =  tryCall(() => lib.lookupFunction<GlFramebufferTextureLayerNative, GlFramebufferTextureLayer>('glFramebufferTextureLayer'));
+  if (glFramebufferTextureLayer == null && glGetProcAddress != null) {
+    glFramebufferTextureLayer =  tryCall(() => Pointer<NativeFunction<GlFramebufferTextureLayerNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferTextureLayer'))).asFunction<GlFramebufferTextureLayer>());
+  }
+  glMapBufferRange =  tryCall(() => lib.lookupFunction<GlMapBufferRangeNative, GlMapBufferRange>('glMapBufferRange'));
+  if (glMapBufferRange == null && glGetProcAddress != null) {
+    glMapBufferRange =  tryCall(() => Pointer<NativeFunction<GlMapBufferRangeNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMapBufferRange'))).asFunction<GlMapBufferRange>());
+  }
+  glFlushMappedBufferRange =  tryCall(() => lib.lookupFunction<GlFlushMappedBufferRangeNative, GlFlushMappedBufferRange>('glFlushMappedBufferRange'));
+  if (glFlushMappedBufferRange == null && glGetProcAddress != null) {
+    glFlushMappedBufferRange =  tryCall(() => Pointer<NativeFunction<GlFlushMappedBufferRangeNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFlushMappedBufferRange'))).asFunction<GlFlushMappedBufferRange>());
+  }
+  glBindVertexArray =  tryCall(() => lib.lookupFunction<GlBindVertexArrayNative, GlBindVertexArray>('glBindVertexArray'));
+  if (glBindVertexArray == null && glGetProcAddress != null) {
+    glBindVertexArray =  tryCall(() => Pointer<NativeFunction<GlBindVertexArrayNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindVertexArray'))).asFunction<GlBindVertexArray>());
+  }
+  glDeleteVertexArrays =  tryCall(() => lib.lookupFunction<GlDeleteVertexArraysNative, GlDeleteVertexArrays>('glDeleteVertexArrays'));
+  if (glDeleteVertexArrays == null && glGetProcAddress != null) {
+    glDeleteVertexArrays =  tryCall(() => Pointer<NativeFunction<GlDeleteVertexArraysNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteVertexArrays'))).asFunction<GlDeleteVertexArrays>());
+  }
+  glGenVertexArrays =  tryCall(() => lib.lookupFunction<GlGenVertexArraysNative, GlGenVertexArrays>('glGenVertexArrays'));
+  if (glGenVertexArrays == null && glGetProcAddress != null) {
+    glGenVertexArrays =  tryCall(() => Pointer<NativeFunction<GlGenVertexArraysNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenVertexArrays'))).asFunction<GlGenVertexArrays>());
+  }
+  glIsVertexArray =  tryCall(() => lib.lookupFunction<GlIsVertexArrayNative, GlIsVertexArray>('glIsVertexArray'));
+  if (glIsVertexArray == null && glGetProcAddress != null) {
+    glIsVertexArray =  tryCall(() => Pointer<NativeFunction<GlIsVertexArrayNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsVertexArray'))).asFunction<GlIsVertexArray>());
+  }
+  glDrawArraysInstanced =  tryCall(() => lib.lookupFunction<GlDrawArraysInstancedNative, GlDrawArraysInstanced>('glDrawArraysInstanced'));
+  if (glDrawArraysInstanced == null && glGetProcAddress != null) {
+    glDrawArraysInstanced =  tryCall(() => Pointer<NativeFunction<GlDrawArraysInstancedNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawArraysInstanced'))).asFunction<GlDrawArraysInstanced>());
+  }
+  glDrawElementsInstanced =  tryCall(() => lib.lookupFunction<GlDrawElementsInstancedNative, GlDrawElementsInstanced>('glDrawElementsInstanced'));
+  if (glDrawElementsInstanced == null && glGetProcAddress != null) {
+    glDrawElementsInstanced =  tryCall(() => Pointer<NativeFunction<GlDrawElementsInstancedNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawElementsInstanced'))).asFunction<GlDrawElementsInstanced>());
+  }
+  glTexBuffer =  tryCall(() => lib.lookupFunction<GlTexBufferNative, GlTexBuffer>('glTexBuffer'));
+  if (glTexBuffer == null && glGetProcAddress != null) {
+    glTexBuffer =  tryCall(() => Pointer<NativeFunction<GlTexBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexBuffer'))).asFunction<GlTexBuffer>());
+  }
+  glPrimitiveRestartIndex =  tryCall(() => lib.lookupFunction<GlPrimitiveRestartIndexNative, GlPrimitiveRestartIndex>('glPrimitiveRestartIndex'));
+  if (glPrimitiveRestartIndex == null && glGetProcAddress != null) {
+    glPrimitiveRestartIndex =  tryCall(() => Pointer<NativeFunction<GlPrimitiveRestartIndexNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPrimitiveRestartIndex'))).asFunction<GlPrimitiveRestartIndex>());
+  }
+  glCopyBufferSubData =  tryCall(() => lib.lookupFunction<GlCopyBufferSubDataNative, GlCopyBufferSubData>('glCopyBufferSubData'));
+  if (glCopyBufferSubData == null && glGetProcAddress != null) {
+    glCopyBufferSubData =  tryCall(() => Pointer<NativeFunction<GlCopyBufferSubDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyBufferSubData'))).asFunction<GlCopyBufferSubData>());
+  }
+  glGetUniformIndices =  tryCall(() => lib.lookupFunction<GlGetUniformIndicesNative, GlGetUniformIndices>('glGetUniformIndices'));
+  if (glGetUniformIndices == null && glGetProcAddress != null) {
+    glGetUniformIndices =  tryCall(() => Pointer<NativeFunction<GlGetUniformIndicesNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetUniformIndices'))).asFunction<GlGetUniformIndices>());
+  }
+  glGetActiveUniformsiv =  tryCall(() => lib.lookupFunction<GlGetActiveUniformsivNative, GlGetActiveUniformsiv>('glGetActiveUniformsiv'));
+  if (glGetActiveUniformsiv == null && glGetProcAddress != null) {
+    glGetActiveUniformsiv =  tryCall(() => Pointer<NativeFunction<GlGetActiveUniformsivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetActiveUniformsiv'))).asFunction<GlGetActiveUniformsiv>());
+  }
+  glGetActiveUniformName =  tryCall(() => lib.lookupFunction<GlGetActiveUniformNameNative, GlGetActiveUniformName>('glGetActiveUniformName'));
+  if (glGetActiveUniformName == null && glGetProcAddress != null) {
+    glGetActiveUniformName =  tryCall(() => Pointer<NativeFunction<GlGetActiveUniformNameNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetActiveUniformName'))).asFunction<GlGetActiveUniformName>());
+  }
+  glGetUniformBlockIndex =  tryCall(() => lib.lookupFunction<GlGetUniformBlockIndexNative, GlGetUniformBlockIndex>('glGetUniformBlockIndex'));
+  if (glGetUniformBlockIndex == null && glGetProcAddress != null) {
+    glGetUniformBlockIndex =  tryCall(() => Pointer<NativeFunction<GlGetUniformBlockIndexNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetUniformBlockIndex'))).asFunction<GlGetUniformBlockIndex>());
+  }
+  glGetActiveUniformBlockiv =  tryCall(() => lib.lookupFunction<GlGetActiveUniformBlockivNative, GlGetActiveUniformBlockiv>('glGetActiveUniformBlockiv'));
+  if (glGetActiveUniformBlockiv == null && glGetProcAddress != null) {
+    glGetActiveUniformBlockiv =  tryCall(() => Pointer<NativeFunction<GlGetActiveUniformBlockivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetActiveUniformBlockiv'))).asFunction<GlGetActiveUniformBlockiv>());
+  }
+  glGetActiveUniformBlockName =  tryCall(() => lib.lookupFunction<GlGetActiveUniformBlockNameNative, GlGetActiveUniformBlockName>('glGetActiveUniformBlockName'));
+  if (glGetActiveUniformBlockName == null && glGetProcAddress != null) {
+    glGetActiveUniformBlockName =  tryCall(() => Pointer<NativeFunction<GlGetActiveUniformBlockNameNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetActiveUniformBlockName'))).asFunction<GlGetActiveUniformBlockName>());
+  }
+  glUniformBlockBinding =  tryCall(() => lib.lookupFunction<GlUniformBlockBindingNative, GlUniformBlockBinding>('glUniformBlockBinding'));
+  if (glUniformBlockBinding == null && glGetProcAddress != null) {
+    glUniformBlockBinding =  tryCall(() => Pointer<NativeFunction<GlUniformBlockBindingNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformBlockBinding'))).asFunction<GlUniformBlockBinding>());
+  }
+  glDrawElementsBaseVertex =  tryCall(() => lib.lookupFunction<GlDrawElementsBaseVertexNative, GlDrawElementsBaseVertex>('glDrawElementsBaseVertex'));
+  if (glDrawElementsBaseVertex == null && glGetProcAddress != null) {
+    glDrawElementsBaseVertex =  tryCall(() => Pointer<NativeFunction<GlDrawElementsBaseVertexNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawElementsBaseVertex'))).asFunction<GlDrawElementsBaseVertex>());
+  }
+  glDrawRangeElementsBaseVertex =  tryCall(() => lib.lookupFunction<GlDrawRangeElementsBaseVertexNative, GlDrawRangeElementsBaseVertex>('glDrawRangeElementsBaseVertex'));
+  if (glDrawRangeElementsBaseVertex == null && glGetProcAddress != null) {
+    glDrawRangeElementsBaseVertex =  tryCall(() => Pointer<NativeFunction<GlDrawRangeElementsBaseVertexNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawRangeElementsBaseVertex'))).asFunction<GlDrawRangeElementsBaseVertex>());
+  }
+  glDrawElementsInstancedBaseVertex =  tryCall(() => lib.lookupFunction<GlDrawElementsInstancedBaseVertexNative, GlDrawElementsInstancedBaseVertex>('glDrawElementsInstancedBaseVertex'));
+  if (glDrawElementsInstancedBaseVertex == null && glGetProcAddress != null) {
+    glDrawElementsInstancedBaseVertex =  tryCall(() => Pointer<NativeFunction<GlDrawElementsInstancedBaseVertexNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawElementsInstancedBaseVertex'))).asFunction<GlDrawElementsInstancedBaseVertex>());
+  }
+  glMultiDrawElementsBaseVertex =  tryCall(() => lib.lookupFunction<GlMultiDrawElementsBaseVertexNative, GlMultiDrawElementsBaseVertex>('glMultiDrawElementsBaseVertex'));
+  if (glMultiDrawElementsBaseVertex == null && glGetProcAddress != null) {
+    glMultiDrawElementsBaseVertex =  tryCall(() => Pointer<NativeFunction<GlMultiDrawElementsBaseVertexNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawElementsBaseVertex'))).asFunction<GlMultiDrawElementsBaseVertex>());
+  }
+  glProvokingVertex =  tryCall(() => lib.lookupFunction<GlProvokingVertexNative, GlProvokingVertex>('glProvokingVertex'));
+  if (glProvokingVertex == null && glGetProcAddress != null) {
+    glProvokingVertex =  tryCall(() => Pointer<NativeFunction<GlProvokingVertexNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProvokingVertex'))).asFunction<GlProvokingVertex>());
+  }
+  glFenceSync =  tryCall(() => lib.lookupFunction<GlFenceSyncNative, GlFenceSync>('glFenceSync'));
+  if (glFenceSync == null && glGetProcAddress != null) {
+    glFenceSync =  tryCall(() => Pointer<NativeFunction<GlFenceSyncNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFenceSync'))).asFunction<GlFenceSync>());
+  }
+  glIsSync =  tryCall(() => lib.lookupFunction<GlIsSyncNative, GlIsSync>('glIsSync'));
+  if (glIsSync == null && glGetProcAddress != null) {
+    glIsSync =  tryCall(() => Pointer<NativeFunction<GlIsSyncNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsSync'))).asFunction<GlIsSync>());
+  }
+  glDeleteSync =  tryCall(() => lib.lookupFunction<GlDeleteSyncNative, GlDeleteSync>('glDeleteSync'));
+  if (glDeleteSync == null && glGetProcAddress != null) {
+    glDeleteSync =  tryCall(() => Pointer<NativeFunction<GlDeleteSyncNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteSync'))).asFunction<GlDeleteSync>());
+  }
+  glClientWaitSync =  tryCall(() => lib.lookupFunction<GlClientWaitSyncNative, GlClientWaitSync>('glClientWaitSync'));
+  if (glClientWaitSync == null && glGetProcAddress != null) {
+    glClientWaitSync =  tryCall(() => Pointer<NativeFunction<GlClientWaitSyncNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClientWaitSync'))).asFunction<GlClientWaitSync>());
+  }
+  glWaitSync =  tryCall(() => lib.lookupFunction<GlWaitSyncNative, GlWaitSync>('glWaitSync'));
+  if (glWaitSync == null && glGetProcAddress != null) {
+    glWaitSync =  tryCall(() => Pointer<NativeFunction<GlWaitSyncNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glWaitSync'))).asFunction<GlWaitSync>());
+  }
+  glGetInteger64v =  tryCall(() => lib.lookupFunction<GlGetInteger64vNative, GlGetInteger64v>('glGetInteger64v'));
+  if (glGetInteger64v == null && glGetProcAddress != null) {
+    glGetInteger64v =  tryCall(() => Pointer<NativeFunction<GlGetInteger64vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetInteger64v'))).asFunction<GlGetInteger64v>());
+  }
+  glGetSynciv =  tryCall(() => lib.lookupFunction<GlGetSyncivNative, GlGetSynciv>('glGetSynciv'));
+  if (glGetSynciv == null && glGetProcAddress != null) {
+    glGetSynciv =  tryCall(() => Pointer<NativeFunction<GlGetSyncivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetSynciv'))).asFunction<GlGetSynciv>());
+  }
+  glGetInteger64i_v =  tryCall(() => lib.lookupFunction<GlGetInteger64i_vNative, GlGetInteger64i_v>('glGetInteger64i_v'));
+  if (glGetInteger64i_v == null && glGetProcAddress != null) {
+    glGetInteger64i_v =  tryCall(() => Pointer<NativeFunction<GlGetInteger64i_vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetInteger64i_v'))).asFunction<GlGetInteger64i_v>());
+  }
+  glGetBufferParameteri64v =  tryCall(() => lib.lookupFunction<GlGetBufferParameteri64vNative, GlGetBufferParameteri64v>('glGetBufferParameteri64v'));
+  if (glGetBufferParameteri64v == null && glGetProcAddress != null) {
+    glGetBufferParameteri64v =  tryCall(() => Pointer<NativeFunction<GlGetBufferParameteri64vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetBufferParameteri64v'))).asFunction<GlGetBufferParameteri64v>());
+  }
+  glFramebufferTexture =  tryCall(() => lib.lookupFunction<GlFramebufferTextureNative, GlFramebufferTexture>('glFramebufferTexture'));
+  if (glFramebufferTexture == null && glGetProcAddress != null) {
+    glFramebufferTexture =  tryCall(() => Pointer<NativeFunction<GlFramebufferTextureNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferTexture'))).asFunction<GlFramebufferTexture>());
+  }
+  glTexImage2DMultisample =  tryCall(() => lib.lookupFunction<GlTexImage2DMultisampleNative, GlTexImage2DMultisample>('glTexImage2DMultisample'));
+  if (glTexImage2DMultisample == null && glGetProcAddress != null) {
+    glTexImage2DMultisample =  tryCall(() => Pointer<NativeFunction<GlTexImage2DMultisampleNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexImage2DMultisample'))).asFunction<GlTexImage2DMultisample>());
+  }
+  glTexImage3DMultisample =  tryCall(() => lib.lookupFunction<GlTexImage3DMultisampleNative, GlTexImage3DMultisample>('glTexImage3DMultisample'));
+  if (glTexImage3DMultisample == null && glGetProcAddress != null) {
+    glTexImage3DMultisample =  tryCall(() => Pointer<NativeFunction<GlTexImage3DMultisampleNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexImage3DMultisample'))).asFunction<GlTexImage3DMultisample>());
+  }
+  glGetMultisamplefv =  tryCall(() => lib.lookupFunction<GlGetMultisamplefvNative, GlGetMultisamplefv>('glGetMultisamplefv'));
+  if (glGetMultisamplefv == null && glGetProcAddress != null) {
+    glGetMultisamplefv =  tryCall(() => Pointer<NativeFunction<GlGetMultisamplefvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultisamplefv'))).asFunction<GlGetMultisamplefv>());
+  }
+  glSampleMaski =  tryCall(() => lib.lookupFunction<GlSampleMaskiNative, GlSampleMaski>('glSampleMaski'));
+  if (glSampleMaski == null && glGetProcAddress != null) {
+    glSampleMaski =  tryCall(() => Pointer<NativeFunction<GlSampleMaskiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSampleMaski'))).asFunction<GlSampleMaski>());
+  }
+  glBindFragDataLocationIndexed =  tryCall(() => lib.lookupFunction<GlBindFragDataLocationIndexedNative, GlBindFragDataLocationIndexed>('glBindFragDataLocationIndexed'));
+  if (glBindFragDataLocationIndexed == null && glGetProcAddress != null) {
+    glBindFragDataLocationIndexed =  tryCall(() => Pointer<NativeFunction<GlBindFragDataLocationIndexedNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindFragDataLocationIndexed'))).asFunction<GlBindFragDataLocationIndexed>());
+  }
+  glGetFragDataIndex =  tryCall(() => lib.lookupFunction<GlGetFragDataIndexNative, GlGetFragDataIndex>('glGetFragDataIndex'));
+  if (glGetFragDataIndex == null && glGetProcAddress != null) {
+    glGetFragDataIndex =  tryCall(() => Pointer<NativeFunction<GlGetFragDataIndexNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetFragDataIndex'))).asFunction<GlGetFragDataIndex>());
+  }
+  glGenSamplers =  tryCall(() => lib.lookupFunction<GlGenSamplersNative, GlGenSamplers>('glGenSamplers'));
+  if (glGenSamplers == null && glGetProcAddress != null) {
+    glGenSamplers =  tryCall(() => Pointer<NativeFunction<GlGenSamplersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenSamplers'))).asFunction<GlGenSamplers>());
+  }
+  glDeleteSamplers =  tryCall(() => lib.lookupFunction<GlDeleteSamplersNative, GlDeleteSamplers>('glDeleteSamplers'));
+  if (glDeleteSamplers == null && glGetProcAddress != null) {
+    glDeleteSamplers =  tryCall(() => Pointer<NativeFunction<GlDeleteSamplersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteSamplers'))).asFunction<GlDeleteSamplers>());
+  }
+  glIsSampler =  tryCall(() => lib.lookupFunction<GlIsSamplerNative, GlIsSampler>('glIsSampler'));
+  if (glIsSampler == null && glGetProcAddress != null) {
+    glIsSampler =  tryCall(() => Pointer<NativeFunction<GlIsSamplerNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsSampler'))).asFunction<GlIsSampler>());
+  }
+  glBindSampler =  tryCall(() => lib.lookupFunction<GlBindSamplerNative, GlBindSampler>('glBindSampler'));
+  if (glBindSampler == null && glGetProcAddress != null) {
+    glBindSampler =  tryCall(() => Pointer<NativeFunction<GlBindSamplerNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindSampler'))).asFunction<GlBindSampler>());
+  }
+  glSamplerParameteri =  tryCall(() => lib.lookupFunction<GlSamplerParameteriNative, GlSamplerParameteri>('glSamplerParameteri'));
+  if (glSamplerParameteri == null && glGetProcAddress != null) {
+    glSamplerParameteri =  tryCall(() => Pointer<NativeFunction<GlSamplerParameteriNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSamplerParameteri'))).asFunction<GlSamplerParameteri>());
+  }
+  glSamplerParameteriv =  tryCall(() => lib.lookupFunction<GlSamplerParameterivNative, GlSamplerParameteriv>('glSamplerParameteriv'));
+  if (glSamplerParameteriv == null && glGetProcAddress != null) {
+    glSamplerParameteriv =  tryCall(() => Pointer<NativeFunction<GlSamplerParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSamplerParameteriv'))).asFunction<GlSamplerParameteriv>());
+  }
+  glSamplerParameterf =  tryCall(() => lib.lookupFunction<GlSamplerParameterfNative, GlSamplerParameterf>('glSamplerParameterf'));
+  if (glSamplerParameterf == null && glGetProcAddress != null) {
+    glSamplerParameterf =  tryCall(() => Pointer<NativeFunction<GlSamplerParameterfNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSamplerParameterf'))).asFunction<GlSamplerParameterf>());
+  }
+  glSamplerParameterfv =  tryCall(() => lib.lookupFunction<GlSamplerParameterfvNative, GlSamplerParameterfv>('glSamplerParameterfv'));
+  if (glSamplerParameterfv == null && glGetProcAddress != null) {
+    glSamplerParameterfv =  tryCall(() => Pointer<NativeFunction<GlSamplerParameterfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSamplerParameterfv'))).asFunction<GlSamplerParameterfv>());
+  }
+  glSamplerParameterIiv =  tryCall(() => lib.lookupFunction<GlSamplerParameterIivNative, GlSamplerParameterIiv>('glSamplerParameterIiv'));
+  if (glSamplerParameterIiv == null && glGetProcAddress != null) {
+    glSamplerParameterIiv =  tryCall(() => Pointer<NativeFunction<GlSamplerParameterIivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSamplerParameterIiv'))).asFunction<GlSamplerParameterIiv>());
+  }
+  glSamplerParameterIuiv =  tryCall(() => lib.lookupFunction<GlSamplerParameterIuivNative, GlSamplerParameterIuiv>('glSamplerParameterIuiv'));
+  if (glSamplerParameterIuiv == null && glGetProcAddress != null) {
+    glSamplerParameterIuiv =  tryCall(() => Pointer<NativeFunction<GlSamplerParameterIuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSamplerParameterIuiv'))).asFunction<GlSamplerParameterIuiv>());
+  }
+  glGetSamplerParameteriv =  tryCall(() => lib.lookupFunction<GlGetSamplerParameterivNative, GlGetSamplerParameteriv>('glGetSamplerParameteriv'));
+  if (glGetSamplerParameteriv == null && glGetProcAddress != null) {
+    glGetSamplerParameteriv =  tryCall(() => Pointer<NativeFunction<GlGetSamplerParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetSamplerParameteriv'))).asFunction<GlGetSamplerParameteriv>());
+  }
+  glGetSamplerParameterIiv =  tryCall(() => lib.lookupFunction<GlGetSamplerParameterIivNative, GlGetSamplerParameterIiv>('glGetSamplerParameterIiv'));
+  if (glGetSamplerParameterIiv == null && glGetProcAddress != null) {
+    glGetSamplerParameterIiv =  tryCall(() => Pointer<NativeFunction<GlGetSamplerParameterIivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetSamplerParameterIiv'))).asFunction<GlGetSamplerParameterIiv>());
+  }
+  glGetSamplerParameterfv =  tryCall(() => lib.lookupFunction<GlGetSamplerParameterfvNative, GlGetSamplerParameterfv>('glGetSamplerParameterfv'));
+  if (glGetSamplerParameterfv == null && glGetProcAddress != null) {
+    glGetSamplerParameterfv =  tryCall(() => Pointer<NativeFunction<GlGetSamplerParameterfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetSamplerParameterfv'))).asFunction<GlGetSamplerParameterfv>());
+  }
+  glGetSamplerParameterIuiv =  tryCall(() => lib.lookupFunction<GlGetSamplerParameterIuivNative, GlGetSamplerParameterIuiv>('glGetSamplerParameterIuiv'));
+  if (glGetSamplerParameterIuiv == null && glGetProcAddress != null) {
+    glGetSamplerParameterIuiv =  tryCall(() => Pointer<NativeFunction<GlGetSamplerParameterIuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetSamplerParameterIuiv'))).asFunction<GlGetSamplerParameterIuiv>());
+  }
+  glQueryCounter =  tryCall(() => lib.lookupFunction<GlQueryCounterNative, GlQueryCounter>('glQueryCounter'));
+  if (glQueryCounter == null && glGetProcAddress != null) {
+    glQueryCounter =  tryCall(() => Pointer<NativeFunction<GlQueryCounterNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glQueryCounter'))).asFunction<GlQueryCounter>());
+  }
+  glGetQueryObjecti64v =  tryCall(() => lib.lookupFunction<GlGetQueryObjecti64vNative, GlGetQueryObjecti64v>('glGetQueryObjecti64v'));
+  if (glGetQueryObjecti64v == null && glGetProcAddress != null) {
+    glGetQueryObjecti64v =  tryCall(() => Pointer<NativeFunction<GlGetQueryObjecti64vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetQueryObjecti64v'))).asFunction<GlGetQueryObjecti64v>());
+  }
+  glGetQueryObjectui64v =  tryCall(() => lib.lookupFunction<GlGetQueryObjectui64vNative, GlGetQueryObjectui64v>('glGetQueryObjectui64v'));
+  if (glGetQueryObjectui64v == null && glGetProcAddress != null) {
+    glGetQueryObjectui64v =  tryCall(() => Pointer<NativeFunction<GlGetQueryObjectui64vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetQueryObjectui64v'))).asFunction<GlGetQueryObjectui64v>());
+  }
+  glVertexAttribDivisor =  tryCall(() => lib.lookupFunction<GlVertexAttribDivisorNative, GlVertexAttribDivisor>('glVertexAttribDivisor'));
+  if (glVertexAttribDivisor == null && glGetProcAddress != null) {
+    glVertexAttribDivisor =  tryCall(() => Pointer<NativeFunction<GlVertexAttribDivisorNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribDivisor'))).asFunction<GlVertexAttribDivisor>());
+  }
+  glVertexAttribP1ui =  tryCall(() => lib.lookupFunction<GlVertexAttribP1uiNative, GlVertexAttribP1ui>('glVertexAttribP1ui'));
+  if (glVertexAttribP1ui == null && glGetProcAddress != null) {
+    glVertexAttribP1ui =  tryCall(() => Pointer<NativeFunction<GlVertexAttribP1uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribP1ui'))).asFunction<GlVertexAttribP1ui>());
+  }
+  glVertexAttribP1uiv =  tryCall(() => lib.lookupFunction<GlVertexAttribP1uivNative, GlVertexAttribP1uiv>('glVertexAttribP1uiv'));
+  if (glVertexAttribP1uiv == null && glGetProcAddress != null) {
+    glVertexAttribP1uiv =  tryCall(() => Pointer<NativeFunction<GlVertexAttribP1uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribP1uiv'))).asFunction<GlVertexAttribP1uiv>());
+  }
+  glVertexAttribP2ui =  tryCall(() => lib.lookupFunction<GlVertexAttribP2uiNative, GlVertexAttribP2ui>('glVertexAttribP2ui'));
+  if (glVertexAttribP2ui == null && glGetProcAddress != null) {
+    glVertexAttribP2ui =  tryCall(() => Pointer<NativeFunction<GlVertexAttribP2uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribP2ui'))).asFunction<GlVertexAttribP2ui>());
+  }
+  glVertexAttribP2uiv =  tryCall(() => lib.lookupFunction<GlVertexAttribP2uivNative, GlVertexAttribP2uiv>('glVertexAttribP2uiv'));
+  if (glVertexAttribP2uiv == null && glGetProcAddress != null) {
+    glVertexAttribP2uiv =  tryCall(() => Pointer<NativeFunction<GlVertexAttribP2uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribP2uiv'))).asFunction<GlVertexAttribP2uiv>());
+  }
+  glVertexAttribP3ui =  tryCall(() => lib.lookupFunction<GlVertexAttribP3uiNative, GlVertexAttribP3ui>('glVertexAttribP3ui'));
+  if (glVertexAttribP3ui == null && glGetProcAddress != null) {
+    glVertexAttribP3ui =  tryCall(() => Pointer<NativeFunction<GlVertexAttribP3uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribP3ui'))).asFunction<GlVertexAttribP3ui>());
+  }
+  glVertexAttribP3uiv =  tryCall(() => lib.lookupFunction<GlVertexAttribP3uivNative, GlVertexAttribP3uiv>('glVertexAttribP3uiv'));
+  if (glVertexAttribP3uiv == null && glGetProcAddress != null) {
+    glVertexAttribP3uiv =  tryCall(() => Pointer<NativeFunction<GlVertexAttribP3uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribP3uiv'))).asFunction<GlVertexAttribP3uiv>());
+  }
+  glVertexAttribP4ui =  tryCall(() => lib.lookupFunction<GlVertexAttribP4uiNative, GlVertexAttribP4ui>('glVertexAttribP4ui'));
+  if (glVertexAttribP4ui == null && glGetProcAddress != null) {
+    glVertexAttribP4ui =  tryCall(() => Pointer<NativeFunction<GlVertexAttribP4uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribP4ui'))).asFunction<GlVertexAttribP4ui>());
+  }
+  glVertexAttribP4uiv =  tryCall(() => lib.lookupFunction<GlVertexAttribP4uivNative, GlVertexAttribP4uiv>('glVertexAttribP4uiv'));
+  if (glVertexAttribP4uiv == null && glGetProcAddress != null) {
+    glVertexAttribP4uiv =  tryCall(() => Pointer<NativeFunction<GlVertexAttribP4uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribP4uiv'))).asFunction<GlVertexAttribP4uiv>());
+  }
+  glMinSampleShading =  tryCall(() => lib.lookupFunction<GlMinSampleShadingNative, GlMinSampleShading>('glMinSampleShading'));
+  if (glMinSampleShading == null && glGetProcAddress != null) {
+    glMinSampleShading =  tryCall(() => Pointer<NativeFunction<GlMinSampleShadingNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMinSampleShading'))).asFunction<GlMinSampleShading>());
+  }
+  glBlendEquationi =  tryCall(() => lib.lookupFunction<GlBlendEquationiNative, GlBlendEquationi>('glBlendEquationi'));
+  if (glBlendEquationi == null && glGetProcAddress != null) {
+    glBlendEquationi =  tryCall(() => Pointer<NativeFunction<GlBlendEquationiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendEquationi'))).asFunction<GlBlendEquationi>());
+  }
+  glBlendEquationSeparatei =  tryCall(() => lib.lookupFunction<GlBlendEquationSeparateiNative, GlBlendEquationSeparatei>('glBlendEquationSeparatei'));
+  if (glBlendEquationSeparatei == null && glGetProcAddress != null) {
+    glBlendEquationSeparatei =  tryCall(() => Pointer<NativeFunction<GlBlendEquationSeparateiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendEquationSeparatei'))).asFunction<GlBlendEquationSeparatei>());
+  }
+  glBlendFunci =  tryCall(() => lib.lookupFunction<GlBlendFunciNative, GlBlendFunci>('glBlendFunci'));
+  if (glBlendFunci == null && glGetProcAddress != null) {
+    glBlendFunci =  tryCall(() => Pointer<NativeFunction<GlBlendFunciNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendFunci'))).asFunction<GlBlendFunci>());
+  }
+  glBlendFuncSeparatei =  tryCall(() => lib.lookupFunction<GlBlendFuncSeparateiNative, GlBlendFuncSeparatei>('glBlendFuncSeparatei'));
+  if (glBlendFuncSeparatei == null && glGetProcAddress != null) {
+    glBlendFuncSeparatei =  tryCall(() => Pointer<NativeFunction<GlBlendFuncSeparateiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendFuncSeparatei'))).asFunction<GlBlendFuncSeparatei>());
+  }
+  glDrawArraysIndirect =  tryCall(() => lib.lookupFunction<GlDrawArraysIndirectNative, GlDrawArraysIndirect>('glDrawArraysIndirect'));
+  if (glDrawArraysIndirect == null && glGetProcAddress != null) {
+    glDrawArraysIndirect =  tryCall(() => Pointer<NativeFunction<GlDrawArraysIndirectNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawArraysIndirect'))).asFunction<GlDrawArraysIndirect>());
+  }
+  glDrawElementsIndirect =  tryCall(() => lib.lookupFunction<GlDrawElementsIndirectNative, GlDrawElementsIndirect>('glDrawElementsIndirect'));
+  if (glDrawElementsIndirect == null && glGetProcAddress != null) {
+    glDrawElementsIndirect =  tryCall(() => Pointer<NativeFunction<GlDrawElementsIndirectNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawElementsIndirect'))).asFunction<GlDrawElementsIndirect>());
+  }
+  glUniform1d =  tryCall(() => lib.lookupFunction<GlUniform1dNative, GlUniform1d>('glUniform1d'));
+  if (glUniform1d == null && glGetProcAddress != null) {
+    glUniform1d =  tryCall(() => Pointer<NativeFunction<GlUniform1dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1d'))).asFunction<GlUniform1d>());
+  }
+  glUniform2d =  tryCall(() => lib.lookupFunction<GlUniform2dNative, GlUniform2d>('glUniform2d'));
+  if (glUniform2d == null && glGetProcAddress != null) {
+    glUniform2d =  tryCall(() => Pointer<NativeFunction<GlUniform2dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2d'))).asFunction<GlUniform2d>());
+  }
+  glUniform3d =  tryCall(() => lib.lookupFunction<GlUniform3dNative, GlUniform3d>('glUniform3d'));
+  if (glUniform3d == null && glGetProcAddress != null) {
+    glUniform3d =  tryCall(() => Pointer<NativeFunction<GlUniform3dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3d'))).asFunction<GlUniform3d>());
+  }
+  glUniform4d =  tryCall(() => lib.lookupFunction<GlUniform4dNative, GlUniform4d>('glUniform4d'));
+  if (glUniform4d == null && glGetProcAddress != null) {
+    glUniform4d =  tryCall(() => Pointer<NativeFunction<GlUniform4dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4d'))).asFunction<GlUniform4d>());
+  }
+  glUniform1dv =  tryCall(() => lib.lookupFunction<GlUniform1dvNative, GlUniform1dv>('glUniform1dv'));
+  if (glUniform1dv == null && glGetProcAddress != null) {
+    glUniform1dv =  tryCall(() => Pointer<NativeFunction<GlUniform1dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1dv'))).asFunction<GlUniform1dv>());
+  }
+  glUniform2dv =  tryCall(() => lib.lookupFunction<GlUniform2dvNative, GlUniform2dv>('glUniform2dv'));
+  if (glUniform2dv == null && glGetProcAddress != null) {
+    glUniform2dv =  tryCall(() => Pointer<NativeFunction<GlUniform2dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2dv'))).asFunction<GlUniform2dv>());
+  }
+  glUniform3dv =  tryCall(() => lib.lookupFunction<GlUniform3dvNative, GlUniform3dv>('glUniform3dv'));
+  if (glUniform3dv == null && glGetProcAddress != null) {
+    glUniform3dv =  tryCall(() => Pointer<NativeFunction<GlUniform3dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3dv'))).asFunction<GlUniform3dv>());
+  }
+  glUniform4dv =  tryCall(() => lib.lookupFunction<GlUniform4dvNative, GlUniform4dv>('glUniform4dv'));
+  if (glUniform4dv == null && glGetProcAddress != null) {
+    glUniform4dv =  tryCall(() => Pointer<NativeFunction<GlUniform4dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4dv'))).asFunction<GlUniform4dv>());
+  }
+  glUniformMatrix2dv =  tryCall(() => lib.lookupFunction<GlUniformMatrix2dvNative, GlUniformMatrix2dv>('glUniformMatrix2dv'));
+  if (glUniformMatrix2dv == null && glGetProcAddress != null) {
+    glUniformMatrix2dv =  tryCall(() => Pointer<NativeFunction<GlUniformMatrix2dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix2dv'))).asFunction<GlUniformMatrix2dv>());
+  }
+  glUniformMatrix3dv =  tryCall(() => lib.lookupFunction<GlUniformMatrix3dvNative, GlUniformMatrix3dv>('glUniformMatrix3dv'));
+  if (glUniformMatrix3dv == null && glGetProcAddress != null) {
+    glUniformMatrix3dv =  tryCall(() => Pointer<NativeFunction<GlUniformMatrix3dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix3dv'))).asFunction<GlUniformMatrix3dv>());
+  }
+  glUniformMatrix4dv =  tryCall(() => lib.lookupFunction<GlUniformMatrix4dvNative, GlUniformMatrix4dv>('glUniformMatrix4dv'));
+  if (glUniformMatrix4dv == null && glGetProcAddress != null) {
+    glUniformMatrix4dv =  tryCall(() => Pointer<NativeFunction<GlUniformMatrix4dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix4dv'))).asFunction<GlUniformMatrix4dv>());
+  }
+  glUniformMatrix2x3dv =  tryCall(() => lib.lookupFunction<GlUniformMatrix2x3dvNative, GlUniformMatrix2x3dv>('glUniformMatrix2x3dv'));
+  if (glUniformMatrix2x3dv == null && glGetProcAddress != null) {
+    glUniformMatrix2x3dv =  tryCall(() => Pointer<NativeFunction<GlUniformMatrix2x3dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix2x3dv'))).asFunction<GlUniformMatrix2x3dv>());
+  }
+  glUniformMatrix2x4dv =  tryCall(() => lib.lookupFunction<GlUniformMatrix2x4dvNative, GlUniformMatrix2x4dv>('glUniformMatrix2x4dv'));
+  if (glUniformMatrix2x4dv == null && glGetProcAddress != null) {
+    glUniformMatrix2x4dv =  tryCall(() => Pointer<NativeFunction<GlUniformMatrix2x4dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix2x4dv'))).asFunction<GlUniformMatrix2x4dv>());
+  }
+  glUniformMatrix3x2dv =  tryCall(() => lib.lookupFunction<GlUniformMatrix3x2dvNative, GlUniformMatrix3x2dv>('glUniformMatrix3x2dv'));
+  if (glUniformMatrix3x2dv == null && glGetProcAddress != null) {
+    glUniformMatrix3x2dv =  tryCall(() => Pointer<NativeFunction<GlUniformMatrix3x2dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix3x2dv'))).asFunction<GlUniformMatrix3x2dv>());
+  }
+  glUniformMatrix3x4dv =  tryCall(() => lib.lookupFunction<GlUniformMatrix3x4dvNative, GlUniformMatrix3x4dv>('glUniformMatrix3x4dv'));
+  if (glUniformMatrix3x4dv == null && glGetProcAddress != null) {
+    glUniformMatrix3x4dv =  tryCall(() => Pointer<NativeFunction<GlUniformMatrix3x4dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix3x4dv'))).asFunction<GlUniformMatrix3x4dv>());
+  }
+  glUniformMatrix4x2dv =  tryCall(() => lib.lookupFunction<GlUniformMatrix4x2dvNative, GlUniformMatrix4x2dv>('glUniformMatrix4x2dv'));
+  if (glUniformMatrix4x2dv == null && glGetProcAddress != null) {
+    glUniformMatrix4x2dv =  tryCall(() => Pointer<NativeFunction<GlUniformMatrix4x2dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix4x2dv'))).asFunction<GlUniformMatrix4x2dv>());
+  }
+  glUniformMatrix4x3dv =  tryCall(() => lib.lookupFunction<GlUniformMatrix4x3dvNative, GlUniformMatrix4x3dv>('glUniformMatrix4x3dv'));
+  if (glUniformMatrix4x3dv == null && glGetProcAddress != null) {
+    glUniformMatrix4x3dv =  tryCall(() => Pointer<NativeFunction<GlUniformMatrix4x3dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformMatrix4x3dv'))).asFunction<GlUniformMatrix4x3dv>());
+  }
+  glGetUniformdv =  tryCall(() => lib.lookupFunction<GlGetUniformdvNative, GlGetUniformdv>('glGetUniformdv'));
+  if (glGetUniformdv == null && glGetProcAddress != null) {
+    glGetUniformdv =  tryCall(() => Pointer<NativeFunction<GlGetUniformdvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetUniformdv'))).asFunction<GlGetUniformdv>());
+  }
+  glGetSubroutineUniformLocation =  tryCall(() => lib.lookupFunction<GlGetSubroutineUniformLocationNative, GlGetSubroutineUniformLocation>('glGetSubroutineUniformLocation'));
+  if (glGetSubroutineUniformLocation == null && glGetProcAddress != null) {
+    glGetSubroutineUniformLocation =  tryCall(() => Pointer<NativeFunction<GlGetSubroutineUniformLocationNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetSubroutineUniformLocation'))).asFunction<GlGetSubroutineUniformLocation>());
+  }
+  glGetSubroutineIndex =  tryCall(() => lib.lookupFunction<GlGetSubroutineIndexNative, GlGetSubroutineIndex>('glGetSubroutineIndex'));
+  if (glGetSubroutineIndex == null && glGetProcAddress != null) {
+    glGetSubroutineIndex =  tryCall(() => Pointer<NativeFunction<GlGetSubroutineIndexNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetSubroutineIndex'))).asFunction<GlGetSubroutineIndex>());
+  }
+  glGetActiveSubroutineUniformiv =  tryCall(() => lib.lookupFunction<GlGetActiveSubroutineUniformivNative, GlGetActiveSubroutineUniformiv>('glGetActiveSubroutineUniformiv'));
+  if (glGetActiveSubroutineUniformiv == null && glGetProcAddress != null) {
+    glGetActiveSubroutineUniformiv =  tryCall(() => Pointer<NativeFunction<GlGetActiveSubroutineUniformivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetActiveSubroutineUniformiv'))).asFunction<GlGetActiveSubroutineUniformiv>());
+  }
+  glGetActiveSubroutineUniformName =  tryCall(() => lib.lookupFunction<GlGetActiveSubroutineUniformNameNative, GlGetActiveSubroutineUniformName>('glGetActiveSubroutineUniformName'));
+  if (glGetActiveSubroutineUniformName == null && glGetProcAddress != null) {
+    glGetActiveSubroutineUniformName =  tryCall(() => Pointer<NativeFunction<GlGetActiveSubroutineUniformNameNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetActiveSubroutineUniformName'))).asFunction<GlGetActiveSubroutineUniformName>());
+  }
+  glGetActiveSubroutineName =  tryCall(() => lib.lookupFunction<GlGetActiveSubroutineNameNative, GlGetActiveSubroutineName>('glGetActiveSubroutineName'));
+  if (glGetActiveSubroutineName == null && glGetProcAddress != null) {
+    glGetActiveSubroutineName =  tryCall(() => Pointer<NativeFunction<GlGetActiveSubroutineNameNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetActiveSubroutineName'))).asFunction<GlGetActiveSubroutineName>());
+  }
+  glUniformSubroutinesuiv =  tryCall(() => lib.lookupFunction<GlUniformSubroutinesuivNative, GlUniformSubroutinesuiv>('glUniformSubroutinesuiv'));
+  if (glUniformSubroutinesuiv == null && glGetProcAddress != null) {
+    glUniformSubroutinesuiv =  tryCall(() => Pointer<NativeFunction<GlUniformSubroutinesuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformSubroutinesuiv'))).asFunction<GlUniformSubroutinesuiv>());
+  }
+  glGetUniformSubroutineuiv =  tryCall(() => lib.lookupFunction<GlGetUniformSubroutineuivNative, GlGetUniformSubroutineuiv>('glGetUniformSubroutineuiv'));
+  if (glGetUniformSubroutineuiv == null && glGetProcAddress != null) {
+    glGetUniformSubroutineuiv =  tryCall(() => Pointer<NativeFunction<GlGetUniformSubroutineuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetUniformSubroutineuiv'))).asFunction<GlGetUniformSubroutineuiv>());
+  }
+  glGetProgramStageiv =  tryCall(() => lib.lookupFunction<GlGetProgramStageivNative, GlGetProgramStageiv>('glGetProgramStageiv'));
+  if (glGetProgramStageiv == null && glGetProcAddress != null) {
+    glGetProgramStageiv =  tryCall(() => Pointer<NativeFunction<GlGetProgramStageivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramStageiv'))).asFunction<GlGetProgramStageiv>());
+  }
+  glPatchParameteri =  tryCall(() => lib.lookupFunction<GlPatchParameteriNative, GlPatchParameteri>('glPatchParameteri'));
+  if (glPatchParameteri == null && glGetProcAddress != null) {
+    glPatchParameteri =  tryCall(() => Pointer<NativeFunction<GlPatchParameteriNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPatchParameteri'))).asFunction<GlPatchParameteri>());
+  }
+  glPatchParameterfv =  tryCall(() => lib.lookupFunction<GlPatchParameterfvNative, GlPatchParameterfv>('glPatchParameterfv'));
+  if (glPatchParameterfv == null && glGetProcAddress != null) {
+    glPatchParameterfv =  tryCall(() => Pointer<NativeFunction<GlPatchParameterfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPatchParameterfv'))).asFunction<GlPatchParameterfv>());
+  }
+  glBindTransformFeedback =  tryCall(() => lib.lookupFunction<GlBindTransformFeedbackNative, GlBindTransformFeedback>('glBindTransformFeedback'));
+  if (glBindTransformFeedback == null && glGetProcAddress != null) {
+    glBindTransformFeedback =  tryCall(() => Pointer<NativeFunction<GlBindTransformFeedbackNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindTransformFeedback'))).asFunction<GlBindTransformFeedback>());
+  }
+  glDeleteTransformFeedbacks =  tryCall(() => lib.lookupFunction<GlDeleteTransformFeedbacksNative, GlDeleteTransformFeedbacks>('glDeleteTransformFeedbacks'));
+  if (glDeleteTransformFeedbacks == null && glGetProcAddress != null) {
+    glDeleteTransformFeedbacks =  tryCall(() => Pointer<NativeFunction<GlDeleteTransformFeedbacksNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteTransformFeedbacks'))).asFunction<GlDeleteTransformFeedbacks>());
+  }
+  glGenTransformFeedbacks =  tryCall(() => lib.lookupFunction<GlGenTransformFeedbacksNative, GlGenTransformFeedbacks>('glGenTransformFeedbacks'));
+  if (glGenTransformFeedbacks == null && glGetProcAddress != null) {
+    glGenTransformFeedbacks =  tryCall(() => Pointer<NativeFunction<GlGenTransformFeedbacksNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenTransformFeedbacks'))).asFunction<GlGenTransformFeedbacks>());
+  }
+  glIsTransformFeedback =  tryCall(() => lib.lookupFunction<GlIsTransformFeedbackNative, GlIsTransformFeedback>('glIsTransformFeedback'));
+  if (glIsTransformFeedback == null && glGetProcAddress != null) {
+    glIsTransformFeedback =  tryCall(() => Pointer<NativeFunction<GlIsTransformFeedbackNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsTransformFeedback'))).asFunction<GlIsTransformFeedback>());
+  }
+  glPauseTransformFeedback =  tryCall(() => lib.lookupFunction<GlPauseTransformFeedbackNative, GlPauseTransformFeedback>('glPauseTransformFeedback'));
+  if (glPauseTransformFeedback == null && glGetProcAddress != null) {
+    glPauseTransformFeedback =  tryCall(() => Pointer<NativeFunction<GlPauseTransformFeedbackNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPauseTransformFeedback'))).asFunction<GlPauseTransformFeedback>());
+  }
+  glResumeTransformFeedback =  tryCall(() => lib.lookupFunction<GlResumeTransformFeedbackNative, GlResumeTransformFeedback>('glResumeTransformFeedback'));
+  if (glResumeTransformFeedback == null && glGetProcAddress != null) {
+    glResumeTransformFeedback =  tryCall(() => Pointer<NativeFunction<GlResumeTransformFeedbackNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glResumeTransformFeedback'))).asFunction<GlResumeTransformFeedback>());
+  }
+  glDrawTransformFeedback =  tryCall(() => lib.lookupFunction<GlDrawTransformFeedbackNative, GlDrawTransformFeedback>('glDrawTransformFeedback'));
+  if (glDrawTransformFeedback == null && glGetProcAddress != null) {
+    glDrawTransformFeedback =  tryCall(() => Pointer<NativeFunction<GlDrawTransformFeedbackNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawTransformFeedback'))).asFunction<GlDrawTransformFeedback>());
+  }
+  glDrawTransformFeedbackStream =  tryCall(() => lib.lookupFunction<GlDrawTransformFeedbackStreamNative, GlDrawTransformFeedbackStream>('glDrawTransformFeedbackStream'));
+  if (glDrawTransformFeedbackStream == null && glGetProcAddress != null) {
+    glDrawTransformFeedbackStream =  tryCall(() => Pointer<NativeFunction<GlDrawTransformFeedbackStreamNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawTransformFeedbackStream'))).asFunction<GlDrawTransformFeedbackStream>());
+  }
+  glBeginQueryIndexed =  tryCall(() => lib.lookupFunction<GlBeginQueryIndexedNative, GlBeginQueryIndexed>('glBeginQueryIndexed'));
+  if (glBeginQueryIndexed == null && glGetProcAddress != null) {
+    glBeginQueryIndexed =  tryCall(() => Pointer<NativeFunction<GlBeginQueryIndexedNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBeginQueryIndexed'))).asFunction<GlBeginQueryIndexed>());
+  }
+  glEndQueryIndexed =  tryCall(() => lib.lookupFunction<GlEndQueryIndexedNative, GlEndQueryIndexed>('glEndQueryIndexed'));
+  if (glEndQueryIndexed == null && glGetProcAddress != null) {
+    glEndQueryIndexed =  tryCall(() => Pointer<NativeFunction<GlEndQueryIndexedNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEndQueryIndexed'))).asFunction<GlEndQueryIndexed>());
+  }
+  glGetQueryIndexediv =  tryCall(() => lib.lookupFunction<GlGetQueryIndexedivNative, GlGetQueryIndexediv>('glGetQueryIndexediv'));
+  if (glGetQueryIndexediv == null && glGetProcAddress != null) {
+    glGetQueryIndexediv =  tryCall(() => Pointer<NativeFunction<GlGetQueryIndexedivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetQueryIndexediv'))).asFunction<GlGetQueryIndexediv>());
+  }
+  glReleaseShaderCompiler =  tryCall(() => lib.lookupFunction<GlReleaseShaderCompilerNative, GlReleaseShaderCompiler>('glReleaseShaderCompiler'));
+  if (glReleaseShaderCompiler == null && glGetProcAddress != null) {
+    glReleaseShaderCompiler =  tryCall(() => Pointer<NativeFunction<GlReleaseShaderCompilerNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glReleaseShaderCompiler'))).asFunction<GlReleaseShaderCompiler>());
+  }
+  glShaderBinary =  tryCall(() => lib.lookupFunction<GlShaderBinaryNative, GlShaderBinary>('glShaderBinary'));
+  if (glShaderBinary == null && glGetProcAddress != null) {
+    glShaderBinary =  tryCall(() => Pointer<NativeFunction<GlShaderBinaryNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glShaderBinary'))).asFunction<GlShaderBinary>());
+  }
+  glGetShaderPrecisionFormat =  tryCall(() => lib.lookupFunction<GlGetShaderPrecisionFormatNative, GlGetShaderPrecisionFormat>('glGetShaderPrecisionFormat'));
+  if (glGetShaderPrecisionFormat == null && glGetProcAddress != null) {
+    glGetShaderPrecisionFormat =  tryCall(() => Pointer<NativeFunction<GlGetShaderPrecisionFormatNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetShaderPrecisionFormat'))).asFunction<GlGetShaderPrecisionFormat>());
+  }
+  glDepthRangef =  tryCall(() => lib.lookupFunction<GlDepthRangefNative, GlDepthRangef>('glDepthRangef'));
+  if (glDepthRangef == null && glGetProcAddress != null) {
+    glDepthRangef =  tryCall(() => Pointer<NativeFunction<GlDepthRangefNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDepthRangef'))).asFunction<GlDepthRangef>());
+  }
+  glClearDepthf =  tryCall(() => lib.lookupFunction<GlClearDepthfNative, GlClearDepthf>('glClearDepthf'));
+  if (glClearDepthf == null && glGetProcAddress != null) {
+    glClearDepthf =  tryCall(() => Pointer<NativeFunction<GlClearDepthfNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearDepthf'))).asFunction<GlClearDepthf>());
+  }
+  glGetProgramBinary =  tryCall(() => lib.lookupFunction<GlGetProgramBinaryNative, GlGetProgramBinary>('glGetProgramBinary'));
+  if (glGetProgramBinary == null && glGetProcAddress != null) {
+    glGetProgramBinary =  tryCall(() => Pointer<NativeFunction<GlGetProgramBinaryNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramBinary'))).asFunction<GlGetProgramBinary>());
+  }
+  glProgramBinary =  tryCall(() => lib.lookupFunction<GlProgramBinaryNative, GlProgramBinary>('glProgramBinary'));
+  if (glProgramBinary == null && glGetProcAddress != null) {
+    glProgramBinary =  tryCall(() => Pointer<NativeFunction<GlProgramBinaryNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramBinary'))).asFunction<GlProgramBinary>());
+  }
+  glProgramParameteri =  tryCall(() => lib.lookupFunction<GlProgramParameteriNative, GlProgramParameteri>('glProgramParameteri'));
+  if (glProgramParameteri == null && glGetProcAddress != null) {
+    glProgramParameteri =  tryCall(() => Pointer<NativeFunction<GlProgramParameteriNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramParameteri'))).asFunction<GlProgramParameteri>());
+  }
+  glUseProgramStages =  tryCall(() => lib.lookupFunction<GlUseProgramStagesNative, GlUseProgramStages>('glUseProgramStages'));
+  if (glUseProgramStages == null && glGetProcAddress != null) {
+    glUseProgramStages =  tryCall(() => Pointer<NativeFunction<GlUseProgramStagesNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUseProgramStages'))).asFunction<GlUseProgramStages>());
+  }
+  glActiveShaderProgram =  tryCall(() => lib.lookupFunction<GlActiveShaderProgramNative, GlActiveShaderProgram>('glActiveShaderProgram'));
+  if (glActiveShaderProgram == null && glGetProcAddress != null) {
+    glActiveShaderProgram =  tryCall(() => Pointer<NativeFunction<GlActiveShaderProgramNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glActiveShaderProgram'))).asFunction<GlActiveShaderProgram>());
+  }
+  glCreateShaderProgramv =  tryCall(() => lib.lookupFunction<GlCreateShaderProgramvNative, GlCreateShaderProgramv>('glCreateShaderProgramv'));
+  if (glCreateShaderProgramv == null && glGetProcAddress != null) {
+    glCreateShaderProgramv =  tryCall(() => Pointer<NativeFunction<GlCreateShaderProgramvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateShaderProgramv'))).asFunction<GlCreateShaderProgramv>());
+  }
+  glBindProgramPipeline =  tryCall(() => lib.lookupFunction<GlBindProgramPipelineNative, GlBindProgramPipeline>('glBindProgramPipeline'));
+  if (glBindProgramPipeline == null && glGetProcAddress != null) {
+    glBindProgramPipeline =  tryCall(() => Pointer<NativeFunction<GlBindProgramPipelineNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindProgramPipeline'))).asFunction<GlBindProgramPipeline>());
+  }
+  glDeleteProgramPipelines =  tryCall(() => lib.lookupFunction<GlDeleteProgramPipelinesNative, GlDeleteProgramPipelines>('glDeleteProgramPipelines'));
+  if (glDeleteProgramPipelines == null && glGetProcAddress != null) {
+    glDeleteProgramPipelines =  tryCall(() => Pointer<NativeFunction<GlDeleteProgramPipelinesNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteProgramPipelines'))).asFunction<GlDeleteProgramPipelines>());
+  }
+  glGenProgramPipelines =  tryCall(() => lib.lookupFunction<GlGenProgramPipelinesNative, GlGenProgramPipelines>('glGenProgramPipelines'));
+  if (glGenProgramPipelines == null && glGetProcAddress != null) {
+    glGenProgramPipelines =  tryCall(() => Pointer<NativeFunction<GlGenProgramPipelinesNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenProgramPipelines'))).asFunction<GlGenProgramPipelines>());
+  }
+  glIsProgramPipeline =  tryCall(() => lib.lookupFunction<GlIsProgramPipelineNative, GlIsProgramPipeline>('glIsProgramPipeline'));
+  if (glIsProgramPipeline == null && glGetProcAddress != null) {
+    glIsProgramPipeline =  tryCall(() => Pointer<NativeFunction<GlIsProgramPipelineNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsProgramPipeline'))).asFunction<GlIsProgramPipeline>());
+  }
+  glGetProgramPipelineiv =  tryCall(() => lib.lookupFunction<GlGetProgramPipelineivNative, GlGetProgramPipelineiv>('glGetProgramPipelineiv'));
+  if (glGetProgramPipelineiv == null && glGetProcAddress != null) {
+    glGetProgramPipelineiv =  tryCall(() => Pointer<NativeFunction<GlGetProgramPipelineivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramPipelineiv'))).asFunction<GlGetProgramPipelineiv>());
+  }
+  glProgramUniform1i =  tryCall(() => lib.lookupFunction<GlProgramUniform1iNative, GlProgramUniform1i>('glProgramUniform1i'));
+  if (glProgramUniform1i == null && glGetProcAddress != null) {
+    glProgramUniform1i =  tryCall(() => Pointer<NativeFunction<GlProgramUniform1iNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1i'))).asFunction<GlProgramUniform1i>());
+  }
+  glProgramUniform1iv =  tryCall(() => lib.lookupFunction<GlProgramUniform1ivNative, GlProgramUniform1iv>('glProgramUniform1iv'));
+  if (glProgramUniform1iv == null && glGetProcAddress != null) {
+    glProgramUniform1iv =  tryCall(() => Pointer<NativeFunction<GlProgramUniform1ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1iv'))).asFunction<GlProgramUniform1iv>());
+  }
+  glProgramUniform1f =  tryCall(() => lib.lookupFunction<GlProgramUniform1fNative, GlProgramUniform1f>('glProgramUniform1f'));
+  if (glProgramUniform1f == null && glGetProcAddress != null) {
+    glProgramUniform1f =  tryCall(() => Pointer<NativeFunction<GlProgramUniform1fNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1f'))).asFunction<GlProgramUniform1f>());
+  }
+  glProgramUniform1fv =  tryCall(() => lib.lookupFunction<GlProgramUniform1fvNative, GlProgramUniform1fv>('glProgramUniform1fv'));
+  if (glProgramUniform1fv == null && glGetProcAddress != null) {
+    glProgramUniform1fv =  tryCall(() => Pointer<NativeFunction<GlProgramUniform1fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1fv'))).asFunction<GlProgramUniform1fv>());
+  }
+  glProgramUniform1d =  tryCall(() => lib.lookupFunction<GlProgramUniform1dNative, GlProgramUniform1d>('glProgramUniform1d'));
+  if (glProgramUniform1d == null && glGetProcAddress != null) {
+    glProgramUniform1d =  tryCall(() => Pointer<NativeFunction<GlProgramUniform1dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1d'))).asFunction<GlProgramUniform1d>());
+  }
+  glProgramUniform1dv =  tryCall(() => lib.lookupFunction<GlProgramUniform1dvNative, GlProgramUniform1dv>('glProgramUniform1dv'));
+  if (glProgramUniform1dv == null && glGetProcAddress != null) {
+    glProgramUniform1dv =  tryCall(() => Pointer<NativeFunction<GlProgramUniform1dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1dv'))).asFunction<GlProgramUniform1dv>());
+  }
+  glProgramUniform1ui =  tryCall(() => lib.lookupFunction<GlProgramUniform1uiNative, GlProgramUniform1ui>('glProgramUniform1ui'));
+  if (glProgramUniform1ui == null && glGetProcAddress != null) {
+    glProgramUniform1ui =  tryCall(() => Pointer<NativeFunction<GlProgramUniform1uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1ui'))).asFunction<GlProgramUniform1ui>());
+  }
+  glProgramUniform1uiv =  tryCall(() => lib.lookupFunction<GlProgramUniform1uivNative, GlProgramUniform1uiv>('glProgramUniform1uiv'));
+  if (glProgramUniform1uiv == null && glGetProcAddress != null) {
+    glProgramUniform1uiv =  tryCall(() => Pointer<NativeFunction<GlProgramUniform1uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1uiv'))).asFunction<GlProgramUniform1uiv>());
+  }
+  glProgramUniform2i =  tryCall(() => lib.lookupFunction<GlProgramUniform2iNative, GlProgramUniform2i>('glProgramUniform2i'));
+  if (glProgramUniform2i == null && glGetProcAddress != null) {
+    glProgramUniform2i =  tryCall(() => Pointer<NativeFunction<GlProgramUniform2iNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2i'))).asFunction<GlProgramUniform2i>());
+  }
+  glProgramUniform2iv =  tryCall(() => lib.lookupFunction<GlProgramUniform2ivNative, GlProgramUniform2iv>('glProgramUniform2iv'));
+  if (glProgramUniform2iv == null && glGetProcAddress != null) {
+    glProgramUniform2iv =  tryCall(() => Pointer<NativeFunction<GlProgramUniform2ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2iv'))).asFunction<GlProgramUniform2iv>());
+  }
+  glProgramUniform2f =  tryCall(() => lib.lookupFunction<GlProgramUniform2fNative, GlProgramUniform2f>('glProgramUniform2f'));
+  if (glProgramUniform2f == null && glGetProcAddress != null) {
+    glProgramUniform2f =  tryCall(() => Pointer<NativeFunction<GlProgramUniform2fNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2f'))).asFunction<GlProgramUniform2f>());
+  }
+  glProgramUniform2fv =  tryCall(() => lib.lookupFunction<GlProgramUniform2fvNative, GlProgramUniform2fv>('glProgramUniform2fv'));
+  if (glProgramUniform2fv == null && glGetProcAddress != null) {
+    glProgramUniform2fv =  tryCall(() => Pointer<NativeFunction<GlProgramUniform2fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2fv'))).asFunction<GlProgramUniform2fv>());
+  }
+  glProgramUniform2d =  tryCall(() => lib.lookupFunction<GlProgramUniform2dNative, GlProgramUniform2d>('glProgramUniform2d'));
+  if (glProgramUniform2d == null && glGetProcAddress != null) {
+    glProgramUniform2d =  tryCall(() => Pointer<NativeFunction<GlProgramUniform2dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2d'))).asFunction<GlProgramUniform2d>());
+  }
+  glProgramUniform2dv =  tryCall(() => lib.lookupFunction<GlProgramUniform2dvNative, GlProgramUniform2dv>('glProgramUniform2dv'));
+  if (glProgramUniform2dv == null && glGetProcAddress != null) {
+    glProgramUniform2dv =  tryCall(() => Pointer<NativeFunction<GlProgramUniform2dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2dv'))).asFunction<GlProgramUniform2dv>());
+  }
+  glProgramUniform2ui =  tryCall(() => lib.lookupFunction<GlProgramUniform2uiNative, GlProgramUniform2ui>('glProgramUniform2ui'));
+  if (glProgramUniform2ui == null && glGetProcAddress != null) {
+    glProgramUniform2ui =  tryCall(() => Pointer<NativeFunction<GlProgramUniform2uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2ui'))).asFunction<GlProgramUniform2ui>());
+  }
+  glProgramUniform2uiv =  tryCall(() => lib.lookupFunction<GlProgramUniform2uivNative, GlProgramUniform2uiv>('glProgramUniform2uiv'));
+  if (glProgramUniform2uiv == null && glGetProcAddress != null) {
+    glProgramUniform2uiv =  tryCall(() => Pointer<NativeFunction<GlProgramUniform2uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2uiv'))).asFunction<GlProgramUniform2uiv>());
+  }
+  glProgramUniform3i =  tryCall(() => lib.lookupFunction<GlProgramUniform3iNative, GlProgramUniform3i>('glProgramUniform3i'));
+  if (glProgramUniform3i == null && glGetProcAddress != null) {
+    glProgramUniform3i =  tryCall(() => Pointer<NativeFunction<GlProgramUniform3iNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3i'))).asFunction<GlProgramUniform3i>());
+  }
+  glProgramUniform3iv =  tryCall(() => lib.lookupFunction<GlProgramUniform3ivNative, GlProgramUniform3iv>('glProgramUniform3iv'));
+  if (glProgramUniform3iv == null && glGetProcAddress != null) {
+    glProgramUniform3iv =  tryCall(() => Pointer<NativeFunction<GlProgramUniform3ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3iv'))).asFunction<GlProgramUniform3iv>());
+  }
+  glProgramUniform3f =  tryCall(() => lib.lookupFunction<GlProgramUniform3fNative, GlProgramUniform3f>('glProgramUniform3f'));
+  if (glProgramUniform3f == null && glGetProcAddress != null) {
+    glProgramUniform3f =  tryCall(() => Pointer<NativeFunction<GlProgramUniform3fNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3f'))).asFunction<GlProgramUniform3f>());
+  }
+  glProgramUniform3fv =  tryCall(() => lib.lookupFunction<GlProgramUniform3fvNative, GlProgramUniform3fv>('glProgramUniform3fv'));
+  if (glProgramUniform3fv == null && glGetProcAddress != null) {
+    glProgramUniform3fv =  tryCall(() => Pointer<NativeFunction<GlProgramUniform3fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3fv'))).asFunction<GlProgramUniform3fv>());
+  }
+  glProgramUniform3d =  tryCall(() => lib.lookupFunction<GlProgramUniform3dNative, GlProgramUniform3d>('glProgramUniform3d'));
+  if (glProgramUniform3d == null && glGetProcAddress != null) {
+    glProgramUniform3d =  tryCall(() => Pointer<NativeFunction<GlProgramUniform3dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3d'))).asFunction<GlProgramUniform3d>());
+  }
+  glProgramUniform3dv =  tryCall(() => lib.lookupFunction<GlProgramUniform3dvNative, GlProgramUniform3dv>('glProgramUniform3dv'));
+  if (glProgramUniform3dv == null && glGetProcAddress != null) {
+    glProgramUniform3dv =  tryCall(() => Pointer<NativeFunction<GlProgramUniform3dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3dv'))).asFunction<GlProgramUniform3dv>());
+  }
+  glProgramUniform3ui =  tryCall(() => lib.lookupFunction<GlProgramUniform3uiNative, GlProgramUniform3ui>('glProgramUniform3ui'));
+  if (glProgramUniform3ui == null && glGetProcAddress != null) {
+    glProgramUniform3ui =  tryCall(() => Pointer<NativeFunction<GlProgramUniform3uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3ui'))).asFunction<GlProgramUniform3ui>());
+  }
+  glProgramUniform3uiv =  tryCall(() => lib.lookupFunction<GlProgramUniform3uivNative, GlProgramUniform3uiv>('glProgramUniform3uiv'));
+  if (glProgramUniform3uiv == null && glGetProcAddress != null) {
+    glProgramUniform3uiv =  tryCall(() => Pointer<NativeFunction<GlProgramUniform3uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3uiv'))).asFunction<GlProgramUniform3uiv>());
+  }
+  glProgramUniform4i =  tryCall(() => lib.lookupFunction<GlProgramUniform4iNative, GlProgramUniform4i>('glProgramUniform4i'));
+  if (glProgramUniform4i == null && glGetProcAddress != null) {
+    glProgramUniform4i =  tryCall(() => Pointer<NativeFunction<GlProgramUniform4iNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4i'))).asFunction<GlProgramUniform4i>());
+  }
+  glProgramUniform4iv =  tryCall(() => lib.lookupFunction<GlProgramUniform4ivNative, GlProgramUniform4iv>('glProgramUniform4iv'));
+  if (glProgramUniform4iv == null && glGetProcAddress != null) {
+    glProgramUniform4iv =  tryCall(() => Pointer<NativeFunction<GlProgramUniform4ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4iv'))).asFunction<GlProgramUniform4iv>());
+  }
+  glProgramUniform4f =  tryCall(() => lib.lookupFunction<GlProgramUniform4fNative, GlProgramUniform4f>('glProgramUniform4f'));
+  if (glProgramUniform4f == null && glGetProcAddress != null) {
+    glProgramUniform4f =  tryCall(() => Pointer<NativeFunction<GlProgramUniform4fNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4f'))).asFunction<GlProgramUniform4f>());
+  }
+  glProgramUniform4fv =  tryCall(() => lib.lookupFunction<GlProgramUniform4fvNative, GlProgramUniform4fv>('glProgramUniform4fv'));
+  if (glProgramUniform4fv == null && glGetProcAddress != null) {
+    glProgramUniform4fv =  tryCall(() => Pointer<NativeFunction<GlProgramUniform4fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4fv'))).asFunction<GlProgramUniform4fv>());
+  }
+  glProgramUniform4d =  tryCall(() => lib.lookupFunction<GlProgramUniform4dNative, GlProgramUniform4d>('glProgramUniform4d'));
+  if (glProgramUniform4d == null && glGetProcAddress != null) {
+    glProgramUniform4d =  tryCall(() => Pointer<NativeFunction<GlProgramUniform4dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4d'))).asFunction<GlProgramUniform4d>());
+  }
+  glProgramUniform4dv =  tryCall(() => lib.lookupFunction<GlProgramUniform4dvNative, GlProgramUniform4dv>('glProgramUniform4dv'));
+  if (glProgramUniform4dv == null && glGetProcAddress != null) {
+    glProgramUniform4dv =  tryCall(() => Pointer<NativeFunction<GlProgramUniform4dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4dv'))).asFunction<GlProgramUniform4dv>());
+  }
+  glProgramUniform4ui =  tryCall(() => lib.lookupFunction<GlProgramUniform4uiNative, GlProgramUniform4ui>('glProgramUniform4ui'));
+  if (glProgramUniform4ui == null && glGetProcAddress != null) {
+    glProgramUniform4ui =  tryCall(() => Pointer<NativeFunction<GlProgramUniform4uiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4ui'))).asFunction<GlProgramUniform4ui>());
+  }
+  glProgramUniform4uiv =  tryCall(() => lib.lookupFunction<GlProgramUniform4uivNative, GlProgramUniform4uiv>('glProgramUniform4uiv'));
+  if (glProgramUniform4uiv == null && glGetProcAddress != null) {
+    glProgramUniform4uiv =  tryCall(() => Pointer<NativeFunction<GlProgramUniform4uivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4uiv'))).asFunction<GlProgramUniform4uiv>());
+  }
+  glProgramUniformMatrix2fv =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix2fvNative, GlProgramUniformMatrix2fv>('glProgramUniformMatrix2fv'));
+  if (glProgramUniformMatrix2fv == null && glGetProcAddress != null) {
+    glProgramUniformMatrix2fv =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix2fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix2fv'))).asFunction<GlProgramUniformMatrix2fv>());
+  }
+  glProgramUniformMatrix3fv =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix3fvNative, GlProgramUniformMatrix3fv>('glProgramUniformMatrix3fv'));
+  if (glProgramUniformMatrix3fv == null && glGetProcAddress != null) {
+    glProgramUniformMatrix3fv =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix3fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix3fv'))).asFunction<GlProgramUniformMatrix3fv>());
+  }
+  glProgramUniformMatrix4fv =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix4fvNative, GlProgramUniformMatrix4fv>('glProgramUniformMatrix4fv'));
+  if (glProgramUniformMatrix4fv == null && glGetProcAddress != null) {
+    glProgramUniformMatrix4fv =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix4fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix4fv'))).asFunction<GlProgramUniformMatrix4fv>());
+  }
+  glProgramUniformMatrix2dv =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix2dvNative, GlProgramUniformMatrix2dv>('glProgramUniformMatrix2dv'));
+  if (glProgramUniformMatrix2dv == null && glGetProcAddress != null) {
+    glProgramUniformMatrix2dv =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix2dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix2dv'))).asFunction<GlProgramUniformMatrix2dv>());
+  }
+  glProgramUniformMatrix3dv =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix3dvNative, GlProgramUniformMatrix3dv>('glProgramUniformMatrix3dv'));
+  if (glProgramUniformMatrix3dv == null && glGetProcAddress != null) {
+    glProgramUniformMatrix3dv =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix3dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix3dv'))).asFunction<GlProgramUniformMatrix3dv>());
+  }
+  glProgramUniformMatrix4dv =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix4dvNative, GlProgramUniformMatrix4dv>('glProgramUniformMatrix4dv'));
+  if (glProgramUniformMatrix4dv == null && glGetProcAddress != null) {
+    glProgramUniformMatrix4dv =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix4dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix4dv'))).asFunction<GlProgramUniformMatrix4dv>());
+  }
+  glProgramUniformMatrix2x3fv =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix2x3fvNative, GlProgramUniformMatrix2x3fv>('glProgramUniformMatrix2x3fv'));
+  if (glProgramUniformMatrix2x3fv == null && glGetProcAddress != null) {
+    glProgramUniformMatrix2x3fv =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix2x3fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix2x3fv'))).asFunction<GlProgramUniformMatrix2x3fv>());
+  }
+  glProgramUniformMatrix3x2fv =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix3x2fvNative, GlProgramUniformMatrix3x2fv>('glProgramUniformMatrix3x2fv'));
+  if (glProgramUniformMatrix3x2fv == null && glGetProcAddress != null) {
+    glProgramUniformMatrix3x2fv =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix3x2fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix3x2fv'))).asFunction<GlProgramUniformMatrix3x2fv>());
+  }
+  glProgramUniformMatrix2x4fv =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix2x4fvNative, GlProgramUniformMatrix2x4fv>('glProgramUniformMatrix2x4fv'));
+  if (glProgramUniformMatrix2x4fv == null && glGetProcAddress != null) {
+    glProgramUniformMatrix2x4fv =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix2x4fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix2x4fv'))).asFunction<GlProgramUniformMatrix2x4fv>());
+  }
+  glProgramUniformMatrix4x2fv =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix4x2fvNative, GlProgramUniformMatrix4x2fv>('glProgramUniformMatrix4x2fv'));
+  if (glProgramUniformMatrix4x2fv == null && glGetProcAddress != null) {
+    glProgramUniformMatrix4x2fv =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix4x2fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix4x2fv'))).asFunction<GlProgramUniformMatrix4x2fv>());
+  }
+  glProgramUniformMatrix3x4fv =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix3x4fvNative, GlProgramUniformMatrix3x4fv>('glProgramUniformMatrix3x4fv'));
+  if (glProgramUniformMatrix3x4fv == null && glGetProcAddress != null) {
+    glProgramUniformMatrix3x4fv =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix3x4fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix3x4fv'))).asFunction<GlProgramUniformMatrix3x4fv>());
+  }
+  glProgramUniformMatrix4x3fv =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix4x3fvNative, GlProgramUniformMatrix4x3fv>('glProgramUniformMatrix4x3fv'));
+  if (glProgramUniformMatrix4x3fv == null && glGetProcAddress != null) {
+    glProgramUniformMatrix4x3fv =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix4x3fvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix4x3fv'))).asFunction<GlProgramUniformMatrix4x3fv>());
+  }
+  glProgramUniformMatrix2x3dv =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix2x3dvNative, GlProgramUniformMatrix2x3dv>('glProgramUniformMatrix2x3dv'));
+  if (glProgramUniformMatrix2x3dv == null && glGetProcAddress != null) {
+    glProgramUniformMatrix2x3dv =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix2x3dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix2x3dv'))).asFunction<GlProgramUniformMatrix2x3dv>());
+  }
+  glProgramUniformMatrix3x2dv =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix3x2dvNative, GlProgramUniformMatrix3x2dv>('glProgramUniformMatrix3x2dv'));
+  if (glProgramUniformMatrix3x2dv == null && glGetProcAddress != null) {
+    glProgramUniformMatrix3x2dv =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix3x2dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix3x2dv'))).asFunction<GlProgramUniformMatrix3x2dv>());
+  }
+  glProgramUniformMatrix2x4dv =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix2x4dvNative, GlProgramUniformMatrix2x4dv>('glProgramUniformMatrix2x4dv'));
+  if (glProgramUniformMatrix2x4dv == null && glGetProcAddress != null) {
+    glProgramUniformMatrix2x4dv =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix2x4dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix2x4dv'))).asFunction<GlProgramUniformMatrix2x4dv>());
+  }
+  glProgramUniformMatrix4x2dv =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix4x2dvNative, GlProgramUniformMatrix4x2dv>('glProgramUniformMatrix4x2dv'));
+  if (glProgramUniformMatrix4x2dv == null && glGetProcAddress != null) {
+    glProgramUniformMatrix4x2dv =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix4x2dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix4x2dv'))).asFunction<GlProgramUniformMatrix4x2dv>());
+  }
+  glProgramUniformMatrix3x4dv =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix3x4dvNative, GlProgramUniformMatrix3x4dv>('glProgramUniformMatrix3x4dv'));
+  if (glProgramUniformMatrix3x4dv == null && glGetProcAddress != null) {
+    glProgramUniformMatrix3x4dv =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix3x4dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix3x4dv'))).asFunction<GlProgramUniformMatrix3x4dv>());
+  }
+  glProgramUniformMatrix4x3dv =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix4x3dvNative, GlProgramUniformMatrix4x3dv>('glProgramUniformMatrix4x3dv'));
+  if (glProgramUniformMatrix4x3dv == null && glGetProcAddress != null) {
+    glProgramUniformMatrix4x3dv =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix4x3dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix4x3dv'))).asFunction<GlProgramUniformMatrix4x3dv>());
+  }
+  glValidateProgramPipeline =  tryCall(() => lib.lookupFunction<GlValidateProgramPipelineNative, GlValidateProgramPipeline>('glValidateProgramPipeline'));
+  if (glValidateProgramPipeline == null && glGetProcAddress != null) {
+    glValidateProgramPipeline =  tryCall(() => Pointer<NativeFunction<GlValidateProgramPipelineNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glValidateProgramPipeline'))).asFunction<GlValidateProgramPipeline>());
+  }
+  glGetProgramPipelineInfoLog =  tryCall(() => lib.lookupFunction<GlGetProgramPipelineInfoLogNative, GlGetProgramPipelineInfoLog>('glGetProgramPipelineInfoLog'));
+  if (glGetProgramPipelineInfoLog == null && glGetProcAddress != null) {
+    glGetProgramPipelineInfoLog =  tryCall(() => Pointer<NativeFunction<GlGetProgramPipelineInfoLogNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramPipelineInfoLog'))).asFunction<GlGetProgramPipelineInfoLog>());
+  }
+  glVertexAttribL1d =  tryCall(() => lib.lookupFunction<GlVertexAttribL1dNative, GlVertexAttribL1d>('glVertexAttribL1d'));
+  if (glVertexAttribL1d == null && glGetProcAddress != null) {
+    glVertexAttribL1d =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL1dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL1d'))).asFunction<GlVertexAttribL1d>());
+  }
+  glVertexAttribL2d =  tryCall(() => lib.lookupFunction<GlVertexAttribL2dNative, GlVertexAttribL2d>('glVertexAttribL2d'));
+  if (glVertexAttribL2d == null && glGetProcAddress != null) {
+    glVertexAttribL2d =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL2dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL2d'))).asFunction<GlVertexAttribL2d>());
+  }
+  glVertexAttribL3d =  tryCall(() => lib.lookupFunction<GlVertexAttribL3dNative, GlVertexAttribL3d>('glVertexAttribL3d'));
+  if (glVertexAttribL3d == null && glGetProcAddress != null) {
+    glVertexAttribL3d =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL3dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL3d'))).asFunction<GlVertexAttribL3d>());
+  }
+  glVertexAttribL4d =  tryCall(() => lib.lookupFunction<GlVertexAttribL4dNative, GlVertexAttribL4d>('glVertexAttribL4d'));
+  if (glVertexAttribL4d == null && glGetProcAddress != null) {
+    glVertexAttribL4d =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL4dNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL4d'))).asFunction<GlVertexAttribL4d>());
+  }
+  glVertexAttribL1dv =  tryCall(() => lib.lookupFunction<GlVertexAttribL1dvNative, GlVertexAttribL1dv>('glVertexAttribL1dv'));
+  if (glVertexAttribL1dv == null && glGetProcAddress != null) {
+    glVertexAttribL1dv =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL1dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL1dv'))).asFunction<GlVertexAttribL1dv>());
+  }
+  glVertexAttribL2dv =  tryCall(() => lib.lookupFunction<GlVertexAttribL2dvNative, GlVertexAttribL2dv>('glVertexAttribL2dv'));
+  if (glVertexAttribL2dv == null && glGetProcAddress != null) {
+    glVertexAttribL2dv =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL2dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL2dv'))).asFunction<GlVertexAttribL2dv>());
+  }
+  glVertexAttribL3dv =  tryCall(() => lib.lookupFunction<GlVertexAttribL3dvNative, GlVertexAttribL3dv>('glVertexAttribL3dv'));
+  if (glVertexAttribL3dv == null && glGetProcAddress != null) {
+    glVertexAttribL3dv =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL3dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL3dv'))).asFunction<GlVertexAttribL3dv>());
+  }
+  glVertexAttribL4dv =  tryCall(() => lib.lookupFunction<GlVertexAttribL4dvNative, GlVertexAttribL4dv>('glVertexAttribL4dv'));
+  if (glVertexAttribL4dv == null && glGetProcAddress != null) {
+    glVertexAttribL4dv =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL4dvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL4dv'))).asFunction<GlVertexAttribL4dv>());
+  }
+  glVertexAttribLPointer =  tryCall(() => lib.lookupFunction<GlVertexAttribLPointerNative, GlVertexAttribLPointer>('glVertexAttribLPointer'));
+  if (glVertexAttribLPointer == null && glGetProcAddress != null) {
+    glVertexAttribLPointer =  tryCall(() => Pointer<NativeFunction<GlVertexAttribLPointerNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribLPointer'))).asFunction<GlVertexAttribLPointer>());
+  }
+  glGetVertexAttribLdv =  tryCall(() => lib.lookupFunction<GlGetVertexAttribLdvNative, GlGetVertexAttribLdv>('glGetVertexAttribLdv'));
+  if (glGetVertexAttribLdv == null && glGetProcAddress != null) {
+    glGetVertexAttribLdv =  tryCall(() => Pointer<NativeFunction<GlGetVertexAttribLdvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexAttribLdv'))).asFunction<GlGetVertexAttribLdv>());
+  }
+  glViewportArrayv =  tryCall(() => lib.lookupFunction<GlViewportArrayvNative, GlViewportArrayv>('glViewportArrayv'));
+  if (glViewportArrayv == null && glGetProcAddress != null) {
+    glViewportArrayv =  tryCall(() => Pointer<NativeFunction<GlViewportArrayvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glViewportArrayv'))).asFunction<GlViewportArrayv>());
+  }
+  glViewportIndexedf =  tryCall(() => lib.lookupFunction<GlViewportIndexedfNative, GlViewportIndexedf>('glViewportIndexedf'));
+  if (glViewportIndexedf == null && glGetProcAddress != null) {
+    glViewportIndexedf =  tryCall(() => Pointer<NativeFunction<GlViewportIndexedfNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glViewportIndexedf'))).asFunction<GlViewportIndexedf>());
+  }
+  glViewportIndexedfv =  tryCall(() => lib.lookupFunction<GlViewportIndexedfvNative, GlViewportIndexedfv>('glViewportIndexedfv'));
+  if (glViewportIndexedfv == null && glGetProcAddress != null) {
+    glViewportIndexedfv =  tryCall(() => Pointer<NativeFunction<GlViewportIndexedfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glViewportIndexedfv'))).asFunction<GlViewportIndexedfv>());
+  }
+  glScissorArrayv =  tryCall(() => lib.lookupFunction<GlScissorArrayvNative, GlScissorArrayv>('glScissorArrayv'));
+  if (glScissorArrayv == null && glGetProcAddress != null) {
+    glScissorArrayv =  tryCall(() => Pointer<NativeFunction<GlScissorArrayvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glScissorArrayv'))).asFunction<GlScissorArrayv>());
+  }
+  glScissorIndexed =  tryCall(() => lib.lookupFunction<GlScissorIndexedNative, GlScissorIndexed>('glScissorIndexed'));
+  if (glScissorIndexed == null && glGetProcAddress != null) {
+    glScissorIndexed =  tryCall(() => Pointer<NativeFunction<GlScissorIndexedNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glScissorIndexed'))).asFunction<GlScissorIndexed>());
+  }
+  glScissorIndexedv =  tryCall(() => lib.lookupFunction<GlScissorIndexedvNative, GlScissorIndexedv>('glScissorIndexedv'));
+  if (glScissorIndexedv == null && glGetProcAddress != null) {
+    glScissorIndexedv =  tryCall(() => Pointer<NativeFunction<GlScissorIndexedvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glScissorIndexedv'))).asFunction<GlScissorIndexedv>());
+  }
+  glDepthRangeArrayv =  tryCall(() => lib.lookupFunction<GlDepthRangeArrayvNative, GlDepthRangeArrayv>('glDepthRangeArrayv'));
+  if (glDepthRangeArrayv == null && glGetProcAddress != null) {
+    glDepthRangeArrayv =  tryCall(() => Pointer<NativeFunction<GlDepthRangeArrayvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDepthRangeArrayv'))).asFunction<GlDepthRangeArrayv>());
+  }
+  glDepthRangeIndexed =  tryCall(() => lib.lookupFunction<GlDepthRangeIndexedNative, GlDepthRangeIndexed>('glDepthRangeIndexed'));
+  if (glDepthRangeIndexed == null && glGetProcAddress != null) {
+    glDepthRangeIndexed =  tryCall(() => Pointer<NativeFunction<GlDepthRangeIndexedNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDepthRangeIndexed'))).asFunction<GlDepthRangeIndexed>());
+  }
+  glGetFloati_v =  tryCall(() => lib.lookupFunction<GlGetFloati_vNative, GlGetFloati_v>('glGetFloati_v'));
+  if (glGetFloati_v == null && glGetProcAddress != null) {
+    glGetFloati_v =  tryCall(() => Pointer<NativeFunction<GlGetFloati_vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetFloati_v'))).asFunction<GlGetFloati_v>());
+  }
+  glGetDoublei_v =  tryCall(() => lib.lookupFunction<GlGetDoublei_vNative, GlGetDoublei_v>('glGetDoublei_v'));
+  if (glGetDoublei_v == null && glGetProcAddress != null) {
+    glGetDoublei_v =  tryCall(() => Pointer<NativeFunction<GlGetDoublei_vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetDoublei_v'))).asFunction<GlGetDoublei_v>());
+  }
+  glDrawArraysInstancedBaseInstance =  tryCall(() => lib.lookupFunction<GlDrawArraysInstancedBaseInstanceNative, GlDrawArraysInstancedBaseInstance>('glDrawArraysInstancedBaseInstance'));
+  if (glDrawArraysInstancedBaseInstance == null && glGetProcAddress != null) {
+    glDrawArraysInstancedBaseInstance =  tryCall(() => Pointer<NativeFunction<GlDrawArraysInstancedBaseInstanceNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawArraysInstancedBaseInstance'))).asFunction<GlDrawArraysInstancedBaseInstance>());
+  }
+  glDrawElementsInstancedBaseInstance =  tryCall(() => lib.lookupFunction<GlDrawElementsInstancedBaseInstanceNative, GlDrawElementsInstancedBaseInstance>('glDrawElementsInstancedBaseInstance'));
+  if (glDrawElementsInstancedBaseInstance == null && glGetProcAddress != null) {
+    glDrawElementsInstancedBaseInstance =  tryCall(() => Pointer<NativeFunction<GlDrawElementsInstancedBaseInstanceNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawElementsInstancedBaseInstance'))).asFunction<GlDrawElementsInstancedBaseInstance>());
+  }
+  glDrawElementsInstancedBaseVertexBaseInstance =  tryCall(() => lib.lookupFunction<GlDrawElementsInstancedBaseVertexBaseInstanceNative, GlDrawElementsInstancedBaseVertexBaseInstance>('glDrawElementsInstancedBaseVertexBaseInstance'));
+  if (glDrawElementsInstancedBaseVertexBaseInstance == null && glGetProcAddress != null) {
+    glDrawElementsInstancedBaseVertexBaseInstance =  tryCall(() => Pointer<NativeFunction<GlDrawElementsInstancedBaseVertexBaseInstanceNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawElementsInstancedBaseVertexBaseInstance'))).asFunction<GlDrawElementsInstancedBaseVertexBaseInstance>());
+  }
+  glGetInternalformativ =  tryCall(() => lib.lookupFunction<GlGetInternalformativNative, GlGetInternalformativ>('glGetInternalformativ'));
+  if (glGetInternalformativ == null && glGetProcAddress != null) {
+    glGetInternalformativ =  tryCall(() => Pointer<NativeFunction<GlGetInternalformativNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetInternalformativ'))).asFunction<GlGetInternalformativ>());
+  }
+  glGetActiveAtomicCounterBufferiv =  tryCall(() => lib.lookupFunction<GlGetActiveAtomicCounterBufferivNative, GlGetActiveAtomicCounterBufferiv>('glGetActiveAtomicCounterBufferiv'));
+  if (glGetActiveAtomicCounterBufferiv == null && glGetProcAddress != null) {
+    glGetActiveAtomicCounterBufferiv =  tryCall(() => Pointer<NativeFunction<GlGetActiveAtomicCounterBufferivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetActiveAtomicCounterBufferiv'))).asFunction<GlGetActiveAtomicCounterBufferiv>());
+  }
+  glBindImageTexture =  tryCall(() => lib.lookupFunction<GlBindImageTextureNative, GlBindImageTexture>('glBindImageTexture'));
+  if (glBindImageTexture == null && glGetProcAddress != null) {
+    glBindImageTexture =  tryCall(() => Pointer<NativeFunction<GlBindImageTextureNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindImageTexture'))).asFunction<GlBindImageTexture>());
+  }
+  glMemoryBarrier =  tryCall(() => lib.lookupFunction<GlMemoryBarrierNative, GlMemoryBarrier>('glMemoryBarrier'));
+  if (glMemoryBarrier == null && glGetProcAddress != null) {
+    glMemoryBarrier =  tryCall(() => Pointer<NativeFunction<GlMemoryBarrierNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMemoryBarrier'))).asFunction<GlMemoryBarrier>());
+  }
+  glTexStorage1D =  tryCall(() => lib.lookupFunction<GlTexStorage1DNative, GlTexStorage1D>('glTexStorage1D'));
+  if (glTexStorage1D == null && glGetProcAddress != null) {
+    glTexStorage1D =  tryCall(() => Pointer<NativeFunction<GlTexStorage1DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexStorage1D'))).asFunction<GlTexStorage1D>());
+  }
+  glTexStorage2D =  tryCall(() => lib.lookupFunction<GlTexStorage2DNative, GlTexStorage2D>('glTexStorage2D'));
+  if (glTexStorage2D == null && glGetProcAddress != null) {
+    glTexStorage2D =  tryCall(() => Pointer<NativeFunction<GlTexStorage2DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexStorage2D'))).asFunction<GlTexStorage2D>());
+  }
+  glTexStorage3D =  tryCall(() => lib.lookupFunction<GlTexStorage3DNative, GlTexStorage3D>('glTexStorage3D'));
+  if (glTexStorage3D == null && glGetProcAddress != null) {
+    glTexStorage3D =  tryCall(() => Pointer<NativeFunction<GlTexStorage3DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexStorage3D'))).asFunction<GlTexStorage3D>());
+  }
+  glDrawTransformFeedbackInstanced =  tryCall(() => lib.lookupFunction<GlDrawTransformFeedbackInstancedNative, GlDrawTransformFeedbackInstanced>('glDrawTransformFeedbackInstanced'));
+  if (glDrawTransformFeedbackInstanced == null && glGetProcAddress != null) {
+    glDrawTransformFeedbackInstanced =  tryCall(() => Pointer<NativeFunction<GlDrawTransformFeedbackInstancedNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawTransformFeedbackInstanced'))).asFunction<GlDrawTransformFeedbackInstanced>());
+  }
+  glDrawTransformFeedbackStreamInstanced =  tryCall(() => lib.lookupFunction<GlDrawTransformFeedbackStreamInstancedNative, GlDrawTransformFeedbackStreamInstanced>('glDrawTransformFeedbackStreamInstanced'));
+  if (glDrawTransformFeedbackStreamInstanced == null && glGetProcAddress != null) {
+    glDrawTransformFeedbackStreamInstanced =  tryCall(() => Pointer<NativeFunction<GlDrawTransformFeedbackStreamInstancedNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawTransformFeedbackStreamInstanced'))).asFunction<GlDrawTransformFeedbackStreamInstanced>());
+  }
+  glClearBufferData =  tryCall(() => lib.lookupFunction<GlClearBufferDataNative, GlClearBufferData>('glClearBufferData'));
+  if (glClearBufferData == null && glGetProcAddress != null) {
+    glClearBufferData =  tryCall(() => Pointer<NativeFunction<GlClearBufferDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearBufferData'))).asFunction<GlClearBufferData>());
+  }
+  glClearBufferSubData =  tryCall(() => lib.lookupFunction<GlClearBufferSubDataNative, GlClearBufferSubData>('glClearBufferSubData'));
+  if (glClearBufferSubData == null && glGetProcAddress != null) {
+    glClearBufferSubData =  tryCall(() => Pointer<NativeFunction<GlClearBufferSubDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearBufferSubData'))).asFunction<GlClearBufferSubData>());
+  }
+  glDispatchCompute =  tryCall(() => lib.lookupFunction<GlDispatchComputeNative, GlDispatchCompute>('glDispatchCompute'));
+  if (glDispatchCompute == null && glGetProcAddress != null) {
+    glDispatchCompute =  tryCall(() => Pointer<NativeFunction<GlDispatchComputeNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDispatchCompute'))).asFunction<GlDispatchCompute>());
+  }
+  glDispatchComputeIndirect =  tryCall(() => lib.lookupFunction<GlDispatchComputeIndirectNative, GlDispatchComputeIndirect>('glDispatchComputeIndirect'));
+  if (glDispatchComputeIndirect == null && glGetProcAddress != null) {
+    glDispatchComputeIndirect =  tryCall(() => Pointer<NativeFunction<GlDispatchComputeIndirectNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDispatchComputeIndirect'))).asFunction<GlDispatchComputeIndirect>());
+  }
+  glCopyImageSubData =  tryCall(() => lib.lookupFunction<GlCopyImageSubDataNative, GlCopyImageSubData>('glCopyImageSubData'));
+  if (glCopyImageSubData == null && glGetProcAddress != null) {
+    glCopyImageSubData =  tryCall(() => Pointer<NativeFunction<GlCopyImageSubDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyImageSubData'))).asFunction<GlCopyImageSubData>());
+  }
+  glFramebufferParameteri =  tryCall(() => lib.lookupFunction<GlFramebufferParameteriNative, GlFramebufferParameteri>('glFramebufferParameteri'));
+  if (glFramebufferParameteri == null && glGetProcAddress != null) {
+    glFramebufferParameteri =  tryCall(() => Pointer<NativeFunction<GlFramebufferParameteriNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferParameteri'))).asFunction<GlFramebufferParameteri>());
+  }
+  glGetFramebufferParameteriv =  tryCall(() => lib.lookupFunction<GlGetFramebufferParameterivNative, GlGetFramebufferParameteriv>('glGetFramebufferParameteriv'));
+  if (glGetFramebufferParameteriv == null && glGetProcAddress != null) {
+    glGetFramebufferParameteriv =  tryCall(() => Pointer<NativeFunction<GlGetFramebufferParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetFramebufferParameteriv'))).asFunction<GlGetFramebufferParameteriv>());
+  }
+  glGetInternalformati64v =  tryCall(() => lib.lookupFunction<GlGetInternalformati64vNative, GlGetInternalformati64v>('glGetInternalformati64v'));
+  if (glGetInternalformati64v == null && glGetProcAddress != null) {
+    glGetInternalformati64v =  tryCall(() => Pointer<NativeFunction<GlGetInternalformati64vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetInternalformati64v'))).asFunction<GlGetInternalformati64v>());
+  }
+  glInvalidateTexSubImage =  tryCall(() => lib.lookupFunction<GlInvalidateTexSubImageNative, GlInvalidateTexSubImage>('glInvalidateTexSubImage'));
+  if (glInvalidateTexSubImage == null && glGetProcAddress != null) {
+    glInvalidateTexSubImage =  tryCall(() => Pointer<NativeFunction<GlInvalidateTexSubImageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glInvalidateTexSubImage'))).asFunction<GlInvalidateTexSubImage>());
+  }
+  glInvalidateTexImage =  tryCall(() => lib.lookupFunction<GlInvalidateTexImageNative, GlInvalidateTexImage>('glInvalidateTexImage'));
+  if (glInvalidateTexImage == null && glGetProcAddress != null) {
+    glInvalidateTexImage =  tryCall(() => Pointer<NativeFunction<GlInvalidateTexImageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glInvalidateTexImage'))).asFunction<GlInvalidateTexImage>());
+  }
+  glInvalidateBufferSubData =  tryCall(() => lib.lookupFunction<GlInvalidateBufferSubDataNative, GlInvalidateBufferSubData>('glInvalidateBufferSubData'));
+  if (glInvalidateBufferSubData == null && glGetProcAddress != null) {
+    glInvalidateBufferSubData =  tryCall(() => Pointer<NativeFunction<GlInvalidateBufferSubDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glInvalidateBufferSubData'))).asFunction<GlInvalidateBufferSubData>());
+  }
+  glInvalidateBufferData =  tryCall(() => lib.lookupFunction<GlInvalidateBufferDataNative, GlInvalidateBufferData>('glInvalidateBufferData'));
+  if (glInvalidateBufferData == null && glGetProcAddress != null) {
+    glInvalidateBufferData =  tryCall(() => Pointer<NativeFunction<GlInvalidateBufferDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glInvalidateBufferData'))).asFunction<GlInvalidateBufferData>());
+  }
+  glInvalidateFramebuffer =  tryCall(() => lib.lookupFunction<GlInvalidateFramebufferNative, GlInvalidateFramebuffer>('glInvalidateFramebuffer'));
+  if (glInvalidateFramebuffer == null && glGetProcAddress != null) {
+    glInvalidateFramebuffer =  tryCall(() => Pointer<NativeFunction<GlInvalidateFramebufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glInvalidateFramebuffer'))).asFunction<GlInvalidateFramebuffer>());
+  }
+  glInvalidateSubFramebuffer =  tryCall(() => lib.lookupFunction<GlInvalidateSubFramebufferNative, GlInvalidateSubFramebuffer>('glInvalidateSubFramebuffer'));
+  if (glInvalidateSubFramebuffer == null && glGetProcAddress != null) {
+    glInvalidateSubFramebuffer =  tryCall(() => Pointer<NativeFunction<GlInvalidateSubFramebufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glInvalidateSubFramebuffer'))).asFunction<GlInvalidateSubFramebuffer>());
+  }
+  glMultiDrawArraysIndirect =  tryCall(() => lib.lookupFunction<GlMultiDrawArraysIndirectNative, GlMultiDrawArraysIndirect>('glMultiDrawArraysIndirect'));
+  if (glMultiDrawArraysIndirect == null && glGetProcAddress != null) {
+    glMultiDrawArraysIndirect =  tryCall(() => Pointer<NativeFunction<GlMultiDrawArraysIndirectNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawArraysIndirect'))).asFunction<GlMultiDrawArraysIndirect>());
+  }
+  glMultiDrawElementsIndirect =  tryCall(() => lib.lookupFunction<GlMultiDrawElementsIndirectNative, GlMultiDrawElementsIndirect>('glMultiDrawElementsIndirect'));
+  if (glMultiDrawElementsIndirect == null && glGetProcAddress != null) {
+    glMultiDrawElementsIndirect =  tryCall(() => Pointer<NativeFunction<GlMultiDrawElementsIndirectNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawElementsIndirect'))).asFunction<GlMultiDrawElementsIndirect>());
+  }
+  glGetProgramInterfaceiv =  tryCall(() => lib.lookupFunction<GlGetProgramInterfaceivNative, GlGetProgramInterfaceiv>('glGetProgramInterfaceiv'));
+  if (glGetProgramInterfaceiv == null && glGetProcAddress != null) {
+    glGetProgramInterfaceiv =  tryCall(() => Pointer<NativeFunction<GlGetProgramInterfaceivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramInterfaceiv'))).asFunction<GlGetProgramInterfaceiv>());
+  }
+  glGetProgramResourceIndex =  tryCall(() => lib.lookupFunction<GlGetProgramResourceIndexNative, GlGetProgramResourceIndex>('glGetProgramResourceIndex'));
+  if (glGetProgramResourceIndex == null && glGetProcAddress != null) {
+    glGetProgramResourceIndex =  tryCall(() => Pointer<NativeFunction<GlGetProgramResourceIndexNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramResourceIndex'))).asFunction<GlGetProgramResourceIndex>());
+  }
+  glGetProgramResourceName =  tryCall(() => lib.lookupFunction<GlGetProgramResourceNameNative, GlGetProgramResourceName>('glGetProgramResourceName'));
+  if (glGetProgramResourceName == null && glGetProcAddress != null) {
+    glGetProgramResourceName =  tryCall(() => Pointer<NativeFunction<GlGetProgramResourceNameNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramResourceName'))).asFunction<GlGetProgramResourceName>());
+  }
+  glGetProgramResourceiv =  tryCall(() => lib.lookupFunction<GlGetProgramResourceivNative, GlGetProgramResourceiv>('glGetProgramResourceiv'));
+  if (glGetProgramResourceiv == null && glGetProcAddress != null) {
+    glGetProgramResourceiv =  tryCall(() => Pointer<NativeFunction<GlGetProgramResourceivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramResourceiv'))).asFunction<GlGetProgramResourceiv>());
+  }
+  glGetProgramResourceLocation =  tryCall(() => lib.lookupFunction<GlGetProgramResourceLocationNative, GlGetProgramResourceLocation>('glGetProgramResourceLocation'));
+  if (glGetProgramResourceLocation == null && glGetProcAddress != null) {
+    glGetProgramResourceLocation =  tryCall(() => Pointer<NativeFunction<GlGetProgramResourceLocationNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramResourceLocation'))).asFunction<GlGetProgramResourceLocation>());
+  }
+  glGetProgramResourceLocationIndex =  tryCall(() => lib.lookupFunction<GlGetProgramResourceLocationIndexNative, GlGetProgramResourceLocationIndex>('glGetProgramResourceLocationIndex'));
+  if (glGetProgramResourceLocationIndex == null && glGetProcAddress != null) {
+    glGetProgramResourceLocationIndex =  tryCall(() => Pointer<NativeFunction<GlGetProgramResourceLocationIndexNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramResourceLocationIndex'))).asFunction<GlGetProgramResourceLocationIndex>());
+  }
+  glShaderStorageBlockBinding =  tryCall(() => lib.lookupFunction<GlShaderStorageBlockBindingNative, GlShaderStorageBlockBinding>('glShaderStorageBlockBinding'));
+  if (glShaderStorageBlockBinding == null && glGetProcAddress != null) {
+    glShaderStorageBlockBinding =  tryCall(() => Pointer<NativeFunction<GlShaderStorageBlockBindingNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glShaderStorageBlockBinding'))).asFunction<GlShaderStorageBlockBinding>());
+  }
+  glTexBufferRange =  tryCall(() => lib.lookupFunction<GlTexBufferRangeNative, GlTexBufferRange>('glTexBufferRange'));
+  if (glTexBufferRange == null && glGetProcAddress != null) {
+    glTexBufferRange =  tryCall(() => Pointer<NativeFunction<GlTexBufferRangeNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexBufferRange'))).asFunction<GlTexBufferRange>());
+  }
+  glTexStorage2DMultisample =  tryCall(() => lib.lookupFunction<GlTexStorage2DMultisampleNative, GlTexStorage2DMultisample>('glTexStorage2DMultisample'));
+  if (glTexStorage2DMultisample == null && glGetProcAddress != null) {
+    glTexStorage2DMultisample =  tryCall(() => Pointer<NativeFunction<GlTexStorage2DMultisampleNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexStorage2DMultisample'))).asFunction<GlTexStorage2DMultisample>());
+  }
+  glTexStorage3DMultisample =  tryCall(() => lib.lookupFunction<GlTexStorage3DMultisampleNative, GlTexStorage3DMultisample>('glTexStorage3DMultisample'));
+  if (glTexStorage3DMultisample == null && glGetProcAddress != null) {
+    glTexStorage3DMultisample =  tryCall(() => Pointer<NativeFunction<GlTexStorage3DMultisampleNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexStorage3DMultisample'))).asFunction<GlTexStorage3DMultisample>());
+  }
+  glTextureView =  tryCall(() => lib.lookupFunction<GlTextureViewNative, GlTextureView>('glTextureView'));
+  if (glTextureView == null && glGetProcAddress != null) {
+    glTextureView =  tryCall(() => Pointer<NativeFunction<GlTextureViewNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureView'))).asFunction<GlTextureView>());
+  }
+  glBindVertexBuffer =  tryCall(() => lib.lookupFunction<GlBindVertexBufferNative, GlBindVertexBuffer>('glBindVertexBuffer'));
+  if (glBindVertexBuffer == null && glGetProcAddress != null) {
+    glBindVertexBuffer =  tryCall(() => Pointer<NativeFunction<GlBindVertexBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindVertexBuffer'))).asFunction<GlBindVertexBuffer>());
+  }
+  glVertexAttribFormat =  tryCall(() => lib.lookupFunction<GlVertexAttribFormatNative, GlVertexAttribFormat>('glVertexAttribFormat'));
+  if (glVertexAttribFormat == null && glGetProcAddress != null) {
+    glVertexAttribFormat =  tryCall(() => Pointer<NativeFunction<GlVertexAttribFormatNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribFormat'))).asFunction<GlVertexAttribFormat>());
+  }
+  glVertexAttribIFormat =  tryCall(() => lib.lookupFunction<GlVertexAttribIFormatNative, GlVertexAttribIFormat>('glVertexAttribIFormat'));
+  if (glVertexAttribIFormat == null && glGetProcAddress != null) {
+    glVertexAttribIFormat =  tryCall(() => Pointer<NativeFunction<GlVertexAttribIFormatNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribIFormat'))).asFunction<GlVertexAttribIFormat>());
+  }
+  glVertexAttribLFormat =  tryCall(() => lib.lookupFunction<GlVertexAttribLFormatNative, GlVertexAttribLFormat>('glVertexAttribLFormat'));
+  if (glVertexAttribLFormat == null && glGetProcAddress != null) {
+    glVertexAttribLFormat =  tryCall(() => Pointer<NativeFunction<GlVertexAttribLFormatNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribLFormat'))).asFunction<GlVertexAttribLFormat>());
+  }
+  glVertexAttribBinding =  tryCall(() => lib.lookupFunction<GlVertexAttribBindingNative, GlVertexAttribBinding>('glVertexAttribBinding'));
+  if (glVertexAttribBinding == null && glGetProcAddress != null) {
+    glVertexAttribBinding =  tryCall(() => Pointer<NativeFunction<GlVertexAttribBindingNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribBinding'))).asFunction<GlVertexAttribBinding>());
+  }
+  glVertexBindingDivisor =  tryCall(() => lib.lookupFunction<GlVertexBindingDivisorNative, GlVertexBindingDivisor>('glVertexBindingDivisor'));
+  if (glVertexBindingDivisor == null && glGetProcAddress != null) {
+    glVertexBindingDivisor =  tryCall(() => Pointer<NativeFunction<GlVertexBindingDivisorNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexBindingDivisor'))).asFunction<GlVertexBindingDivisor>());
+  }
+  glDebugMessageControl =  tryCall(() => lib.lookupFunction<GlDebugMessageControlNative, GlDebugMessageControl>('glDebugMessageControl'));
+  if (glDebugMessageControl == null && glGetProcAddress != null) {
+    glDebugMessageControl =  tryCall(() => Pointer<NativeFunction<GlDebugMessageControlNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDebugMessageControl'))).asFunction<GlDebugMessageControl>());
+  }
+  glDebugMessageInsert =  tryCall(() => lib.lookupFunction<GlDebugMessageInsertNative, GlDebugMessageInsert>('glDebugMessageInsert'));
+  if (glDebugMessageInsert == null && glGetProcAddress != null) {
+    glDebugMessageInsert =  tryCall(() => Pointer<NativeFunction<GlDebugMessageInsertNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDebugMessageInsert'))).asFunction<GlDebugMessageInsert>());
+  }
+  glDebugMessageCallback =  tryCall(() => lib.lookupFunction<GlDebugMessageCallbackNative, GlDebugMessageCallback>('glDebugMessageCallback'));
+  if (glDebugMessageCallback == null && glGetProcAddress != null) {
+    glDebugMessageCallback =  tryCall(() => Pointer<NativeFunction<GlDebugMessageCallbackNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDebugMessageCallback'))).asFunction<GlDebugMessageCallback>());
+  }
+  glGetDebugMessageLog =  tryCall(() => lib.lookupFunction<GlGetDebugMessageLogNative, GlGetDebugMessageLog>('glGetDebugMessageLog'));
+  if (glGetDebugMessageLog == null && glGetProcAddress != null) {
+    glGetDebugMessageLog =  tryCall(() => Pointer<NativeFunction<GlGetDebugMessageLogNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetDebugMessageLog'))).asFunction<GlGetDebugMessageLog>());
+  }
+  glPushDebugGroup =  tryCall(() => lib.lookupFunction<GlPushDebugGroupNative, GlPushDebugGroup>('glPushDebugGroup'));
+  if (glPushDebugGroup == null && glGetProcAddress != null) {
+    glPushDebugGroup =  tryCall(() => Pointer<NativeFunction<GlPushDebugGroupNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPushDebugGroup'))).asFunction<GlPushDebugGroup>());
+  }
+  glPopDebugGroup =  tryCall(() => lib.lookupFunction<GlPopDebugGroupNative, GlPopDebugGroup>('glPopDebugGroup'));
+  if (glPopDebugGroup == null && glGetProcAddress != null) {
+    glPopDebugGroup =  tryCall(() => Pointer<NativeFunction<GlPopDebugGroupNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPopDebugGroup'))).asFunction<GlPopDebugGroup>());
+  }
+  glObjectLabel =  tryCall(() => lib.lookupFunction<GlObjectLabelNative, GlObjectLabel>('glObjectLabel'));
+  if (glObjectLabel == null && glGetProcAddress != null) {
+    glObjectLabel =  tryCall(() => Pointer<NativeFunction<GlObjectLabelNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glObjectLabel'))).asFunction<GlObjectLabel>());
+  }
+  glGetObjectLabel =  tryCall(() => lib.lookupFunction<GlGetObjectLabelNative, GlGetObjectLabel>('glGetObjectLabel'));
+  if (glGetObjectLabel == null && glGetProcAddress != null) {
+    glGetObjectLabel =  tryCall(() => Pointer<NativeFunction<GlGetObjectLabelNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetObjectLabel'))).asFunction<GlGetObjectLabel>());
+  }
+  glObjectPtrLabel =  tryCall(() => lib.lookupFunction<GlObjectPtrLabelNative, GlObjectPtrLabel>('glObjectPtrLabel'));
+  if (glObjectPtrLabel == null && glGetProcAddress != null) {
+    glObjectPtrLabel =  tryCall(() => Pointer<NativeFunction<GlObjectPtrLabelNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glObjectPtrLabel'))).asFunction<GlObjectPtrLabel>());
+  }
+  glGetObjectPtrLabel =  tryCall(() => lib.lookupFunction<GlGetObjectPtrLabelNative, GlGetObjectPtrLabel>('glGetObjectPtrLabel'));
+  if (glGetObjectPtrLabel == null && glGetProcAddress != null) {
+    glGetObjectPtrLabel =  tryCall(() => Pointer<NativeFunction<GlGetObjectPtrLabelNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetObjectPtrLabel'))).asFunction<GlGetObjectPtrLabel>());
+  }
+  glBufferStorage =  tryCall(() => lib.lookupFunction<GlBufferStorageNative, GlBufferStorage>('glBufferStorage'));
+  if (glBufferStorage == null && glGetProcAddress != null) {
+    glBufferStorage =  tryCall(() => Pointer<NativeFunction<GlBufferStorageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBufferStorage'))).asFunction<GlBufferStorage>());
+  }
+  glClearTexImage =  tryCall(() => lib.lookupFunction<GlClearTexImageNative, GlClearTexImage>('glClearTexImage'));
+  if (glClearTexImage == null && glGetProcAddress != null) {
+    glClearTexImage =  tryCall(() => Pointer<NativeFunction<GlClearTexImageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearTexImage'))).asFunction<GlClearTexImage>());
+  }
+  glClearTexSubImage =  tryCall(() => lib.lookupFunction<GlClearTexSubImageNative, GlClearTexSubImage>('glClearTexSubImage'));
+  if (glClearTexSubImage == null && glGetProcAddress != null) {
+    glClearTexSubImage =  tryCall(() => Pointer<NativeFunction<GlClearTexSubImageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearTexSubImage'))).asFunction<GlClearTexSubImage>());
+  }
+  glBindBuffersBase =  tryCall(() => lib.lookupFunction<GlBindBuffersBaseNative, GlBindBuffersBase>('glBindBuffersBase'));
+  if (glBindBuffersBase == null && glGetProcAddress != null) {
+    glBindBuffersBase =  tryCall(() => Pointer<NativeFunction<GlBindBuffersBaseNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindBuffersBase'))).asFunction<GlBindBuffersBase>());
+  }
+  glBindBuffersRange =  tryCall(() => lib.lookupFunction<GlBindBuffersRangeNative, GlBindBuffersRange>('glBindBuffersRange'));
+  if (glBindBuffersRange == null && glGetProcAddress != null) {
+    glBindBuffersRange =  tryCall(() => Pointer<NativeFunction<GlBindBuffersRangeNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindBuffersRange'))).asFunction<GlBindBuffersRange>());
+  }
+  glBindTextures =  tryCall(() => lib.lookupFunction<GlBindTexturesNative, GlBindTextures>('glBindTextures'));
+  if (glBindTextures == null && glGetProcAddress != null) {
+    glBindTextures =  tryCall(() => Pointer<NativeFunction<GlBindTexturesNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindTextures'))).asFunction<GlBindTextures>());
+  }
+  glBindSamplers =  tryCall(() => lib.lookupFunction<GlBindSamplersNative, GlBindSamplers>('glBindSamplers'));
+  if (glBindSamplers == null && glGetProcAddress != null) {
+    glBindSamplers =  tryCall(() => Pointer<NativeFunction<GlBindSamplersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindSamplers'))).asFunction<GlBindSamplers>());
+  }
+  glBindImageTextures =  tryCall(() => lib.lookupFunction<GlBindImageTexturesNative, GlBindImageTextures>('glBindImageTextures'));
+  if (glBindImageTextures == null && glGetProcAddress != null) {
+    glBindImageTextures =  tryCall(() => Pointer<NativeFunction<GlBindImageTexturesNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindImageTextures'))).asFunction<GlBindImageTextures>());
+  }
+  glBindVertexBuffers =  tryCall(() => lib.lookupFunction<GlBindVertexBuffersNative, GlBindVertexBuffers>('glBindVertexBuffers'));
+  if (glBindVertexBuffers == null && glGetProcAddress != null) {
+    glBindVertexBuffers =  tryCall(() => Pointer<NativeFunction<GlBindVertexBuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindVertexBuffers'))).asFunction<GlBindVertexBuffers>());
+  }
+  glClipControl =  tryCall(() => lib.lookupFunction<GlClipControlNative, GlClipControl>('glClipControl'));
+  if (glClipControl == null && glGetProcAddress != null) {
+    glClipControl =  tryCall(() => Pointer<NativeFunction<GlClipControlNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClipControl'))).asFunction<GlClipControl>());
+  }
+  glCreateTransformFeedbacks =  tryCall(() => lib.lookupFunction<GlCreateTransformFeedbacksNative, GlCreateTransformFeedbacks>('glCreateTransformFeedbacks'));
+  if (glCreateTransformFeedbacks == null && glGetProcAddress != null) {
+    glCreateTransformFeedbacks =  tryCall(() => Pointer<NativeFunction<GlCreateTransformFeedbacksNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateTransformFeedbacks'))).asFunction<GlCreateTransformFeedbacks>());
+  }
+  glTransformFeedbackBufferBase =  tryCall(() => lib.lookupFunction<GlTransformFeedbackBufferBaseNative, GlTransformFeedbackBufferBase>('glTransformFeedbackBufferBase'));
+  if (glTransformFeedbackBufferBase == null && glGetProcAddress != null) {
+    glTransformFeedbackBufferBase =  tryCall(() => Pointer<NativeFunction<GlTransformFeedbackBufferBaseNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTransformFeedbackBufferBase'))).asFunction<GlTransformFeedbackBufferBase>());
+  }
+  glTransformFeedbackBufferRange =  tryCall(() => lib.lookupFunction<GlTransformFeedbackBufferRangeNative, GlTransformFeedbackBufferRange>('glTransformFeedbackBufferRange'));
+  if (glTransformFeedbackBufferRange == null && glGetProcAddress != null) {
+    glTransformFeedbackBufferRange =  tryCall(() => Pointer<NativeFunction<GlTransformFeedbackBufferRangeNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTransformFeedbackBufferRange'))).asFunction<GlTransformFeedbackBufferRange>());
+  }
+  glGetTransformFeedbackiv =  tryCall(() => lib.lookupFunction<GlGetTransformFeedbackivNative, GlGetTransformFeedbackiv>('glGetTransformFeedbackiv'));
+  if (glGetTransformFeedbackiv == null && glGetProcAddress != null) {
+    glGetTransformFeedbackiv =  tryCall(() => Pointer<NativeFunction<GlGetTransformFeedbackivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTransformFeedbackiv'))).asFunction<GlGetTransformFeedbackiv>());
+  }
+  glGetTransformFeedbacki_v =  tryCall(() => lib.lookupFunction<GlGetTransformFeedbacki_vNative, GlGetTransformFeedbacki_v>('glGetTransformFeedbacki_v'));
+  if (glGetTransformFeedbacki_v == null && glGetProcAddress != null) {
+    glGetTransformFeedbacki_v =  tryCall(() => Pointer<NativeFunction<GlGetTransformFeedbacki_vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTransformFeedbacki_v'))).asFunction<GlGetTransformFeedbacki_v>());
+  }
+  glGetTransformFeedbacki64_v =  tryCall(() => lib.lookupFunction<GlGetTransformFeedbacki64_vNative, GlGetTransformFeedbacki64_v>('glGetTransformFeedbacki64_v'));
+  if (glGetTransformFeedbacki64_v == null && glGetProcAddress != null) {
+    glGetTransformFeedbacki64_v =  tryCall(() => Pointer<NativeFunction<GlGetTransformFeedbacki64_vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTransformFeedbacki64_v'))).asFunction<GlGetTransformFeedbacki64_v>());
+  }
+  glCreateBuffers =  tryCall(() => lib.lookupFunction<GlCreateBuffersNative, GlCreateBuffers>('glCreateBuffers'));
+  if (glCreateBuffers == null && glGetProcAddress != null) {
+    glCreateBuffers =  tryCall(() => Pointer<NativeFunction<GlCreateBuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateBuffers'))).asFunction<GlCreateBuffers>());
+  }
+  glNamedBufferStorage =  tryCall(() => lib.lookupFunction<GlNamedBufferStorageNative, GlNamedBufferStorage>('glNamedBufferStorage'));
+  if (glNamedBufferStorage == null && glGetProcAddress != null) {
+    glNamedBufferStorage =  tryCall(() => Pointer<NativeFunction<GlNamedBufferStorageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedBufferStorage'))).asFunction<GlNamedBufferStorage>());
+  }
+  glNamedBufferData =  tryCall(() => lib.lookupFunction<GlNamedBufferDataNative, GlNamedBufferData>('glNamedBufferData'));
+  if (glNamedBufferData == null && glGetProcAddress != null) {
+    glNamedBufferData =  tryCall(() => Pointer<NativeFunction<GlNamedBufferDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedBufferData'))).asFunction<GlNamedBufferData>());
+  }
+  glNamedBufferSubData =  tryCall(() => lib.lookupFunction<GlNamedBufferSubDataNative, GlNamedBufferSubData>('glNamedBufferSubData'));
+  if (glNamedBufferSubData == null && glGetProcAddress != null) {
+    glNamedBufferSubData =  tryCall(() => Pointer<NativeFunction<GlNamedBufferSubDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedBufferSubData'))).asFunction<GlNamedBufferSubData>());
+  }
+  glCopyNamedBufferSubData =  tryCall(() => lib.lookupFunction<GlCopyNamedBufferSubDataNative, GlCopyNamedBufferSubData>('glCopyNamedBufferSubData'));
+  if (glCopyNamedBufferSubData == null && glGetProcAddress != null) {
+    glCopyNamedBufferSubData =  tryCall(() => Pointer<NativeFunction<GlCopyNamedBufferSubDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyNamedBufferSubData'))).asFunction<GlCopyNamedBufferSubData>());
+  }
+  glClearNamedBufferData =  tryCall(() => lib.lookupFunction<GlClearNamedBufferDataNative, GlClearNamedBufferData>('glClearNamedBufferData'));
+  if (glClearNamedBufferData == null && glGetProcAddress != null) {
+    glClearNamedBufferData =  tryCall(() => Pointer<NativeFunction<GlClearNamedBufferDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearNamedBufferData'))).asFunction<GlClearNamedBufferData>());
+  }
+  glClearNamedBufferSubData =  tryCall(() => lib.lookupFunction<GlClearNamedBufferSubDataNative, GlClearNamedBufferSubData>('glClearNamedBufferSubData'));
+  if (glClearNamedBufferSubData == null && glGetProcAddress != null) {
+    glClearNamedBufferSubData =  tryCall(() => Pointer<NativeFunction<GlClearNamedBufferSubDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearNamedBufferSubData'))).asFunction<GlClearNamedBufferSubData>());
+  }
+  glMapNamedBuffer =  tryCall(() => lib.lookupFunction<GlMapNamedBufferNative, GlMapNamedBuffer>('glMapNamedBuffer'));
+  if (glMapNamedBuffer == null && glGetProcAddress != null) {
+    glMapNamedBuffer =  tryCall(() => Pointer<NativeFunction<GlMapNamedBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMapNamedBuffer'))).asFunction<GlMapNamedBuffer>());
+  }
+  glMapNamedBufferRange =  tryCall(() => lib.lookupFunction<GlMapNamedBufferRangeNative, GlMapNamedBufferRange>('glMapNamedBufferRange'));
+  if (glMapNamedBufferRange == null && glGetProcAddress != null) {
+    glMapNamedBufferRange =  tryCall(() => Pointer<NativeFunction<GlMapNamedBufferRangeNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMapNamedBufferRange'))).asFunction<GlMapNamedBufferRange>());
+  }
+  glUnmapNamedBuffer =  tryCall(() => lib.lookupFunction<GlUnmapNamedBufferNative, GlUnmapNamedBuffer>('glUnmapNamedBuffer'));
+  if (glUnmapNamedBuffer == null && glGetProcAddress != null) {
+    glUnmapNamedBuffer =  tryCall(() => Pointer<NativeFunction<GlUnmapNamedBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUnmapNamedBuffer'))).asFunction<GlUnmapNamedBuffer>());
+  }
+  glFlushMappedNamedBufferRange =  tryCall(() => lib.lookupFunction<GlFlushMappedNamedBufferRangeNative, GlFlushMappedNamedBufferRange>('glFlushMappedNamedBufferRange'));
+  if (glFlushMappedNamedBufferRange == null && glGetProcAddress != null) {
+    glFlushMappedNamedBufferRange =  tryCall(() => Pointer<NativeFunction<GlFlushMappedNamedBufferRangeNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFlushMappedNamedBufferRange'))).asFunction<GlFlushMappedNamedBufferRange>());
+  }
+  glGetNamedBufferParameteriv =  tryCall(() => lib.lookupFunction<GlGetNamedBufferParameterivNative, GlGetNamedBufferParameteriv>('glGetNamedBufferParameteriv'));
+  if (glGetNamedBufferParameteriv == null && glGetProcAddress != null) {
+    glGetNamedBufferParameteriv =  tryCall(() => Pointer<NativeFunction<GlGetNamedBufferParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedBufferParameteriv'))).asFunction<GlGetNamedBufferParameteriv>());
+  }
+  glGetNamedBufferParameteri64v =  tryCall(() => lib.lookupFunction<GlGetNamedBufferParameteri64vNative, GlGetNamedBufferParameteri64v>('glGetNamedBufferParameteri64v'));
+  if (glGetNamedBufferParameteri64v == null && glGetProcAddress != null) {
+    glGetNamedBufferParameteri64v =  tryCall(() => Pointer<NativeFunction<GlGetNamedBufferParameteri64vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedBufferParameteri64v'))).asFunction<GlGetNamedBufferParameteri64v>());
+  }
+  glGetNamedBufferPointerv =  tryCall(() => lib.lookupFunction<GlGetNamedBufferPointervNative, GlGetNamedBufferPointerv>('glGetNamedBufferPointerv'));
+  if (glGetNamedBufferPointerv == null && glGetProcAddress != null) {
+    glGetNamedBufferPointerv =  tryCall(() => Pointer<NativeFunction<GlGetNamedBufferPointervNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedBufferPointerv'))).asFunction<GlGetNamedBufferPointerv>());
+  }
+  glGetNamedBufferSubData =  tryCall(() => lib.lookupFunction<GlGetNamedBufferSubDataNative, GlGetNamedBufferSubData>('glGetNamedBufferSubData'));
+  if (glGetNamedBufferSubData == null && glGetProcAddress != null) {
+    glGetNamedBufferSubData =  tryCall(() => Pointer<NativeFunction<GlGetNamedBufferSubDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedBufferSubData'))).asFunction<GlGetNamedBufferSubData>());
+  }
+  glCreateFramebuffers =  tryCall(() => lib.lookupFunction<GlCreateFramebuffersNative, GlCreateFramebuffers>('glCreateFramebuffers'));
+  if (glCreateFramebuffers == null && glGetProcAddress != null) {
+    glCreateFramebuffers =  tryCall(() => Pointer<NativeFunction<GlCreateFramebuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateFramebuffers'))).asFunction<GlCreateFramebuffers>());
+  }
+  glNamedFramebufferRenderbuffer =  tryCall(() => lib.lookupFunction<GlNamedFramebufferRenderbufferNative, GlNamedFramebufferRenderbuffer>('glNamedFramebufferRenderbuffer'));
+  if (glNamedFramebufferRenderbuffer == null && glGetProcAddress != null) {
+    glNamedFramebufferRenderbuffer =  tryCall(() => Pointer<NativeFunction<GlNamedFramebufferRenderbufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferRenderbuffer'))).asFunction<GlNamedFramebufferRenderbuffer>());
+  }
+  glNamedFramebufferParameteri =  tryCall(() => lib.lookupFunction<GlNamedFramebufferParameteriNative, GlNamedFramebufferParameteri>('glNamedFramebufferParameteri'));
+  if (glNamedFramebufferParameteri == null && glGetProcAddress != null) {
+    glNamedFramebufferParameteri =  tryCall(() => Pointer<NativeFunction<GlNamedFramebufferParameteriNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferParameteri'))).asFunction<GlNamedFramebufferParameteri>());
+  }
+  glNamedFramebufferTexture =  tryCall(() => lib.lookupFunction<GlNamedFramebufferTextureNative, GlNamedFramebufferTexture>('glNamedFramebufferTexture'));
+  if (glNamedFramebufferTexture == null && glGetProcAddress != null) {
+    glNamedFramebufferTexture =  tryCall(() => Pointer<NativeFunction<GlNamedFramebufferTextureNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferTexture'))).asFunction<GlNamedFramebufferTexture>());
+  }
+  glNamedFramebufferTextureLayer =  tryCall(() => lib.lookupFunction<GlNamedFramebufferTextureLayerNative, GlNamedFramebufferTextureLayer>('glNamedFramebufferTextureLayer'));
+  if (glNamedFramebufferTextureLayer == null && glGetProcAddress != null) {
+    glNamedFramebufferTextureLayer =  tryCall(() => Pointer<NativeFunction<GlNamedFramebufferTextureLayerNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferTextureLayer'))).asFunction<GlNamedFramebufferTextureLayer>());
+  }
+  glNamedFramebufferDrawBuffer =  tryCall(() => lib.lookupFunction<GlNamedFramebufferDrawBufferNative, GlNamedFramebufferDrawBuffer>('glNamedFramebufferDrawBuffer'));
+  if (glNamedFramebufferDrawBuffer == null && glGetProcAddress != null) {
+    glNamedFramebufferDrawBuffer =  tryCall(() => Pointer<NativeFunction<GlNamedFramebufferDrawBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferDrawBuffer'))).asFunction<GlNamedFramebufferDrawBuffer>());
+  }
+  glNamedFramebufferDrawBuffers =  tryCall(() => lib.lookupFunction<GlNamedFramebufferDrawBuffersNative, GlNamedFramebufferDrawBuffers>('glNamedFramebufferDrawBuffers'));
+  if (glNamedFramebufferDrawBuffers == null && glGetProcAddress != null) {
+    glNamedFramebufferDrawBuffers =  tryCall(() => Pointer<NativeFunction<GlNamedFramebufferDrawBuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferDrawBuffers'))).asFunction<GlNamedFramebufferDrawBuffers>());
+  }
+  glNamedFramebufferReadBuffer =  tryCall(() => lib.lookupFunction<GlNamedFramebufferReadBufferNative, GlNamedFramebufferReadBuffer>('glNamedFramebufferReadBuffer'));
+  if (glNamedFramebufferReadBuffer == null && glGetProcAddress != null) {
+    glNamedFramebufferReadBuffer =  tryCall(() => Pointer<NativeFunction<GlNamedFramebufferReadBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferReadBuffer'))).asFunction<GlNamedFramebufferReadBuffer>());
+  }
+  glInvalidateNamedFramebufferData =  tryCall(() => lib.lookupFunction<GlInvalidateNamedFramebufferDataNative, GlInvalidateNamedFramebufferData>('glInvalidateNamedFramebufferData'));
+  if (glInvalidateNamedFramebufferData == null && glGetProcAddress != null) {
+    glInvalidateNamedFramebufferData =  tryCall(() => Pointer<NativeFunction<GlInvalidateNamedFramebufferDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glInvalidateNamedFramebufferData'))).asFunction<GlInvalidateNamedFramebufferData>());
+  }
+  glInvalidateNamedFramebufferSubData =  tryCall(() => lib.lookupFunction<GlInvalidateNamedFramebufferSubDataNative, GlInvalidateNamedFramebufferSubData>('glInvalidateNamedFramebufferSubData'));
+  if (glInvalidateNamedFramebufferSubData == null && glGetProcAddress != null) {
+    glInvalidateNamedFramebufferSubData =  tryCall(() => Pointer<NativeFunction<GlInvalidateNamedFramebufferSubDataNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glInvalidateNamedFramebufferSubData'))).asFunction<GlInvalidateNamedFramebufferSubData>());
+  }
+  glClearNamedFramebufferiv =  tryCall(() => lib.lookupFunction<GlClearNamedFramebufferivNative, GlClearNamedFramebufferiv>('glClearNamedFramebufferiv'));
+  if (glClearNamedFramebufferiv == null && glGetProcAddress != null) {
+    glClearNamedFramebufferiv =  tryCall(() => Pointer<NativeFunction<GlClearNamedFramebufferivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearNamedFramebufferiv'))).asFunction<GlClearNamedFramebufferiv>());
+  }
+  glClearNamedFramebufferuiv =  tryCall(() => lib.lookupFunction<GlClearNamedFramebufferuivNative, GlClearNamedFramebufferuiv>('glClearNamedFramebufferuiv'));
+  if (glClearNamedFramebufferuiv == null && glGetProcAddress != null) {
+    glClearNamedFramebufferuiv =  tryCall(() => Pointer<NativeFunction<GlClearNamedFramebufferuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearNamedFramebufferuiv'))).asFunction<GlClearNamedFramebufferuiv>());
+  }
+  glClearNamedFramebufferfv =  tryCall(() => lib.lookupFunction<GlClearNamedFramebufferfvNative, GlClearNamedFramebufferfv>('glClearNamedFramebufferfv'));
+  if (glClearNamedFramebufferfv == null && glGetProcAddress != null) {
+    glClearNamedFramebufferfv =  tryCall(() => Pointer<NativeFunction<GlClearNamedFramebufferfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearNamedFramebufferfv'))).asFunction<GlClearNamedFramebufferfv>());
+  }
+  glClearNamedFramebufferfi =  tryCall(() => lib.lookupFunction<GlClearNamedFramebufferfiNative, GlClearNamedFramebufferfi>('glClearNamedFramebufferfi'));
+  if (glClearNamedFramebufferfi == null && glGetProcAddress != null) {
+    glClearNamedFramebufferfi =  tryCall(() => Pointer<NativeFunction<GlClearNamedFramebufferfiNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearNamedFramebufferfi'))).asFunction<GlClearNamedFramebufferfi>());
+  }
+  glBlitNamedFramebuffer =  tryCall(() => lib.lookupFunction<GlBlitNamedFramebufferNative, GlBlitNamedFramebuffer>('glBlitNamedFramebuffer'));
+  if (glBlitNamedFramebuffer == null && glGetProcAddress != null) {
+    glBlitNamedFramebuffer =  tryCall(() => Pointer<NativeFunction<GlBlitNamedFramebufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlitNamedFramebuffer'))).asFunction<GlBlitNamedFramebuffer>());
+  }
+  glCheckNamedFramebufferStatus =  tryCall(() => lib.lookupFunction<GlCheckNamedFramebufferStatusNative, GlCheckNamedFramebufferStatus>('glCheckNamedFramebufferStatus'));
+  if (glCheckNamedFramebufferStatus == null && glGetProcAddress != null) {
+    glCheckNamedFramebufferStatus =  tryCall(() => Pointer<NativeFunction<GlCheckNamedFramebufferStatusNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCheckNamedFramebufferStatus'))).asFunction<GlCheckNamedFramebufferStatus>());
+  }
+  glGetNamedFramebufferParameteriv =  tryCall(() => lib.lookupFunction<GlGetNamedFramebufferParameterivNative, GlGetNamedFramebufferParameteriv>('glGetNamedFramebufferParameteriv'));
+  if (glGetNamedFramebufferParameteriv == null && glGetProcAddress != null) {
+    glGetNamedFramebufferParameteriv =  tryCall(() => Pointer<NativeFunction<GlGetNamedFramebufferParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedFramebufferParameteriv'))).asFunction<GlGetNamedFramebufferParameteriv>());
+  }
+  glGetNamedFramebufferAttachmentParameteriv =  tryCall(() => lib.lookupFunction<GlGetNamedFramebufferAttachmentParameterivNative, GlGetNamedFramebufferAttachmentParameteriv>('glGetNamedFramebufferAttachmentParameteriv'));
+  if (glGetNamedFramebufferAttachmentParameteriv == null && glGetProcAddress != null) {
+    glGetNamedFramebufferAttachmentParameteriv =  tryCall(() => Pointer<NativeFunction<GlGetNamedFramebufferAttachmentParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedFramebufferAttachmentParameteriv'))).asFunction<GlGetNamedFramebufferAttachmentParameteriv>());
+  }
+  glCreateRenderbuffers =  tryCall(() => lib.lookupFunction<GlCreateRenderbuffersNative, GlCreateRenderbuffers>('glCreateRenderbuffers'));
+  if (glCreateRenderbuffers == null && glGetProcAddress != null) {
+    glCreateRenderbuffers =  tryCall(() => Pointer<NativeFunction<GlCreateRenderbuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateRenderbuffers'))).asFunction<GlCreateRenderbuffers>());
+  }
+  glNamedRenderbufferStorage =  tryCall(() => lib.lookupFunction<GlNamedRenderbufferStorageNative, GlNamedRenderbufferStorage>('glNamedRenderbufferStorage'));
+  if (glNamedRenderbufferStorage == null && glGetProcAddress != null) {
+    glNamedRenderbufferStorage =  tryCall(() => Pointer<NativeFunction<GlNamedRenderbufferStorageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedRenderbufferStorage'))).asFunction<GlNamedRenderbufferStorage>());
+  }
+  glNamedRenderbufferStorageMultisample =  tryCall(() => lib.lookupFunction<GlNamedRenderbufferStorageMultisampleNative, GlNamedRenderbufferStorageMultisample>('glNamedRenderbufferStorageMultisample'));
+  if (glNamedRenderbufferStorageMultisample == null && glGetProcAddress != null) {
+    glNamedRenderbufferStorageMultisample =  tryCall(() => Pointer<NativeFunction<GlNamedRenderbufferStorageMultisampleNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedRenderbufferStorageMultisample'))).asFunction<GlNamedRenderbufferStorageMultisample>());
+  }
+  glGetNamedRenderbufferParameteriv =  tryCall(() => lib.lookupFunction<GlGetNamedRenderbufferParameterivNative, GlGetNamedRenderbufferParameteriv>('glGetNamedRenderbufferParameteriv'));
+  if (glGetNamedRenderbufferParameteriv == null && glGetProcAddress != null) {
+    glGetNamedRenderbufferParameteriv =  tryCall(() => Pointer<NativeFunction<GlGetNamedRenderbufferParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedRenderbufferParameteriv'))).asFunction<GlGetNamedRenderbufferParameteriv>());
+  }
+  glCreateTextures =  tryCall(() => lib.lookupFunction<GlCreateTexturesNative, GlCreateTextures>('glCreateTextures'));
+  if (glCreateTextures == null && glGetProcAddress != null) {
+    glCreateTextures =  tryCall(() => Pointer<NativeFunction<GlCreateTexturesNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateTextures'))).asFunction<GlCreateTextures>());
+  }
+  glTextureBuffer =  tryCall(() => lib.lookupFunction<GlTextureBufferNative, GlTextureBuffer>('glTextureBuffer'));
+  if (glTextureBuffer == null && glGetProcAddress != null) {
+    glTextureBuffer =  tryCall(() => Pointer<NativeFunction<GlTextureBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureBuffer'))).asFunction<GlTextureBuffer>());
+  }
+  glTextureBufferRange =  tryCall(() => lib.lookupFunction<GlTextureBufferRangeNative, GlTextureBufferRange>('glTextureBufferRange'));
+  if (glTextureBufferRange == null && glGetProcAddress != null) {
+    glTextureBufferRange =  tryCall(() => Pointer<NativeFunction<GlTextureBufferRangeNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureBufferRange'))).asFunction<GlTextureBufferRange>());
+  }
+  glTextureStorage1D =  tryCall(() => lib.lookupFunction<GlTextureStorage1DNative, GlTextureStorage1D>('glTextureStorage1D'));
+  if (glTextureStorage1D == null && glGetProcAddress != null) {
+    glTextureStorage1D =  tryCall(() => Pointer<NativeFunction<GlTextureStorage1DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureStorage1D'))).asFunction<GlTextureStorage1D>());
+  }
+  glTextureStorage2D =  tryCall(() => lib.lookupFunction<GlTextureStorage2DNative, GlTextureStorage2D>('glTextureStorage2D'));
+  if (glTextureStorage2D == null && glGetProcAddress != null) {
+    glTextureStorage2D =  tryCall(() => Pointer<NativeFunction<GlTextureStorage2DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureStorage2D'))).asFunction<GlTextureStorage2D>());
+  }
+  glTextureStorage3D =  tryCall(() => lib.lookupFunction<GlTextureStorage3DNative, GlTextureStorage3D>('glTextureStorage3D'));
+  if (glTextureStorage3D == null && glGetProcAddress != null) {
+    glTextureStorage3D =  tryCall(() => Pointer<NativeFunction<GlTextureStorage3DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureStorage3D'))).asFunction<GlTextureStorage3D>());
+  }
+  glTextureStorage2DMultisample =  tryCall(() => lib.lookupFunction<GlTextureStorage2DMultisampleNative, GlTextureStorage2DMultisample>('glTextureStorage2DMultisample'));
+  if (glTextureStorage2DMultisample == null && glGetProcAddress != null) {
+    glTextureStorage2DMultisample =  tryCall(() => Pointer<NativeFunction<GlTextureStorage2DMultisampleNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureStorage2DMultisample'))).asFunction<GlTextureStorage2DMultisample>());
+  }
+  glTextureStorage3DMultisample =  tryCall(() => lib.lookupFunction<GlTextureStorage3DMultisampleNative, GlTextureStorage3DMultisample>('glTextureStorage3DMultisample'));
+  if (glTextureStorage3DMultisample == null && glGetProcAddress != null) {
+    glTextureStorage3DMultisample =  tryCall(() => Pointer<NativeFunction<GlTextureStorage3DMultisampleNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureStorage3DMultisample'))).asFunction<GlTextureStorage3DMultisample>());
+  }
+  glTextureSubImage1D =  tryCall(() => lib.lookupFunction<GlTextureSubImage1DNative, GlTextureSubImage1D>('glTextureSubImage1D'));
+  if (glTextureSubImage1D == null && glGetProcAddress != null) {
+    glTextureSubImage1D =  tryCall(() => Pointer<NativeFunction<GlTextureSubImage1DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureSubImage1D'))).asFunction<GlTextureSubImage1D>());
+  }
+  glTextureSubImage2D =  tryCall(() => lib.lookupFunction<GlTextureSubImage2DNative, GlTextureSubImage2D>('glTextureSubImage2D'));
+  if (glTextureSubImage2D == null && glGetProcAddress != null) {
+    glTextureSubImage2D =  tryCall(() => Pointer<NativeFunction<GlTextureSubImage2DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureSubImage2D'))).asFunction<GlTextureSubImage2D>());
+  }
+  glTextureSubImage3D =  tryCall(() => lib.lookupFunction<GlTextureSubImage3DNative, GlTextureSubImage3D>('glTextureSubImage3D'));
+  if (glTextureSubImage3D == null && glGetProcAddress != null) {
+    glTextureSubImage3D =  tryCall(() => Pointer<NativeFunction<GlTextureSubImage3DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureSubImage3D'))).asFunction<GlTextureSubImage3D>());
+  }
+  glCompressedTextureSubImage1D =  tryCall(() => lib.lookupFunction<GlCompressedTextureSubImage1DNative, GlCompressedTextureSubImage1D>('glCompressedTextureSubImage1D'));
+  if (glCompressedTextureSubImage1D == null && glGetProcAddress != null) {
+    glCompressedTextureSubImage1D =  tryCall(() => Pointer<NativeFunction<GlCompressedTextureSubImage1DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTextureSubImage1D'))).asFunction<GlCompressedTextureSubImage1D>());
+  }
+  glCompressedTextureSubImage2D =  tryCall(() => lib.lookupFunction<GlCompressedTextureSubImage2DNative, GlCompressedTextureSubImage2D>('glCompressedTextureSubImage2D'));
+  if (glCompressedTextureSubImage2D == null && glGetProcAddress != null) {
+    glCompressedTextureSubImage2D =  tryCall(() => Pointer<NativeFunction<GlCompressedTextureSubImage2DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTextureSubImage2D'))).asFunction<GlCompressedTextureSubImage2D>());
+  }
+  glCompressedTextureSubImage3D =  tryCall(() => lib.lookupFunction<GlCompressedTextureSubImage3DNative, GlCompressedTextureSubImage3D>('glCompressedTextureSubImage3D'));
+  if (glCompressedTextureSubImage3D == null && glGetProcAddress != null) {
+    glCompressedTextureSubImage3D =  tryCall(() => Pointer<NativeFunction<GlCompressedTextureSubImage3DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTextureSubImage3D'))).asFunction<GlCompressedTextureSubImage3D>());
+  }
+  glCopyTextureSubImage1D =  tryCall(() => lib.lookupFunction<GlCopyTextureSubImage1DNative, GlCopyTextureSubImage1D>('glCopyTextureSubImage1D'));
+  if (glCopyTextureSubImage1D == null && glGetProcAddress != null) {
+    glCopyTextureSubImage1D =  tryCall(() => Pointer<NativeFunction<GlCopyTextureSubImage1DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyTextureSubImage1D'))).asFunction<GlCopyTextureSubImage1D>());
+  }
+  glCopyTextureSubImage2D =  tryCall(() => lib.lookupFunction<GlCopyTextureSubImage2DNative, GlCopyTextureSubImage2D>('glCopyTextureSubImage2D'));
+  if (glCopyTextureSubImage2D == null && glGetProcAddress != null) {
+    glCopyTextureSubImage2D =  tryCall(() => Pointer<NativeFunction<GlCopyTextureSubImage2DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyTextureSubImage2D'))).asFunction<GlCopyTextureSubImage2D>());
+  }
+  glCopyTextureSubImage3D =  tryCall(() => lib.lookupFunction<GlCopyTextureSubImage3DNative, GlCopyTextureSubImage3D>('glCopyTextureSubImage3D'));
+  if (glCopyTextureSubImage3D == null && glGetProcAddress != null) {
+    glCopyTextureSubImage3D =  tryCall(() => Pointer<NativeFunction<GlCopyTextureSubImage3DNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyTextureSubImage3D'))).asFunction<GlCopyTextureSubImage3D>());
+  }
+  glTextureParameterf =  tryCall(() => lib.lookupFunction<GlTextureParameterfNative, GlTextureParameterf>('glTextureParameterf'));
+  if (glTextureParameterf == null && glGetProcAddress != null) {
+    glTextureParameterf =  tryCall(() => Pointer<NativeFunction<GlTextureParameterfNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureParameterf'))).asFunction<GlTextureParameterf>());
+  }
+  glTextureParameterfv =  tryCall(() => lib.lookupFunction<GlTextureParameterfvNative, GlTextureParameterfv>('glTextureParameterfv'));
+  if (glTextureParameterfv == null && glGetProcAddress != null) {
+    glTextureParameterfv =  tryCall(() => Pointer<NativeFunction<GlTextureParameterfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureParameterfv'))).asFunction<GlTextureParameterfv>());
+  }
+  glTextureParameteri =  tryCall(() => lib.lookupFunction<GlTextureParameteriNative, GlTextureParameteri>('glTextureParameteri'));
+  if (glTextureParameteri == null && glGetProcAddress != null) {
+    glTextureParameteri =  tryCall(() => Pointer<NativeFunction<GlTextureParameteriNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureParameteri'))).asFunction<GlTextureParameteri>());
+  }
+  glTextureParameterIiv =  tryCall(() => lib.lookupFunction<GlTextureParameterIivNative, GlTextureParameterIiv>('glTextureParameterIiv'));
+  if (glTextureParameterIiv == null && glGetProcAddress != null) {
+    glTextureParameterIiv =  tryCall(() => Pointer<NativeFunction<GlTextureParameterIivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureParameterIiv'))).asFunction<GlTextureParameterIiv>());
+  }
+  glTextureParameterIuiv =  tryCall(() => lib.lookupFunction<GlTextureParameterIuivNative, GlTextureParameterIuiv>('glTextureParameterIuiv'));
+  if (glTextureParameterIuiv == null && glGetProcAddress != null) {
+    glTextureParameterIuiv =  tryCall(() => Pointer<NativeFunction<GlTextureParameterIuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureParameterIuiv'))).asFunction<GlTextureParameterIuiv>());
+  }
+  glTextureParameteriv =  tryCall(() => lib.lookupFunction<GlTextureParameterivNative, GlTextureParameteriv>('glTextureParameteriv'));
+  if (glTextureParameteriv == null && glGetProcAddress != null) {
+    glTextureParameteriv =  tryCall(() => Pointer<NativeFunction<GlTextureParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureParameteriv'))).asFunction<GlTextureParameteriv>());
+  }
+  glGenerateTextureMipmap =  tryCall(() => lib.lookupFunction<GlGenerateTextureMipmapNative, GlGenerateTextureMipmap>('glGenerateTextureMipmap'));
+  if (glGenerateTextureMipmap == null && glGetProcAddress != null) {
+    glGenerateTextureMipmap =  tryCall(() => Pointer<NativeFunction<GlGenerateTextureMipmapNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenerateTextureMipmap'))).asFunction<GlGenerateTextureMipmap>());
+  }
+  glBindTextureUnit =  tryCall(() => lib.lookupFunction<GlBindTextureUnitNative, GlBindTextureUnit>('glBindTextureUnit'));
+  if (glBindTextureUnit == null && glGetProcAddress != null) {
+    glBindTextureUnit =  tryCall(() => Pointer<NativeFunction<GlBindTextureUnitNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindTextureUnit'))).asFunction<GlBindTextureUnit>());
+  }
+  glGetTextureImage =  tryCall(() => lib.lookupFunction<GlGetTextureImageNative, GlGetTextureImage>('glGetTextureImage'));
+  if (glGetTextureImage == null && glGetProcAddress != null) {
+    glGetTextureImage =  tryCall(() => Pointer<NativeFunction<GlGetTextureImageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureImage'))).asFunction<GlGetTextureImage>());
+  }
+  glGetCompressedTextureImage =  tryCall(() => lib.lookupFunction<GlGetCompressedTextureImageNative, GlGetCompressedTextureImage>('glGetCompressedTextureImage'));
+  if (glGetCompressedTextureImage == null && glGetProcAddress != null) {
+    glGetCompressedTextureImage =  tryCall(() => Pointer<NativeFunction<GlGetCompressedTextureImageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetCompressedTextureImage'))).asFunction<GlGetCompressedTextureImage>());
+  }
+  glGetTextureLevelParameterfv =  tryCall(() => lib.lookupFunction<GlGetTextureLevelParameterfvNative, GlGetTextureLevelParameterfv>('glGetTextureLevelParameterfv'));
+  if (glGetTextureLevelParameterfv == null && glGetProcAddress != null) {
+    glGetTextureLevelParameterfv =  tryCall(() => Pointer<NativeFunction<GlGetTextureLevelParameterfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureLevelParameterfv'))).asFunction<GlGetTextureLevelParameterfv>());
+  }
+  glGetTextureLevelParameteriv =  tryCall(() => lib.lookupFunction<GlGetTextureLevelParameterivNative, GlGetTextureLevelParameteriv>('glGetTextureLevelParameteriv'));
+  if (glGetTextureLevelParameteriv == null && glGetProcAddress != null) {
+    glGetTextureLevelParameteriv =  tryCall(() => Pointer<NativeFunction<GlGetTextureLevelParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureLevelParameteriv'))).asFunction<GlGetTextureLevelParameteriv>());
+  }
+  glGetTextureParameterfv =  tryCall(() => lib.lookupFunction<GlGetTextureParameterfvNative, GlGetTextureParameterfv>('glGetTextureParameterfv'));
+  if (glGetTextureParameterfv == null && glGetProcAddress != null) {
+    glGetTextureParameterfv =  tryCall(() => Pointer<NativeFunction<GlGetTextureParameterfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureParameterfv'))).asFunction<GlGetTextureParameterfv>());
+  }
+  glGetTextureParameterIiv =  tryCall(() => lib.lookupFunction<GlGetTextureParameterIivNative, GlGetTextureParameterIiv>('glGetTextureParameterIiv'));
+  if (glGetTextureParameterIiv == null && glGetProcAddress != null) {
+    glGetTextureParameterIiv =  tryCall(() => Pointer<NativeFunction<GlGetTextureParameterIivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureParameterIiv'))).asFunction<GlGetTextureParameterIiv>());
+  }
+  glGetTextureParameterIuiv =  tryCall(() => lib.lookupFunction<GlGetTextureParameterIuivNative, GlGetTextureParameterIuiv>('glGetTextureParameterIuiv'));
+  if (glGetTextureParameterIuiv == null && glGetProcAddress != null) {
+    glGetTextureParameterIuiv =  tryCall(() => Pointer<NativeFunction<GlGetTextureParameterIuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureParameterIuiv'))).asFunction<GlGetTextureParameterIuiv>());
+  }
+  glGetTextureParameteriv =  tryCall(() => lib.lookupFunction<GlGetTextureParameterivNative, GlGetTextureParameteriv>('glGetTextureParameteriv'));
+  if (glGetTextureParameteriv == null && glGetProcAddress != null) {
+    glGetTextureParameteriv =  tryCall(() => Pointer<NativeFunction<GlGetTextureParameterivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureParameteriv'))).asFunction<GlGetTextureParameteriv>());
+  }
+  glCreateVertexArrays =  tryCall(() => lib.lookupFunction<GlCreateVertexArraysNative, GlCreateVertexArrays>('glCreateVertexArrays'));
+  if (glCreateVertexArrays == null && glGetProcAddress != null) {
+    glCreateVertexArrays =  tryCall(() => Pointer<NativeFunction<GlCreateVertexArraysNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateVertexArrays'))).asFunction<GlCreateVertexArrays>());
+  }
+  glDisableVertexArrayAttrib =  tryCall(() => lib.lookupFunction<GlDisableVertexArrayAttribNative, GlDisableVertexArrayAttrib>('glDisableVertexArrayAttrib'));
+  if (glDisableVertexArrayAttrib == null && glGetProcAddress != null) {
+    glDisableVertexArrayAttrib =  tryCall(() => Pointer<NativeFunction<GlDisableVertexArrayAttribNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDisableVertexArrayAttrib'))).asFunction<GlDisableVertexArrayAttrib>());
+  }
+  glEnableVertexArrayAttrib =  tryCall(() => lib.lookupFunction<GlEnableVertexArrayAttribNative, GlEnableVertexArrayAttrib>('glEnableVertexArrayAttrib'));
+  if (glEnableVertexArrayAttrib == null && glGetProcAddress != null) {
+    glEnableVertexArrayAttrib =  tryCall(() => Pointer<NativeFunction<GlEnableVertexArrayAttribNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEnableVertexArrayAttrib'))).asFunction<GlEnableVertexArrayAttrib>());
+  }
+  glVertexArrayElementBuffer =  tryCall(() => lib.lookupFunction<GlVertexArrayElementBufferNative, GlVertexArrayElementBuffer>('glVertexArrayElementBuffer'));
+  if (glVertexArrayElementBuffer == null && glGetProcAddress != null) {
+    glVertexArrayElementBuffer =  tryCall(() => Pointer<NativeFunction<GlVertexArrayElementBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayElementBuffer'))).asFunction<GlVertexArrayElementBuffer>());
+  }
+  glVertexArrayVertexBuffer =  tryCall(() => lib.lookupFunction<GlVertexArrayVertexBufferNative, GlVertexArrayVertexBuffer>('glVertexArrayVertexBuffer'));
+  if (glVertexArrayVertexBuffer == null && glGetProcAddress != null) {
+    glVertexArrayVertexBuffer =  tryCall(() => Pointer<NativeFunction<GlVertexArrayVertexBufferNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayVertexBuffer'))).asFunction<GlVertexArrayVertexBuffer>());
+  }
+  glVertexArrayVertexBuffers =  tryCall(() => lib.lookupFunction<GlVertexArrayVertexBuffersNative, GlVertexArrayVertexBuffers>('glVertexArrayVertexBuffers'));
+  if (glVertexArrayVertexBuffers == null && glGetProcAddress != null) {
+    glVertexArrayVertexBuffers =  tryCall(() => Pointer<NativeFunction<GlVertexArrayVertexBuffersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayVertexBuffers'))).asFunction<GlVertexArrayVertexBuffers>());
+  }
+  glVertexArrayAttribBinding =  tryCall(() => lib.lookupFunction<GlVertexArrayAttribBindingNative, GlVertexArrayAttribBinding>('glVertexArrayAttribBinding'));
+  if (glVertexArrayAttribBinding == null && glGetProcAddress != null) {
+    glVertexArrayAttribBinding =  tryCall(() => Pointer<NativeFunction<GlVertexArrayAttribBindingNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayAttribBinding'))).asFunction<GlVertexArrayAttribBinding>());
+  }
+  glVertexArrayAttribFormat =  tryCall(() => lib.lookupFunction<GlVertexArrayAttribFormatNative, GlVertexArrayAttribFormat>('glVertexArrayAttribFormat'));
+  if (glVertexArrayAttribFormat == null && glGetProcAddress != null) {
+    glVertexArrayAttribFormat =  tryCall(() => Pointer<NativeFunction<GlVertexArrayAttribFormatNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayAttribFormat'))).asFunction<GlVertexArrayAttribFormat>());
+  }
+  glVertexArrayAttribIFormat =  tryCall(() => lib.lookupFunction<GlVertexArrayAttribIFormatNative, GlVertexArrayAttribIFormat>('glVertexArrayAttribIFormat'));
+  if (glVertexArrayAttribIFormat == null && glGetProcAddress != null) {
+    glVertexArrayAttribIFormat =  tryCall(() => Pointer<NativeFunction<GlVertexArrayAttribIFormatNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayAttribIFormat'))).asFunction<GlVertexArrayAttribIFormat>());
+  }
+  glVertexArrayAttribLFormat =  tryCall(() => lib.lookupFunction<GlVertexArrayAttribLFormatNative, GlVertexArrayAttribLFormat>('glVertexArrayAttribLFormat'));
+  if (glVertexArrayAttribLFormat == null && glGetProcAddress != null) {
+    glVertexArrayAttribLFormat =  tryCall(() => Pointer<NativeFunction<GlVertexArrayAttribLFormatNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayAttribLFormat'))).asFunction<GlVertexArrayAttribLFormat>());
+  }
+  glVertexArrayBindingDivisor =  tryCall(() => lib.lookupFunction<GlVertexArrayBindingDivisorNative, GlVertexArrayBindingDivisor>('glVertexArrayBindingDivisor'));
+  if (glVertexArrayBindingDivisor == null && glGetProcAddress != null) {
+    glVertexArrayBindingDivisor =  tryCall(() => Pointer<NativeFunction<GlVertexArrayBindingDivisorNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayBindingDivisor'))).asFunction<GlVertexArrayBindingDivisor>());
+  }
+  glGetVertexArrayiv =  tryCall(() => lib.lookupFunction<GlGetVertexArrayivNative, GlGetVertexArrayiv>('glGetVertexArrayiv'));
+  if (glGetVertexArrayiv == null && glGetProcAddress != null) {
+    glGetVertexArrayiv =  tryCall(() => Pointer<NativeFunction<GlGetVertexArrayivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexArrayiv'))).asFunction<GlGetVertexArrayiv>());
+  }
+  glGetVertexArrayIndexediv =  tryCall(() => lib.lookupFunction<GlGetVertexArrayIndexedivNative, GlGetVertexArrayIndexediv>('glGetVertexArrayIndexediv'));
+  if (glGetVertexArrayIndexediv == null && glGetProcAddress != null) {
+    glGetVertexArrayIndexediv =  tryCall(() => Pointer<NativeFunction<GlGetVertexArrayIndexedivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexArrayIndexediv'))).asFunction<GlGetVertexArrayIndexediv>());
+  }
+  glGetVertexArrayIndexed64iv =  tryCall(() => lib.lookupFunction<GlGetVertexArrayIndexed64ivNative, GlGetVertexArrayIndexed64iv>('glGetVertexArrayIndexed64iv'));
+  if (glGetVertexArrayIndexed64iv == null && glGetProcAddress != null) {
+    glGetVertexArrayIndexed64iv =  tryCall(() => Pointer<NativeFunction<GlGetVertexArrayIndexed64ivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexArrayIndexed64iv'))).asFunction<GlGetVertexArrayIndexed64iv>());
+  }
+  glCreateSamplers =  tryCall(() => lib.lookupFunction<GlCreateSamplersNative, GlCreateSamplers>('glCreateSamplers'));
+  if (glCreateSamplers == null && glGetProcAddress != null) {
+    glCreateSamplers =  tryCall(() => Pointer<NativeFunction<GlCreateSamplersNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateSamplers'))).asFunction<GlCreateSamplers>());
+  }
+  glCreateProgramPipelines =  tryCall(() => lib.lookupFunction<GlCreateProgramPipelinesNative, GlCreateProgramPipelines>('glCreateProgramPipelines'));
+  if (glCreateProgramPipelines == null && glGetProcAddress != null) {
+    glCreateProgramPipelines =  tryCall(() => Pointer<NativeFunction<GlCreateProgramPipelinesNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateProgramPipelines'))).asFunction<GlCreateProgramPipelines>());
+  }
+  glCreateQueries =  tryCall(() => lib.lookupFunction<GlCreateQueriesNative, GlCreateQueries>('glCreateQueries'));
+  if (glCreateQueries == null && glGetProcAddress != null) {
+    glCreateQueries =  tryCall(() => Pointer<NativeFunction<GlCreateQueriesNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateQueries'))).asFunction<GlCreateQueries>());
+  }
+  glGetQueryBufferObjecti64v =  tryCall(() => lib.lookupFunction<GlGetQueryBufferObjecti64vNative, GlGetQueryBufferObjecti64v>('glGetQueryBufferObjecti64v'));
+  if (glGetQueryBufferObjecti64v == null && glGetProcAddress != null) {
+    glGetQueryBufferObjecti64v =  tryCall(() => Pointer<NativeFunction<GlGetQueryBufferObjecti64vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetQueryBufferObjecti64v'))).asFunction<GlGetQueryBufferObjecti64v>());
+  }
+  glGetQueryBufferObjectiv =  tryCall(() => lib.lookupFunction<GlGetQueryBufferObjectivNative, GlGetQueryBufferObjectiv>('glGetQueryBufferObjectiv'));
+  if (glGetQueryBufferObjectiv == null && glGetProcAddress != null) {
+    glGetQueryBufferObjectiv =  tryCall(() => Pointer<NativeFunction<GlGetQueryBufferObjectivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetQueryBufferObjectiv'))).asFunction<GlGetQueryBufferObjectiv>());
+  }
+  glGetQueryBufferObjectui64v =  tryCall(() => lib.lookupFunction<GlGetQueryBufferObjectui64vNative, GlGetQueryBufferObjectui64v>('glGetQueryBufferObjectui64v'));
+  if (glGetQueryBufferObjectui64v == null && glGetProcAddress != null) {
+    glGetQueryBufferObjectui64v =  tryCall(() => Pointer<NativeFunction<GlGetQueryBufferObjectui64vNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetQueryBufferObjectui64v'))).asFunction<GlGetQueryBufferObjectui64v>());
+  }
+  glGetQueryBufferObjectuiv =  tryCall(() => lib.lookupFunction<GlGetQueryBufferObjectuivNative, GlGetQueryBufferObjectuiv>('glGetQueryBufferObjectuiv'));
+  if (glGetQueryBufferObjectuiv == null && glGetProcAddress != null) {
+    glGetQueryBufferObjectuiv =  tryCall(() => Pointer<NativeFunction<GlGetQueryBufferObjectuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetQueryBufferObjectuiv'))).asFunction<GlGetQueryBufferObjectuiv>());
+  }
+  glMemoryBarrierByRegion =  tryCall(() => lib.lookupFunction<GlMemoryBarrierByRegionNative, GlMemoryBarrierByRegion>('glMemoryBarrierByRegion'));
+  if (glMemoryBarrierByRegion == null && glGetProcAddress != null) {
+    glMemoryBarrierByRegion =  tryCall(() => Pointer<NativeFunction<GlMemoryBarrierByRegionNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMemoryBarrierByRegion'))).asFunction<GlMemoryBarrierByRegion>());
+  }
+  glGetTextureSubImage =  tryCall(() => lib.lookupFunction<GlGetTextureSubImageNative, GlGetTextureSubImage>('glGetTextureSubImage'));
+  if (glGetTextureSubImage == null && glGetProcAddress != null) {
+    glGetTextureSubImage =  tryCall(() => Pointer<NativeFunction<GlGetTextureSubImageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureSubImage'))).asFunction<GlGetTextureSubImage>());
+  }
+  glGetCompressedTextureSubImage =  tryCall(() => lib.lookupFunction<GlGetCompressedTextureSubImageNative, GlGetCompressedTextureSubImage>('glGetCompressedTextureSubImage'));
+  if (glGetCompressedTextureSubImage == null && glGetProcAddress != null) {
+    glGetCompressedTextureSubImage =  tryCall(() => Pointer<NativeFunction<GlGetCompressedTextureSubImageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetCompressedTextureSubImage'))).asFunction<GlGetCompressedTextureSubImage>());
+  }
+  glGetGraphicsResetStatus =  tryCall(() => lib.lookupFunction<GlGetGraphicsResetStatusNative, GlGetGraphicsResetStatus>('glGetGraphicsResetStatus'));
+  if (glGetGraphicsResetStatus == null && glGetProcAddress != null) {
+    glGetGraphicsResetStatus =  tryCall(() => Pointer<NativeFunction<GlGetGraphicsResetStatusNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetGraphicsResetStatus'))).asFunction<GlGetGraphicsResetStatus>());
+  }
+  glGetnCompressedTexImage =  tryCall(() => lib.lookupFunction<GlGetnCompressedTexImageNative, GlGetnCompressedTexImage>('glGetnCompressedTexImage'));
+  if (glGetnCompressedTexImage == null && glGetProcAddress != null) {
+    glGetnCompressedTexImage =  tryCall(() => Pointer<NativeFunction<GlGetnCompressedTexImageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnCompressedTexImage'))).asFunction<GlGetnCompressedTexImage>());
+  }
+  glGetnTexImage =  tryCall(() => lib.lookupFunction<GlGetnTexImageNative, GlGetnTexImage>('glGetnTexImage'));
+  if (glGetnTexImage == null && glGetProcAddress != null) {
+    glGetnTexImage =  tryCall(() => Pointer<NativeFunction<GlGetnTexImageNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnTexImage'))).asFunction<GlGetnTexImage>());
+  }
+  glGetnUniformdv =  tryCall(() => lib.lookupFunction<GlGetnUniformdvNative, GlGetnUniformdv>('glGetnUniformdv'));
+  if (glGetnUniformdv == null && glGetProcAddress != null) {
+    glGetnUniformdv =  tryCall(() => Pointer<NativeFunction<GlGetnUniformdvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnUniformdv'))).asFunction<GlGetnUniformdv>());
+  }
+  glGetnUniformfv =  tryCall(() => lib.lookupFunction<GlGetnUniformfvNative, GlGetnUniformfv>('glGetnUniformfv'));
+  if (glGetnUniformfv == null && glGetProcAddress != null) {
+    glGetnUniformfv =  tryCall(() => Pointer<NativeFunction<GlGetnUniformfvNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnUniformfv'))).asFunction<GlGetnUniformfv>());
+  }
+  glGetnUniformiv =  tryCall(() => lib.lookupFunction<GlGetnUniformivNative, GlGetnUniformiv>('glGetnUniformiv'));
+  if (glGetnUniformiv == null && glGetProcAddress != null) {
+    glGetnUniformiv =  tryCall(() => Pointer<NativeFunction<GlGetnUniformivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnUniformiv'))).asFunction<GlGetnUniformiv>());
+  }
+  glGetnUniformuiv =  tryCall(() => lib.lookupFunction<GlGetnUniformuivNative, GlGetnUniformuiv>('glGetnUniformuiv'));
+  if (glGetnUniformuiv == null && glGetProcAddress != null) {
+    glGetnUniformuiv =  tryCall(() => Pointer<NativeFunction<GlGetnUniformuivNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnUniformuiv'))).asFunction<GlGetnUniformuiv>());
+  }
+  glReadnPixels =  tryCall(() => lib.lookupFunction<GlReadnPixelsNative, GlReadnPixels>('glReadnPixels'));
+  if (glReadnPixels == null && glGetProcAddress != null) {
+    glReadnPixels =  tryCall(() => Pointer<NativeFunction<GlReadnPixelsNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glReadnPixels'))).asFunction<GlReadnPixels>());
+  }
+  glTextureBarrier =  tryCall(() => lib.lookupFunction<GlTextureBarrierNative, GlTextureBarrier>('glTextureBarrier'));
+  if (glTextureBarrier == null && glGetProcAddress != null) {
+    glTextureBarrier =  tryCall(() => Pointer<NativeFunction<GlTextureBarrierNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureBarrier'))).asFunction<GlTextureBarrier>());
+  }
+  glSpecializeShader =  tryCall(() => lib.lookupFunction<GlSpecializeShaderNative, GlSpecializeShader>('glSpecializeShader'));
+  if (glSpecializeShader == null && glGetProcAddress != null) {
+    glSpecializeShader =  tryCall(() => Pointer<NativeFunction<GlSpecializeShaderNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSpecializeShader'))).asFunction<GlSpecializeShader>());
+  }
+  glMultiDrawArraysIndirectCount =  tryCall(() => lib.lookupFunction<GlMultiDrawArraysIndirectCountNative, GlMultiDrawArraysIndirectCount>('glMultiDrawArraysIndirectCount'));
+  if (glMultiDrawArraysIndirectCount == null && glGetProcAddress != null) {
+    glMultiDrawArraysIndirectCount =  tryCall(() => Pointer<NativeFunction<GlMultiDrawArraysIndirectCountNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawArraysIndirectCount'))).asFunction<GlMultiDrawArraysIndirectCount>());
+  }
+  glMultiDrawElementsIndirectCount =  tryCall(() => lib.lookupFunction<GlMultiDrawElementsIndirectCountNative, GlMultiDrawElementsIndirectCount>('glMultiDrawElementsIndirectCount'));
+  if (glMultiDrawElementsIndirectCount == null && glGetProcAddress != null) {
+    glMultiDrawElementsIndirectCount =  tryCall(() => Pointer<NativeFunction<GlMultiDrawElementsIndirectCountNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawElementsIndirectCount'))).asFunction<GlMultiDrawElementsIndirectCount>());
+  }
+  glPolygonOffsetClamp =  tryCall(() => lib.lookupFunction<GlPolygonOffsetClampNative, GlPolygonOffsetClamp>('glPolygonOffsetClamp'));
+  if (glPolygonOffsetClamp == null && glGetProcAddress != null) {
+    glPolygonOffsetClamp =  tryCall(() => Pointer<NativeFunction<GlPolygonOffsetClampNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPolygonOffsetClamp'))).asFunction<GlPolygonOffsetClamp>());
+  }
+  glPrimitiveBoundingBoxARB =  tryCall(() => lib.lookupFunction<GlPrimitiveBoundingBoxARBNative, GlPrimitiveBoundingBoxARB>('glPrimitiveBoundingBoxARB'));
+  if (glPrimitiveBoundingBoxARB == null && glGetProcAddress != null) {
+    glPrimitiveBoundingBoxARB =  tryCall(() => Pointer<NativeFunction<GlPrimitiveBoundingBoxARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPrimitiveBoundingBoxARB'))).asFunction<GlPrimitiveBoundingBoxARB>());
+  }
+  glGetTextureHandleARB =  tryCall(() => lib.lookupFunction<GlGetTextureHandleARBNative, GlGetTextureHandleARB>('glGetTextureHandleARB'));
+  if (glGetTextureHandleARB == null && glGetProcAddress != null) {
+    glGetTextureHandleARB =  tryCall(() => Pointer<NativeFunction<GlGetTextureHandleARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureHandleARB'))).asFunction<GlGetTextureHandleARB>());
+  }
+  glGetTextureSamplerHandleARB =  tryCall(() => lib.lookupFunction<GlGetTextureSamplerHandleARBNative, GlGetTextureSamplerHandleARB>('glGetTextureSamplerHandleARB'));
+  if (glGetTextureSamplerHandleARB == null && glGetProcAddress != null) {
+    glGetTextureSamplerHandleARB =  tryCall(() => Pointer<NativeFunction<GlGetTextureSamplerHandleARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureSamplerHandleARB'))).asFunction<GlGetTextureSamplerHandleARB>());
+  }
+  glMakeTextureHandleResidentARB =  tryCall(() => lib.lookupFunction<GlMakeTextureHandleResidentARBNative, GlMakeTextureHandleResidentARB>('glMakeTextureHandleResidentARB'));
+  if (glMakeTextureHandleResidentARB == null && glGetProcAddress != null) {
+    glMakeTextureHandleResidentARB =  tryCall(() => Pointer<NativeFunction<GlMakeTextureHandleResidentARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMakeTextureHandleResidentARB'))).asFunction<GlMakeTextureHandleResidentARB>());
+  }
+  glMakeTextureHandleNonResidentARB =  tryCall(() => lib.lookupFunction<GlMakeTextureHandleNonResidentARBNative, GlMakeTextureHandleNonResidentARB>('glMakeTextureHandleNonResidentARB'));
+  if (glMakeTextureHandleNonResidentARB == null && glGetProcAddress != null) {
+    glMakeTextureHandleNonResidentARB =  tryCall(() => Pointer<NativeFunction<GlMakeTextureHandleNonResidentARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMakeTextureHandleNonResidentARB'))).asFunction<GlMakeTextureHandleNonResidentARB>());
+  }
+  glGetImageHandleARB =  tryCall(() => lib.lookupFunction<GlGetImageHandleARBNative, GlGetImageHandleARB>('glGetImageHandleARB'));
+  if (glGetImageHandleARB == null && glGetProcAddress != null) {
+    glGetImageHandleARB =  tryCall(() => Pointer<NativeFunction<GlGetImageHandleARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetImageHandleARB'))).asFunction<GlGetImageHandleARB>());
+  }
+  glMakeImageHandleResidentARB =  tryCall(() => lib.lookupFunction<GlMakeImageHandleResidentARBNative, GlMakeImageHandleResidentARB>('glMakeImageHandleResidentARB'));
+  if (glMakeImageHandleResidentARB == null && glGetProcAddress != null) {
+    glMakeImageHandleResidentARB =  tryCall(() => Pointer<NativeFunction<GlMakeImageHandleResidentARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMakeImageHandleResidentARB'))).asFunction<GlMakeImageHandleResidentARB>());
+  }
+  glMakeImageHandleNonResidentARB =  tryCall(() => lib.lookupFunction<GlMakeImageHandleNonResidentARBNative, GlMakeImageHandleNonResidentARB>('glMakeImageHandleNonResidentARB'));
+  if (glMakeImageHandleNonResidentARB == null && glGetProcAddress != null) {
+    glMakeImageHandleNonResidentARB =  tryCall(() => Pointer<NativeFunction<GlMakeImageHandleNonResidentARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMakeImageHandleNonResidentARB'))).asFunction<GlMakeImageHandleNonResidentARB>());
+  }
+  glUniformHandleui64ARB =  tryCall(() => lib.lookupFunction<GlUniformHandleui64ARBNative, GlUniformHandleui64ARB>('glUniformHandleui64ARB'));
+  if (glUniformHandleui64ARB == null && glGetProcAddress != null) {
+    glUniformHandleui64ARB =  tryCall(() => Pointer<NativeFunction<GlUniformHandleui64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformHandleui64ARB'))).asFunction<GlUniformHandleui64ARB>());
+  }
+  glUniformHandleui64vARB =  tryCall(() => lib.lookupFunction<GlUniformHandleui64vARBNative, GlUniformHandleui64vARB>('glUniformHandleui64vARB'));
+  if (glUniformHandleui64vARB == null && glGetProcAddress != null) {
+    glUniformHandleui64vARB =  tryCall(() => Pointer<NativeFunction<GlUniformHandleui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformHandleui64vARB'))).asFunction<GlUniformHandleui64vARB>());
+  }
+  glProgramUniformHandleui64ARB =  tryCall(() => lib.lookupFunction<GlProgramUniformHandleui64ARBNative, GlProgramUniformHandleui64ARB>('glProgramUniformHandleui64ARB'));
+  if (glProgramUniformHandleui64ARB == null && glGetProcAddress != null) {
+    glProgramUniformHandleui64ARB =  tryCall(() => Pointer<NativeFunction<GlProgramUniformHandleui64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformHandleui64ARB'))).asFunction<GlProgramUniformHandleui64ARB>());
+  }
+  glProgramUniformHandleui64vARB =  tryCall(() => lib.lookupFunction<GlProgramUniformHandleui64vARBNative, GlProgramUniformHandleui64vARB>('glProgramUniformHandleui64vARB'));
+  if (glProgramUniformHandleui64vARB == null && glGetProcAddress != null) {
+    glProgramUniformHandleui64vARB =  tryCall(() => Pointer<NativeFunction<GlProgramUniformHandleui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformHandleui64vARB'))).asFunction<GlProgramUniformHandleui64vARB>());
+  }
+  glIsTextureHandleResidentARB =  tryCall(() => lib.lookupFunction<GlIsTextureHandleResidentARBNative, GlIsTextureHandleResidentARB>('glIsTextureHandleResidentARB'));
+  if (glIsTextureHandleResidentARB == null && glGetProcAddress != null) {
+    glIsTextureHandleResidentARB =  tryCall(() => Pointer<NativeFunction<GlIsTextureHandleResidentARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsTextureHandleResidentARB'))).asFunction<GlIsTextureHandleResidentARB>());
+  }
+  glIsImageHandleResidentARB =  tryCall(() => lib.lookupFunction<GlIsImageHandleResidentARBNative, GlIsImageHandleResidentARB>('glIsImageHandleResidentARB'));
+  if (glIsImageHandleResidentARB == null && glGetProcAddress != null) {
+    glIsImageHandleResidentARB =  tryCall(() => Pointer<NativeFunction<GlIsImageHandleResidentARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsImageHandleResidentARB'))).asFunction<GlIsImageHandleResidentARB>());
+  }
+  glVertexAttribL1ui64ARB =  tryCall(() => lib.lookupFunction<GlVertexAttribL1ui64ARBNative, GlVertexAttribL1ui64ARB>('glVertexAttribL1ui64ARB'));
+  if (glVertexAttribL1ui64ARB == null && glGetProcAddress != null) {
+    glVertexAttribL1ui64ARB =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL1ui64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL1ui64ARB'))).asFunction<GlVertexAttribL1ui64ARB>());
+  }
+  glVertexAttribL1ui64vARB =  tryCall(() => lib.lookupFunction<GlVertexAttribL1ui64vARBNative, GlVertexAttribL1ui64vARB>('glVertexAttribL1ui64vARB'));
+  if (glVertexAttribL1ui64vARB == null && glGetProcAddress != null) {
+    glVertexAttribL1ui64vARB =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL1ui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL1ui64vARB'))).asFunction<GlVertexAttribL1ui64vARB>());
+  }
+  glGetVertexAttribLui64vARB =  tryCall(() => lib.lookupFunction<GlGetVertexAttribLui64vARBNative, GlGetVertexAttribLui64vARB>('glGetVertexAttribLui64vARB'));
+  if (glGetVertexAttribLui64vARB == null && glGetProcAddress != null) {
+    glGetVertexAttribLui64vARB =  tryCall(() => Pointer<NativeFunction<GlGetVertexAttribLui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexAttribLui64vARB'))).asFunction<GlGetVertexAttribLui64vARB>());
+  }
+  glCreateSyncFromCLeventARB =  tryCall(() => lib.lookupFunction<GlCreateSyncFromCLeventARBNative, GlCreateSyncFromCLeventARB>('glCreateSyncFromCLeventARB'));
+  if (glCreateSyncFromCLeventARB == null && glGetProcAddress != null) {
+    glCreateSyncFromCLeventARB =  tryCall(() => Pointer<NativeFunction<GlCreateSyncFromCLeventARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateSyncFromCLeventARB'))).asFunction<GlCreateSyncFromCLeventARB>());
+  }
+  glDispatchComputeGroupSizeARB =  tryCall(() => lib.lookupFunction<GlDispatchComputeGroupSizeARBNative, GlDispatchComputeGroupSizeARB>('glDispatchComputeGroupSizeARB'));
+  if (glDispatchComputeGroupSizeARB == null && glGetProcAddress != null) {
+    glDispatchComputeGroupSizeARB =  tryCall(() => Pointer<NativeFunction<GlDispatchComputeGroupSizeARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDispatchComputeGroupSizeARB'))).asFunction<GlDispatchComputeGroupSizeARB>());
+  }
+  glDebugMessageControlARB =  tryCall(() => lib.lookupFunction<GlDebugMessageControlARBNative, GlDebugMessageControlARB>('glDebugMessageControlARB'));
+  if (glDebugMessageControlARB == null && glGetProcAddress != null) {
+    glDebugMessageControlARB =  tryCall(() => Pointer<NativeFunction<GlDebugMessageControlARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDebugMessageControlARB'))).asFunction<GlDebugMessageControlARB>());
+  }
+  glDebugMessageInsertARB =  tryCall(() => lib.lookupFunction<GlDebugMessageInsertARBNative, GlDebugMessageInsertARB>('glDebugMessageInsertARB'));
+  if (glDebugMessageInsertARB == null && glGetProcAddress != null) {
+    glDebugMessageInsertARB =  tryCall(() => Pointer<NativeFunction<GlDebugMessageInsertARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDebugMessageInsertARB'))).asFunction<GlDebugMessageInsertARB>());
+  }
+  glDebugMessageCallbackARB =  tryCall(() => lib.lookupFunction<GlDebugMessageCallbackARBNative, GlDebugMessageCallbackARB>('glDebugMessageCallbackARB'));
+  if (glDebugMessageCallbackARB == null && glGetProcAddress != null) {
+    glDebugMessageCallbackARB =  tryCall(() => Pointer<NativeFunction<GlDebugMessageCallbackARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDebugMessageCallbackARB'))).asFunction<GlDebugMessageCallbackARB>());
+  }
+  glGetDebugMessageLogARB =  tryCall(() => lib.lookupFunction<GlGetDebugMessageLogARBNative, GlGetDebugMessageLogARB>('glGetDebugMessageLogARB'));
+  if (glGetDebugMessageLogARB == null && glGetProcAddress != null) {
+    glGetDebugMessageLogARB =  tryCall(() => Pointer<NativeFunction<GlGetDebugMessageLogARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetDebugMessageLogARB'))).asFunction<GlGetDebugMessageLogARB>());
+  }
+  glBlendEquationiARB =  tryCall(() => lib.lookupFunction<GlBlendEquationiARBNative, GlBlendEquationiARB>('glBlendEquationiARB'));
+  if (glBlendEquationiARB == null && glGetProcAddress != null) {
+    glBlendEquationiARB =  tryCall(() => Pointer<NativeFunction<GlBlendEquationiARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendEquationiARB'))).asFunction<GlBlendEquationiARB>());
+  }
+  glBlendEquationSeparateiARB =  tryCall(() => lib.lookupFunction<GlBlendEquationSeparateiARBNative, GlBlendEquationSeparateiARB>('glBlendEquationSeparateiARB'));
+  if (glBlendEquationSeparateiARB == null && glGetProcAddress != null) {
+    glBlendEquationSeparateiARB =  tryCall(() => Pointer<NativeFunction<GlBlendEquationSeparateiARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendEquationSeparateiARB'))).asFunction<GlBlendEquationSeparateiARB>());
+  }
+  glBlendFunciARB =  tryCall(() => lib.lookupFunction<GlBlendFunciARBNative, GlBlendFunciARB>('glBlendFunciARB'));
+  if (glBlendFunciARB == null && glGetProcAddress != null) {
+    glBlendFunciARB =  tryCall(() => Pointer<NativeFunction<GlBlendFunciARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendFunciARB'))).asFunction<GlBlendFunciARB>());
+  }
+  glBlendFuncSeparateiARB =  tryCall(() => lib.lookupFunction<GlBlendFuncSeparateiARBNative, GlBlendFuncSeparateiARB>('glBlendFuncSeparateiARB'));
+  if (glBlendFuncSeparateiARB == null && glGetProcAddress != null) {
+    glBlendFuncSeparateiARB =  tryCall(() => Pointer<NativeFunction<GlBlendFuncSeparateiARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendFuncSeparateiARB'))).asFunction<GlBlendFuncSeparateiARB>());
+  }
+  glDrawArraysInstancedARB =  tryCall(() => lib.lookupFunction<GlDrawArraysInstancedARBNative, GlDrawArraysInstancedARB>('glDrawArraysInstancedARB'));
+  if (glDrawArraysInstancedARB == null && glGetProcAddress != null) {
+    glDrawArraysInstancedARB =  tryCall(() => Pointer<NativeFunction<GlDrawArraysInstancedARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawArraysInstancedARB'))).asFunction<GlDrawArraysInstancedARB>());
+  }
+  glDrawElementsInstancedARB =  tryCall(() => lib.lookupFunction<GlDrawElementsInstancedARBNative, GlDrawElementsInstancedARB>('glDrawElementsInstancedARB'));
+  if (glDrawElementsInstancedARB == null && glGetProcAddress != null) {
+    glDrawElementsInstancedARB =  tryCall(() => Pointer<NativeFunction<GlDrawElementsInstancedARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawElementsInstancedARB'))).asFunction<GlDrawElementsInstancedARB>());
+  }
+  glProgramParameteriARB =  tryCall(() => lib.lookupFunction<GlProgramParameteriARBNative, GlProgramParameteriARB>('glProgramParameteriARB'));
+  if (glProgramParameteriARB == null && glGetProcAddress != null) {
+    glProgramParameteriARB =  tryCall(() => Pointer<NativeFunction<GlProgramParameteriARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramParameteriARB'))).asFunction<GlProgramParameteriARB>());
+  }
+  glFramebufferTextureARB =  tryCall(() => lib.lookupFunction<GlFramebufferTextureARBNative, GlFramebufferTextureARB>('glFramebufferTextureARB'));
+  if (glFramebufferTextureARB == null && glGetProcAddress != null) {
+    glFramebufferTextureARB =  tryCall(() => Pointer<NativeFunction<GlFramebufferTextureARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferTextureARB'))).asFunction<GlFramebufferTextureARB>());
+  }
+  glFramebufferTextureLayerARB =  tryCall(() => lib.lookupFunction<GlFramebufferTextureLayerARBNative, GlFramebufferTextureLayerARB>('glFramebufferTextureLayerARB'));
+  if (glFramebufferTextureLayerARB == null && glGetProcAddress != null) {
+    glFramebufferTextureLayerARB =  tryCall(() => Pointer<NativeFunction<GlFramebufferTextureLayerARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferTextureLayerARB'))).asFunction<GlFramebufferTextureLayerARB>());
+  }
+  glFramebufferTextureFaceARB =  tryCall(() => lib.lookupFunction<GlFramebufferTextureFaceARBNative, GlFramebufferTextureFaceARB>('glFramebufferTextureFaceARB'));
+  if (glFramebufferTextureFaceARB == null && glGetProcAddress != null) {
+    glFramebufferTextureFaceARB =  tryCall(() => Pointer<NativeFunction<GlFramebufferTextureFaceARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferTextureFaceARB'))).asFunction<GlFramebufferTextureFaceARB>());
+  }
+  glSpecializeShaderARB =  tryCall(() => lib.lookupFunction<GlSpecializeShaderARBNative, GlSpecializeShaderARB>('glSpecializeShaderARB'));
+  if (glSpecializeShaderARB == null && glGetProcAddress != null) {
+    glSpecializeShaderARB =  tryCall(() => Pointer<NativeFunction<GlSpecializeShaderARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSpecializeShaderARB'))).asFunction<GlSpecializeShaderARB>());
+  }
+  glUniform1i64ARB =  tryCall(() => lib.lookupFunction<GlUniform1i64ARBNative, GlUniform1i64ARB>('glUniform1i64ARB'));
+  if (glUniform1i64ARB == null && glGetProcAddress != null) {
+    glUniform1i64ARB =  tryCall(() => Pointer<NativeFunction<GlUniform1i64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1i64ARB'))).asFunction<GlUniform1i64ARB>());
+  }
+  glUniform2i64ARB =  tryCall(() => lib.lookupFunction<GlUniform2i64ARBNative, GlUniform2i64ARB>('glUniform2i64ARB'));
+  if (glUniform2i64ARB == null && glGetProcAddress != null) {
+    glUniform2i64ARB =  tryCall(() => Pointer<NativeFunction<GlUniform2i64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2i64ARB'))).asFunction<GlUniform2i64ARB>());
+  }
+  glUniform3i64ARB =  tryCall(() => lib.lookupFunction<GlUniform3i64ARBNative, GlUniform3i64ARB>('glUniform3i64ARB'));
+  if (glUniform3i64ARB == null && glGetProcAddress != null) {
+    glUniform3i64ARB =  tryCall(() => Pointer<NativeFunction<GlUniform3i64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3i64ARB'))).asFunction<GlUniform3i64ARB>());
+  }
+  glUniform4i64ARB =  tryCall(() => lib.lookupFunction<GlUniform4i64ARBNative, GlUniform4i64ARB>('glUniform4i64ARB'));
+  if (glUniform4i64ARB == null && glGetProcAddress != null) {
+    glUniform4i64ARB =  tryCall(() => Pointer<NativeFunction<GlUniform4i64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4i64ARB'))).asFunction<GlUniform4i64ARB>());
+  }
+  glUniform1i64vARB =  tryCall(() => lib.lookupFunction<GlUniform1i64vARBNative, GlUniform1i64vARB>('glUniform1i64vARB'));
+  if (glUniform1i64vARB == null && glGetProcAddress != null) {
+    glUniform1i64vARB =  tryCall(() => Pointer<NativeFunction<GlUniform1i64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1i64vARB'))).asFunction<GlUniform1i64vARB>());
+  }
+  glUniform2i64vARB =  tryCall(() => lib.lookupFunction<GlUniform2i64vARBNative, GlUniform2i64vARB>('glUniform2i64vARB'));
+  if (glUniform2i64vARB == null && glGetProcAddress != null) {
+    glUniform2i64vARB =  tryCall(() => Pointer<NativeFunction<GlUniform2i64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2i64vARB'))).asFunction<GlUniform2i64vARB>());
+  }
+  glUniform3i64vARB =  tryCall(() => lib.lookupFunction<GlUniform3i64vARBNative, GlUniform3i64vARB>('glUniform3i64vARB'));
+  if (glUniform3i64vARB == null && glGetProcAddress != null) {
+    glUniform3i64vARB =  tryCall(() => Pointer<NativeFunction<GlUniform3i64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3i64vARB'))).asFunction<GlUniform3i64vARB>());
+  }
+  glUniform4i64vARB =  tryCall(() => lib.lookupFunction<GlUniform4i64vARBNative, GlUniform4i64vARB>('glUniform4i64vARB'));
+  if (glUniform4i64vARB == null && glGetProcAddress != null) {
+    glUniform4i64vARB =  tryCall(() => Pointer<NativeFunction<GlUniform4i64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4i64vARB'))).asFunction<GlUniform4i64vARB>());
+  }
+  glUniform1ui64ARB =  tryCall(() => lib.lookupFunction<GlUniform1ui64ARBNative, GlUniform1ui64ARB>('glUniform1ui64ARB'));
+  if (glUniform1ui64ARB == null && glGetProcAddress != null) {
+    glUniform1ui64ARB =  tryCall(() => Pointer<NativeFunction<GlUniform1ui64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1ui64ARB'))).asFunction<GlUniform1ui64ARB>());
+  }
+  glUniform2ui64ARB =  tryCall(() => lib.lookupFunction<GlUniform2ui64ARBNative, GlUniform2ui64ARB>('glUniform2ui64ARB'));
+  if (glUniform2ui64ARB == null && glGetProcAddress != null) {
+    glUniform2ui64ARB =  tryCall(() => Pointer<NativeFunction<GlUniform2ui64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2ui64ARB'))).asFunction<GlUniform2ui64ARB>());
+  }
+  glUniform3ui64ARB =  tryCall(() => lib.lookupFunction<GlUniform3ui64ARBNative, GlUniform3ui64ARB>('glUniform3ui64ARB'));
+  if (glUniform3ui64ARB == null && glGetProcAddress != null) {
+    glUniform3ui64ARB =  tryCall(() => Pointer<NativeFunction<GlUniform3ui64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3ui64ARB'))).asFunction<GlUniform3ui64ARB>());
+  }
+  glUniform4ui64ARB =  tryCall(() => lib.lookupFunction<GlUniform4ui64ARBNative, GlUniform4ui64ARB>('glUniform4ui64ARB'));
+  if (glUniform4ui64ARB == null && glGetProcAddress != null) {
+    glUniform4ui64ARB =  tryCall(() => Pointer<NativeFunction<GlUniform4ui64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4ui64ARB'))).asFunction<GlUniform4ui64ARB>());
+  }
+  glUniform1ui64vARB =  tryCall(() => lib.lookupFunction<GlUniform1ui64vARBNative, GlUniform1ui64vARB>('glUniform1ui64vARB'));
+  if (glUniform1ui64vARB == null && glGetProcAddress != null) {
+    glUniform1ui64vARB =  tryCall(() => Pointer<NativeFunction<GlUniform1ui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1ui64vARB'))).asFunction<GlUniform1ui64vARB>());
+  }
+  glUniform2ui64vARB =  tryCall(() => lib.lookupFunction<GlUniform2ui64vARBNative, GlUniform2ui64vARB>('glUniform2ui64vARB'));
+  if (glUniform2ui64vARB == null && glGetProcAddress != null) {
+    glUniform2ui64vARB =  tryCall(() => Pointer<NativeFunction<GlUniform2ui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2ui64vARB'))).asFunction<GlUniform2ui64vARB>());
+  }
+  glUniform3ui64vARB =  tryCall(() => lib.lookupFunction<GlUniform3ui64vARBNative, GlUniform3ui64vARB>('glUniform3ui64vARB'));
+  if (glUniform3ui64vARB == null && glGetProcAddress != null) {
+    glUniform3ui64vARB =  tryCall(() => Pointer<NativeFunction<GlUniform3ui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3ui64vARB'))).asFunction<GlUniform3ui64vARB>());
+  }
+  glUniform4ui64vARB =  tryCall(() => lib.lookupFunction<GlUniform4ui64vARBNative, GlUniform4ui64vARB>('glUniform4ui64vARB'));
+  if (glUniform4ui64vARB == null && glGetProcAddress != null) {
+    glUniform4ui64vARB =  tryCall(() => Pointer<NativeFunction<GlUniform4ui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4ui64vARB'))).asFunction<GlUniform4ui64vARB>());
+  }
+  glGetUniformi64vARB =  tryCall(() => lib.lookupFunction<GlGetUniformi64vARBNative, GlGetUniformi64vARB>('glGetUniformi64vARB'));
+  if (glGetUniformi64vARB == null && glGetProcAddress != null) {
+    glGetUniformi64vARB =  tryCall(() => Pointer<NativeFunction<GlGetUniformi64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetUniformi64vARB'))).asFunction<GlGetUniformi64vARB>());
+  }
+  glGetUniformui64vARB =  tryCall(() => lib.lookupFunction<GlGetUniformui64vARBNative, GlGetUniformui64vARB>('glGetUniformui64vARB'));
+  if (glGetUniformui64vARB == null && glGetProcAddress != null) {
+    glGetUniformui64vARB =  tryCall(() => Pointer<NativeFunction<GlGetUniformui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetUniformui64vARB'))).asFunction<GlGetUniformui64vARB>());
+  }
+  glGetnUniformi64vARB =  tryCall(() => lib.lookupFunction<GlGetnUniformi64vARBNative, GlGetnUniformi64vARB>('glGetnUniformi64vARB'));
+  if (glGetnUniformi64vARB == null && glGetProcAddress != null) {
+    glGetnUniformi64vARB =  tryCall(() => Pointer<NativeFunction<GlGetnUniformi64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnUniformi64vARB'))).asFunction<GlGetnUniformi64vARB>());
+  }
+  glGetnUniformui64vARB =  tryCall(() => lib.lookupFunction<GlGetnUniformui64vARBNative, GlGetnUniformui64vARB>('glGetnUniformui64vARB'));
+  if (glGetnUniformui64vARB == null && glGetProcAddress != null) {
+    glGetnUniformui64vARB =  tryCall(() => Pointer<NativeFunction<GlGetnUniformui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnUniformui64vARB'))).asFunction<GlGetnUniformui64vARB>());
+  }
+  glProgramUniform1i64ARB =  tryCall(() => lib.lookupFunction<GlProgramUniform1i64ARBNative, GlProgramUniform1i64ARB>('glProgramUniform1i64ARB'));
+  if (glProgramUniform1i64ARB == null && glGetProcAddress != null) {
+    glProgramUniform1i64ARB =  tryCall(() => Pointer<NativeFunction<GlProgramUniform1i64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1i64ARB'))).asFunction<GlProgramUniform1i64ARB>());
+  }
+  glProgramUniform2i64ARB =  tryCall(() => lib.lookupFunction<GlProgramUniform2i64ARBNative, GlProgramUniform2i64ARB>('glProgramUniform2i64ARB'));
+  if (glProgramUniform2i64ARB == null && glGetProcAddress != null) {
+    glProgramUniform2i64ARB =  tryCall(() => Pointer<NativeFunction<GlProgramUniform2i64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2i64ARB'))).asFunction<GlProgramUniform2i64ARB>());
+  }
+  glProgramUniform3i64ARB =  tryCall(() => lib.lookupFunction<GlProgramUniform3i64ARBNative, GlProgramUniform3i64ARB>('glProgramUniform3i64ARB'));
+  if (glProgramUniform3i64ARB == null && glGetProcAddress != null) {
+    glProgramUniform3i64ARB =  tryCall(() => Pointer<NativeFunction<GlProgramUniform3i64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3i64ARB'))).asFunction<GlProgramUniform3i64ARB>());
+  }
+  glProgramUniform4i64ARB =  tryCall(() => lib.lookupFunction<GlProgramUniform4i64ARBNative, GlProgramUniform4i64ARB>('glProgramUniform4i64ARB'));
+  if (glProgramUniform4i64ARB == null && glGetProcAddress != null) {
+    glProgramUniform4i64ARB =  tryCall(() => Pointer<NativeFunction<GlProgramUniform4i64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4i64ARB'))).asFunction<GlProgramUniform4i64ARB>());
+  }
+  glProgramUniform1i64vARB =  tryCall(() => lib.lookupFunction<GlProgramUniform1i64vARBNative, GlProgramUniform1i64vARB>('glProgramUniform1i64vARB'));
+  if (glProgramUniform1i64vARB == null && glGetProcAddress != null) {
+    glProgramUniform1i64vARB =  tryCall(() => Pointer<NativeFunction<GlProgramUniform1i64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1i64vARB'))).asFunction<GlProgramUniform1i64vARB>());
+  }
+  glProgramUniform2i64vARB =  tryCall(() => lib.lookupFunction<GlProgramUniform2i64vARBNative, GlProgramUniform2i64vARB>('glProgramUniform2i64vARB'));
+  if (glProgramUniform2i64vARB == null && glGetProcAddress != null) {
+    glProgramUniform2i64vARB =  tryCall(() => Pointer<NativeFunction<GlProgramUniform2i64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2i64vARB'))).asFunction<GlProgramUniform2i64vARB>());
+  }
+  glProgramUniform3i64vARB =  tryCall(() => lib.lookupFunction<GlProgramUniform3i64vARBNative, GlProgramUniform3i64vARB>('glProgramUniform3i64vARB'));
+  if (glProgramUniform3i64vARB == null && glGetProcAddress != null) {
+    glProgramUniform3i64vARB =  tryCall(() => Pointer<NativeFunction<GlProgramUniform3i64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3i64vARB'))).asFunction<GlProgramUniform3i64vARB>());
+  }
+  glProgramUniform4i64vARB =  tryCall(() => lib.lookupFunction<GlProgramUniform4i64vARBNative, GlProgramUniform4i64vARB>('glProgramUniform4i64vARB'));
+  if (glProgramUniform4i64vARB == null && glGetProcAddress != null) {
+    glProgramUniform4i64vARB =  tryCall(() => Pointer<NativeFunction<GlProgramUniform4i64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4i64vARB'))).asFunction<GlProgramUniform4i64vARB>());
+  }
+  glProgramUniform1ui64ARB =  tryCall(() => lib.lookupFunction<GlProgramUniform1ui64ARBNative, GlProgramUniform1ui64ARB>('glProgramUniform1ui64ARB'));
+  if (glProgramUniform1ui64ARB == null && glGetProcAddress != null) {
+    glProgramUniform1ui64ARB =  tryCall(() => Pointer<NativeFunction<GlProgramUniform1ui64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1ui64ARB'))).asFunction<GlProgramUniform1ui64ARB>());
+  }
+  glProgramUniform2ui64ARB =  tryCall(() => lib.lookupFunction<GlProgramUniform2ui64ARBNative, GlProgramUniform2ui64ARB>('glProgramUniform2ui64ARB'));
+  if (glProgramUniform2ui64ARB == null && glGetProcAddress != null) {
+    glProgramUniform2ui64ARB =  tryCall(() => Pointer<NativeFunction<GlProgramUniform2ui64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2ui64ARB'))).asFunction<GlProgramUniform2ui64ARB>());
+  }
+  glProgramUniform3ui64ARB =  tryCall(() => lib.lookupFunction<GlProgramUniform3ui64ARBNative, GlProgramUniform3ui64ARB>('glProgramUniform3ui64ARB'));
+  if (glProgramUniform3ui64ARB == null && glGetProcAddress != null) {
+    glProgramUniform3ui64ARB =  tryCall(() => Pointer<NativeFunction<GlProgramUniform3ui64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3ui64ARB'))).asFunction<GlProgramUniform3ui64ARB>());
+  }
+  glProgramUniform4ui64ARB =  tryCall(() => lib.lookupFunction<GlProgramUniform4ui64ARBNative, GlProgramUniform4ui64ARB>('glProgramUniform4ui64ARB'));
+  if (glProgramUniform4ui64ARB == null && glGetProcAddress != null) {
+    glProgramUniform4ui64ARB =  tryCall(() => Pointer<NativeFunction<GlProgramUniform4ui64ARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4ui64ARB'))).asFunction<GlProgramUniform4ui64ARB>());
+  }
+  glProgramUniform1ui64vARB =  tryCall(() => lib.lookupFunction<GlProgramUniform1ui64vARBNative, GlProgramUniform1ui64vARB>('glProgramUniform1ui64vARB'));
+  if (glProgramUniform1ui64vARB == null && glGetProcAddress != null) {
+    glProgramUniform1ui64vARB =  tryCall(() => Pointer<NativeFunction<GlProgramUniform1ui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1ui64vARB'))).asFunction<GlProgramUniform1ui64vARB>());
+  }
+  glProgramUniform2ui64vARB =  tryCall(() => lib.lookupFunction<GlProgramUniform2ui64vARBNative, GlProgramUniform2ui64vARB>('glProgramUniform2ui64vARB'));
+  if (glProgramUniform2ui64vARB == null && glGetProcAddress != null) {
+    glProgramUniform2ui64vARB =  tryCall(() => Pointer<NativeFunction<GlProgramUniform2ui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2ui64vARB'))).asFunction<GlProgramUniform2ui64vARB>());
+  }
+  glProgramUniform3ui64vARB =  tryCall(() => lib.lookupFunction<GlProgramUniform3ui64vARBNative, GlProgramUniform3ui64vARB>('glProgramUniform3ui64vARB'));
+  if (glProgramUniform3ui64vARB == null && glGetProcAddress != null) {
+    glProgramUniform3ui64vARB =  tryCall(() => Pointer<NativeFunction<GlProgramUniform3ui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3ui64vARB'))).asFunction<GlProgramUniform3ui64vARB>());
+  }
+  glProgramUniform4ui64vARB =  tryCall(() => lib.lookupFunction<GlProgramUniform4ui64vARBNative, GlProgramUniform4ui64vARB>('glProgramUniform4ui64vARB'));
+  if (glProgramUniform4ui64vARB == null && glGetProcAddress != null) {
+    glProgramUniform4ui64vARB =  tryCall(() => Pointer<NativeFunction<GlProgramUniform4ui64vARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4ui64vARB'))).asFunction<GlProgramUniform4ui64vARB>());
+  }
+  glMultiDrawArraysIndirectCountARB =  tryCall(() => lib.lookupFunction<GlMultiDrawArraysIndirectCountARBNative, GlMultiDrawArraysIndirectCountARB>('glMultiDrawArraysIndirectCountARB'));
+  if (glMultiDrawArraysIndirectCountARB == null && glGetProcAddress != null) {
+    glMultiDrawArraysIndirectCountARB =  tryCall(() => Pointer<NativeFunction<GlMultiDrawArraysIndirectCountARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawArraysIndirectCountARB'))).asFunction<GlMultiDrawArraysIndirectCountARB>());
+  }
+  glMultiDrawElementsIndirectCountARB =  tryCall(() => lib.lookupFunction<GlMultiDrawElementsIndirectCountARBNative, GlMultiDrawElementsIndirectCountARB>('glMultiDrawElementsIndirectCountARB'));
+  if (glMultiDrawElementsIndirectCountARB == null && glGetProcAddress != null) {
+    glMultiDrawElementsIndirectCountARB =  tryCall(() => Pointer<NativeFunction<GlMultiDrawElementsIndirectCountARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawElementsIndirectCountARB'))).asFunction<GlMultiDrawElementsIndirectCountARB>());
+  }
+  glVertexAttribDivisorARB =  tryCall(() => lib.lookupFunction<GlVertexAttribDivisorARBNative, GlVertexAttribDivisorARB>('glVertexAttribDivisorARB'));
+  if (glVertexAttribDivisorARB == null && glGetProcAddress != null) {
+    glVertexAttribDivisorARB =  tryCall(() => Pointer<NativeFunction<GlVertexAttribDivisorARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribDivisorARB'))).asFunction<GlVertexAttribDivisorARB>());
+  }
+  glMaxShaderCompilerThreadsARB =  tryCall(() => lib.lookupFunction<GlMaxShaderCompilerThreadsARBNative, GlMaxShaderCompilerThreadsARB>('glMaxShaderCompilerThreadsARB'));
+  if (glMaxShaderCompilerThreadsARB == null && glGetProcAddress != null) {
+    glMaxShaderCompilerThreadsARB =  tryCall(() => Pointer<NativeFunction<GlMaxShaderCompilerThreadsARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMaxShaderCompilerThreadsARB'))).asFunction<GlMaxShaderCompilerThreadsARB>());
+  }
+  glGetGraphicsResetStatusARB =  tryCall(() => lib.lookupFunction<GlGetGraphicsResetStatusARBNative, GlGetGraphicsResetStatusARB>('glGetGraphicsResetStatusARB'));
+  if (glGetGraphicsResetStatusARB == null && glGetProcAddress != null) {
+    glGetGraphicsResetStatusARB =  tryCall(() => Pointer<NativeFunction<GlGetGraphicsResetStatusARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetGraphicsResetStatusARB'))).asFunction<GlGetGraphicsResetStatusARB>());
+  }
+  glGetnTexImageARB =  tryCall(() => lib.lookupFunction<GlGetnTexImageARBNative, GlGetnTexImageARB>('glGetnTexImageARB'));
+  if (glGetnTexImageARB == null && glGetProcAddress != null) {
+    glGetnTexImageARB =  tryCall(() => Pointer<NativeFunction<GlGetnTexImageARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnTexImageARB'))).asFunction<GlGetnTexImageARB>());
+  }
+  glReadnPixelsARB =  tryCall(() => lib.lookupFunction<GlReadnPixelsARBNative, GlReadnPixelsARB>('glReadnPixelsARB'));
+  if (glReadnPixelsARB == null && glGetProcAddress != null) {
+    glReadnPixelsARB =  tryCall(() => Pointer<NativeFunction<GlReadnPixelsARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glReadnPixelsARB'))).asFunction<GlReadnPixelsARB>());
+  }
+  glGetnCompressedTexImageARB =  tryCall(() => lib.lookupFunction<GlGetnCompressedTexImageARBNative, GlGetnCompressedTexImageARB>('glGetnCompressedTexImageARB'));
+  if (glGetnCompressedTexImageARB == null && glGetProcAddress != null) {
+    glGetnCompressedTexImageARB =  tryCall(() => Pointer<NativeFunction<GlGetnCompressedTexImageARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnCompressedTexImageARB'))).asFunction<GlGetnCompressedTexImageARB>());
+  }
+  glGetnUniformfvARB =  tryCall(() => lib.lookupFunction<GlGetnUniformfvARBNative, GlGetnUniformfvARB>('glGetnUniformfvARB'));
+  if (glGetnUniformfvARB == null && glGetProcAddress != null) {
+    glGetnUniformfvARB =  tryCall(() => Pointer<NativeFunction<GlGetnUniformfvARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnUniformfvARB'))).asFunction<GlGetnUniformfvARB>());
+  }
+  glGetnUniformivARB =  tryCall(() => lib.lookupFunction<GlGetnUniformivARBNative, GlGetnUniformivARB>('glGetnUniformivARB'));
+  if (glGetnUniformivARB == null && glGetProcAddress != null) {
+    glGetnUniformivARB =  tryCall(() => Pointer<NativeFunction<GlGetnUniformivARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnUniformivARB'))).asFunction<GlGetnUniformivARB>());
+  }
+  glGetnUniformuivARB =  tryCall(() => lib.lookupFunction<GlGetnUniformuivARBNative, GlGetnUniformuivARB>('glGetnUniformuivARB'));
+  if (glGetnUniformuivARB == null && glGetProcAddress != null) {
+    glGetnUniformuivARB =  tryCall(() => Pointer<NativeFunction<GlGetnUniformuivARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnUniformuivARB'))).asFunction<GlGetnUniformuivARB>());
+  }
+  glGetnUniformdvARB =  tryCall(() => lib.lookupFunction<GlGetnUniformdvARBNative, GlGetnUniformdvARB>('glGetnUniformdvARB'));
+  if (glGetnUniformdvARB == null && glGetProcAddress != null) {
+    glGetnUniformdvARB =  tryCall(() => Pointer<NativeFunction<GlGetnUniformdvARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetnUniformdvARB'))).asFunction<GlGetnUniformdvARB>());
+  }
+  glFramebufferSampleLocationsfvARB =  tryCall(() => lib.lookupFunction<GlFramebufferSampleLocationsfvARBNative, GlFramebufferSampleLocationsfvARB>('glFramebufferSampleLocationsfvARB'));
+  if (glFramebufferSampleLocationsfvARB == null && glGetProcAddress != null) {
+    glFramebufferSampleLocationsfvARB =  tryCall(() => Pointer<NativeFunction<GlFramebufferSampleLocationsfvARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferSampleLocationsfvARB'))).asFunction<GlFramebufferSampleLocationsfvARB>());
+  }
+  glNamedFramebufferSampleLocationsfvARB =  tryCall(() => lib.lookupFunction<GlNamedFramebufferSampleLocationsfvARBNative, GlNamedFramebufferSampleLocationsfvARB>('glNamedFramebufferSampleLocationsfvARB'));
+  if (glNamedFramebufferSampleLocationsfvARB == null && glGetProcAddress != null) {
+    glNamedFramebufferSampleLocationsfvARB =  tryCall(() => Pointer<NativeFunction<GlNamedFramebufferSampleLocationsfvARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferSampleLocationsfvARB'))).asFunction<GlNamedFramebufferSampleLocationsfvARB>());
+  }
+  glEvaluateDepthValuesARB =  tryCall(() => lib.lookupFunction<GlEvaluateDepthValuesARBNative, GlEvaluateDepthValuesARB>('glEvaluateDepthValuesARB'));
+  if (glEvaluateDepthValuesARB == null && glGetProcAddress != null) {
+    glEvaluateDepthValuesARB =  tryCall(() => Pointer<NativeFunction<GlEvaluateDepthValuesARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEvaluateDepthValuesARB'))).asFunction<GlEvaluateDepthValuesARB>());
+  }
+  glMinSampleShadingARB =  tryCall(() => lib.lookupFunction<GlMinSampleShadingARBNative, GlMinSampleShadingARB>('glMinSampleShadingARB'));
+  if (glMinSampleShadingARB == null && glGetProcAddress != null) {
+    glMinSampleShadingARB =  tryCall(() => Pointer<NativeFunction<GlMinSampleShadingARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMinSampleShadingARB'))).asFunction<GlMinSampleShadingARB>());
+  }
+  glNamedStringARB =  tryCall(() => lib.lookupFunction<GlNamedStringARBNative, GlNamedStringARB>('glNamedStringARB'));
+  if (glNamedStringARB == null && glGetProcAddress != null) {
+    glNamedStringARB =  tryCall(() => Pointer<NativeFunction<GlNamedStringARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedStringARB'))).asFunction<GlNamedStringARB>());
+  }
+  glDeleteNamedStringARB =  tryCall(() => lib.lookupFunction<GlDeleteNamedStringARBNative, GlDeleteNamedStringARB>('glDeleteNamedStringARB'));
+  if (glDeleteNamedStringARB == null && glGetProcAddress != null) {
+    glDeleteNamedStringARB =  tryCall(() => Pointer<NativeFunction<GlDeleteNamedStringARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteNamedStringARB'))).asFunction<GlDeleteNamedStringARB>());
+  }
+  glCompileShaderIncludeARB =  tryCall(() => lib.lookupFunction<GlCompileShaderIncludeARBNative, GlCompileShaderIncludeARB>('glCompileShaderIncludeARB'));
+  if (glCompileShaderIncludeARB == null && glGetProcAddress != null) {
+    glCompileShaderIncludeARB =  tryCall(() => Pointer<NativeFunction<GlCompileShaderIncludeARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompileShaderIncludeARB'))).asFunction<GlCompileShaderIncludeARB>());
+  }
+  glIsNamedStringARB =  tryCall(() => lib.lookupFunction<GlIsNamedStringARBNative, GlIsNamedStringARB>('glIsNamedStringARB'));
+  if (glIsNamedStringARB == null && glGetProcAddress != null) {
+    glIsNamedStringARB =  tryCall(() => Pointer<NativeFunction<GlIsNamedStringARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsNamedStringARB'))).asFunction<GlIsNamedStringARB>());
+  }
+  glGetNamedStringARB =  tryCall(() => lib.lookupFunction<GlGetNamedStringARBNative, GlGetNamedStringARB>('glGetNamedStringARB'));
+  if (glGetNamedStringARB == null && glGetProcAddress != null) {
+    glGetNamedStringARB =  tryCall(() => Pointer<NativeFunction<GlGetNamedStringARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedStringARB'))).asFunction<GlGetNamedStringARB>());
+  }
+  glGetNamedStringivARB =  tryCall(() => lib.lookupFunction<GlGetNamedStringivARBNative, GlGetNamedStringivARB>('glGetNamedStringivARB'));
+  if (glGetNamedStringivARB == null && glGetProcAddress != null) {
+    glGetNamedStringivARB =  tryCall(() => Pointer<NativeFunction<GlGetNamedStringivARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedStringivARB'))).asFunction<GlGetNamedStringivARB>());
+  }
+  glBufferPageCommitmentARB =  tryCall(() => lib.lookupFunction<GlBufferPageCommitmentARBNative, GlBufferPageCommitmentARB>('glBufferPageCommitmentARB'));
+  if (glBufferPageCommitmentARB == null && glGetProcAddress != null) {
+    glBufferPageCommitmentARB =  tryCall(() => Pointer<NativeFunction<GlBufferPageCommitmentARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBufferPageCommitmentARB'))).asFunction<GlBufferPageCommitmentARB>());
+  }
+  glNamedBufferPageCommitmentEXT =  tryCall(() => lib.lookupFunction<GlNamedBufferPageCommitmentEXTNative, GlNamedBufferPageCommitmentEXT>('glNamedBufferPageCommitmentEXT'));
+  if (glNamedBufferPageCommitmentEXT == null && glGetProcAddress != null) {
+    glNamedBufferPageCommitmentEXT =  tryCall(() => Pointer<NativeFunction<GlNamedBufferPageCommitmentEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedBufferPageCommitmentEXT'))).asFunction<GlNamedBufferPageCommitmentEXT>());
+  }
+  glNamedBufferPageCommitmentARB =  tryCall(() => lib.lookupFunction<GlNamedBufferPageCommitmentARBNative, GlNamedBufferPageCommitmentARB>('glNamedBufferPageCommitmentARB'));
+  if (glNamedBufferPageCommitmentARB == null && glGetProcAddress != null) {
+    glNamedBufferPageCommitmentARB =  tryCall(() => Pointer<NativeFunction<GlNamedBufferPageCommitmentARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedBufferPageCommitmentARB'))).asFunction<GlNamedBufferPageCommitmentARB>());
+  }
+  glTexPageCommitmentARB =  tryCall(() => lib.lookupFunction<GlTexPageCommitmentARBNative, GlTexPageCommitmentARB>('glTexPageCommitmentARB'));
+  if (glTexPageCommitmentARB == null && glGetProcAddress != null) {
+    glTexPageCommitmentARB =  tryCall(() => Pointer<NativeFunction<GlTexPageCommitmentARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexPageCommitmentARB'))).asFunction<GlTexPageCommitmentARB>());
+  }
+  glTexBufferARB =  tryCall(() => lib.lookupFunction<GlTexBufferARBNative, GlTexBufferARB>('glTexBufferARB'));
+  if (glTexBufferARB == null && glGetProcAddress != null) {
+    glTexBufferARB =  tryCall(() => Pointer<NativeFunction<GlTexBufferARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexBufferARB'))).asFunction<GlTexBufferARB>());
+  }
+  glBlendBarrierKHR =  tryCall(() => lib.lookupFunction<GlBlendBarrierKHRNative, GlBlendBarrierKHR>('glBlendBarrierKHR'));
+  if (glBlendBarrierKHR == null && glGetProcAddress != null) {
+    glBlendBarrierKHR =  tryCall(() => Pointer<NativeFunction<GlBlendBarrierKHRNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendBarrierKHR'))).asFunction<GlBlendBarrierKHR>());
+  }
+  glMaxShaderCompilerThreadsKHR =  tryCall(() => lib.lookupFunction<GlMaxShaderCompilerThreadsKHRNative, GlMaxShaderCompilerThreadsKHR>('glMaxShaderCompilerThreadsKHR'));
+  if (glMaxShaderCompilerThreadsKHR == null && glGetProcAddress != null) {
+    glMaxShaderCompilerThreadsKHR =  tryCall(() => Pointer<NativeFunction<GlMaxShaderCompilerThreadsKHRNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMaxShaderCompilerThreadsKHR'))).asFunction<GlMaxShaderCompilerThreadsKHR>());
+  }
+  glRenderbufferStorageMultisampleAdvancedAMD =  tryCall(() => lib.lookupFunction<GlRenderbufferStorageMultisampleAdvancedAMDNative, GlRenderbufferStorageMultisampleAdvancedAMD>('glRenderbufferStorageMultisampleAdvancedAMD'));
+  if (glRenderbufferStorageMultisampleAdvancedAMD == null && glGetProcAddress != null) {
+    glRenderbufferStorageMultisampleAdvancedAMD =  tryCall(() => Pointer<NativeFunction<GlRenderbufferStorageMultisampleAdvancedAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glRenderbufferStorageMultisampleAdvancedAMD'))).asFunction<GlRenderbufferStorageMultisampleAdvancedAMD>());
+  }
+  glNamedRenderbufferStorageMultisampleAdvancedAMD =  tryCall(() => lib.lookupFunction<GlNamedRenderbufferStorageMultisampleAdvancedAMDNative, GlNamedRenderbufferStorageMultisampleAdvancedAMD>('glNamedRenderbufferStorageMultisampleAdvancedAMD'));
+  if (glNamedRenderbufferStorageMultisampleAdvancedAMD == null && glGetProcAddress != null) {
+    glNamedRenderbufferStorageMultisampleAdvancedAMD =  tryCall(() => Pointer<NativeFunction<GlNamedRenderbufferStorageMultisampleAdvancedAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedRenderbufferStorageMultisampleAdvancedAMD'))).asFunction<GlNamedRenderbufferStorageMultisampleAdvancedAMD>());
+  }
+  glGetPerfMonitorGroupsAMD =  tryCall(() => lib.lookupFunction<GlGetPerfMonitorGroupsAMDNative, GlGetPerfMonitorGroupsAMD>('glGetPerfMonitorGroupsAMD'));
+  if (glGetPerfMonitorGroupsAMD == null && glGetProcAddress != null) {
+    glGetPerfMonitorGroupsAMD =  tryCall(() => Pointer<NativeFunction<GlGetPerfMonitorGroupsAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPerfMonitorGroupsAMD'))).asFunction<GlGetPerfMonitorGroupsAMD>());
+  }
+  glGetPerfMonitorCountersAMD =  tryCall(() => lib.lookupFunction<GlGetPerfMonitorCountersAMDNative, GlGetPerfMonitorCountersAMD>('glGetPerfMonitorCountersAMD'));
+  if (glGetPerfMonitorCountersAMD == null && glGetProcAddress != null) {
+    glGetPerfMonitorCountersAMD =  tryCall(() => Pointer<NativeFunction<GlGetPerfMonitorCountersAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPerfMonitorCountersAMD'))).asFunction<GlGetPerfMonitorCountersAMD>());
+  }
+  glGetPerfMonitorGroupStringAMD =  tryCall(() => lib.lookupFunction<GlGetPerfMonitorGroupStringAMDNative, GlGetPerfMonitorGroupStringAMD>('glGetPerfMonitorGroupStringAMD'));
+  if (glGetPerfMonitorGroupStringAMD == null && glGetProcAddress != null) {
+    glGetPerfMonitorGroupStringAMD =  tryCall(() => Pointer<NativeFunction<GlGetPerfMonitorGroupStringAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPerfMonitorGroupStringAMD'))).asFunction<GlGetPerfMonitorGroupStringAMD>());
+  }
+  glGetPerfMonitorCounterStringAMD =  tryCall(() => lib.lookupFunction<GlGetPerfMonitorCounterStringAMDNative, GlGetPerfMonitorCounterStringAMD>('glGetPerfMonitorCounterStringAMD'));
+  if (glGetPerfMonitorCounterStringAMD == null && glGetProcAddress != null) {
+    glGetPerfMonitorCounterStringAMD =  tryCall(() => Pointer<NativeFunction<GlGetPerfMonitorCounterStringAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPerfMonitorCounterStringAMD'))).asFunction<GlGetPerfMonitorCounterStringAMD>());
+  }
+  glGetPerfMonitorCounterInfoAMD =  tryCall(() => lib.lookupFunction<GlGetPerfMonitorCounterInfoAMDNative, GlGetPerfMonitorCounterInfoAMD>('glGetPerfMonitorCounterInfoAMD'));
+  if (glGetPerfMonitorCounterInfoAMD == null && glGetProcAddress != null) {
+    glGetPerfMonitorCounterInfoAMD =  tryCall(() => Pointer<NativeFunction<GlGetPerfMonitorCounterInfoAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPerfMonitorCounterInfoAMD'))).asFunction<GlGetPerfMonitorCounterInfoAMD>());
+  }
+  glGenPerfMonitorsAMD =  tryCall(() => lib.lookupFunction<GlGenPerfMonitorsAMDNative, GlGenPerfMonitorsAMD>('glGenPerfMonitorsAMD'));
+  if (glGenPerfMonitorsAMD == null && glGetProcAddress != null) {
+    glGenPerfMonitorsAMD =  tryCall(() => Pointer<NativeFunction<GlGenPerfMonitorsAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenPerfMonitorsAMD'))).asFunction<GlGenPerfMonitorsAMD>());
+  }
+  glDeletePerfMonitorsAMD =  tryCall(() => lib.lookupFunction<GlDeletePerfMonitorsAMDNative, GlDeletePerfMonitorsAMD>('glDeletePerfMonitorsAMD'));
+  if (glDeletePerfMonitorsAMD == null && glGetProcAddress != null) {
+    glDeletePerfMonitorsAMD =  tryCall(() => Pointer<NativeFunction<GlDeletePerfMonitorsAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeletePerfMonitorsAMD'))).asFunction<GlDeletePerfMonitorsAMD>());
+  }
+  glSelectPerfMonitorCountersAMD =  tryCall(() => lib.lookupFunction<GlSelectPerfMonitorCountersAMDNative, GlSelectPerfMonitorCountersAMD>('glSelectPerfMonitorCountersAMD'));
+  if (glSelectPerfMonitorCountersAMD == null && glGetProcAddress != null) {
+    glSelectPerfMonitorCountersAMD =  tryCall(() => Pointer<NativeFunction<GlSelectPerfMonitorCountersAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSelectPerfMonitorCountersAMD'))).asFunction<GlSelectPerfMonitorCountersAMD>());
+  }
+  glBeginPerfMonitorAMD =  tryCall(() => lib.lookupFunction<GlBeginPerfMonitorAMDNative, GlBeginPerfMonitorAMD>('glBeginPerfMonitorAMD'));
+  if (glBeginPerfMonitorAMD == null && glGetProcAddress != null) {
+    glBeginPerfMonitorAMD =  tryCall(() => Pointer<NativeFunction<GlBeginPerfMonitorAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBeginPerfMonitorAMD'))).asFunction<GlBeginPerfMonitorAMD>());
+  }
+  glEndPerfMonitorAMD =  tryCall(() => lib.lookupFunction<GlEndPerfMonitorAMDNative, GlEndPerfMonitorAMD>('glEndPerfMonitorAMD'));
+  if (glEndPerfMonitorAMD == null && glGetProcAddress != null) {
+    glEndPerfMonitorAMD =  tryCall(() => Pointer<NativeFunction<GlEndPerfMonitorAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEndPerfMonitorAMD'))).asFunction<GlEndPerfMonitorAMD>());
+  }
+  glGetPerfMonitorCounterDataAMD =  tryCall(() => lib.lookupFunction<GlGetPerfMonitorCounterDataAMDNative, GlGetPerfMonitorCounterDataAMD>('glGetPerfMonitorCounterDataAMD'));
+  if (glGetPerfMonitorCounterDataAMD == null && glGetProcAddress != null) {
+    glGetPerfMonitorCounterDataAMD =  tryCall(() => Pointer<NativeFunction<GlGetPerfMonitorCounterDataAMDNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPerfMonitorCounterDataAMD'))).asFunction<GlGetPerfMonitorCounterDataAMD>());
+  }
+  glEGLImageTargetTexStorageEXT =  tryCall(() => lib.lookupFunction<GlEGLImageTargetTexStorageEXTNative, GlEGLImageTargetTexStorageEXT>('glEGLImageTargetTexStorageEXT'));
+  if (glEGLImageTargetTexStorageEXT == null && glGetProcAddress != null) {
+    glEGLImageTargetTexStorageEXT =  tryCall(() => Pointer<NativeFunction<GlEGLImageTargetTexStorageEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEGLImageTargetTexStorageEXT'))).asFunction<GlEGLImageTargetTexStorageEXT>());
+  }
+  glEGLImageTargetTextureStorageEXT =  tryCall(() => lib.lookupFunction<GlEGLImageTargetTextureStorageEXTNative, GlEGLImageTargetTextureStorageEXT>('glEGLImageTargetTextureStorageEXT'));
+  if (glEGLImageTargetTextureStorageEXT == null && glGetProcAddress != null) {
+    glEGLImageTargetTextureStorageEXT =  tryCall(() => Pointer<NativeFunction<GlEGLImageTargetTextureStorageEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEGLImageTargetTextureStorageEXT'))).asFunction<GlEGLImageTargetTextureStorageEXT>());
+  }
+  glLabelObjectEXT =  tryCall(() => lib.lookupFunction<GlLabelObjectEXTNative, GlLabelObjectEXT>('glLabelObjectEXT'));
+  if (glLabelObjectEXT == null && glGetProcAddress != null) {
+    glLabelObjectEXT =  tryCall(() => Pointer<NativeFunction<GlLabelObjectEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glLabelObjectEXT'))).asFunction<GlLabelObjectEXT>());
+  }
+  glGetObjectLabelEXT =  tryCall(() => lib.lookupFunction<GlGetObjectLabelEXTNative, GlGetObjectLabelEXT>('glGetObjectLabelEXT'));
+  if (glGetObjectLabelEXT == null && glGetProcAddress != null) {
+    glGetObjectLabelEXT =  tryCall(() => Pointer<NativeFunction<GlGetObjectLabelEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetObjectLabelEXT'))).asFunction<GlGetObjectLabelEXT>());
+  }
+  glInsertEventMarkerEXT =  tryCall(() => lib.lookupFunction<GlInsertEventMarkerEXTNative, GlInsertEventMarkerEXT>('glInsertEventMarkerEXT'));
+  if (glInsertEventMarkerEXT == null && glGetProcAddress != null) {
+    glInsertEventMarkerEXT =  tryCall(() => Pointer<NativeFunction<GlInsertEventMarkerEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glInsertEventMarkerEXT'))).asFunction<GlInsertEventMarkerEXT>());
+  }
+  glPushGroupMarkerEXT =  tryCall(() => lib.lookupFunction<GlPushGroupMarkerEXTNative, GlPushGroupMarkerEXT>('glPushGroupMarkerEXT'));
+  if (glPushGroupMarkerEXT == null && glGetProcAddress != null) {
+    glPushGroupMarkerEXT =  tryCall(() => Pointer<NativeFunction<GlPushGroupMarkerEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPushGroupMarkerEXT'))).asFunction<GlPushGroupMarkerEXT>());
+  }
+  glPopGroupMarkerEXT =  tryCall(() => lib.lookupFunction<GlPopGroupMarkerEXTNative, GlPopGroupMarkerEXT>('glPopGroupMarkerEXT'));
+  if (glPopGroupMarkerEXT == null && glGetProcAddress != null) {
+    glPopGroupMarkerEXT =  tryCall(() => Pointer<NativeFunction<GlPopGroupMarkerEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPopGroupMarkerEXT'))).asFunction<GlPopGroupMarkerEXT>());
+  }
+  glMatrixLoadfEXT =  tryCall(() => lib.lookupFunction<GlMatrixLoadfEXTNative, GlMatrixLoadfEXT>('glMatrixLoadfEXT'));
+  if (glMatrixLoadfEXT == null && glGetProcAddress != null) {
+    glMatrixLoadfEXT =  tryCall(() => Pointer<NativeFunction<GlMatrixLoadfEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixLoadfEXT'))).asFunction<GlMatrixLoadfEXT>());
+  }
+  glMatrixLoaddEXT =  tryCall(() => lib.lookupFunction<GlMatrixLoaddEXTNative, GlMatrixLoaddEXT>('glMatrixLoaddEXT'));
+  if (glMatrixLoaddEXT == null && glGetProcAddress != null) {
+    glMatrixLoaddEXT =  tryCall(() => Pointer<NativeFunction<GlMatrixLoaddEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixLoaddEXT'))).asFunction<GlMatrixLoaddEXT>());
+  }
+  glMatrixMultfEXT =  tryCall(() => lib.lookupFunction<GlMatrixMultfEXTNative, GlMatrixMultfEXT>('glMatrixMultfEXT'));
+  if (glMatrixMultfEXT == null && glGetProcAddress != null) {
+    glMatrixMultfEXT =  tryCall(() => Pointer<NativeFunction<GlMatrixMultfEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixMultfEXT'))).asFunction<GlMatrixMultfEXT>());
+  }
+  glMatrixMultdEXT =  tryCall(() => lib.lookupFunction<GlMatrixMultdEXTNative, GlMatrixMultdEXT>('glMatrixMultdEXT'));
+  if (glMatrixMultdEXT == null && glGetProcAddress != null) {
+    glMatrixMultdEXT =  tryCall(() => Pointer<NativeFunction<GlMatrixMultdEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixMultdEXT'))).asFunction<GlMatrixMultdEXT>());
+  }
+  glMatrixLoadIdentityEXT =  tryCall(() => lib.lookupFunction<GlMatrixLoadIdentityEXTNative, GlMatrixLoadIdentityEXT>('glMatrixLoadIdentityEXT'));
+  if (glMatrixLoadIdentityEXT == null && glGetProcAddress != null) {
+    glMatrixLoadIdentityEXT =  tryCall(() => Pointer<NativeFunction<GlMatrixLoadIdentityEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixLoadIdentityEXT'))).asFunction<GlMatrixLoadIdentityEXT>());
+  }
+  glMatrixRotatefEXT =  tryCall(() => lib.lookupFunction<GlMatrixRotatefEXTNative, GlMatrixRotatefEXT>('glMatrixRotatefEXT'));
+  if (glMatrixRotatefEXT == null && glGetProcAddress != null) {
+    glMatrixRotatefEXT =  tryCall(() => Pointer<NativeFunction<GlMatrixRotatefEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixRotatefEXT'))).asFunction<GlMatrixRotatefEXT>());
+  }
+  glMatrixRotatedEXT =  tryCall(() => lib.lookupFunction<GlMatrixRotatedEXTNative, GlMatrixRotatedEXT>('glMatrixRotatedEXT'));
+  if (glMatrixRotatedEXT == null && glGetProcAddress != null) {
+    glMatrixRotatedEXT =  tryCall(() => Pointer<NativeFunction<GlMatrixRotatedEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixRotatedEXT'))).asFunction<GlMatrixRotatedEXT>());
+  }
+  glMatrixScalefEXT =  tryCall(() => lib.lookupFunction<GlMatrixScalefEXTNative, GlMatrixScalefEXT>('glMatrixScalefEXT'));
+  if (glMatrixScalefEXT == null && glGetProcAddress != null) {
+    glMatrixScalefEXT =  tryCall(() => Pointer<NativeFunction<GlMatrixScalefEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixScalefEXT'))).asFunction<GlMatrixScalefEXT>());
+  }
+  glMatrixScaledEXT =  tryCall(() => lib.lookupFunction<GlMatrixScaledEXTNative, GlMatrixScaledEXT>('glMatrixScaledEXT'));
+  if (glMatrixScaledEXT == null && glGetProcAddress != null) {
+    glMatrixScaledEXT =  tryCall(() => Pointer<NativeFunction<GlMatrixScaledEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixScaledEXT'))).asFunction<GlMatrixScaledEXT>());
+  }
+  glMatrixTranslatefEXT =  tryCall(() => lib.lookupFunction<GlMatrixTranslatefEXTNative, GlMatrixTranslatefEXT>('glMatrixTranslatefEXT'));
+  if (glMatrixTranslatefEXT == null && glGetProcAddress != null) {
+    glMatrixTranslatefEXT =  tryCall(() => Pointer<NativeFunction<GlMatrixTranslatefEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixTranslatefEXT'))).asFunction<GlMatrixTranslatefEXT>());
+  }
+  glMatrixTranslatedEXT =  tryCall(() => lib.lookupFunction<GlMatrixTranslatedEXTNative, GlMatrixTranslatedEXT>('glMatrixTranslatedEXT'));
+  if (glMatrixTranslatedEXT == null && glGetProcAddress != null) {
+    glMatrixTranslatedEXT =  tryCall(() => Pointer<NativeFunction<GlMatrixTranslatedEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixTranslatedEXT'))).asFunction<GlMatrixTranslatedEXT>());
+  }
+  glMatrixFrustumEXT =  tryCall(() => lib.lookupFunction<GlMatrixFrustumEXTNative, GlMatrixFrustumEXT>('glMatrixFrustumEXT'));
+  if (glMatrixFrustumEXT == null && glGetProcAddress != null) {
+    glMatrixFrustumEXT =  tryCall(() => Pointer<NativeFunction<GlMatrixFrustumEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixFrustumEXT'))).asFunction<GlMatrixFrustumEXT>());
+  }
+  glMatrixOrthoEXT =  tryCall(() => lib.lookupFunction<GlMatrixOrthoEXTNative, GlMatrixOrthoEXT>('glMatrixOrthoEXT'));
+  if (glMatrixOrthoEXT == null && glGetProcAddress != null) {
+    glMatrixOrthoEXT =  tryCall(() => Pointer<NativeFunction<GlMatrixOrthoEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixOrthoEXT'))).asFunction<GlMatrixOrthoEXT>());
+  }
+  glMatrixPopEXT =  tryCall(() => lib.lookupFunction<GlMatrixPopEXTNative, GlMatrixPopEXT>('glMatrixPopEXT'));
+  if (glMatrixPopEXT == null && glGetProcAddress != null) {
+    glMatrixPopEXT =  tryCall(() => Pointer<NativeFunction<GlMatrixPopEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixPopEXT'))).asFunction<GlMatrixPopEXT>());
+  }
+  glMatrixPushEXT =  tryCall(() => lib.lookupFunction<GlMatrixPushEXTNative, GlMatrixPushEXT>('glMatrixPushEXT'));
+  if (glMatrixPushEXT == null && glGetProcAddress != null) {
+    glMatrixPushEXT =  tryCall(() => Pointer<NativeFunction<GlMatrixPushEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixPushEXT'))).asFunction<GlMatrixPushEXT>());
+  }
+  glClientAttribDefaultEXT =  tryCall(() => lib.lookupFunction<GlClientAttribDefaultEXTNative, GlClientAttribDefaultEXT>('glClientAttribDefaultEXT'));
+  if (glClientAttribDefaultEXT == null && glGetProcAddress != null) {
+    glClientAttribDefaultEXT =  tryCall(() => Pointer<NativeFunction<GlClientAttribDefaultEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClientAttribDefaultEXT'))).asFunction<GlClientAttribDefaultEXT>());
+  }
+  glPushClientAttribDefaultEXT =  tryCall(() => lib.lookupFunction<GlPushClientAttribDefaultEXTNative, GlPushClientAttribDefaultEXT>('glPushClientAttribDefaultEXT'));
+  if (glPushClientAttribDefaultEXT == null && glGetProcAddress != null) {
+    glPushClientAttribDefaultEXT =  tryCall(() => Pointer<NativeFunction<GlPushClientAttribDefaultEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPushClientAttribDefaultEXT'))).asFunction<GlPushClientAttribDefaultEXT>());
+  }
+  glTextureParameterfEXT =  tryCall(() => lib.lookupFunction<GlTextureParameterfEXTNative, GlTextureParameterfEXT>('glTextureParameterfEXT'));
+  if (glTextureParameterfEXT == null && glGetProcAddress != null) {
+    glTextureParameterfEXT =  tryCall(() => Pointer<NativeFunction<GlTextureParameterfEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureParameterfEXT'))).asFunction<GlTextureParameterfEXT>());
+  }
+  glTextureParameterfvEXT =  tryCall(() => lib.lookupFunction<GlTextureParameterfvEXTNative, GlTextureParameterfvEXT>('glTextureParameterfvEXT'));
+  if (glTextureParameterfvEXT == null && glGetProcAddress != null) {
+    glTextureParameterfvEXT =  tryCall(() => Pointer<NativeFunction<GlTextureParameterfvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureParameterfvEXT'))).asFunction<GlTextureParameterfvEXT>());
+  }
+  glTextureParameteriEXT =  tryCall(() => lib.lookupFunction<GlTextureParameteriEXTNative, GlTextureParameteriEXT>('glTextureParameteriEXT'));
+  if (glTextureParameteriEXT == null && glGetProcAddress != null) {
+    glTextureParameteriEXT =  tryCall(() => Pointer<NativeFunction<GlTextureParameteriEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureParameteriEXT'))).asFunction<GlTextureParameteriEXT>());
+  }
+  glTextureParameterivEXT =  tryCall(() => lib.lookupFunction<GlTextureParameterivEXTNative, GlTextureParameterivEXT>('glTextureParameterivEXT'));
+  if (glTextureParameterivEXT == null && glGetProcAddress != null) {
+    glTextureParameterivEXT =  tryCall(() => Pointer<NativeFunction<GlTextureParameterivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureParameterivEXT'))).asFunction<GlTextureParameterivEXT>());
+  }
+  glTextureImage1DEXT =  tryCall(() => lib.lookupFunction<GlTextureImage1DEXTNative, GlTextureImage1DEXT>('glTextureImage1DEXT'));
+  if (glTextureImage1DEXT == null && glGetProcAddress != null) {
+    glTextureImage1DEXT =  tryCall(() => Pointer<NativeFunction<GlTextureImage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureImage1DEXT'))).asFunction<GlTextureImage1DEXT>());
+  }
+  glTextureImage2DEXT =  tryCall(() => lib.lookupFunction<GlTextureImage2DEXTNative, GlTextureImage2DEXT>('glTextureImage2DEXT'));
+  if (glTextureImage2DEXT == null && glGetProcAddress != null) {
+    glTextureImage2DEXT =  tryCall(() => Pointer<NativeFunction<GlTextureImage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureImage2DEXT'))).asFunction<GlTextureImage2DEXT>());
+  }
+  glTextureSubImage1DEXT =  tryCall(() => lib.lookupFunction<GlTextureSubImage1DEXTNative, GlTextureSubImage1DEXT>('glTextureSubImage1DEXT'));
+  if (glTextureSubImage1DEXT == null && glGetProcAddress != null) {
+    glTextureSubImage1DEXT =  tryCall(() => Pointer<NativeFunction<GlTextureSubImage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureSubImage1DEXT'))).asFunction<GlTextureSubImage1DEXT>());
+  }
+  glTextureSubImage2DEXT =  tryCall(() => lib.lookupFunction<GlTextureSubImage2DEXTNative, GlTextureSubImage2DEXT>('glTextureSubImage2DEXT'));
+  if (glTextureSubImage2DEXT == null && glGetProcAddress != null) {
+    glTextureSubImage2DEXT =  tryCall(() => Pointer<NativeFunction<GlTextureSubImage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureSubImage2DEXT'))).asFunction<GlTextureSubImage2DEXT>());
+  }
+  glCopyTextureImage1DEXT =  tryCall(() => lib.lookupFunction<GlCopyTextureImage1DEXTNative, GlCopyTextureImage1DEXT>('glCopyTextureImage1DEXT'));
+  if (glCopyTextureImage1DEXT == null && glGetProcAddress != null) {
+    glCopyTextureImage1DEXT =  tryCall(() => Pointer<NativeFunction<GlCopyTextureImage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyTextureImage1DEXT'))).asFunction<GlCopyTextureImage1DEXT>());
+  }
+  glCopyTextureImage2DEXT =  tryCall(() => lib.lookupFunction<GlCopyTextureImage2DEXTNative, GlCopyTextureImage2DEXT>('glCopyTextureImage2DEXT'));
+  if (glCopyTextureImage2DEXT == null && glGetProcAddress != null) {
+    glCopyTextureImage2DEXT =  tryCall(() => Pointer<NativeFunction<GlCopyTextureImage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyTextureImage2DEXT'))).asFunction<GlCopyTextureImage2DEXT>());
+  }
+  glCopyTextureSubImage1DEXT =  tryCall(() => lib.lookupFunction<GlCopyTextureSubImage1DEXTNative, GlCopyTextureSubImage1DEXT>('glCopyTextureSubImage1DEXT'));
+  if (glCopyTextureSubImage1DEXT == null && glGetProcAddress != null) {
+    glCopyTextureSubImage1DEXT =  tryCall(() => Pointer<NativeFunction<GlCopyTextureSubImage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyTextureSubImage1DEXT'))).asFunction<GlCopyTextureSubImage1DEXT>());
+  }
+  glCopyTextureSubImage2DEXT =  tryCall(() => lib.lookupFunction<GlCopyTextureSubImage2DEXTNative, GlCopyTextureSubImage2DEXT>('glCopyTextureSubImage2DEXT'));
+  if (glCopyTextureSubImage2DEXT == null && glGetProcAddress != null) {
+    glCopyTextureSubImage2DEXT =  tryCall(() => Pointer<NativeFunction<GlCopyTextureSubImage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyTextureSubImage2DEXT'))).asFunction<GlCopyTextureSubImage2DEXT>());
+  }
+  glGetTextureImageEXT =  tryCall(() => lib.lookupFunction<GlGetTextureImageEXTNative, GlGetTextureImageEXT>('glGetTextureImageEXT'));
+  if (glGetTextureImageEXT == null && glGetProcAddress != null) {
+    glGetTextureImageEXT =  tryCall(() => Pointer<NativeFunction<GlGetTextureImageEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureImageEXT'))).asFunction<GlGetTextureImageEXT>());
+  }
+  glGetTextureParameterfvEXT =  tryCall(() => lib.lookupFunction<GlGetTextureParameterfvEXTNative, GlGetTextureParameterfvEXT>('glGetTextureParameterfvEXT'));
+  if (glGetTextureParameterfvEXT == null && glGetProcAddress != null) {
+    glGetTextureParameterfvEXT =  tryCall(() => Pointer<NativeFunction<GlGetTextureParameterfvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureParameterfvEXT'))).asFunction<GlGetTextureParameterfvEXT>());
+  }
+  glGetTextureParameterivEXT =  tryCall(() => lib.lookupFunction<GlGetTextureParameterivEXTNative, GlGetTextureParameterivEXT>('glGetTextureParameterivEXT'));
+  if (glGetTextureParameterivEXT == null && glGetProcAddress != null) {
+    glGetTextureParameterivEXT =  tryCall(() => Pointer<NativeFunction<GlGetTextureParameterivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureParameterivEXT'))).asFunction<GlGetTextureParameterivEXT>());
+  }
+  glGetTextureLevelParameterfvEXT =  tryCall(() => lib.lookupFunction<GlGetTextureLevelParameterfvEXTNative, GlGetTextureLevelParameterfvEXT>('glGetTextureLevelParameterfvEXT'));
+  if (glGetTextureLevelParameterfvEXT == null && glGetProcAddress != null) {
+    glGetTextureLevelParameterfvEXT =  tryCall(() => Pointer<NativeFunction<GlGetTextureLevelParameterfvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureLevelParameterfvEXT'))).asFunction<GlGetTextureLevelParameterfvEXT>());
+  }
+  glGetTextureLevelParameterivEXT =  tryCall(() => lib.lookupFunction<GlGetTextureLevelParameterivEXTNative, GlGetTextureLevelParameterivEXT>('glGetTextureLevelParameterivEXT'));
+  if (glGetTextureLevelParameterivEXT == null && glGetProcAddress != null) {
+    glGetTextureLevelParameterivEXT =  tryCall(() => Pointer<NativeFunction<GlGetTextureLevelParameterivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureLevelParameterivEXT'))).asFunction<GlGetTextureLevelParameterivEXT>());
+  }
+  glTextureImage3DEXT =  tryCall(() => lib.lookupFunction<GlTextureImage3DEXTNative, GlTextureImage3DEXT>('glTextureImage3DEXT'));
+  if (glTextureImage3DEXT == null && glGetProcAddress != null) {
+    glTextureImage3DEXT =  tryCall(() => Pointer<NativeFunction<GlTextureImage3DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureImage3DEXT'))).asFunction<GlTextureImage3DEXT>());
+  }
+  glTextureSubImage3DEXT =  tryCall(() => lib.lookupFunction<GlTextureSubImage3DEXTNative, GlTextureSubImage3DEXT>('glTextureSubImage3DEXT'));
+  if (glTextureSubImage3DEXT == null && glGetProcAddress != null) {
+    glTextureSubImage3DEXT =  tryCall(() => Pointer<NativeFunction<GlTextureSubImage3DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureSubImage3DEXT'))).asFunction<GlTextureSubImage3DEXT>());
+  }
+  glCopyTextureSubImage3DEXT =  tryCall(() => lib.lookupFunction<GlCopyTextureSubImage3DEXTNative, GlCopyTextureSubImage3DEXT>('glCopyTextureSubImage3DEXT'));
+  if (glCopyTextureSubImage3DEXT == null && glGetProcAddress != null) {
+    glCopyTextureSubImage3DEXT =  tryCall(() => Pointer<NativeFunction<GlCopyTextureSubImage3DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyTextureSubImage3DEXT'))).asFunction<GlCopyTextureSubImage3DEXT>());
+  }
+  glBindMultiTextureEXT =  tryCall(() => lib.lookupFunction<GlBindMultiTextureEXTNative, GlBindMultiTextureEXT>('glBindMultiTextureEXT'));
+  if (glBindMultiTextureEXT == null && glGetProcAddress != null) {
+    glBindMultiTextureEXT =  tryCall(() => Pointer<NativeFunction<GlBindMultiTextureEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindMultiTextureEXT'))).asFunction<GlBindMultiTextureEXT>());
+  }
+  glMultiTexCoordPointerEXT =  tryCall(() => lib.lookupFunction<GlMultiTexCoordPointerEXTNative, GlMultiTexCoordPointerEXT>('glMultiTexCoordPointerEXT'));
+  if (glMultiTexCoordPointerEXT == null && glGetProcAddress != null) {
+    glMultiTexCoordPointerEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexCoordPointerEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexCoordPointerEXT'))).asFunction<GlMultiTexCoordPointerEXT>());
+  }
+  glMultiTexEnvfEXT =  tryCall(() => lib.lookupFunction<GlMultiTexEnvfEXTNative, GlMultiTexEnvfEXT>('glMultiTexEnvfEXT'));
+  if (glMultiTexEnvfEXT == null && glGetProcAddress != null) {
+    glMultiTexEnvfEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexEnvfEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexEnvfEXT'))).asFunction<GlMultiTexEnvfEXT>());
+  }
+  glMultiTexEnvfvEXT =  tryCall(() => lib.lookupFunction<GlMultiTexEnvfvEXTNative, GlMultiTexEnvfvEXT>('glMultiTexEnvfvEXT'));
+  if (glMultiTexEnvfvEXT == null && glGetProcAddress != null) {
+    glMultiTexEnvfvEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexEnvfvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexEnvfvEXT'))).asFunction<GlMultiTexEnvfvEXT>());
+  }
+  glMultiTexEnviEXT =  tryCall(() => lib.lookupFunction<GlMultiTexEnviEXTNative, GlMultiTexEnviEXT>('glMultiTexEnviEXT'));
+  if (glMultiTexEnviEXT == null && glGetProcAddress != null) {
+    glMultiTexEnviEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexEnviEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexEnviEXT'))).asFunction<GlMultiTexEnviEXT>());
+  }
+  glMultiTexEnvivEXT =  tryCall(() => lib.lookupFunction<GlMultiTexEnvivEXTNative, GlMultiTexEnvivEXT>('glMultiTexEnvivEXT'));
+  if (glMultiTexEnvivEXT == null && glGetProcAddress != null) {
+    glMultiTexEnvivEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexEnvivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexEnvivEXT'))).asFunction<GlMultiTexEnvivEXT>());
+  }
+  glMultiTexGendEXT =  tryCall(() => lib.lookupFunction<GlMultiTexGendEXTNative, GlMultiTexGendEXT>('glMultiTexGendEXT'));
+  if (glMultiTexGendEXT == null && glGetProcAddress != null) {
+    glMultiTexGendEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexGendEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexGendEXT'))).asFunction<GlMultiTexGendEXT>());
+  }
+  glMultiTexGendvEXT =  tryCall(() => lib.lookupFunction<GlMultiTexGendvEXTNative, GlMultiTexGendvEXT>('glMultiTexGendvEXT'));
+  if (glMultiTexGendvEXT == null && glGetProcAddress != null) {
+    glMultiTexGendvEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexGendvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexGendvEXT'))).asFunction<GlMultiTexGendvEXT>());
+  }
+  glMultiTexGenfEXT =  tryCall(() => lib.lookupFunction<GlMultiTexGenfEXTNative, GlMultiTexGenfEXT>('glMultiTexGenfEXT'));
+  if (glMultiTexGenfEXT == null && glGetProcAddress != null) {
+    glMultiTexGenfEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexGenfEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexGenfEXT'))).asFunction<GlMultiTexGenfEXT>());
+  }
+  glMultiTexGenfvEXT =  tryCall(() => lib.lookupFunction<GlMultiTexGenfvEXTNative, GlMultiTexGenfvEXT>('glMultiTexGenfvEXT'));
+  if (glMultiTexGenfvEXT == null && glGetProcAddress != null) {
+    glMultiTexGenfvEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexGenfvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexGenfvEXT'))).asFunction<GlMultiTexGenfvEXT>());
+  }
+  glMultiTexGeniEXT =  tryCall(() => lib.lookupFunction<GlMultiTexGeniEXTNative, GlMultiTexGeniEXT>('glMultiTexGeniEXT'));
+  if (glMultiTexGeniEXT == null && glGetProcAddress != null) {
+    glMultiTexGeniEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexGeniEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexGeniEXT'))).asFunction<GlMultiTexGeniEXT>());
+  }
+  glMultiTexGenivEXT =  tryCall(() => lib.lookupFunction<GlMultiTexGenivEXTNative, GlMultiTexGenivEXT>('glMultiTexGenivEXT'));
+  if (glMultiTexGenivEXT == null && glGetProcAddress != null) {
+    glMultiTexGenivEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexGenivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexGenivEXT'))).asFunction<GlMultiTexGenivEXT>());
+  }
+  glGetMultiTexEnvfvEXT =  tryCall(() => lib.lookupFunction<GlGetMultiTexEnvfvEXTNative, GlGetMultiTexEnvfvEXT>('glGetMultiTexEnvfvEXT'));
+  if (glGetMultiTexEnvfvEXT == null && glGetProcAddress != null) {
+    glGetMultiTexEnvfvEXT =  tryCall(() => Pointer<NativeFunction<GlGetMultiTexEnvfvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultiTexEnvfvEXT'))).asFunction<GlGetMultiTexEnvfvEXT>());
+  }
+  glGetMultiTexEnvivEXT =  tryCall(() => lib.lookupFunction<GlGetMultiTexEnvivEXTNative, GlGetMultiTexEnvivEXT>('glGetMultiTexEnvivEXT'));
+  if (glGetMultiTexEnvivEXT == null && glGetProcAddress != null) {
+    glGetMultiTexEnvivEXT =  tryCall(() => Pointer<NativeFunction<GlGetMultiTexEnvivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultiTexEnvivEXT'))).asFunction<GlGetMultiTexEnvivEXT>());
+  }
+  glGetMultiTexGendvEXT =  tryCall(() => lib.lookupFunction<GlGetMultiTexGendvEXTNative, GlGetMultiTexGendvEXT>('glGetMultiTexGendvEXT'));
+  if (glGetMultiTexGendvEXT == null && glGetProcAddress != null) {
+    glGetMultiTexGendvEXT =  tryCall(() => Pointer<NativeFunction<GlGetMultiTexGendvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultiTexGendvEXT'))).asFunction<GlGetMultiTexGendvEXT>());
+  }
+  glGetMultiTexGenfvEXT =  tryCall(() => lib.lookupFunction<GlGetMultiTexGenfvEXTNative, GlGetMultiTexGenfvEXT>('glGetMultiTexGenfvEXT'));
+  if (glGetMultiTexGenfvEXT == null && glGetProcAddress != null) {
+    glGetMultiTexGenfvEXT =  tryCall(() => Pointer<NativeFunction<GlGetMultiTexGenfvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultiTexGenfvEXT'))).asFunction<GlGetMultiTexGenfvEXT>());
+  }
+  glGetMultiTexGenivEXT =  tryCall(() => lib.lookupFunction<GlGetMultiTexGenivEXTNative, GlGetMultiTexGenivEXT>('glGetMultiTexGenivEXT'));
+  if (glGetMultiTexGenivEXT == null && glGetProcAddress != null) {
+    glGetMultiTexGenivEXT =  tryCall(() => Pointer<NativeFunction<GlGetMultiTexGenivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultiTexGenivEXT'))).asFunction<GlGetMultiTexGenivEXT>());
+  }
+  glMultiTexParameteriEXT =  tryCall(() => lib.lookupFunction<GlMultiTexParameteriEXTNative, GlMultiTexParameteriEXT>('glMultiTexParameteriEXT'));
+  if (glMultiTexParameteriEXT == null && glGetProcAddress != null) {
+    glMultiTexParameteriEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexParameteriEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexParameteriEXT'))).asFunction<GlMultiTexParameteriEXT>());
+  }
+  glMultiTexParameterivEXT =  tryCall(() => lib.lookupFunction<GlMultiTexParameterivEXTNative, GlMultiTexParameterivEXT>('glMultiTexParameterivEXT'));
+  if (glMultiTexParameterivEXT == null && glGetProcAddress != null) {
+    glMultiTexParameterivEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexParameterivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexParameterivEXT'))).asFunction<GlMultiTexParameterivEXT>());
+  }
+  glMultiTexParameterfEXT =  tryCall(() => lib.lookupFunction<GlMultiTexParameterfEXTNative, GlMultiTexParameterfEXT>('glMultiTexParameterfEXT'));
+  if (glMultiTexParameterfEXT == null && glGetProcAddress != null) {
+    glMultiTexParameterfEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexParameterfEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexParameterfEXT'))).asFunction<GlMultiTexParameterfEXT>());
+  }
+  glMultiTexParameterfvEXT =  tryCall(() => lib.lookupFunction<GlMultiTexParameterfvEXTNative, GlMultiTexParameterfvEXT>('glMultiTexParameterfvEXT'));
+  if (glMultiTexParameterfvEXT == null && glGetProcAddress != null) {
+    glMultiTexParameterfvEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexParameterfvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexParameterfvEXT'))).asFunction<GlMultiTexParameterfvEXT>());
+  }
+  glMultiTexImage1DEXT =  tryCall(() => lib.lookupFunction<GlMultiTexImage1DEXTNative, GlMultiTexImage1DEXT>('glMultiTexImage1DEXT'));
+  if (glMultiTexImage1DEXT == null && glGetProcAddress != null) {
+    glMultiTexImage1DEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexImage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexImage1DEXT'))).asFunction<GlMultiTexImage1DEXT>());
+  }
+  glMultiTexImage2DEXT =  tryCall(() => lib.lookupFunction<GlMultiTexImage2DEXTNative, GlMultiTexImage2DEXT>('glMultiTexImage2DEXT'));
+  if (glMultiTexImage2DEXT == null && glGetProcAddress != null) {
+    glMultiTexImage2DEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexImage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexImage2DEXT'))).asFunction<GlMultiTexImage2DEXT>());
+  }
+  glMultiTexSubImage1DEXT =  tryCall(() => lib.lookupFunction<GlMultiTexSubImage1DEXTNative, GlMultiTexSubImage1DEXT>('glMultiTexSubImage1DEXT'));
+  if (glMultiTexSubImage1DEXT == null && glGetProcAddress != null) {
+    glMultiTexSubImage1DEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexSubImage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexSubImage1DEXT'))).asFunction<GlMultiTexSubImage1DEXT>());
+  }
+  glMultiTexSubImage2DEXT =  tryCall(() => lib.lookupFunction<GlMultiTexSubImage2DEXTNative, GlMultiTexSubImage2DEXT>('glMultiTexSubImage2DEXT'));
+  if (glMultiTexSubImage2DEXT == null && glGetProcAddress != null) {
+    glMultiTexSubImage2DEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexSubImage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexSubImage2DEXT'))).asFunction<GlMultiTexSubImage2DEXT>());
+  }
+  glCopyMultiTexImage1DEXT =  tryCall(() => lib.lookupFunction<GlCopyMultiTexImage1DEXTNative, GlCopyMultiTexImage1DEXT>('glCopyMultiTexImage1DEXT'));
+  if (glCopyMultiTexImage1DEXT == null && glGetProcAddress != null) {
+    glCopyMultiTexImage1DEXT =  tryCall(() => Pointer<NativeFunction<GlCopyMultiTexImage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyMultiTexImage1DEXT'))).asFunction<GlCopyMultiTexImage1DEXT>());
+  }
+  glCopyMultiTexImage2DEXT =  tryCall(() => lib.lookupFunction<GlCopyMultiTexImage2DEXTNative, GlCopyMultiTexImage2DEXT>('glCopyMultiTexImage2DEXT'));
+  if (glCopyMultiTexImage2DEXT == null && glGetProcAddress != null) {
+    glCopyMultiTexImage2DEXT =  tryCall(() => Pointer<NativeFunction<GlCopyMultiTexImage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyMultiTexImage2DEXT'))).asFunction<GlCopyMultiTexImage2DEXT>());
+  }
+  glCopyMultiTexSubImage1DEXT =  tryCall(() => lib.lookupFunction<GlCopyMultiTexSubImage1DEXTNative, GlCopyMultiTexSubImage1DEXT>('glCopyMultiTexSubImage1DEXT'));
+  if (glCopyMultiTexSubImage1DEXT == null && glGetProcAddress != null) {
+    glCopyMultiTexSubImage1DEXT =  tryCall(() => Pointer<NativeFunction<GlCopyMultiTexSubImage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyMultiTexSubImage1DEXT'))).asFunction<GlCopyMultiTexSubImage1DEXT>());
+  }
+  glCopyMultiTexSubImage2DEXT =  tryCall(() => lib.lookupFunction<GlCopyMultiTexSubImage2DEXTNative, GlCopyMultiTexSubImage2DEXT>('glCopyMultiTexSubImage2DEXT'));
+  if (glCopyMultiTexSubImage2DEXT == null && glGetProcAddress != null) {
+    glCopyMultiTexSubImage2DEXT =  tryCall(() => Pointer<NativeFunction<GlCopyMultiTexSubImage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyMultiTexSubImage2DEXT'))).asFunction<GlCopyMultiTexSubImage2DEXT>());
+  }
+  glGetMultiTexImageEXT =  tryCall(() => lib.lookupFunction<GlGetMultiTexImageEXTNative, GlGetMultiTexImageEXT>('glGetMultiTexImageEXT'));
+  if (glGetMultiTexImageEXT == null && glGetProcAddress != null) {
+    glGetMultiTexImageEXT =  tryCall(() => Pointer<NativeFunction<GlGetMultiTexImageEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultiTexImageEXT'))).asFunction<GlGetMultiTexImageEXT>());
+  }
+  glGetMultiTexParameterfvEXT =  tryCall(() => lib.lookupFunction<GlGetMultiTexParameterfvEXTNative, GlGetMultiTexParameterfvEXT>('glGetMultiTexParameterfvEXT'));
+  if (glGetMultiTexParameterfvEXT == null && glGetProcAddress != null) {
+    glGetMultiTexParameterfvEXT =  tryCall(() => Pointer<NativeFunction<GlGetMultiTexParameterfvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultiTexParameterfvEXT'))).asFunction<GlGetMultiTexParameterfvEXT>());
+  }
+  glGetMultiTexParameterivEXT =  tryCall(() => lib.lookupFunction<GlGetMultiTexParameterivEXTNative, GlGetMultiTexParameterivEXT>('glGetMultiTexParameterivEXT'));
+  if (glGetMultiTexParameterivEXT == null && glGetProcAddress != null) {
+    glGetMultiTexParameterivEXT =  tryCall(() => Pointer<NativeFunction<GlGetMultiTexParameterivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultiTexParameterivEXT'))).asFunction<GlGetMultiTexParameterivEXT>());
+  }
+  glGetMultiTexLevelParameterfvEXT =  tryCall(() => lib.lookupFunction<GlGetMultiTexLevelParameterfvEXTNative, GlGetMultiTexLevelParameterfvEXT>('glGetMultiTexLevelParameterfvEXT'));
+  if (glGetMultiTexLevelParameterfvEXT == null && glGetProcAddress != null) {
+    glGetMultiTexLevelParameterfvEXT =  tryCall(() => Pointer<NativeFunction<GlGetMultiTexLevelParameterfvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultiTexLevelParameterfvEXT'))).asFunction<GlGetMultiTexLevelParameterfvEXT>());
+  }
+  glGetMultiTexLevelParameterivEXT =  tryCall(() => lib.lookupFunction<GlGetMultiTexLevelParameterivEXTNative, GlGetMultiTexLevelParameterivEXT>('glGetMultiTexLevelParameterivEXT'));
+  if (glGetMultiTexLevelParameterivEXT == null && glGetProcAddress != null) {
+    glGetMultiTexLevelParameterivEXT =  tryCall(() => Pointer<NativeFunction<GlGetMultiTexLevelParameterivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultiTexLevelParameterivEXT'))).asFunction<GlGetMultiTexLevelParameterivEXT>());
+  }
+  glMultiTexImage3DEXT =  tryCall(() => lib.lookupFunction<GlMultiTexImage3DEXTNative, GlMultiTexImage3DEXT>('glMultiTexImage3DEXT'));
+  if (glMultiTexImage3DEXT == null && glGetProcAddress != null) {
+    glMultiTexImage3DEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexImage3DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexImage3DEXT'))).asFunction<GlMultiTexImage3DEXT>());
+  }
+  glMultiTexSubImage3DEXT =  tryCall(() => lib.lookupFunction<GlMultiTexSubImage3DEXTNative, GlMultiTexSubImage3DEXT>('glMultiTexSubImage3DEXT'));
+  if (glMultiTexSubImage3DEXT == null && glGetProcAddress != null) {
+    glMultiTexSubImage3DEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexSubImage3DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexSubImage3DEXT'))).asFunction<GlMultiTexSubImage3DEXT>());
+  }
+  glCopyMultiTexSubImage3DEXT =  tryCall(() => lib.lookupFunction<GlCopyMultiTexSubImage3DEXTNative, GlCopyMultiTexSubImage3DEXT>('glCopyMultiTexSubImage3DEXT'));
+  if (glCopyMultiTexSubImage3DEXT == null && glGetProcAddress != null) {
+    glCopyMultiTexSubImage3DEXT =  tryCall(() => Pointer<NativeFunction<GlCopyMultiTexSubImage3DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyMultiTexSubImage3DEXT'))).asFunction<GlCopyMultiTexSubImage3DEXT>());
+  }
+  glEnableClientStateIndexedEXT =  tryCall(() => lib.lookupFunction<GlEnableClientStateIndexedEXTNative, GlEnableClientStateIndexedEXT>('glEnableClientStateIndexedEXT'));
+  if (glEnableClientStateIndexedEXT == null && glGetProcAddress != null) {
+    glEnableClientStateIndexedEXT =  tryCall(() => Pointer<NativeFunction<GlEnableClientStateIndexedEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEnableClientStateIndexedEXT'))).asFunction<GlEnableClientStateIndexedEXT>());
+  }
+  glDisableClientStateIndexedEXT =  tryCall(() => lib.lookupFunction<GlDisableClientStateIndexedEXTNative, GlDisableClientStateIndexedEXT>('glDisableClientStateIndexedEXT'));
+  if (glDisableClientStateIndexedEXT == null && glGetProcAddress != null) {
+    glDisableClientStateIndexedEXT =  tryCall(() => Pointer<NativeFunction<GlDisableClientStateIndexedEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDisableClientStateIndexedEXT'))).asFunction<GlDisableClientStateIndexedEXT>());
+  }
+  glGetFloatIndexedvEXT =  tryCall(() => lib.lookupFunction<GlGetFloatIndexedvEXTNative, GlGetFloatIndexedvEXT>('glGetFloatIndexedvEXT'));
+  if (glGetFloatIndexedvEXT == null && glGetProcAddress != null) {
+    glGetFloatIndexedvEXT =  tryCall(() => Pointer<NativeFunction<GlGetFloatIndexedvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetFloatIndexedvEXT'))).asFunction<GlGetFloatIndexedvEXT>());
+  }
+  glGetDoubleIndexedvEXT =  tryCall(() => lib.lookupFunction<GlGetDoubleIndexedvEXTNative, GlGetDoubleIndexedvEXT>('glGetDoubleIndexedvEXT'));
+  if (glGetDoubleIndexedvEXT == null && glGetProcAddress != null) {
+    glGetDoubleIndexedvEXT =  tryCall(() => Pointer<NativeFunction<GlGetDoubleIndexedvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetDoubleIndexedvEXT'))).asFunction<GlGetDoubleIndexedvEXT>());
+  }
+  glGetPointerIndexedvEXT =  tryCall(() => lib.lookupFunction<GlGetPointerIndexedvEXTNative, GlGetPointerIndexedvEXT>('glGetPointerIndexedvEXT'));
+  if (glGetPointerIndexedvEXT == null && glGetProcAddress != null) {
+    glGetPointerIndexedvEXT =  tryCall(() => Pointer<NativeFunction<GlGetPointerIndexedvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPointerIndexedvEXT'))).asFunction<GlGetPointerIndexedvEXT>());
+  }
+  glEnableIndexedEXT =  tryCall(() => lib.lookupFunction<GlEnableIndexedEXTNative, GlEnableIndexedEXT>('glEnableIndexedEXT'));
+  if (glEnableIndexedEXT == null && glGetProcAddress != null) {
+    glEnableIndexedEXT =  tryCall(() => Pointer<NativeFunction<GlEnableIndexedEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEnableIndexedEXT'))).asFunction<GlEnableIndexedEXT>());
+  }
+  glDisableIndexedEXT =  tryCall(() => lib.lookupFunction<GlDisableIndexedEXTNative, GlDisableIndexedEXT>('glDisableIndexedEXT'));
+  if (glDisableIndexedEXT == null && glGetProcAddress != null) {
+    glDisableIndexedEXT =  tryCall(() => Pointer<NativeFunction<GlDisableIndexedEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDisableIndexedEXT'))).asFunction<GlDisableIndexedEXT>());
+  }
+  glIsEnabledIndexedEXT =  tryCall(() => lib.lookupFunction<GlIsEnabledIndexedEXTNative, GlIsEnabledIndexedEXT>('glIsEnabledIndexedEXT'));
+  if (glIsEnabledIndexedEXT == null && glGetProcAddress != null) {
+    glIsEnabledIndexedEXT =  tryCall(() => Pointer<NativeFunction<GlIsEnabledIndexedEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsEnabledIndexedEXT'))).asFunction<GlIsEnabledIndexedEXT>());
+  }
+  glGetIntegerIndexedvEXT =  tryCall(() => lib.lookupFunction<GlGetIntegerIndexedvEXTNative, GlGetIntegerIndexedvEXT>('glGetIntegerIndexedvEXT'));
+  if (glGetIntegerIndexedvEXT == null && glGetProcAddress != null) {
+    glGetIntegerIndexedvEXT =  tryCall(() => Pointer<NativeFunction<GlGetIntegerIndexedvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetIntegerIndexedvEXT'))).asFunction<GlGetIntegerIndexedvEXT>());
+  }
+  glGetBooleanIndexedvEXT =  tryCall(() => lib.lookupFunction<GlGetBooleanIndexedvEXTNative, GlGetBooleanIndexedvEXT>('glGetBooleanIndexedvEXT'));
+  if (glGetBooleanIndexedvEXT == null && glGetProcAddress != null) {
+    glGetBooleanIndexedvEXT =  tryCall(() => Pointer<NativeFunction<GlGetBooleanIndexedvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetBooleanIndexedvEXT'))).asFunction<GlGetBooleanIndexedvEXT>());
+  }
+  glCompressedTextureImage3DEXT =  tryCall(() => lib.lookupFunction<GlCompressedTextureImage3DEXTNative, GlCompressedTextureImage3DEXT>('glCompressedTextureImage3DEXT'));
+  if (glCompressedTextureImage3DEXT == null && glGetProcAddress != null) {
+    glCompressedTextureImage3DEXT =  tryCall(() => Pointer<NativeFunction<GlCompressedTextureImage3DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTextureImage3DEXT'))).asFunction<GlCompressedTextureImage3DEXT>());
+  }
+  glCompressedTextureImage2DEXT =  tryCall(() => lib.lookupFunction<GlCompressedTextureImage2DEXTNative, GlCompressedTextureImage2DEXT>('glCompressedTextureImage2DEXT'));
+  if (glCompressedTextureImage2DEXT == null && glGetProcAddress != null) {
+    glCompressedTextureImage2DEXT =  tryCall(() => Pointer<NativeFunction<GlCompressedTextureImage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTextureImage2DEXT'))).asFunction<GlCompressedTextureImage2DEXT>());
+  }
+  glCompressedTextureImage1DEXT =  tryCall(() => lib.lookupFunction<GlCompressedTextureImage1DEXTNative, GlCompressedTextureImage1DEXT>('glCompressedTextureImage1DEXT'));
+  if (glCompressedTextureImage1DEXT == null && glGetProcAddress != null) {
+    glCompressedTextureImage1DEXT =  tryCall(() => Pointer<NativeFunction<GlCompressedTextureImage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTextureImage1DEXT'))).asFunction<GlCompressedTextureImage1DEXT>());
+  }
+  glCompressedTextureSubImage3DEXT =  tryCall(() => lib.lookupFunction<GlCompressedTextureSubImage3DEXTNative, GlCompressedTextureSubImage3DEXT>('glCompressedTextureSubImage3DEXT'));
+  if (glCompressedTextureSubImage3DEXT == null && glGetProcAddress != null) {
+    glCompressedTextureSubImage3DEXT =  tryCall(() => Pointer<NativeFunction<GlCompressedTextureSubImage3DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTextureSubImage3DEXT'))).asFunction<GlCompressedTextureSubImage3DEXT>());
+  }
+  glCompressedTextureSubImage2DEXT =  tryCall(() => lib.lookupFunction<GlCompressedTextureSubImage2DEXTNative, GlCompressedTextureSubImage2DEXT>('glCompressedTextureSubImage2DEXT'));
+  if (glCompressedTextureSubImage2DEXT == null && glGetProcAddress != null) {
+    glCompressedTextureSubImage2DEXT =  tryCall(() => Pointer<NativeFunction<GlCompressedTextureSubImage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTextureSubImage2DEXT'))).asFunction<GlCompressedTextureSubImage2DEXT>());
+  }
+  glCompressedTextureSubImage1DEXT =  tryCall(() => lib.lookupFunction<GlCompressedTextureSubImage1DEXTNative, GlCompressedTextureSubImage1DEXT>('glCompressedTextureSubImage1DEXT'));
+  if (glCompressedTextureSubImage1DEXT == null && glGetProcAddress != null) {
+    glCompressedTextureSubImage1DEXT =  tryCall(() => Pointer<NativeFunction<GlCompressedTextureSubImage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedTextureSubImage1DEXT'))).asFunction<GlCompressedTextureSubImage1DEXT>());
+  }
+  glGetCompressedTextureImageEXT =  tryCall(() => lib.lookupFunction<GlGetCompressedTextureImageEXTNative, GlGetCompressedTextureImageEXT>('glGetCompressedTextureImageEXT'));
+  if (glGetCompressedTextureImageEXT == null && glGetProcAddress != null) {
+    glGetCompressedTextureImageEXT =  tryCall(() => Pointer<NativeFunction<GlGetCompressedTextureImageEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetCompressedTextureImageEXT'))).asFunction<GlGetCompressedTextureImageEXT>());
+  }
+  glCompressedMultiTexImage3DEXT =  tryCall(() => lib.lookupFunction<GlCompressedMultiTexImage3DEXTNative, GlCompressedMultiTexImage3DEXT>('glCompressedMultiTexImage3DEXT'));
+  if (glCompressedMultiTexImage3DEXT == null && glGetProcAddress != null) {
+    glCompressedMultiTexImage3DEXT =  tryCall(() => Pointer<NativeFunction<GlCompressedMultiTexImage3DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedMultiTexImage3DEXT'))).asFunction<GlCompressedMultiTexImage3DEXT>());
+  }
+  glCompressedMultiTexImage2DEXT =  tryCall(() => lib.lookupFunction<GlCompressedMultiTexImage2DEXTNative, GlCompressedMultiTexImage2DEXT>('glCompressedMultiTexImage2DEXT'));
+  if (glCompressedMultiTexImage2DEXT == null && glGetProcAddress != null) {
+    glCompressedMultiTexImage2DEXT =  tryCall(() => Pointer<NativeFunction<GlCompressedMultiTexImage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedMultiTexImage2DEXT'))).asFunction<GlCompressedMultiTexImage2DEXT>());
+  }
+  glCompressedMultiTexImage1DEXT =  tryCall(() => lib.lookupFunction<GlCompressedMultiTexImage1DEXTNative, GlCompressedMultiTexImage1DEXT>('glCompressedMultiTexImage1DEXT'));
+  if (glCompressedMultiTexImage1DEXT == null && glGetProcAddress != null) {
+    glCompressedMultiTexImage1DEXT =  tryCall(() => Pointer<NativeFunction<GlCompressedMultiTexImage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedMultiTexImage1DEXT'))).asFunction<GlCompressedMultiTexImage1DEXT>());
+  }
+  glCompressedMultiTexSubImage3DEXT =  tryCall(() => lib.lookupFunction<GlCompressedMultiTexSubImage3DEXTNative, GlCompressedMultiTexSubImage3DEXT>('glCompressedMultiTexSubImage3DEXT'));
+  if (glCompressedMultiTexSubImage3DEXT == null && glGetProcAddress != null) {
+    glCompressedMultiTexSubImage3DEXT =  tryCall(() => Pointer<NativeFunction<GlCompressedMultiTexSubImage3DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedMultiTexSubImage3DEXT'))).asFunction<GlCompressedMultiTexSubImage3DEXT>());
+  }
+  glCompressedMultiTexSubImage2DEXT =  tryCall(() => lib.lookupFunction<GlCompressedMultiTexSubImage2DEXTNative, GlCompressedMultiTexSubImage2DEXT>('glCompressedMultiTexSubImage2DEXT'));
+  if (glCompressedMultiTexSubImage2DEXT == null && glGetProcAddress != null) {
+    glCompressedMultiTexSubImage2DEXT =  tryCall(() => Pointer<NativeFunction<GlCompressedMultiTexSubImage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedMultiTexSubImage2DEXT'))).asFunction<GlCompressedMultiTexSubImage2DEXT>());
+  }
+  glCompressedMultiTexSubImage1DEXT =  tryCall(() => lib.lookupFunction<GlCompressedMultiTexSubImage1DEXTNative, GlCompressedMultiTexSubImage1DEXT>('glCompressedMultiTexSubImage1DEXT'));
+  if (glCompressedMultiTexSubImage1DEXT == null && glGetProcAddress != null) {
+    glCompressedMultiTexSubImage1DEXT =  tryCall(() => Pointer<NativeFunction<GlCompressedMultiTexSubImage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompressedMultiTexSubImage1DEXT'))).asFunction<GlCompressedMultiTexSubImage1DEXT>());
+  }
+  glGetCompressedMultiTexImageEXT =  tryCall(() => lib.lookupFunction<GlGetCompressedMultiTexImageEXTNative, GlGetCompressedMultiTexImageEXT>('glGetCompressedMultiTexImageEXT'));
+  if (glGetCompressedMultiTexImageEXT == null && glGetProcAddress != null) {
+    glGetCompressedMultiTexImageEXT =  tryCall(() => Pointer<NativeFunction<GlGetCompressedMultiTexImageEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetCompressedMultiTexImageEXT'))).asFunction<GlGetCompressedMultiTexImageEXT>());
+  }
+  glMatrixLoadTransposefEXT =  tryCall(() => lib.lookupFunction<GlMatrixLoadTransposefEXTNative, GlMatrixLoadTransposefEXT>('glMatrixLoadTransposefEXT'));
+  if (glMatrixLoadTransposefEXT == null && glGetProcAddress != null) {
+    glMatrixLoadTransposefEXT =  tryCall(() => Pointer<NativeFunction<GlMatrixLoadTransposefEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixLoadTransposefEXT'))).asFunction<GlMatrixLoadTransposefEXT>());
+  }
+  glMatrixLoadTransposedEXT =  tryCall(() => lib.lookupFunction<GlMatrixLoadTransposedEXTNative, GlMatrixLoadTransposedEXT>('glMatrixLoadTransposedEXT'));
+  if (glMatrixLoadTransposedEXT == null && glGetProcAddress != null) {
+    glMatrixLoadTransposedEXT =  tryCall(() => Pointer<NativeFunction<GlMatrixLoadTransposedEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixLoadTransposedEXT'))).asFunction<GlMatrixLoadTransposedEXT>());
+  }
+  glMatrixMultTransposefEXT =  tryCall(() => lib.lookupFunction<GlMatrixMultTransposefEXTNative, GlMatrixMultTransposefEXT>('glMatrixMultTransposefEXT'));
+  if (glMatrixMultTransposefEXT == null && glGetProcAddress != null) {
+    glMatrixMultTransposefEXT =  tryCall(() => Pointer<NativeFunction<GlMatrixMultTransposefEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixMultTransposefEXT'))).asFunction<GlMatrixMultTransposefEXT>());
+  }
+  glMatrixMultTransposedEXT =  tryCall(() => lib.lookupFunction<GlMatrixMultTransposedEXTNative, GlMatrixMultTransposedEXT>('glMatrixMultTransposedEXT'));
+  if (glMatrixMultTransposedEXT == null && glGetProcAddress != null) {
+    glMatrixMultTransposedEXT =  tryCall(() => Pointer<NativeFunction<GlMatrixMultTransposedEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixMultTransposedEXT'))).asFunction<GlMatrixMultTransposedEXT>());
+  }
+  glNamedBufferDataEXT =  tryCall(() => lib.lookupFunction<GlNamedBufferDataEXTNative, GlNamedBufferDataEXT>('glNamedBufferDataEXT'));
+  if (glNamedBufferDataEXT == null && glGetProcAddress != null) {
+    glNamedBufferDataEXT =  tryCall(() => Pointer<NativeFunction<GlNamedBufferDataEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedBufferDataEXT'))).asFunction<GlNamedBufferDataEXT>());
+  }
+  glNamedBufferSubDataEXT =  tryCall(() => lib.lookupFunction<GlNamedBufferSubDataEXTNative, GlNamedBufferSubDataEXT>('glNamedBufferSubDataEXT'));
+  if (glNamedBufferSubDataEXT == null && glGetProcAddress != null) {
+    glNamedBufferSubDataEXT =  tryCall(() => Pointer<NativeFunction<GlNamedBufferSubDataEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedBufferSubDataEXT'))).asFunction<GlNamedBufferSubDataEXT>());
+  }
+  glMapNamedBufferEXT =  tryCall(() => lib.lookupFunction<GlMapNamedBufferEXTNative, GlMapNamedBufferEXT>('glMapNamedBufferEXT'));
+  if (glMapNamedBufferEXT == null && glGetProcAddress != null) {
+    glMapNamedBufferEXT =  tryCall(() => Pointer<NativeFunction<GlMapNamedBufferEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMapNamedBufferEXT'))).asFunction<GlMapNamedBufferEXT>());
+  }
+  glUnmapNamedBufferEXT =  tryCall(() => lib.lookupFunction<GlUnmapNamedBufferEXTNative, GlUnmapNamedBufferEXT>('glUnmapNamedBufferEXT'));
+  if (glUnmapNamedBufferEXT == null && glGetProcAddress != null) {
+    glUnmapNamedBufferEXT =  tryCall(() => Pointer<NativeFunction<GlUnmapNamedBufferEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUnmapNamedBufferEXT'))).asFunction<GlUnmapNamedBufferEXT>());
+  }
+  glGetNamedBufferParameterivEXT =  tryCall(() => lib.lookupFunction<GlGetNamedBufferParameterivEXTNative, GlGetNamedBufferParameterivEXT>('glGetNamedBufferParameterivEXT'));
+  if (glGetNamedBufferParameterivEXT == null && glGetProcAddress != null) {
+    glGetNamedBufferParameterivEXT =  tryCall(() => Pointer<NativeFunction<GlGetNamedBufferParameterivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedBufferParameterivEXT'))).asFunction<GlGetNamedBufferParameterivEXT>());
+  }
+  glGetNamedBufferPointervEXT =  tryCall(() => lib.lookupFunction<GlGetNamedBufferPointervEXTNative, GlGetNamedBufferPointervEXT>('glGetNamedBufferPointervEXT'));
+  if (glGetNamedBufferPointervEXT == null && glGetProcAddress != null) {
+    glGetNamedBufferPointervEXT =  tryCall(() => Pointer<NativeFunction<GlGetNamedBufferPointervEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedBufferPointervEXT'))).asFunction<GlGetNamedBufferPointervEXT>());
+  }
+  glGetNamedBufferSubDataEXT =  tryCall(() => lib.lookupFunction<GlGetNamedBufferSubDataEXTNative, GlGetNamedBufferSubDataEXT>('glGetNamedBufferSubDataEXT'));
+  if (glGetNamedBufferSubDataEXT == null && glGetProcAddress != null) {
+    glGetNamedBufferSubDataEXT =  tryCall(() => Pointer<NativeFunction<GlGetNamedBufferSubDataEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedBufferSubDataEXT'))).asFunction<GlGetNamedBufferSubDataEXT>());
+  }
+  glProgramUniform1fEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform1fEXTNative, GlProgramUniform1fEXT>('glProgramUniform1fEXT'));
+  if (glProgramUniform1fEXT == null && glGetProcAddress != null) {
+    glProgramUniform1fEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform1fEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1fEXT'))).asFunction<GlProgramUniform1fEXT>());
+  }
+  glProgramUniform2fEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform2fEXTNative, GlProgramUniform2fEXT>('glProgramUniform2fEXT'));
+  if (glProgramUniform2fEXT == null && glGetProcAddress != null) {
+    glProgramUniform2fEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform2fEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2fEXT'))).asFunction<GlProgramUniform2fEXT>());
+  }
+  glProgramUniform3fEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform3fEXTNative, GlProgramUniform3fEXT>('glProgramUniform3fEXT'));
+  if (glProgramUniform3fEXT == null && glGetProcAddress != null) {
+    glProgramUniform3fEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform3fEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3fEXT'))).asFunction<GlProgramUniform3fEXT>());
+  }
+  glProgramUniform4fEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform4fEXTNative, GlProgramUniform4fEXT>('glProgramUniform4fEXT'));
+  if (glProgramUniform4fEXT == null && glGetProcAddress != null) {
+    glProgramUniform4fEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform4fEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4fEXT'))).asFunction<GlProgramUniform4fEXT>());
+  }
+  glProgramUniform1iEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform1iEXTNative, GlProgramUniform1iEXT>('glProgramUniform1iEXT'));
+  if (glProgramUniform1iEXT == null && glGetProcAddress != null) {
+    glProgramUniform1iEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform1iEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1iEXT'))).asFunction<GlProgramUniform1iEXT>());
+  }
+  glProgramUniform2iEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform2iEXTNative, GlProgramUniform2iEXT>('glProgramUniform2iEXT'));
+  if (glProgramUniform2iEXT == null && glGetProcAddress != null) {
+    glProgramUniform2iEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform2iEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2iEXT'))).asFunction<GlProgramUniform2iEXT>());
+  }
+  glProgramUniform3iEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform3iEXTNative, GlProgramUniform3iEXT>('glProgramUniform3iEXT'));
+  if (glProgramUniform3iEXT == null && glGetProcAddress != null) {
+    glProgramUniform3iEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform3iEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3iEXT'))).asFunction<GlProgramUniform3iEXT>());
+  }
+  glProgramUniform4iEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform4iEXTNative, GlProgramUniform4iEXT>('glProgramUniform4iEXT'));
+  if (glProgramUniform4iEXT == null && glGetProcAddress != null) {
+    glProgramUniform4iEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform4iEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4iEXT'))).asFunction<GlProgramUniform4iEXT>());
+  }
+  glProgramUniform1fvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform1fvEXTNative, GlProgramUniform1fvEXT>('glProgramUniform1fvEXT'));
+  if (glProgramUniform1fvEXT == null && glGetProcAddress != null) {
+    glProgramUniform1fvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform1fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1fvEXT'))).asFunction<GlProgramUniform1fvEXT>());
+  }
+  glProgramUniform2fvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform2fvEXTNative, GlProgramUniform2fvEXT>('glProgramUniform2fvEXT'));
+  if (glProgramUniform2fvEXT == null && glGetProcAddress != null) {
+    glProgramUniform2fvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform2fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2fvEXT'))).asFunction<GlProgramUniform2fvEXT>());
+  }
+  glProgramUniform3fvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform3fvEXTNative, GlProgramUniform3fvEXT>('glProgramUniform3fvEXT'));
+  if (glProgramUniform3fvEXT == null && glGetProcAddress != null) {
+    glProgramUniform3fvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform3fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3fvEXT'))).asFunction<GlProgramUniform3fvEXT>());
+  }
+  glProgramUniform4fvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform4fvEXTNative, GlProgramUniform4fvEXT>('glProgramUniform4fvEXT'));
+  if (glProgramUniform4fvEXT == null && glGetProcAddress != null) {
+    glProgramUniform4fvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform4fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4fvEXT'))).asFunction<GlProgramUniform4fvEXT>());
+  }
+  glProgramUniform1ivEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform1ivEXTNative, GlProgramUniform1ivEXT>('glProgramUniform1ivEXT'));
+  if (glProgramUniform1ivEXT == null && glGetProcAddress != null) {
+    glProgramUniform1ivEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform1ivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1ivEXT'))).asFunction<GlProgramUniform1ivEXT>());
+  }
+  glProgramUniform2ivEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform2ivEXTNative, GlProgramUniform2ivEXT>('glProgramUniform2ivEXT'));
+  if (glProgramUniform2ivEXT == null && glGetProcAddress != null) {
+    glProgramUniform2ivEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform2ivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2ivEXT'))).asFunction<GlProgramUniform2ivEXT>());
+  }
+  glProgramUniform3ivEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform3ivEXTNative, GlProgramUniform3ivEXT>('glProgramUniform3ivEXT'));
+  if (glProgramUniform3ivEXT == null && glGetProcAddress != null) {
+    glProgramUniform3ivEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform3ivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3ivEXT'))).asFunction<GlProgramUniform3ivEXT>());
+  }
+  glProgramUniform4ivEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform4ivEXTNative, GlProgramUniform4ivEXT>('glProgramUniform4ivEXT'));
+  if (glProgramUniform4ivEXT == null && glGetProcAddress != null) {
+    glProgramUniform4ivEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform4ivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4ivEXT'))).asFunction<GlProgramUniform4ivEXT>());
+  }
+  glProgramUniformMatrix2fvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix2fvEXTNative, GlProgramUniformMatrix2fvEXT>('glProgramUniformMatrix2fvEXT'));
+  if (glProgramUniformMatrix2fvEXT == null && glGetProcAddress != null) {
+    glProgramUniformMatrix2fvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix2fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix2fvEXT'))).asFunction<GlProgramUniformMatrix2fvEXT>());
+  }
+  glProgramUniformMatrix3fvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix3fvEXTNative, GlProgramUniformMatrix3fvEXT>('glProgramUniformMatrix3fvEXT'));
+  if (glProgramUniformMatrix3fvEXT == null && glGetProcAddress != null) {
+    glProgramUniformMatrix3fvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix3fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix3fvEXT'))).asFunction<GlProgramUniformMatrix3fvEXT>());
+  }
+  glProgramUniformMatrix4fvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix4fvEXTNative, GlProgramUniformMatrix4fvEXT>('glProgramUniformMatrix4fvEXT'));
+  if (glProgramUniformMatrix4fvEXT == null && glGetProcAddress != null) {
+    glProgramUniformMatrix4fvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix4fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix4fvEXT'))).asFunction<GlProgramUniformMatrix4fvEXT>());
+  }
+  glProgramUniformMatrix2x3fvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix2x3fvEXTNative, GlProgramUniformMatrix2x3fvEXT>('glProgramUniformMatrix2x3fvEXT'));
+  if (glProgramUniformMatrix2x3fvEXT == null && glGetProcAddress != null) {
+    glProgramUniformMatrix2x3fvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix2x3fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix2x3fvEXT'))).asFunction<GlProgramUniformMatrix2x3fvEXT>());
+  }
+  glProgramUniformMatrix3x2fvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix3x2fvEXTNative, GlProgramUniformMatrix3x2fvEXT>('glProgramUniformMatrix3x2fvEXT'));
+  if (glProgramUniformMatrix3x2fvEXT == null && glGetProcAddress != null) {
+    glProgramUniformMatrix3x2fvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix3x2fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix3x2fvEXT'))).asFunction<GlProgramUniformMatrix3x2fvEXT>());
+  }
+  glProgramUniformMatrix2x4fvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix2x4fvEXTNative, GlProgramUniformMatrix2x4fvEXT>('glProgramUniformMatrix2x4fvEXT'));
+  if (glProgramUniformMatrix2x4fvEXT == null && glGetProcAddress != null) {
+    glProgramUniformMatrix2x4fvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix2x4fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix2x4fvEXT'))).asFunction<GlProgramUniformMatrix2x4fvEXT>());
+  }
+  glProgramUniformMatrix4x2fvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix4x2fvEXTNative, GlProgramUniformMatrix4x2fvEXT>('glProgramUniformMatrix4x2fvEXT'));
+  if (glProgramUniformMatrix4x2fvEXT == null && glGetProcAddress != null) {
+    glProgramUniformMatrix4x2fvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix4x2fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix4x2fvEXT'))).asFunction<GlProgramUniformMatrix4x2fvEXT>());
+  }
+  glProgramUniformMatrix3x4fvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix3x4fvEXTNative, GlProgramUniformMatrix3x4fvEXT>('glProgramUniformMatrix3x4fvEXT'));
+  if (glProgramUniformMatrix3x4fvEXT == null && glGetProcAddress != null) {
+    glProgramUniformMatrix3x4fvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix3x4fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix3x4fvEXT'))).asFunction<GlProgramUniformMatrix3x4fvEXT>());
+  }
+  glProgramUniformMatrix4x3fvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix4x3fvEXTNative, GlProgramUniformMatrix4x3fvEXT>('glProgramUniformMatrix4x3fvEXT'));
+  if (glProgramUniformMatrix4x3fvEXT == null && glGetProcAddress != null) {
+    glProgramUniformMatrix4x3fvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix4x3fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix4x3fvEXT'))).asFunction<GlProgramUniformMatrix4x3fvEXT>());
+  }
+  glTextureBufferEXT =  tryCall(() => lib.lookupFunction<GlTextureBufferEXTNative, GlTextureBufferEXT>('glTextureBufferEXT'));
+  if (glTextureBufferEXT == null && glGetProcAddress != null) {
+    glTextureBufferEXT =  tryCall(() => Pointer<NativeFunction<GlTextureBufferEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureBufferEXT'))).asFunction<GlTextureBufferEXT>());
+  }
+  glMultiTexBufferEXT =  tryCall(() => lib.lookupFunction<GlMultiTexBufferEXTNative, GlMultiTexBufferEXT>('glMultiTexBufferEXT'));
+  if (glMultiTexBufferEXT == null && glGetProcAddress != null) {
+    glMultiTexBufferEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexBufferEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexBufferEXT'))).asFunction<GlMultiTexBufferEXT>());
+  }
+  glTextureParameterIivEXT =  tryCall(() => lib.lookupFunction<GlTextureParameterIivEXTNative, GlTextureParameterIivEXT>('glTextureParameterIivEXT'));
+  if (glTextureParameterIivEXT == null && glGetProcAddress != null) {
+    glTextureParameterIivEXT =  tryCall(() => Pointer<NativeFunction<GlTextureParameterIivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureParameterIivEXT'))).asFunction<GlTextureParameterIivEXT>());
+  }
+  glTextureParameterIuivEXT =  tryCall(() => lib.lookupFunction<GlTextureParameterIuivEXTNative, GlTextureParameterIuivEXT>('glTextureParameterIuivEXT'));
+  if (glTextureParameterIuivEXT == null && glGetProcAddress != null) {
+    glTextureParameterIuivEXT =  tryCall(() => Pointer<NativeFunction<GlTextureParameterIuivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureParameterIuivEXT'))).asFunction<GlTextureParameterIuivEXT>());
+  }
+  glGetTextureParameterIivEXT =  tryCall(() => lib.lookupFunction<GlGetTextureParameterIivEXTNative, GlGetTextureParameterIivEXT>('glGetTextureParameterIivEXT'));
+  if (glGetTextureParameterIivEXT == null && glGetProcAddress != null) {
+    glGetTextureParameterIivEXT =  tryCall(() => Pointer<NativeFunction<GlGetTextureParameterIivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureParameterIivEXT'))).asFunction<GlGetTextureParameterIivEXT>());
+  }
+  glGetTextureParameterIuivEXT =  tryCall(() => lib.lookupFunction<GlGetTextureParameterIuivEXTNative, GlGetTextureParameterIuivEXT>('glGetTextureParameterIuivEXT'));
+  if (glGetTextureParameterIuivEXT == null && glGetProcAddress != null) {
+    glGetTextureParameterIuivEXT =  tryCall(() => Pointer<NativeFunction<GlGetTextureParameterIuivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureParameterIuivEXT'))).asFunction<GlGetTextureParameterIuivEXT>());
+  }
+  glMultiTexParameterIivEXT =  tryCall(() => lib.lookupFunction<GlMultiTexParameterIivEXTNative, GlMultiTexParameterIivEXT>('glMultiTexParameterIivEXT'));
+  if (glMultiTexParameterIivEXT == null && glGetProcAddress != null) {
+    glMultiTexParameterIivEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexParameterIivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexParameterIivEXT'))).asFunction<GlMultiTexParameterIivEXT>());
+  }
+  glMultiTexParameterIuivEXT =  tryCall(() => lib.lookupFunction<GlMultiTexParameterIuivEXTNative, GlMultiTexParameterIuivEXT>('glMultiTexParameterIuivEXT'));
+  if (glMultiTexParameterIuivEXT == null && glGetProcAddress != null) {
+    glMultiTexParameterIuivEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexParameterIuivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexParameterIuivEXT'))).asFunction<GlMultiTexParameterIuivEXT>());
+  }
+  glGetMultiTexParameterIivEXT =  tryCall(() => lib.lookupFunction<GlGetMultiTexParameterIivEXTNative, GlGetMultiTexParameterIivEXT>('glGetMultiTexParameterIivEXT'));
+  if (glGetMultiTexParameterIivEXT == null && glGetProcAddress != null) {
+    glGetMultiTexParameterIivEXT =  tryCall(() => Pointer<NativeFunction<GlGetMultiTexParameterIivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultiTexParameterIivEXT'))).asFunction<GlGetMultiTexParameterIivEXT>());
+  }
+  glGetMultiTexParameterIuivEXT =  tryCall(() => lib.lookupFunction<GlGetMultiTexParameterIuivEXTNative, GlGetMultiTexParameterIuivEXT>('glGetMultiTexParameterIuivEXT'));
+  if (glGetMultiTexParameterIuivEXT == null && glGetProcAddress != null) {
+    glGetMultiTexParameterIuivEXT =  tryCall(() => Pointer<NativeFunction<GlGetMultiTexParameterIuivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMultiTexParameterIuivEXT'))).asFunction<GlGetMultiTexParameterIuivEXT>());
+  }
+  glProgramUniform1uiEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform1uiEXTNative, GlProgramUniform1uiEXT>('glProgramUniform1uiEXT'));
+  if (glProgramUniform1uiEXT == null && glGetProcAddress != null) {
+    glProgramUniform1uiEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform1uiEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1uiEXT'))).asFunction<GlProgramUniform1uiEXT>());
+  }
+  glProgramUniform2uiEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform2uiEXTNative, GlProgramUniform2uiEXT>('glProgramUniform2uiEXT'));
+  if (glProgramUniform2uiEXT == null && glGetProcAddress != null) {
+    glProgramUniform2uiEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform2uiEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2uiEXT'))).asFunction<GlProgramUniform2uiEXT>());
+  }
+  glProgramUniform3uiEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform3uiEXTNative, GlProgramUniform3uiEXT>('glProgramUniform3uiEXT'));
+  if (glProgramUniform3uiEXT == null && glGetProcAddress != null) {
+    glProgramUniform3uiEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform3uiEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3uiEXT'))).asFunction<GlProgramUniform3uiEXT>());
+  }
+  glProgramUniform4uiEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform4uiEXTNative, GlProgramUniform4uiEXT>('glProgramUniform4uiEXT'));
+  if (glProgramUniform4uiEXT == null && glGetProcAddress != null) {
+    glProgramUniform4uiEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform4uiEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4uiEXT'))).asFunction<GlProgramUniform4uiEXT>());
+  }
+  glProgramUniform1uivEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform1uivEXTNative, GlProgramUniform1uivEXT>('glProgramUniform1uivEXT'));
+  if (glProgramUniform1uivEXT == null && glGetProcAddress != null) {
+    glProgramUniform1uivEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform1uivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1uivEXT'))).asFunction<GlProgramUniform1uivEXT>());
+  }
+  glProgramUniform2uivEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform2uivEXTNative, GlProgramUniform2uivEXT>('glProgramUniform2uivEXT'));
+  if (glProgramUniform2uivEXT == null && glGetProcAddress != null) {
+    glProgramUniform2uivEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform2uivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2uivEXT'))).asFunction<GlProgramUniform2uivEXT>());
+  }
+  glProgramUniform3uivEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform3uivEXTNative, GlProgramUniform3uivEXT>('glProgramUniform3uivEXT'));
+  if (glProgramUniform3uivEXT == null && glGetProcAddress != null) {
+    glProgramUniform3uivEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform3uivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3uivEXT'))).asFunction<GlProgramUniform3uivEXT>());
+  }
+  glProgramUniform4uivEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform4uivEXTNative, GlProgramUniform4uivEXT>('glProgramUniform4uivEXT'));
+  if (glProgramUniform4uivEXT == null && glGetProcAddress != null) {
+    glProgramUniform4uivEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform4uivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4uivEXT'))).asFunction<GlProgramUniform4uivEXT>());
+  }
+  glNamedProgramLocalParameters4fvEXT =  tryCall(() => lib.lookupFunction<GlNamedProgramLocalParameters4fvEXTNative, GlNamedProgramLocalParameters4fvEXT>('glNamedProgramLocalParameters4fvEXT'));
+  if (glNamedProgramLocalParameters4fvEXT == null && glGetProcAddress != null) {
+    glNamedProgramLocalParameters4fvEXT =  tryCall(() => Pointer<NativeFunction<GlNamedProgramLocalParameters4fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedProgramLocalParameters4fvEXT'))).asFunction<GlNamedProgramLocalParameters4fvEXT>());
+  }
+  glNamedProgramLocalParameterI4iEXT =  tryCall(() => lib.lookupFunction<GlNamedProgramLocalParameterI4iEXTNative, GlNamedProgramLocalParameterI4iEXT>('glNamedProgramLocalParameterI4iEXT'));
+  if (glNamedProgramLocalParameterI4iEXT == null && glGetProcAddress != null) {
+    glNamedProgramLocalParameterI4iEXT =  tryCall(() => Pointer<NativeFunction<GlNamedProgramLocalParameterI4iEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedProgramLocalParameterI4iEXT'))).asFunction<GlNamedProgramLocalParameterI4iEXT>());
+  }
+  glNamedProgramLocalParameterI4ivEXT =  tryCall(() => lib.lookupFunction<GlNamedProgramLocalParameterI4ivEXTNative, GlNamedProgramLocalParameterI4ivEXT>('glNamedProgramLocalParameterI4ivEXT'));
+  if (glNamedProgramLocalParameterI4ivEXT == null && glGetProcAddress != null) {
+    glNamedProgramLocalParameterI4ivEXT =  tryCall(() => Pointer<NativeFunction<GlNamedProgramLocalParameterI4ivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedProgramLocalParameterI4ivEXT'))).asFunction<GlNamedProgramLocalParameterI4ivEXT>());
+  }
+  glNamedProgramLocalParametersI4ivEXT =  tryCall(() => lib.lookupFunction<GlNamedProgramLocalParametersI4ivEXTNative, GlNamedProgramLocalParametersI4ivEXT>('glNamedProgramLocalParametersI4ivEXT'));
+  if (glNamedProgramLocalParametersI4ivEXT == null && glGetProcAddress != null) {
+    glNamedProgramLocalParametersI4ivEXT =  tryCall(() => Pointer<NativeFunction<GlNamedProgramLocalParametersI4ivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedProgramLocalParametersI4ivEXT'))).asFunction<GlNamedProgramLocalParametersI4ivEXT>());
+  }
+  glNamedProgramLocalParameterI4uiEXT =  tryCall(() => lib.lookupFunction<GlNamedProgramLocalParameterI4uiEXTNative, GlNamedProgramLocalParameterI4uiEXT>('glNamedProgramLocalParameterI4uiEXT'));
+  if (glNamedProgramLocalParameterI4uiEXT == null && glGetProcAddress != null) {
+    glNamedProgramLocalParameterI4uiEXT =  tryCall(() => Pointer<NativeFunction<GlNamedProgramLocalParameterI4uiEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedProgramLocalParameterI4uiEXT'))).asFunction<GlNamedProgramLocalParameterI4uiEXT>());
+  }
+  glNamedProgramLocalParameterI4uivEXT =  tryCall(() => lib.lookupFunction<GlNamedProgramLocalParameterI4uivEXTNative, GlNamedProgramLocalParameterI4uivEXT>('glNamedProgramLocalParameterI4uivEXT'));
+  if (glNamedProgramLocalParameterI4uivEXT == null && glGetProcAddress != null) {
+    glNamedProgramLocalParameterI4uivEXT =  tryCall(() => Pointer<NativeFunction<GlNamedProgramLocalParameterI4uivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedProgramLocalParameterI4uivEXT'))).asFunction<GlNamedProgramLocalParameterI4uivEXT>());
+  }
+  glNamedProgramLocalParametersI4uivEXT =  tryCall(() => lib.lookupFunction<GlNamedProgramLocalParametersI4uivEXTNative, GlNamedProgramLocalParametersI4uivEXT>('glNamedProgramLocalParametersI4uivEXT'));
+  if (glNamedProgramLocalParametersI4uivEXT == null && glGetProcAddress != null) {
+    glNamedProgramLocalParametersI4uivEXT =  tryCall(() => Pointer<NativeFunction<GlNamedProgramLocalParametersI4uivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedProgramLocalParametersI4uivEXT'))).asFunction<GlNamedProgramLocalParametersI4uivEXT>());
+  }
+  glGetNamedProgramLocalParameterIivEXT =  tryCall(() => lib.lookupFunction<GlGetNamedProgramLocalParameterIivEXTNative, GlGetNamedProgramLocalParameterIivEXT>('glGetNamedProgramLocalParameterIivEXT'));
+  if (glGetNamedProgramLocalParameterIivEXT == null && glGetProcAddress != null) {
+    glGetNamedProgramLocalParameterIivEXT =  tryCall(() => Pointer<NativeFunction<GlGetNamedProgramLocalParameterIivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedProgramLocalParameterIivEXT'))).asFunction<GlGetNamedProgramLocalParameterIivEXT>());
+  }
+  glGetNamedProgramLocalParameterIuivEXT =  tryCall(() => lib.lookupFunction<GlGetNamedProgramLocalParameterIuivEXTNative, GlGetNamedProgramLocalParameterIuivEXT>('glGetNamedProgramLocalParameterIuivEXT'));
+  if (glGetNamedProgramLocalParameterIuivEXT == null && glGetProcAddress != null) {
+    glGetNamedProgramLocalParameterIuivEXT =  tryCall(() => Pointer<NativeFunction<GlGetNamedProgramLocalParameterIuivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedProgramLocalParameterIuivEXT'))).asFunction<GlGetNamedProgramLocalParameterIuivEXT>());
+  }
+  glEnableClientStateiEXT =  tryCall(() => lib.lookupFunction<GlEnableClientStateiEXTNative, GlEnableClientStateiEXT>('glEnableClientStateiEXT'));
+  if (glEnableClientStateiEXT == null && glGetProcAddress != null) {
+    glEnableClientStateiEXT =  tryCall(() => Pointer<NativeFunction<GlEnableClientStateiEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEnableClientStateiEXT'))).asFunction<GlEnableClientStateiEXT>());
+  }
+  glDisableClientStateiEXT =  tryCall(() => lib.lookupFunction<GlDisableClientStateiEXTNative, GlDisableClientStateiEXT>('glDisableClientStateiEXT'));
+  if (glDisableClientStateiEXT == null && glGetProcAddress != null) {
+    glDisableClientStateiEXT =  tryCall(() => Pointer<NativeFunction<GlDisableClientStateiEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDisableClientStateiEXT'))).asFunction<GlDisableClientStateiEXT>());
+  }
+  glGetFloati_vEXT =  tryCall(() => lib.lookupFunction<GlGetFloati_vEXTNative, GlGetFloati_vEXT>('glGetFloati_vEXT'));
+  if (glGetFloati_vEXT == null && glGetProcAddress != null) {
+    glGetFloati_vEXT =  tryCall(() => Pointer<NativeFunction<GlGetFloati_vEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetFloati_vEXT'))).asFunction<GlGetFloati_vEXT>());
+  }
+  glGetDoublei_vEXT =  tryCall(() => lib.lookupFunction<GlGetDoublei_vEXTNative, GlGetDoublei_vEXT>('glGetDoublei_vEXT'));
+  if (glGetDoublei_vEXT == null && glGetProcAddress != null) {
+    glGetDoublei_vEXT =  tryCall(() => Pointer<NativeFunction<GlGetDoublei_vEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetDoublei_vEXT'))).asFunction<GlGetDoublei_vEXT>());
+  }
+  glGetPointeri_vEXT =  tryCall(() => lib.lookupFunction<GlGetPointeri_vEXTNative, GlGetPointeri_vEXT>('glGetPointeri_vEXT'));
+  if (glGetPointeri_vEXT == null && glGetProcAddress != null) {
+    glGetPointeri_vEXT =  tryCall(() => Pointer<NativeFunction<GlGetPointeri_vEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPointeri_vEXT'))).asFunction<GlGetPointeri_vEXT>());
+  }
+  glNamedProgramStringEXT =  tryCall(() => lib.lookupFunction<GlNamedProgramStringEXTNative, GlNamedProgramStringEXT>('glNamedProgramStringEXT'));
+  if (glNamedProgramStringEXT == null && glGetProcAddress != null) {
+    glNamedProgramStringEXT =  tryCall(() => Pointer<NativeFunction<GlNamedProgramStringEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedProgramStringEXT'))).asFunction<GlNamedProgramStringEXT>());
+  }
+  glNamedProgramLocalParameter4dEXT =  tryCall(() => lib.lookupFunction<GlNamedProgramLocalParameter4dEXTNative, GlNamedProgramLocalParameter4dEXT>('glNamedProgramLocalParameter4dEXT'));
+  if (glNamedProgramLocalParameter4dEXT == null && glGetProcAddress != null) {
+    glNamedProgramLocalParameter4dEXT =  tryCall(() => Pointer<NativeFunction<GlNamedProgramLocalParameter4dEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedProgramLocalParameter4dEXT'))).asFunction<GlNamedProgramLocalParameter4dEXT>());
+  }
+  glNamedProgramLocalParameter4dvEXT =  tryCall(() => lib.lookupFunction<GlNamedProgramLocalParameter4dvEXTNative, GlNamedProgramLocalParameter4dvEXT>('glNamedProgramLocalParameter4dvEXT'));
+  if (glNamedProgramLocalParameter4dvEXT == null && glGetProcAddress != null) {
+    glNamedProgramLocalParameter4dvEXT =  tryCall(() => Pointer<NativeFunction<GlNamedProgramLocalParameter4dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedProgramLocalParameter4dvEXT'))).asFunction<GlNamedProgramLocalParameter4dvEXT>());
+  }
+  glNamedProgramLocalParameter4fEXT =  tryCall(() => lib.lookupFunction<GlNamedProgramLocalParameter4fEXTNative, GlNamedProgramLocalParameter4fEXT>('glNamedProgramLocalParameter4fEXT'));
+  if (glNamedProgramLocalParameter4fEXT == null && glGetProcAddress != null) {
+    glNamedProgramLocalParameter4fEXT =  tryCall(() => Pointer<NativeFunction<GlNamedProgramLocalParameter4fEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedProgramLocalParameter4fEXT'))).asFunction<GlNamedProgramLocalParameter4fEXT>());
+  }
+  glNamedProgramLocalParameter4fvEXT =  tryCall(() => lib.lookupFunction<GlNamedProgramLocalParameter4fvEXTNative, GlNamedProgramLocalParameter4fvEXT>('glNamedProgramLocalParameter4fvEXT'));
+  if (glNamedProgramLocalParameter4fvEXT == null && glGetProcAddress != null) {
+    glNamedProgramLocalParameter4fvEXT =  tryCall(() => Pointer<NativeFunction<GlNamedProgramLocalParameter4fvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedProgramLocalParameter4fvEXT'))).asFunction<GlNamedProgramLocalParameter4fvEXT>());
+  }
+  glGetNamedProgramLocalParameterdvEXT =  tryCall(() => lib.lookupFunction<GlGetNamedProgramLocalParameterdvEXTNative, GlGetNamedProgramLocalParameterdvEXT>('glGetNamedProgramLocalParameterdvEXT'));
+  if (glGetNamedProgramLocalParameterdvEXT == null && glGetProcAddress != null) {
+    glGetNamedProgramLocalParameterdvEXT =  tryCall(() => Pointer<NativeFunction<GlGetNamedProgramLocalParameterdvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedProgramLocalParameterdvEXT'))).asFunction<GlGetNamedProgramLocalParameterdvEXT>());
+  }
+  glGetNamedProgramLocalParameterfvEXT =  tryCall(() => lib.lookupFunction<GlGetNamedProgramLocalParameterfvEXTNative, GlGetNamedProgramLocalParameterfvEXT>('glGetNamedProgramLocalParameterfvEXT'));
+  if (glGetNamedProgramLocalParameterfvEXT == null && glGetProcAddress != null) {
+    glGetNamedProgramLocalParameterfvEXT =  tryCall(() => Pointer<NativeFunction<GlGetNamedProgramLocalParameterfvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedProgramLocalParameterfvEXT'))).asFunction<GlGetNamedProgramLocalParameterfvEXT>());
+  }
+  glGetNamedProgramivEXT =  tryCall(() => lib.lookupFunction<GlGetNamedProgramivEXTNative, GlGetNamedProgramivEXT>('glGetNamedProgramivEXT'));
+  if (glGetNamedProgramivEXT == null && glGetProcAddress != null) {
+    glGetNamedProgramivEXT =  tryCall(() => Pointer<NativeFunction<GlGetNamedProgramivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedProgramivEXT'))).asFunction<GlGetNamedProgramivEXT>());
+  }
+  glGetNamedProgramStringEXT =  tryCall(() => lib.lookupFunction<GlGetNamedProgramStringEXTNative, GlGetNamedProgramStringEXT>('glGetNamedProgramStringEXT'));
+  if (glGetNamedProgramStringEXT == null && glGetProcAddress != null) {
+    glGetNamedProgramStringEXT =  tryCall(() => Pointer<NativeFunction<GlGetNamedProgramStringEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedProgramStringEXT'))).asFunction<GlGetNamedProgramStringEXT>());
+  }
+  glNamedRenderbufferStorageEXT =  tryCall(() => lib.lookupFunction<GlNamedRenderbufferStorageEXTNative, GlNamedRenderbufferStorageEXT>('glNamedRenderbufferStorageEXT'));
+  if (glNamedRenderbufferStorageEXT == null && glGetProcAddress != null) {
+    glNamedRenderbufferStorageEXT =  tryCall(() => Pointer<NativeFunction<GlNamedRenderbufferStorageEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedRenderbufferStorageEXT'))).asFunction<GlNamedRenderbufferStorageEXT>());
+  }
+  glGetNamedRenderbufferParameterivEXT =  tryCall(() => lib.lookupFunction<GlGetNamedRenderbufferParameterivEXTNative, GlGetNamedRenderbufferParameterivEXT>('glGetNamedRenderbufferParameterivEXT'));
+  if (glGetNamedRenderbufferParameterivEXT == null && glGetProcAddress != null) {
+    glGetNamedRenderbufferParameterivEXT =  tryCall(() => Pointer<NativeFunction<GlGetNamedRenderbufferParameterivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedRenderbufferParameterivEXT'))).asFunction<GlGetNamedRenderbufferParameterivEXT>());
+  }
+  glNamedRenderbufferStorageMultisampleEXT =  tryCall(() => lib.lookupFunction<GlNamedRenderbufferStorageMultisampleEXTNative, GlNamedRenderbufferStorageMultisampleEXT>('glNamedRenderbufferStorageMultisampleEXT'));
+  if (glNamedRenderbufferStorageMultisampleEXT == null && glGetProcAddress != null) {
+    glNamedRenderbufferStorageMultisampleEXT =  tryCall(() => Pointer<NativeFunction<GlNamedRenderbufferStorageMultisampleEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedRenderbufferStorageMultisampleEXT'))).asFunction<GlNamedRenderbufferStorageMultisampleEXT>());
+  }
+  glNamedRenderbufferStorageMultisampleCoverageEXT =  tryCall(() => lib.lookupFunction<GlNamedRenderbufferStorageMultisampleCoverageEXTNative, GlNamedRenderbufferStorageMultisampleCoverageEXT>('glNamedRenderbufferStorageMultisampleCoverageEXT'));
+  if (glNamedRenderbufferStorageMultisampleCoverageEXT == null && glGetProcAddress != null) {
+    glNamedRenderbufferStorageMultisampleCoverageEXT =  tryCall(() => Pointer<NativeFunction<GlNamedRenderbufferStorageMultisampleCoverageEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedRenderbufferStorageMultisampleCoverageEXT'))).asFunction<GlNamedRenderbufferStorageMultisampleCoverageEXT>());
+  }
+  glCheckNamedFramebufferStatusEXT =  tryCall(() => lib.lookupFunction<GlCheckNamedFramebufferStatusEXTNative, GlCheckNamedFramebufferStatusEXT>('glCheckNamedFramebufferStatusEXT'));
+  if (glCheckNamedFramebufferStatusEXT == null && glGetProcAddress != null) {
+    glCheckNamedFramebufferStatusEXT =  tryCall(() => Pointer<NativeFunction<GlCheckNamedFramebufferStatusEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCheckNamedFramebufferStatusEXT'))).asFunction<GlCheckNamedFramebufferStatusEXT>());
+  }
+  glNamedFramebufferTexture1DEXT =  tryCall(() => lib.lookupFunction<GlNamedFramebufferTexture1DEXTNative, GlNamedFramebufferTexture1DEXT>('glNamedFramebufferTexture1DEXT'));
+  if (glNamedFramebufferTexture1DEXT == null && glGetProcAddress != null) {
+    glNamedFramebufferTexture1DEXT =  tryCall(() => Pointer<NativeFunction<GlNamedFramebufferTexture1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferTexture1DEXT'))).asFunction<GlNamedFramebufferTexture1DEXT>());
+  }
+  glNamedFramebufferTexture2DEXT =  tryCall(() => lib.lookupFunction<GlNamedFramebufferTexture2DEXTNative, GlNamedFramebufferTexture2DEXT>('glNamedFramebufferTexture2DEXT'));
+  if (glNamedFramebufferTexture2DEXT == null && glGetProcAddress != null) {
+    glNamedFramebufferTexture2DEXT =  tryCall(() => Pointer<NativeFunction<GlNamedFramebufferTexture2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferTexture2DEXT'))).asFunction<GlNamedFramebufferTexture2DEXT>());
+  }
+  glNamedFramebufferTexture3DEXT =  tryCall(() => lib.lookupFunction<GlNamedFramebufferTexture3DEXTNative, GlNamedFramebufferTexture3DEXT>('glNamedFramebufferTexture3DEXT'));
+  if (glNamedFramebufferTexture3DEXT == null && glGetProcAddress != null) {
+    glNamedFramebufferTexture3DEXT =  tryCall(() => Pointer<NativeFunction<GlNamedFramebufferTexture3DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferTexture3DEXT'))).asFunction<GlNamedFramebufferTexture3DEXT>());
+  }
+  glNamedFramebufferRenderbufferEXT =  tryCall(() => lib.lookupFunction<GlNamedFramebufferRenderbufferEXTNative, GlNamedFramebufferRenderbufferEXT>('glNamedFramebufferRenderbufferEXT'));
+  if (glNamedFramebufferRenderbufferEXT == null && glGetProcAddress != null) {
+    glNamedFramebufferRenderbufferEXT =  tryCall(() => Pointer<NativeFunction<GlNamedFramebufferRenderbufferEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferRenderbufferEXT'))).asFunction<GlNamedFramebufferRenderbufferEXT>());
+  }
+  glGetNamedFramebufferAttachmentParameterivEXT =  tryCall(() => lib.lookupFunction<GlGetNamedFramebufferAttachmentParameterivEXTNative, GlGetNamedFramebufferAttachmentParameterivEXT>('glGetNamedFramebufferAttachmentParameterivEXT'));
+  if (glGetNamedFramebufferAttachmentParameterivEXT == null && glGetProcAddress != null) {
+    glGetNamedFramebufferAttachmentParameterivEXT =  tryCall(() => Pointer<NativeFunction<GlGetNamedFramebufferAttachmentParameterivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedFramebufferAttachmentParameterivEXT'))).asFunction<GlGetNamedFramebufferAttachmentParameterivEXT>());
+  }
+  glGenerateTextureMipmapEXT =  tryCall(() => lib.lookupFunction<GlGenerateTextureMipmapEXTNative, GlGenerateTextureMipmapEXT>('glGenerateTextureMipmapEXT'));
+  if (glGenerateTextureMipmapEXT == null && glGetProcAddress != null) {
+    glGenerateTextureMipmapEXT =  tryCall(() => Pointer<NativeFunction<GlGenerateTextureMipmapEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenerateTextureMipmapEXT'))).asFunction<GlGenerateTextureMipmapEXT>());
+  }
+  glGenerateMultiTexMipmapEXT =  tryCall(() => lib.lookupFunction<GlGenerateMultiTexMipmapEXTNative, GlGenerateMultiTexMipmapEXT>('glGenerateMultiTexMipmapEXT'));
+  if (glGenerateMultiTexMipmapEXT == null && glGetProcAddress != null) {
+    glGenerateMultiTexMipmapEXT =  tryCall(() => Pointer<NativeFunction<GlGenerateMultiTexMipmapEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenerateMultiTexMipmapEXT'))).asFunction<GlGenerateMultiTexMipmapEXT>());
+  }
+  glFramebufferDrawBufferEXT =  tryCall(() => lib.lookupFunction<GlFramebufferDrawBufferEXTNative, GlFramebufferDrawBufferEXT>('glFramebufferDrawBufferEXT'));
+  if (glFramebufferDrawBufferEXT == null && glGetProcAddress != null) {
+    glFramebufferDrawBufferEXT =  tryCall(() => Pointer<NativeFunction<GlFramebufferDrawBufferEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferDrawBufferEXT'))).asFunction<GlFramebufferDrawBufferEXT>());
+  }
+  glFramebufferDrawBuffersEXT =  tryCall(() => lib.lookupFunction<GlFramebufferDrawBuffersEXTNative, GlFramebufferDrawBuffersEXT>('glFramebufferDrawBuffersEXT'));
+  if (glFramebufferDrawBuffersEXT == null && glGetProcAddress != null) {
+    glFramebufferDrawBuffersEXT =  tryCall(() => Pointer<NativeFunction<GlFramebufferDrawBuffersEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferDrawBuffersEXT'))).asFunction<GlFramebufferDrawBuffersEXT>());
+  }
+  glFramebufferReadBufferEXT =  tryCall(() => lib.lookupFunction<GlFramebufferReadBufferEXTNative, GlFramebufferReadBufferEXT>('glFramebufferReadBufferEXT'));
+  if (glFramebufferReadBufferEXT == null && glGetProcAddress != null) {
+    glFramebufferReadBufferEXT =  tryCall(() => Pointer<NativeFunction<GlFramebufferReadBufferEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferReadBufferEXT'))).asFunction<GlFramebufferReadBufferEXT>());
+  }
+  glGetFramebufferParameterivEXT =  tryCall(() => lib.lookupFunction<GlGetFramebufferParameterivEXTNative, GlGetFramebufferParameterivEXT>('glGetFramebufferParameterivEXT'));
+  if (glGetFramebufferParameterivEXT == null && glGetProcAddress != null) {
+    glGetFramebufferParameterivEXT =  tryCall(() => Pointer<NativeFunction<GlGetFramebufferParameterivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetFramebufferParameterivEXT'))).asFunction<GlGetFramebufferParameterivEXT>());
+  }
+  glNamedCopyBufferSubDataEXT =  tryCall(() => lib.lookupFunction<GlNamedCopyBufferSubDataEXTNative, GlNamedCopyBufferSubDataEXT>('glNamedCopyBufferSubDataEXT'));
+  if (glNamedCopyBufferSubDataEXT == null && glGetProcAddress != null) {
+    glNamedCopyBufferSubDataEXT =  tryCall(() => Pointer<NativeFunction<GlNamedCopyBufferSubDataEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedCopyBufferSubDataEXT'))).asFunction<GlNamedCopyBufferSubDataEXT>());
+  }
+  glNamedFramebufferTextureEXT =  tryCall(() => lib.lookupFunction<GlNamedFramebufferTextureEXTNative, GlNamedFramebufferTextureEXT>('glNamedFramebufferTextureEXT'));
+  if (glNamedFramebufferTextureEXT == null && glGetProcAddress != null) {
+    glNamedFramebufferTextureEXT =  tryCall(() => Pointer<NativeFunction<GlNamedFramebufferTextureEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferTextureEXT'))).asFunction<GlNamedFramebufferTextureEXT>());
+  }
+  glNamedFramebufferTextureLayerEXT =  tryCall(() => lib.lookupFunction<GlNamedFramebufferTextureLayerEXTNative, GlNamedFramebufferTextureLayerEXT>('glNamedFramebufferTextureLayerEXT'));
+  if (glNamedFramebufferTextureLayerEXT == null && glGetProcAddress != null) {
+    glNamedFramebufferTextureLayerEXT =  tryCall(() => Pointer<NativeFunction<GlNamedFramebufferTextureLayerEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferTextureLayerEXT'))).asFunction<GlNamedFramebufferTextureLayerEXT>());
+  }
+  glNamedFramebufferTextureFaceEXT =  tryCall(() => lib.lookupFunction<GlNamedFramebufferTextureFaceEXTNative, GlNamedFramebufferTextureFaceEXT>('glNamedFramebufferTextureFaceEXT'));
+  if (glNamedFramebufferTextureFaceEXT == null && glGetProcAddress != null) {
+    glNamedFramebufferTextureFaceEXT =  tryCall(() => Pointer<NativeFunction<GlNamedFramebufferTextureFaceEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferTextureFaceEXT'))).asFunction<GlNamedFramebufferTextureFaceEXT>());
+  }
+  glTextureRenderbufferEXT =  tryCall(() => lib.lookupFunction<GlTextureRenderbufferEXTNative, GlTextureRenderbufferEXT>('glTextureRenderbufferEXT'));
+  if (glTextureRenderbufferEXT == null && glGetProcAddress != null) {
+    glTextureRenderbufferEXT =  tryCall(() => Pointer<NativeFunction<GlTextureRenderbufferEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureRenderbufferEXT'))).asFunction<GlTextureRenderbufferEXT>());
+  }
+  glMultiTexRenderbufferEXT =  tryCall(() => lib.lookupFunction<GlMultiTexRenderbufferEXTNative, GlMultiTexRenderbufferEXT>('glMultiTexRenderbufferEXT'));
+  if (glMultiTexRenderbufferEXT == null && glGetProcAddress != null) {
+    glMultiTexRenderbufferEXT =  tryCall(() => Pointer<NativeFunction<GlMultiTexRenderbufferEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiTexRenderbufferEXT'))).asFunction<GlMultiTexRenderbufferEXT>());
+  }
+  glVertexArrayVertexOffsetEXT =  tryCall(() => lib.lookupFunction<GlVertexArrayVertexOffsetEXTNative, GlVertexArrayVertexOffsetEXT>('glVertexArrayVertexOffsetEXT'));
+  if (glVertexArrayVertexOffsetEXT == null && glGetProcAddress != null) {
+    glVertexArrayVertexOffsetEXT =  tryCall(() => Pointer<NativeFunction<GlVertexArrayVertexOffsetEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayVertexOffsetEXT'))).asFunction<GlVertexArrayVertexOffsetEXT>());
+  }
+  glVertexArrayColorOffsetEXT =  tryCall(() => lib.lookupFunction<GlVertexArrayColorOffsetEXTNative, GlVertexArrayColorOffsetEXT>('glVertexArrayColorOffsetEXT'));
+  if (glVertexArrayColorOffsetEXT == null && glGetProcAddress != null) {
+    glVertexArrayColorOffsetEXT =  tryCall(() => Pointer<NativeFunction<GlVertexArrayColorOffsetEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayColorOffsetEXT'))).asFunction<GlVertexArrayColorOffsetEXT>());
+  }
+  glVertexArrayEdgeFlagOffsetEXT =  tryCall(() => lib.lookupFunction<GlVertexArrayEdgeFlagOffsetEXTNative, GlVertexArrayEdgeFlagOffsetEXT>('glVertexArrayEdgeFlagOffsetEXT'));
+  if (glVertexArrayEdgeFlagOffsetEXT == null && glGetProcAddress != null) {
+    glVertexArrayEdgeFlagOffsetEXT =  tryCall(() => Pointer<NativeFunction<GlVertexArrayEdgeFlagOffsetEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayEdgeFlagOffsetEXT'))).asFunction<GlVertexArrayEdgeFlagOffsetEXT>());
+  }
+  glVertexArrayIndexOffsetEXT =  tryCall(() => lib.lookupFunction<GlVertexArrayIndexOffsetEXTNative, GlVertexArrayIndexOffsetEXT>('glVertexArrayIndexOffsetEXT'));
+  if (glVertexArrayIndexOffsetEXT == null && glGetProcAddress != null) {
+    glVertexArrayIndexOffsetEXT =  tryCall(() => Pointer<NativeFunction<GlVertexArrayIndexOffsetEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayIndexOffsetEXT'))).asFunction<GlVertexArrayIndexOffsetEXT>());
+  }
+  glVertexArrayNormalOffsetEXT =  tryCall(() => lib.lookupFunction<GlVertexArrayNormalOffsetEXTNative, GlVertexArrayNormalOffsetEXT>('glVertexArrayNormalOffsetEXT'));
+  if (glVertexArrayNormalOffsetEXT == null && glGetProcAddress != null) {
+    glVertexArrayNormalOffsetEXT =  tryCall(() => Pointer<NativeFunction<GlVertexArrayNormalOffsetEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayNormalOffsetEXT'))).asFunction<GlVertexArrayNormalOffsetEXT>());
+  }
+  glVertexArrayTexCoordOffsetEXT =  tryCall(() => lib.lookupFunction<GlVertexArrayTexCoordOffsetEXTNative, GlVertexArrayTexCoordOffsetEXT>('glVertexArrayTexCoordOffsetEXT'));
+  if (glVertexArrayTexCoordOffsetEXT == null && glGetProcAddress != null) {
+    glVertexArrayTexCoordOffsetEXT =  tryCall(() => Pointer<NativeFunction<GlVertexArrayTexCoordOffsetEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayTexCoordOffsetEXT'))).asFunction<GlVertexArrayTexCoordOffsetEXT>());
+  }
+  glVertexArrayMultiTexCoordOffsetEXT =  tryCall(() => lib.lookupFunction<GlVertexArrayMultiTexCoordOffsetEXTNative, GlVertexArrayMultiTexCoordOffsetEXT>('glVertexArrayMultiTexCoordOffsetEXT'));
+  if (glVertexArrayMultiTexCoordOffsetEXT == null && glGetProcAddress != null) {
+    glVertexArrayMultiTexCoordOffsetEXT =  tryCall(() => Pointer<NativeFunction<GlVertexArrayMultiTexCoordOffsetEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayMultiTexCoordOffsetEXT'))).asFunction<GlVertexArrayMultiTexCoordOffsetEXT>());
+  }
+  glVertexArrayFogCoordOffsetEXT =  tryCall(() => lib.lookupFunction<GlVertexArrayFogCoordOffsetEXTNative, GlVertexArrayFogCoordOffsetEXT>('glVertexArrayFogCoordOffsetEXT'));
+  if (glVertexArrayFogCoordOffsetEXT == null && glGetProcAddress != null) {
+    glVertexArrayFogCoordOffsetEXT =  tryCall(() => Pointer<NativeFunction<GlVertexArrayFogCoordOffsetEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayFogCoordOffsetEXT'))).asFunction<GlVertexArrayFogCoordOffsetEXT>());
+  }
+  glVertexArraySecondaryColorOffsetEXT =  tryCall(() => lib.lookupFunction<GlVertexArraySecondaryColorOffsetEXTNative, GlVertexArraySecondaryColorOffsetEXT>('glVertexArraySecondaryColorOffsetEXT'));
+  if (glVertexArraySecondaryColorOffsetEXT == null && glGetProcAddress != null) {
+    glVertexArraySecondaryColorOffsetEXT =  tryCall(() => Pointer<NativeFunction<GlVertexArraySecondaryColorOffsetEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArraySecondaryColorOffsetEXT'))).asFunction<GlVertexArraySecondaryColorOffsetEXT>());
+  }
+  glVertexArrayVertexAttribOffsetEXT =  tryCall(() => lib.lookupFunction<GlVertexArrayVertexAttribOffsetEXTNative, GlVertexArrayVertexAttribOffsetEXT>('glVertexArrayVertexAttribOffsetEXT'));
+  if (glVertexArrayVertexAttribOffsetEXT == null && glGetProcAddress != null) {
+    glVertexArrayVertexAttribOffsetEXT =  tryCall(() => Pointer<NativeFunction<GlVertexArrayVertexAttribOffsetEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayVertexAttribOffsetEXT'))).asFunction<GlVertexArrayVertexAttribOffsetEXT>());
+  }
+  glVertexArrayVertexAttribIOffsetEXT =  tryCall(() => lib.lookupFunction<GlVertexArrayVertexAttribIOffsetEXTNative, GlVertexArrayVertexAttribIOffsetEXT>('glVertexArrayVertexAttribIOffsetEXT'));
+  if (glVertexArrayVertexAttribIOffsetEXT == null && glGetProcAddress != null) {
+    glVertexArrayVertexAttribIOffsetEXT =  tryCall(() => Pointer<NativeFunction<GlVertexArrayVertexAttribIOffsetEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayVertexAttribIOffsetEXT'))).asFunction<GlVertexArrayVertexAttribIOffsetEXT>());
+  }
+  glEnableVertexArrayEXT =  tryCall(() => lib.lookupFunction<GlEnableVertexArrayEXTNative, GlEnableVertexArrayEXT>('glEnableVertexArrayEXT'));
+  if (glEnableVertexArrayEXT == null && glGetProcAddress != null) {
+    glEnableVertexArrayEXT =  tryCall(() => Pointer<NativeFunction<GlEnableVertexArrayEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEnableVertexArrayEXT'))).asFunction<GlEnableVertexArrayEXT>());
+  }
+  glDisableVertexArrayEXT =  tryCall(() => lib.lookupFunction<GlDisableVertexArrayEXTNative, GlDisableVertexArrayEXT>('glDisableVertexArrayEXT'));
+  if (glDisableVertexArrayEXT == null && glGetProcAddress != null) {
+    glDisableVertexArrayEXT =  tryCall(() => Pointer<NativeFunction<GlDisableVertexArrayEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDisableVertexArrayEXT'))).asFunction<GlDisableVertexArrayEXT>());
+  }
+  glEnableVertexArrayAttribEXT =  tryCall(() => lib.lookupFunction<GlEnableVertexArrayAttribEXTNative, GlEnableVertexArrayAttribEXT>('glEnableVertexArrayAttribEXT'));
+  if (glEnableVertexArrayAttribEXT == null && glGetProcAddress != null) {
+    glEnableVertexArrayAttribEXT =  tryCall(() => Pointer<NativeFunction<GlEnableVertexArrayAttribEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEnableVertexArrayAttribEXT'))).asFunction<GlEnableVertexArrayAttribEXT>());
+  }
+  glDisableVertexArrayAttribEXT =  tryCall(() => lib.lookupFunction<GlDisableVertexArrayAttribEXTNative, GlDisableVertexArrayAttribEXT>('glDisableVertexArrayAttribEXT'));
+  if (glDisableVertexArrayAttribEXT == null && glGetProcAddress != null) {
+    glDisableVertexArrayAttribEXT =  tryCall(() => Pointer<NativeFunction<GlDisableVertexArrayAttribEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDisableVertexArrayAttribEXT'))).asFunction<GlDisableVertexArrayAttribEXT>());
+  }
+  glGetVertexArrayIntegervEXT =  tryCall(() => lib.lookupFunction<GlGetVertexArrayIntegervEXTNative, GlGetVertexArrayIntegervEXT>('glGetVertexArrayIntegervEXT'));
+  if (glGetVertexArrayIntegervEXT == null && glGetProcAddress != null) {
+    glGetVertexArrayIntegervEXT =  tryCall(() => Pointer<NativeFunction<GlGetVertexArrayIntegervEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexArrayIntegervEXT'))).asFunction<GlGetVertexArrayIntegervEXT>());
+  }
+  glGetVertexArrayPointervEXT =  tryCall(() => lib.lookupFunction<GlGetVertexArrayPointervEXTNative, GlGetVertexArrayPointervEXT>('glGetVertexArrayPointervEXT'));
+  if (glGetVertexArrayPointervEXT == null && glGetProcAddress != null) {
+    glGetVertexArrayPointervEXT =  tryCall(() => Pointer<NativeFunction<GlGetVertexArrayPointervEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexArrayPointervEXT'))).asFunction<GlGetVertexArrayPointervEXT>());
+  }
+  glGetVertexArrayIntegeri_vEXT =  tryCall(() => lib.lookupFunction<GlGetVertexArrayIntegeri_vEXTNative, GlGetVertexArrayIntegeri_vEXT>('glGetVertexArrayIntegeri_vEXT'));
+  if (glGetVertexArrayIntegeri_vEXT == null && glGetProcAddress != null) {
+    glGetVertexArrayIntegeri_vEXT =  tryCall(() => Pointer<NativeFunction<GlGetVertexArrayIntegeri_vEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexArrayIntegeri_vEXT'))).asFunction<GlGetVertexArrayIntegeri_vEXT>());
+  }
+  glGetVertexArrayPointeri_vEXT =  tryCall(() => lib.lookupFunction<GlGetVertexArrayPointeri_vEXTNative, GlGetVertexArrayPointeri_vEXT>('glGetVertexArrayPointeri_vEXT'));
+  if (glGetVertexArrayPointeri_vEXT == null && glGetProcAddress != null) {
+    glGetVertexArrayPointeri_vEXT =  tryCall(() => Pointer<NativeFunction<GlGetVertexArrayPointeri_vEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexArrayPointeri_vEXT'))).asFunction<GlGetVertexArrayPointeri_vEXT>());
+  }
+  glMapNamedBufferRangeEXT =  tryCall(() => lib.lookupFunction<GlMapNamedBufferRangeEXTNative, GlMapNamedBufferRangeEXT>('glMapNamedBufferRangeEXT'));
+  if (glMapNamedBufferRangeEXT == null && glGetProcAddress != null) {
+    glMapNamedBufferRangeEXT =  tryCall(() => Pointer<NativeFunction<GlMapNamedBufferRangeEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMapNamedBufferRangeEXT'))).asFunction<GlMapNamedBufferRangeEXT>());
+  }
+  glFlushMappedNamedBufferRangeEXT =  tryCall(() => lib.lookupFunction<GlFlushMappedNamedBufferRangeEXTNative, GlFlushMappedNamedBufferRangeEXT>('glFlushMappedNamedBufferRangeEXT'));
+  if (glFlushMappedNamedBufferRangeEXT == null && glGetProcAddress != null) {
+    glFlushMappedNamedBufferRangeEXT =  tryCall(() => Pointer<NativeFunction<GlFlushMappedNamedBufferRangeEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFlushMappedNamedBufferRangeEXT'))).asFunction<GlFlushMappedNamedBufferRangeEXT>());
+  }
+  glNamedBufferStorageEXT =  tryCall(() => lib.lookupFunction<GlNamedBufferStorageEXTNative, GlNamedBufferStorageEXT>('glNamedBufferStorageEXT'));
+  if (glNamedBufferStorageEXT == null && glGetProcAddress != null) {
+    glNamedBufferStorageEXT =  tryCall(() => Pointer<NativeFunction<GlNamedBufferStorageEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedBufferStorageEXT'))).asFunction<GlNamedBufferStorageEXT>());
+  }
+  glClearNamedBufferDataEXT =  tryCall(() => lib.lookupFunction<GlClearNamedBufferDataEXTNative, GlClearNamedBufferDataEXT>('glClearNamedBufferDataEXT'));
+  if (glClearNamedBufferDataEXT == null && glGetProcAddress != null) {
+    glClearNamedBufferDataEXT =  tryCall(() => Pointer<NativeFunction<GlClearNamedBufferDataEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearNamedBufferDataEXT'))).asFunction<GlClearNamedBufferDataEXT>());
+  }
+  glClearNamedBufferSubDataEXT =  tryCall(() => lib.lookupFunction<GlClearNamedBufferSubDataEXTNative, GlClearNamedBufferSubDataEXT>('glClearNamedBufferSubDataEXT'));
+  if (glClearNamedBufferSubDataEXT == null && glGetProcAddress != null) {
+    glClearNamedBufferSubDataEXT =  tryCall(() => Pointer<NativeFunction<GlClearNamedBufferSubDataEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearNamedBufferSubDataEXT'))).asFunction<GlClearNamedBufferSubDataEXT>());
+  }
+  glNamedFramebufferParameteriEXT =  tryCall(() => lib.lookupFunction<GlNamedFramebufferParameteriEXTNative, GlNamedFramebufferParameteriEXT>('glNamedFramebufferParameteriEXT'));
+  if (glNamedFramebufferParameteriEXT == null && glGetProcAddress != null) {
+    glNamedFramebufferParameteriEXT =  tryCall(() => Pointer<NativeFunction<GlNamedFramebufferParameteriEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferParameteriEXT'))).asFunction<GlNamedFramebufferParameteriEXT>());
+  }
+  glGetNamedFramebufferParameterivEXT =  tryCall(() => lib.lookupFunction<GlGetNamedFramebufferParameterivEXTNative, GlGetNamedFramebufferParameterivEXT>('glGetNamedFramebufferParameterivEXT'));
+  if (glGetNamedFramebufferParameterivEXT == null && glGetProcAddress != null) {
+    glGetNamedFramebufferParameterivEXT =  tryCall(() => Pointer<NativeFunction<GlGetNamedFramebufferParameterivEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedFramebufferParameterivEXT'))).asFunction<GlGetNamedFramebufferParameterivEXT>());
+  }
+  glProgramUniform1dEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform1dEXTNative, GlProgramUniform1dEXT>('glProgramUniform1dEXT'));
+  if (glProgramUniform1dEXT == null && glGetProcAddress != null) {
+    glProgramUniform1dEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform1dEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1dEXT'))).asFunction<GlProgramUniform1dEXT>());
+  }
+  glProgramUniform2dEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform2dEXTNative, GlProgramUniform2dEXT>('glProgramUniform2dEXT'));
+  if (glProgramUniform2dEXT == null && glGetProcAddress != null) {
+    glProgramUniform2dEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform2dEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2dEXT'))).asFunction<GlProgramUniform2dEXT>());
+  }
+  glProgramUniform3dEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform3dEXTNative, GlProgramUniform3dEXT>('glProgramUniform3dEXT'));
+  if (glProgramUniform3dEXT == null && glGetProcAddress != null) {
+    glProgramUniform3dEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform3dEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3dEXT'))).asFunction<GlProgramUniform3dEXT>());
+  }
+  glProgramUniform4dEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform4dEXTNative, GlProgramUniform4dEXT>('glProgramUniform4dEXT'));
+  if (glProgramUniform4dEXT == null && glGetProcAddress != null) {
+    glProgramUniform4dEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform4dEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4dEXT'))).asFunction<GlProgramUniform4dEXT>());
+  }
+  glProgramUniform1dvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform1dvEXTNative, GlProgramUniform1dvEXT>('glProgramUniform1dvEXT'));
+  if (glProgramUniform1dvEXT == null && glGetProcAddress != null) {
+    glProgramUniform1dvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform1dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1dvEXT'))).asFunction<GlProgramUniform1dvEXT>());
+  }
+  glProgramUniform2dvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform2dvEXTNative, GlProgramUniform2dvEXT>('glProgramUniform2dvEXT'));
+  if (glProgramUniform2dvEXT == null && glGetProcAddress != null) {
+    glProgramUniform2dvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform2dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2dvEXT'))).asFunction<GlProgramUniform2dvEXT>());
+  }
+  glProgramUniform3dvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform3dvEXTNative, GlProgramUniform3dvEXT>('glProgramUniform3dvEXT'));
+  if (glProgramUniform3dvEXT == null && glGetProcAddress != null) {
+    glProgramUniform3dvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform3dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3dvEXT'))).asFunction<GlProgramUniform3dvEXT>());
+  }
+  glProgramUniform4dvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniform4dvEXTNative, GlProgramUniform4dvEXT>('glProgramUniform4dvEXT'));
+  if (glProgramUniform4dvEXT == null && glGetProcAddress != null) {
+    glProgramUniform4dvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniform4dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4dvEXT'))).asFunction<GlProgramUniform4dvEXT>());
+  }
+  glProgramUniformMatrix2dvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix2dvEXTNative, GlProgramUniformMatrix2dvEXT>('glProgramUniformMatrix2dvEXT'));
+  if (glProgramUniformMatrix2dvEXT == null && glGetProcAddress != null) {
+    glProgramUniformMatrix2dvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix2dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix2dvEXT'))).asFunction<GlProgramUniformMatrix2dvEXT>());
+  }
+  glProgramUniformMatrix3dvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix3dvEXTNative, GlProgramUniformMatrix3dvEXT>('glProgramUniformMatrix3dvEXT'));
+  if (glProgramUniformMatrix3dvEXT == null && glGetProcAddress != null) {
+    glProgramUniformMatrix3dvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix3dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix3dvEXT'))).asFunction<GlProgramUniformMatrix3dvEXT>());
+  }
+  glProgramUniformMatrix4dvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix4dvEXTNative, GlProgramUniformMatrix4dvEXT>('glProgramUniformMatrix4dvEXT'));
+  if (glProgramUniformMatrix4dvEXT == null && glGetProcAddress != null) {
+    glProgramUniformMatrix4dvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix4dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix4dvEXT'))).asFunction<GlProgramUniformMatrix4dvEXT>());
+  }
+  glProgramUniformMatrix2x3dvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix2x3dvEXTNative, GlProgramUniformMatrix2x3dvEXT>('glProgramUniformMatrix2x3dvEXT'));
+  if (glProgramUniformMatrix2x3dvEXT == null && glGetProcAddress != null) {
+    glProgramUniformMatrix2x3dvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix2x3dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix2x3dvEXT'))).asFunction<GlProgramUniformMatrix2x3dvEXT>());
+  }
+  glProgramUniformMatrix2x4dvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix2x4dvEXTNative, GlProgramUniformMatrix2x4dvEXT>('glProgramUniformMatrix2x4dvEXT'));
+  if (glProgramUniformMatrix2x4dvEXT == null && glGetProcAddress != null) {
+    glProgramUniformMatrix2x4dvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix2x4dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix2x4dvEXT'))).asFunction<GlProgramUniformMatrix2x4dvEXT>());
+  }
+  glProgramUniformMatrix3x2dvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix3x2dvEXTNative, GlProgramUniformMatrix3x2dvEXT>('glProgramUniformMatrix3x2dvEXT'));
+  if (glProgramUniformMatrix3x2dvEXT == null && glGetProcAddress != null) {
+    glProgramUniformMatrix3x2dvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix3x2dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix3x2dvEXT'))).asFunction<GlProgramUniformMatrix3x2dvEXT>());
+  }
+  glProgramUniformMatrix3x4dvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix3x4dvEXTNative, GlProgramUniformMatrix3x4dvEXT>('glProgramUniformMatrix3x4dvEXT'));
+  if (glProgramUniformMatrix3x4dvEXT == null && glGetProcAddress != null) {
+    glProgramUniformMatrix3x4dvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix3x4dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix3x4dvEXT'))).asFunction<GlProgramUniformMatrix3x4dvEXT>());
+  }
+  glProgramUniformMatrix4x2dvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix4x2dvEXTNative, GlProgramUniformMatrix4x2dvEXT>('glProgramUniformMatrix4x2dvEXT'));
+  if (glProgramUniformMatrix4x2dvEXT == null && glGetProcAddress != null) {
+    glProgramUniformMatrix4x2dvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix4x2dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix4x2dvEXT'))).asFunction<GlProgramUniformMatrix4x2dvEXT>());
+  }
+  glProgramUniformMatrix4x3dvEXT =  tryCall(() => lib.lookupFunction<GlProgramUniformMatrix4x3dvEXTNative, GlProgramUniformMatrix4x3dvEXT>('glProgramUniformMatrix4x3dvEXT'));
+  if (glProgramUniformMatrix4x3dvEXT == null && glGetProcAddress != null) {
+    glProgramUniformMatrix4x3dvEXT =  tryCall(() => Pointer<NativeFunction<GlProgramUniformMatrix4x3dvEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformMatrix4x3dvEXT'))).asFunction<GlProgramUniformMatrix4x3dvEXT>());
+  }
+  glTextureBufferRangeEXT =  tryCall(() => lib.lookupFunction<GlTextureBufferRangeEXTNative, GlTextureBufferRangeEXT>('glTextureBufferRangeEXT'));
+  if (glTextureBufferRangeEXT == null && glGetProcAddress != null) {
+    glTextureBufferRangeEXT =  tryCall(() => Pointer<NativeFunction<GlTextureBufferRangeEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureBufferRangeEXT'))).asFunction<GlTextureBufferRangeEXT>());
+  }
+  glTextureStorage1DEXT =  tryCall(() => lib.lookupFunction<GlTextureStorage1DEXTNative, GlTextureStorage1DEXT>('glTextureStorage1DEXT'));
+  if (glTextureStorage1DEXT == null && glGetProcAddress != null) {
+    glTextureStorage1DEXT =  tryCall(() => Pointer<NativeFunction<GlTextureStorage1DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureStorage1DEXT'))).asFunction<GlTextureStorage1DEXT>());
+  }
+  glTextureStorage2DEXT =  tryCall(() => lib.lookupFunction<GlTextureStorage2DEXTNative, GlTextureStorage2DEXT>('glTextureStorage2DEXT'));
+  if (glTextureStorage2DEXT == null && glGetProcAddress != null) {
+    glTextureStorage2DEXT =  tryCall(() => Pointer<NativeFunction<GlTextureStorage2DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureStorage2DEXT'))).asFunction<GlTextureStorage2DEXT>());
+  }
+  glTextureStorage3DEXT =  tryCall(() => lib.lookupFunction<GlTextureStorage3DEXTNative, GlTextureStorage3DEXT>('glTextureStorage3DEXT'));
+  if (glTextureStorage3DEXT == null && glGetProcAddress != null) {
+    glTextureStorage3DEXT =  tryCall(() => Pointer<NativeFunction<GlTextureStorage3DEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureStorage3DEXT'))).asFunction<GlTextureStorage3DEXT>());
+  }
+  glTextureStorage2DMultisampleEXT =  tryCall(() => lib.lookupFunction<GlTextureStorage2DMultisampleEXTNative, GlTextureStorage2DMultisampleEXT>('glTextureStorage2DMultisampleEXT'));
+  if (glTextureStorage2DMultisampleEXT == null && glGetProcAddress != null) {
+    glTextureStorage2DMultisampleEXT =  tryCall(() => Pointer<NativeFunction<GlTextureStorage2DMultisampleEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureStorage2DMultisampleEXT'))).asFunction<GlTextureStorage2DMultisampleEXT>());
+  }
+  glTextureStorage3DMultisampleEXT =  tryCall(() => lib.lookupFunction<GlTextureStorage3DMultisampleEXTNative, GlTextureStorage3DMultisampleEXT>('glTextureStorage3DMultisampleEXT'));
+  if (glTextureStorage3DMultisampleEXT == null && glGetProcAddress != null) {
+    glTextureStorage3DMultisampleEXT =  tryCall(() => Pointer<NativeFunction<GlTextureStorage3DMultisampleEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureStorage3DMultisampleEXT'))).asFunction<GlTextureStorage3DMultisampleEXT>());
+  }
+  glVertexArrayBindVertexBufferEXT =  tryCall(() => lib.lookupFunction<GlVertexArrayBindVertexBufferEXTNative, GlVertexArrayBindVertexBufferEXT>('glVertexArrayBindVertexBufferEXT'));
+  if (glVertexArrayBindVertexBufferEXT == null && glGetProcAddress != null) {
+    glVertexArrayBindVertexBufferEXT =  tryCall(() => Pointer<NativeFunction<GlVertexArrayBindVertexBufferEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayBindVertexBufferEXT'))).asFunction<GlVertexArrayBindVertexBufferEXT>());
+  }
+  glVertexArrayVertexAttribFormatEXT =  tryCall(() => lib.lookupFunction<GlVertexArrayVertexAttribFormatEXTNative, GlVertexArrayVertexAttribFormatEXT>('glVertexArrayVertexAttribFormatEXT'));
+  if (glVertexArrayVertexAttribFormatEXT == null && glGetProcAddress != null) {
+    glVertexArrayVertexAttribFormatEXT =  tryCall(() => Pointer<NativeFunction<GlVertexArrayVertexAttribFormatEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayVertexAttribFormatEXT'))).asFunction<GlVertexArrayVertexAttribFormatEXT>());
+  }
+  glVertexArrayVertexAttribIFormatEXT =  tryCall(() => lib.lookupFunction<GlVertexArrayVertexAttribIFormatEXTNative, GlVertexArrayVertexAttribIFormatEXT>('glVertexArrayVertexAttribIFormatEXT'));
+  if (glVertexArrayVertexAttribIFormatEXT == null && glGetProcAddress != null) {
+    glVertexArrayVertexAttribIFormatEXT =  tryCall(() => Pointer<NativeFunction<GlVertexArrayVertexAttribIFormatEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayVertexAttribIFormatEXT'))).asFunction<GlVertexArrayVertexAttribIFormatEXT>());
+  }
+  glVertexArrayVertexAttribLFormatEXT =  tryCall(() => lib.lookupFunction<GlVertexArrayVertexAttribLFormatEXTNative, GlVertexArrayVertexAttribLFormatEXT>('glVertexArrayVertexAttribLFormatEXT'));
+  if (glVertexArrayVertexAttribLFormatEXT == null && glGetProcAddress != null) {
+    glVertexArrayVertexAttribLFormatEXT =  tryCall(() => Pointer<NativeFunction<GlVertexArrayVertexAttribLFormatEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayVertexAttribLFormatEXT'))).asFunction<GlVertexArrayVertexAttribLFormatEXT>());
+  }
+  glVertexArrayVertexAttribBindingEXT =  tryCall(() => lib.lookupFunction<GlVertexArrayVertexAttribBindingEXTNative, GlVertexArrayVertexAttribBindingEXT>('glVertexArrayVertexAttribBindingEXT'));
+  if (glVertexArrayVertexAttribBindingEXT == null && glGetProcAddress != null) {
+    glVertexArrayVertexAttribBindingEXT =  tryCall(() => Pointer<NativeFunction<GlVertexArrayVertexAttribBindingEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayVertexAttribBindingEXT'))).asFunction<GlVertexArrayVertexAttribBindingEXT>());
+  }
+  glVertexArrayVertexBindingDivisorEXT =  tryCall(() => lib.lookupFunction<GlVertexArrayVertexBindingDivisorEXTNative, GlVertexArrayVertexBindingDivisorEXT>('glVertexArrayVertexBindingDivisorEXT'));
+  if (glVertexArrayVertexBindingDivisorEXT == null && glGetProcAddress != null) {
+    glVertexArrayVertexBindingDivisorEXT =  tryCall(() => Pointer<NativeFunction<GlVertexArrayVertexBindingDivisorEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayVertexBindingDivisorEXT'))).asFunction<GlVertexArrayVertexBindingDivisorEXT>());
+  }
+  glVertexArrayVertexAttribLOffsetEXT =  tryCall(() => lib.lookupFunction<GlVertexArrayVertexAttribLOffsetEXTNative, GlVertexArrayVertexAttribLOffsetEXT>('glVertexArrayVertexAttribLOffsetEXT'));
+  if (glVertexArrayVertexAttribLOffsetEXT == null && glGetProcAddress != null) {
+    glVertexArrayVertexAttribLOffsetEXT =  tryCall(() => Pointer<NativeFunction<GlVertexArrayVertexAttribLOffsetEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayVertexAttribLOffsetEXT'))).asFunction<GlVertexArrayVertexAttribLOffsetEXT>());
+  }
+  glTexturePageCommitmentEXT =  tryCall(() => lib.lookupFunction<GlTexturePageCommitmentEXTNative, GlTexturePageCommitmentEXT>('glTexturePageCommitmentEXT'));
+  if (glTexturePageCommitmentEXT == null && glGetProcAddress != null) {
+    glTexturePageCommitmentEXT =  tryCall(() => Pointer<NativeFunction<GlTexturePageCommitmentEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexturePageCommitmentEXT'))).asFunction<GlTexturePageCommitmentEXT>());
+  }
+  glVertexArrayVertexAttribDivisorEXT =  tryCall(() => lib.lookupFunction<GlVertexArrayVertexAttribDivisorEXTNative, GlVertexArrayVertexAttribDivisorEXT>('glVertexArrayVertexAttribDivisorEXT'));
+  if (glVertexArrayVertexAttribDivisorEXT == null && glGetProcAddress != null) {
+    glVertexArrayVertexAttribDivisorEXT =  tryCall(() => Pointer<NativeFunction<GlVertexArrayVertexAttribDivisorEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexArrayVertexAttribDivisorEXT'))).asFunction<GlVertexArrayVertexAttribDivisorEXT>());
+  }
+  glDrawArraysInstancedEXT =  tryCall(() => lib.lookupFunction<GlDrawArraysInstancedEXTNative, GlDrawArraysInstancedEXT>('glDrawArraysInstancedEXT'));
+  if (glDrawArraysInstancedEXT == null && glGetProcAddress != null) {
+    glDrawArraysInstancedEXT =  tryCall(() => Pointer<NativeFunction<GlDrawArraysInstancedEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawArraysInstancedEXT'))).asFunction<GlDrawArraysInstancedEXT>());
+  }
+  glDrawElementsInstancedEXT =  tryCall(() => lib.lookupFunction<GlDrawElementsInstancedEXTNative, GlDrawElementsInstancedEXT>('glDrawElementsInstancedEXT'));
+  if (glDrawElementsInstancedEXT == null && glGetProcAddress != null) {
+    glDrawElementsInstancedEXT =  tryCall(() => Pointer<NativeFunction<GlDrawElementsInstancedEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawElementsInstancedEXT'))).asFunction<GlDrawElementsInstancedEXT>());
+  }
+  glPolygonOffsetClampEXT =  tryCall(() => lib.lookupFunction<GlPolygonOffsetClampEXTNative, GlPolygonOffsetClampEXT>('glPolygonOffsetClampEXT'));
+  if (glPolygonOffsetClampEXT == null && glGetProcAddress != null) {
+    glPolygonOffsetClampEXT =  tryCall(() => Pointer<NativeFunction<GlPolygonOffsetClampEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPolygonOffsetClampEXT'))).asFunction<GlPolygonOffsetClampEXT>());
+  }
+  glRasterSamplesEXT =  tryCall(() => lib.lookupFunction<GlRasterSamplesEXTNative, GlRasterSamplesEXT>('glRasterSamplesEXT'));
+  if (glRasterSamplesEXT == null && glGetProcAddress != null) {
+    glRasterSamplesEXT =  tryCall(() => Pointer<NativeFunction<GlRasterSamplesEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glRasterSamplesEXT'))).asFunction<GlRasterSamplesEXT>());
+  }
+  glUseShaderProgramEXT =  tryCall(() => lib.lookupFunction<GlUseShaderProgramEXTNative, GlUseShaderProgramEXT>('glUseShaderProgramEXT'));
+  if (glUseShaderProgramEXT == null && glGetProcAddress != null) {
+    glUseShaderProgramEXT =  tryCall(() => Pointer<NativeFunction<GlUseShaderProgramEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUseShaderProgramEXT'))).asFunction<GlUseShaderProgramEXT>());
+  }
+  glActiveProgramEXT =  tryCall(() => lib.lookupFunction<GlActiveProgramEXTNative, GlActiveProgramEXT>('glActiveProgramEXT'));
+  if (glActiveProgramEXT == null && glGetProcAddress != null) {
+    glActiveProgramEXT =  tryCall(() => Pointer<NativeFunction<GlActiveProgramEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glActiveProgramEXT'))).asFunction<GlActiveProgramEXT>());
+  }
+  glCreateShaderProgramEXT =  tryCall(() => lib.lookupFunction<GlCreateShaderProgramEXTNative, GlCreateShaderProgramEXT>('glCreateShaderProgramEXT'));
+  if (glCreateShaderProgramEXT == null && glGetProcAddress != null) {
+    glCreateShaderProgramEXT =  tryCall(() => Pointer<NativeFunction<GlCreateShaderProgramEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateShaderProgramEXT'))).asFunction<GlCreateShaderProgramEXT>());
+  }
+  glFramebufferFetchBarrierEXT =  tryCall(() => lib.lookupFunction<GlFramebufferFetchBarrierEXTNative, GlFramebufferFetchBarrierEXT>('glFramebufferFetchBarrierEXT'));
+  if (glFramebufferFetchBarrierEXT == null && glGetProcAddress != null) {
+    glFramebufferFetchBarrierEXT =  tryCall(() => Pointer<NativeFunction<GlFramebufferFetchBarrierEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferFetchBarrierEXT'))).asFunction<GlFramebufferFetchBarrierEXT>());
+  }
+  glWindowRectanglesEXT =  tryCall(() => lib.lookupFunction<GlWindowRectanglesEXTNative, GlWindowRectanglesEXT>('glWindowRectanglesEXT'));
+  if (glWindowRectanglesEXT == null && glGetProcAddress != null) {
+    glWindowRectanglesEXT =  tryCall(() => Pointer<NativeFunction<GlWindowRectanglesEXTNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glWindowRectanglesEXT'))).asFunction<GlWindowRectanglesEXT>());
+  }
+  glApplyFramebufferAttachmentCMAAINTEL =  tryCall(() => lib.lookupFunction<GlApplyFramebufferAttachmentCMAAINTELNative, GlApplyFramebufferAttachmentCMAAINTEL>('glApplyFramebufferAttachmentCMAAINTEL'));
+  if (glApplyFramebufferAttachmentCMAAINTEL == null && glGetProcAddress != null) {
+    glApplyFramebufferAttachmentCMAAINTEL =  tryCall(() => Pointer<NativeFunction<GlApplyFramebufferAttachmentCMAAINTELNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glApplyFramebufferAttachmentCMAAINTEL'))).asFunction<GlApplyFramebufferAttachmentCMAAINTEL>());
+  }
+  glBeginPerfQueryINTEL =  tryCall(() => lib.lookupFunction<GlBeginPerfQueryINTELNative, GlBeginPerfQueryINTEL>('glBeginPerfQueryINTEL'));
+  if (glBeginPerfQueryINTEL == null && glGetProcAddress != null) {
+    glBeginPerfQueryINTEL =  tryCall(() => Pointer<NativeFunction<GlBeginPerfQueryINTELNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBeginPerfQueryINTEL'))).asFunction<GlBeginPerfQueryINTEL>());
+  }
+  glCreatePerfQueryINTEL =  tryCall(() => lib.lookupFunction<GlCreatePerfQueryINTELNative, GlCreatePerfQueryINTEL>('glCreatePerfQueryINTEL'));
+  if (glCreatePerfQueryINTEL == null && glGetProcAddress != null) {
+    glCreatePerfQueryINTEL =  tryCall(() => Pointer<NativeFunction<GlCreatePerfQueryINTELNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreatePerfQueryINTEL'))).asFunction<GlCreatePerfQueryINTEL>());
+  }
+  glDeletePerfQueryINTEL =  tryCall(() => lib.lookupFunction<GlDeletePerfQueryINTELNative, GlDeletePerfQueryINTEL>('glDeletePerfQueryINTEL'));
+  if (glDeletePerfQueryINTEL == null && glGetProcAddress != null) {
+    glDeletePerfQueryINTEL =  tryCall(() => Pointer<NativeFunction<GlDeletePerfQueryINTELNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeletePerfQueryINTEL'))).asFunction<GlDeletePerfQueryINTEL>());
+  }
+  glEndPerfQueryINTEL =  tryCall(() => lib.lookupFunction<GlEndPerfQueryINTELNative, GlEndPerfQueryINTEL>('glEndPerfQueryINTEL'));
+  if (glEndPerfQueryINTEL == null && glGetProcAddress != null) {
+    glEndPerfQueryINTEL =  tryCall(() => Pointer<NativeFunction<GlEndPerfQueryINTELNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEndPerfQueryINTEL'))).asFunction<GlEndPerfQueryINTEL>());
+  }
+  glGetFirstPerfQueryIdINTEL =  tryCall(() => lib.lookupFunction<GlGetFirstPerfQueryIdINTELNative, GlGetFirstPerfQueryIdINTEL>('glGetFirstPerfQueryIdINTEL'));
+  if (glGetFirstPerfQueryIdINTEL == null && glGetProcAddress != null) {
+    glGetFirstPerfQueryIdINTEL =  tryCall(() => Pointer<NativeFunction<GlGetFirstPerfQueryIdINTELNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetFirstPerfQueryIdINTEL'))).asFunction<GlGetFirstPerfQueryIdINTEL>());
+  }
+  glGetNextPerfQueryIdINTEL =  tryCall(() => lib.lookupFunction<GlGetNextPerfQueryIdINTELNative, GlGetNextPerfQueryIdINTEL>('glGetNextPerfQueryIdINTEL'));
+  if (glGetNextPerfQueryIdINTEL == null && glGetProcAddress != null) {
+    glGetNextPerfQueryIdINTEL =  tryCall(() => Pointer<NativeFunction<GlGetNextPerfQueryIdINTELNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNextPerfQueryIdINTEL'))).asFunction<GlGetNextPerfQueryIdINTEL>());
+  }
+  glGetPerfCounterInfoINTEL =  tryCall(() => lib.lookupFunction<GlGetPerfCounterInfoINTELNative, GlGetPerfCounterInfoINTEL>('glGetPerfCounterInfoINTEL'));
+  if (glGetPerfCounterInfoINTEL == null && glGetProcAddress != null) {
+    glGetPerfCounterInfoINTEL =  tryCall(() => Pointer<NativeFunction<GlGetPerfCounterInfoINTELNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPerfCounterInfoINTEL'))).asFunction<GlGetPerfCounterInfoINTEL>());
+  }
+  glGetPerfQueryDataINTEL =  tryCall(() => lib.lookupFunction<GlGetPerfQueryDataINTELNative, GlGetPerfQueryDataINTEL>('glGetPerfQueryDataINTEL'));
+  if (glGetPerfQueryDataINTEL == null && glGetProcAddress != null) {
+    glGetPerfQueryDataINTEL =  tryCall(() => Pointer<NativeFunction<GlGetPerfQueryDataINTELNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPerfQueryDataINTEL'))).asFunction<GlGetPerfQueryDataINTEL>());
+  }
+  glGetPerfQueryIdByNameINTEL =  tryCall(() => lib.lookupFunction<GlGetPerfQueryIdByNameINTELNative, GlGetPerfQueryIdByNameINTEL>('glGetPerfQueryIdByNameINTEL'));
+  if (glGetPerfQueryIdByNameINTEL == null && glGetProcAddress != null) {
+    glGetPerfQueryIdByNameINTEL =  tryCall(() => Pointer<NativeFunction<GlGetPerfQueryIdByNameINTELNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPerfQueryIdByNameINTEL'))).asFunction<GlGetPerfQueryIdByNameINTEL>());
+  }
+  glGetPerfQueryInfoINTEL =  tryCall(() => lib.lookupFunction<GlGetPerfQueryInfoINTELNative, GlGetPerfQueryInfoINTEL>('glGetPerfQueryInfoINTEL'));
+  if (glGetPerfQueryInfoINTEL == null && glGetProcAddress != null) {
+    glGetPerfQueryInfoINTEL =  tryCall(() => Pointer<NativeFunction<GlGetPerfQueryInfoINTELNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPerfQueryInfoINTEL'))).asFunction<GlGetPerfQueryInfoINTEL>());
+  }
+  glMultiDrawArraysIndirectBindlessNV =  tryCall(() => lib.lookupFunction<GlMultiDrawArraysIndirectBindlessNVNative, GlMultiDrawArraysIndirectBindlessNV>('glMultiDrawArraysIndirectBindlessNV'));
+  if (glMultiDrawArraysIndirectBindlessNV == null && glGetProcAddress != null) {
+    glMultiDrawArraysIndirectBindlessNV =  tryCall(() => Pointer<NativeFunction<GlMultiDrawArraysIndirectBindlessNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawArraysIndirectBindlessNV'))).asFunction<GlMultiDrawArraysIndirectBindlessNV>());
+  }
+  glMultiDrawElementsIndirectBindlessNV =  tryCall(() => lib.lookupFunction<GlMultiDrawElementsIndirectBindlessNVNative, GlMultiDrawElementsIndirectBindlessNV>('glMultiDrawElementsIndirectBindlessNV'));
+  if (glMultiDrawElementsIndirectBindlessNV == null && glGetProcAddress != null) {
+    glMultiDrawElementsIndirectBindlessNV =  tryCall(() => Pointer<NativeFunction<GlMultiDrawElementsIndirectBindlessNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawElementsIndirectBindlessNV'))).asFunction<GlMultiDrawElementsIndirectBindlessNV>());
+  }
+  glMultiDrawArraysIndirectBindlessCountNV =  tryCall(() => lib.lookupFunction<GlMultiDrawArraysIndirectBindlessCountNVNative, GlMultiDrawArraysIndirectBindlessCountNV>('glMultiDrawArraysIndirectBindlessCountNV'));
+  if (glMultiDrawArraysIndirectBindlessCountNV == null && glGetProcAddress != null) {
+    glMultiDrawArraysIndirectBindlessCountNV =  tryCall(() => Pointer<NativeFunction<GlMultiDrawArraysIndirectBindlessCountNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawArraysIndirectBindlessCountNV'))).asFunction<GlMultiDrawArraysIndirectBindlessCountNV>());
+  }
+  glMultiDrawElementsIndirectBindlessCountNV =  tryCall(() => lib.lookupFunction<GlMultiDrawElementsIndirectBindlessCountNVNative, GlMultiDrawElementsIndirectBindlessCountNV>('glMultiDrawElementsIndirectBindlessCountNV'));
+  if (glMultiDrawElementsIndirectBindlessCountNV == null && glGetProcAddress != null) {
+    glMultiDrawElementsIndirectBindlessCountNV =  tryCall(() => Pointer<NativeFunction<GlMultiDrawElementsIndirectBindlessCountNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawElementsIndirectBindlessCountNV'))).asFunction<GlMultiDrawElementsIndirectBindlessCountNV>());
+  }
+  glGetTextureHandleNV =  tryCall(() => lib.lookupFunction<GlGetTextureHandleNVNative, GlGetTextureHandleNV>('glGetTextureHandleNV'));
+  if (glGetTextureHandleNV == null && glGetProcAddress != null) {
+    glGetTextureHandleNV =  tryCall(() => Pointer<NativeFunction<GlGetTextureHandleNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureHandleNV'))).asFunction<GlGetTextureHandleNV>());
+  }
+  glGetTextureSamplerHandleNV =  tryCall(() => lib.lookupFunction<GlGetTextureSamplerHandleNVNative, GlGetTextureSamplerHandleNV>('glGetTextureSamplerHandleNV'));
+  if (glGetTextureSamplerHandleNV == null && glGetProcAddress != null) {
+    glGetTextureSamplerHandleNV =  tryCall(() => Pointer<NativeFunction<GlGetTextureSamplerHandleNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetTextureSamplerHandleNV'))).asFunction<GlGetTextureSamplerHandleNV>());
+  }
+  glMakeTextureHandleResidentNV =  tryCall(() => lib.lookupFunction<GlMakeTextureHandleResidentNVNative, GlMakeTextureHandleResidentNV>('glMakeTextureHandleResidentNV'));
+  if (glMakeTextureHandleResidentNV == null && glGetProcAddress != null) {
+    glMakeTextureHandleResidentNV =  tryCall(() => Pointer<NativeFunction<GlMakeTextureHandleResidentNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMakeTextureHandleResidentNV'))).asFunction<GlMakeTextureHandleResidentNV>());
+  }
+  glMakeTextureHandleNonResidentNV =  tryCall(() => lib.lookupFunction<GlMakeTextureHandleNonResidentNVNative, GlMakeTextureHandleNonResidentNV>('glMakeTextureHandleNonResidentNV'));
+  if (glMakeTextureHandleNonResidentNV == null && glGetProcAddress != null) {
+    glMakeTextureHandleNonResidentNV =  tryCall(() => Pointer<NativeFunction<GlMakeTextureHandleNonResidentNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMakeTextureHandleNonResidentNV'))).asFunction<GlMakeTextureHandleNonResidentNV>());
+  }
+  glGetImageHandleNV =  tryCall(() => lib.lookupFunction<GlGetImageHandleNVNative, GlGetImageHandleNV>('glGetImageHandleNV'));
+  if (glGetImageHandleNV == null && glGetProcAddress != null) {
+    glGetImageHandleNV =  tryCall(() => Pointer<NativeFunction<GlGetImageHandleNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetImageHandleNV'))).asFunction<GlGetImageHandleNV>());
+  }
+  glMakeImageHandleResidentNV =  tryCall(() => lib.lookupFunction<GlMakeImageHandleResidentNVNative, GlMakeImageHandleResidentNV>('glMakeImageHandleResidentNV'));
+  if (glMakeImageHandleResidentNV == null && glGetProcAddress != null) {
+    glMakeImageHandleResidentNV =  tryCall(() => Pointer<NativeFunction<GlMakeImageHandleResidentNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMakeImageHandleResidentNV'))).asFunction<GlMakeImageHandleResidentNV>());
+  }
+  glMakeImageHandleNonResidentNV =  tryCall(() => lib.lookupFunction<GlMakeImageHandleNonResidentNVNative, GlMakeImageHandleNonResidentNV>('glMakeImageHandleNonResidentNV'));
+  if (glMakeImageHandleNonResidentNV == null && glGetProcAddress != null) {
+    glMakeImageHandleNonResidentNV =  tryCall(() => Pointer<NativeFunction<GlMakeImageHandleNonResidentNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMakeImageHandleNonResidentNV'))).asFunction<GlMakeImageHandleNonResidentNV>());
+  }
+  glUniformHandleui64NV =  tryCall(() => lib.lookupFunction<GlUniformHandleui64NVNative, GlUniformHandleui64NV>('glUniformHandleui64NV'));
+  if (glUniformHandleui64NV == null && glGetProcAddress != null) {
+    glUniformHandleui64NV =  tryCall(() => Pointer<NativeFunction<GlUniformHandleui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformHandleui64NV'))).asFunction<GlUniformHandleui64NV>());
+  }
+  glUniformHandleui64vNV =  tryCall(() => lib.lookupFunction<GlUniformHandleui64vNVNative, GlUniformHandleui64vNV>('glUniformHandleui64vNV'));
+  if (glUniformHandleui64vNV == null && glGetProcAddress != null) {
+    glUniformHandleui64vNV =  tryCall(() => Pointer<NativeFunction<GlUniformHandleui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformHandleui64vNV'))).asFunction<GlUniformHandleui64vNV>());
+  }
+  glProgramUniformHandleui64NV =  tryCall(() => lib.lookupFunction<GlProgramUniformHandleui64NVNative, GlProgramUniformHandleui64NV>('glProgramUniformHandleui64NV'));
+  if (glProgramUniformHandleui64NV == null && glGetProcAddress != null) {
+    glProgramUniformHandleui64NV =  tryCall(() => Pointer<NativeFunction<GlProgramUniformHandleui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformHandleui64NV'))).asFunction<GlProgramUniformHandleui64NV>());
+  }
+  glProgramUniformHandleui64vNV =  tryCall(() => lib.lookupFunction<GlProgramUniformHandleui64vNVNative, GlProgramUniformHandleui64vNV>('glProgramUniformHandleui64vNV'));
+  if (glProgramUniformHandleui64vNV == null && glGetProcAddress != null) {
+    glProgramUniformHandleui64vNV =  tryCall(() => Pointer<NativeFunction<GlProgramUniformHandleui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformHandleui64vNV'))).asFunction<GlProgramUniformHandleui64vNV>());
+  }
+  glIsTextureHandleResidentNV =  tryCall(() => lib.lookupFunction<GlIsTextureHandleResidentNVNative, GlIsTextureHandleResidentNV>('glIsTextureHandleResidentNV'));
+  if (glIsTextureHandleResidentNV == null && glGetProcAddress != null) {
+    glIsTextureHandleResidentNV =  tryCall(() => Pointer<NativeFunction<GlIsTextureHandleResidentNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsTextureHandleResidentNV'))).asFunction<GlIsTextureHandleResidentNV>());
+  }
+  glIsImageHandleResidentNV =  tryCall(() => lib.lookupFunction<GlIsImageHandleResidentNVNative, GlIsImageHandleResidentNV>('glIsImageHandleResidentNV'));
+  if (glIsImageHandleResidentNV == null && glGetProcAddress != null) {
+    glIsImageHandleResidentNV =  tryCall(() => Pointer<NativeFunction<GlIsImageHandleResidentNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsImageHandleResidentNV'))).asFunction<GlIsImageHandleResidentNV>());
+  }
+  glBlendParameteriNV =  tryCall(() => lib.lookupFunction<GlBlendParameteriNVNative, GlBlendParameteriNV>('glBlendParameteriNV'));
+  if (glBlendParameteriNV == null && glGetProcAddress != null) {
+    glBlendParameteriNV =  tryCall(() => Pointer<NativeFunction<GlBlendParameteriNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendParameteriNV'))).asFunction<GlBlendParameteriNV>());
+  }
+  glBlendBarrierNV =  tryCall(() => lib.lookupFunction<GlBlendBarrierNVNative, GlBlendBarrierNV>('glBlendBarrierNV'));
+  if (glBlendBarrierNV == null && glGetProcAddress != null) {
+    glBlendBarrierNV =  tryCall(() => Pointer<NativeFunction<GlBlendBarrierNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendBarrierNV'))).asFunction<GlBlendBarrierNV>());
+  }
+  glViewportPositionWScaleNV =  tryCall(() => lib.lookupFunction<GlViewportPositionWScaleNVNative, GlViewportPositionWScaleNV>('glViewportPositionWScaleNV'));
+  if (glViewportPositionWScaleNV == null && glGetProcAddress != null) {
+    glViewportPositionWScaleNV =  tryCall(() => Pointer<NativeFunction<GlViewportPositionWScaleNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glViewportPositionWScaleNV'))).asFunction<GlViewportPositionWScaleNV>());
+  }
+  glCreateStatesNV =  tryCall(() => lib.lookupFunction<GlCreateStatesNVNative, GlCreateStatesNV>('glCreateStatesNV'));
+  if (glCreateStatesNV == null && glGetProcAddress != null) {
+    glCreateStatesNV =  tryCall(() => Pointer<NativeFunction<GlCreateStatesNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateStatesNV'))).asFunction<GlCreateStatesNV>());
+  }
+  glDeleteStatesNV =  tryCall(() => lib.lookupFunction<GlDeleteStatesNVNative, GlDeleteStatesNV>('glDeleteStatesNV'));
+  if (glDeleteStatesNV == null && glGetProcAddress != null) {
+    glDeleteStatesNV =  tryCall(() => Pointer<NativeFunction<GlDeleteStatesNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteStatesNV'))).asFunction<GlDeleteStatesNV>());
+  }
+  glIsStateNV =  tryCall(() => lib.lookupFunction<GlIsStateNVNative, GlIsStateNV>('glIsStateNV'));
+  if (glIsStateNV == null && glGetProcAddress != null) {
+    glIsStateNV =  tryCall(() => Pointer<NativeFunction<GlIsStateNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsStateNV'))).asFunction<GlIsStateNV>());
+  }
+  glStateCaptureNV =  tryCall(() => lib.lookupFunction<GlStateCaptureNVNative, GlStateCaptureNV>('glStateCaptureNV'));
+  if (glStateCaptureNV == null && glGetProcAddress != null) {
+    glStateCaptureNV =  tryCall(() => Pointer<NativeFunction<GlStateCaptureNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStateCaptureNV'))).asFunction<GlStateCaptureNV>());
+  }
+  glGetCommandHeaderNV =  tryCall(() => lib.lookupFunction<GlGetCommandHeaderNVNative, GlGetCommandHeaderNV>('glGetCommandHeaderNV'));
+  if (glGetCommandHeaderNV == null && glGetProcAddress != null) {
+    glGetCommandHeaderNV =  tryCall(() => Pointer<NativeFunction<GlGetCommandHeaderNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetCommandHeaderNV'))).asFunction<GlGetCommandHeaderNV>());
+  }
+  glGetStageIndexNV =  tryCall(() => lib.lookupFunction<GlGetStageIndexNVNative, GlGetStageIndexNV>('glGetStageIndexNV'));
+  if (glGetStageIndexNV == null && glGetProcAddress != null) {
+    glGetStageIndexNV =  tryCall(() => Pointer<NativeFunction<GlGetStageIndexNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetStageIndexNV'))).asFunction<GlGetStageIndexNV>());
+  }
+  glDrawCommandsNV =  tryCall(() => lib.lookupFunction<GlDrawCommandsNVNative, GlDrawCommandsNV>('glDrawCommandsNV'));
+  if (glDrawCommandsNV == null && glGetProcAddress != null) {
+    glDrawCommandsNV =  tryCall(() => Pointer<NativeFunction<GlDrawCommandsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawCommandsNV'))).asFunction<GlDrawCommandsNV>());
+  }
+  glDrawCommandsAddressNV =  tryCall(() => lib.lookupFunction<GlDrawCommandsAddressNVNative, GlDrawCommandsAddressNV>('glDrawCommandsAddressNV'));
+  if (glDrawCommandsAddressNV == null && glGetProcAddress != null) {
+    glDrawCommandsAddressNV =  tryCall(() => Pointer<NativeFunction<GlDrawCommandsAddressNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawCommandsAddressNV'))).asFunction<GlDrawCommandsAddressNV>());
+  }
+  glDrawCommandsStatesNV =  tryCall(() => lib.lookupFunction<GlDrawCommandsStatesNVNative, GlDrawCommandsStatesNV>('glDrawCommandsStatesNV'));
+  if (glDrawCommandsStatesNV == null && glGetProcAddress != null) {
+    glDrawCommandsStatesNV =  tryCall(() => Pointer<NativeFunction<GlDrawCommandsStatesNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawCommandsStatesNV'))).asFunction<GlDrawCommandsStatesNV>());
+  }
+  glDrawCommandsStatesAddressNV =  tryCall(() => lib.lookupFunction<GlDrawCommandsStatesAddressNVNative, GlDrawCommandsStatesAddressNV>('glDrawCommandsStatesAddressNV'));
+  if (glDrawCommandsStatesAddressNV == null && glGetProcAddress != null) {
+    glDrawCommandsStatesAddressNV =  tryCall(() => Pointer<NativeFunction<GlDrawCommandsStatesAddressNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawCommandsStatesAddressNV'))).asFunction<GlDrawCommandsStatesAddressNV>());
+  }
+  glCreateCommandListsNV =  tryCall(() => lib.lookupFunction<GlCreateCommandListsNVNative, GlCreateCommandListsNV>('glCreateCommandListsNV'));
+  if (glCreateCommandListsNV == null && glGetProcAddress != null) {
+    glCreateCommandListsNV =  tryCall(() => Pointer<NativeFunction<GlCreateCommandListsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCreateCommandListsNV'))).asFunction<GlCreateCommandListsNV>());
+  }
+  glDeleteCommandListsNV =  tryCall(() => lib.lookupFunction<GlDeleteCommandListsNVNative, GlDeleteCommandListsNV>('glDeleteCommandListsNV'));
+  if (glDeleteCommandListsNV == null && glGetProcAddress != null) {
+    glDeleteCommandListsNV =  tryCall(() => Pointer<NativeFunction<GlDeleteCommandListsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeleteCommandListsNV'))).asFunction<GlDeleteCommandListsNV>());
+  }
+  glIsCommandListNV =  tryCall(() => lib.lookupFunction<GlIsCommandListNVNative, GlIsCommandListNV>('glIsCommandListNV'));
+  if (glIsCommandListNV == null && glGetProcAddress != null) {
+    glIsCommandListNV =  tryCall(() => Pointer<NativeFunction<GlIsCommandListNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsCommandListNV'))).asFunction<GlIsCommandListNV>());
+  }
+  glListDrawCommandsStatesClientNV =  tryCall(() => lib.lookupFunction<GlListDrawCommandsStatesClientNVNative, GlListDrawCommandsStatesClientNV>('glListDrawCommandsStatesClientNV'));
+  if (glListDrawCommandsStatesClientNV == null && glGetProcAddress != null) {
+    glListDrawCommandsStatesClientNV =  tryCall(() => Pointer<NativeFunction<GlListDrawCommandsStatesClientNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glListDrawCommandsStatesClientNV'))).asFunction<GlListDrawCommandsStatesClientNV>());
+  }
+  glCommandListSegmentsNV =  tryCall(() => lib.lookupFunction<GlCommandListSegmentsNVNative, GlCommandListSegmentsNV>('glCommandListSegmentsNV'));
+  if (glCommandListSegmentsNV == null && glGetProcAddress != null) {
+    glCommandListSegmentsNV =  tryCall(() => Pointer<NativeFunction<GlCommandListSegmentsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCommandListSegmentsNV'))).asFunction<GlCommandListSegmentsNV>());
+  }
+  glCompileCommandListNV =  tryCall(() => lib.lookupFunction<GlCompileCommandListNVNative, GlCompileCommandListNV>('glCompileCommandListNV'));
+  if (glCompileCommandListNV == null && glGetProcAddress != null) {
+    glCompileCommandListNV =  tryCall(() => Pointer<NativeFunction<GlCompileCommandListNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCompileCommandListNV'))).asFunction<GlCompileCommandListNV>());
+  }
+  glCallCommandListNV =  tryCall(() => lib.lookupFunction<GlCallCommandListNVNative, GlCallCommandListNV>('glCallCommandListNV'));
+  if (glCallCommandListNV == null && glGetProcAddress != null) {
+    glCallCommandListNV =  tryCall(() => Pointer<NativeFunction<GlCallCommandListNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCallCommandListNV'))).asFunction<GlCallCommandListNV>());
+  }
+  glBeginConditionalRenderNV =  tryCall(() => lib.lookupFunction<GlBeginConditionalRenderNVNative, GlBeginConditionalRenderNV>('glBeginConditionalRenderNV'));
+  if (glBeginConditionalRenderNV == null && glGetProcAddress != null) {
+    glBeginConditionalRenderNV =  tryCall(() => Pointer<NativeFunction<GlBeginConditionalRenderNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBeginConditionalRenderNV'))).asFunction<GlBeginConditionalRenderNV>());
+  }
+  glEndConditionalRenderNV =  tryCall(() => lib.lookupFunction<GlEndConditionalRenderNVNative, GlEndConditionalRenderNV>('glEndConditionalRenderNV'));
+  if (glEndConditionalRenderNV == null && glGetProcAddress != null) {
+    glEndConditionalRenderNV =  tryCall(() => Pointer<NativeFunction<GlEndConditionalRenderNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEndConditionalRenderNV'))).asFunction<GlEndConditionalRenderNV>());
+  }
+  glSubpixelPrecisionBiasNV =  tryCall(() => lib.lookupFunction<GlSubpixelPrecisionBiasNVNative, GlSubpixelPrecisionBiasNV>('glSubpixelPrecisionBiasNV'));
+  if (glSubpixelPrecisionBiasNV == null && glGetProcAddress != null) {
+    glSubpixelPrecisionBiasNV =  tryCall(() => Pointer<NativeFunction<GlSubpixelPrecisionBiasNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSubpixelPrecisionBiasNV'))).asFunction<GlSubpixelPrecisionBiasNV>());
+  }
+  glConservativeRasterParameterfNV =  tryCall(() => lib.lookupFunction<GlConservativeRasterParameterfNVNative, GlConservativeRasterParameterfNV>('glConservativeRasterParameterfNV'));
+  if (glConservativeRasterParameterfNV == null && glGetProcAddress != null) {
+    glConservativeRasterParameterfNV =  tryCall(() => Pointer<NativeFunction<GlConservativeRasterParameterfNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glConservativeRasterParameterfNV'))).asFunction<GlConservativeRasterParameterfNV>());
+  }
+  glConservativeRasterParameteriNV =  tryCall(() => lib.lookupFunction<GlConservativeRasterParameteriNVNative, GlConservativeRasterParameteriNV>('glConservativeRasterParameteriNV'));
+  if (glConservativeRasterParameteriNV == null && glGetProcAddress != null) {
+    glConservativeRasterParameteriNV =  tryCall(() => Pointer<NativeFunction<GlConservativeRasterParameteriNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glConservativeRasterParameteriNV'))).asFunction<GlConservativeRasterParameteriNV>());
+  }
+  glDrawVkImageNV =  tryCall(() => lib.lookupFunction<GlDrawVkImageNVNative, GlDrawVkImageNV>('glDrawVkImageNV'));
+  if (glDrawVkImageNV == null && glGetProcAddress != null) {
+    glDrawVkImageNV =  tryCall(() => Pointer<NativeFunction<GlDrawVkImageNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawVkImageNV'))).asFunction<GlDrawVkImageNV>());
+  }
+  glGetVkProcAddrNV =  tryCall(() => lib.lookupFunction<GlGetVkProcAddrNVNative, GlGetVkProcAddrNV>('glGetVkProcAddrNV'));
+  if (glGetVkProcAddrNV == null && glGetProcAddress != null) {
+    glGetVkProcAddrNV =  tryCall(() => Pointer<NativeFunction<GlGetVkProcAddrNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVkProcAddrNV'))).asFunction<GlGetVkProcAddrNV>());
+  }
+  glWaitVkSemaphoreNV =  tryCall(() => lib.lookupFunction<GlWaitVkSemaphoreNVNative, GlWaitVkSemaphoreNV>('glWaitVkSemaphoreNV'));
+  if (glWaitVkSemaphoreNV == null && glGetProcAddress != null) {
+    glWaitVkSemaphoreNV =  tryCall(() => Pointer<NativeFunction<GlWaitVkSemaphoreNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glWaitVkSemaphoreNV'))).asFunction<GlWaitVkSemaphoreNV>());
+  }
+  glSignalVkSemaphoreNV =  tryCall(() => lib.lookupFunction<GlSignalVkSemaphoreNVNative, GlSignalVkSemaphoreNV>('glSignalVkSemaphoreNV'));
+  if (glSignalVkSemaphoreNV == null && glGetProcAddress != null) {
+    glSignalVkSemaphoreNV =  tryCall(() => Pointer<NativeFunction<GlSignalVkSemaphoreNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSignalVkSemaphoreNV'))).asFunction<GlSignalVkSemaphoreNV>());
+  }
+  glSignalVkFenceNV =  tryCall(() => lib.lookupFunction<GlSignalVkFenceNVNative, GlSignalVkFenceNV>('glSignalVkFenceNV'));
+  if (glSignalVkFenceNV == null && glGetProcAddress != null) {
+    glSignalVkFenceNV =  tryCall(() => Pointer<NativeFunction<GlSignalVkFenceNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSignalVkFenceNV'))).asFunction<GlSignalVkFenceNV>());
+  }
+  glFragmentCoverageColorNV =  tryCall(() => lib.lookupFunction<GlFragmentCoverageColorNVNative, GlFragmentCoverageColorNV>('glFragmentCoverageColorNV'));
+  if (glFragmentCoverageColorNV == null && glGetProcAddress != null) {
+    glFragmentCoverageColorNV =  tryCall(() => Pointer<NativeFunction<GlFragmentCoverageColorNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFragmentCoverageColorNV'))).asFunction<GlFragmentCoverageColorNV>());
+  }
+  glCoverageModulationTableNV =  tryCall(() => lib.lookupFunction<GlCoverageModulationTableNVNative, GlCoverageModulationTableNV>('glCoverageModulationTableNV'));
+  if (glCoverageModulationTableNV == null && glGetProcAddress != null) {
+    glCoverageModulationTableNV =  tryCall(() => Pointer<NativeFunction<GlCoverageModulationTableNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCoverageModulationTableNV'))).asFunction<GlCoverageModulationTableNV>());
+  }
+  glGetCoverageModulationTableNV =  tryCall(() => lib.lookupFunction<GlGetCoverageModulationTableNVNative, GlGetCoverageModulationTableNV>('glGetCoverageModulationTableNV'));
+  if (glGetCoverageModulationTableNV == null && glGetProcAddress != null) {
+    glGetCoverageModulationTableNV =  tryCall(() => Pointer<NativeFunction<GlGetCoverageModulationTableNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetCoverageModulationTableNV'))).asFunction<GlGetCoverageModulationTableNV>());
+  }
+  glCoverageModulationNV =  tryCall(() => lib.lookupFunction<GlCoverageModulationNVNative, GlCoverageModulationNV>('glCoverageModulationNV'));
+  if (glCoverageModulationNV == null && glGetProcAddress != null) {
+    glCoverageModulationNV =  tryCall(() => Pointer<NativeFunction<GlCoverageModulationNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCoverageModulationNV'))).asFunction<GlCoverageModulationNV>());
+  }
+  glRenderbufferStorageMultisampleCoverageNV =  tryCall(() => lib.lookupFunction<GlRenderbufferStorageMultisampleCoverageNVNative, GlRenderbufferStorageMultisampleCoverageNV>('glRenderbufferStorageMultisampleCoverageNV'));
+  if (glRenderbufferStorageMultisampleCoverageNV == null && glGetProcAddress != null) {
+    glRenderbufferStorageMultisampleCoverageNV =  tryCall(() => Pointer<NativeFunction<GlRenderbufferStorageMultisampleCoverageNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glRenderbufferStorageMultisampleCoverageNV'))).asFunction<GlRenderbufferStorageMultisampleCoverageNV>());
+  }
+  glUniform1i64NV =  tryCall(() => lib.lookupFunction<GlUniform1i64NVNative, GlUniform1i64NV>('glUniform1i64NV'));
+  if (glUniform1i64NV == null && glGetProcAddress != null) {
+    glUniform1i64NV =  tryCall(() => Pointer<NativeFunction<GlUniform1i64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1i64NV'))).asFunction<GlUniform1i64NV>());
+  }
+  glUniform2i64NV =  tryCall(() => lib.lookupFunction<GlUniform2i64NVNative, GlUniform2i64NV>('glUniform2i64NV'));
+  if (glUniform2i64NV == null && glGetProcAddress != null) {
+    glUniform2i64NV =  tryCall(() => Pointer<NativeFunction<GlUniform2i64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2i64NV'))).asFunction<GlUniform2i64NV>());
+  }
+  glUniform3i64NV =  tryCall(() => lib.lookupFunction<GlUniform3i64NVNative, GlUniform3i64NV>('glUniform3i64NV'));
+  if (glUniform3i64NV == null && glGetProcAddress != null) {
+    glUniform3i64NV =  tryCall(() => Pointer<NativeFunction<GlUniform3i64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3i64NV'))).asFunction<GlUniform3i64NV>());
+  }
+  glUniform4i64NV =  tryCall(() => lib.lookupFunction<GlUniform4i64NVNative, GlUniform4i64NV>('glUniform4i64NV'));
+  if (glUniform4i64NV == null && glGetProcAddress != null) {
+    glUniform4i64NV =  tryCall(() => Pointer<NativeFunction<GlUniform4i64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4i64NV'))).asFunction<GlUniform4i64NV>());
+  }
+  glUniform1i64vNV =  tryCall(() => lib.lookupFunction<GlUniform1i64vNVNative, GlUniform1i64vNV>('glUniform1i64vNV'));
+  if (glUniform1i64vNV == null && glGetProcAddress != null) {
+    glUniform1i64vNV =  tryCall(() => Pointer<NativeFunction<GlUniform1i64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1i64vNV'))).asFunction<GlUniform1i64vNV>());
+  }
+  glUniform2i64vNV =  tryCall(() => lib.lookupFunction<GlUniform2i64vNVNative, GlUniform2i64vNV>('glUniform2i64vNV'));
+  if (glUniform2i64vNV == null && glGetProcAddress != null) {
+    glUniform2i64vNV =  tryCall(() => Pointer<NativeFunction<GlUniform2i64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2i64vNV'))).asFunction<GlUniform2i64vNV>());
+  }
+  glUniform3i64vNV =  tryCall(() => lib.lookupFunction<GlUniform3i64vNVNative, GlUniform3i64vNV>('glUniform3i64vNV'));
+  if (glUniform3i64vNV == null && glGetProcAddress != null) {
+    glUniform3i64vNV =  tryCall(() => Pointer<NativeFunction<GlUniform3i64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3i64vNV'))).asFunction<GlUniform3i64vNV>());
+  }
+  glUniform4i64vNV =  tryCall(() => lib.lookupFunction<GlUniform4i64vNVNative, GlUniform4i64vNV>('glUniform4i64vNV'));
+  if (glUniform4i64vNV == null && glGetProcAddress != null) {
+    glUniform4i64vNV =  tryCall(() => Pointer<NativeFunction<GlUniform4i64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4i64vNV'))).asFunction<GlUniform4i64vNV>());
+  }
+  glUniform1ui64NV =  tryCall(() => lib.lookupFunction<GlUniform1ui64NVNative, GlUniform1ui64NV>('glUniform1ui64NV'));
+  if (glUniform1ui64NV == null && glGetProcAddress != null) {
+    glUniform1ui64NV =  tryCall(() => Pointer<NativeFunction<GlUniform1ui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1ui64NV'))).asFunction<GlUniform1ui64NV>());
+  }
+  glUniform2ui64NV =  tryCall(() => lib.lookupFunction<GlUniform2ui64NVNative, GlUniform2ui64NV>('glUniform2ui64NV'));
+  if (glUniform2ui64NV == null && glGetProcAddress != null) {
+    glUniform2ui64NV =  tryCall(() => Pointer<NativeFunction<GlUniform2ui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2ui64NV'))).asFunction<GlUniform2ui64NV>());
+  }
+  glUniform3ui64NV =  tryCall(() => lib.lookupFunction<GlUniform3ui64NVNative, GlUniform3ui64NV>('glUniform3ui64NV'));
+  if (glUniform3ui64NV == null && glGetProcAddress != null) {
+    glUniform3ui64NV =  tryCall(() => Pointer<NativeFunction<GlUniform3ui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3ui64NV'))).asFunction<GlUniform3ui64NV>());
+  }
+  glUniform4ui64NV =  tryCall(() => lib.lookupFunction<GlUniform4ui64NVNative, GlUniform4ui64NV>('glUniform4ui64NV'));
+  if (glUniform4ui64NV == null && glGetProcAddress != null) {
+    glUniform4ui64NV =  tryCall(() => Pointer<NativeFunction<GlUniform4ui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4ui64NV'))).asFunction<GlUniform4ui64NV>());
+  }
+  glUniform1ui64vNV =  tryCall(() => lib.lookupFunction<GlUniform1ui64vNVNative, GlUniform1ui64vNV>('glUniform1ui64vNV'));
+  if (glUniform1ui64vNV == null && glGetProcAddress != null) {
+    glUniform1ui64vNV =  tryCall(() => Pointer<NativeFunction<GlUniform1ui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform1ui64vNV'))).asFunction<GlUniform1ui64vNV>());
+  }
+  glUniform2ui64vNV =  tryCall(() => lib.lookupFunction<GlUniform2ui64vNVNative, GlUniform2ui64vNV>('glUniform2ui64vNV'));
+  if (glUniform2ui64vNV == null && glGetProcAddress != null) {
+    glUniform2ui64vNV =  tryCall(() => Pointer<NativeFunction<GlUniform2ui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform2ui64vNV'))).asFunction<GlUniform2ui64vNV>());
+  }
+  glUniform3ui64vNV =  tryCall(() => lib.lookupFunction<GlUniform3ui64vNVNative, GlUniform3ui64vNV>('glUniform3ui64vNV'));
+  if (glUniform3ui64vNV == null && glGetProcAddress != null) {
+    glUniform3ui64vNV =  tryCall(() => Pointer<NativeFunction<GlUniform3ui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform3ui64vNV'))).asFunction<GlUniform3ui64vNV>());
+  }
+  glUniform4ui64vNV =  tryCall(() => lib.lookupFunction<GlUniform4ui64vNVNative, GlUniform4ui64vNV>('glUniform4ui64vNV'));
+  if (glUniform4ui64vNV == null && glGetProcAddress != null) {
+    glUniform4ui64vNV =  tryCall(() => Pointer<NativeFunction<GlUniform4ui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniform4ui64vNV'))).asFunction<GlUniform4ui64vNV>());
+  }
+  glGetUniformi64vNV =  tryCall(() => lib.lookupFunction<GlGetUniformi64vNVNative, GlGetUniformi64vNV>('glGetUniformi64vNV'));
+  if (glGetUniformi64vNV == null && glGetProcAddress != null) {
+    glGetUniformi64vNV =  tryCall(() => Pointer<NativeFunction<GlGetUniformi64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetUniformi64vNV'))).asFunction<GlGetUniformi64vNV>());
+  }
+  glProgramUniform1i64NV =  tryCall(() => lib.lookupFunction<GlProgramUniform1i64NVNative, GlProgramUniform1i64NV>('glProgramUniform1i64NV'));
+  if (glProgramUniform1i64NV == null && glGetProcAddress != null) {
+    glProgramUniform1i64NV =  tryCall(() => Pointer<NativeFunction<GlProgramUniform1i64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1i64NV'))).asFunction<GlProgramUniform1i64NV>());
+  }
+  glProgramUniform2i64NV =  tryCall(() => lib.lookupFunction<GlProgramUniform2i64NVNative, GlProgramUniform2i64NV>('glProgramUniform2i64NV'));
+  if (glProgramUniform2i64NV == null && glGetProcAddress != null) {
+    glProgramUniform2i64NV =  tryCall(() => Pointer<NativeFunction<GlProgramUniform2i64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2i64NV'))).asFunction<GlProgramUniform2i64NV>());
+  }
+  glProgramUniform3i64NV =  tryCall(() => lib.lookupFunction<GlProgramUniform3i64NVNative, GlProgramUniform3i64NV>('glProgramUniform3i64NV'));
+  if (glProgramUniform3i64NV == null && glGetProcAddress != null) {
+    glProgramUniform3i64NV =  tryCall(() => Pointer<NativeFunction<GlProgramUniform3i64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3i64NV'))).asFunction<GlProgramUniform3i64NV>());
+  }
+  glProgramUniform4i64NV =  tryCall(() => lib.lookupFunction<GlProgramUniform4i64NVNative, GlProgramUniform4i64NV>('glProgramUniform4i64NV'));
+  if (glProgramUniform4i64NV == null && glGetProcAddress != null) {
+    glProgramUniform4i64NV =  tryCall(() => Pointer<NativeFunction<GlProgramUniform4i64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4i64NV'))).asFunction<GlProgramUniform4i64NV>());
+  }
+  glProgramUniform1i64vNV =  tryCall(() => lib.lookupFunction<GlProgramUniform1i64vNVNative, GlProgramUniform1i64vNV>('glProgramUniform1i64vNV'));
+  if (glProgramUniform1i64vNV == null && glGetProcAddress != null) {
+    glProgramUniform1i64vNV =  tryCall(() => Pointer<NativeFunction<GlProgramUniform1i64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1i64vNV'))).asFunction<GlProgramUniform1i64vNV>());
+  }
+  glProgramUniform2i64vNV =  tryCall(() => lib.lookupFunction<GlProgramUniform2i64vNVNative, GlProgramUniform2i64vNV>('glProgramUniform2i64vNV'));
+  if (glProgramUniform2i64vNV == null && glGetProcAddress != null) {
+    glProgramUniform2i64vNV =  tryCall(() => Pointer<NativeFunction<GlProgramUniform2i64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2i64vNV'))).asFunction<GlProgramUniform2i64vNV>());
+  }
+  glProgramUniform3i64vNV =  tryCall(() => lib.lookupFunction<GlProgramUniform3i64vNVNative, GlProgramUniform3i64vNV>('glProgramUniform3i64vNV'));
+  if (glProgramUniform3i64vNV == null && glGetProcAddress != null) {
+    glProgramUniform3i64vNV =  tryCall(() => Pointer<NativeFunction<GlProgramUniform3i64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3i64vNV'))).asFunction<GlProgramUniform3i64vNV>());
+  }
+  glProgramUniform4i64vNV =  tryCall(() => lib.lookupFunction<GlProgramUniform4i64vNVNative, GlProgramUniform4i64vNV>('glProgramUniform4i64vNV'));
+  if (glProgramUniform4i64vNV == null && glGetProcAddress != null) {
+    glProgramUniform4i64vNV =  tryCall(() => Pointer<NativeFunction<GlProgramUniform4i64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4i64vNV'))).asFunction<GlProgramUniform4i64vNV>());
+  }
+  glProgramUniform1ui64NV =  tryCall(() => lib.lookupFunction<GlProgramUniform1ui64NVNative, GlProgramUniform1ui64NV>('glProgramUniform1ui64NV'));
+  if (glProgramUniform1ui64NV == null && glGetProcAddress != null) {
+    glProgramUniform1ui64NV =  tryCall(() => Pointer<NativeFunction<GlProgramUniform1ui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1ui64NV'))).asFunction<GlProgramUniform1ui64NV>());
+  }
+  glProgramUniform2ui64NV =  tryCall(() => lib.lookupFunction<GlProgramUniform2ui64NVNative, GlProgramUniform2ui64NV>('glProgramUniform2ui64NV'));
+  if (glProgramUniform2ui64NV == null && glGetProcAddress != null) {
+    glProgramUniform2ui64NV =  tryCall(() => Pointer<NativeFunction<GlProgramUniform2ui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2ui64NV'))).asFunction<GlProgramUniform2ui64NV>());
+  }
+  glProgramUniform3ui64NV =  tryCall(() => lib.lookupFunction<GlProgramUniform3ui64NVNative, GlProgramUniform3ui64NV>('glProgramUniform3ui64NV'));
+  if (glProgramUniform3ui64NV == null && glGetProcAddress != null) {
+    glProgramUniform3ui64NV =  tryCall(() => Pointer<NativeFunction<GlProgramUniform3ui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3ui64NV'))).asFunction<GlProgramUniform3ui64NV>());
+  }
+  glProgramUniform4ui64NV =  tryCall(() => lib.lookupFunction<GlProgramUniform4ui64NVNative, GlProgramUniform4ui64NV>('glProgramUniform4ui64NV'));
+  if (glProgramUniform4ui64NV == null && glGetProcAddress != null) {
+    glProgramUniform4ui64NV =  tryCall(() => Pointer<NativeFunction<GlProgramUniform4ui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4ui64NV'))).asFunction<GlProgramUniform4ui64NV>());
+  }
+  glProgramUniform1ui64vNV =  tryCall(() => lib.lookupFunction<GlProgramUniform1ui64vNVNative, GlProgramUniform1ui64vNV>('glProgramUniform1ui64vNV'));
+  if (glProgramUniform1ui64vNV == null && glGetProcAddress != null) {
+    glProgramUniform1ui64vNV =  tryCall(() => Pointer<NativeFunction<GlProgramUniform1ui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform1ui64vNV'))).asFunction<GlProgramUniform1ui64vNV>());
+  }
+  glProgramUniform2ui64vNV =  tryCall(() => lib.lookupFunction<GlProgramUniform2ui64vNVNative, GlProgramUniform2ui64vNV>('glProgramUniform2ui64vNV'));
+  if (glProgramUniform2ui64vNV == null && glGetProcAddress != null) {
+    glProgramUniform2ui64vNV =  tryCall(() => Pointer<NativeFunction<GlProgramUniform2ui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform2ui64vNV'))).asFunction<GlProgramUniform2ui64vNV>());
+  }
+  glProgramUniform3ui64vNV =  tryCall(() => lib.lookupFunction<GlProgramUniform3ui64vNVNative, GlProgramUniform3ui64vNV>('glProgramUniform3ui64vNV'));
+  if (glProgramUniform3ui64vNV == null && glGetProcAddress != null) {
+    glProgramUniform3ui64vNV =  tryCall(() => Pointer<NativeFunction<GlProgramUniform3ui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform3ui64vNV'))).asFunction<GlProgramUniform3ui64vNV>());
+  }
+  glProgramUniform4ui64vNV =  tryCall(() => lib.lookupFunction<GlProgramUniform4ui64vNVNative, GlProgramUniform4ui64vNV>('glProgramUniform4ui64vNV'));
+  if (glProgramUniform4ui64vNV == null && glGetProcAddress != null) {
+    glProgramUniform4ui64vNV =  tryCall(() => Pointer<NativeFunction<GlProgramUniform4ui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniform4ui64vNV'))).asFunction<GlProgramUniform4ui64vNV>());
+  }
+  glGetInternalformatSampleivNV =  tryCall(() => lib.lookupFunction<GlGetInternalformatSampleivNVNative, GlGetInternalformatSampleivNV>('glGetInternalformatSampleivNV'));
+  if (glGetInternalformatSampleivNV == null && glGetProcAddress != null) {
+    glGetInternalformatSampleivNV =  tryCall(() => Pointer<NativeFunction<GlGetInternalformatSampleivNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetInternalformatSampleivNV'))).asFunction<GlGetInternalformatSampleivNV>());
+  }
+  glGetMemoryObjectDetachedResourcesuivNV =  tryCall(() => lib.lookupFunction<GlGetMemoryObjectDetachedResourcesuivNVNative, GlGetMemoryObjectDetachedResourcesuivNV>('glGetMemoryObjectDetachedResourcesuivNV'));
+  if (glGetMemoryObjectDetachedResourcesuivNV == null && glGetProcAddress != null) {
+    glGetMemoryObjectDetachedResourcesuivNV =  tryCall(() => Pointer<NativeFunction<GlGetMemoryObjectDetachedResourcesuivNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetMemoryObjectDetachedResourcesuivNV'))).asFunction<GlGetMemoryObjectDetachedResourcesuivNV>());
+  }
+  glResetMemoryObjectParameterNV =  tryCall(() => lib.lookupFunction<GlResetMemoryObjectParameterNVNative, GlResetMemoryObjectParameterNV>('glResetMemoryObjectParameterNV'));
+  if (glResetMemoryObjectParameterNV == null && glGetProcAddress != null) {
+    glResetMemoryObjectParameterNV =  tryCall(() => Pointer<NativeFunction<GlResetMemoryObjectParameterNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glResetMemoryObjectParameterNV'))).asFunction<GlResetMemoryObjectParameterNV>());
+  }
+  glTexAttachMemoryNV =  tryCall(() => lib.lookupFunction<GlTexAttachMemoryNVNative, GlTexAttachMemoryNV>('glTexAttachMemoryNV'));
+  if (glTexAttachMemoryNV == null && glGetProcAddress != null) {
+    glTexAttachMemoryNV =  tryCall(() => Pointer<NativeFunction<GlTexAttachMemoryNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexAttachMemoryNV'))).asFunction<GlTexAttachMemoryNV>());
+  }
+  glBufferAttachMemoryNV =  tryCall(() => lib.lookupFunction<GlBufferAttachMemoryNVNative, GlBufferAttachMemoryNV>('glBufferAttachMemoryNV'));
+  if (glBufferAttachMemoryNV == null && glGetProcAddress != null) {
+    glBufferAttachMemoryNV =  tryCall(() => Pointer<NativeFunction<GlBufferAttachMemoryNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBufferAttachMemoryNV'))).asFunction<GlBufferAttachMemoryNV>());
+  }
+  glTextureAttachMemoryNV =  tryCall(() => lib.lookupFunction<GlTextureAttachMemoryNVNative, GlTextureAttachMemoryNV>('glTextureAttachMemoryNV'));
+  if (glTextureAttachMemoryNV == null && glGetProcAddress != null) {
+    glTextureAttachMemoryNV =  tryCall(() => Pointer<NativeFunction<GlTextureAttachMemoryNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureAttachMemoryNV'))).asFunction<GlTextureAttachMemoryNV>());
+  }
+  glNamedBufferAttachMemoryNV =  tryCall(() => lib.lookupFunction<GlNamedBufferAttachMemoryNVNative, GlNamedBufferAttachMemoryNV>('glNamedBufferAttachMemoryNV'));
+  if (glNamedBufferAttachMemoryNV == null && glGetProcAddress != null) {
+    glNamedBufferAttachMemoryNV =  tryCall(() => Pointer<NativeFunction<GlNamedBufferAttachMemoryNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedBufferAttachMemoryNV'))).asFunction<GlNamedBufferAttachMemoryNV>());
+  }
+  glDrawMeshTasksNV =  tryCall(() => lib.lookupFunction<GlDrawMeshTasksNVNative, GlDrawMeshTasksNV>('glDrawMeshTasksNV'));
+  if (glDrawMeshTasksNV == null && glGetProcAddress != null) {
+    glDrawMeshTasksNV =  tryCall(() => Pointer<NativeFunction<GlDrawMeshTasksNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawMeshTasksNV'))).asFunction<GlDrawMeshTasksNV>());
+  }
+  glDrawMeshTasksIndirectNV =  tryCall(() => lib.lookupFunction<GlDrawMeshTasksIndirectNVNative, GlDrawMeshTasksIndirectNV>('glDrawMeshTasksIndirectNV'));
+  if (glDrawMeshTasksIndirectNV == null && glGetProcAddress != null) {
+    glDrawMeshTasksIndirectNV =  tryCall(() => Pointer<NativeFunction<GlDrawMeshTasksIndirectNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDrawMeshTasksIndirectNV'))).asFunction<GlDrawMeshTasksIndirectNV>());
+  }
+  glMultiDrawMeshTasksIndirectNV =  tryCall(() => lib.lookupFunction<GlMultiDrawMeshTasksIndirectNVNative, GlMultiDrawMeshTasksIndirectNV>('glMultiDrawMeshTasksIndirectNV'));
+  if (glMultiDrawMeshTasksIndirectNV == null && glGetProcAddress != null) {
+    glMultiDrawMeshTasksIndirectNV =  tryCall(() => Pointer<NativeFunction<GlMultiDrawMeshTasksIndirectNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawMeshTasksIndirectNV'))).asFunction<GlMultiDrawMeshTasksIndirectNV>());
+  }
+  glMultiDrawMeshTasksIndirectCountNV =  tryCall(() => lib.lookupFunction<GlMultiDrawMeshTasksIndirectCountNVNative, GlMultiDrawMeshTasksIndirectCountNV>('glMultiDrawMeshTasksIndirectCountNV'));
+  if (glMultiDrawMeshTasksIndirectCountNV == null && glGetProcAddress != null) {
+    glMultiDrawMeshTasksIndirectCountNV =  tryCall(() => Pointer<NativeFunction<GlMultiDrawMeshTasksIndirectCountNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawMeshTasksIndirectCountNV'))).asFunction<GlMultiDrawMeshTasksIndirectCountNV>());
+  }
+  glGenPathsNV =  tryCall(() => lib.lookupFunction<GlGenPathsNVNative, GlGenPathsNV>('glGenPathsNV'));
+  if (glGenPathsNV == null && glGetProcAddress != null) {
+    glGenPathsNV =  tryCall(() => Pointer<NativeFunction<GlGenPathsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGenPathsNV'))).asFunction<GlGenPathsNV>());
+  }
+  glDeletePathsNV =  tryCall(() => lib.lookupFunction<GlDeletePathsNVNative, GlDeletePathsNV>('glDeletePathsNV'));
+  if (glDeletePathsNV == null && glGetProcAddress != null) {
+    glDeletePathsNV =  tryCall(() => Pointer<NativeFunction<GlDeletePathsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDeletePathsNV'))).asFunction<GlDeletePathsNV>());
+  }
+  glIsPathNV =  tryCall(() => lib.lookupFunction<GlIsPathNVNative, GlIsPathNV>('glIsPathNV'));
+  if (glIsPathNV == null && glGetProcAddress != null) {
+    glIsPathNV =  tryCall(() => Pointer<NativeFunction<GlIsPathNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsPathNV'))).asFunction<GlIsPathNV>());
+  }
+  glPathCommandsNV =  tryCall(() => lib.lookupFunction<GlPathCommandsNVNative, GlPathCommandsNV>('glPathCommandsNV'));
+  if (glPathCommandsNV == null && glGetProcAddress != null) {
+    glPathCommandsNV =  tryCall(() => Pointer<NativeFunction<GlPathCommandsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathCommandsNV'))).asFunction<GlPathCommandsNV>());
+  }
+  glPathCoordsNV =  tryCall(() => lib.lookupFunction<GlPathCoordsNVNative, GlPathCoordsNV>('glPathCoordsNV'));
+  if (glPathCoordsNV == null && glGetProcAddress != null) {
+    glPathCoordsNV =  tryCall(() => Pointer<NativeFunction<GlPathCoordsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathCoordsNV'))).asFunction<GlPathCoordsNV>());
+  }
+  glPathSubCommandsNV =  tryCall(() => lib.lookupFunction<GlPathSubCommandsNVNative, GlPathSubCommandsNV>('glPathSubCommandsNV'));
+  if (glPathSubCommandsNV == null && glGetProcAddress != null) {
+    glPathSubCommandsNV =  tryCall(() => Pointer<NativeFunction<GlPathSubCommandsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathSubCommandsNV'))).asFunction<GlPathSubCommandsNV>());
+  }
+  glPathSubCoordsNV =  tryCall(() => lib.lookupFunction<GlPathSubCoordsNVNative, GlPathSubCoordsNV>('glPathSubCoordsNV'));
+  if (glPathSubCoordsNV == null && glGetProcAddress != null) {
+    glPathSubCoordsNV =  tryCall(() => Pointer<NativeFunction<GlPathSubCoordsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathSubCoordsNV'))).asFunction<GlPathSubCoordsNV>());
+  }
+  glPathStringNV =  tryCall(() => lib.lookupFunction<GlPathStringNVNative, GlPathStringNV>('glPathStringNV'));
+  if (glPathStringNV == null && glGetProcAddress != null) {
+    glPathStringNV =  tryCall(() => Pointer<NativeFunction<GlPathStringNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathStringNV'))).asFunction<GlPathStringNV>());
+  }
+  glPathGlyphsNV =  tryCall(() => lib.lookupFunction<GlPathGlyphsNVNative, GlPathGlyphsNV>('glPathGlyphsNV'));
+  if (glPathGlyphsNV == null && glGetProcAddress != null) {
+    glPathGlyphsNV =  tryCall(() => Pointer<NativeFunction<GlPathGlyphsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathGlyphsNV'))).asFunction<GlPathGlyphsNV>());
+  }
+  glPathGlyphRangeNV =  tryCall(() => lib.lookupFunction<GlPathGlyphRangeNVNative, GlPathGlyphRangeNV>('glPathGlyphRangeNV'));
+  if (glPathGlyphRangeNV == null && glGetProcAddress != null) {
+    glPathGlyphRangeNV =  tryCall(() => Pointer<NativeFunction<GlPathGlyphRangeNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathGlyphRangeNV'))).asFunction<GlPathGlyphRangeNV>());
+  }
+  glWeightPathsNV =  tryCall(() => lib.lookupFunction<GlWeightPathsNVNative, GlWeightPathsNV>('glWeightPathsNV'));
+  if (glWeightPathsNV == null && glGetProcAddress != null) {
+    glWeightPathsNV =  tryCall(() => Pointer<NativeFunction<GlWeightPathsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glWeightPathsNV'))).asFunction<GlWeightPathsNV>());
+  }
+  glCopyPathNV =  tryCall(() => lib.lookupFunction<GlCopyPathNVNative, GlCopyPathNV>('glCopyPathNV'));
+  if (glCopyPathNV == null && glGetProcAddress != null) {
+    glCopyPathNV =  tryCall(() => Pointer<NativeFunction<GlCopyPathNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCopyPathNV'))).asFunction<GlCopyPathNV>());
+  }
+  glInterpolatePathsNV =  tryCall(() => lib.lookupFunction<GlInterpolatePathsNVNative, GlInterpolatePathsNV>('glInterpolatePathsNV'));
+  if (glInterpolatePathsNV == null && glGetProcAddress != null) {
+    glInterpolatePathsNV =  tryCall(() => Pointer<NativeFunction<GlInterpolatePathsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glInterpolatePathsNV'))).asFunction<GlInterpolatePathsNV>());
+  }
+  glTransformPathNV =  tryCall(() => lib.lookupFunction<GlTransformPathNVNative, GlTransformPathNV>('glTransformPathNV'));
+  if (glTransformPathNV == null && glGetProcAddress != null) {
+    glTransformPathNV =  tryCall(() => Pointer<NativeFunction<GlTransformPathNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTransformPathNV'))).asFunction<GlTransformPathNV>());
+  }
+  glPathParameterivNV =  tryCall(() => lib.lookupFunction<GlPathParameterivNVNative, GlPathParameterivNV>('glPathParameterivNV'));
+  if (glPathParameterivNV == null && glGetProcAddress != null) {
+    glPathParameterivNV =  tryCall(() => Pointer<NativeFunction<GlPathParameterivNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathParameterivNV'))).asFunction<GlPathParameterivNV>());
+  }
+  glPathParameteriNV =  tryCall(() => lib.lookupFunction<GlPathParameteriNVNative, GlPathParameteriNV>('glPathParameteriNV'));
+  if (glPathParameteriNV == null && glGetProcAddress != null) {
+    glPathParameteriNV =  tryCall(() => Pointer<NativeFunction<GlPathParameteriNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathParameteriNV'))).asFunction<GlPathParameteriNV>());
+  }
+  glPathParameterfvNV =  tryCall(() => lib.lookupFunction<GlPathParameterfvNVNative, GlPathParameterfvNV>('glPathParameterfvNV'));
+  if (glPathParameterfvNV == null && glGetProcAddress != null) {
+    glPathParameterfvNV =  tryCall(() => Pointer<NativeFunction<GlPathParameterfvNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathParameterfvNV'))).asFunction<GlPathParameterfvNV>());
+  }
+  glPathParameterfNV =  tryCall(() => lib.lookupFunction<GlPathParameterfNVNative, GlPathParameterfNV>('glPathParameterfNV'));
+  if (glPathParameterfNV == null && glGetProcAddress != null) {
+    glPathParameterfNV =  tryCall(() => Pointer<NativeFunction<GlPathParameterfNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathParameterfNV'))).asFunction<GlPathParameterfNV>());
+  }
+  glPathDashArrayNV =  tryCall(() => lib.lookupFunction<GlPathDashArrayNVNative, GlPathDashArrayNV>('glPathDashArrayNV'));
+  if (glPathDashArrayNV == null && glGetProcAddress != null) {
+    glPathDashArrayNV =  tryCall(() => Pointer<NativeFunction<GlPathDashArrayNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathDashArrayNV'))).asFunction<GlPathDashArrayNV>());
+  }
+  glPathStencilFuncNV =  tryCall(() => lib.lookupFunction<GlPathStencilFuncNVNative, GlPathStencilFuncNV>('glPathStencilFuncNV'));
+  if (glPathStencilFuncNV == null && glGetProcAddress != null) {
+    glPathStencilFuncNV =  tryCall(() => Pointer<NativeFunction<GlPathStencilFuncNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathStencilFuncNV'))).asFunction<GlPathStencilFuncNV>());
+  }
+  glPathStencilDepthOffsetNV =  tryCall(() => lib.lookupFunction<GlPathStencilDepthOffsetNVNative, GlPathStencilDepthOffsetNV>('glPathStencilDepthOffsetNV'));
+  if (glPathStencilDepthOffsetNV == null && glGetProcAddress != null) {
+    glPathStencilDepthOffsetNV =  tryCall(() => Pointer<NativeFunction<GlPathStencilDepthOffsetNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathStencilDepthOffsetNV'))).asFunction<GlPathStencilDepthOffsetNV>());
+  }
+  glStencilFillPathNV =  tryCall(() => lib.lookupFunction<GlStencilFillPathNVNative, GlStencilFillPathNV>('glStencilFillPathNV'));
+  if (glStencilFillPathNV == null && glGetProcAddress != null) {
+    glStencilFillPathNV =  tryCall(() => Pointer<NativeFunction<GlStencilFillPathNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilFillPathNV'))).asFunction<GlStencilFillPathNV>());
+  }
+  glStencilStrokePathNV =  tryCall(() => lib.lookupFunction<GlStencilStrokePathNVNative, GlStencilStrokePathNV>('glStencilStrokePathNV'));
+  if (glStencilStrokePathNV == null && glGetProcAddress != null) {
+    glStencilStrokePathNV =  tryCall(() => Pointer<NativeFunction<GlStencilStrokePathNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilStrokePathNV'))).asFunction<GlStencilStrokePathNV>());
+  }
+  glStencilFillPathInstancedNV =  tryCall(() => lib.lookupFunction<GlStencilFillPathInstancedNVNative, GlStencilFillPathInstancedNV>('glStencilFillPathInstancedNV'));
+  if (glStencilFillPathInstancedNV == null && glGetProcAddress != null) {
+    glStencilFillPathInstancedNV =  tryCall(() => Pointer<NativeFunction<GlStencilFillPathInstancedNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilFillPathInstancedNV'))).asFunction<GlStencilFillPathInstancedNV>());
+  }
+  glStencilStrokePathInstancedNV =  tryCall(() => lib.lookupFunction<GlStencilStrokePathInstancedNVNative, GlStencilStrokePathInstancedNV>('glStencilStrokePathInstancedNV'));
+  if (glStencilStrokePathInstancedNV == null && glGetProcAddress != null) {
+    glStencilStrokePathInstancedNV =  tryCall(() => Pointer<NativeFunction<GlStencilStrokePathInstancedNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilStrokePathInstancedNV'))).asFunction<GlStencilStrokePathInstancedNV>());
+  }
+  glPathCoverDepthFuncNV =  tryCall(() => lib.lookupFunction<GlPathCoverDepthFuncNVNative, GlPathCoverDepthFuncNV>('glPathCoverDepthFuncNV'));
+  if (glPathCoverDepthFuncNV == null && glGetProcAddress != null) {
+    glPathCoverDepthFuncNV =  tryCall(() => Pointer<NativeFunction<GlPathCoverDepthFuncNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathCoverDepthFuncNV'))).asFunction<GlPathCoverDepthFuncNV>());
+  }
+  glCoverFillPathNV =  tryCall(() => lib.lookupFunction<GlCoverFillPathNVNative, GlCoverFillPathNV>('glCoverFillPathNV'));
+  if (glCoverFillPathNV == null && glGetProcAddress != null) {
+    glCoverFillPathNV =  tryCall(() => Pointer<NativeFunction<GlCoverFillPathNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCoverFillPathNV'))).asFunction<GlCoverFillPathNV>());
+  }
+  glCoverStrokePathNV =  tryCall(() => lib.lookupFunction<GlCoverStrokePathNVNative, GlCoverStrokePathNV>('glCoverStrokePathNV'));
+  if (glCoverStrokePathNV == null && glGetProcAddress != null) {
+    glCoverStrokePathNV =  tryCall(() => Pointer<NativeFunction<GlCoverStrokePathNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCoverStrokePathNV'))).asFunction<GlCoverStrokePathNV>());
+  }
+  glCoverFillPathInstancedNV =  tryCall(() => lib.lookupFunction<GlCoverFillPathInstancedNVNative, GlCoverFillPathInstancedNV>('glCoverFillPathInstancedNV'));
+  if (glCoverFillPathInstancedNV == null && glGetProcAddress != null) {
+    glCoverFillPathInstancedNV =  tryCall(() => Pointer<NativeFunction<GlCoverFillPathInstancedNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCoverFillPathInstancedNV'))).asFunction<GlCoverFillPathInstancedNV>());
+  }
+  glCoverStrokePathInstancedNV =  tryCall(() => lib.lookupFunction<GlCoverStrokePathInstancedNVNative, GlCoverStrokePathInstancedNV>('glCoverStrokePathInstancedNV'));
+  if (glCoverStrokePathInstancedNV == null && glGetProcAddress != null) {
+    glCoverStrokePathInstancedNV =  tryCall(() => Pointer<NativeFunction<GlCoverStrokePathInstancedNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCoverStrokePathInstancedNV'))).asFunction<GlCoverStrokePathInstancedNV>());
+  }
+  glGetPathParameterivNV =  tryCall(() => lib.lookupFunction<GlGetPathParameterivNVNative, GlGetPathParameterivNV>('glGetPathParameterivNV'));
+  if (glGetPathParameterivNV == null && glGetProcAddress != null) {
+    glGetPathParameterivNV =  tryCall(() => Pointer<NativeFunction<GlGetPathParameterivNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPathParameterivNV'))).asFunction<GlGetPathParameterivNV>());
+  }
+  glGetPathParameterfvNV =  tryCall(() => lib.lookupFunction<GlGetPathParameterfvNVNative, GlGetPathParameterfvNV>('glGetPathParameterfvNV'));
+  if (glGetPathParameterfvNV == null && glGetProcAddress != null) {
+    glGetPathParameterfvNV =  tryCall(() => Pointer<NativeFunction<GlGetPathParameterfvNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPathParameterfvNV'))).asFunction<GlGetPathParameterfvNV>());
+  }
+  glGetPathCommandsNV =  tryCall(() => lib.lookupFunction<GlGetPathCommandsNVNative, GlGetPathCommandsNV>('glGetPathCommandsNV'));
+  if (glGetPathCommandsNV == null && glGetProcAddress != null) {
+    glGetPathCommandsNV =  tryCall(() => Pointer<NativeFunction<GlGetPathCommandsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPathCommandsNV'))).asFunction<GlGetPathCommandsNV>());
+  }
+  glGetPathCoordsNV =  tryCall(() => lib.lookupFunction<GlGetPathCoordsNVNative, GlGetPathCoordsNV>('glGetPathCoordsNV'));
+  if (glGetPathCoordsNV == null && glGetProcAddress != null) {
+    glGetPathCoordsNV =  tryCall(() => Pointer<NativeFunction<GlGetPathCoordsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPathCoordsNV'))).asFunction<GlGetPathCoordsNV>());
+  }
+  glGetPathDashArrayNV =  tryCall(() => lib.lookupFunction<GlGetPathDashArrayNVNative, GlGetPathDashArrayNV>('glGetPathDashArrayNV'));
+  if (glGetPathDashArrayNV == null && glGetProcAddress != null) {
+    glGetPathDashArrayNV =  tryCall(() => Pointer<NativeFunction<GlGetPathDashArrayNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPathDashArrayNV'))).asFunction<GlGetPathDashArrayNV>());
+  }
+  glGetPathMetricsNV =  tryCall(() => lib.lookupFunction<GlGetPathMetricsNVNative, GlGetPathMetricsNV>('glGetPathMetricsNV'));
+  if (glGetPathMetricsNV == null && glGetProcAddress != null) {
+    glGetPathMetricsNV =  tryCall(() => Pointer<NativeFunction<GlGetPathMetricsNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPathMetricsNV'))).asFunction<GlGetPathMetricsNV>());
+  }
+  glGetPathMetricRangeNV =  tryCall(() => lib.lookupFunction<GlGetPathMetricRangeNVNative, GlGetPathMetricRangeNV>('glGetPathMetricRangeNV'));
+  if (glGetPathMetricRangeNV == null && glGetProcAddress != null) {
+    glGetPathMetricRangeNV =  tryCall(() => Pointer<NativeFunction<GlGetPathMetricRangeNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPathMetricRangeNV'))).asFunction<GlGetPathMetricRangeNV>());
+  }
+  glGetPathSpacingNV =  tryCall(() => lib.lookupFunction<GlGetPathSpacingNVNative, GlGetPathSpacingNV>('glGetPathSpacingNV'));
+  if (glGetPathSpacingNV == null && glGetProcAddress != null) {
+    glGetPathSpacingNV =  tryCall(() => Pointer<NativeFunction<GlGetPathSpacingNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPathSpacingNV'))).asFunction<GlGetPathSpacingNV>());
+  }
+  glIsPointInFillPathNV =  tryCall(() => lib.lookupFunction<GlIsPointInFillPathNVNative, GlIsPointInFillPathNV>('glIsPointInFillPathNV'));
+  if (glIsPointInFillPathNV == null && glGetProcAddress != null) {
+    glIsPointInFillPathNV =  tryCall(() => Pointer<NativeFunction<GlIsPointInFillPathNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsPointInFillPathNV'))).asFunction<GlIsPointInFillPathNV>());
+  }
+  glIsPointInStrokePathNV =  tryCall(() => lib.lookupFunction<GlIsPointInStrokePathNVNative, GlIsPointInStrokePathNV>('glIsPointInStrokePathNV'));
+  if (glIsPointInStrokePathNV == null && glGetProcAddress != null) {
+    glIsPointInStrokePathNV =  tryCall(() => Pointer<NativeFunction<GlIsPointInStrokePathNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsPointInStrokePathNV'))).asFunction<GlIsPointInStrokePathNV>());
+  }
+  glGetPathLengthNV =  tryCall(() => lib.lookupFunction<GlGetPathLengthNVNative, GlGetPathLengthNV>('glGetPathLengthNV'));
+  if (glGetPathLengthNV == null && glGetProcAddress != null) {
+    glGetPathLengthNV =  tryCall(() => Pointer<NativeFunction<GlGetPathLengthNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPathLengthNV'))).asFunction<GlGetPathLengthNV>());
+  }
+  glPointAlongPathNV =  tryCall(() => lib.lookupFunction<GlPointAlongPathNVNative, GlPointAlongPathNV>('glPointAlongPathNV'));
+  if (glPointAlongPathNV == null && glGetProcAddress != null) {
+    glPointAlongPathNV =  tryCall(() => Pointer<NativeFunction<GlPointAlongPathNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPointAlongPathNV'))).asFunction<GlPointAlongPathNV>());
+  }
+  glMatrixLoad3x2fNV =  tryCall(() => lib.lookupFunction<GlMatrixLoad3x2fNVNative, GlMatrixLoad3x2fNV>('glMatrixLoad3x2fNV'));
+  if (glMatrixLoad3x2fNV == null && glGetProcAddress != null) {
+    glMatrixLoad3x2fNV =  tryCall(() => Pointer<NativeFunction<GlMatrixLoad3x2fNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixLoad3x2fNV'))).asFunction<GlMatrixLoad3x2fNV>());
+  }
+  glMatrixLoad3x3fNV =  tryCall(() => lib.lookupFunction<GlMatrixLoad3x3fNVNative, GlMatrixLoad3x3fNV>('glMatrixLoad3x3fNV'));
+  if (glMatrixLoad3x3fNV == null && glGetProcAddress != null) {
+    glMatrixLoad3x3fNV =  tryCall(() => Pointer<NativeFunction<GlMatrixLoad3x3fNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixLoad3x3fNV'))).asFunction<GlMatrixLoad3x3fNV>());
+  }
+  glMatrixLoadTranspose3x3fNV =  tryCall(() => lib.lookupFunction<GlMatrixLoadTranspose3x3fNVNative, GlMatrixLoadTranspose3x3fNV>('glMatrixLoadTranspose3x3fNV'));
+  if (glMatrixLoadTranspose3x3fNV == null && glGetProcAddress != null) {
+    glMatrixLoadTranspose3x3fNV =  tryCall(() => Pointer<NativeFunction<GlMatrixLoadTranspose3x3fNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixLoadTranspose3x3fNV'))).asFunction<GlMatrixLoadTranspose3x3fNV>());
+  }
+  glMatrixMult3x2fNV =  tryCall(() => lib.lookupFunction<GlMatrixMult3x2fNVNative, GlMatrixMult3x2fNV>('glMatrixMult3x2fNV'));
+  if (glMatrixMult3x2fNV == null && glGetProcAddress != null) {
+    glMatrixMult3x2fNV =  tryCall(() => Pointer<NativeFunction<GlMatrixMult3x2fNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixMult3x2fNV'))).asFunction<GlMatrixMult3x2fNV>());
+  }
+  glMatrixMult3x3fNV =  tryCall(() => lib.lookupFunction<GlMatrixMult3x3fNVNative, GlMatrixMult3x3fNV>('glMatrixMult3x3fNV'));
+  if (glMatrixMult3x3fNV == null && glGetProcAddress != null) {
+    glMatrixMult3x3fNV =  tryCall(() => Pointer<NativeFunction<GlMatrixMult3x3fNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixMult3x3fNV'))).asFunction<GlMatrixMult3x3fNV>());
+  }
+  glMatrixMultTranspose3x3fNV =  tryCall(() => lib.lookupFunction<GlMatrixMultTranspose3x3fNVNative, GlMatrixMultTranspose3x3fNV>('glMatrixMultTranspose3x3fNV'));
+  if (glMatrixMultTranspose3x3fNV == null && glGetProcAddress != null) {
+    glMatrixMultTranspose3x3fNV =  tryCall(() => Pointer<NativeFunction<GlMatrixMultTranspose3x3fNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMatrixMultTranspose3x3fNV'))).asFunction<GlMatrixMultTranspose3x3fNV>());
+  }
+  glStencilThenCoverFillPathNV =  tryCall(() => lib.lookupFunction<GlStencilThenCoverFillPathNVNative, GlStencilThenCoverFillPathNV>('glStencilThenCoverFillPathNV'));
+  if (glStencilThenCoverFillPathNV == null && glGetProcAddress != null) {
+    glStencilThenCoverFillPathNV =  tryCall(() => Pointer<NativeFunction<GlStencilThenCoverFillPathNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilThenCoverFillPathNV'))).asFunction<GlStencilThenCoverFillPathNV>());
+  }
+  glStencilThenCoverStrokePathNV =  tryCall(() => lib.lookupFunction<GlStencilThenCoverStrokePathNVNative, GlStencilThenCoverStrokePathNV>('glStencilThenCoverStrokePathNV'));
+  if (glStencilThenCoverStrokePathNV == null && glGetProcAddress != null) {
+    glStencilThenCoverStrokePathNV =  tryCall(() => Pointer<NativeFunction<GlStencilThenCoverStrokePathNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilThenCoverStrokePathNV'))).asFunction<GlStencilThenCoverStrokePathNV>());
+  }
+  glStencilThenCoverFillPathInstancedNV =  tryCall(() => lib.lookupFunction<GlStencilThenCoverFillPathInstancedNVNative, GlStencilThenCoverFillPathInstancedNV>('glStencilThenCoverFillPathInstancedNV'));
+  if (glStencilThenCoverFillPathInstancedNV == null && glGetProcAddress != null) {
+    glStencilThenCoverFillPathInstancedNV =  tryCall(() => Pointer<NativeFunction<GlStencilThenCoverFillPathInstancedNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilThenCoverFillPathInstancedNV'))).asFunction<GlStencilThenCoverFillPathInstancedNV>());
+  }
+  glStencilThenCoverStrokePathInstancedNV =  tryCall(() => lib.lookupFunction<GlStencilThenCoverStrokePathInstancedNVNative, GlStencilThenCoverStrokePathInstancedNV>('glStencilThenCoverStrokePathInstancedNV'));
+  if (glStencilThenCoverStrokePathInstancedNV == null && glGetProcAddress != null) {
+    glStencilThenCoverStrokePathInstancedNV =  tryCall(() => Pointer<NativeFunction<GlStencilThenCoverStrokePathInstancedNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glStencilThenCoverStrokePathInstancedNV'))).asFunction<GlStencilThenCoverStrokePathInstancedNV>());
+  }
+  glPathGlyphIndexRangeNV =  tryCall(() => lib.lookupFunction<GlPathGlyphIndexRangeNVNative, GlPathGlyphIndexRangeNV>('glPathGlyphIndexRangeNV'));
+  if (glPathGlyphIndexRangeNV == null && glGetProcAddress != null) {
+    glPathGlyphIndexRangeNV =  tryCall(() => Pointer<NativeFunction<GlPathGlyphIndexRangeNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathGlyphIndexRangeNV'))).asFunction<GlPathGlyphIndexRangeNV>());
+  }
+  glPathGlyphIndexArrayNV =  tryCall(() => lib.lookupFunction<GlPathGlyphIndexArrayNVNative, GlPathGlyphIndexArrayNV>('glPathGlyphIndexArrayNV'));
+  if (glPathGlyphIndexArrayNV == null && glGetProcAddress != null) {
+    glPathGlyphIndexArrayNV =  tryCall(() => Pointer<NativeFunction<GlPathGlyphIndexArrayNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathGlyphIndexArrayNV'))).asFunction<GlPathGlyphIndexArrayNV>());
+  }
+  glPathMemoryGlyphIndexArrayNV =  tryCall(() => lib.lookupFunction<GlPathMemoryGlyphIndexArrayNVNative, GlPathMemoryGlyphIndexArrayNV>('glPathMemoryGlyphIndexArrayNV'));
+  if (glPathMemoryGlyphIndexArrayNV == null && glGetProcAddress != null) {
+    glPathMemoryGlyphIndexArrayNV =  tryCall(() => Pointer<NativeFunction<GlPathMemoryGlyphIndexArrayNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glPathMemoryGlyphIndexArrayNV'))).asFunction<GlPathMemoryGlyphIndexArrayNV>());
+  }
+  glProgramPathFragmentInputGenNV =  tryCall(() => lib.lookupFunction<GlProgramPathFragmentInputGenNVNative, GlProgramPathFragmentInputGenNV>('glProgramPathFragmentInputGenNV'));
+  if (glProgramPathFragmentInputGenNV == null && glGetProcAddress != null) {
+    glProgramPathFragmentInputGenNV =  tryCall(() => Pointer<NativeFunction<GlProgramPathFragmentInputGenNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramPathFragmentInputGenNV'))).asFunction<GlProgramPathFragmentInputGenNV>());
+  }
+  glGetProgramResourcefvNV =  tryCall(() => lib.lookupFunction<GlGetProgramResourcefvNVNative, GlGetProgramResourcefvNV>('glGetProgramResourcefvNV'));
+  if (glGetProgramResourcefvNV == null && glGetProcAddress != null) {
+    glGetProgramResourcefvNV =  tryCall(() => Pointer<NativeFunction<GlGetProgramResourcefvNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetProgramResourcefvNV'))).asFunction<GlGetProgramResourcefvNV>());
+  }
+  glFramebufferSampleLocationsfvNV =  tryCall(() => lib.lookupFunction<GlFramebufferSampleLocationsfvNVNative, GlFramebufferSampleLocationsfvNV>('glFramebufferSampleLocationsfvNV'));
+  if (glFramebufferSampleLocationsfvNV == null && glGetProcAddress != null) {
+    glFramebufferSampleLocationsfvNV =  tryCall(() => Pointer<NativeFunction<GlFramebufferSampleLocationsfvNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferSampleLocationsfvNV'))).asFunction<GlFramebufferSampleLocationsfvNV>());
+  }
+  glNamedFramebufferSampleLocationsfvNV =  tryCall(() => lib.lookupFunction<GlNamedFramebufferSampleLocationsfvNVNative, GlNamedFramebufferSampleLocationsfvNV>('glNamedFramebufferSampleLocationsfvNV'));
+  if (glNamedFramebufferSampleLocationsfvNV == null && glGetProcAddress != null) {
+    glNamedFramebufferSampleLocationsfvNV =  tryCall(() => Pointer<NativeFunction<GlNamedFramebufferSampleLocationsfvNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedFramebufferSampleLocationsfvNV'))).asFunction<GlNamedFramebufferSampleLocationsfvNV>());
+  }
+  glResolveDepthValuesNV =  tryCall(() => lib.lookupFunction<GlResolveDepthValuesNVNative, GlResolveDepthValuesNV>('glResolveDepthValuesNV'));
+  if (glResolveDepthValuesNV == null && glGetProcAddress != null) {
+    glResolveDepthValuesNV =  tryCall(() => Pointer<NativeFunction<GlResolveDepthValuesNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glResolveDepthValuesNV'))).asFunction<GlResolveDepthValuesNV>());
+  }
+  glScissorExclusiveNV =  tryCall(() => lib.lookupFunction<GlScissorExclusiveNVNative, GlScissorExclusiveNV>('glScissorExclusiveNV'));
+  if (glScissorExclusiveNV == null && glGetProcAddress != null) {
+    glScissorExclusiveNV =  tryCall(() => Pointer<NativeFunction<GlScissorExclusiveNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glScissorExclusiveNV'))).asFunction<GlScissorExclusiveNV>());
+  }
+  glScissorExclusiveArrayvNV =  tryCall(() => lib.lookupFunction<GlScissorExclusiveArrayvNVNative, GlScissorExclusiveArrayvNV>('glScissorExclusiveArrayvNV'));
+  if (glScissorExclusiveArrayvNV == null && glGetProcAddress != null) {
+    glScissorExclusiveArrayvNV =  tryCall(() => Pointer<NativeFunction<GlScissorExclusiveArrayvNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glScissorExclusiveArrayvNV'))).asFunction<GlScissorExclusiveArrayvNV>());
+  }
+  glMakeBufferResidentNV =  tryCall(() => lib.lookupFunction<GlMakeBufferResidentNVNative, GlMakeBufferResidentNV>('glMakeBufferResidentNV'));
+  if (glMakeBufferResidentNV == null && glGetProcAddress != null) {
+    glMakeBufferResidentNV =  tryCall(() => Pointer<NativeFunction<GlMakeBufferResidentNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMakeBufferResidentNV'))).asFunction<GlMakeBufferResidentNV>());
+  }
+  glMakeBufferNonResidentNV =  tryCall(() => lib.lookupFunction<GlMakeBufferNonResidentNVNative, GlMakeBufferNonResidentNV>('glMakeBufferNonResidentNV'));
+  if (glMakeBufferNonResidentNV == null && glGetProcAddress != null) {
+    glMakeBufferNonResidentNV =  tryCall(() => Pointer<NativeFunction<GlMakeBufferNonResidentNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMakeBufferNonResidentNV'))).asFunction<GlMakeBufferNonResidentNV>());
+  }
+  glIsBufferResidentNV =  tryCall(() => lib.lookupFunction<GlIsBufferResidentNVNative, GlIsBufferResidentNV>('glIsBufferResidentNV'));
+  if (glIsBufferResidentNV == null && glGetProcAddress != null) {
+    glIsBufferResidentNV =  tryCall(() => Pointer<NativeFunction<GlIsBufferResidentNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsBufferResidentNV'))).asFunction<GlIsBufferResidentNV>());
+  }
+  glMakeNamedBufferResidentNV =  tryCall(() => lib.lookupFunction<GlMakeNamedBufferResidentNVNative, GlMakeNamedBufferResidentNV>('glMakeNamedBufferResidentNV'));
+  if (glMakeNamedBufferResidentNV == null && glGetProcAddress != null) {
+    glMakeNamedBufferResidentNV =  tryCall(() => Pointer<NativeFunction<GlMakeNamedBufferResidentNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMakeNamedBufferResidentNV'))).asFunction<GlMakeNamedBufferResidentNV>());
+  }
+  glMakeNamedBufferNonResidentNV =  tryCall(() => lib.lookupFunction<GlMakeNamedBufferNonResidentNVNative, GlMakeNamedBufferNonResidentNV>('glMakeNamedBufferNonResidentNV'));
+  if (glMakeNamedBufferNonResidentNV == null && glGetProcAddress != null) {
+    glMakeNamedBufferNonResidentNV =  tryCall(() => Pointer<NativeFunction<GlMakeNamedBufferNonResidentNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMakeNamedBufferNonResidentNV'))).asFunction<GlMakeNamedBufferNonResidentNV>());
+  }
+  glIsNamedBufferResidentNV =  tryCall(() => lib.lookupFunction<GlIsNamedBufferResidentNVNative, GlIsNamedBufferResidentNV>('glIsNamedBufferResidentNV'));
+  if (glIsNamedBufferResidentNV == null && glGetProcAddress != null) {
+    glIsNamedBufferResidentNV =  tryCall(() => Pointer<NativeFunction<GlIsNamedBufferResidentNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIsNamedBufferResidentNV'))).asFunction<GlIsNamedBufferResidentNV>());
+  }
+  glGetBufferParameterui64vNV =  tryCall(() => lib.lookupFunction<GlGetBufferParameterui64vNVNative, GlGetBufferParameterui64vNV>('glGetBufferParameterui64vNV'));
+  if (glGetBufferParameterui64vNV == null && glGetProcAddress != null) {
+    glGetBufferParameterui64vNV =  tryCall(() => Pointer<NativeFunction<GlGetBufferParameterui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetBufferParameterui64vNV'))).asFunction<GlGetBufferParameterui64vNV>());
+  }
+  glGetNamedBufferParameterui64vNV =  tryCall(() => lib.lookupFunction<GlGetNamedBufferParameterui64vNVNative, GlGetNamedBufferParameterui64vNV>('glGetNamedBufferParameterui64vNV'));
+  if (glGetNamedBufferParameterui64vNV == null && glGetProcAddress != null) {
+    glGetNamedBufferParameterui64vNV =  tryCall(() => Pointer<NativeFunction<GlGetNamedBufferParameterui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetNamedBufferParameterui64vNV'))).asFunction<GlGetNamedBufferParameterui64vNV>());
+  }
+  glGetIntegerui64vNV =  tryCall(() => lib.lookupFunction<GlGetIntegerui64vNVNative, GlGetIntegerui64vNV>('glGetIntegerui64vNV'));
+  if (glGetIntegerui64vNV == null && glGetProcAddress != null) {
+    glGetIntegerui64vNV =  tryCall(() => Pointer<NativeFunction<GlGetIntegerui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetIntegerui64vNV'))).asFunction<GlGetIntegerui64vNV>());
+  }
+  glUniformui64NV =  tryCall(() => lib.lookupFunction<GlUniformui64NVNative, GlUniformui64NV>('glUniformui64NV'));
+  if (glUniformui64NV == null && glGetProcAddress != null) {
+    glUniformui64NV =  tryCall(() => Pointer<NativeFunction<GlUniformui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformui64NV'))).asFunction<GlUniformui64NV>());
+  }
+  glUniformui64vNV =  tryCall(() => lib.lookupFunction<GlUniformui64vNVNative, GlUniformui64vNV>('glUniformui64vNV'));
+  if (glUniformui64vNV == null && glGetProcAddress != null) {
+    glUniformui64vNV =  tryCall(() => Pointer<NativeFunction<GlUniformui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glUniformui64vNV'))).asFunction<GlUniformui64vNV>());
+  }
+  glGetUniformui64vNV =  tryCall(() => lib.lookupFunction<GlGetUniformui64vNVNative, GlGetUniformui64vNV>('glGetUniformui64vNV'));
+  if (glGetUniformui64vNV == null && glGetProcAddress != null) {
+    glGetUniformui64vNV =  tryCall(() => Pointer<NativeFunction<GlGetUniformui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetUniformui64vNV'))).asFunction<GlGetUniformui64vNV>());
+  }
+  glProgramUniformui64NV =  tryCall(() => lib.lookupFunction<GlProgramUniformui64NVNative, GlProgramUniformui64NV>('glProgramUniformui64NV'));
+  if (glProgramUniformui64NV == null && glGetProcAddress != null) {
+    glProgramUniformui64NV =  tryCall(() => Pointer<NativeFunction<GlProgramUniformui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformui64NV'))).asFunction<GlProgramUniformui64NV>());
+  }
+  glProgramUniformui64vNV =  tryCall(() => lib.lookupFunction<GlProgramUniformui64vNVNative, GlProgramUniformui64vNV>('glProgramUniformui64vNV'));
+  if (glProgramUniformui64vNV == null && glGetProcAddress != null) {
+    glProgramUniformui64vNV =  tryCall(() => Pointer<NativeFunction<GlProgramUniformui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glProgramUniformui64vNV'))).asFunction<GlProgramUniformui64vNV>());
+  }
+  glBindShadingRateImageNV =  tryCall(() => lib.lookupFunction<GlBindShadingRateImageNVNative, GlBindShadingRateImageNV>('glBindShadingRateImageNV'));
+  if (glBindShadingRateImageNV == null && glGetProcAddress != null) {
+    glBindShadingRateImageNV =  tryCall(() => Pointer<NativeFunction<GlBindShadingRateImageNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBindShadingRateImageNV'))).asFunction<GlBindShadingRateImageNV>());
+  }
+  glGetShadingRateImagePaletteNV =  tryCall(() => lib.lookupFunction<GlGetShadingRateImagePaletteNVNative, GlGetShadingRateImagePaletteNV>('glGetShadingRateImagePaletteNV'));
+  if (glGetShadingRateImagePaletteNV == null && glGetProcAddress != null) {
+    glGetShadingRateImagePaletteNV =  tryCall(() => Pointer<NativeFunction<GlGetShadingRateImagePaletteNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetShadingRateImagePaletteNV'))).asFunction<GlGetShadingRateImagePaletteNV>());
+  }
+  glGetShadingRateSampleLocationivNV =  tryCall(() => lib.lookupFunction<GlGetShadingRateSampleLocationivNVNative, GlGetShadingRateSampleLocationivNV>('glGetShadingRateSampleLocationivNV'));
+  if (glGetShadingRateSampleLocationivNV == null && glGetProcAddress != null) {
+    glGetShadingRateSampleLocationivNV =  tryCall(() => Pointer<NativeFunction<GlGetShadingRateSampleLocationivNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetShadingRateSampleLocationivNV'))).asFunction<GlGetShadingRateSampleLocationivNV>());
+  }
+  glShadingRateImageBarrierNV =  tryCall(() => lib.lookupFunction<GlShadingRateImageBarrierNVNative, GlShadingRateImageBarrierNV>('glShadingRateImageBarrierNV'));
+  if (glShadingRateImageBarrierNV == null && glGetProcAddress != null) {
+    glShadingRateImageBarrierNV =  tryCall(() => Pointer<NativeFunction<GlShadingRateImageBarrierNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glShadingRateImageBarrierNV'))).asFunction<GlShadingRateImageBarrierNV>());
+  }
+  glShadingRateImagePaletteNV =  tryCall(() => lib.lookupFunction<GlShadingRateImagePaletteNVNative, GlShadingRateImagePaletteNV>('glShadingRateImagePaletteNV'));
+  if (glShadingRateImagePaletteNV == null && glGetProcAddress != null) {
+    glShadingRateImagePaletteNV =  tryCall(() => Pointer<NativeFunction<GlShadingRateImagePaletteNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glShadingRateImagePaletteNV'))).asFunction<GlShadingRateImagePaletteNV>());
+  }
+  glShadingRateSampleOrderNV =  tryCall(() => lib.lookupFunction<GlShadingRateSampleOrderNVNative, GlShadingRateSampleOrderNV>('glShadingRateSampleOrderNV'));
+  if (glShadingRateSampleOrderNV == null && glGetProcAddress != null) {
+    glShadingRateSampleOrderNV =  tryCall(() => Pointer<NativeFunction<GlShadingRateSampleOrderNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glShadingRateSampleOrderNV'))).asFunction<GlShadingRateSampleOrderNV>());
+  }
+  glShadingRateSampleOrderCustomNV =  tryCall(() => lib.lookupFunction<GlShadingRateSampleOrderCustomNVNative, GlShadingRateSampleOrderCustomNV>('glShadingRateSampleOrderCustomNV'));
+  if (glShadingRateSampleOrderCustomNV == null && glGetProcAddress != null) {
+    glShadingRateSampleOrderCustomNV =  tryCall(() => Pointer<NativeFunction<GlShadingRateSampleOrderCustomNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glShadingRateSampleOrderCustomNV'))).asFunction<GlShadingRateSampleOrderCustomNV>());
+  }
+  glTextureBarrierNV =  tryCall(() => lib.lookupFunction<GlTextureBarrierNVNative, GlTextureBarrierNV>('glTextureBarrierNV'));
+  if (glTextureBarrierNV == null && glGetProcAddress != null) {
+    glTextureBarrierNV =  tryCall(() => Pointer<NativeFunction<GlTextureBarrierNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTextureBarrierNV'))).asFunction<GlTextureBarrierNV>());
+  }
+  glVertexAttribL1i64NV =  tryCall(() => lib.lookupFunction<GlVertexAttribL1i64NVNative, GlVertexAttribL1i64NV>('glVertexAttribL1i64NV'));
+  if (glVertexAttribL1i64NV == null && glGetProcAddress != null) {
+    glVertexAttribL1i64NV =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL1i64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL1i64NV'))).asFunction<GlVertexAttribL1i64NV>());
+  }
+  glVertexAttribL2i64NV =  tryCall(() => lib.lookupFunction<GlVertexAttribL2i64NVNative, GlVertexAttribL2i64NV>('glVertexAttribL2i64NV'));
+  if (glVertexAttribL2i64NV == null && glGetProcAddress != null) {
+    glVertexAttribL2i64NV =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL2i64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL2i64NV'))).asFunction<GlVertexAttribL2i64NV>());
+  }
+  glVertexAttribL3i64NV =  tryCall(() => lib.lookupFunction<GlVertexAttribL3i64NVNative, GlVertexAttribL3i64NV>('glVertexAttribL3i64NV'));
+  if (glVertexAttribL3i64NV == null && glGetProcAddress != null) {
+    glVertexAttribL3i64NV =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL3i64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL3i64NV'))).asFunction<GlVertexAttribL3i64NV>());
+  }
+  glVertexAttribL4i64NV =  tryCall(() => lib.lookupFunction<GlVertexAttribL4i64NVNative, GlVertexAttribL4i64NV>('glVertexAttribL4i64NV'));
+  if (glVertexAttribL4i64NV == null && glGetProcAddress != null) {
+    glVertexAttribL4i64NV =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL4i64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL4i64NV'))).asFunction<GlVertexAttribL4i64NV>());
+  }
+  glVertexAttribL1i64vNV =  tryCall(() => lib.lookupFunction<GlVertexAttribL1i64vNVNative, GlVertexAttribL1i64vNV>('glVertexAttribL1i64vNV'));
+  if (glVertexAttribL1i64vNV == null && glGetProcAddress != null) {
+    glVertexAttribL1i64vNV =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL1i64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL1i64vNV'))).asFunction<GlVertexAttribL1i64vNV>());
+  }
+  glVertexAttribL2i64vNV =  tryCall(() => lib.lookupFunction<GlVertexAttribL2i64vNVNative, GlVertexAttribL2i64vNV>('glVertexAttribL2i64vNV'));
+  if (glVertexAttribL2i64vNV == null && glGetProcAddress != null) {
+    glVertexAttribL2i64vNV =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL2i64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL2i64vNV'))).asFunction<GlVertexAttribL2i64vNV>());
+  }
+  glVertexAttribL3i64vNV =  tryCall(() => lib.lookupFunction<GlVertexAttribL3i64vNVNative, GlVertexAttribL3i64vNV>('glVertexAttribL3i64vNV'));
+  if (glVertexAttribL3i64vNV == null && glGetProcAddress != null) {
+    glVertexAttribL3i64vNV =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL3i64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL3i64vNV'))).asFunction<GlVertexAttribL3i64vNV>());
+  }
+  glVertexAttribL4i64vNV =  tryCall(() => lib.lookupFunction<GlVertexAttribL4i64vNVNative, GlVertexAttribL4i64vNV>('glVertexAttribL4i64vNV'));
+  if (glVertexAttribL4i64vNV == null && glGetProcAddress != null) {
+    glVertexAttribL4i64vNV =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL4i64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL4i64vNV'))).asFunction<GlVertexAttribL4i64vNV>());
+  }
+  glVertexAttribL1ui64NV =  tryCall(() => lib.lookupFunction<GlVertexAttribL1ui64NVNative, GlVertexAttribL1ui64NV>('glVertexAttribL1ui64NV'));
+  if (glVertexAttribL1ui64NV == null && glGetProcAddress != null) {
+    glVertexAttribL1ui64NV =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL1ui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL1ui64NV'))).asFunction<GlVertexAttribL1ui64NV>());
+  }
+  glVertexAttribL2ui64NV =  tryCall(() => lib.lookupFunction<GlVertexAttribL2ui64NVNative, GlVertexAttribL2ui64NV>('glVertexAttribL2ui64NV'));
+  if (glVertexAttribL2ui64NV == null && glGetProcAddress != null) {
+    glVertexAttribL2ui64NV =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL2ui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL2ui64NV'))).asFunction<GlVertexAttribL2ui64NV>());
+  }
+  glVertexAttribL3ui64NV =  tryCall(() => lib.lookupFunction<GlVertexAttribL3ui64NVNative, GlVertexAttribL3ui64NV>('glVertexAttribL3ui64NV'));
+  if (glVertexAttribL3ui64NV == null && glGetProcAddress != null) {
+    glVertexAttribL3ui64NV =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL3ui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL3ui64NV'))).asFunction<GlVertexAttribL3ui64NV>());
+  }
+  glVertexAttribL4ui64NV =  tryCall(() => lib.lookupFunction<GlVertexAttribL4ui64NVNative, GlVertexAttribL4ui64NV>('glVertexAttribL4ui64NV'));
+  if (glVertexAttribL4ui64NV == null && glGetProcAddress != null) {
+    glVertexAttribL4ui64NV =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL4ui64NVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL4ui64NV'))).asFunction<GlVertexAttribL4ui64NV>());
+  }
+  glVertexAttribL1ui64vNV =  tryCall(() => lib.lookupFunction<GlVertexAttribL1ui64vNVNative, GlVertexAttribL1ui64vNV>('glVertexAttribL1ui64vNV'));
+  if (glVertexAttribL1ui64vNV == null && glGetProcAddress != null) {
+    glVertexAttribL1ui64vNV =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL1ui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL1ui64vNV'))).asFunction<GlVertexAttribL1ui64vNV>());
+  }
+  glVertexAttribL2ui64vNV =  tryCall(() => lib.lookupFunction<GlVertexAttribL2ui64vNVNative, GlVertexAttribL2ui64vNV>('glVertexAttribL2ui64vNV'));
+  if (glVertexAttribL2ui64vNV == null && glGetProcAddress != null) {
+    glVertexAttribL2ui64vNV =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL2ui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL2ui64vNV'))).asFunction<GlVertexAttribL2ui64vNV>());
+  }
+  glVertexAttribL3ui64vNV =  tryCall(() => lib.lookupFunction<GlVertexAttribL3ui64vNVNative, GlVertexAttribL3ui64vNV>('glVertexAttribL3ui64vNV'));
+  if (glVertexAttribL3ui64vNV == null && glGetProcAddress != null) {
+    glVertexAttribL3ui64vNV =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL3ui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL3ui64vNV'))).asFunction<GlVertexAttribL3ui64vNV>());
+  }
+  glVertexAttribL4ui64vNV =  tryCall(() => lib.lookupFunction<GlVertexAttribL4ui64vNVNative, GlVertexAttribL4ui64vNV>('glVertexAttribL4ui64vNV'));
+  if (glVertexAttribL4ui64vNV == null && glGetProcAddress != null) {
+    glVertexAttribL4ui64vNV =  tryCall(() => Pointer<NativeFunction<GlVertexAttribL4ui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribL4ui64vNV'))).asFunction<GlVertexAttribL4ui64vNV>());
+  }
+  glGetVertexAttribLi64vNV =  tryCall(() => lib.lookupFunction<GlGetVertexAttribLi64vNVNative, GlGetVertexAttribLi64vNV>('glGetVertexAttribLi64vNV'));
+  if (glGetVertexAttribLi64vNV == null && glGetProcAddress != null) {
+    glGetVertexAttribLi64vNV =  tryCall(() => Pointer<NativeFunction<GlGetVertexAttribLi64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexAttribLi64vNV'))).asFunction<GlGetVertexAttribLi64vNV>());
+  }
+  glGetVertexAttribLui64vNV =  tryCall(() => lib.lookupFunction<GlGetVertexAttribLui64vNVNative, GlGetVertexAttribLui64vNV>('glGetVertexAttribLui64vNV'));
+  if (glGetVertexAttribLui64vNV == null && glGetProcAddress != null) {
+    glGetVertexAttribLui64vNV =  tryCall(() => Pointer<NativeFunction<GlGetVertexAttribLui64vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetVertexAttribLui64vNV'))).asFunction<GlGetVertexAttribLui64vNV>());
+  }
+  glVertexAttribLFormatNV =  tryCall(() => lib.lookupFunction<GlVertexAttribLFormatNVNative, GlVertexAttribLFormatNV>('glVertexAttribLFormatNV'));
+  if (glVertexAttribLFormatNV == null && glGetProcAddress != null) {
+    glVertexAttribLFormatNV =  tryCall(() => Pointer<NativeFunction<GlVertexAttribLFormatNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribLFormatNV'))).asFunction<GlVertexAttribLFormatNV>());
+  }
+  glBufferAddressRangeNV =  tryCall(() => lib.lookupFunction<GlBufferAddressRangeNVNative, GlBufferAddressRangeNV>('glBufferAddressRangeNV'));
+  if (glBufferAddressRangeNV == null && glGetProcAddress != null) {
+    glBufferAddressRangeNV =  tryCall(() => Pointer<NativeFunction<GlBufferAddressRangeNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBufferAddressRangeNV'))).asFunction<GlBufferAddressRangeNV>());
+  }
+  glVertexFormatNV =  tryCall(() => lib.lookupFunction<GlVertexFormatNVNative, GlVertexFormatNV>('glVertexFormatNV'));
+  if (glVertexFormatNV == null && glGetProcAddress != null) {
+    glVertexFormatNV =  tryCall(() => Pointer<NativeFunction<GlVertexFormatNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexFormatNV'))).asFunction<GlVertexFormatNV>());
+  }
+  glNormalFormatNV =  tryCall(() => lib.lookupFunction<GlNormalFormatNVNative, GlNormalFormatNV>('glNormalFormatNV'));
+  if (glNormalFormatNV == null && glGetProcAddress != null) {
+    glNormalFormatNV =  tryCall(() => Pointer<NativeFunction<GlNormalFormatNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNormalFormatNV'))).asFunction<GlNormalFormatNV>());
+  }
+  glColorFormatNV =  tryCall(() => lib.lookupFunction<GlColorFormatNVNative, GlColorFormatNV>('glColorFormatNV'));
+  if (glColorFormatNV == null && glGetProcAddress != null) {
+    glColorFormatNV =  tryCall(() => Pointer<NativeFunction<GlColorFormatNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glColorFormatNV'))).asFunction<GlColorFormatNV>());
+  }
+  glIndexFormatNV =  tryCall(() => lib.lookupFunction<GlIndexFormatNVNative, GlIndexFormatNV>('glIndexFormatNV'));
+  if (glIndexFormatNV == null && glGetProcAddress != null) {
+    glIndexFormatNV =  tryCall(() => Pointer<NativeFunction<GlIndexFormatNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glIndexFormatNV'))).asFunction<GlIndexFormatNV>());
+  }
+  glTexCoordFormatNV =  tryCall(() => lib.lookupFunction<GlTexCoordFormatNVNative, GlTexCoordFormatNV>('glTexCoordFormatNV'));
+  if (glTexCoordFormatNV == null && glGetProcAddress != null) {
+    glTexCoordFormatNV =  tryCall(() => Pointer<NativeFunction<GlTexCoordFormatNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexCoordFormatNV'))).asFunction<GlTexCoordFormatNV>());
+  }
+  glEdgeFlagFormatNV =  tryCall(() => lib.lookupFunction<GlEdgeFlagFormatNVNative, GlEdgeFlagFormatNV>('glEdgeFlagFormatNV'));
+  if (glEdgeFlagFormatNV == null && glGetProcAddress != null) {
+    glEdgeFlagFormatNV =  tryCall(() => Pointer<NativeFunction<GlEdgeFlagFormatNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glEdgeFlagFormatNV'))).asFunction<GlEdgeFlagFormatNV>());
+  }
+  glSecondaryColorFormatNV =  tryCall(() => lib.lookupFunction<GlSecondaryColorFormatNVNative, GlSecondaryColorFormatNV>('glSecondaryColorFormatNV'));
+  if (glSecondaryColorFormatNV == null && glGetProcAddress != null) {
+    glSecondaryColorFormatNV =  tryCall(() => Pointer<NativeFunction<GlSecondaryColorFormatNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glSecondaryColorFormatNV'))).asFunction<GlSecondaryColorFormatNV>());
+  }
+  glFogCoordFormatNV =  tryCall(() => lib.lookupFunction<GlFogCoordFormatNVNative, GlFogCoordFormatNV>('glFogCoordFormatNV'));
+  if (glFogCoordFormatNV == null && glGetProcAddress != null) {
+    glFogCoordFormatNV =  tryCall(() => Pointer<NativeFunction<GlFogCoordFormatNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFogCoordFormatNV'))).asFunction<GlFogCoordFormatNV>());
+  }
+  glVertexAttribFormatNV =  tryCall(() => lib.lookupFunction<GlVertexAttribFormatNVNative, GlVertexAttribFormatNV>('glVertexAttribFormatNV'));
+  if (glVertexAttribFormatNV == null && glGetProcAddress != null) {
+    glVertexAttribFormatNV =  tryCall(() => Pointer<NativeFunction<GlVertexAttribFormatNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribFormatNV'))).asFunction<GlVertexAttribFormatNV>());
+  }
+  glVertexAttribIFormatNV =  tryCall(() => lib.lookupFunction<GlVertexAttribIFormatNVNative, GlVertexAttribIFormatNV>('glVertexAttribIFormatNV'));
+  if (glVertexAttribIFormatNV == null && glGetProcAddress != null) {
+    glVertexAttribIFormatNV =  tryCall(() => Pointer<NativeFunction<GlVertexAttribIFormatNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glVertexAttribIFormatNV'))).asFunction<GlVertexAttribIFormatNV>());
+  }
+  glGetIntegerui64i_vNV =  tryCall(() => lib.lookupFunction<GlGetIntegerui64i_vNVNative, GlGetIntegerui64i_vNV>('glGetIntegerui64i_vNV'));
+  if (glGetIntegerui64i_vNV == null && glGetProcAddress != null) {
+    glGetIntegerui64i_vNV =  tryCall(() => Pointer<NativeFunction<GlGetIntegerui64i_vNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetIntegerui64i_vNV'))).asFunction<GlGetIntegerui64i_vNV>());
+  }
+  glViewportSwizzleNV =  tryCall(() => lib.lookupFunction<GlViewportSwizzleNVNative, GlViewportSwizzleNV>('glViewportSwizzleNV'));
+  if (glViewportSwizzleNV == null && glGetProcAddress != null) {
+    glViewportSwizzleNV =  tryCall(() => Pointer<NativeFunction<GlViewportSwizzleNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glViewportSwizzleNV'))).asFunction<GlViewportSwizzleNV>());
+  }
+  glFramebufferTextureMultiviewOVR =  tryCall(() => lib.lookupFunction<GlFramebufferTextureMultiviewOVRNative, GlFramebufferTextureMultiviewOVR>('glFramebufferTextureMultiviewOVR'));
+  if (glFramebufferTextureMultiviewOVR == null && glGetProcAddress != null) {
+    glFramebufferTextureMultiviewOVR =  tryCall(() => Pointer<NativeFunction<GlFramebufferTextureMultiviewOVRNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferTextureMultiviewOVR'))).asFunction<GlFramebufferTextureMultiviewOVR>());
+  }
 }
 
