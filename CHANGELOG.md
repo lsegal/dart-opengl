@@ -1,3 +1,7 @@
+## 0.3.0
+
+- add macOS support
+
 ## 0.2.0+1
 
 - use ffi_utils
