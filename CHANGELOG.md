@@ -1,3 +1,7 @@
+## 0.3.1
+
+- fix for sdk 2.8.x
+
 ## 0.3.0
 
 - add macOS support

@@ -1283,7 +1283,7 @@ GlViewportSwizzleNV glViewportSwizzleNV;
 GlFramebufferTextureMultiviewOVR glFramebufferTextureMultiviewOVR;
 
 void initOpenGL() {
-  var lib = loadLibrary();
+  DynamicLibrary lib = loadLibrary();
   glCullFace =  tryCall(() => lib.lookupFunction<GlCullFaceNative, GlCullFace>('glCullFace'));
   if (glCullFace == null && glGetProcAddress != null) {
     glCullFace =  tryCall(() => Pointer<NativeFunction<GlCullFaceNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCullFace'))).asFunction<GlCullFace>());
