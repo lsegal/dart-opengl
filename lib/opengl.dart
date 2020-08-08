@@ -12,6 +12,7 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
+/// OpenGL 4.6 FFI bindings for Dart
 library opengl;
 
 export 'src/opengl_header.dart';
