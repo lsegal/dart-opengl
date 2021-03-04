@@ -1887,6 +1887,20 @@ const int GL_KHR_robust_buffer_access_behavior = 1;
 //GL_KHR_robustness
 const int GL_KHR_robustness = 1;
 const int GL_CONTEXT_ROBUST_ACCESS = 0x90F3;
+//GL_KHR_shader_subgroup
+const int GL_KHR_shader_subgroup = 1;
+const int GL_SUBGROUP_SIZE_KHR = 0x9532;
+const int GL_SUBGROUP_SUPPORTED_STAGES_KHR = 0x9533;
+const int GL_SUBGROUP_SUPPORTED_FEATURES_KHR = 0x9534;
+const int GL_SUBGROUP_QUAD_ALL_STAGES_KHR = 0x9535;
+const int GL_SUBGROUP_FEATURE_BASIC_BIT_KHR = 0x00000001;
+const int GL_SUBGROUP_FEATURE_VOTE_BIT_KHR = 0x00000002;
+const int GL_SUBGROUP_FEATURE_ARITHMETIC_BIT_KHR = 0x00000004;
+const int GL_SUBGROUP_FEATURE_BALLOT_BIT_KHR = 0x00000008;
+const int GL_SUBGROUP_FEATURE_SHUFFLE_BIT_KHR = 0x00000010;
+const int GL_SUBGROUP_FEATURE_SHUFFLE_RELATIVE_BIT_KHR = 0x00000020;
+const int GL_SUBGROUP_FEATURE_CLUSTERED_BIT_KHR = 0x00000040;
+const int GL_SUBGROUP_FEATURE_QUAD_BIT_KHR = 0x00000080;
 //GL_KHR_texture_compression_astc_hdr
 const int GL_KHR_texture_compression_astc_hdr = 1;
 const int GL_COMPRESSED_RGBA_ASTC_4x4_KHR = 0x93B0;
@@ -1946,6 +1960,8 @@ const int GL_UNSIGNED_SHORT_8_8_REV_APPLE = 0x85BB;
 const int GL_RGB_RAW_422_APPLE = 0x8A51;
 //GL_EXT_EGL_image_storage
 const int GL_EXT_EGL_image_storage = 1;
+//GL_EXT_EGL_sync
+const int GL_EXT_EGL_sync = 1;
 //GL_EXT_debug_label
 const int GL_EXT_debug_label = 1;
 const int GL_PROGRAM_PIPELINE_OBJECT_EXT = 0x8A4F;
@@ -1963,6 +1979,12 @@ const int GL_TRANSPOSE_PROGRAM_MATRIX_EXT = 0x8E2E;
 const int GL_PROGRAM_MATRIX_STACK_DEPTH_EXT = 0x8E2F;
 //GL_EXT_draw_instanced
 const int GL_EXT_draw_instanced = 1;
+//GL_EXT_multiview_tessellation_geometry_shader
+const int GL_EXT_multiview_tessellation_geometry_shader = 1;
+//GL_EXT_multiview_texture_multisample
+const int GL_EXT_multiview_texture_multisample = 1;
+//GL_EXT_multiview_timer_query
+const int GL_EXT_multiview_timer_query = 1;
 //GL_EXT_polygon_offset_clamp
 const int GL_EXT_polygon_offset_clamp = 1;
 const int GL_POLYGON_OFFSET_CLAMP_EXT = 0x8E1B;
@@ -1999,11 +2021,16 @@ const int GL_WEIGHTED_AVERAGE_EXT = 0x9367;
 //GL_EXT_texture_sRGB_R8
 const int GL_EXT_texture_sRGB_R8 = 1;
 const int GL_SR8_EXT = 0x8FBD;
+//GL_EXT_texture_sRGB_RG8
+const int GL_EXT_texture_sRGB_RG8 = 1;
+const int GL_SRG8_EXT = 0x8FBE;
 //GL_EXT_texture_sRGB_decode
 const int GL_EXT_texture_sRGB_decode = 1;
 const int GL_TEXTURE_SRGB_DECODE_EXT = 0x8A48;
 const int GL_DECODE_EXT = 0x8A49;
 const int GL_SKIP_DECODE_EXT = 0x8A4A;
+//GL_EXT_texture_shadow_lod
+const int GL_EXT_texture_shadow_lod = 1;
 //GL_EXT_window_rectangles
 const int GL_EXT_window_rectangles = 1;
 const int GL_INCLUSIVE_EXT = 0x8F10;
@@ -2042,6 +2069,15 @@ const int GL_PERFQUERY_QUERY_NAME_LENGTH_MAX_INTEL = 0x94FD;
 const int GL_PERFQUERY_COUNTER_NAME_LENGTH_MAX_INTEL = 0x94FE;
 const int GL_PERFQUERY_COUNTER_DESC_LENGTH_MAX_INTEL = 0x94FF;
 const int GL_PERFQUERY_GPA_EXTENDED_COUNTERS_INTEL = 0x9500;
+//GL_MESA_framebuffer_flip_x
+const int GL_MESA_framebuffer_flip_x = 1;
+const int GL_FRAMEBUFFER_FLIP_X_MESA = 0x8BBC;
+//GL_MESA_framebuffer_flip_y
+const int GL_MESA_framebuffer_flip_y = 1;
+const int GL_FRAMEBUFFER_FLIP_Y_MESA = 0x8BBB;
+//GL_MESA_framebuffer_swap_xy
+const int GL_MESA_framebuffer_swap_xy = 1;
+const int GL_FRAMEBUFFER_SWAP_XY_MESA = 0x8BBD;
 //GL_NV_bindless_multi_draw_indirect
 const int GL_NV_bindless_multi_draw_indirect = 1;
 //GL_NV_bindless_multi_draw_indirect_count
@@ -2161,6 +2197,12 @@ const int GL_CONSERVATIVE_RASTER_MODE_POST_SNAP_NV = 0x954E;
 const int GL_CONSERVATIVE_RASTER_MODE_PRE_SNAP_TRIANGLES_NV = 0x954F;
 //GL_NV_conservative_raster_underestimation
 const int GL_NV_conservative_raster_underestimation = 1;
+//GL_NV_depth_buffer_float
+const int GL_NV_depth_buffer_float = 1;
+const int GL_DEPTH_COMPONENT32F_NV = 0x8DAB;
+const int GL_DEPTH32F_STENCIL8_NV = 0x8DAC;
+const int GL_FLOAT_32_UNSIGNED_INT_24_8_REV_NV = 0x8DAD;
+const int GL_DEPTH_BUFFER_FLOAT_MODE_NV = 0x8DAF;
 //GL_NV_draw_vulkan_image
 const int GL_NV_draw_vulkan_image = 1;
 //GL_NV_fill_rectangle
@@ -2240,6 +2282,8 @@ const int GL_DETACHED_TEXTURES_NV = 0x95AA;
 const int GL_DETACHED_BUFFERS_NV = 0x95AB;
 const int GL_MAX_DETACHED_TEXTURES_NV = 0x95AC;
 const int GL_MAX_DETACHED_BUFFERS_NV = 0x95AD;
+//GL_NV_memory_object_sparse
+const int GL_NV_memory_object_sparse = 1;
 //GL_NV_mesh_shader
 const int GL_NV_mesh_shader = 1;
 const int GL_MESH_SHADER_NV = 0x9559;
@@ -2448,6 +2492,10 @@ const int GL_FRAGMENT_INPUT_NV = 0x936D;
 //GL_NV_path_rendering_shared_edge
 const int GL_NV_path_rendering_shared_edge = 1;
 const int GL_SHARED_EDGE_NV = 0xC0;
+//GL_NV_primitive_shading_rate
+const int GL_NV_primitive_shading_rate = 1;
+const int GL_SHADING_RATE_IMAGE_PER_PRIMITIVE_NV = 0x95B1;
+const int GL_SHADING_RATE_IMAGE_PALETTE_COUNT_NV = 0x95B2;
 //GL_NV_representative_fragment_test
 const int GL_NV_representative_fragment_test = 1;
 const int GL_REPRESENTATIVE_FRAGMENT_TEST_NV = 0x937F;
@@ -2485,6 +2533,9 @@ const int GL_MAX_SHADER_BUFFER_ADDRESS_NV = 0x8F35;
 //GL_NV_shader_buffer_store
 const int GL_NV_shader_buffer_store = 1;
 const int GL_SHADER_GLOBAL_ACCESS_BARRIER_BIT_NV = 0x00000010;
+//GL_NV_shader_subgroup_partitioned
+const int GL_NV_shader_subgroup_partitioned = 1;
+const int GL_SUBGROUP_FEATURE_PARTITIONED_BIT_NV = 0x00000100;
 //GL_NV_shader_texture_footprint
 const int GL_NV_shader_texture_footprint = 1;
 //GL_NV_shader_thread_group
@@ -2607,14 +2658,14 @@ typedef GlScissor = void Function(int x, int y, int width, int height);
 typedef GlTexParameterfNative = Void Function(Uint32 target, Uint32 pname, Float param);
 typedef GlTexParameterf = void Function(int target, int pname, double param);
 
-typedef GlTexParameterfvNative = Void Function(Uint32 target, Uint32 pname, Pointer params);
-typedef GlTexParameterfv = void Function(int target, int pname, Pointer params);
+typedef GlTexParameterfvNative = Void Function(Uint32 target, Uint32 pname, Pointer<Float> params);
+typedef GlTexParameterfv = void Function(int target, int pname, Pointer<Float> params);
 
 typedef GlTexParameteriNative = Void Function(Uint32 target, Uint32 pname, Int32 param);
 typedef GlTexParameteri = void Function(int target, int pname, int param);
 
-typedef GlTexParameterivNative = Void Function(Uint32 target, Uint32 pname, Pointer params);
-typedef GlTexParameteriv = void Function(int target, int pname, Pointer params);
+typedef GlTexParameterivNative = Void Function(Uint32 target, Uint32 pname, Pointer<Int32> params);
+typedef GlTexParameteriv = void Function(int target, int pname, Pointer<Int32> params);
 
 typedef GlTexImage1DNative = Void Function(Uint32 target, Int32 level, Int32 internalformat, Int32 width, Int32 border, Uint32 format, Uint32 type, Pointer pixels);
 typedef GlTexImage1D = void Function(int target, int level, int internalformat, int width, int border, int format, int type, Pointer pixels);
@@ -2688,17 +2739,17 @@ typedef GlReadPixels = void Function(int x, int y, int width, int height, int fo
 typedef GlGetBooleanvNative = Void Function(Uint32 pname, Pointer data);
 typedef GlGetBooleanv = void Function(int pname, Pointer data);
 
-typedef GlGetDoublevNative = Void Function(Uint32 pname, Pointer data);
-typedef GlGetDoublev = void Function(int pname, Pointer data);
+typedef GlGetDoublevNative = Void Function(Uint32 pname, Pointer<Double> data);
+typedef GlGetDoublev = void Function(int pname, Pointer<Double> data);
 
 typedef GlGetErrorNative = Uint32 Function();
 typedef GlGetError = int Function();
 
-typedef GlGetFloatvNative = Void Function(Uint32 pname, Pointer data);
-typedef GlGetFloatv = void Function(int pname, Pointer data);
+typedef GlGetFloatvNative = Void Function(Uint32 pname, Pointer<Float> data);
+typedef GlGetFloatv = void Function(int pname, Pointer<Float> data);
 
-typedef GlGetIntegervNative = Void Function(Uint32 pname, Pointer data);
-typedef GlGetIntegerv = void Function(int pname, Pointer data);
+typedef GlGetIntegervNative = Void Function(Uint32 pname, Pointer<Int32> data);
+typedef GlGetIntegerv = void Function(int pname, Pointer<Int32> data);
 
 typedef GlGetStringNative = Pointer Function(Uint32 name);
 typedef GlGetString = /*String*/ Pointer Function(int name);
@@ -2706,17 +2757,17 @@ typedef GlGetString = /*String*/ Pointer Function(int name);
 typedef GlGetTexImageNative = Void Function(Uint32 target, Int32 level, Uint32 format, Uint32 type, Pointer pixels);
 typedef GlGetTexImage = void Function(int target, int level, int format, int type, Pointer pixels);
 
-typedef GlGetTexParameterfvNative = Void Function(Uint32 target, Uint32 pname, Pointer params);
-typedef GlGetTexParameterfv = void Function(int target, int pname, Pointer params);
+typedef GlGetTexParameterfvNative = Void Function(Uint32 target, Uint32 pname, Pointer<Float> params);
+typedef GlGetTexParameterfv = void Function(int target, int pname, Pointer<Float> params);
 
-typedef GlGetTexParameterivNative = Void Function(Uint32 target, Uint32 pname, Pointer params);
-typedef GlGetTexParameteriv = void Function(int target, int pname, Pointer params);
+typedef GlGetTexParameterivNative = Void Function(Uint32 target, Uint32 pname, Pointer<Int32> params);
+typedef GlGetTexParameteriv = void Function(int target, int pname, Pointer<Int32> params);
 
-typedef GlGetTexLevelParameterfvNative = Void Function(Uint32 target, Int32 level, Uint32 pname, Pointer params);
-typedef GlGetTexLevelParameterfv = void Function(int target, int level, int pname, Pointer params);
+typedef GlGetTexLevelParameterfvNative = Void Function(Uint32 target, Int32 level, Uint32 pname, Pointer<Float> params);
+typedef GlGetTexLevelParameterfv = void Function(int target, int level, int pname, Pointer<Float> params);
 
-typedef GlGetTexLevelParameterivNative = Void Function(Uint32 target, Int32 level, Uint32 pname, Pointer params);
-typedef GlGetTexLevelParameteriv = void Function(int target, int level, int pname, Pointer params);
+typedef GlGetTexLevelParameterivNative = Void Function(Uint32 target, Int32 level, Uint32 pname, Pointer<Int32> params);
+typedef GlGetTexLevelParameteriv = void Function(int target, int level, int pname, Pointer<Int32> params);
 
 typedef GlIsEnabledNative = Uint8 Function(Uint32 cap);
 typedef GlIsEnabled = int Function(int cap);
@@ -2761,11 +2812,11 @@ typedef GlTexSubImage2D = void Function(int target, int level, int xoffset, int 
 typedef GlBindTextureNative = Void Function(Uint32 target, Uint32 texture);
 typedef GlBindTexture = void Function(int target, int texture);
 
-typedef GlDeleteTexturesNative = Void Function(Int32 n, Pointer textures);
-typedef GlDeleteTextures = void Function(int n, Pointer textures);
+typedef GlDeleteTexturesNative = Void Function(Int32 n, Pointer<Uint32> textures);
+typedef GlDeleteTextures = void Function(int n, Pointer<Uint32> textures);
 
-typedef GlGenTexturesNative = Void Function(Int32 n, Pointer textures);
-typedef GlGenTextures = void Function(int n, Pointer textures);
+typedef GlGenTexturesNative = Void Function(Int32 n, Pointer<Uint32> textures);
+typedef GlGenTextures = void Function(int n, Pointer<Uint32> textures);
 
 typedef GlIsTextureNative = Uint8 Function(Uint32 texture);
 typedef GlIsTexture = int Function(int texture);
@@ -2815,23 +2866,23 @@ typedef GlGetCompressedTexImage = void Function(int target, int level, Pointer i
 typedef GlBlendFuncSeparateNative = Void Function(Uint32 sfactorRGB, Uint32 dfactorRGB, Uint32 sfactorAlpha, Uint32 dfactorAlpha);
 typedef GlBlendFuncSeparate = void Function(int sfactorRGB, int dfactorRGB, int sfactorAlpha, int dfactorAlpha);
 
-typedef GlMultiDrawArraysNative = Void Function(Uint32 mode, Pointer first, Pointer count, Int32 drawcount);
-typedef GlMultiDrawArrays = void Function(int mode, Pointer first, Pointer count, int drawcount);
+typedef GlMultiDrawArraysNative = Void Function(Uint32 mode, Pointer<Int32> first, Pointer<Int32> count, Int32 drawcount);
+typedef GlMultiDrawArrays = void Function(int mode, Pointer<Int32> first, Pointer<Int32> count, int drawcount);
 
-typedef GlMultiDrawElementsNative = Void Function(Uint32 mode, Pointer count, Uint32 type, Pointer indices, Int32 drawcount);
-typedef GlMultiDrawElements = void Function(int mode, Pointer count, int type, Pointer indices, int drawcount);
+typedef GlMultiDrawElementsNative = Void Function(Uint32 mode, Pointer<Int32> count, Uint32 type, Pointer indices, Int32 drawcount);
+typedef GlMultiDrawElements = void Function(int mode, Pointer<Int32> count, int type, Pointer indices, int drawcount);
 
 typedef GlPointParameterfNative = Void Function(Uint32 pname, Float param);
 typedef GlPointParameterf = void Function(int pname, double param);
 
-typedef GlPointParameterfvNative = Void Function(Uint32 pname, Pointer params);
-typedef GlPointParameterfv = void Function(int pname, Pointer params);
+typedef GlPointParameterfvNative = Void Function(Uint32 pname, Pointer<Float> params);
+typedef GlPointParameterfv = void Function(int pname, Pointer<Float> params);
 
 typedef GlPointParameteriNative = Void Function(Uint32 pname, Int32 param);
 typedef GlPointParameteri = void Function(int pname, int param);
 
-typedef GlPointParameterivNative = Void Function(Uint32 pname, Pointer params);
-typedef GlPointParameteriv = void Function(int pname, Pointer params);
+typedef GlPointParameterivNative = Void Function(Uint32 pname, Pointer<Int32> params);
+typedef GlPointParameteriv = void Function(int pname, Pointer<Int32> params);
 
 typedef GlBlendColorNative = Void Function(Float red, Float green, Float blue, Float alpha);
 typedef GlBlendColor = void Function(double red, double green, double blue, double alpha);
@@ -2840,11 +2891,11 @@ typedef GlBlendEquationNative = Void Function(Uint32 mode);
 typedef GlBlendEquation = void Function(int mode);
 
 //GL_VERSION_1_5
-typedef GlGenQueriesNative = Void Function(Int32 n, Pointer ids);
-typedef GlGenQueries = void Function(int n, Pointer ids);
+typedef GlGenQueriesNative = Void Function(Int32 n, Pointer<Uint32> ids);
+typedef GlGenQueries = void Function(int n, Pointer<Uint32> ids);
 
-typedef GlDeleteQueriesNative = Void Function(Int32 n, Pointer ids);
-typedef GlDeleteQueries = void Function(int n, Pointer ids);
+typedef GlDeleteQueriesNative = Void Function(Int32 n, Pointer<Uint32> ids);
+typedef GlDeleteQueries = void Function(int n, Pointer<Uint32> ids);
 
 typedef GlIsQueryNative = Uint8 Function(Uint32 id);
 typedef GlIsQuery = int Function(int id);
@@ -2855,23 +2906,23 @@ typedef GlBeginQuery = void Function(int target, int id);
 typedef GlEndQueryNative = Void Function(Uint32 target);
 typedef GlEndQuery = void Function(int target);
 
-typedef GlGetQueryivNative = Void Function(Uint32 target, Uint32 pname, Pointer params);
-typedef GlGetQueryiv = void Function(int target, int pname, Pointer params);
+typedef GlGetQueryivNative = Void Function(Uint32 target, Uint32 pname, Pointer<Int32> params);
+typedef GlGetQueryiv = void Function(int target, int pname, Pointer<Int32> params);
 
-typedef GlGetQueryObjectivNative = Void Function(Uint32 id, Uint32 pname, Pointer params);
-typedef GlGetQueryObjectiv = void Function(int id, int pname, Pointer params);
+typedef GlGetQueryObjectivNative = Void Function(Uint32 id, Uint32 pname, Pointer<Int32> params);
+typedef GlGetQueryObjectiv = void Function(int id, int pname, Pointer<Int32> params);
 
-typedef GlGetQueryObjectuivNative = Void Function(Uint32 id, Uint32 pname, Pointer params);
-typedef GlGetQueryObjectuiv = void Function(int id, int pname, Pointer params);
+typedef GlGetQueryObjectuivNative = Void Function(Uint32 id, Uint32 pname, Pointer<Uint32> params);
+typedef GlGetQueryObjectuiv = void Function(int id, int pname, Pointer<Uint32> params);
 
 typedef GlBindBufferNative = Void Function(Uint32 target, Uint32 buffer);
 typedef GlBindBuffer = void Function(int target, int buffer);
 
-typedef GlDeleteBuffersNative = Void Function(Int32 n, Pointer buffers);
-typedef GlDeleteBuffers = void Function(int n, Pointer buffers);
+typedef GlDeleteBuffersNative = Void Function(Int32 n, Pointer<Uint32> buffers);
+typedef GlDeleteBuffers = void Function(int n, Pointer<Uint32> buffers);
 
-typedef GlGenBuffersNative = Void Function(Int32 n, Pointer buffers);
-typedef GlGenBuffers = void Function(int n, Pointer buffers);
+typedef GlGenBuffersNative = Void Function(Int32 n, Pointer<Uint32> buffers);
+typedef GlGenBuffers = void Function(int n, Pointer<Uint32> buffers);
 
 typedef GlIsBufferNative = Uint8 Function(Uint32 buffer);
 typedef GlIsBuffer = int Function(int buffer);
@@ -2891,8 +2942,8 @@ typedef GlMapBuffer = Pointer Function(int target, int access);
 typedef GlUnmapBufferNative = Uint8 Function(Uint32 target);
 typedef GlUnmapBuffer = int Function(int target);
 
-typedef GlGetBufferParameterivNative = Void Function(Uint32 target, Uint32 pname, Pointer params);
-typedef GlGetBufferParameteriv = void Function(int target, int pname, Pointer params);
+typedef GlGetBufferParameterivNative = Void Function(Uint32 target, Uint32 pname, Pointer<Int32> params);
+typedef GlGetBufferParameteriv = void Function(int target, int pname, Pointer<Int32> params);
 
 typedef GlGetBufferPointervNative = Void Function(Uint32 target, Uint32 pname, Pointer params);
 typedef GlGetBufferPointerv = void Function(int target, int pname, Pointer params);
@@ -2901,8 +2952,8 @@ typedef GlGetBufferPointerv = void Function(int target, int pname, Pointer param
 typedef GlBlendEquationSeparateNative = Void Function(Uint32 modeRGB, Uint32 modeAlpha);
 typedef GlBlendEquationSeparate = void Function(int modeRGB, int modeAlpha);
 
-typedef GlDrawBuffersNative = Void Function(Int32 n, Pointer bufs);
-typedef GlDrawBuffers = void Function(int n, Pointer bufs);
+typedef GlDrawBuffersNative = Void Function(Int32 n, Pointer<Uint32> bufs);
+typedef GlDrawBuffers = void Function(int n, Pointer<Uint32> bufs);
 
 typedef GlStencilOpSeparateNative = Void Function(Uint32 face, Uint32 sfail, Uint32 dpfail, Uint32 dppass);
 typedef GlStencilOpSeparate = void Function(int face, int sfail, int dpfail, int dppass);
@@ -2943,50 +2994,50 @@ typedef GlDisableVertexAttribArray = void Function(int index);
 typedef GlEnableVertexAttribArrayNative = Void Function(Uint32 index);
 typedef GlEnableVertexAttribArray = void Function(int index);
 
-typedef GlGetActiveAttribNative = Void Function(Uint32 program, Uint32 index, Int32 bufSize, Pointer length, Pointer size, Pointer type, Pointer name);
-typedef GlGetActiveAttrib = void Function(int program, int index, int bufSize, Pointer length, Pointer size, Pointer type, Pointer name);
+typedef GlGetActiveAttribNative = Void Function(Uint32 program, Uint32 index, Int32 bufSize, Pointer<Int32> length, Pointer<Int32> size, Pointer<Uint32> type, Pointer name);
+typedef GlGetActiveAttrib = void Function(int program, int index, int bufSize, Pointer<Int32> length, Pointer<Int32> size, Pointer<Uint32> type, Pointer name);
 
-typedef GlGetActiveUniformNative = Void Function(Uint32 program, Uint32 index, Int32 bufSize, Pointer length, Pointer size, Pointer type, Pointer name);
-typedef GlGetActiveUniform = void Function(int program, int index, int bufSize, Pointer length, Pointer size, Pointer type, Pointer name);
+typedef GlGetActiveUniformNative = Void Function(Uint32 program, Uint32 index, Int32 bufSize, Pointer<Int32> length, Pointer<Int32> size, Pointer<Uint32> type, Pointer name);
+typedef GlGetActiveUniform = void Function(int program, int index, int bufSize, Pointer<Int32> length, Pointer<Int32> size, Pointer<Uint32> type, Pointer name);
 
-typedef GlGetAttachedShadersNative = Void Function(Uint32 program, Int32 maxCount, Pointer count, Pointer shaders);
-typedef GlGetAttachedShaders = void Function(int program, int maxCount, Pointer count, Pointer shaders);
+typedef GlGetAttachedShadersNative = Void Function(Uint32 program, Int32 maxCount, Pointer<Int32> count, Pointer<Uint32> shaders);
+typedef GlGetAttachedShaders = void Function(int program, int maxCount, Pointer<Int32> count, Pointer<Uint32> shaders);
 
 typedef GlGetAttribLocationNative = Int32 Function(Uint32 program, Pointer name);
 typedef GlGetAttribLocation = int Function(int program, /*String*/ Pointer name);
 
-typedef GlGetProgramivNative = Void Function(Uint32 program, Uint32 pname, Pointer params);
-typedef GlGetProgramiv = void Function(int program, int pname, Pointer params);
+typedef GlGetProgramivNative = Void Function(Uint32 program, Uint32 pname, Pointer<Int32> params);
+typedef GlGetProgramiv = void Function(int program, int pname, Pointer<Int32> params);
 
-typedef GlGetProgramInfoLogNative = Void Function(Uint32 program, Int32 bufSize, Pointer length, Pointer infoLog);
-typedef GlGetProgramInfoLog = void Function(int program, int bufSize, Pointer length, Pointer infoLog);
+typedef GlGetProgramInfoLogNative = Void Function(Uint32 program, Int32 bufSize, Pointer<Int32> length, Pointer infoLog);
+typedef GlGetProgramInfoLog = void Function(int program, int bufSize, Pointer<Int32> length, Pointer infoLog);
 
-typedef GlGetShaderivNative = Void Function(Uint32 shader, Uint32 pname, Pointer params);
-typedef GlGetShaderiv = void Function(int shader, int pname, Pointer params);
+typedef GlGetShaderivNative = Void Function(Uint32 shader, Uint32 pname, Pointer<Int32> params);
+typedef GlGetShaderiv = void Function(int shader, int pname, Pointer<Int32> params);
 
-typedef GlGetShaderInfoLogNative = Void Function(Uint32 shader, Int32 bufSize, Pointer length, Pointer infoLog);
-typedef GlGetShaderInfoLog = void Function(int shader, int bufSize, Pointer length, Pointer infoLog);
+typedef GlGetShaderInfoLogNative = Void Function(Uint32 shader, Int32 bufSize, Pointer<Int32> length, Pointer infoLog);
+typedef GlGetShaderInfoLog = void Function(int shader, int bufSize, Pointer<Int32> length, Pointer infoLog);
 
-typedef GlGetShaderSourceNative = Void Function(Uint32 shader, Int32 bufSize, Pointer length, Pointer source);
-typedef GlGetShaderSource = void Function(int shader, int bufSize, Pointer length, Pointer source);
+typedef GlGetShaderSourceNative = Void Function(Uint32 shader, Int32 bufSize, Pointer<Int32> length, Pointer source);
+typedef GlGetShaderSource = void Function(int shader, int bufSize, Pointer<Int32> length, Pointer source);
 
 typedef GlGetUniformLocationNative = Int32 Function(Uint32 program, Pointer name);
 typedef GlGetUniformLocation = int Function(int program, /*String*/ Pointer name);
 
-typedef GlGetUniformfvNative = Void Function(Uint32 program, Int32 location, Pointer params);
-typedef GlGetUniformfv = void Function(int program, int location, Pointer params);
+typedef GlGetUniformfvNative = Void Function(Uint32 program, Int32 location, Pointer<Float> params);
+typedef GlGetUniformfv = void Function(int program, int location, Pointer<Float> params);
 
-typedef GlGetUniformivNative = Void Function(Uint32 program, Int32 location, Pointer params);
-typedef GlGetUniformiv = void Function(int program, int location, Pointer params);
+typedef GlGetUniformivNative = Void Function(Uint32 program, Int32 location, Pointer<Int32> params);
+typedef GlGetUniformiv = void Function(int program, int location, Pointer<Int32> params);
 
-typedef GlGetVertexAttribdvNative = Void Function(Uint32 index, Uint32 pname, Pointer params);
-typedef GlGetVertexAttribdv = void Function(int index, int pname, Pointer params);
+typedef GlGetVertexAttribdvNative = Void Function(Uint32 index, Uint32 pname, Pointer<Double> params);
+typedef GlGetVertexAttribdv = void Function(int index, int pname, Pointer<Double> params);
 
-typedef GlGetVertexAttribfvNative = Void Function(Uint32 index, Uint32 pname, Pointer params);
-typedef GlGetVertexAttribfv = void Function(int index, int pname, Pointer params);
+typedef GlGetVertexAttribfvNative = Void Function(Uint32 index, Uint32 pname, Pointer<Float> params);
+typedef GlGetVertexAttribfv = void Function(int index, int pname, Pointer<Float> params);
 
-typedef GlGetVertexAttribivNative = Void Function(Uint32 index, Uint32 pname, Pointer params);
-typedef GlGetVertexAttribiv = void Function(int index, int pname, Pointer params);
+typedef GlGetVertexAttribivNative = Void Function(Uint32 index, Uint32 pname, Pointer<Int32> params);
+typedef GlGetVertexAttribiv = void Function(int index, int pname, Pointer<Int32> params);
 
 typedef GlGetVertexAttribPointervNative = Void Function(Uint32 index, Uint32 pname, Pointer pointer);
 typedef GlGetVertexAttribPointerv = void Function(int index, int pname, Pointer pointer);
@@ -3000,8 +3051,8 @@ typedef GlIsShader = int Function(int shader);
 typedef GlLinkProgramNative = Void Function(Uint32 program);
 typedef GlLinkProgram = void Function(int program);
 
-typedef GlShaderSourceNative = Void Function(Uint32 shader, Int32 count, Pointer string, Pointer length);
-typedef GlShaderSource = void Function(int shader, int count, /*List<String>*/ Pointer string, Pointer length);
+typedef GlShaderSourceNative = Void Function(Uint32 shader, Int32 count, Pointer string, Pointer<Int32> length);
+typedef GlShaderSource = void Function(int shader, int count, /*List<String>*/ Pointer string, Pointer<Int32> length);
 
 typedef GlUseProgramNative = Void Function(Uint32 program);
 typedef GlUseProgram = void Function(int program);
@@ -3030,38 +3081,38 @@ typedef GlUniform3i = void Function(int location, int v0, int v1, int v2);
 typedef GlUniform4iNative = Void Function(Int32 location, Int32 v0, Int32 v1, Int32 v2, Int32 v3);
 typedef GlUniform4i = void Function(int location, int v0, int v1, int v2, int v3);
 
-typedef GlUniform1fvNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform1fv = void Function(int location, int count, Pointer value);
+typedef GlUniform1fvNative = Void Function(Int32 location, Int32 count, Pointer<Float> value);
+typedef GlUniform1fv = void Function(int location, int count, Pointer<Float> value);
 
-typedef GlUniform2fvNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform2fv = void Function(int location, int count, Pointer value);
+typedef GlUniform2fvNative = Void Function(Int32 location, Int32 count, Pointer<Float> value);
+typedef GlUniform2fv = void Function(int location, int count, Pointer<Float> value);
 
-typedef GlUniform3fvNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform3fv = void Function(int location, int count, Pointer value);
+typedef GlUniform3fvNative = Void Function(Int32 location, Int32 count, Pointer<Float> value);
+typedef GlUniform3fv = void Function(int location, int count, Pointer<Float> value);
 
-typedef GlUniform4fvNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform4fv = void Function(int location, int count, Pointer value);
+typedef GlUniform4fvNative = Void Function(Int32 location, Int32 count, Pointer<Float> value);
+typedef GlUniform4fv = void Function(int location, int count, Pointer<Float> value);
 
-typedef GlUniform1ivNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform1iv = void Function(int location, int count, Pointer value);
+typedef GlUniform1ivNative = Void Function(Int32 location, Int32 count, Pointer<Int32> value);
+typedef GlUniform1iv = void Function(int location, int count, Pointer<Int32> value);
 
-typedef GlUniform2ivNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform2iv = void Function(int location, int count, Pointer value);
+typedef GlUniform2ivNative = Void Function(Int32 location, Int32 count, Pointer<Int32> value);
+typedef GlUniform2iv = void Function(int location, int count, Pointer<Int32> value);
 
-typedef GlUniform3ivNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform3iv = void Function(int location, int count, Pointer value);
+typedef GlUniform3ivNative = Void Function(Int32 location, Int32 count, Pointer<Int32> value);
+typedef GlUniform3iv = void Function(int location, int count, Pointer<Int32> value);
 
-typedef GlUniform4ivNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform4iv = void Function(int location, int count, Pointer value);
+typedef GlUniform4ivNative = Void Function(Int32 location, Int32 count, Pointer<Int32> value);
+typedef GlUniform4iv = void Function(int location, int count, Pointer<Int32> value);
 
-typedef GlUniformMatrix2fvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlUniformMatrix2fv = void Function(int location, int count, int transpose, Pointer value);
+typedef GlUniformMatrix2fvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlUniformMatrix2fv = void Function(int location, int count, int transpose, Pointer<Float> value);
 
-typedef GlUniformMatrix3fvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlUniformMatrix3fv = void Function(int location, int count, int transpose, Pointer value);
+typedef GlUniformMatrix3fvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlUniformMatrix3fv = void Function(int location, int count, int transpose, Pointer<Float> value);
 
-typedef GlUniformMatrix4fvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlUniformMatrix4fv = void Function(int location, int count, int transpose, Pointer value);
+typedef GlUniformMatrix4fvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlUniformMatrix4fv = void Function(int location, int count, int transpose, Pointer<Float> value);
 
 typedef GlValidateProgramNative = Void Function(Uint32 program);
 typedef GlValidateProgram = void Function(int program);
@@ -3069,65 +3120,65 @@ typedef GlValidateProgram = void Function(int program);
 typedef GlVertexAttrib1dNative = Void Function(Uint32 index, Double x);
 typedef GlVertexAttrib1d = void Function(int index, double x);
 
-typedef GlVertexAttrib1dvNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttrib1dv = void Function(int index, Pointer v);
+typedef GlVertexAttrib1dvNative = Void Function(Uint32 index, Pointer<Double> v);
+typedef GlVertexAttrib1dv = void Function(int index, Pointer<Double> v);
 
 typedef GlVertexAttrib1fNative = Void Function(Uint32 index, Float x);
 typedef GlVertexAttrib1f = void Function(int index, double x);
 
-typedef GlVertexAttrib1fvNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttrib1fv = void Function(int index, Pointer v);
+typedef GlVertexAttrib1fvNative = Void Function(Uint32 index, Pointer<Float> v);
+typedef GlVertexAttrib1fv = void Function(int index, Pointer<Float> v);
 
 typedef GlVertexAttrib1sNative = Void Function(Uint32 index, Int16 x);
 typedef GlVertexAttrib1s = void Function(int index, int x);
 
-typedef GlVertexAttrib1svNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttrib1sv = void Function(int index, Pointer v);
+typedef GlVertexAttrib1svNative = Void Function(Uint32 index, Pointer<Int16> v);
+typedef GlVertexAttrib1sv = void Function(int index, Pointer<Int16> v);
 
 typedef GlVertexAttrib2dNative = Void Function(Uint32 index, Double x, Double y);
 typedef GlVertexAttrib2d = void Function(int index, double x, double y);
 
-typedef GlVertexAttrib2dvNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttrib2dv = void Function(int index, Pointer v);
+typedef GlVertexAttrib2dvNative = Void Function(Uint32 index, Pointer<Double> v);
+typedef GlVertexAttrib2dv = void Function(int index, Pointer<Double> v);
 
 typedef GlVertexAttrib2fNative = Void Function(Uint32 index, Float x, Float y);
 typedef GlVertexAttrib2f = void Function(int index, double x, double y);
 
-typedef GlVertexAttrib2fvNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttrib2fv = void Function(int index, Pointer v);
+typedef GlVertexAttrib2fvNative = Void Function(Uint32 index, Pointer<Float> v);
+typedef GlVertexAttrib2fv = void Function(int index, Pointer<Float> v);
 
 typedef GlVertexAttrib2sNative = Void Function(Uint32 index, Int16 x, Int16 y);
 typedef GlVertexAttrib2s = void Function(int index, int x, int y);
 
-typedef GlVertexAttrib2svNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttrib2sv = void Function(int index, Pointer v);
+typedef GlVertexAttrib2svNative = Void Function(Uint32 index, Pointer<Int16> v);
+typedef GlVertexAttrib2sv = void Function(int index, Pointer<Int16> v);
 
 typedef GlVertexAttrib3dNative = Void Function(Uint32 index, Double x, Double y, Double z);
 typedef GlVertexAttrib3d = void Function(int index, double x, double y, double z);
 
-typedef GlVertexAttrib3dvNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttrib3dv = void Function(int index, Pointer v);
+typedef GlVertexAttrib3dvNative = Void Function(Uint32 index, Pointer<Double> v);
+typedef GlVertexAttrib3dv = void Function(int index, Pointer<Double> v);
 
 typedef GlVertexAttrib3fNative = Void Function(Uint32 index, Float x, Float y, Float z);
 typedef GlVertexAttrib3f = void Function(int index, double x, double y, double z);
 
-typedef GlVertexAttrib3fvNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttrib3fv = void Function(int index, Pointer v);
+typedef GlVertexAttrib3fvNative = Void Function(Uint32 index, Pointer<Float> v);
+typedef GlVertexAttrib3fv = void Function(int index, Pointer<Float> v);
 
 typedef GlVertexAttrib3sNative = Void Function(Uint32 index, Int16 x, Int16 y, Int16 z);
 typedef GlVertexAttrib3s = void Function(int index, int x, int y, int z);
 
-typedef GlVertexAttrib3svNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttrib3sv = void Function(int index, Pointer v);
+typedef GlVertexAttrib3svNative = Void Function(Uint32 index, Pointer<Int16> v);
+typedef GlVertexAttrib3sv = void Function(int index, Pointer<Int16> v);
 
-typedef GlVertexAttrib4NbvNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttrib4Nbv = void Function(int index, Pointer v);
+typedef GlVertexAttrib4NbvNative = Void Function(Uint32 index, Pointer<Int8> v);
+typedef GlVertexAttrib4Nbv = void Function(int index, Pointer<Int8> v);
 
-typedef GlVertexAttrib4NivNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttrib4Niv = void Function(int index, Pointer v);
+typedef GlVertexAttrib4NivNative = Void Function(Uint32 index, Pointer<Int32> v);
+typedef GlVertexAttrib4Niv = void Function(int index, Pointer<Int32> v);
 
-typedef GlVertexAttrib4NsvNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttrib4Nsv = void Function(int index, Pointer v);
+typedef GlVertexAttrib4NsvNative = Void Function(Uint32 index, Pointer<Int16> v);
+typedef GlVertexAttrib4Nsv = void Function(int index, Pointer<Int16> v);
 
 typedef GlVertexAttrib4NubNative = Void Function(Uint32 index, Uint8 x, Uint8 y, Uint8 z, Uint8 w);
 typedef GlVertexAttrib4Nub = void Function(int index, int x, int y, int z, int w);
@@ -3135,66 +3186,66 @@ typedef GlVertexAttrib4Nub = void Function(int index, int x, int y, int z, int w
 typedef GlVertexAttrib4NubvNative = Void Function(Uint32 index, Pointer v);
 typedef GlVertexAttrib4Nubv = void Function(int index, /*String*/ Pointer v);
 
-typedef GlVertexAttrib4NuivNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttrib4Nuiv = void Function(int index, Pointer v);
+typedef GlVertexAttrib4NuivNative = Void Function(Uint32 index, Pointer<Uint32> v);
+typedef GlVertexAttrib4Nuiv = void Function(int index, Pointer<Uint32> v);
 
-typedef GlVertexAttrib4NusvNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttrib4Nusv = void Function(int index, Pointer v);
+typedef GlVertexAttrib4NusvNative = Void Function(Uint32 index, Pointer<Uint16> v);
+typedef GlVertexAttrib4Nusv = void Function(int index, Pointer<Uint16> v);
 
-typedef GlVertexAttrib4bvNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttrib4bv = void Function(int index, Pointer v);
+typedef GlVertexAttrib4bvNative = Void Function(Uint32 index, Pointer<Int8> v);
+typedef GlVertexAttrib4bv = void Function(int index, Pointer<Int8> v);
 
 typedef GlVertexAttrib4dNative = Void Function(Uint32 index, Double x, Double y, Double z, Double w);
 typedef GlVertexAttrib4d = void Function(int index, double x, double y, double z, double w);
 
-typedef GlVertexAttrib4dvNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttrib4dv = void Function(int index, Pointer v);
+typedef GlVertexAttrib4dvNative = Void Function(Uint32 index, Pointer<Double> v);
+typedef GlVertexAttrib4dv = void Function(int index, Pointer<Double> v);
 
 typedef GlVertexAttrib4fNative = Void Function(Uint32 index, Float x, Float y, Float z, Float w);
 typedef GlVertexAttrib4f = void Function(int index, double x, double y, double z, double w);
 
-typedef GlVertexAttrib4fvNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttrib4fv = void Function(int index, Pointer v);
+typedef GlVertexAttrib4fvNative = Void Function(Uint32 index, Pointer<Float> v);
+typedef GlVertexAttrib4fv = void Function(int index, Pointer<Float> v);
 
-typedef GlVertexAttrib4ivNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttrib4iv = void Function(int index, Pointer v);
+typedef GlVertexAttrib4ivNative = Void Function(Uint32 index, Pointer<Int32> v);
+typedef GlVertexAttrib4iv = void Function(int index, Pointer<Int32> v);
 
 typedef GlVertexAttrib4sNative = Void Function(Uint32 index, Int16 x, Int16 y, Int16 z, Int16 w);
 typedef GlVertexAttrib4s = void Function(int index, int x, int y, int z, int w);
 
-typedef GlVertexAttrib4svNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttrib4sv = void Function(int index, Pointer v);
+typedef GlVertexAttrib4svNative = Void Function(Uint32 index, Pointer<Int16> v);
+typedef GlVertexAttrib4sv = void Function(int index, Pointer<Int16> v);
 
 typedef GlVertexAttrib4ubvNative = Void Function(Uint32 index, Pointer v);
 typedef GlVertexAttrib4ubv = void Function(int index, /*String*/ Pointer v);
 
-typedef GlVertexAttrib4uivNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttrib4uiv = void Function(int index, Pointer v);
+typedef GlVertexAttrib4uivNative = Void Function(Uint32 index, Pointer<Uint32> v);
+typedef GlVertexAttrib4uiv = void Function(int index, Pointer<Uint32> v);
 
-typedef GlVertexAttrib4usvNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttrib4usv = void Function(int index, Pointer v);
+typedef GlVertexAttrib4usvNative = Void Function(Uint32 index, Pointer<Uint16> v);
+typedef GlVertexAttrib4usv = void Function(int index, Pointer<Uint16> v);
 
 typedef GlVertexAttribPointerNative = Void Function(Uint32 index, Int32 size, Uint32 type, Uint8 normalized, Int32 stride, Uint32 pointer);
 typedef GlVertexAttribPointer = void Function(int index, int size, int type, int normalized, int stride, int pointer);
 
 //GL_VERSION_2_1
-typedef GlUniformMatrix2x3fvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlUniformMatrix2x3fv = void Function(int location, int count, int transpose, Pointer value);
+typedef GlUniformMatrix2x3fvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlUniformMatrix2x3fv = void Function(int location, int count, int transpose, Pointer<Float> value);
 
-typedef GlUniformMatrix3x2fvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlUniformMatrix3x2fv = void Function(int location, int count, int transpose, Pointer value);
+typedef GlUniformMatrix3x2fvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlUniformMatrix3x2fv = void Function(int location, int count, int transpose, Pointer<Float> value);
 
-typedef GlUniformMatrix2x4fvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlUniformMatrix2x4fv = void Function(int location, int count, int transpose, Pointer value);
+typedef GlUniformMatrix2x4fvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlUniformMatrix2x4fv = void Function(int location, int count, int transpose, Pointer<Float> value);
 
-typedef GlUniformMatrix4x2fvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlUniformMatrix4x2fv = void Function(int location, int count, int transpose, Pointer value);
+typedef GlUniformMatrix4x2fvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlUniformMatrix4x2fv = void Function(int location, int count, int transpose, Pointer<Float> value);
 
-typedef GlUniformMatrix3x4fvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlUniformMatrix3x4fv = void Function(int location, int count, int transpose, Pointer value);
+typedef GlUniformMatrix3x4fvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlUniformMatrix3x4fv = void Function(int location, int count, int transpose, Pointer<Float> value);
 
-typedef GlUniformMatrix4x3fvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlUniformMatrix4x3fv = void Function(int location, int count, int transpose, Pointer value);
+typedef GlUniformMatrix4x3fvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlUniformMatrix4x3fv = void Function(int location, int count, int transpose, Pointer<Float> value);
 
 //GL_VERSION_3_0
 typedef GlColorMaskiNative = Void Function(Uint32 index, Uint8 r, Uint8 g, Uint8 b, Uint8 a);
@@ -3203,8 +3254,8 @@ typedef GlColorMaski = void Function(int index, int r, int g, int b, int a);
 typedef GlGetBooleani_vNative = Void Function(Uint32 target, Uint32 index, Pointer data);
 typedef GlGetBooleani_v = void Function(int target, int index, Pointer data);
 
-typedef GlGetIntegeri_vNative = Void Function(Uint32 target, Uint32 index, Pointer data);
-typedef GlGetIntegeri_v = void Function(int target, int index, Pointer data);
+typedef GlGetIntegeri_vNative = Void Function(Uint32 target, Uint32 index, Pointer<Int32> data);
+typedef GlGetIntegeri_v = void Function(int target, int index, Pointer<Int32> data);
 
 typedef GlEnableiNative = Void Function(Uint32 target, Uint32 index);
 typedef GlEnablei = void Function(int target, int index);
@@ -3230,8 +3281,8 @@ typedef GlBindBufferBase = void Function(int target, int index, int buffer);
 typedef GlTransformFeedbackVaryingsNative = Void Function(Uint32 program, Int32 count, Pointer varyings, Uint32 bufferMode);
 typedef GlTransformFeedbackVaryings = void Function(int program, int count, /*List<String>*/ Pointer varyings, int bufferMode);
 
-typedef GlGetTransformFeedbackVaryingNative = Void Function(Uint32 program, Uint32 index, Int32 bufSize, Pointer length, Pointer size, Pointer type, Pointer name);
-typedef GlGetTransformFeedbackVarying = void Function(int program, int index, int bufSize, Pointer length, Pointer size, Pointer type, Pointer name);
+typedef GlGetTransformFeedbackVaryingNative = Void Function(Uint32 program, Uint32 index, Int32 bufSize, Pointer<Int32> length, Pointer<Int32> size, Pointer<Uint32> type, Pointer name);
+typedef GlGetTransformFeedbackVarying = void Function(int program, int index, int bufSize, Pointer<Int32> length, Pointer<Int32> size, Pointer<Uint32> type, Pointer name);
 
 typedef GlClampColorNative = Void Function(Uint32 target, Uint32 clamp);
 typedef GlClampColor = void Function(int target, int clamp);
@@ -3245,11 +3296,11 @@ typedef GlEndConditionalRender = void Function();
 typedef GlVertexAttribIPointerNative = Void Function(Uint32 index, Int32 size, Uint32 type, Int32 stride, Uint32 pointer);
 typedef GlVertexAttribIPointer = void Function(int index, int size, int type, int stride, int pointer);
 
-typedef GlGetVertexAttribIivNative = Void Function(Uint32 index, Uint32 pname, Pointer params);
-typedef GlGetVertexAttribIiv = void Function(int index, int pname, Pointer params);
+typedef GlGetVertexAttribIivNative = Void Function(Uint32 index, Uint32 pname, Pointer<Int32> params);
+typedef GlGetVertexAttribIiv = void Function(int index, int pname, Pointer<Int32> params);
 
-typedef GlGetVertexAttribIuivNative = Void Function(Uint32 index, Uint32 pname, Pointer params);
-typedef GlGetVertexAttribIuiv = void Function(int index, int pname, Pointer params);
+typedef GlGetVertexAttribIuivNative = Void Function(Uint32 index, Uint32 pname, Pointer<Uint32> params);
+typedef GlGetVertexAttribIuiv = void Function(int index, int pname, Pointer<Uint32> params);
 
 typedef GlVertexAttribI1iNative = Void Function(Uint32 index, Int32 x);
 typedef GlVertexAttribI1i = void Function(int index, int x);
@@ -3275,44 +3326,44 @@ typedef GlVertexAttribI3ui = void Function(int index, int x, int y, int z);
 typedef GlVertexAttribI4uiNative = Void Function(Uint32 index, Uint32 x, Uint32 y, Uint32 z, Uint32 w);
 typedef GlVertexAttribI4ui = void Function(int index, int x, int y, int z, int w);
 
-typedef GlVertexAttribI1ivNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttribI1iv = void Function(int index, Pointer v);
+typedef GlVertexAttribI1ivNative = Void Function(Uint32 index, Pointer<Int32> v);
+typedef GlVertexAttribI1iv = void Function(int index, Pointer<Int32> v);
 
-typedef GlVertexAttribI2ivNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttribI2iv = void Function(int index, Pointer v);
+typedef GlVertexAttribI2ivNative = Void Function(Uint32 index, Pointer<Int32> v);
+typedef GlVertexAttribI2iv = void Function(int index, Pointer<Int32> v);
 
-typedef GlVertexAttribI3ivNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttribI3iv = void Function(int index, Pointer v);
+typedef GlVertexAttribI3ivNative = Void Function(Uint32 index, Pointer<Int32> v);
+typedef GlVertexAttribI3iv = void Function(int index, Pointer<Int32> v);
 
-typedef GlVertexAttribI4ivNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttribI4iv = void Function(int index, Pointer v);
+typedef GlVertexAttribI4ivNative = Void Function(Uint32 index, Pointer<Int32> v);
+typedef GlVertexAttribI4iv = void Function(int index, Pointer<Int32> v);
 
-typedef GlVertexAttribI1uivNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttribI1uiv = void Function(int index, Pointer v);
+typedef GlVertexAttribI1uivNative = Void Function(Uint32 index, Pointer<Uint32> v);
+typedef GlVertexAttribI1uiv = void Function(int index, Pointer<Uint32> v);
 
-typedef GlVertexAttribI2uivNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttribI2uiv = void Function(int index, Pointer v);
+typedef GlVertexAttribI2uivNative = Void Function(Uint32 index, Pointer<Uint32> v);
+typedef GlVertexAttribI2uiv = void Function(int index, Pointer<Uint32> v);
 
-typedef GlVertexAttribI3uivNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttribI3uiv = void Function(int index, Pointer v);
+typedef GlVertexAttribI3uivNative = Void Function(Uint32 index, Pointer<Uint32> v);
+typedef GlVertexAttribI3uiv = void Function(int index, Pointer<Uint32> v);
 
-typedef GlVertexAttribI4uivNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttribI4uiv = void Function(int index, Pointer v);
+typedef GlVertexAttribI4uivNative = Void Function(Uint32 index, Pointer<Uint32> v);
+typedef GlVertexAttribI4uiv = void Function(int index, Pointer<Uint32> v);
 
-typedef GlVertexAttribI4bvNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttribI4bv = void Function(int index, Pointer v);
+typedef GlVertexAttribI4bvNative = Void Function(Uint32 index, Pointer<Int8> v);
+typedef GlVertexAttribI4bv = void Function(int index, Pointer<Int8> v);
 
-typedef GlVertexAttribI4svNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttribI4sv = void Function(int index, Pointer v);
+typedef GlVertexAttribI4svNative = Void Function(Uint32 index, Pointer<Int16> v);
+typedef GlVertexAttribI4sv = void Function(int index, Pointer<Int16> v);
 
 typedef GlVertexAttribI4ubvNative = Void Function(Uint32 index, Pointer v);
 typedef GlVertexAttribI4ubv = void Function(int index, /*String*/ Pointer v);
 
-typedef GlVertexAttribI4usvNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttribI4usv = void Function(int index, Pointer v);
+typedef GlVertexAttribI4usvNative = Void Function(Uint32 index, Pointer<Uint16> v);
+typedef GlVertexAttribI4usv = void Function(int index, Pointer<Uint16> v);
 
-typedef GlGetUniformuivNative = Void Function(Uint32 program, Int32 location, Pointer params);
-typedef GlGetUniformuiv = void Function(int program, int location, Pointer params);
+typedef GlGetUniformuivNative = Void Function(Uint32 program, Int32 location, Pointer<Uint32> params);
+typedef GlGetUniformuiv = void Function(int program, int location, Pointer<Uint32> params);
 
 typedef GlBindFragDataLocationNative = Void Function(Uint32 program, Uint32 color, Pointer name);
 typedef GlBindFragDataLocation = void Function(int program, int color, /*String*/ Pointer name);
@@ -3332,38 +3383,38 @@ typedef GlUniform3ui = void Function(int location, int v0, int v1, int v2);
 typedef GlUniform4uiNative = Void Function(Int32 location, Uint32 v0, Uint32 v1, Uint32 v2, Uint32 v3);
 typedef GlUniform4ui = void Function(int location, int v0, int v1, int v2, int v3);
 
-typedef GlUniform1uivNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform1uiv = void Function(int location, int count, Pointer value);
+typedef GlUniform1uivNative = Void Function(Int32 location, Int32 count, Pointer<Uint32> value);
+typedef GlUniform1uiv = void Function(int location, int count, Pointer<Uint32> value);
 
-typedef GlUniform2uivNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform2uiv = void Function(int location, int count, Pointer value);
+typedef GlUniform2uivNative = Void Function(Int32 location, Int32 count, Pointer<Uint32> value);
+typedef GlUniform2uiv = void Function(int location, int count, Pointer<Uint32> value);
 
-typedef GlUniform3uivNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform3uiv = void Function(int location, int count, Pointer value);
+typedef GlUniform3uivNative = Void Function(Int32 location, Int32 count, Pointer<Uint32> value);
+typedef GlUniform3uiv = void Function(int location, int count, Pointer<Uint32> value);
 
-typedef GlUniform4uivNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform4uiv = void Function(int location, int count, Pointer value);
+typedef GlUniform4uivNative = Void Function(Int32 location, Int32 count, Pointer<Uint32> value);
+typedef GlUniform4uiv = void Function(int location, int count, Pointer<Uint32> value);
 
-typedef GlTexParameterIivNative = Void Function(Uint32 target, Uint32 pname, Pointer params);
-typedef GlTexParameterIiv = void Function(int target, int pname, Pointer params);
+typedef GlTexParameterIivNative = Void Function(Uint32 target, Uint32 pname, Pointer<Int32> params);
+typedef GlTexParameterIiv = void Function(int target, int pname, Pointer<Int32> params);
 
-typedef GlTexParameterIuivNative = Void Function(Uint32 target, Uint32 pname, Pointer params);
-typedef GlTexParameterIuiv = void Function(int target, int pname, Pointer params);
+typedef GlTexParameterIuivNative = Void Function(Uint32 target, Uint32 pname, Pointer<Uint32> params);
+typedef GlTexParameterIuiv = void Function(int target, int pname, Pointer<Uint32> params);
 
-typedef GlGetTexParameterIivNative = Void Function(Uint32 target, Uint32 pname, Pointer params);
-typedef GlGetTexParameterIiv = void Function(int target, int pname, Pointer params);
+typedef GlGetTexParameterIivNative = Void Function(Uint32 target, Uint32 pname, Pointer<Int32> params);
+typedef GlGetTexParameterIiv = void Function(int target, int pname, Pointer<Int32> params);
 
-typedef GlGetTexParameterIuivNative = Void Function(Uint32 target, Uint32 pname, Pointer params);
-typedef GlGetTexParameterIuiv = void Function(int target, int pname, Pointer params);
+typedef GlGetTexParameterIuivNative = Void Function(Uint32 target, Uint32 pname, Pointer<Uint32> params);
+typedef GlGetTexParameterIuiv = void Function(int target, int pname, Pointer<Uint32> params);
 
-typedef GlClearBufferivNative = Void Function(Uint32 buffer, Int32 drawbuffer, Pointer value);
-typedef GlClearBufferiv = void Function(int buffer, int drawbuffer, Pointer value);
+typedef GlClearBufferivNative = Void Function(Uint32 buffer, Int32 drawbuffer, Pointer<Int32> value);
+typedef GlClearBufferiv = void Function(int buffer, int drawbuffer, Pointer<Int32> value);
 
-typedef GlClearBufferuivNative = Void Function(Uint32 buffer, Int32 drawbuffer, Pointer value);
-typedef GlClearBufferuiv = void Function(int buffer, int drawbuffer, Pointer value);
+typedef GlClearBufferuivNative = Void Function(Uint32 buffer, Int32 drawbuffer, Pointer<Uint32> value);
+typedef GlClearBufferuiv = void Function(int buffer, int drawbuffer, Pointer<Uint32> value);
 
-typedef GlClearBufferfvNative = Void Function(Uint32 buffer, Int32 drawbuffer, Pointer value);
-typedef GlClearBufferfv = void Function(int buffer, int drawbuffer, Pointer value);
+typedef GlClearBufferfvNative = Void Function(Uint32 buffer, Int32 drawbuffer, Pointer<Float> value);
+typedef GlClearBufferfv = void Function(int buffer, int drawbuffer, Pointer<Float> value);
 
 typedef GlClearBufferfiNative = Void Function(Uint32 buffer, Int32 drawbuffer, Float depth, Int32 stencil);
 typedef GlClearBufferfi = void Function(int buffer, int drawbuffer, double depth, int stencil);
@@ -3377,17 +3428,17 @@ typedef GlIsRenderbuffer = int Function(int renderbuffer);
 typedef GlBindRenderbufferNative = Void Function(Uint32 target, Uint32 renderbuffer);
 typedef GlBindRenderbuffer = void Function(int target, int renderbuffer);
 
-typedef GlDeleteRenderbuffersNative = Void Function(Int32 n, Pointer renderbuffers);
-typedef GlDeleteRenderbuffers = void Function(int n, Pointer renderbuffers);
+typedef GlDeleteRenderbuffersNative = Void Function(Int32 n, Pointer<Uint32> renderbuffers);
+typedef GlDeleteRenderbuffers = void Function(int n, Pointer<Uint32> renderbuffers);
 
-typedef GlGenRenderbuffersNative = Void Function(Int32 n, Pointer renderbuffers);
-typedef GlGenRenderbuffers = void Function(int n, Pointer renderbuffers);
+typedef GlGenRenderbuffersNative = Void Function(Int32 n, Pointer<Uint32> renderbuffers);
+typedef GlGenRenderbuffers = void Function(int n, Pointer<Uint32> renderbuffers);
 
 typedef GlRenderbufferStorageNative = Void Function(Uint32 target, Uint32 internalformat, Int32 width, Int32 height);
 typedef GlRenderbufferStorage = void Function(int target, int internalformat, int width, int height);
 
-typedef GlGetRenderbufferParameterivNative = Void Function(Uint32 target, Uint32 pname, Pointer params);
-typedef GlGetRenderbufferParameteriv = void Function(int target, int pname, Pointer params);
+typedef GlGetRenderbufferParameterivNative = Void Function(Uint32 target, Uint32 pname, Pointer<Int32> params);
+typedef GlGetRenderbufferParameteriv = void Function(int target, int pname, Pointer<Int32> params);
 
 typedef GlIsFramebufferNative = Uint8 Function(Uint32 framebuffer);
 typedef GlIsFramebuffer = int Function(int framebuffer);
@@ -3395,11 +3446,11 @@ typedef GlIsFramebuffer = int Function(int framebuffer);
 typedef GlBindFramebufferNative = Void Function(Uint32 target, Uint32 framebuffer);
 typedef GlBindFramebuffer = void Function(int target, int framebuffer);
 
-typedef GlDeleteFramebuffersNative = Void Function(Int32 n, Pointer framebuffers);
-typedef GlDeleteFramebuffers = void Function(int n, Pointer framebuffers);
+typedef GlDeleteFramebuffersNative = Void Function(Int32 n, Pointer<Uint32> framebuffers);
+typedef GlDeleteFramebuffers = void Function(int n, Pointer<Uint32> framebuffers);
 
-typedef GlGenFramebuffersNative = Void Function(Int32 n, Pointer framebuffers);
-typedef GlGenFramebuffers = void Function(int n, Pointer framebuffers);
+typedef GlGenFramebuffersNative = Void Function(Int32 n, Pointer<Uint32> framebuffers);
+typedef GlGenFramebuffers = void Function(int n, Pointer<Uint32> framebuffers);
 
 typedef GlCheckFramebufferStatusNative = Uint32 Function(Uint32 target);
 typedef GlCheckFramebufferStatus = int Function(int target);
@@ -3416,8 +3467,8 @@ typedef GlFramebufferTexture3D = void Function(int target, int attachment, int t
 typedef GlFramebufferRenderbufferNative = Void Function(Uint32 target, Uint32 attachment, Uint32 renderbuffertarget, Uint32 renderbuffer);
 typedef GlFramebufferRenderbuffer = void Function(int target, int attachment, int renderbuffertarget, int renderbuffer);
 
-typedef GlGetFramebufferAttachmentParameterivNative = Void Function(Uint32 target, Uint32 attachment, Uint32 pname, Pointer params);
-typedef GlGetFramebufferAttachmentParameteriv = void Function(int target, int attachment, int pname, Pointer params);
+typedef GlGetFramebufferAttachmentParameterivNative = Void Function(Uint32 target, Uint32 attachment, Uint32 pname, Pointer<Int32> params);
+typedef GlGetFramebufferAttachmentParameteriv = void Function(int target, int attachment, int pname, Pointer<Int32> params);
 
 typedef GlGenerateMipmapNative = Void Function(Uint32 target);
 typedef GlGenerateMipmap = void Function(int target);
@@ -3440,11 +3491,11 @@ typedef GlFlushMappedBufferRange = void Function(int target, int offset, int len
 typedef GlBindVertexArrayNative = Void Function(Uint32 array);
 typedef GlBindVertexArray = void Function(int array);
 
-typedef GlDeleteVertexArraysNative = Void Function(Int32 n, Pointer arrays);
-typedef GlDeleteVertexArrays = void Function(int n, Pointer arrays);
+typedef GlDeleteVertexArraysNative = Void Function(Int32 n, Pointer<Uint32> arrays);
+typedef GlDeleteVertexArrays = void Function(int n, Pointer<Uint32> arrays);
 
-typedef GlGenVertexArraysNative = Void Function(Int32 n, Pointer arrays);
-typedef GlGenVertexArrays = void Function(int n, Pointer arrays);
+typedef GlGenVertexArraysNative = Void Function(Int32 n, Pointer<Uint32> arrays);
+typedef GlGenVertexArrays = void Function(int n, Pointer<Uint32> arrays);
 
 typedef GlIsVertexArrayNative = Uint8 Function(Uint32 array);
 typedef GlIsVertexArray = int Function(int array);
@@ -3465,23 +3516,23 @@ typedef GlPrimitiveRestartIndex = void Function(int index);
 typedef GlCopyBufferSubDataNative = Void Function(Uint32 readTarget, Uint32 writeTarget, Int64 readOffset, Int64 writeOffset, Int64 size);
 typedef GlCopyBufferSubData = void Function(int readTarget, int writeTarget, int readOffset, int writeOffset, int size);
 
-typedef GlGetUniformIndicesNative = Void Function(Uint32 program, Int32 uniformCount, Pointer uniformNames, Pointer uniformIndices);
-typedef GlGetUniformIndices = void Function(int program, int uniformCount, /*List<String>*/ Pointer uniformNames, Pointer uniformIndices);
+typedef GlGetUniformIndicesNative = Void Function(Uint32 program, Int32 uniformCount, Pointer uniformNames, Pointer<Uint32> uniformIndices);
+typedef GlGetUniformIndices = void Function(int program, int uniformCount, /*List<String>*/ Pointer uniformNames, Pointer<Uint32> uniformIndices);
 
-typedef GlGetActiveUniformsivNative = Void Function(Uint32 program, Int32 uniformCount, Pointer uniformIndices, Uint32 pname, Pointer params);
-typedef GlGetActiveUniformsiv = void Function(int program, int uniformCount, Pointer uniformIndices, int pname, Pointer params);
+typedef GlGetActiveUniformsivNative = Void Function(Uint32 program, Int32 uniformCount, Pointer<Uint32> uniformIndices, Uint32 pname, Pointer<Int32> params);
+typedef GlGetActiveUniformsiv = void Function(int program, int uniformCount, Pointer<Uint32> uniformIndices, int pname, Pointer<Int32> params);
 
-typedef GlGetActiveUniformNameNative = Void Function(Uint32 program, Uint32 uniformIndex, Int32 bufSize, Pointer length, Pointer uniformName);
-typedef GlGetActiveUniformName = void Function(int program, int uniformIndex, int bufSize, Pointer length, Pointer uniformName);
+typedef GlGetActiveUniformNameNative = Void Function(Uint32 program, Uint32 uniformIndex, Int32 bufSize, Pointer<Int32> length, Pointer uniformName);
+typedef GlGetActiveUniformName = void Function(int program, int uniformIndex, int bufSize, Pointer<Int32> length, Pointer uniformName);
 
 typedef GlGetUniformBlockIndexNative = Uint32 Function(Uint32 program, Pointer uniformBlockName);
 typedef GlGetUniformBlockIndex = int Function(int program, /*String*/ Pointer uniformBlockName);
 
-typedef GlGetActiveUniformBlockivNative = Void Function(Uint32 program, Uint32 uniformBlockIndex, Uint32 pname, Pointer params);
-typedef GlGetActiveUniformBlockiv = void Function(int program, int uniformBlockIndex, int pname, Pointer params);
+typedef GlGetActiveUniformBlockivNative = Void Function(Uint32 program, Uint32 uniformBlockIndex, Uint32 pname, Pointer<Int32> params);
+typedef GlGetActiveUniformBlockiv = void Function(int program, int uniformBlockIndex, int pname, Pointer<Int32> params);
 
-typedef GlGetActiveUniformBlockNameNative = Void Function(Uint32 program, Uint32 uniformBlockIndex, Int32 bufSize, Pointer length, Pointer uniformBlockName);
-typedef GlGetActiveUniformBlockName = void Function(int program, int uniformBlockIndex, int bufSize, Pointer length, Pointer uniformBlockName);
+typedef GlGetActiveUniformBlockNameNative = Void Function(Uint32 program, Uint32 uniformBlockIndex, Int32 bufSize, Pointer<Int32> length, Pointer uniformBlockName);
+typedef GlGetActiveUniformBlockName = void Function(int program, int uniformBlockIndex, int bufSize, Pointer<Int32> length, Pointer uniformBlockName);
 
 typedef GlUniformBlockBindingNative = Void Function(Uint32 program, Uint32 uniformBlockIndex, Uint32 uniformBlockBinding);
 typedef GlUniformBlockBinding = void Function(int program, int uniformBlockIndex, int uniformBlockBinding);
@@ -3496,8 +3547,8 @@ typedef GlDrawRangeElementsBaseVertex = void Function(int mode, int start, int e
 typedef GlDrawElementsInstancedBaseVertexNative = Void Function(Uint32 mode, Int32 count, Uint32 type, Pointer indices, Int32 instancecount, Int32 basevertex);
 typedef GlDrawElementsInstancedBaseVertex = void Function(int mode, int count, int type, Pointer indices, int instancecount, int basevertex);
 
-typedef GlMultiDrawElementsBaseVertexNative = Void Function(Uint32 mode, Pointer count, Uint32 type, Pointer indices, Int32 drawcount, Pointer basevertex);
-typedef GlMultiDrawElementsBaseVertex = void Function(int mode, Pointer count, int type, Pointer indices, int drawcount, Pointer basevertex);
+typedef GlMultiDrawElementsBaseVertexNative = Void Function(Uint32 mode, Pointer<Int32> count, Uint32 type, Pointer indices, Int32 drawcount, Pointer<Int32> basevertex);
+typedef GlMultiDrawElementsBaseVertex = void Function(int mode, Pointer<Int32> count, int type, Pointer indices, int drawcount, Pointer<Int32> basevertex);
 
 typedef GlProvokingVertexNative = Void Function(Uint32 mode);
 typedef GlProvokingVertex = void Function(int mode);
@@ -3517,17 +3568,17 @@ typedef GlClientWaitSync = int Function(Pointer sync, int flags, int timeout);
 typedef GlWaitSyncNative = Void Function(Pointer sync, Uint32 flags, Uint64 timeout);
 typedef GlWaitSync = void Function(Pointer sync, int flags, int timeout);
 
-typedef GlGetInteger64vNative = Void Function(Uint32 pname, Pointer data);
-typedef GlGetInteger64v = void Function(int pname, Pointer data);
+typedef GlGetInteger64vNative = Void Function(Uint32 pname, Pointer<Int64> data);
+typedef GlGetInteger64v = void Function(int pname, Pointer<Int64> data);
 
-typedef GlGetSyncivNative = Void Function(Pointer sync, Uint32 pname, Int32 bufSize, Pointer length, Pointer values);
-typedef GlGetSynciv = void Function(Pointer sync, int pname, int bufSize, Pointer length, Pointer values);
+typedef GlGetSyncivNative = Void Function(Pointer sync, Uint32 pname, Int32 count, Pointer<Int32> length, Pointer<Int32> values);
+typedef GlGetSynciv = void Function(Pointer sync, int pname, int count, Pointer<Int32> length, Pointer<Int32> values);
 
-typedef GlGetInteger64i_vNative = Void Function(Uint32 target, Uint32 index, Pointer data);
-typedef GlGetInteger64i_v = void Function(int target, int index, Pointer data);
+typedef GlGetInteger64i_vNative = Void Function(Uint32 target, Uint32 index, Pointer<Int64> data);
+typedef GlGetInteger64i_v = void Function(int target, int index, Pointer<Int64> data);
 
-typedef GlGetBufferParameteri64vNative = Void Function(Uint32 target, Uint32 pname, Pointer params);
-typedef GlGetBufferParameteri64v = void Function(int target, int pname, Pointer params);
+typedef GlGetBufferParameteri64vNative = Void Function(Uint32 target, Uint32 pname, Pointer<Int64> params);
+typedef GlGetBufferParameteri64v = void Function(int target, int pname, Pointer<Int64> params);
 
 typedef GlFramebufferTextureNative = Void Function(Uint32 target, Uint32 attachment, Uint32 texture, Int32 level);
 typedef GlFramebufferTexture = void Function(int target, int attachment, int texture, int level);
@@ -3538,8 +3589,8 @@ typedef GlTexImage2DMultisample = void Function(int target, int samples, int int
 typedef GlTexImage3DMultisampleNative = Void Function(Uint32 target, Int32 samples, Uint32 internalformat, Int32 width, Int32 height, Int32 depth, Uint8 fixedsamplelocations);
 typedef GlTexImage3DMultisample = void Function(int target, int samples, int internalformat, int width, int height, int depth, int fixedsamplelocations);
 
-typedef GlGetMultisamplefvNative = Void Function(Uint32 pname, Uint32 index, Pointer val);
-typedef GlGetMultisamplefv = void Function(int pname, int index, Pointer val);
+typedef GlGetMultisamplefvNative = Void Function(Uint32 pname, Uint32 index, Pointer<Float> val);
+typedef GlGetMultisamplefv = void Function(int pname, int index, Pointer<Float> val);
 
 typedef GlSampleMaskiNative = Void Function(Uint32 maskNumber, Uint32 mask);
 typedef GlSampleMaski = void Function(int maskNumber, int mask);
@@ -3551,11 +3602,11 @@ typedef GlBindFragDataLocationIndexed = void Function(int program, int colorNumb
 typedef GlGetFragDataIndexNative = Int32 Function(Uint32 program, Pointer name);
 typedef GlGetFragDataIndex = int Function(int program, /*String*/ Pointer name);
 
-typedef GlGenSamplersNative = Void Function(Int32 count, Pointer samplers);
-typedef GlGenSamplers = void Function(int count, Pointer samplers);
+typedef GlGenSamplersNative = Void Function(Int32 count, Pointer<Uint32> samplers);
+typedef GlGenSamplers = void Function(int count, Pointer<Uint32> samplers);
 
-typedef GlDeleteSamplersNative = Void Function(Int32 count, Pointer samplers);
-typedef GlDeleteSamplers = void Function(int count, Pointer samplers);
+typedef GlDeleteSamplersNative = Void Function(Int32 count, Pointer<Uint32> samplers);
+typedef GlDeleteSamplers = void Function(int count, Pointer<Uint32> samplers);
 
 typedef GlIsSamplerNative = Uint8 Function(Uint32 sampler);
 typedef GlIsSampler = int Function(int sampler);
@@ -3566,41 +3617,41 @@ typedef GlBindSampler = void Function(int unit, int sampler);
 typedef GlSamplerParameteriNative = Void Function(Uint32 sampler, Uint32 pname, Int32 param);
 typedef GlSamplerParameteri = void Function(int sampler, int pname, int param);
 
-typedef GlSamplerParameterivNative = Void Function(Uint32 sampler, Uint32 pname, Pointer param);
-typedef GlSamplerParameteriv = void Function(int sampler, int pname, Pointer param);
+typedef GlSamplerParameterivNative = Void Function(Uint32 sampler, Uint32 pname, Pointer<Int32> param);
+typedef GlSamplerParameteriv = void Function(int sampler, int pname, Pointer<Int32> param);
 
 typedef GlSamplerParameterfNative = Void Function(Uint32 sampler, Uint32 pname, Float param);
 typedef GlSamplerParameterf = void Function(int sampler, int pname, double param);
 
-typedef GlSamplerParameterfvNative = Void Function(Uint32 sampler, Uint32 pname, Pointer param);
-typedef GlSamplerParameterfv = void Function(int sampler, int pname, Pointer param);
+typedef GlSamplerParameterfvNative = Void Function(Uint32 sampler, Uint32 pname, Pointer<Float> param);
+typedef GlSamplerParameterfv = void Function(int sampler, int pname, Pointer<Float> param);
 
-typedef GlSamplerParameterIivNative = Void Function(Uint32 sampler, Uint32 pname, Pointer param);
-typedef GlSamplerParameterIiv = void Function(int sampler, int pname, Pointer param);
+typedef GlSamplerParameterIivNative = Void Function(Uint32 sampler, Uint32 pname, Pointer<Int32> param);
+typedef GlSamplerParameterIiv = void Function(int sampler, int pname, Pointer<Int32> param);
 
-typedef GlSamplerParameterIuivNative = Void Function(Uint32 sampler, Uint32 pname, Pointer param);
-typedef GlSamplerParameterIuiv = void Function(int sampler, int pname, Pointer param);
+typedef GlSamplerParameterIuivNative = Void Function(Uint32 sampler, Uint32 pname, Pointer<Uint32> param);
+typedef GlSamplerParameterIuiv = void Function(int sampler, int pname, Pointer<Uint32> param);
 
-typedef GlGetSamplerParameterivNative = Void Function(Uint32 sampler, Uint32 pname, Pointer params);
-typedef GlGetSamplerParameteriv = void Function(int sampler, int pname, Pointer params);
+typedef GlGetSamplerParameterivNative = Void Function(Uint32 sampler, Uint32 pname, Pointer<Int32> params);
+typedef GlGetSamplerParameteriv = void Function(int sampler, int pname, Pointer<Int32> params);
 
-typedef GlGetSamplerParameterIivNative = Void Function(Uint32 sampler, Uint32 pname, Pointer params);
-typedef GlGetSamplerParameterIiv = void Function(int sampler, int pname, Pointer params);
+typedef GlGetSamplerParameterIivNative = Void Function(Uint32 sampler, Uint32 pname, Pointer<Int32> params);
+typedef GlGetSamplerParameterIiv = void Function(int sampler, int pname, Pointer<Int32> params);
 
-typedef GlGetSamplerParameterfvNative = Void Function(Uint32 sampler, Uint32 pname, Pointer params);
-typedef GlGetSamplerParameterfv = void Function(int sampler, int pname, Pointer params);
+typedef GlGetSamplerParameterfvNative = Void Function(Uint32 sampler, Uint32 pname, Pointer<Float> params);
+typedef GlGetSamplerParameterfv = void Function(int sampler, int pname, Pointer<Float> params);
 
-typedef GlGetSamplerParameterIuivNative = Void Function(Uint32 sampler, Uint32 pname, Pointer params);
-typedef GlGetSamplerParameterIuiv = void Function(int sampler, int pname, Pointer params);
+typedef GlGetSamplerParameterIuivNative = Void Function(Uint32 sampler, Uint32 pname, Pointer<Uint32> params);
+typedef GlGetSamplerParameterIuiv = void Function(int sampler, int pname, Pointer<Uint32> params);
 
 typedef GlQueryCounterNative = Void Function(Uint32 id, Uint32 target);
 typedef GlQueryCounter = void Function(int id, int target);
 
-typedef GlGetQueryObjecti64vNative = Void Function(Uint32 id, Uint32 pname, Pointer params);
-typedef GlGetQueryObjecti64v = void Function(int id, int pname, Pointer params);
+typedef GlGetQueryObjecti64vNative = Void Function(Uint32 id, Uint32 pname, Pointer<Int64> params);
+typedef GlGetQueryObjecti64v = void Function(int id, int pname, Pointer<Int64> params);
 
-typedef GlGetQueryObjectui64vNative = Void Function(Uint32 id, Uint32 pname, Pointer params);
-typedef GlGetQueryObjectui64v = void Function(int id, int pname, Pointer params);
+typedef GlGetQueryObjectui64vNative = Void Function(Uint32 id, Uint32 pname, Pointer<Uint64> params);
+typedef GlGetQueryObjectui64v = void Function(int id, int pname, Pointer<Uint64> params);
 
 typedef GlVertexAttribDivisorNative = Void Function(Uint32 index, Uint32 divisor);
 typedef GlVertexAttribDivisor = void Function(int index, int divisor);
@@ -3608,26 +3659,26 @@ typedef GlVertexAttribDivisor = void Function(int index, int divisor);
 typedef GlVertexAttribP1uiNative = Void Function(Uint32 index, Uint32 type, Uint8 normalized, Uint32 value);
 typedef GlVertexAttribP1ui = void Function(int index, int type, int normalized, int value);
 
-typedef GlVertexAttribP1uivNative = Void Function(Uint32 index, Uint32 type, Uint8 normalized, Pointer value);
-typedef GlVertexAttribP1uiv = void Function(int index, int type, int normalized, Pointer value);
+typedef GlVertexAttribP1uivNative = Void Function(Uint32 index, Uint32 type, Uint8 normalized, Pointer<Uint32> value);
+typedef GlVertexAttribP1uiv = void Function(int index, int type, int normalized, Pointer<Uint32> value);
 
 typedef GlVertexAttribP2uiNative = Void Function(Uint32 index, Uint32 type, Uint8 normalized, Uint32 value);
 typedef GlVertexAttribP2ui = void Function(int index, int type, int normalized, int value);
 
-typedef GlVertexAttribP2uivNative = Void Function(Uint32 index, Uint32 type, Uint8 normalized, Pointer value);
-typedef GlVertexAttribP2uiv = void Function(int index, int type, int normalized, Pointer value);
+typedef GlVertexAttribP2uivNative = Void Function(Uint32 index, Uint32 type, Uint8 normalized, Pointer<Uint32> value);
+typedef GlVertexAttribP2uiv = void Function(int index, int type, int normalized, Pointer<Uint32> value);
 
 typedef GlVertexAttribP3uiNative = Void Function(Uint32 index, Uint32 type, Uint8 normalized, Uint32 value);
 typedef GlVertexAttribP3ui = void Function(int index, int type, int normalized, int value);
 
-typedef GlVertexAttribP3uivNative = Void Function(Uint32 index, Uint32 type, Uint8 normalized, Pointer value);
-typedef GlVertexAttribP3uiv = void Function(int index, int type, int normalized, Pointer value);
+typedef GlVertexAttribP3uivNative = Void Function(Uint32 index, Uint32 type, Uint8 normalized, Pointer<Uint32> value);
+typedef GlVertexAttribP3uiv = void Function(int index, int type, int normalized, Pointer<Uint32> value);
 
 typedef GlVertexAttribP4uiNative = Void Function(Uint32 index, Uint32 type, Uint8 normalized, Uint32 value);
 typedef GlVertexAttribP4ui = void Function(int index, int type, int normalized, int value);
 
-typedef GlVertexAttribP4uivNative = Void Function(Uint32 index, Uint32 type, Uint8 normalized, Pointer value);
-typedef GlVertexAttribP4uiv = void Function(int index, int type, int normalized, Pointer value);
+typedef GlVertexAttribP4uivNative = Void Function(Uint32 index, Uint32 type, Uint8 normalized, Pointer<Uint32> value);
+typedef GlVertexAttribP4uiv = void Function(int index, int type, int normalized, Pointer<Uint32> value);
 
 //GL_VERSION_4_0
 typedef GlMinSampleShadingNative = Void Function(Float value);
@@ -3663,47 +3714,47 @@ typedef GlUniform3d = void Function(int location, double x, double y, double z);
 typedef GlUniform4dNative = Void Function(Int32 location, Double x, Double y, Double z, Double w);
 typedef GlUniform4d = void Function(int location, double x, double y, double z, double w);
 
-typedef GlUniform1dvNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform1dv = void Function(int location, int count, Pointer value);
+typedef GlUniform1dvNative = Void Function(Int32 location, Int32 count, Pointer<Double> value);
+typedef GlUniform1dv = void Function(int location, int count, Pointer<Double> value);
 
-typedef GlUniform2dvNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform2dv = void Function(int location, int count, Pointer value);
+typedef GlUniform2dvNative = Void Function(Int32 location, Int32 count, Pointer<Double> value);
+typedef GlUniform2dv = void Function(int location, int count, Pointer<Double> value);
 
-typedef GlUniform3dvNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform3dv = void Function(int location, int count, Pointer value);
+typedef GlUniform3dvNative = Void Function(Int32 location, Int32 count, Pointer<Double> value);
+typedef GlUniform3dv = void Function(int location, int count, Pointer<Double> value);
 
-typedef GlUniform4dvNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform4dv = void Function(int location, int count, Pointer value);
+typedef GlUniform4dvNative = Void Function(Int32 location, Int32 count, Pointer<Double> value);
+typedef GlUniform4dv = void Function(int location, int count, Pointer<Double> value);
 
-typedef GlUniformMatrix2dvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlUniformMatrix2dv = void Function(int location, int count, int transpose, Pointer value);
+typedef GlUniformMatrix2dvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlUniformMatrix2dv = void Function(int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlUniformMatrix3dvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlUniformMatrix3dv = void Function(int location, int count, int transpose, Pointer value);
+typedef GlUniformMatrix3dvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlUniformMatrix3dv = void Function(int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlUniformMatrix4dvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlUniformMatrix4dv = void Function(int location, int count, int transpose, Pointer value);
+typedef GlUniformMatrix4dvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlUniformMatrix4dv = void Function(int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlUniformMatrix2x3dvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlUniformMatrix2x3dv = void Function(int location, int count, int transpose, Pointer value);
+typedef GlUniformMatrix2x3dvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlUniformMatrix2x3dv = void Function(int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlUniformMatrix2x4dvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlUniformMatrix2x4dv = void Function(int location, int count, int transpose, Pointer value);
+typedef GlUniformMatrix2x4dvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlUniformMatrix2x4dv = void Function(int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlUniformMatrix3x2dvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlUniformMatrix3x2dv = void Function(int location, int count, int transpose, Pointer value);
+typedef GlUniformMatrix3x2dvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlUniformMatrix3x2dv = void Function(int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlUniformMatrix3x4dvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlUniformMatrix3x4dv = void Function(int location, int count, int transpose, Pointer value);
+typedef GlUniformMatrix3x4dvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlUniformMatrix3x4dv = void Function(int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlUniformMatrix4x2dvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlUniformMatrix4x2dv = void Function(int location, int count, int transpose, Pointer value);
+typedef GlUniformMatrix4x2dvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlUniformMatrix4x2dv = void Function(int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlUniformMatrix4x3dvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlUniformMatrix4x3dv = void Function(int location, int count, int transpose, Pointer value);
+typedef GlUniformMatrix4x3dvNative = Void Function(Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlUniformMatrix4x3dv = void Function(int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlGetUniformdvNative = Void Function(Uint32 program, Int32 location, Pointer params);
-typedef GlGetUniformdv = void Function(int program, int location, Pointer params);
+typedef GlGetUniformdvNative = Void Function(Uint32 program, Int32 location, Pointer<Double> params);
+typedef GlGetUniformdv = void Function(int program, int location, Pointer<Double> params);
 
 typedef GlGetSubroutineUniformLocationNative = Int32 Function(Uint32 program, Uint32 shadertype, Pointer name);
 typedef GlGetSubroutineUniformLocation = int Function(int program, int shadertype, /*String*/ Pointer name);
@@ -3711,38 +3762,38 @@ typedef GlGetSubroutineUniformLocation = int Function(int program, int shadertyp
 typedef GlGetSubroutineIndexNative = Uint32 Function(Uint32 program, Uint32 shadertype, Pointer name);
 typedef GlGetSubroutineIndex = int Function(int program, int shadertype, /*String*/ Pointer name);
 
-typedef GlGetActiveSubroutineUniformivNative = Void Function(Uint32 program, Uint32 shadertype, Uint32 index, Uint32 pname, Pointer values);
-typedef GlGetActiveSubroutineUniformiv = void Function(int program, int shadertype, int index, int pname, Pointer values);
+typedef GlGetActiveSubroutineUniformivNative = Void Function(Uint32 program, Uint32 shadertype, Uint32 index, Uint32 pname, Pointer<Int32> values);
+typedef GlGetActiveSubroutineUniformiv = void Function(int program, int shadertype, int index, int pname, Pointer<Int32> values);
 
-typedef GlGetActiveSubroutineUniformNameNative = Void Function(Uint32 program, Uint32 shadertype, Uint32 index, Int32 bufsize, Pointer length, Pointer name);
-typedef GlGetActiveSubroutineUniformName = void Function(int program, int shadertype, int index, int bufsize, Pointer length, Pointer name);
+typedef GlGetActiveSubroutineUniformNameNative = Void Function(Uint32 program, Uint32 shadertype, Uint32 index, Int32 bufSize, Pointer<Int32> length, Pointer name);
+typedef GlGetActiveSubroutineUniformName = void Function(int program, int shadertype, int index, int bufSize, Pointer<Int32> length, Pointer name);
 
-typedef GlGetActiveSubroutineNameNative = Void Function(Uint32 program, Uint32 shadertype, Uint32 index, Int32 bufsize, Pointer length, Pointer name);
-typedef GlGetActiveSubroutineName = void Function(int program, int shadertype, int index, int bufsize, Pointer length, Pointer name);
+typedef GlGetActiveSubroutineNameNative = Void Function(Uint32 program, Uint32 shadertype, Uint32 index, Int32 bufSize, Pointer<Int32> length, Pointer name);
+typedef GlGetActiveSubroutineName = void Function(int program, int shadertype, int index, int bufSize, Pointer<Int32> length, Pointer name);
 
-typedef GlUniformSubroutinesuivNative = Void Function(Uint32 shadertype, Int32 count, Pointer indices);
-typedef GlUniformSubroutinesuiv = void Function(int shadertype, int count, Pointer indices);
+typedef GlUniformSubroutinesuivNative = Void Function(Uint32 shadertype, Int32 count, Pointer<Uint32> indices);
+typedef GlUniformSubroutinesuiv = void Function(int shadertype, int count, Pointer<Uint32> indices);
 
-typedef GlGetUniformSubroutineuivNative = Void Function(Uint32 shadertype, Int32 location, Pointer params);
-typedef GlGetUniformSubroutineuiv = void Function(int shadertype, int location, Pointer params);
+typedef GlGetUniformSubroutineuivNative = Void Function(Uint32 shadertype, Int32 location, Pointer<Uint32> params);
+typedef GlGetUniformSubroutineuiv = void Function(int shadertype, int location, Pointer<Uint32> params);
 
-typedef GlGetProgramStageivNative = Void Function(Uint32 program, Uint32 shadertype, Uint32 pname, Pointer values);
-typedef GlGetProgramStageiv = void Function(int program, int shadertype, int pname, Pointer values);
+typedef GlGetProgramStageivNative = Void Function(Uint32 program, Uint32 shadertype, Uint32 pname, Pointer<Int32> values);
+typedef GlGetProgramStageiv = void Function(int program, int shadertype, int pname, Pointer<Int32> values);
 
 typedef GlPatchParameteriNative = Void Function(Uint32 pname, Int32 value);
 typedef GlPatchParameteri = void Function(int pname, int value);
 
-typedef GlPatchParameterfvNative = Void Function(Uint32 pname, Pointer values);
-typedef GlPatchParameterfv = void Function(int pname, Pointer values);
+typedef GlPatchParameterfvNative = Void Function(Uint32 pname, Pointer<Float> values);
+typedef GlPatchParameterfv = void Function(int pname, Pointer<Float> values);
 
 typedef GlBindTransformFeedbackNative = Void Function(Uint32 target, Uint32 id);
 typedef GlBindTransformFeedback = void Function(int target, int id);
 
-typedef GlDeleteTransformFeedbacksNative = Void Function(Int32 n, Pointer ids);
-typedef GlDeleteTransformFeedbacks = void Function(int n, Pointer ids);
+typedef GlDeleteTransformFeedbacksNative = Void Function(Int32 n, Pointer<Uint32> ids);
+typedef GlDeleteTransformFeedbacks = void Function(int n, Pointer<Uint32> ids);
 
-typedef GlGenTransformFeedbacksNative = Void Function(Int32 n, Pointer ids);
-typedef GlGenTransformFeedbacks = void Function(int n, Pointer ids);
+typedef GlGenTransformFeedbacksNative = Void Function(Int32 n, Pointer<Uint32> ids);
+typedef GlGenTransformFeedbacks = void Function(int n, Pointer<Uint32> ids);
 
 typedef GlIsTransformFeedbackNative = Uint8 Function(Uint32 id);
 typedef GlIsTransformFeedback = int Function(int id);
@@ -3765,18 +3816,18 @@ typedef GlBeginQueryIndexed = void Function(int target, int index, int id);
 typedef GlEndQueryIndexedNative = Void Function(Uint32 target, Uint32 index);
 typedef GlEndQueryIndexed = void Function(int target, int index);
 
-typedef GlGetQueryIndexedivNative = Void Function(Uint32 target, Uint32 index, Uint32 pname, Pointer params);
-typedef GlGetQueryIndexediv = void Function(int target, int index, int pname, Pointer params);
+typedef GlGetQueryIndexedivNative = Void Function(Uint32 target, Uint32 index, Uint32 pname, Pointer<Int32> params);
+typedef GlGetQueryIndexediv = void Function(int target, int index, int pname, Pointer<Int32> params);
 
 //GL_VERSION_4_1
 typedef GlReleaseShaderCompilerNative = Void Function();
 typedef GlReleaseShaderCompiler = void Function();
 
-typedef GlShaderBinaryNative = Void Function(Int32 count, Pointer shaders, Uint32 binaryformat, Pointer binary, Int32 length);
-typedef GlShaderBinary = void Function(int count, Pointer shaders, int binaryformat, Pointer binary, int length);
+typedef GlShaderBinaryNative = Void Function(Int32 count, Pointer<Uint32> shaders, Uint32 binaryFormat, Pointer binary, Int32 length);
+typedef GlShaderBinary = void Function(int count, Pointer<Uint32> shaders, int binaryFormat, Pointer binary, int length);
 
-typedef GlGetShaderPrecisionFormatNative = Void Function(Uint32 shadertype, Uint32 precisiontype, Pointer range, Pointer precision);
-typedef GlGetShaderPrecisionFormat = void Function(int shadertype, int precisiontype, Pointer range, Pointer precision);
+typedef GlGetShaderPrecisionFormatNative = Void Function(Uint32 shadertype, Uint32 precisiontype, Pointer<Int32> range, Pointer<Int32> precision);
+typedef GlGetShaderPrecisionFormat = void Function(int shadertype, int precisiontype, Pointer<Int32> range, Pointer<Int32> precision);
 
 typedef GlDepthRangefNative = Void Function(Float n, Float f);
 typedef GlDepthRangef = void Function(double n, double f);
@@ -3784,8 +3835,8 @@ typedef GlDepthRangef = void Function(double n, double f);
 typedef GlClearDepthfNative = Void Function(Float d);
 typedef GlClearDepthf = void Function(double d);
 
-typedef GlGetProgramBinaryNative = Void Function(Uint32 program, Int32 bufSize, Pointer length, Pointer binaryFormat, Pointer binary);
-typedef GlGetProgramBinary = void Function(int program, int bufSize, Pointer length, Pointer binaryFormat, Pointer binary);
+typedef GlGetProgramBinaryNative = Void Function(Uint32 program, Int32 bufSize, Pointer<Int32> length, Pointer<Uint32> binaryFormat, Pointer binary);
+typedef GlGetProgramBinary = void Function(int program, int bufSize, Pointer<Int32> length, Pointer<Uint32> binaryFormat, Pointer binary);
 
 typedef GlProgramBinaryNative = Void Function(Uint32 program, Uint32 binaryFormat, Pointer binary, Int32 length);
 typedef GlProgramBinary = void Function(int program, int binaryFormat, Pointer binary, int length);
@@ -3805,173 +3856,173 @@ typedef GlCreateShaderProgramv = int Function(int type, int count, /*List<String
 typedef GlBindProgramPipelineNative = Void Function(Uint32 pipeline);
 typedef GlBindProgramPipeline = void Function(int pipeline);
 
-typedef GlDeleteProgramPipelinesNative = Void Function(Int32 n, Pointer pipelines);
-typedef GlDeleteProgramPipelines = void Function(int n, Pointer pipelines);
+typedef GlDeleteProgramPipelinesNative = Void Function(Int32 n, Pointer<Uint32> pipelines);
+typedef GlDeleteProgramPipelines = void Function(int n, Pointer<Uint32> pipelines);
 
-typedef GlGenProgramPipelinesNative = Void Function(Int32 n, Pointer pipelines);
-typedef GlGenProgramPipelines = void Function(int n, Pointer pipelines);
+typedef GlGenProgramPipelinesNative = Void Function(Int32 n, Pointer<Uint32> pipelines);
+typedef GlGenProgramPipelines = void Function(int n, Pointer<Uint32> pipelines);
 
 typedef GlIsProgramPipelineNative = Uint8 Function(Uint32 pipeline);
 typedef GlIsProgramPipeline = int Function(int pipeline);
 
-typedef GlGetProgramPipelineivNative = Void Function(Uint32 pipeline, Uint32 pname, Pointer params);
-typedef GlGetProgramPipelineiv = void Function(int pipeline, int pname, Pointer params);
+typedef GlGetProgramPipelineivNative = Void Function(Uint32 pipeline, Uint32 pname, Pointer<Int32> params);
+typedef GlGetProgramPipelineiv = void Function(int pipeline, int pname, Pointer<Int32> params);
 
 typedef GlProgramUniform1iNative = Void Function(Uint32 program, Int32 location, Int32 v0);
 typedef GlProgramUniform1i = void Function(int program, int location, int v0);
 
-typedef GlProgramUniform1ivNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform1iv = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform1ivNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Int32> value);
+typedef GlProgramUniform1iv = void Function(int program, int location, int count, Pointer<Int32> value);
 
 typedef GlProgramUniform1fNative = Void Function(Uint32 program, Int32 location, Float v0);
 typedef GlProgramUniform1f = void Function(int program, int location, double v0);
 
-typedef GlProgramUniform1fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform1fv = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform1fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Float> value);
+typedef GlProgramUniform1fv = void Function(int program, int location, int count, Pointer<Float> value);
 
 typedef GlProgramUniform1dNative = Void Function(Uint32 program, Int32 location, Double v0);
 typedef GlProgramUniform1d = void Function(int program, int location, double v0);
 
-typedef GlProgramUniform1dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform1dv = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform1dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Double> value);
+typedef GlProgramUniform1dv = void Function(int program, int location, int count, Pointer<Double> value);
 
 typedef GlProgramUniform1uiNative = Void Function(Uint32 program, Int32 location, Uint32 v0);
 typedef GlProgramUniform1ui = void Function(int program, int location, int v0);
 
-typedef GlProgramUniform1uivNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform1uiv = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform1uivNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Uint32> value);
+typedef GlProgramUniform1uiv = void Function(int program, int location, int count, Pointer<Uint32> value);
 
 typedef GlProgramUniform2iNative = Void Function(Uint32 program, Int32 location, Int32 v0, Int32 v1);
 typedef GlProgramUniform2i = void Function(int program, int location, int v0, int v1);
 
-typedef GlProgramUniform2ivNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform2iv = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform2ivNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Int32> value);
+typedef GlProgramUniform2iv = void Function(int program, int location, int count, Pointer<Int32> value);
 
 typedef GlProgramUniform2fNative = Void Function(Uint32 program, Int32 location, Float v0, Float v1);
 typedef GlProgramUniform2f = void Function(int program, int location, double v0, double v1);
 
-typedef GlProgramUniform2fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform2fv = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform2fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Float> value);
+typedef GlProgramUniform2fv = void Function(int program, int location, int count, Pointer<Float> value);
 
 typedef GlProgramUniform2dNative = Void Function(Uint32 program, Int32 location, Double v0, Double v1);
 typedef GlProgramUniform2d = void Function(int program, int location, double v0, double v1);
 
-typedef GlProgramUniform2dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform2dv = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform2dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Double> value);
+typedef GlProgramUniform2dv = void Function(int program, int location, int count, Pointer<Double> value);
 
 typedef GlProgramUniform2uiNative = Void Function(Uint32 program, Int32 location, Uint32 v0, Uint32 v1);
 typedef GlProgramUniform2ui = void Function(int program, int location, int v0, int v1);
 
-typedef GlProgramUniform2uivNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform2uiv = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform2uivNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Uint32> value);
+typedef GlProgramUniform2uiv = void Function(int program, int location, int count, Pointer<Uint32> value);
 
 typedef GlProgramUniform3iNative = Void Function(Uint32 program, Int32 location, Int32 v0, Int32 v1, Int32 v2);
 typedef GlProgramUniform3i = void Function(int program, int location, int v0, int v1, int v2);
 
-typedef GlProgramUniform3ivNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform3iv = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform3ivNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Int32> value);
+typedef GlProgramUniform3iv = void Function(int program, int location, int count, Pointer<Int32> value);
 
 typedef GlProgramUniform3fNative = Void Function(Uint32 program, Int32 location, Float v0, Float v1, Float v2);
 typedef GlProgramUniform3f = void Function(int program, int location, double v0, double v1, double v2);
 
-typedef GlProgramUniform3fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform3fv = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform3fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Float> value);
+typedef GlProgramUniform3fv = void Function(int program, int location, int count, Pointer<Float> value);
 
 typedef GlProgramUniform3dNative = Void Function(Uint32 program, Int32 location, Double v0, Double v1, Double v2);
 typedef GlProgramUniform3d = void Function(int program, int location, double v0, double v1, double v2);
 
-typedef GlProgramUniform3dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform3dv = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform3dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Double> value);
+typedef GlProgramUniform3dv = void Function(int program, int location, int count, Pointer<Double> value);
 
 typedef GlProgramUniform3uiNative = Void Function(Uint32 program, Int32 location, Uint32 v0, Uint32 v1, Uint32 v2);
 typedef GlProgramUniform3ui = void Function(int program, int location, int v0, int v1, int v2);
 
-typedef GlProgramUniform3uivNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform3uiv = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform3uivNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Uint32> value);
+typedef GlProgramUniform3uiv = void Function(int program, int location, int count, Pointer<Uint32> value);
 
 typedef GlProgramUniform4iNative = Void Function(Uint32 program, Int32 location, Int32 v0, Int32 v1, Int32 v2, Int32 v3);
 typedef GlProgramUniform4i = void Function(int program, int location, int v0, int v1, int v2, int v3);
 
-typedef GlProgramUniform4ivNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform4iv = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform4ivNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Int32> value);
+typedef GlProgramUniform4iv = void Function(int program, int location, int count, Pointer<Int32> value);
 
 typedef GlProgramUniform4fNative = Void Function(Uint32 program, Int32 location, Float v0, Float v1, Float v2, Float v3);
 typedef GlProgramUniform4f = void Function(int program, int location, double v0, double v1, double v2, double v3);
 
-typedef GlProgramUniform4fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform4fv = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform4fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Float> value);
+typedef GlProgramUniform4fv = void Function(int program, int location, int count, Pointer<Float> value);
 
 typedef GlProgramUniform4dNative = Void Function(Uint32 program, Int32 location, Double v0, Double v1, Double v2, Double v3);
 typedef GlProgramUniform4d = void Function(int program, int location, double v0, double v1, double v2, double v3);
 
-typedef GlProgramUniform4dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform4dv = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform4dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Double> value);
+typedef GlProgramUniform4dv = void Function(int program, int location, int count, Pointer<Double> value);
 
 typedef GlProgramUniform4uiNative = Void Function(Uint32 program, Int32 location, Uint32 v0, Uint32 v1, Uint32 v2, Uint32 v3);
 typedef GlProgramUniform4ui = void Function(int program, int location, int v0, int v1, int v2, int v3);
 
-typedef GlProgramUniform4uivNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform4uiv = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform4uivNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Uint32> value);
+typedef GlProgramUniform4uiv = void Function(int program, int location, int count, Pointer<Uint32> value);
 
-typedef GlProgramUniformMatrix2fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix2fv = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix2fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlProgramUniformMatrix2fv = void Function(int program, int location, int count, int transpose, Pointer<Float> value);
 
-typedef GlProgramUniformMatrix3fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix3fv = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix3fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlProgramUniformMatrix3fv = void Function(int program, int location, int count, int transpose, Pointer<Float> value);
 
-typedef GlProgramUniformMatrix4fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix4fv = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix4fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlProgramUniformMatrix4fv = void Function(int program, int location, int count, int transpose, Pointer<Float> value);
 
-typedef GlProgramUniformMatrix2dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix2dv = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix2dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlProgramUniformMatrix2dv = void Function(int program, int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlProgramUniformMatrix3dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix3dv = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix3dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlProgramUniformMatrix3dv = void Function(int program, int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlProgramUniformMatrix4dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix4dv = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix4dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlProgramUniformMatrix4dv = void Function(int program, int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlProgramUniformMatrix2x3fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix2x3fv = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix2x3fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlProgramUniformMatrix2x3fv = void Function(int program, int location, int count, int transpose, Pointer<Float> value);
 
-typedef GlProgramUniformMatrix3x2fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix3x2fv = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix3x2fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlProgramUniformMatrix3x2fv = void Function(int program, int location, int count, int transpose, Pointer<Float> value);
 
-typedef GlProgramUniformMatrix2x4fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix2x4fv = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix2x4fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlProgramUniformMatrix2x4fv = void Function(int program, int location, int count, int transpose, Pointer<Float> value);
 
-typedef GlProgramUniformMatrix4x2fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix4x2fv = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix4x2fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlProgramUniformMatrix4x2fv = void Function(int program, int location, int count, int transpose, Pointer<Float> value);
 
-typedef GlProgramUniformMatrix3x4fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix3x4fv = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix3x4fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlProgramUniformMatrix3x4fv = void Function(int program, int location, int count, int transpose, Pointer<Float> value);
 
-typedef GlProgramUniformMatrix4x3fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix4x3fv = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix4x3fvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlProgramUniformMatrix4x3fv = void Function(int program, int location, int count, int transpose, Pointer<Float> value);
 
-typedef GlProgramUniformMatrix2x3dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix2x3dv = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix2x3dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlProgramUniformMatrix2x3dv = void Function(int program, int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlProgramUniformMatrix3x2dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix3x2dv = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix3x2dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlProgramUniformMatrix3x2dv = void Function(int program, int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlProgramUniformMatrix2x4dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix2x4dv = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix2x4dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlProgramUniformMatrix2x4dv = void Function(int program, int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlProgramUniformMatrix4x2dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix4x2dv = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix4x2dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlProgramUniformMatrix4x2dv = void Function(int program, int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlProgramUniformMatrix3x4dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix3x4dv = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix3x4dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlProgramUniformMatrix3x4dv = void Function(int program, int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlProgramUniformMatrix4x3dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix4x3dv = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix4x3dvNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlProgramUniformMatrix4x3dv = void Function(int program, int location, int count, int transpose, Pointer<Double> value);
 
 typedef GlValidateProgramPipelineNative = Void Function(Uint32 pipeline);
 typedef GlValidateProgramPipeline = void Function(int pipeline);
 
-typedef GlGetProgramPipelineInfoLogNative = Void Function(Uint32 pipeline, Int32 bufSize, Pointer length, Pointer infoLog);
-typedef GlGetProgramPipelineInfoLog = void Function(int pipeline, int bufSize, Pointer length, Pointer infoLog);
+typedef GlGetProgramPipelineInfoLogNative = Void Function(Uint32 pipeline, Int32 bufSize, Pointer<Int32> length, Pointer infoLog);
+typedef GlGetProgramPipelineInfoLog = void Function(int pipeline, int bufSize, Pointer<Int32> length, Pointer infoLog);
 
 typedef GlVertexAttribL1dNative = Void Function(Uint32 index, Double x);
 typedef GlVertexAttribL1d = void Function(int index, double x);
@@ -3985,53 +4036,53 @@ typedef GlVertexAttribL3d = void Function(int index, double x, double y, double 
 typedef GlVertexAttribL4dNative = Void Function(Uint32 index, Double x, Double y, Double z, Double w);
 typedef GlVertexAttribL4d = void Function(int index, double x, double y, double z, double w);
 
-typedef GlVertexAttribL1dvNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttribL1dv = void Function(int index, Pointer v);
+typedef GlVertexAttribL1dvNative = Void Function(Uint32 index, Pointer<Double> v);
+typedef GlVertexAttribL1dv = void Function(int index, Pointer<Double> v);
 
-typedef GlVertexAttribL2dvNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttribL2dv = void Function(int index, Pointer v);
+typedef GlVertexAttribL2dvNative = Void Function(Uint32 index, Pointer<Double> v);
+typedef GlVertexAttribL2dv = void Function(int index, Pointer<Double> v);
 
-typedef GlVertexAttribL3dvNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttribL3dv = void Function(int index, Pointer v);
+typedef GlVertexAttribL3dvNative = Void Function(Uint32 index, Pointer<Double> v);
+typedef GlVertexAttribL3dv = void Function(int index, Pointer<Double> v);
 
-typedef GlVertexAttribL4dvNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttribL4dv = void Function(int index, Pointer v);
+typedef GlVertexAttribL4dvNative = Void Function(Uint32 index, Pointer<Double> v);
+typedef GlVertexAttribL4dv = void Function(int index, Pointer<Double> v);
 
 typedef GlVertexAttribLPointerNative = Void Function(Uint32 index, Int32 size, Uint32 type, Int32 stride, Uint32 pointer);
 typedef GlVertexAttribLPointer = void Function(int index, int size, int type, int stride, int pointer);
 
-typedef GlGetVertexAttribLdvNative = Void Function(Uint32 index, Uint32 pname, Pointer params);
-typedef GlGetVertexAttribLdv = void Function(int index, int pname, Pointer params);
+typedef GlGetVertexAttribLdvNative = Void Function(Uint32 index, Uint32 pname, Pointer<Double> params);
+typedef GlGetVertexAttribLdv = void Function(int index, int pname, Pointer<Double> params);
 
-typedef GlViewportArrayvNative = Void Function(Uint32 first, Int32 count, Pointer v);
-typedef GlViewportArrayv = void Function(int first, int count, Pointer v);
+typedef GlViewportArrayvNative = Void Function(Uint32 first, Int32 count, Pointer<Float> v);
+typedef GlViewportArrayv = void Function(int first, int count, Pointer<Float> v);
 
 typedef GlViewportIndexedfNative = Void Function(Uint32 index, Float x, Float y, Float w, Float h);
 typedef GlViewportIndexedf = void Function(int index, double x, double y, double w, double h);
 
-typedef GlViewportIndexedfvNative = Void Function(Uint32 index, Pointer v);
-typedef GlViewportIndexedfv = void Function(int index, Pointer v);
+typedef GlViewportIndexedfvNative = Void Function(Uint32 index, Pointer<Float> v);
+typedef GlViewportIndexedfv = void Function(int index, Pointer<Float> v);
 
-typedef GlScissorArrayvNative = Void Function(Uint32 first, Int32 count, Pointer v);
-typedef GlScissorArrayv = void Function(int first, int count, Pointer v);
+typedef GlScissorArrayvNative = Void Function(Uint32 first, Int32 count, Pointer<Int32> v);
+typedef GlScissorArrayv = void Function(int first, int count, Pointer<Int32> v);
 
 typedef GlScissorIndexedNative = Void Function(Uint32 index, Int32 left, Int32 bottom, Int32 width, Int32 height);
 typedef GlScissorIndexed = void Function(int index, int left, int bottom, int width, int height);
 
-typedef GlScissorIndexedvNative = Void Function(Uint32 index, Pointer v);
-typedef GlScissorIndexedv = void Function(int index, Pointer v);
+typedef GlScissorIndexedvNative = Void Function(Uint32 index, Pointer<Int32> v);
+typedef GlScissorIndexedv = void Function(int index, Pointer<Int32> v);
 
-typedef GlDepthRangeArrayvNative = Void Function(Uint32 first, Int32 count, Pointer v);
-typedef GlDepthRangeArrayv = void Function(int first, int count, Pointer v);
+typedef GlDepthRangeArrayvNative = Void Function(Uint32 first, Int32 count, Pointer<Double> v);
+typedef GlDepthRangeArrayv = void Function(int first, int count, Pointer<Double> v);
 
 typedef GlDepthRangeIndexedNative = Void Function(Uint32 index, Double n, Double f);
 typedef GlDepthRangeIndexed = void Function(int index, double n, double f);
 
-typedef GlGetFloati_vNative = Void Function(Uint32 target, Uint32 index, Pointer data);
-typedef GlGetFloati_v = void Function(int target, int index, Pointer data);
+typedef GlGetFloati_vNative = Void Function(Uint32 target, Uint32 index, Pointer<Float> data);
+typedef GlGetFloati_v = void Function(int target, int index, Pointer<Float> data);
 
-typedef GlGetDoublei_vNative = Void Function(Uint32 target, Uint32 index, Pointer data);
-typedef GlGetDoublei_v = void Function(int target, int index, Pointer data);
+typedef GlGetDoublei_vNative = Void Function(Uint32 target, Uint32 index, Pointer<Double> data);
+typedef GlGetDoublei_v = void Function(int target, int index, Pointer<Double> data);
 
 //GL_VERSION_4_2
 typedef GlDrawArraysInstancedBaseInstanceNative = Void Function(Uint32 mode, Int32 first, Int32 count, Int32 instancecount, Uint32 baseinstance);
@@ -4043,11 +4094,11 @@ typedef GlDrawElementsInstancedBaseInstance = void Function(int mode, int count,
 typedef GlDrawElementsInstancedBaseVertexBaseInstanceNative = Void Function(Uint32 mode, Int32 count, Uint32 type, Pointer indices, Int32 instancecount, Int32 basevertex, Uint32 baseinstance);
 typedef GlDrawElementsInstancedBaseVertexBaseInstance = void Function(int mode, int count, int type, Pointer indices, int instancecount, int basevertex, int baseinstance);
 
-typedef GlGetInternalformativNative = Void Function(Uint32 target, Uint32 internalformat, Uint32 pname, Int32 bufSize, Pointer params);
-typedef GlGetInternalformativ = void Function(int target, int internalformat, int pname, int bufSize, Pointer params);
+typedef GlGetInternalformativNative = Void Function(Uint32 target, Uint32 internalformat, Uint32 pname, Int32 count, Pointer<Int32> params);
+typedef GlGetInternalformativ = void Function(int target, int internalformat, int pname, int count, Pointer<Int32> params);
 
-typedef GlGetActiveAtomicCounterBufferivNative = Void Function(Uint32 program, Uint32 bufferIndex, Uint32 pname, Pointer params);
-typedef GlGetActiveAtomicCounterBufferiv = void Function(int program, int bufferIndex, int pname, Pointer params);
+typedef GlGetActiveAtomicCounterBufferivNative = Void Function(Uint32 program, Uint32 bufferIndex, Uint32 pname, Pointer<Int32> params);
+typedef GlGetActiveAtomicCounterBufferiv = void Function(int program, int bufferIndex, int pname, Pointer<Int32> params);
 
 typedef GlBindImageTextureNative = Void Function(Uint32 unit, Uint32 texture, Int32 level, Uint8 layered, Int32 layer, Uint32 access, Uint32 format);
 typedef GlBindImageTexture = void Function(int unit, int texture, int level, int layered, int layer, int access, int format);
@@ -4089,11 +4140,11 @@ typedef GlCopyImageSubData = void Function(int srcName, int srcTarget, int srcLe
 typedef GlFramebufferParameteriNative = Void Function(Uint32 target, Uint32 pname, Int32 param);
 typedef GlFramebufferParameteri = void Function(int target, int pname, int param);
 
-typedef GlGetFramebufferParameterivNative = Void Function(Uint32 target, Uint32 pname, Pointer params);
-typedef GlGetFramebufferParameteriv = void Function(int target, int pname, Pointer params);
+typedef GlGetFramebufferParameterivNative = Void Function(Uint32 target, Uint32 pname, Pointer<Int32> params);
+typedef GlGetFramebufferParameteriv = void Function(int target, int pname, Pointer<Int32> params);
 
-typedef GlGetInternalformati64vNative = Void Function(Uint32 target, Uint32 internalformat, Uint32 pname, Int32 bufSize, Pointer params);
-typedef GlGetInternalformati64v = void Function(int target, int internalformat, int pname, int bufSize, Pointer params);
+typedef GlGetInternalformati64vNative = Void Function(Uint32 target, Uint32 internalformat, Uint32 pname, Int32 count, Pointer<Int64> params);
+typedef GlGetInternalformati64v = void Function(int target, int internalformat, int pname, int count, Pointer<Int64> params);
 
 typedef GlInvalidateTexSubImageNative = Void Function(Uint32 texture, Int32 level, Int32 xoffset, Int32 yoffset, Int32 zoffset, Int32 width, Int32 height, Int32 depth);
 typedef GlInvalidateTexSubImage = void Function(int texture, int level, int xoffset, int yoffset, int zoffset, int width, int height, int depth);
@@ -4107,11 +4158,11 @@ typedef GlInvalidateBufferSubData = void Function(int buffer, int offset, int le
 typedef GlInvalidateBufferDataNative = Void Function(Uint32 buffer);
 typedef GlInvalidateBufferData = void Function(int buffer);
 
-typedef GlInvalidateFramebufferNative = Void Function(Uint32 target, Int32 numAttachments, Pointer attachments);
-typedef GlInvalidateFramebuffer = void Function(int target, int numAttachments, Pointer attachments);
+typedef GlInvalidateFramebufferNative = Void Function(Uint32 target, Int32 numAttachments, Pointer<Uint32> attachments);
+typedef GlInvalidateFramebuffer = void Function(int target, int numAttachments, Pointer<Uint32> attachments);
 
-typedef GlInvalidateSubFramebufferNative = Void Function(Uint32 target, Int32 numAttachments, Pointer attachments, Int32 x, Int32 y, Int32 width, Int32 height);
-typedef GlInvalidateSubFramebuffer = void Function(int target, int numAttachments, Pointer attachments, int x, int y, int width, int height);
+typedef GlInvalidateSubFramebufferNative = Void Function(Uint32 target, Int32 numAttachments, Pointer<Uint32> attachments, Int32 x, Int32 y, Int32 width, Int32 height);
+typedef GlInvalidateSubFramebuffer = void Function(int target, int numAttachments, Pointer<Uint32> attachments, int x, int y, int width, int height);
 
 typedef GlMultiDrawArraysIndirectNative = Void Function(Uint32 mode, Pointer indirect, Int32 drawcount, Int32 stride);
 typedef GlMultiDrawArraysIndirect = void Function(int mode, Pointer indirect, int drawcount, int stride);
@@ -4119,17 +4170,17 @@ typedef GlMultiDrawArraysIndirect = void Function(int mode, Pointer indirect, in
 typedef GlMultiDrawElementsIndirectNative = Void Function(Uint32 mode, Uint32 type, Pointer indirect, Int32 drawcount, Int32 stride);
 typedef GlMultiDrawElementsIndirect = void Function(int mode, int type, Pointer indirect, int drawcount, int stride);
 
-typedef GlGetProgramInterfaceivNative = Void Function(Uint32 program, Uint32 programInterface, Uint32 pname, Pointer params);
-typedef GlGetProgramInterfaceiv = void Function(int program, int programInterface, int pname, Pointer params);
+typedef GlGetProgramInterfaceivNative = Void Function(Uint32 program, Uint32 programInterface, Uint32 pname, Pointer<Int32> params);
+typedef GlGetProgramInterfaceiv = void Function(int program, int programInterface, int pname, Pointer<Int32> params);
 
 typedef GlGetProgramResourceIndexNative = Uint32 Function(Uint32 program, Uint32 programInterface, Pointer name);
 typedef GlGetProgramResourceIndex = int Function(int program, int programInterface, /*String*/ Pointer name);
 
-typedef GlGetProgramResourceNameNative = Void Function(Uint32 program, Uint32 programInterface, Uint32 index, Int32 bufSize, Pointer length, Pointer name);
-typedef GlGetProgramResourceName = void Function(int program, int programInterface, int index, int bufSize, Pointer length, Pointer name);
+typedef GlGetProgramResourceNameNative = Void Function(Uint32 program, Uint32 programInterface, Uint32 index, Int32 bufSize, Pointer<Int32> length, Pointer name);
+typedef GlGetProgramResourceName = void Function(int program, int programInterface, int index, int bufSize, Pointer<Int32> length, Pointer name);
 
-typedef GlGetProgramResourceivNative = Void Function(Uint32 program, Uint32 programInterface, Uint32 index, Int32 propCount, Pointer props, Int32 bufSize, Pointer length, Pointer params);
-typedef GlGetProgramResourceiv = void Function(int program, int programInterface, int index, int propCount, Pointer props, int bufSize, Pointer length, Pointer params);
+typedef GlGetProgramResourceivNative = Void Function(Uint32 program, Uint32 programInterface, Uint32 index, Int32 propCount, Pointer<Uint32> props, Int32 count, Pointer<Int32> length, Pointer<Int32> params);
+typedef GlGetProgramResourceiv = void Function(int program, int programInterface, int index, int propCount, Pointer<Uint32> props, int count, Pointer<Int32> length, Pointer<Int32> params);
 
 typedef GlGetProgramResourceLocationNative = Int32 Function(Uint32 program, Uint32 programInterface, Pointer name);
 typedef GlGetProgramResourceLocation = int Function(int program, int programInterface, /*String*/ Pointer name);
@@ -4170,8 +4221,8 @@ typedef GlVertexAttribBinding = void Function(int attribindex, int bindingindex)
 typedef GlVertexBindingDivisorNative = Void Function(Uint32 bindingindex, Uint32 divisor);
 typedef GlVertexBindingDivisor = void Function(int bindingindex, int divisor);
 
-typedef GlDebugMessageControlNative = Void Function(Uint32 source, Uint32 type, Uint32 severity, Int32 count, Pointer ids, Uint8 enabled);
-typedef GlDebugMessageControl = void Function(int source, int type, int severity, int count, Pointer ids, int enabled);
+typedef GlDebugMessageControlNative = Void Function(Uint32 source, Uint32 type, Uint32 severity, Int32 count, Pointer<Uint32> ids, Uint8 enabled);
+typedef GlDebugMessageControl = void Function(int source, int type, int severity, int count, Pointer<Uint32> ids, int enabled);
 
 typedef GlDebugMessageInsertNative = Void Function(Uint32 source, Uint32 type, Uint32 id, Uint32 severity, Int32 length, Pointer buf);
 typedef GlDebugMessageInsert = void Function(int source, int type, int id, int severity, int length, /*String*/ Pointer buf);
@@ -4179,8 +4230,8 @@ typedef GlDebugMessageInsert = void Function(int source, int type, int id, int s
 typedef GlDebugMessageCallbackNative = Void Function(Pointer callback, Pointer userParam);
 typedef GlDebugMessageCallback = void Function(Pointer callback, Pointer userParam);
 
-typedef GlGetDebugMessageLogNative = Uint32 Function(Uint32 count, Int32 bufSize, Pointer sources, Pointer types, Pointer ids, Pointer severities, Pointer lengths, Pointer messageLog);
-typedef GlGetDebugMessageLog = int Function(int count, int bufSize, Pointer sources, Pointer types, Pointer ids, Pointer severities, Pointer lengths, Pointer messageLog);
+typedef GlGetDebugMessageLogNative = Uint32 Function(Uint32 count, Int32 bufSize, Pointer<Uint32> sources, Pointer<Uint32> types, Pointer<Uint32> ids, Pointer<Uint32> severities, Pointer<Int32> lengths, Pointer messageLog);
+typedef GlGetDebugMessageLog = int Function(int count, int bufSize, Pointer<Uint32> sources, Pointer<Uint32> types, Pointer<Uint32> ids, Pointer<Uint32> severities, Pointer<Int32> lengths, Pointer messageLog);
 
 typedef GlPushDebugGroupNative = Void Function(Uint32 source, Uint32 id, Int32 length, Pointer message);
 typedef GlPushDebugGroup = void Function(int source, int id, int length, /*String*/ Pointer message);
@@ -4191,14 +4242,14 @@ typedef GlPopDebugGroup = void Function();
 typedef GlObjectLabelNative = Void Function(Uint32 identifier, Uint32 name, Int32 length, Pointer label);
 typedef GlObjectLabel = void Function(int identifier, int name, int length, /*String*/ Pointer label);
 
-typedef GlGetObjectLabelNative = Void Function(Uint32 identifier, Uint32 name, Int32 bufSize, Pointer length, Pointer label);
-typedef GlGetObjectLabel = void Function(int identifier, int name, int bufSize, Pointer length, Pointer label);
+typedef GlGetObjectLabelNative = Void Function(Uint32 identifier, Uint32 name, Int32 bufSize, Pointer<Int32> length, Pointer label);
+typedef GlGetObjectLabel = void Function(int identifier, int name, int bufSize, Pointer<Int32> length, Pointer label);
 
 typedef GlObjectPtrLabelNative = Void Function(Pointer ptr, Int32 length, Pointer label);
 typedef GlObjectPtrLabel = void Function(Pointer ptr, int length, /*String*/ Pointer label);
 
-typedef GlGetObjectPtrLabelNative = Void Function(Pointer ptr, Int32 bufSize, Pointer length, Pointer label);
-typedef GlGetObjectPtrLabel = void Function(Pointer ptr, int bufSize, Pointer length, Pointer label);
+typedef GlGetObjectPtrLabelNative = Void Function(Pointer ptr, Int32 bufSize, Pointer<Int32> length, Pointer label);
+typedef GlGetObjectPtrLabel = void Function(Pointer ptr, int bufSize, Pointer<Int32> length, Pointer label);
 
 //GL_VERSION_4_4
 typedef GlBufferStorageNative = Void Function(Uint32 target, Int64 size, Pointer data, Uint32 flags);
@@ -4210,30 +4261,30 @@ typedef GlClearTexImage = void Function(int texture, int level, int format, int 
 typedef GlClearTexSubImageNative = Void Function(Uint32 texture, Int32 level, Int32 xoffset, Int32 yoffset, Int32 zoffset, Int32 width, Int32 height, Int32 depth, Uint32 format, Uint32 type, Pointer data);
 typedef GlClearTexSubImage = void Function(int texture, int level, int xoffset, int yoffset, int zoffset, int width, int height, int depth, int format, int type, Pointer data);
 
-typedef GlBindBuffersBaseNative = Void Function(Uint32 target, Uint32 first, Int32 count, Pointer buffers);
-typedef GlBindBuffersBase = void Function(int target, int first, int count, Pointer buffers);
+typedef GlBindBuffersBaseNative = Void Function(Uint32 target, Uint32 first, Int32 count, Pointer<Uint32> buffers);
+typedef GlBindBuffersBase = void Function(int target, int first, int count, Pointer<Uint32> buffers);
 
-typedef GlBindBuffersRangeNative = Void Function(Uint32 target, Uint32 first, Int32 count, Pointer buffers, Pointer offsets, Pointer sizes);
-typedef GlBindBuffersRange = void Function(int target, int first, int count, Pointer buffers, Pointer offsets, Pointer sizes);
+typedef GlBindBuffersRangeNative = Void Function(Uint32 target, Uint32 first, Int32 count, Pointer<Uint32> buffers, Pointer<Int64> offsets, Pointer<Int64> sizes);
+typedef GlBindBuffersRange = void Function(int target, int first, int count, Pointer<Uint32> buffers, Pointer<Int64> offsets, Pointer<Int64> sizes);
 
-typedef GlBindTexturesNative = Void Function(Uint32 first, Int32 count, Pointer textures);
-typedef GlBindTextures = void Function(int first, int count, Pointer textures);
+typedef GlBindTexturesNative = Void Function(Uint32 first, Int32 count, Pointer<Uint32> textures);
+typedef GlBindTextures = void Function(int first, int count, Pointer<Uint32> textures);
 
-typedef GlBindSamplersNative = Void Function(Uint32 first, Int32 count, Pointer samplers);
-typedef GlBindSamplers = void Function(int first, int count, Pointer samplers);
+typedef GlBindSamplersNative = Void Function(Uint32 first, Int32 count, Pointer<Uint32> samplers);
+typedef GlBindSamplers = void Function(int first, int count, Pointer<Uint32> samplers);
 
-typedef GlBindImageTexturesNative = Void Function(Uint32 first, Int32 count, Pointer textures);
-typedef GlBindImageTextures = void Function(int first, int count, Pointer textures);
+typedef GlBindImageTexturesNative = Void Function(Uint32 first, Int32 count, Pointer<Uint32> textures);
+typedef GlBindImageTextures = void Function(int first, int count, Pointer<Uint32> textures);
 
-typedef GlBindVertexBuffersNative = Void Function(Uint32 first, Int32 count, Pointer buffers, Pointer offsets, Pointer strides);
-typedef GlBindVertexBuffers = void Function(int first, int count, Pointer buffers, Pointer offsets, Pointer strides);
+typedef GlBindVertexBuffersNative = Void Function(Uint32 first, Int32 count, Pointer<Uint32> buffers, Pointer<Int64> offsets, Pointer<Int32> strides);
+typedef GlBindVertexBuffers = void Function(int first, int count, Pointer<Uint32> buffers, Pointer<Int64> offsets, Pointer<Int32> strides);
 
 //GL_VERSION_4_5
 typedef GlClipControlNative = Void Function(Uint32 origin, Uint32 depth);
 typedef GlClipControl = void Function(int origin, int depth);
 
-typedef GlCreateTransformFeedbacksNative = Void Function(Int32 n, Pointer ids);
-typedef GlCreateTransformFeedbacks = void Function(int n, Pointer ids);
+typedef GlCreateTransformFeedbacksNative = Void Function(Int32 n, Pointer<Uint32> ids);
+typedef GlCreateTransformFeedbacks = void Function(int n, Pointer<Uint32> ids);
 
 typedef GlTransformFeedbackBufferBaseNative = Void Function(Uint32 xfb, Uint32 index, Uint32 buffer);
 typedef GlTransformFeedbackBufferBase = void Function(int xfb, int index, int buffer);
@@ -4241,17 +4292,17 @@ typedef GlTransformFeedbackBufferBase = void Function(int xfb, int index, int bu
 typedef GlTransformFeedbackBufferRangeNative = Void Function(Uint32 xfb, Uint32 index, Uint32 buffer, Int64 offset, Int64 size);
 typedef GlTransformFeedbackBufferRange = void Function(int xfb, int index, int buffer, int offset, int size);
 
-typedef GlGetTransformFeedbackivNative = Void Function(Uint32 xfb, Uint32 pname, Pointer param);
-typedef GlGetTransformFeedbackiv = void Function(int xfb, int pname, Pointer param);
+typedef GlGetTransformFeedbackivNative = Void Function(Uint32 xfb, Uint32 pname, Pointer<Int32> param);
+typedef GlGetTransformFeedbackiv = void Function(int xfb, int pname, Pointer<Int32> param);
 
-typedef GlGetTransformFeedbacki_vNative = Void Function(Uint32 xfb, Uint32 pname, Uint32 index, Pointer param);
-typedef GlGetTransformFeedbacki_v = void Function(int xfb, int pname, int index, Pointer param);
+typedef GlGetTransformFeedbacki_vNative = Void Function(Uint32 xfb, Uint32 pname, Uint32 index, Pointer<Int32> param);
+typedef GlGetTransformFeedbacki_v = void Function(int xfb, int pname, int index, Pointer<Int32> param);
 
-typedef GlGetTransformFeedbacki64_vNative = Void Function(Uint32 xfb, Uint32 pname, Uint32 index, Pointer param);
-typedef GlGetTransformFeedbacki64_v = void Function(int xfb, int pname, int index, Pointer param);
+typedef GlGetTransformFeedbacki64_vNative = Void Function(Uint32 xfb, Uint32 pname, Uint32 index, Pointer<Int64> param);
+typedef GlGetTransformFeedbacki64_v = void Function(int xfb, int pname, int index, Pointer<Int64> param);
 
-typedef GlCreateBuffersNative = Void Function(Int32 n, Pointer buffers);
-typedef GlCreateBuffers = void Function(int n, Pointer buffers);
+typedef GlCreateBuffersNative = Void Function(Int32 n, Pointer<Uint32> buffers);
+typedef GlCreateBuffers = void Function(int n, Pointer<Uint32> buffers);
 
 typedef GlNamedBufferStorageNative = Void Function(Uint32 buffer, Int64 size, Pointer data, Uint32 flags);
 typedef GlNamedBufferStorage = void Function(int buffer, int size, Pointer data, int flags);
@@ -4283,11 +4334,11 @@ typedef GlUnmapNamedBuffer = int Function(int buffer);
 typedef GlFlushMappedNamedBufferRangeNative = Void Function(Uint32 buffer, Int64 offset, Int64 length);
 typedef GlFlushMappedNamedBufferRange = void Function(int buffer, int offset, int length);
 
-typedef GlGetNamedBufferParameterivNative = Void Function(Uint32 buffer, Uint32 pname, Pointer params);
-typedef GlGetNamedBufferParameteriv = void Function(int buffer, int pname, Pointer params);
+typedef GlGetNamedBufferParameterivNative = Void Function(Uint32 buffer, Uint32 pname, Pointer<Int32> params);
+typedef GlGetNamedBufferParameteriv = void Function(int buffer, int pname, Pointer<Int32> params);
 
-typedef GlGetNamedBufferParameteri64vNative = Void Function(Uint32 buffer, Uint32 pname, Pointer params);
-typedef GlGetNamedBufferParameteri64v = void Function(int buffer, int pname, Pointer params);
+typedef GlGetNamedBufferParameteri64vNative = Void Function(Uint32 buffer, Uint32 pname, Pointer<Int64> params);
+typedef GlGetNamedBufferParameteri64v = void Function(int buffer, int pname, Pointer<Int64> params);
 
 typedef GlGetNamedBufferPointervNative = Void Function(Uint32 buffer, Uint32 pname, Pointer params);
 typedef GlGetNamedBufferPointerv = void Function(int buffer, int pname, Pointer params);
@@ -4295,8 +4346,8 @@ typedef GlGetNamedBufferPointerv = void Function(int buffer, int pname, Pointer 
 typedef GlGetNamedBufferSubDataNative = Void Function(Uint32 buffer, Int64 offset, Int64 size, Pointer data);
 typedef GlGetNamedBufferSubData = void Function(int buffer, int offset, int size, Pointer data);
 
-typedef GlCreateFramebuffersNative = Void Function(Int32 n, Pointer framebuffers);
-typedef GlCreateFramebuffers = void Function(int n, Pointer framebuffers);
+typedef GlCreateFramebuffersNative = Void Function(Int32 n, Pointer<Uint32> framebuffers);
+typedef GlCreateFramebuffers = void Function(int n, Pointer<Uint32> framebuffers);
 
 typedef GlNamedFramebufferRenderbufferNative = Void Function(Uint32 framebuffer, Uint32 attachment, Uint32 renderbuffertarget, Uint32 renderbuffer);
 typedef GlNamedFramebufferRenderbuffer = void Function(int framebuffer, int attachment, int renderbuffertarget, int renderbuffer);
@@ -4313,26 +4364,26 @@ typedef GlNamedFramebufferTextureLayer = void Function(int framebuffer, int atta
 typedef GlNamedFramebufferDrawBufferNative = Void Function(Uint32 framebuffer, Uint32 buf);
 typedef GlNamedFramebufferDrawBuffer = void Function(int framebuffer, int buf);
 
-typedef GlNamedFramebufferDrawBuffersNative = Void Function(Uint32 framebuffer, Int32 n, Pointer bufs);
-typedef GlNamedFramebufferDrawBuffers = void Function(int framebuffer, int n, Pointer bufs);
+typedef GlNamedFramebufferDrawBuffersNative = Void Function(Uint32 framebuffer, Int32 n, Pointer<Uint32> bufs);
+typedef GlNamedFramebufferDrawBuffers = void Function(int framebuffer, int n, Pointer<Uint32> bufs);
 
 typedef GlNamedFramebufferReadBufferNative = Void Function(Uint32 framebuffer, Uint32 src);
 typedef GlNamedFramebufferReadBuffer = void Function(int framebuffer, int src);
 
-typedef GlInvalidateNamedFramebufferDataNative = Void Function(Uint32 framebuffer, Int32 numAttachments, Pointer attachments);
-typedef GlInvalidateNamedFramebufferData = void Function(int framebuffer, int numAttachments, Pointer attachments);
+typedef GlInvalidateNamedFramebufferDataNative = Void Function(Uint32 framebuffer, Int32 numAttachments, Pointer<Uint32> attachments);
+typedef GlInvalidateNamedFramebufferData = void Function(int framebuffer, int numAttachments, Pointer<Uint32> attachments);
 
-typedef GlInvalidateNamedFramebufferSubDataNative = Void Function(Uint32 framebuffer, Int32 numAttachments, Pointer attachments, Int32 x, Int32 y, Int32 width, Int32 height);
-typedef GlInvalidateNamedFramebufferSubData = void Function(int framebuffer, int numAttachments, Pointer attachments, int x, int y, int width, int height);
+typedef GlInvalidateNamedFramebufferSubDataNative = Void Function(Uint32 framebuffer, Int32 numAttachments, Pointer<Uint32> attachments, Int32 x, Int32 y, Int32 width, Int32 height);
+typedef GlInvalidateNamedFramebufferSubData = void Function(int framebuffer, int numAttachments, Pointer<Uint32> attachments, int x, int y, int width, int height);
 
-typedef GlClearNamedFramebufferivNative = Void Function(Uint32 framebuffer, Uint32 buffer, Int32 drawbuffer, Pointer value);
-typedef GlClearNamedFramebufferiv = void Function(int framebuffer, int buffer, int drawbuffer, Pointer value);
+typedef GlClearNamedFramebufferivNative = Void Function(Uint32 framebuffer, Uint32 buffer, Int32 drawbuffer, Pointer<Int32> value);
+typedef GlClearNamedFramebufferiv = void Function(int framebuffer, int buffer, int drawbuffer, Pointer<Int32> value);
 
-typedef GlClearNamedFramebufferuivNative = Void Function(Uint32 framebuffer, Uint32 buffer, Int32 drawbuffer, Pointer value);
-typedef GlClearNamedFramebufferuiv = void Function(int framebuffer, int buffer, int drawbuffer, Pointer value);
+typedef GlClearNamedFramebufferuivNative = Void Function(Uint32 framebuffer, Uint32 buffer, Int32 drawbuffer, Pointer<Uint32> value);
+typedef GlClearNamedFramebufferuiv = void Function(int framebuffer, int buffer, int drawbuffer, Pointer<Uint32> value);
 
-typedef GlClearNamedFramebufferfvNative = Void Function(Uint32 framebuffer, Uint32 buffer, Int32 drawbuffer, Pointer value);
-typedef GlClearNamedFramebufferfv = void Function(int framebuffer, int buffer, int drawbuffer, Pointer value);
+typedef GlClearNamedFramebufferfvNative = Void Function(Uint32 framebuffer, Uint32 buffer, Int32 drawbuffer, Pointer<Float> value);
+typedef GlClearNamedFramebufferfv = void Function(int framebuffer, int buffer, int drawbuffer, Pointer<Float> value);
 
 typedef GlClearNamedFramebufferfiNative = Void Function(Uint32 framebuffer, Uint32 buffer, Int32 drawbuffer, Float depth, Int32 stencil);
 typedef GlClearNamedFramebufferfi = void Function(int framebuffer, int buffer, int drawbuffer, double depth, int stencil);
@@ -4343,14 +4394,14 @@ typedef GlBlitNamedFramebuffer = void Function(int readFramebuffer, int drawFram
 typedef GlCheckNamedFramebufferStatusNative = Uint32 Function(Uint32 framebuffer, Uint32 target);
 typedef GlCheckNamedFramebufferStatus = int Function(int framebuffer, int target);
 
-typedef GlGetNamedFramebufferParameterivNative = Void Function(Uint32 framebuffer, Uint32 pname, Pointer param);
-typedef GlGetNamedFramebufferParameteriv = void Function(int framebuffer, int pname, Pointer param);
+typedef GlGetNamedFramebufferParameterivNative = Void Function(Uint32 framebuffer, Uint32 pname, Pointer<Int32> param);
+typedef GlGetNamedFramebufferParameteriv = void Function(int framebuffer, int pname, Pointer<Int32> param);
 
-typedef GlGetNamedFramebufferAttachmentParameterivNative = Void Function(Uint32 framebuffer, Uint32 attachment, Uint32 pname, Pointer params);
-typedef GlGetNamedFramebufferAttachmentParameteriv = void Function(int framebuffer, int attachment, int pname, Pointer params);
+typedef GlGetNamedFramebufferAttachmentParameterivNative = Void Function(Uint32 framebuffer, Uint32 attachment, Uint32 pname, Pointer<Int32> params);
+typedef GlGetNamedFramebufferAttachmentParameteriv = void Function(int framebuffer, int attachment, int pname, Pointer<Int32> params);
 
-typedef GlCreateRenderbuffersNative = Void Function(Int32 n, Pointer renderbuffers);
-typedef GlCreateRenderbuffers = void Function(int n, Pointer renderbuffers);
+typedef GlCreateRenderbuffersNative = Void Function(Int32 n, Pointer<Uint32> renderbuffers);
+typedef GlCreateRenderbuffers = void Function(int n, Pointer<Uint32> renderbuffers);
 
 typedef GlNamedRenderbufferStorageNative = Void Function(Uint32 renderbuffer, Uint32 internalformat, Int32 width, Int32 height);
 typedef GlNamedRenderbufferStorage = void Function(int renderbuffer, int internalformat, int width, int height);
@@ -4358,11 +4409,11 @@ typedef GlNamedRenderbufferStorage = void Function(int renderbuffer, int interna
 typedef GlNamedRenderbufferStorageMultisampleNative = Void Function(Uint32 renderbuffer, Int32 samples, Uint32 internalformat, Int32 width, Int32 height);
 typedef GlNamedRenderbufferStorageMultisample = void Function(int renderbuffer, int samples, int internalformat, int width, int height);
 
-typedef GlGetNamedRenderbufferParameterivNative = Void Function(Uint32 renderbuffer, Uint32 pname, Pointer params);
-typedef GlGetNamedRenderbufferParameteriv = void Function(int renderbuffer, int pname, Pointer params);
+typedef GlGetNamedRenderbufferParameterivNative = Void Function(Uint32 renderbuffer, Uint32 pname, Pointer<Int32> params);
+typedef GlGetNamedRenderbufferParameteriv = void Function(int renderbuffer, int pname, Pointer<Int32> params);
 
-typedef GlCreateTexturesNative = Void Function(Uint32 target, Int32 n, Pointer textures);
-typedef GlCreateTextures = void Function(int target, int n, Pointer textures);
+typedef GlCreateTexturesNative = Void Function(Uint32 target, Int32 n, Pointer<Uint32> textures);
+typedef GlCreateTextures = void Function(int target, int n, Pointer<Uint32> textures);
 
 typedef GlTextureBufferNative = Void Function(Uint32 texture, Uint32 internalformat, Uint32 buffer);
 typedef GlTextureBuffer = void Function(int texture, int internalformat, int buffer);
@@ -4415,20 +4466,20 @@ typedef GlCopyTextureSubImage3D = void Function(int texture, int level, int xoff
 typedef GlTextureParameterfNative = Void Function(Uint32 texture, Uint32 pname, Float param);
 typedef GlTextureParameterf = void Function(int texture, int pname, double param);
 
-typedef GlTextureParameterfvNative = Void Function(Uint32 texture, Uint32 pname, Pointer param);
-typedef GlTextureParameterfv = void Function(int texture, int pname, Pointer param);
+typedef GlTextureParameterfvNative = Void Function(Uint32 texture, Uint32 pname, Pointer<Float> param);
+typedef GlTextureParameterfv = void Function(int texture, int pname, Pointer<Float> param);
 
 typedef GlTextureParameteriNative = Void Function(Uint32 texture, Uint32 pname, Int32 param);
 typedef GlTextureParameteri = void Function(int texture, int pname, int param);
 
-typedef GlTextureParameterIivNative = Void Function(Uint32 texture, Uint32 pname, Pointer params);
-typedef GlTextureParameterIiv = void Function(int texture, int pname, Pointer params);
+typedef GlTextureParameterIivNative = Void Function(Uint32 texture, Uint32 pname, Pointer<Int32> params);
+typedef GlTextureParameterIiv = void Function(int texture, int pname, Pointer<Int32> params);
 
-typedef GlTextureParameterIuivNative = Void Function(Uint32 texture, Uint32 pname, Pointer params);
-typedef GlTextureParameterIuiv = void Function(int texture, int pname, Pointer params);
+typedef GlTextureParameterIuivNative = Void Function(Uint32 texture, Uint32 pname, Pointer<Uint32> params);
+typedef GlTextureParameterIuiv = void Function(int texture, int pname, Pointer<Uint32> params);
 
-typedef GlTextureParameterivNative = Void Function(Uint32 texture, Uint32 pname, Pointer param);
-typedef GlTextureParameteriv = void Function(int texture, int pname, Pointer param);
+typedef GlTextureParameterivNative = Void Function(Uint32 texture, Uint32 pname, Pointer<Int32> param);
+typedef GlTextureParameteriv = void Function(int texture, int pname, Pointer<Int32> param);
 
 typedef GlGenerateTextureMipmapNative = Void Function(Uint32 texture);
 typedef GlGenerateTextureMipmap = void Function(int texture);
@@ -4442,26 +4493,26 @@ typedef GlGetTextureImage = void Function(int texture, int level, int format, in
 typedef GlGetCompressedTextureImageNative = Void Function(Uint32 texture, Int32 level, Int32 bufSize, Pointer pixels);
 typedef GlGetCompressedTextureImage = void Function(int texture, int level, int bufSize, Pointer pixels);
 
-typedef GlGetTextureLevelParameterfvNative = Void Function(Uint32 texture, Int32 level, Uint32 pname, Pointer params);
-typedef GlGetTextureLevelParameterfv = void Function(int texture, int level, int pname, Pointer params);
+typedef GlGetTextureLevelParameterfvNative = Void Function(Uint32 texture, Int32 level, Uint32 pname, Pointer<Float> params);
+typedef GlGetTextureLevelParameterfv = void Function(int texture, int level, int pname, Pointer<Float> params);
 
-typedef GlGetTextureLevelParameterivNative = Void Function(Uint32 texture, Int32 level, Uint32 pname, Pointer params);
-typedef GlGetTextureLevelParameteriv = void Function(int texture, int level, int pname, Pointer params);
+typedef GlGetTextureLevelParameterivNative = Void Function(Uint32 texture, Int32 level, Uint32 pname, Pointer<Int32> params);
+typedef GlGetTextureLevelParameteriv = void Function(int texture, int level, int pname, Pointer<Int32> params);
 
-typedef GlGetTextureParameterfvNative = Void Function(Uint32 texture, Uint32 pname, Pointer params);
-typedef GlGetTextureParameterfv = void Function(int texture, int pname, Pointer params);
+typedef GlGetTextureParameterfvNative = Void Function(Uint32 texture, Uint32 pname, Pointer<Float> params);
+typedef GlGetTextureParameterfv = void Function(int texture, int pname, Pointer<Float> params);
 
-typedef GlGetTextureParameterIivNative = Void Function(Uint32 texture, Uint32 pname, Pointer params);
-typedef GlGetTextureParameterIiv = void Function(int texture, int pname, Pointer params);
+typedef GlGetTextureParameterIivNative = Void Function(Uint32 texture, Uint32 pname, Pointer<Int32> params);
+typedef GlGetTextureParameterIiv = void Function(int texture, int pname, Pointer<Int32> params);
 
-typedef GlGetTextureParameterIuivNative = Void Function(Uint32 texture, Uint32 pname, Pointer params);
-typedef GlGetTextureParameterIuiv = void Function(int texture, int pname, Pointer params);
+typedef GlGetTextureParameterIuivNative = Void Function(Uint32 texture, Uint32 pname, Pointer<Uint32> params);
+typedef GlGetTextureParameterIuiv = void Function(int texture, int pname, Pointer<Uint32> params);
 
-typedef GlGetTextureParameterivNative = Void Function(Uint32 texture, Uint32 pname, Pointer params);
-typedef GlGetTextureParameteriv = void Function(int texture, int pname, Pointer params);
+typedef GlGetTextureParameterivNative = Void Function(Uint32 texture, Uint32 pname, Pointer<Int32> params);
+typedef GlGetTextureParameteriv = void Function(int texture, int pname, Pointer<Int32> params);
 
-typedef GlCreateVertexArraysNative = Void Function(Int32 n, Pointer arrays);
-typedef GlCreateVertexArrays = void Function(int n, Pointer arrays);
+typedef GlCreateVertexArraysNative = Void Function(Int32 n, Pointer<Uint32> arrays);
+typedef GlCreateVertexArrays = void Function(int n, Pointer<Uint32> arrays);
 
 typedef GlDisableVertexArrayAttribNative = Void Function(Uint32 vaobj, Uint32 index);
 typedef GlDisableVertexArrayAttrib = void Function(int vaobj, int index);
@@ -4475,8 +4526,8 @@ typedef GlVertexArrayElementBuffer = void Function(int vaobj, int buffer);
 typedef GlVertexArrayVertexBufferNative = Void Function(Uint32 vaobj, Uint32 bindingindex, Uint32 buffer, Int64 offset, Int32 stride);
 typedef GlVertexArrayVertexBuffer = void Function(int vaobj, int bindingindex, int buffer, int offset, int stride);
 
-typedef GlVertexArrayVertexBuffersNative = Void Function(Uint32 vaobj, Uint32 first, Int32 count, Pointer buffers, Pointer offsets, Pointer strides);
-typedef GlVertexArrayVertexBuffers = void Function(int vaobj, int first, int count, Pointer buffers, Pointer offsets, Pointer strides);
+typedef GlVertexArrayVertexBuffersNative = Void Function(Uint32 vaobj, Uint32 first, Int32 count, Pointer<Uint32> buffers, Pointer<Int64> offsets, Pointer<Int32> strides);
+typedef GlVertexArrayVertexBuffers = void Function(int vaobj, int first, int count, Pointer<Uint32> buffers, Pointer<Int64> offsets, Pointer<Int32> strides);
 
 typedef GlVertexArrayAttribBindingNative = Void Function(Uint32 vaobj, Uint32 attribindex, Uint32 bindingindex);
 typedef GlVertexArrayAttribBinding = void Function(int vaobj, int attribindex, int bindingindex);
@@ -4493,23 +4544,23 @@ typedef GlVertexArrayAttribLFormat = void Function(int vaobj, int attribindex, i
 typedef GlVertexArrayBindingDivisorNative = Void Function(Uint32 vaobj, Uint32 bindingindex, Uint32 divisor);
 typedef GlVertexArrayBindingDivisor = void Function(int vaobj, int bindingindex, int divisor);
 
-typedef GlGetVertexArrayivNative = Void Function(Uint32 vaobj, Uint32 pname, Pointer param);
-typedef GlGetVertexArrayiv = void Function(int vaobj, int pname, Pointer param);
+typedef GlGetVertexArrayivNative = Void Function(Uint32 vaobj, Uint32 pname, Pointer<Int32> param);
+typedef GlGetVertexArrayiv = void Function(int vaobj, int pname, Pointer<Int32> param);
 
-typedef GlGetVertexArrayIndexedivNative = Void Function(Uint32 vaobj, Uint32 index, Uint32 pname, Pointer param);
-typedef GlGetVertexArrayIndexediv = void Function(int vaobj, int index, int pname, Pointer param);
+typedef GlGetVertexArrayIndexedivNative = Void Function(Uint32 vaobj, Uint32 index, Uint32 pname, Pointer<Int32> param);
+typedef GlGetVertexArrayIndexediv = void Function(int vaobj, int index, int pname, Pointer<Int32> param);
 
-typedef GlGetVertexArrayIndexed64ivNative = Void Function(Uint32 vaobj, Uint32 index, Uint32 pname, Pointer param);
-typedef GlGetVertexArrayIndexed64iv = void Function(int vaobj, int index, int pname, Pointer param);
+typedef GlGetVertexArrayIndexed64ivNative = Void Function(Uint32 vaobj, Uint32 index, Uint32 pname, Pointer<Int64> param);
+typedef GlGetVertexArrayIndexed64iv = void Function(int vaobj, int index, int pname, Pointer<Int64> param);
 
-typedef GlCreateSamplersNative = Void Function(Int32 n, Pointer samplers);
-typedef GlCreateSamplers = void Function(int n, Pointer samplers);
+typedef GlCreateSamplersNative = Void Function(Int32 n, Pointer<Uint32> samplers);
+typedef GlCreateSamplers = void Function(int n, Pointer<Uint32> samplers);
 
-typedef GlCreateProgramPipelinesNative = Void Function(Int32 n, Pointer pipelines);
-typedef GlCreateProgramPipelines = void Function(int n, Pointer pipelines);
+typedef GlCreateProgramPipelinesNative = Void Function(Int32 n, Pointer<Uint32> pipelines);
+typedef GlCreateProgramPipelines = void Function(int n, Pointer<Uint32> pipelines);
 
-typedef GlCreateQueriesNative = Void Function(Uint32 target, Int32 n, Pointer ids);
-typedef GlCreateQueries = void Function(int target, int n, Pointer ids);
+typedef GlCreateQueriesNative = Void Function(Uint32 target, Int32 n, Pointer<Uint32> ids);
+typedef GlCreateQueries = void Function(int target, int n, Pointer<Uint32> ids);
 
 typedef GlGetQueryBufferObjecti64vNative = Void Function(Uint32 id, Uint32 buffer, Uint32 pname, Int64 offset);
 typedef GlGetQueryBufferObjecti64v = void Function(int id, int buffer, int pname, int offset);
@@ -4541,17 +4592,17 @@ typedef GlGetnCompressedTexImage = void Function(int target, int lod, int bufSiz
 typedef GlGetnTexImageNative = Void Function(Uint32 target, Int32 level, Uint32 format, Uint32 type, Int32 bufSize, Pointer pixels);
 typedef GlGetnTexImage = void Function(int target, int level, int format, int type, int bufSize, Pointer pixels);
 
-typedef GlGetnUniformdvNative = Void Function(Uint32 program, Int32 location, Int32 bufSize, Pointer params);
-typedef GlGetnUniformdv = void Function(int program, int location, int bufSize, Pointer params);
+typedef GlGetnUniformdvNative = Void Function(Uint32 program, Int32 location, Int32 bufSize, Pointer<Double> params);
+typedef GlGetnUniformdv = void Function(int program, int location, int bufSize, Pointer<Double> params);
 
-typedef GlGetnUniformfvNative = Void Function(Uint32 program, Int32 location, Int32 bufSize, Pointer params);
-typedef GlGetnUniformfv = void Function(int program, int location, int bufSize, Pointer params);
+typedef GlGetnUniformfvNative = Void Function(Uint32 program, Int32 location, Int32 bufSize, Pointer<Float> params);
+typedef GlGetnUniformfv = void Function(int program, int location, int bufSize, Pointer<Float> params);
 
-typedef GlGetnUniformivNative = Void Function(Uint32 program, Int32 location, Int32 bufSize, Pointer params);
-typedef GlGetnUniformiv = void Function(int program, int location, int bufSize, Pointer params);
+typedef GlGetnUniformivNative = Void Function(Uint32 program, Int32 location, Int32 bufSize, Pointer<Int32> params);
+typedef GlGetnUniformiv = void Function(int program, int location, int bufSize, Pointer<Int32> params);
 
-typedef GlGetnUniformuivNative = Void Function(Uint32 program, Int32 location, Int32 bufSize, Pointer params);
-typedef GlGetnUniformuiv = void Function(int program, int location, int bufSize, Pointer params);
+typedef GlGetnUniformuivNative = Void Function(Uint32 program, Int32 location, Int32 bufSize, Pointer<Uint32> params);
+typedef GlGetnUniformuiv = void Function(int program, int location, int bufSize, Pointer<Uint32> params);
 
 typedef GlReadnPixelsNative = Void Function(Int32 x, Int32 y, Int32 width, Int32 height, Uint32 format, Uint32 type, Int32 bufSize, Pointer data);
 typedef GlReadnPixels = void Function(int x, int y, int width, int height, int format, int type, int bufSize, Pointer data);
@@ -4560,8 +4611,8 @@ typedef GlTextureBarrierNative = Void Function();
 typedef GlTextureBarrier = void Function();
 
 //GL_VERSION_4_6
-typedef GlSpecializeShaderNative = Void Function(Uint32 shader, Pointer pEntryPoint, Uint32 numSpecializationConstants, Pointer pConstantIndex, Pointer pConstantValue);
-typedef GlSpecializeShader = void Function(int shader, /*String*/ Pointer pEntryPoint, int numSpecializationConstants, Pointer pConstantIndex, Pointer pConstantValue);
+typedef GlSpecializeShaderNative = Void Function(Uint32 shader, Pointer pEntryPoint, Uint32 numSpecializationConstants, Pointer<Uint32> pConstantIndex, Pointer<Uint32> pConstantValue);
+typedef GlSpecializeShader = void Function(int shader, /*String*/ Pointer pEntryPoint, int numSpecializationConstants, Pointer<Uint32> pConstantIndex, Pointer<Uint32> pConstantValue);
 
 typedef GlMultiDrawArraysIndirectCountNative = Void Function(Uint32 mode, Pointer indirect, Int64 drawcount, Int32 maxdrawcount, Int32 stride);
 typedef GlMultiDrawArraysIndirectCount = void Function(int mode, Pointer indirect, int drawcount, int maxdrawcount, int stride);
@@ -4601,14 +4652,14 @@ typedef GlMakeImageHandleNonResidentARB = void Function(int handle);
 typedef GlUniformHandleui64ARBNative = Void Function(Int32 location, Uint64 value);
 typedef GlUniformHandleui64ARB = void Function(int location, int value);
 
-typedef GlUniformHandleui64vARBNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniformHandleui64vARB = void Function(int location, int count, Pointer value);
+typedef GlUniformHandleui64vARBNative = Void Function(Int32 location, Int32 count, Pointer<Uint64> value);
+typedef GlUniformHandleui64vARB = void Function(int location, int count, Pointer<Uint64> value);
 
 typedef GlProgramUniformHandleui64ARBNative = Void Function(Uint32 program, Int32 location, Uint64 value);
 typedef GlProgramUniformHandleui64ARB = void Function(int program, int location, int value);
 
-typedef GlProgramUniformHandleui64vARBNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer values);
-typedef GlProgramUniformHandleui64vARB = void Function(int program, int location, int count, Pointer values);
+typedef GlProgramUniformHandleui64vARBNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Uint64> values);
+typedef GlProgramUniformHandleui64vARB = void Function(int program, int location, int count, Pointer<Uint64> values);
 
 typedef GlIsTextureHandleResidentARBNative = Uint8 Function(Uint64 handle);
 typedef GlIsTextureHandleResidentARB = int Function(int handle);
@@ -4619,11 +4670,11 @@ typedef GlIsImageHandleResidentARB = int Function(int handle);
 typedef GlVertexAttribL1ui64ARBNative = Void Function(Uint32 index, Uint64 x);
 typedef GlVertexAttribL1ui64ARB = void Function(int index, int x);
 
-typedef GlVertexAttribL1ui64vARBNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttribL1ui64vARB = void Function(int index, Pointer v);
+typedef GlVertexAttribL1ui64vARBNative = Void Function(Uint32 index, Pointer<Uint64> v);
+typedef GlVertexAttribL1ui64vARB = void Function(int index, Pointer<Uint64> v);
 
-typedef GlGetVertexAttribLui64vARBNative = Void Function(Uint32 index, Uint32 pname, Pointer params);
-typedef GlGetVertexAttribLui64vARB = void Function(int index, int pname, Pointer params);
+typedef GlGetVertexAttribLui64vARBNative = Void Function(Uint32 index, Uint32 pname, Pointer<Uint64> params);
+typedef GlGetVertexAttribLui64vARB = void Function(int index, int pname, Pointer<Uint64> params);
 
 //GL_ARB_cl_event
 typedef GlCreateSyncFromCLeventARBNative = Pointer Function(Pointer context, Pointer event, Uint32 flags);
@@ -4634,8 +4685,8 @@ typedef GlDispatchComputeGroupSizeARBNative = Void Function(Uint32 num_groups_x,
 typedef GlDispatchComputeGroupSizeARB = void Function(int num_groups_x, int num_groups_y, int num_groups_z, int group_size_x, int group_size_y, int group_size_z);
 
 //GL_ARB_debug_output
-typedef GlDebugMessageControlARBNative = Void Function(Uint32 source, Uint32 type, Uint32 severity, Int32 count, Pointer ids, Uint8 enabled);
-typedef GlDebugMessageControlARB = void Function(int source, int type, int severity, int count, Pointer ids, int enabled);
+typedef GlDebugMessageControlARBNative = Void Function(Uint32 source, Uint32 type, Uint32 severity, Int32 count, Pointer<Uint32> ids, Uint8 enabled);
+typedef GlDebugMessageControlARB = void Function(int source, int type, int severity, int count, Pointer<Uint32> ids, int enabled);
 
 typedef GlDebugMessageInsertARBNative = Void Function(Uint32 source, Uint32 type, Uint32 id, Uint32 severity, Int32 length, Pointer buf);
 typedef GlDebugMessageInsertARB = void Function(int source, int type, int id, int severity, int length, /*String*/ Pointer buf);
@@ -4643,8 +4694,8 @@ typedef GlDebugMessageInsertARB = void Function(int source, int type, int id, in
 typedef GlDebugMessageCallbackARBNative = Void Function(Pointer callback, Pointer userParam);
 typedef GlDebugMessageCallbackARB = void Function(Pointer callback, Pointer userParam);
 
-typedef GlGetDebugMessageLogARBNative = Uint32 Function(Uint32 count, Int32 bufSize, Pointer sources, Pointer types, Pointer ids, Pointer severities, Pointer lengths, Pointer messageLog);
-typedef GlGetDebugMessageLogARB = int Function(int count, int bufSize, Pointer sources, Pointer types, Pointer ids, Pointer severities, Pointer lengths, Pointer messageLog);
+typedef GlGetDebugMessageLogARBNative = Uint32 Function(Uint32 count, Int32 bufSize, Pointer<Uint32> sources, Pointer<Uint32> types, Pointer<Uint32> ids, Pointer<Uint32> severities, Pointer<Int32> lengths, Pointer messageLog);
+typedef GlGetDebugMessageLogARB = int Function(int count, int bufSize, Pointer<Uint32> sources, Pointer<Uint32> types, Pointer<Uint32> ids, Pointer<Uint32> severities, Pointer<Int32> lengths, Pointer messageLog);
 
 //GL_ARB_draw_buffers_blend
 typedef GlBlendEquationiARBNative = Void Function(Uint32 buf, Uint32 mode);
@@ -4680,8 +4731,8 @@ typedef GlFramebufferTextureFaceARBNative = Void Function(Uint32 target, Uint32 
 typedef GlFramebufferTextureFaceARB = void Function(int target, int attachment, int texture, int level, int face);
 
 //GL_ARB_gl_spirv
-typedef GlSpecializeShaderARBNative = Void Function(Uint32 shader, Pointer pEntryPoint, Uint32 numSpecializationConstants, Pointer pConstantIndex, Pointer pConstantValue);
-typedef GlSpecializeShaderARB = void Function(int shader, /*String*/ Pointer pEntryPoint, int numSpecializationConstants, Pointer pConstantIndex, Pointer pConstantValue);
+typedef GlSpecializeShaderARBNative = Void Function(Uint32 shader, Pointer pEntryPoint, Uint32 numSpecializationConstants, Pointer<Uint32> pConstantIndex, Pointer<Uint32> pConstantValue);
+typedef GlSpecializeShaderARB = void Function(int shader, /*String*/ Pointer pEntryPoint, int numSpecializationConstants, Pointer<Uint32> pConstantIndex, Pointer<Uint32> pConstantValue);
 
 //GL_ARB_gpu_shader_int64
 typedef GlUniform1i64ARBNative = Void Function(Int32 location, Int64 x);
@@ -4696,17 +4747,17 @@ typedef GlUniform3i64ARB = void Function(int location, int x, int y, int z);
 typedef GlUniform4i64ARBNative = Void Function(Int32 location, Int64 x, Int64 y, Int64 z, Int64 w);
 typedef GlUniform4i64ARB = void Function(int location, int x, int y, int z, int w);
 
-typedef GlUniform1i64vARBNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform1i64vARB = void Function(int location, int count, Pointer value);
+typedef GlUniform1i64vARBNative = Void Function(Int32 location, Int32 count, Pointer<Int64> value);
+typedef GlUniform1i64vARB = void Function(int location, int count, Pointer<Int64> value);
 
-typedef GlUniform2i64vARBNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform2i64vARB = void Function(int location, int count, Pointer value);
+typedef GlUniform2i64vARBNative = Void Function(Int32 location, Int32 count, Pointer<Int64> value);
+typedef GlUniform2i64vARB = void Function(int location, int count, Pointer<Int64> value);
 
-typedef GlUniform3i64vARBNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform3i64vARB = void Function(int location, int count, Pointer value);
+typedef GlUniform3i64vARBNative = Void Function(Int32 location, Int32 count, Pointer<Int64> value);
+typedef GlUniform3i64vARB = void Function(int location, int count, Pointer<Int64> value);
 
-typedef GlUniform4i64vARBNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform4i64vARB = void Function(int location, int count, Pointer value);
+typedef GlUniform4i64vARBNative = Void Function(Int32 location, Int32 count, Pointer<Int64> value);
+typedef GlUniform4i64vARB = void Function(int location, int count, Pointer<Int64> value);
 
 typedef GlUniform1ui64ARBNative = Void Function(Int32 location, Uint64 x);
 typedef GlUniform1ui64ARB = void Function(int location, int x);
@@ -4720,29 +4771,29 @@ typedef GlUniform3ui64ARB = void Function(int location, int x, int y, int z);
 typedef GlUniform4ui64ARBNative = Void Function(Int32 location, Uint64 x, Uint64 y, Uint64 z, Uint64 w);
 typedef GlUniform4ui64ARB = void Function(int location, int x, int y, int z, int w);
 
-typedef GlUniform1ui64vARBNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform1ui64vARB = void Function(int location, int count, Pointer value);
+typedef GlUniform1ui64vARBNative = Void Function(Int32 location, Int32 count, Pointer<Uint64> value);
+typedef GlUniform1ui64vARB = void Function(int location, int count, Pointer<Uint64> value);
 
-typedef GlUniform2ui64vARBNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform2ui64vARB = void Function(int location, int count, Pointer value);
+typedef GlUniform2ui64vARBNative = Void Function(Int32 location, Int32 count, Pointer<Uint64> value);
+typedef GlUniform2ui64vARB = void Function(int location, int count, Pointer<Uint64> value);
 
-typedef GlUniform3ui64vARBNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform3ui64vARB = void Function(int location, int count, Pointer value);
+typedef GlUniform3ui64vARBNative = Void Function(Int32 location, Int32 count, Pointer<Uint64> value);
+typedef GlUniform3ui64vARB = void Function(int location, int count, Pointer<Uint64> value);
 
-typedef GlUniform4ui64vARBNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform4ui64vARB = void Function(int location, int count, Pointer value);
+typedef GlUniform4ui64vARBNative = Void Function(Int32 location, Int32 count, Pointer<Uint64> value);
+typedef GlUniform4ui64vARB = void Function(int location, int count, Pointer<Uint64> value);
 
-typedef GlGetUniformi64vARBNative = Void Function(Uint32 program, Int32 location, Pointer params);
-typedef GlGetUniformi64vARB = void Function(int program, int location, Pointer params);
+typedef GlGetUniformi64vARBNative = Void Function(Uint32 program, Int32 location, Pointer<Int64> params);
+typedef GlGetUniformi64vARB = void Function(int program, int location, Pointer<Int64> params);
 
-typedef GlGetUniformui64vARBNative = Void Function(Uint32 program, Int32 location, Pointer params);
-typedef GlGetUniformui64vARB = void Function(int program, int location, Pointer params);
+typedef GlGetUniformui64vARBNative = Void Function(Uint32 program, Int32 location, Pointer<Uint64> params);
+typedef GlGetUniformui64vARB = void Function(int program, int location, Pointer<Uint64> params);
 
-typedef GlGetnUniformi64vARBNative = Void Function(Uint32 program, Int32 location, Int32 bufSize, Pointer params);
-typedef GlGetnUniformi64vARB = void Function(int program, int location, int bufSize, Pointer params);
+typedef GlGetnUniformi64vARBNative = Void Function(Uint32 program, Int32 location, Int32 bufSize, Pointer<Int64> params);
+typedef GlGetnUniformi64vARB = void Function(int program, int location, int bufSize, Pointer<Int64> params);
 
-typedef GlGetnUniformui64vARBNative = Void Function(Uint32 program, Int32 location, Int32 bufSize, Pointer params);
-typedef GlGetnUniformui64vARB = void Function(int program, int location, int bufSize, Pointer params);
+typedef GlGetnUniformui64vARBNative = Void Function(Uint32 program, Int32 location, Int32 bufSize, Pointer<Uint64> params);
+typedef GlGetnUniformui64vARB = void Function(int program, int location, int bufSize, Pointer<Uint64> params);
 
 typedef GlProgramUniform1i64ARBNative = Void Function(Uint32 program, Int32 location, Int64 x);
 typedef GlProgramUniform1i64ARB = void Function(int program, int location, int x);
@@ -4756,17 +4807,17 @@ typedef GlProgramUniform3i64ARB = void Function(int program, int location, int x
 typedef GlProgramUniform4i64ARBNative = Void Function(Uint32 program, Int32 location, Int64 x, Int64 y, Int64 z, Int64 w);
 typedef GlProgramUniform4i64ARB = void Function(int program, int location, int x, int y, int z, int w);
 
-typedef GlProgramUniform1i64vARBNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform1i64vARB = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform1i64vARBNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Int64> value);
+typedef GlProgramUniform1i64vARB = void Function(int program, int location, int count, Pointer<Int64> value);
 
-typedef GlProgramUniform2i64vARBNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform2i64vARB = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform2i64vARBNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Int64> value);
+typedef GlProgramUniform2i64vARB = void Function(int program, int location, int count, Pointer<Int64> value);
 
-typedef GlProgramUniform3i64vARBNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform3i64vARB = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform3i64vARBNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Int64> value);
+typedef GlProgramUniform3i64vARB = void Function(int program, int location, int count, Pointer<Int64> value);
 
-typedef GlProgramUniform4i64vARBNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform4i64vARB = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform4i64vARBNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Int64> value);
+typedef GlProgramUniform4i64vARB = void Function(int program, int location, int count, Pointer<Int64> value);
 
 typedef GlProgramUniform1ui64ARBNative = Void Function(Uint32 program, Int32 location, Uint64 x);
 typedef GlProgramUniform1ui64ARB = void Function(int program, int location, int x);
@@ -4780,17 +4831,17 @@ typedef GlProgramUniform3ui64ARB = void Function(int program, int location, int 
 typedef GlProgramUniform4ui64ARBNative = Void Function(Uint32 program, Int32 location, Uint64 x, Uint64 y, Uint64 z, Uint64 w);
 typedef GlProgramUniform4ui64ARB = void Function(int program, int location, int x, int y, int z, int w);
 
-typedef GlProgramUniform1ui64vARBNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform1ui64vARB = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform1ui64vARBNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Uint64> value);
+typedef GlProgramUniform1ui64vARB = void Function(int program, int location, int count, Pointer<Uint64> value);
 
-typedef GlProgramUniform2ui64vARBNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform2ui64vARB = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform2ui64vARBNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Uint64> value);
+typedef GlProgramUniform2ui64vARB = void Function(int program, int location, int count, Pointer<Uint64> value);
 
-typedef GlProgramUniform3ui64vARBNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform3ui64vARB = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform3ui64vARBNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Uint64> value);
+typedef GlProgramUniform3ui64vARB = void Function(int program, int location, int count, Pointer<Uint64> value);
 
-typedef GlProgramUniform4ui64vARBNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform4ui64vARB = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform4ui64vARBNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Uint64> value);
+typedef GlProgramUniform4ui64vARB = void Function(int program, int location, int count, Pointer<Uint64> value);
 
 //GL_ARB_indirect_parameters
 typedef GlMultiDrawArraysIndirectCountARBNative = Void Function(Uint32 mode, Pointer indirect, Int64 drawcount, Int32 maxdrawcount, Int32 stride);
@@ -4820,24 +4871,24 @@ typedef GlReadnPixelsARB = void Function(int x, int y, int width, int height, in
 typedef GlGetnCompressedTexImageARBNative = Void Function(Uint32 target, Int32 lod, Int32 bufSize, Pointer img);
 typedef GlGetnCompressedTexImageARB = void Function(int target, int lod, int bufSize, Pointer img);
 
-typedef GlGetnUniformfvARBNative = Void Function(Uint32 program, Int32 location, Int32 bufSize, Pointer params);
-typedef GlGetnUniformfvARB = void Function(int program, int location, int bufSize, Pointer params);
+typedef GlGetnUniformfvARBNative = Void Function(Uint32 program, Int32 location, Int32 bufSize, Pointer<Float> params);
+typedef GlGetnUniformfvARB = void Function(int program, int location, int bufSize, Pointer<Float> params);
 
-typedef GlGetnUniformivARBNative = Void Function(Uint32 program, Int32 location, Int32 bufSize, Pointer params);
-typedef GlGetnUniformivARB = void Function(int program, int location, int bufSize, Pointer params);
+typedef GlGetnUniformivARBNative = Void Function(Uint32 program, Int32 location, Int32 bufSize, Pointer<Int32> params);
+typedef GlGetnUniformivARB = void Function(int program, int location, int bufSize, Pointer<Int32> params);
 
-typedef GlGetnUniformuivARBNative = Void Function(Uint32 program, Int32 location, Int32 bufSize, Pointer params);
-typedef GlGetnUniformuivARB = void Function(int program, int location, int bufSize, Pointer params);
+typedef GlGetnUniformuivARBNative = Void Function(Uint32 program, Int32 location, Int32 bufSize, Pointer<Uint32> params);
+typedef GlGetnUniformuivARB = void Function(int program, int location, int bufSize, Pointer<Uint32> params);
 
-typedef GlGetnUniformdvARBNative = Void Function(Uint32 program, Int32 location, Int32 bufSize, Pointer params);
-typedef GlGetnUniformdvARB = void Function(int program, int location, int bufSize, Pointer params);
+typedef GlGetnUniformdvARBNative = Void Function(Uint32 program, Int32 location, Int32 bufSize, Pointer<Double> params);
+typedef GlGetnUniformdvARB = void Function(int program, int location, int bufSize, Pointer<Double> params);
 
 //GL_ARB_sample_locations
-typedef GlFramebufferSampleLocationsfvARBNative = Void Function(Uint32 target, Uint32 start, Int32 count, Pointer v);
-typedef GlFramebufferSampleLocationsfvARB = void Function(int target, int start, int count, Pointer v);
+typedef GlFramebufferSampleLocationsfvARBNative = Void Function(Uint32 target, Uint32 start, Int32 count, Pointer<Float> v);
+typedef GlFramebufferSampleLocationsfvARB = void Function(int target, int start, int count, Pointer<Float> v);
 
-typedef GlNamedFramebufferSampleLocationsfvARBNative = Void Function(Uint32 framebuffer, Uint32 start, Int32 count, Pointer v);
-typedef GlNamedFramebufferSampleLocationsfvARB = void Function(int framebuffer, int start, int count, Pointer v);
+typedef GlNamedFramebufferSampleLocationsfvARBNative = Void Function(Uint32 framebuffer, Uint32 start, Int32 count, Pointer<Float> v);
+typedef GlNamedFramebufferSampleLocationsfvARB = void Function(int framebuffer, int start, int count, Pointer<Float> v);
 
 typedef GlEvaluateDepthValuesARBNative = Void Function();
 typedef GlEvaluateDepthValuesARB = void Function();
@@ -4853,17 +4904,17 @@ typedef GlNamedStringARB = void Function(int type, int namelen, /*String*/ Point
 typedef GlDeleteNamedStringARBNative = Void Function(Int32 namelen, Pointer name);
 typedef GlDeleteNamedStringARB = void Function(int namelen, /*String*/ Pointer name);
 
-typedef GlCompileShaderIncludeARBNative = Void Function(Uint32 shader, Int32 count, Pointer path, Pointer length);
-typedef GlCompileShaderIncludeARB = void Function(int shader, int count, /*List<String>*/ Pointer path, Pointer length);
+typedef GlCompileShaderIncludeARBNative = Void Function(Uint32 shader, Int32 count, Pointer path, Pointer<Int32> length);
+typedef GlCompileShaderIncludeARB = void Function(int shader, int count, /*List<String>*/ Pointer path, Pointer<Int32> length);
 
 typedef GlIsNamedStringARBNative = Uint8 Function(Int32 namelen, Pointer name);
 typedef GlIsNamedStringARB = int Function(int namelen, /*String*/ Pointer name);
 
-typedef GlGetNamedStringARBNative = Void Function(Int32 namelen, Pointer name, Int32 bufSize, Pointer stringlen, Pointer string);
-typedef GlGetNamedStringARB = void Function(int namelen, /*String*/ Pointer name, int bufSize, Pointer stringlen, Pointer string);
+typedef GlGetNamedStringARBNative = Void Function(Int32 namelen, Pointer name, Int32 bufSize, Pointer<Int32> stringlen, Pointer string);
+typedef GlGetNamedStringARB = void Function(int namelen, /*String*/ Pointer name, int bufSize, Pointer<Int32> stringlen, Pointer string);
 
-typedef GlGetNamedStringivARBNative = Void Function(Int32 namelen, Pointer name, Uint32 pname, Pointer params);
-typedef GlGetNamedStringivARB = void Function(int namelen, /*String*/ Pointer name, int pname, Pointer params);
+typedef GlGetNamedStringivARBNative = Void Function(Int32 namelen, Pointer name, Uint32 pname, Pointer<Int32> params);
+typedef GlGetNamedStringivARB = void Function(int namelen, /*String*/ Pointer name, int pname, Pointer<Int32> params);
 
 //GL_ARB_sparse_buffer
 typedef GlBufferPageCommitmentARBNative = Void Function(Uint32 target, Int64 offset, Int64 size, Uint8 commit);
@@ -4883,6 +4934,13 @@ typedef GlTexPageCommitmentARB = void Function(int target, int level, int xoffse
 typedef GlTexBufferARBNative = Void Function(Uint32 target, Uint32 internalformat, Uint32 buffer);
 typedef GlTexBufferARB = void Function(int target, int internalformat, int buffer);
 
+//GL_ARB_viewport_array
+typedef GlDepthRangeArraydvNVNative = Void Function(Uint32 first, Int32 count, Pointer<Double> v);
+typedef GlDepthRangeArraydvNV = void Function(int first, int count, Pointer<Double> v);
+
+typedef GlDepthRangeIndexeddNVNative = Void Function(Uint32 index, Double n, Double f);
+typedef GlDepthRangeIndexeddNV = void Function(int index, double n, double f);
+
 //GL_KHR_blend_equation_advanced
 typedef GlBlendBarrierKHRNative = Void Function();
 typedef GlBlendBarrierKHR = void Function();
@@ -4899,29 +4957,29 @@ typedef GlNamedRenderbufferStorageMultisampleAdvancedAMDNative = Void Function(U
 typedef GlNamedRenderbufferStorageMultisampleAdvancedAMD = void Function(int renderbuffer, int samples, int storageSamples, int internalformat, int width, int height);
 
 //GL_AMD_performance_monitor
-typedef GlGetPerfMonitorGroupsAMDNative = Void Function(Pointer numGroups, Int32 groupsSize, Pointer groups);
-typedef GlGetPerfMonitorGroupsAMD = void Function(Pointer numGroups, int groupsSize, Pointer groups);
+typedef GlGetPerfMonitorGroupsAMDNative = Void Function(Pointer<Int32> numGroups, Int32 groupsSize, Pointer<Uint32> groups);
+typedef GlGetPerfMonitorGroupsAMD = void Function(Pointer<Int32> numGroups, int groupsSize, Pointer<Uint32> groups);
 
-typedef GlGetPerfMonitorCountersAMDNative = Void Function(Uint32 group, Pointer numCounters, Pointer maxActiveCounters, Int32 counterSize, Pointer counters);
-typedef GlGetPerfMonitorCountersAMD = void Function(int group, Pointer numCounters, Pointer maxActiveCounters, int counterSize, Pointer counters);
+typedef GlGetPerfMonitorCountersAMDNative = Void Function(Uint32 group, Pointer<Int32> numCounters, Pointer<Int32> maxActiveCounters, Int32 counterSize, Pointer<Uint32> counters);
+typedef GlGetPerfMonitorCountersAMD = void Function(int group, Pointer<Int32> numCounters, Pointer<Int32> maxActiveCounters, int counterSize, Pointer<Uint32> counters);
 
-typedef GlGetPerfMonitorGroupStringAMDNative = Void Function(Uint32 group, Int32 bufSize, Pointer length, Pointer groupString);
-typedef GlGetPerfMonitorGroupStringAMD = void Function(int group, int bufSize, Pointer length, Pointer groupString);
+typedef GlGetPerfMonitorGroupStringAMDNative = Void Function(Uint32 group, Int32 bufSize, Pointer<Int32> length, Pointer groupString);
+typedef GlGetPerfMonitorGroupStringAMD = void Function(int group, int bufSize, Pointer<Int32> length, Pointer groupString);
 
-typedef GlGetPerfMonitorCounterStringAMDNative = Void Function(Uint32 group, Uint32 counter, Int32 bufSize, Pointer length, Pointer counterString);
-typedef GlGetPerfMonitorCounterStringAMD = void Function(int group, int counter, int bufSize, Pointer length, Pointer counterString);
+typedef GlGetPerfMonitorCounterStringAMDNative = Void Function(Uint32 group, Uint32 counter, Int32 bufSize, Pointer<Int32> length, Pointer counterString);
+typedef GlGetPerfMonitorCounterStringAMD = void Function(int group, int counter, int bufSize, Pointer<Int32> length, Pointer counterString);
 
 typedef GlGetPerfMonitorCounterInfoAMDNative = Void Function(Uint32 group, Uint32 counter, Uint32 pname, Pointer data);
 typedef GlGetPerfMonitorCounterInfoAMD = void Function(int group, int counter, int pname, Pointer data);
 
-typedef GlGenPerfMonitorsAMDNative = Void Function(Int32 n, Pointer monitors);
-typedef GlGenPerfMonitorsAMD = void Function(int n, Pointer monitors);
+typedef GlGenPerfMonitorsAMDNative = Void Function(Int32 n, Pointer<Uint32> monitors);
+typedef GlGenPerfMonitorsAMD = void Function(int n, Pointer<Uint32> monitors);
 
-typedef GlDeletePerfMonitorsAMDNative = Void Function(Int32 n, Pointer monitors);
-typedef GlDeletePerfMonitorsAMD = void Function(int n, Pointer monitors);
+typedef GlDeletePerfMonitorsAMDNative = Void Function(Int32 n, Pointer<Uint32> monitors);
+typedef GlDeletePerfMonitorsAMD = void Function(int n, Pointer<Uint32> monitors);
 
-typedef GlSelectPerfMonitorCountersAMDNative = Void Function(Uint32 monitor, Uint8 enable, Uint32 group, Int32 numCounters, Pointer counterList);
-typedef GlSelectPerfMonitorCountersAMD = void Function(int monitor, int enable, int group, int numCounters, Pointer counterList);
+typedef GlSelectPerfMonitorCountersAMDNative = Void Function(Uint32 monitor, Uint8 enable, Uint32 group, Int32 numCounters, Pointer<Uint32> counterList);
+typedef GlSelectPerfMonitorCountersAMD = void Function(int monitor, int enable, int group, int numCounters, Pointer<Uint32> counterList);
 
 typedef GlBeginPerfMonitorAMDNative = Void Function(Uint32 monitor);
 typedef GlBeginPerfMonitorAMD = void Function(int monitor);
@@ -4929,22 +4987,22 @@ typedef GlBeginPerfMonitorAMD = void Function(int monitor);
 typedef GlEndPerfMonitorAMDNative = Void Function(Uint32 monitor);
 typedef GlEndPerfMonitorAMD = void Function(int monitor);
 
-typedef GlGetPerfMonitorCounterDataAMDNative = Void Function(Uint32 monitor, Uint32 pname, Int32 dataSize, Pointer data, Pointer bytesWritten);
-typedef GlGetPerfMonitorCounterDataAMD = void Function(int monitor, int pname, int dataSize, Pointer data, Pointer bytesWritten);
+typedef GlGetPerfMonitorCounterDataAMDNative = Void Function(Uint32 monitor, Uint32 pname, Int32 dataSize, Pointer<Uint32> data, Pointer<Int32> bytesWritten);
+typedef GlGetPerfMonitorCounterDataAMD = void Function(int monitor, int pname, int dataSize, Pointer<Uint32> data, Pointer<Int32> bytesWritten);
 
 //GL_EXT_EGL_image_storage
-typedef GlEGLImageTargetTexStorageEXTNative = Void Function(Uint32 target, Pointer image, Pointer attrib_list);
-typedef GlEGLImageTargetTexStorageEXT = void Function(int target, Pointer image, Pointer attrib_list);
+typedef GlEGLImageTargetTexStorageEXTNative = Void Function(Uint32 target, Pointer image, Pointer<Int32> attrib_list);
+typedef GlEGLImageTargetTexStorageEXT = void Function(int target, Pointer image, Pointer<Int32> attrib_list);
 
-typedef GlEGLImageTargetTextureStorageEXTNative = Void Function(Uint32 texture, Pointer image, Pointer attrib_list);
-typedef GlEGLImageTargetTextureStorageEXT = void Function(int texture, Pointer image, Pointer attrib_list);
+typedef GlEGLImageTargetTextureStorageEXTNative = Void Function(Uint32 texture, Pointer image, Pointer<Int32> attrib_list);
+typedef GlEGLImageTargetTextureStorageEXT = void Function(int texture, Pointer image, Pointer<Int32> attrib_list);
 
 //GL_EXT_debug_label
 typedef GlLabelObjectEXTNative = Void Function(Uint32 type, Uint32 object, Int32 length, Pointer label);
 typedef GlLabelObjectEXT = void Function(int type, int object, int length, /*String*/ Pointer label);
 
-typedef GlGetObjectLabelEXTNative = Void Function(Uint32 type, Uint32 object, Int32 bufSize, Pointer length, Pointer label);
-typedef GlGetObjectLabelEXT = void Function(int type, int object, int bufSize, Pointer length, Pointer label);
+typedef GlGetObjectLabelEXTNative = Void Function(Uint32 type, Uint32 object, Int32 bufSize, Pointer<Int32> length, Pointer label);
+typedef GlGetObjectLabelEXT = void Function(int type, int object, int bufSize, Pointer<Int32> length, Pointer label);
 
 //GL_EXT_debug_marker
 typedef GlInsertEventMarkerEXTNative = Void Function(Int32 length, Pointer marker);
@@ -4957,17 +5015,17 @@ typedef GlPopGroupMarkerEXTNative = Void Function();
 typedef GlPopGroupMarkerEXT = void Function();
 
 //GL_EXT_direct_state_access
-typedef GlMatrixLoadfEXTNative = Void Function(Uint32 mode, Pointer m);
-typedef GlMatrixLoadfEXT = void Function(int mode, Pointer m);
+typedef GlMatrixLoadfEXTNative = Void Function(Uint32 mode, Pointer<Float> m);
+typedef GlMatrixLoadfEXT = void Function(int mode, Pointer<Float> m);
 
-typedef GlMatrixLoaddEXTNative = Void Function(Uint32 mode, Pointer m);
-typedef GlMatrixLoaddEXT = void Function(int mode, Pointer m);
+typedef GlMatrixLoaddEXTNative = Void Function(Uint32 mode, Pointer<Double> m);
+typedef GlMatrixLoaddEXT = void Function(int mode, Pointer<Double> m);
 
-typedef GlMatrixMultfEXTNative = Void Function(Uint32 mode, Pointer m);
-typedef GlMatrixMultfEXT = void Function(int mode, Pointer m);
+typedef GlMatrixMultfEXTNative = Void Function(Uint32 mode, Pointer<Float> m);
+typedef GlMatrixMultfEXT = void Function(int mode, Pointer<Float> m);
 
-typedef GlMatrixMultdEXTNative = Void Function(Uint32 mode, Pointer m);
-typedef GlMatrixMultdEXT = void Function(int mode, Pointer m);
+typedef GlMatrixMultdEXTNative = Void Function(Uint32 mode, Pointer<Double> m);
+typedef GlMatrixMultdEXT = void Function(int mode, Pointer<Double> m);
 
 typedef GlMatrixLoadIdentityEXTNative = Void Function(Uint32 mode);
 typedef GlMatrixLoadIdentityEXT = void Function(int mode);
@@ -5011,14 +5069,14 @@ typedef GlPushClientAttribDefaultEXT = void Function(int mask);
 typedef GlTextureParameterfEXTNative = Void Function(Uint32 texture, Uint32 target, Uint32 pname, Float param);
 typedef GlTextureParameterfEXT = void Function(int texture, int target, int pname, double param);
 
-typedef GlTextureParameterfvEXTNative = Void Function(Uint32 texture, Uint32 target, Uint32 pname, Pointer params);
-typedef GlTextureParameterfvEXT = void Function(int texture, int target, int pname, Pointer params);
+typedef GlTextureParameterfvEXTNative = Void Function(Uint32 texture, Uint32 target, Uint32 pname, Pointer<Float> params);
+typedef GlTextureParameterfvEXT = void Function(int texture, int target, int pname, Pointer<Float> params);
 
 typedef GlTextureParameteriEXTNative = Void Function(Uint32 texture, Uint32 target, Uint32 pname, Int32 param);
 typedef GlTextureParameteriEXT = void Function(int texture, int target, int pname, int param);
 
-typedef GlTextureParameterivEXTNative = Void Function(Uint32 texture, Uint32 target, Uint32 pname, Pointer params);
-typedef GlTextureParameterivEXT = void Function(int texture, int target, int pname, Pointer params);
+typedef GlTextureParameterivEXTNative = Void Function(Uint32 texture, Uint32 target, Uint32 pname, Pointer<Int32> params);
+typedef GlTextureParameterivEXT = void Function(int texture, int target, int pname, Pointer<Int32> params);
 
 typedef GlTextureImage1DEXTNative = Void Function(Uint32 texture, Uint32 target, Int32 level, Int32 internalformat, Int32 width, Int32 border, Uint32 format, Uint32 type, Pointer pixels);
 typedef GlTextureImage1DEXT = void Function(int texture, int target, int level, int internalformat, int width, int border, int format, int type, Pointer pixels);
@@ -5047,17 +5105,17 @@ typedef GlCopyTextureSubImage2DEXT = void Function(int texture, int target, int 
 typedef GlGetTextureImageEXTNative = Void Function(Uint32 texture, Uint32 target, Int32 level, Uint32 format, Uint32 type, Pointer pixels);
 typedef GlGetTextureImageEXT = void Function(int texture, int target, int level, int format, int type, Pointer pixels);
 
-typedef GlGetTextureParameterfvEXTNative = Void Function(Uint32 texture, Uint32 target, Uint32 pname, Pointer params);
-typedef GlGetTextureParameterfvEXT = void Function(int texture, int target, int pname, Pointer params);
+typedef GlGetTextureParameterfvEXTNative = Void Function(Uint32 texture, Uint32 target, Uint32 pname, Pointer<Float> params);
+typedef GlGetTextureParameterfvEXT = void Function(int texture, int target, int pname, Pointer<Float> params);
 
-typedef GlGetTextureParameterivEXTNative = Void Function(Uint32 texture, Uint32 target, Uint32 pname, Pointer params);
-typedef GlGetTextureParameterivEXT = void Function(int texture, int target, int pname, Pointer params);
+typedef GlGetTextureParameterivEXTNative = Void Function(Uint32 texture, Uint32 target, Uint32 pname, Pointer<Int32> params);
+typedef GlGetTextureParameterivEXT = void Function(int texture, int target, int pname, Pointer<Int32> params);
 
-typedef GlGetTextureLevelParameterfvEXTNative = Void Function(Uint32 texture, Uint32 target, Int32 level, Uint32 pname, Pointer params);
-typedef GlGetTextureLevelParameterfvEXT = void Function(int texture, int target, int level, int pname, Pointer params);
+typedef GlGetTextureLevelParameterfvEXTNative = Void Function(Uint32 texture, Uint32 target, Int32 level, Uint32 pname, Pointer<Float> params);
+typedef GlGetTextureLevelParameterfvEXT = void Function(int texture, int target, int level, int pname, Pointer<Float> params);
 
-typedef GlGetTextureLevelParameterivEXTNative = Void Function(Uint32 texture, Uint32 target, Int32 level, Uint32 pname, Pointer params);
-typedef GlGetTextureLevelParameterivEXT = void Function(int texture, int target, int level, int pname, Pointer params);
+typedef GlGetTextureLevelParameterivEXTNative = Void Function(Uint32 texture, Uint32 target, Int32 level, Uint32 pname, Pointer<Int32> params);
+typedef GlGetTextureLevelParameterivEXT = void Function(int texture, int target, int level, int pname, Pointer<Int32> params);
 
 typedef GlTextureImage3DEXTNative = Void Function(Uint32 texture, Uint32 target, Int32 level, Int32 internalformat, Int32 width, Int32 height, Int32 depth, Int32 border, Uint32 format, Uint32 type, Pointer pixels);
 typedef GlTextureImage3DEXT = void Function(int texture, int target, int level, int internalformat, int width, int height, int depth, int border, int format, int type, Pointer pixels);
@@ -5077,59 +5135,59 @@ typedef GlMultiTexCoordPointerEXT = void Function(int texunit, int size, int typ
 typedef GlMultiTexEnvfEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Float param);
 typedef GlMultiTexEnvfEXT = void Function(int texunit, int target, int pname, double param);
 
-typedef GlMultiTexEnvfvEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Pointer params);
-typedef GlMultiTexEnvfvEXT = void Function(int texunit, int target, int pname, Pointer params);
+typedef GlMultiTexEnvfvEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Pointer<Float> params);
+typedef GlMultiTexEnvfvEXT = void Function(int texunit, int target, int pname, Pointer<Float> params);
 
 typedef GlMultiTexEnviEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Int32 param);
 typedef GlMultiTexEnviEXT = void Function(int texunit, int target, int pname, int param);
 
-typedef GlMultiTexEnvivEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Pointer params);
-typedef GlMultiTexEnvivEXT = void Function(int texunit, int target, int pname, Pointer params);
+typedef GlMultiTexEnvivEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Pointer<Int32> params);
+typedef GlMultiTexEnvivEXT = void Function(int texunit, int target, int pname, Pointer<Int32> params);
 
 typedef GlMultiTexGendEXTNative = Void Function(Uint32 texunit, Uint32 coord, Uint32 pname, Double param);
 typedef GlMultiTexGendEXT = void Function(int texunit, int coord, int pname, double param);
 
-typedef GlMultiTexGendvEXTNative = Void Function(Uint32 texunit, Uint32 coord, Uint32 pname, Pointer params);
-typedef GlMultiTexGendvEXT = void Function(int texunit, int coord, int pname, Pointer params);
+typedef GlMultiTexGendvEXTNative = Void Function(Uint32 texunit, Uint32 coord, Uint32 pname, Pointer<Double> params);
+typedef GlMultiTexGendvEXT = void Function(int texunit, int coord, int pname, Pointer<Double> params);
 
 typedef GlMultiTexGenfEXTNative = Void Function(Uint32 texunit, Uint32 coord, Uint32 pname, Float param);
 typedef GlMultiTexGenfEXT = void Function(int texunit, int coord, int pname, double param);
 
-typedef GlMultiTexGenfvEXTNative = Void Function(Uint32 texunit, Uint32 coord, Uint32 pname, Pointer params);
-typedef GlMultiTexGenfvEXT = void Function(int texunit, int coord, int pname, Pointer params);
+typedef GlMultiTexGenfvEXTNative = Void Function(Uint32 texunit, Uint32 coord, Uint32 pname, Pointer<Float> params);
+typedef GlMultiTexGenfvEXT = void Function(int texunit, int coord, int pname, Pointer<Float> params);
 
 typedef GlMultiTexGeniEXTNative = Void Function(Uint32 texunit, Uint32 coord, Uint32 pname, Int32 param);
 typedef GlMultiTexGeniEXT = void Function(int texunit, int coord, int pname, int param);
 
-typedef GlMultiTexGenivEXTNative = Void Function(Uint32 texunit, Uint32 coord, Uint32 pname, Pointer params);
-typedef GlMultiTexGenivEXT = void Function(int texunit, int coord, int pname, Pointer params);
+typedef GlMultiTexGenivEXTNative = Void Function(Uint32 texunit, Uint32 coord, Uint32 pname, Pointer<Int32> params);
+typedef GlMultiTexGenivEXT = void Function(int texunit, int coord, int pname, Pointer<Int32> params);
 
-typedef GlGetMultiTexEnvfvEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Pointer params);
-typedef GlGetMultiTexEnvfvEXT = void Function(int texunit, int target, int pname, Pointer params);
+typedef GlGetMultiTexEnvfvEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Pointer<Float> params);
+typedef GlGetMultiTexEnvfvEXT = void Function(int texunit, int target, int pname, Pointer<Float> params);
 
-typedef GlGetMultiTexEnvivEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Pointer params);
-typedef GlGetMultiTexEnvivEXT = void Function(int texunit, int target, int pname, Pointer params);
+typedef GlGetMultiTexEnvivEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Pointer<Int32> params);
+typedef GlGetMultiTexEnvivEXT = void Function(int texunit, int target, int pname, Pointer<Int32> params);
 
-typedef GlGetMultiTexGendvEXTNative = Void Function(Uint32 texunit, Uint32 coord, Uint32 pname, Pointer params);
-typedef GlGetMultiTexGendvEXT = void Function(int texunit, int coord, int pname, Pointer params);
+typedef GlGetMultiTexGendvEXTNative = Void Function(Uint32 texunit, Uint32 coord, Uint32 pname, Pointer<Double> params);
+typedef GlGetMultiTexGendvEXT = void Function(int texunit, int coord, int pname, Pointer<Double> params);
 
-typedef GlGetMultiTexGenfvEXTNative = Void Function(Uint32 texunit, Uint32 coord, Uint32 pname, Pointer params);
-typedef GlGetMultiTexGenfvEXT = void Function(int texunit, int coord, int pname, Pointer params);
+typedef GlGetMultiTexGenfvEXTNative = Void Function(Uint32 texunit, Uint32 coord, Uint32 pname, Pointer<Float> params);
+typedef GlGetMultiTexGenfvEXT = void Function(int texunit, int coord, int pname, Pointer<Float> params);
 
-typedef GlGetMultiTexGenivEXTNative = Void Function(Uint32 texunit, Uint32 coord, Uint32 pname, Pointer params);
-typedef GlGetMultiTexGenivEXT = void Function(int texunit, int coord, int pname, Pointer params);
+typedef GlGetMultiTexGenivEXTNative = Void Function(Uint32 texunit, Uint32 coord, Uint32 pname, Pointer<Int32> params);
+typedef GlGetMultiTexGenivEXT = void Function(int texunit, int coord, int pname, Pointer<Int32> params);
 
 typedef GlMultiTexParameteriEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Int32 param);
 typedef GlMultiTexParameteriEXT = void Function(int texunit, int target, int pname, int param);
 
-typedef GlMultiTexParameterivEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Pointer params);
-typedef GlMultiTexParameterivEXT = void Function(int texunit, int target, int pname, Pointer params);
+typedef GlMultiTexParameterivEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Pointer<Int32> params);
+typedef GlMultiTexParameterivEXT = void Function(int texunit, int target, int pname, Pointer<Int32> params);
 
 typedef GlMultiTexParameterfEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Float param);
 typedef GlMultiTexParameterfEXT = void Function(int texunit, int target, int pname, double param);
 
-typedef GlMultiTexParameterfvEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Pointer params);
-typedef GlMultiTexParameterfvEXT = void Function(int texunit, int target, int pname, Pointer params);
+typedef GlMultiTexParameterfvEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Pointer<Float> params);
+typedef GlMultiTexParameterfvEXT = void Function(int texunit, int target, int pname, Pointer<Float> params);
 
 typedef GlMultiTexImage1DEXTNative = Void Function(Uint32 texunit, Uint32 target, Int32 level, Int32 internalformat, Int32 width, Int32 border, Uint32 format, Uint32 type, Pointer pixels);
 typedef GlMultiTexImage1DEXT = void Function(int texunit, int target, int level, int internalformat, int width, int border, int format, int type, Pointer pixels);
@@ -5158,17 +5216,17 @@ typedef GlCopyMultiTexSubImage2DEXT = void Function(int texunit, int target, int
 typedef GlGetMultiTexImageEXTNative = Void Function(Uint32 texunit, Uint32 target, Int32 level, Uint32 format, Uint32 type, Pointer pixels);
 typedef GlGetMultiTexImageEXT = void Function(int texunit, int target, int level, int format, int type, Pointer pixels);
 
-typedef GlGetMultiTexParameterfvEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Pointer params);
-typedef GlGetMultiTexParameterfvEXT = void Function(int texunit, int target, int pname, Pointer params);
+typedef GlGetMultiTexParameterfvEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Pointer<Float> params);
+typedef GlGetMultiTexParameterfvEXT = void Function(int texunit, int target, int pname, Pointer<Float> params);
 
-typedef GlGetMultiTexParameterivEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Pointer params);
-typedef GlGetMultiTexParameterivEXT = void Function(int texunit, int target, int pname, Pointer params);
+typedef GlGetMultiTexParameterivEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Pointer<Int32> params);
+typedef GlGetMultiTexParameterivEXT = void Function(int texunit, int target, int pname, Pointer<Int32> params);
 
-typedef GlGetMultiTexLevelParameterfvEXTNative = Void Function(Uint32 texunit, Uint32 target, Int32 level, Uint32 pname, Pointer params);
-typedef GlGetMultiTexLevelParameterfvEXT = void Function(int texunit, int target, int level, int pname, Pointer params);
+typedef GlGetMultiTexLevelParameterfvEXTNative = Void Function(Uint32 texunit, Uint32 target, Int32 level, Uint32 pname, Pointer<Float> params);
+typedef GlGetMultiTexLevelParameterfvEXT = void Function(int texunit, int target, int level, int pname, Pointer<Float> params);
 
-typedef GlGetMultiTexLevelParameterivEXTNative = Void Function(Uint32 texunit, Uint32 target, Int32 level, Uint32 pname, Pointer params);
-typedef GlGetMultiTexLevelParameterivEXT = void Function(int texunit, int target, int level, int pname, Pointer params);
+typedef GlGetMultiTexLevelParameterivEXTNative = Void Function(Uint32 texunit, Uint32 target, Int32 level, Uint32 pname, Pointer<Int32> params);
+typedef GlGetMultiTexLevelParameterivEXT = void Function(int texunit, int target, int level, int pname, Pointer<Int32> params);
 
 typedef GlMultiTexImage3DEXTNative = Void Function(Uint32 texunit, Uint32 target, Int32 level, Int32 internalformat, Int32 width, Int32 height, Int32 depth, Int32 border, Uint32 format, Uint32 type, Pointer pixels);
 typedef GlMultiTexImage3DEXT = void Function(int texunit, int target, int level, int internalformat, int width, int height, int depth, int border, int format, int type, Pointer pixels);
@@ -5185,11 +5243,11 @@ typedef GlEnableClientStateIndexedEXT = void Function(int array, int index);
 typedef GlDisableClientStateIndexedEXTNative = Void Function(Uint32 array, Uint32 index);
 typedef GlDisableClientStateIndexedEXT = void Function(int array, int index);
 
-typedef GlGetFloatIndexedvEXTNative = Void Function(Uint32 target, Uint32 index, Pointer data);
-typedef GlGetFloatIndexedvEXT = void Function(int target, int index, Pointer data);
+typedef GlGetFloatIndexedvEXTNative = Void Function(Uint32 target, Uint32 index, Pointer<Float> data);
+typedef GlGetFloatIndexedvEXT = void Function(int target, int index, Pointer<Float> data);
 
-typedef GlGetDoubleIndexedvEXTNative = Void Function(Uint32 target, Uint32 index, Pointer data);
-typedef GlGetDoubleIndexedvEXT = void Function(int target, int index, Pointer data);
+typedef GlGetDoubleIndexedvEXTNative = Void Function(Uint32 target, Uint32 index, Pointer<Double> data);
+typedef GlGetDoubleIndexedvEXT = void Function(int target, int index, Pointer<Double> data);
 
 typedef GlGetPointerIndexedvEXTNative = Void Function(Uint32 target, Uint32 index, Pointer data);
 typedef GlGetPointerIndexedvEXT = void Function(int target, int index, Pointer data);
@@ -5203,8 +5261,8 @@ typedef GlDisableIndexedEXT = void Function(int target, int index);
 typedef GlIsEnabledIndexedEXTNative = Uint8 Function(Uint32 target, Uint32 index);
 typedef GlIsEnabledIndexedEXT = int Function(int target, int index);
 
-typedef GlGetIntegerIndexedvEXTNative = Void Function(Uint32 target, Uint32 index, Pointer data);
-typedef GlGetIntegerIndexedvEXT = void Function(int target, int index, Pointer data);
+typedef GlGetIntegerIndexedvEXTNative = Void Function(Uint32 target, Uint32 index, Pointer<Int32> data);
+typedef GlGetIntegerIndexedvEXT = void Function(int target, int index, Pointer<Int32> data);
 
 typedef GlGetBooleanIndexedvEXTNative = Void Function(Uint32 target, Uint32 index, Pointer data);
 typedef GlGetBooleanIndexedvEXT = void Function(int target, int index, Pointer data);
@@ -5251,17 +5309,17 @@ typedef GlCompressedMultiTexSubImage1DEXT = void Function(int texunit, int targe
 typedef GlGetCompressedMultiTexImageEXTNative = Void Function(Uint32 texunit, Uint32 target, Int32 lod, Pointer img);
 typedef GlGetCompressedMultiTexImageEXT = void Function(int texunit, int target, int lod, Pointer img);
 
-typedef GlMatrixLoadTransposefEXTNative = Void Function(Uint32 mode, Pointer m);
-typedef GlMatrixLoadTransposefEXT = void Function(int mode, Pointer m);
+typedef GlMatrixLoadTransposefEXTNative = Void Function(Uint32 mode, Pointer<Float> m);
+typedef GlMatrixLoadTransposefEXT = void Function(int mode, Pointer<Float> m);
 
-typedef GlMatrixLoadTransposedEXTNative = Void Function(Uint32 mode, Pointer m);
-typedef GlMatrixLoadTransposedEXT = void Function(int mode, Pointer m);
+typedef GlMatrixLoadTransposedEXTNative = Void Function(Uint32 mode, Pointer<Double> m);
+typedef GlMatrixLoadTransposedEXT = void Function(int mode, Pointer<Double> m);
 
-typedef GlMatrixMultTransposefEXTNative = Void Function(Uint32 mode, Pointer m);
-typedef GlMatrixMultTransposefEXT = void Function(int mode, Pointer m);
+typedef GlMatrixMultTransposefEXTNative = Void Function(Uint32 mode, Pointer<Float> m);
+typedef GlMatrixMultTransposefEXT = void Function(int mode, Pointer<Float> m);
 
-typedef GlMatrixMultTransposedEXTNative = Void Function(Uint32 mode, Pointer m);
-typedef GlMatrixMultTransposedEXT = void Function(int mode, Pointer m);
+typedef GlMatrixMultTransposedEXTNative = Void Function(Uint32 mode, Pointer<Double> m);
+typedef GlMatrixMultTransposedEXT = void Function(int mode, Pointer<Double> m);
 
 typedef GlNamedBufferDataEXTNative = Void Function(Uint32 buffer, Int64 size, Pointer data, Uint32 usage);
 typedef GlNamedBufferDataEXT = void Function(int buffer, int size, Pointer data, int usage);
@@ -5275,8 +5333,8 @@ typedef GlMapNamedBufferEXT = Pointer Function(int buffer, int access);
 typedef GlUnmapNamedBufferEXTNative = Uint8 Function(Uint32 buffer);
 typedef GlUnmapNamedBufferEXT = int Function(int buffer);
 
-typedef GlGetNamedBufferParameterivEXTNative = Void Function(Uint32 buffer, Uint32 pname, Pointer params);
-typedef GlGetNamedBufferParameterivEXT = void Function(int buffer, int pname, Pointer params);
+typedef GlGetNamedBufferParameterivEXTNative = Void Function(Uint32 buffer, Uint32 pname, Pointer<Int32> params);
+typedef GlGetNamedBufferParameterivEXT = void Function(int buffer, int pname, Pointer<Int32> params);
 
 typedef GlGetNamedBufferPointervEXTNative = Void Function(Uint32 buffer, Uint32 pname, Pointer params);
 typedef GlGetNamedBufferPointervEXT = void Function(int buffer, int pname, Pointer params);
@@ -5308,56 +5366,56 @@ typedef GlProgramUniform3iEXT = void Function(int program, int location, int v0,
 typedef GlProgramUniform4iEXTNative = Void Function(Uint32 program, Int32 location, Int32 v0, Int32 v1, Int32 v2, Int32 v3);
 typedef GlProgramUniform4iEXT = void Function(int program, int location, int v0, int v1, int v2, int v3);
 
-typedef GlProgramUniform1fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform1fvEXT = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform1fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Float> value);
+typedef GlProgramUniform1fvEXT = void Function(int program, int location, int count, Pointer<Float> value);
 
-typedef GlProgramUniform2fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform2fvEXT = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform2fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Float> value);
+typedef GlProgramUniform2fvEXT = void Function(int program, int location, int count, Pointer<Float> value);
 
-typedef GlProgramUniform3fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform3fvEXT = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform3fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Float> value);
+typedef GlProgramUniform3fvEXT = void Function(int program, int location, int count, Pointer<Float> value);
 
-typedef GlProgramUniform4fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform4fvEXT = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform4fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Float> value);
+typedef GlProgramUniform4fvEXT = void Function(int program, int location, int count, Pointer<Float> value);
 
-typedef GlProgramUniform1ivEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform1ivEXT = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform1ivEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Int32> value);
+typedef GlProgramUniform1ivEXT = void Function(int program, int location, int count, Pointer<Int32> value);
 
-typedef GlProgramUniform2ivEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform2ivEXT = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform2ivEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Int32> value);
+typedef GlProgramUniform2ivEXT = void Function(int program, int location, int count, Pointer<Int32> value);
 
-typedef GlProgramUniform3ivEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform3ivEXT = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform3ivEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Int32> value);
+typedef GlProgramUniform3ivEXT = void Function(int program, int location, int count, Pointer<Int32> value);
 
-typedef GlProgramUniform4ivEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform4ivEXT = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform4ivEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Int32> value);
+typedef GlProgramUniform4ivEXT = void Function(int program, int location, int count, Pointer<Int32> value);
 
-typedef GlProgramUniformMatrix2fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix2fvEXT = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix2fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlProgramUniformMatrix2fvEXT = void Function(int program, int location, int count, int transpose, Pointer<Float> value);
 
-typedef GlProgramUniformMatrix3fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix3fvEXT = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix3fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlProgramUniformMatrix3fvEXT = void Function(int program, int location, int count, int transpose, Pointer<Float> value);
 
-typedef GlProgramUniformMatrix4fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix4fvEXT = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix4fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlProgramUniformMatrix4fvEXT = void Function(int program, int location, int count, int transpose, Pointer<Float> value);
 
-typedef GlProgramUniformMatrix2x3fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix2x3fvEXT = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix2x3fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlProgramUniformMatrix2x3fvEXT = void Function(int program, int location, int count, int transpose, Pointer<Float> value);
 
-typedef GlProgramUniformMatrix3x2fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix3x2fvEXT = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix3x2fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlProgramUniformMatrix3x2fvEXT = void Function(int program, int location, int count, int transpose, Pointer<Float> value);
 
-typedef GlProgramUniformMatrix2x4fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix2x4fvEXT = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix2x4fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlProgramUniformMatrix2x4fvEXT = void Function(int program, int location, int count, int transpose, Pointer<Float> value);
 
-typedef GlProgramUniformMatrix4x2fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix4x2fvEXT = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix4x2fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlProgramUniformMatrix4x2fvEXT = void Function(int program, int location, int count, int transpose, Pointer<Float> value);
 
-typedef GlProgramUniformMatrix3x4fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix3x4fvEXT = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix3x4fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlProgramUniformMatrix3x4fvEXT = void Function(int program, int location, int count, int transpose, Pointer<Float> value);
 
-typedef GlProgramUniformMatrix4x3fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix4x3fvEXT = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix4x3fvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Float> value);
+typedef GlProgramUniformMatrix4x3fvEXT = void Function(int program, int location, int count, int transpose, Pointer<Float> value);
 
 typedef GlTextureBufferEXTNative = Void Function(Uint32 texture, Uint32 target, Uint32 internalformat, Uint32 buffer);
 typedef GlTextureBufferEXT = void Function(int texture, int target, int internalformat, int buffer);
@@ -5365,29 +5423,29 @@ typedef GlTextureBufferEXT = void Function(int texture, int target, int internal
 typedef GlMultiTexBufferEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 internalformat, Uint32 buffer);
 typedef GlMultiTexBufferEXT = void Function(int texunit, int target, int internalformat, int buffer);
 
-typedef GlTextureParameterIivEXTNative = Void Function(Uint32 texture, Uint32 target, Uint32 pname, Pointer params);
-typedef GlTextureParameterIivEXT = void Function(int texture, int target, int pname, Pointer params);
+typedef GlTextureParameterIivEXTNative = Void Function(Uint32 texture, Uint32 target, Uint32 pname, Pointer<Int32> params);
+typedef GlTextureParameterIivEXT = void Function(int texture, int target, int pname, Pointer<Int32> params);
 
-typedef GlTextureParameterIuivEXTNative = Void Function(Uint32 texture, Uint32 target, Uint32 pname, Pointer params);
-typedef GlTextureParameterIuivEXT = void Function(int texture, int target, int pname, Pointer params);
+typedef GlTextureParameterIuivEXTNative = Void Function(Uint32 texture, Uint32 target, Uint32 pname, Pointer<Uint32> params);
+typedef GlTextureParameterIuivEXT = void Function(int texture, int target, int pname, Pointer<Uint32> params);
 
-typedef GlGetTextureParameterIivEXTNative = Void Function(Uint32 texture, Uint32 target, Uint32 pname, Pointer params);
-typedef GlGetTextureParameterIivEXT = void Function(int texture, int target, int pname, Pointer params);
+typedef GlGetTextureParameterIivEXTNative = Void Function(Uint32 texture, Uint32 target, Uint32 pname, Pointer<Int32> params);
+typedef GlGetTextureParameterIivEXT = void Function(int texture, int target, int pname, Pointer<Int32> params);
 
-typedef GlGetTextureParameterIuivEXTNative = Void Function(Uint32 texture, Uint32 target, Uint32 pname, Pointer params);
-typedef GlGetTextureParameterIuivEXT = void Function(int texture, int target, int pname, Pointer params);
+typedef GlGetTextureParameterIuivEXTNative = Void Function(Uint32 texture, Uint32 target, Uint32 pname, Pointer<Uint32> params);
+typedef GlGetTextureParameterIuivEXT = void Function(int texture, int target, int pname, Pointer<Uint32> params);
 
-typedef GlMultiTexParameterIivEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Pointer params);
-typedef GlMultiTexParameterIivEXT = void Function(int texunit, int target, int pname, Pointer params);
+typedef GlMultiTexParameterIivEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Pointer<Int32> params);
+typedef GlMultiTexParameterIivEXT = void Function(int texunit, int target, int pname, Pointer<Int32> params);
 
-typedef GlMultiTexParameterIuivEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Pointer params);
-typedef GlMultiTexParameterIuivEXT = void Function(int texunit, int target, int pname, Pointer params);
+typedef GlMultiTexParameterIuivEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Pointer<Uint32> params);
+typedef GlMultiTexParameterIuivEXT = void Function(int texunit, int target, int pname, Pointer<Uint32> params);
 
-typedef GlGetMultiTexParameterIivEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Pointer params);
-typedef GlGetMultiTexParameterIivEXT = void Function(int texunit, int target, int pname, Pointer params);
+typedef GlGetMultiTexParameterIivEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Pointer<Int32> params);
+typedef GlGetMultiTexParameterIivEXT = void Function(int texunit, int target, int pname, Pointer<Int32> params);
 
-typedef GlGetMultiTexParameterIuivEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Pointer params);
-typedef GlGetMultiTexParameterIuivEXT = void Function(int texunit, int target, int pname, Pointer params);
+typedef GlGetMultiTexParameterIuivEXTNative = Void Function(Uint32 texunit, Uint32 target, Uint32 pname, Pointer<Uint32> params);
+typedef GlGetMultiTexParameterIuivEXT = void Function(int texunit, int target, int pname, Pointer<Uint32> params);
 
 typedef GlProgramUniform1uiEXTNative = Void Function(Uint32 program, Int32 location, Uint32 v0);
 typedef GlProgramUniform1uiEXT = void Function(int program, int location, int v0);
@@ -5401,44 +5459,44 @@ typedef GlProgramUniform3uiEXT = void Function(int program, int location, int v0
 typedef GlProgramUniform4uiEXTNative = Void Function(Uint32 program, Int32 location, Uint32 v0, Uint32 v1, Uint32 v2, Uint32 v3);
 typedef GlProgramUniform4uiEXT = void Function(int program, int location, int v0, int v1, int v2, int v3);
 
-typedef GlProgramUniform1uivEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform1uivEXT = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform1uivEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Uint32> value);
+typedef GlProgramUniform1uivEXT = void Function(int program, int location, int count, Pointer<Uint32> value);
 
-typedef GlProgramUniform2uivEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform2uivEXT = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform2uivEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Uint32> value);
+typedef GlProgramUniform2uivEXT = void Function(int program, int location, int count, Pointer<Uint32> value);
 
-typedef GlProgramUniform3uivEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform3uivEXT = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform3uivEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Uint32> value);
+typedef GlProgramUniform3uivEXT = void Function(int program, int location, int count, Pointer<Uint32> value);
 
-typedef GlProgramUniform4uivEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform4uivEXT = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform4uivEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Uint32> value);
+typedef GlProgramUniform4uivEXT = void Function(int program, int location, int count, Pointer<Uint32> value);
 
-typedef GlNamedProgramLocalParameters4fvEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Int32 count, Pointer params);
-typedef GlNamedProgramLocalParameters4fvEXT = void Function(int program, int target, int index, int count, Pointer params);
+typedef GlNamedProgramLocalParameters4fvEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Int32 count, Pointer<Float> params);
+typedef GlNamedProgramLocalParameters4fvEXT = void Function(int program, int target, int index, int count, Pointer<Float> params);
 
 typedef GlNamedProgramLocalParameterI4iEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Int32 x, Int32 y, Int32 z, Int32 w);
 typedef GlNamedProgramLocalParameterI4iEXT = void Function(int program, int target, int index, int x, int y, int z, int w);
 
-typedef GlNamedProgramLocalParameterI4ivEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Pointer params);
-typedef GlNamedProgramLocalParameterI4ivEXT = void Function(int program, int target, int index, Pointer params);
+typedef GlNamedProgramLocalParameterI4ivEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Pointer<Int32> params);
+typedef GlNamedProgramLocalParameterI4ivEXT = void Function(int program, int target, int index, Pointer<Int32> params);
 
-typedef GlNamedProgramLocalParametersI4ivEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Int32 count, Pointer params);
-typedef GlNamedProgramLocalParametersI4ivEXT = void Function(int program, int target, int index, int count, Pointer params);
+typedef GlNamedProgramLocalParametersI4ivEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Int32 count, Pointer<Int32> params);
+typedef GlNamedProgramLocalParametersI4ivEXT = void Function(int program, int target, int index, int count, Pointer<Int32> params);
 
 typedef GlNamedProgramLocalParameterI4uiEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Uint32 x, Uint32 y, Uint32 z, Uint32 w);
 typedef GlNamedProgramLocalParameterI4uiEXT = void Function(int program, int target, int index, int x, int y, int z, int w);
 
-typedef GlNamedProgramLocalParameterI4uivEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Pointer params);
-typedef GlNamedProgramLocalParameterI4uivEXT = void Function(int program, int target, int index, Pointer params);
+typedef GlNamedProgramLocalParameterI4uivEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Pointer<Uint32> params);
+typedef GlNamedProgramLocalParameterI4uivEXT = void Function(int program, int target, int index, Pointer<Uint32> params);
 
-typedef GlNamedProgramLocalParametersI4uivEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Int32 count, Pointer params);
-typedef GlNamedProgramLocalParametersI4uivEXT = void Function(int program, int target, int index, int count, Pointer params);
+typedef GlNamedProgramLocalParametersI4uivEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Int32 count, Pointer<Uint32> params);
+typedef GlNamedProgramLocalParametersI4uivEXT = void Function(int program, int target, int index, int count, Pointer<Uint32> params);
 
-typedef GlGetNamedProgramLocalParameterIivEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Pointer params);
-typedef GlGetNamedProgramLocalParameterIivEXT = void Function(int program, int target, int index, Pointer params);
+typedef GlGetNamedProgramLocalParameterIivEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Pointer<Int32> params);
+typedef GlGetNamedProgramLocalParameterIivEXT = void Function(int program, int target, int index, Pointer<Int32> params);
 
-typedef GlGetNamedProgramLocalParameterIuivEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Pointer params);
-typedef GlGetNamedProgramLocalParameterIuivEXT = void Function(int program, int target, int index, Pointer params);
+typedef GlGetNamedProgramLocalParameterIuivEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Pointer<Uint32> params);
+typedef GlGetNamedProgramLocalParameterIuivEXT = void Function(int program, int target, int index, Pointer<Uint32> params);
 
 typedef GlEnableClientStateiEXTNative = Void Function(Uint32 array, Uint32 index);
 typedef GlEnableClientStateiEXT = void Function(int array, int index);
@@ -5446,11 +5504,11 @@ typedef GlEnableClientStateiEXT = void Function(int array, int index);
 typedef GlDisableClientStateiEXTNative = Void Function(Uint32 array, Uint32 index);
 typedef GlDisableClientStateiEXT = void Function(int array, int index);
 
-typedef GlGetFloati_vEXTNative = Void Function(Uint32 pname, Uint32 index, Pointer params);
-typedef GlGetFloati_vEXT = void Function(int pname, int index, Pointer params);
+typedef GlGetFloati_vEXTNative = Void Function(Uint32 pname, Uint32 index, Pointer<Float> params);
+typedef GlGetFloati_vEXT = void Function(int pname, int index, Pointer<Float> params);
 
-typedef GlGetDoublei_vEXTNative = Void Function(Uint32 pname, Uint32 index, Pointer params);
-typedef GlGetDoublei_vEXT = void Function(int pname, int index, Pointer params);
+typedef GlGetDoublei_vEXTNative = Void Function(Uint32 pname, Uint32 index, Pointer<Double> params);
+typedef GlGetDoublei_vEXT = void Function(int pname, int index, Pointer<Double> params);
 
 typedef GlGetPointeri_vEXTNative = Void Function(Uint32 pname, Uint32 index, Pointer params);
 typedef GlGetPointeri_vEXT = void Function(int pname, int index, Pointer params);
@@ -5461,23 +5519,23 @@ typedef GlNamedProgramStringEXT = void Function(int program, int target, int for
 typedef GlNamedProgramLocalParameter4dEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Double x, Double y, Double z, Double w);
 typedef GlNamedProgramLocalParameter4dEXT = void Function(int program, int target, int index, double x, double y, double z, double w);
 
-typedef GlNamedProgramLocalParameter4dvEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Pointer params);
-typedef GlNamedProgramLocalParameter4dvEXT = void Function(int program, int target, int index, Pointer params);
+typedef GlNamedProgramLocalParameter4dvEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Pointer<Double> params);
+typedef GlNamedProgramLocalParameter4dvEXT = void Function(int program, int target, int index, Pointer<Double> params);
 
 typedef GlNamedProgramLocalParameter4fEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Float x, Float y, Float z, Float w);
 typedef GlNamedProgramLocalParameter4fEXT = void Function(int program, int target, int index, double x, double y, double z, double w);
 
-typedef GlNamedProgramLocalParameter4fvEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Pointer params);
-typedef GlNamedProgramLocalParameter4fvEXT = void Function(int program, int target, int index, Pointer params);
+typedef GlNamedProgramLocalParameter4fvEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Pointer<Float> params);
+typedef GlNamedProgramLocalParameter4fvEXT = void Function(int program, int target, int index, Pointer<Float> params);
 
-typedef GlGetNamedProgramLocalParameterdvEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Pointer params);
-typedef GlGetNamedProgramLocalParameterdvEXT = void Function(int program, int target, int index, Pointer params);
+typedef GlGetNamedProgramLocalParameterdvEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Pointer<Double> params);
+typedef GlGetNamedProgramLocalParameterdvEXT = void Function(int program, int target, int index, Pointer<Double> params);
 
-typedef GlGetNamedProgramLocalParameterfvEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Pointer params);
-typedef GlGetNamedProgramLocalParameterfvEXT = void Function(int program, int target, int index, Pointer params);
+typedef GlGetNamedProgramLocalParameterfvEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 index, Pointer<Float> params);
+typedef GlGetNamedProgramLocalParameterfvEXT = void Function(int program, int target, int index, Pointer<Float> params);
 
-typedef GlGetNamedProgramivEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 pname, Pointer params);
-typedef GlGetNamedProgramivEXT = void Function(int program, int target, int pname, Pointer params);
+typedef GlGetNamedProgramivEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 pname, Pointer<Int32> params);
+typedef GlGetNamedProgramivEXT = void Function(int program, int target, int pname, Pointer<Int32> params);
 
 typedef GlGetNamedProgramStringEXTNative = Void Function(Uint32 program, Uint32 target, Uint32 pname, Pointer string);
 typedef GlGetNamedProgramStringEXT = void Function(int program, int target, int pname, Pointer string);
@@ -5485,8 +5543,8 @@ typedef GlGetNamedProgramStringEXT = void Function(int program, int target, int 
 typedef GlNamedRenderbufferStorageEXTNative = Void Function(Uint32 renderbuffer, Uint32 internalformat, Int32 width, Int32 height);
 typedef GlNamedRenderbufferStorageEXT = void Function(int renderbuffer, int internalformat, int width, int height);
 
-typedef GlGetNamedRenderbufferParameterivEXTNative = Void Function(Uint32 renderbuffer, Uint32 pname, Pointer params);
-typedef GlGetNamedRenderbufferParameterivEXT = void Function(int renderbuffer, int pname, Pointer params);
+typedef GlGetNamedRenderbufferParameterivEXTNative = Void Function(Uint32 renderbuffer, Uint32 pname, Pointer<Int32> params);
+typedef GlGetNamedRenderbufferParameterivEXT = void Function(int renderbuffer, int pname, Pointer<Int32> params);
 
 typedef GlNamedRenderbufferStorageMultisampleEXTNative = Void Function(Uint32 renderbuffer, Int32 samples, Uint32 internalformat, Int32 width, Int32 height);
 typedef GlNamedRenderbufferStorageMultisampleEXT = void Function(int renderbuffer, int samples, int internalformat, int width, int height);
@@ -5509,8 +5567,8 @@ typedef GlNamedFramebufferTexture3DEXT = void Function(int framebuffer, int atta
 typedef GlNamedFramebufferRenderbufferEXTNative = Void Function(Uint32 framebuffer, Uint32 attachment, Uint32 renderbuffertarget, Uint32 renderbuffer);
 typedef GlNamedFramebufferRenderbufferEXT = void Function(int framebuffer, int attachment, int renderbuffertarget, int renderbuffer);
 
-typedef GlGetNamedFramebufferAttachmentParameterivEXTNative = Void Function(Uint32 framebuffer, Uint32 attachment, Uint32 pname, Pointer params);
-typedef GlGetNamedFramebufferAttachmentParameterivEXT = void Function(int framebuffer, int attachment, int pname, Pointer params);
+typedef GlGetNamedFramebufferAttachmentParameterivEXTNative = Void Function(Uint32 framebuffer, Uint32 attachment, Uint32 pname, Pointer<Int32> params);
+typedef GlGetNamedFramebufferAttachmentParameterivEXT = void Function(int framebuffer, int attachment, int pname, Pointer<Int32> params);
 
 typedef GlGenerateTextureMipmapEXTNative = Void Function(Uint32 texture, Uint32 target);
 typedef GlGenerateTextureMipmapEXT = void Function(int texture, int target);
@@ -5521,14 +5579,14 @@ typedef GlGenerateMultiTexMipmapEXT = void Function(int texunit, int target);
 typedef GlFramebufferDrawBufferEXTNative = Void Function(Uint32 framebuffer, Uint32 mode);
 typedef GlFramebufferDrawBufferEXT = void Function(int framebuffer, int mode);
 
-typedef GlFramebufferDrawBuffersEXTNative = Void Function(Uint32 framebuffer, Int32 n, Pointer bufs);
-typedef GlFramebufferDrawBuffersEXT = void Function(int framebuffer, int n, Pointer bufs);
+typedef GlFramebufferDrawBuffersEXTNative = Void Function(Uint32 framebuffer, Int32 n, Pointer<Uint32> bufs);
+typedef GlFramebufferDrawBuffersEXT = void Function(int framebuffer, int n, Pointer<Uint32> bufs);
 
 typedef GlFramebufferReadBufferEXTNative = Void Function(Uint32 framebuffer, Uint32 mode);
 typedef GlFramebufferReadBufferEXT = void Function(int framebuffer, int mode);
 
-typedef GlGetFramebufferParameterivEXTNative = Void Function(Uint32 framebuffer, Uint32 pname, Pointer params);
-typedef GlGetFramebufferParameterivEXT = void Function(int framebuffer, int pname, Pointer params);
+typedef GlGetFramebufferParameterivEXTNative = Void Function(Uint32 framebuffer, Uint32 pname, Pointer<Int32> params);
+typedef GlGetFramebufferParameterivEXT = void Function(int framebuffer, int pname, Pointer<Int32> params);
 
 typedef GlNamedCopyBufferSubDataEXTNative = Void Function(Uint32 readBuffer, Uint32 writeBuffer, Int64 readOffset, Int64 writeOffset, Int64 size);
 typedef GlNamedCopyBufferSubDataEXT = void Function(int readBuffer, int writeBuffer, int readOffset, int writeOffset, int size);
@@ -5593,14 +5651,14 @@ typedef GlEnableVertexArrayAttribEXT = void Function(int vaobj, int index);
 typedef GlDisableVertexArrayAttribEXTNative = Void Function(Uint32 vaobj, Uint32 index);
 typedef GlDisableVertexArrayAttribEXT = void Function(int vaobj, int index);
 
-typedef GlGetVertexArrayIntegervEXTNative = Void Function(Uint32 vaobj, Uint32 pname, Pointer param);
-typedef GlGetVertexArrayIntegervEXT = void Function(int vaobj, int pname, Pointer param);
+typedef GlGetVertexArrayIntegervEXTNative = Void Function(Uint32 vaobj, Uint32 pname, Pointer<Int32> param);
+typedef GlGetVertexArrayIntegervEXT = void Function(int vaobj, int pname, Pointer<Int32> param);
 
 typedef GlGetVertexArrayPointervEXTNative = Void Function(Uint32 vaobj, Uint32 pname, Pointer param);
 typedef GlGetVertexArrayPointervEXT = void Function(int vaobj, int pname, Pointer param);
 
-typedef GlGetVertexArrayIntegeri_vEXTNative = Void Function(Uint32 vaobj, Uint32 index, Uint32 pname, Pointer param);
-typedef GlGetVertexArrayIntegeri_vEXT = void Function(int vaobj, int index, int pname, Pointer param);
+typedef GlGetVertexArrayIntegeri_vEXTNative = Void Function(Uint32 vaobj, Uint32 index, Uint32 pname, Pointer<Int32> param);
+typedef GlGetVertexArrayIntegeri_vEXT = void Function(int vaobj, int index, int pname, Pointer<Int32> param);
 
 typedef GlGetVertexArrayPointeri_vEXTNative = Void Function(Uint32 vaobj, Uint32 index, Uint32 pname, Pointer param);
 typedef GlGetVertexArrayPointeri_vEXT = void Function(int vaobj, int index, int pname, Pointer param);
@@ -5623,8 +5681,8 @@ typedef GlClearNamedBufferSubDataEXT = void Function(int buffer, int internalfor
 typedef GlNamedFramebufferParameteriEXTNative = Void Function(Uint32 framebuffer, Uint32 pname, Int32 param);
 typedef GlNamedFramebufferParameteriEXT = void Function(int framebuffer, int pname, int param);
 
-typedef GlGetNamedFramebufferParameterivEXTNative = Void Function(Uint32 framebuffer, Uint32 pname, Pointer params);
-typedef GlGetNamedFramebufferParameterivEXT = void Function(int framebuffer, int pname, Pointer params);
+typedef GlGetNamedFramebufferParameterivEXTNative = Void Function(Uint32 framebuffer, Uint32 pname, Pointer<Int32> params);
+typedef GlGetNamedFramebufferParameterivEXT = void Function(int framebuffer, int pname, Pointer<Int32> params);
 
 typedef GlProgramUniform1dEXTNative = Void Function(Uint32 program, Int32 location, Double x);
 typedef GlProgramUniform1dEXT = void Function(int program, int location, double x);
@@ -5638,44 +5696,44 @@ typedef GlProgramUniform3dEXT = void Function(int program, int location, double 
 typedef GlProgramUniform4dEXTNative = Void Function(Uint32 program, Int32 location, Double x, Double y, Double z, Double w);
 typedef GlProgramUniform4dEXT = void Function(int program, int location, double x, double y, double z, double w);
 
-typedef GlProgramUniform1dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform1dvEXT = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform1dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Double> value);
+typedef GlProgramUniform1dvEXT = void Function(int program, int location, int count, Pointer<Double> value);
 
-typedef GlProgramUniform2dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform2dvEXT = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform2dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Double> value);
+typedef GlProgramUniform2dvEXT = void Function(int program, int location, int count, Pointer<Double> value);
 
-typedef GlProgramUniform3dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform3dvEXT = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform3dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Double> value);
+typedef GlProgramUniform3dvEXT = void Function(int program, int location, int count, Pointer<Double> value);
 
-typedef GlProgramUniform4dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform4dvEXT = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform4dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Double> value);
+typedef GlProgramUniform4dvEXT = void Function(int program, int location, int count, Pointer<Double> value);
 
-typedef GlProgramUniformMatrix2dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix2dvEXT = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix2dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlProgramUniformMatrix2dvEXT = void Function(int program, int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlProgramUniformMatrix3dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix3dvEXT = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix3dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlProgramUniformMatrix3dvEXT = void Function(int program, int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlProgramUniformMatrix4dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix4dvEXT = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix4dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlProgramUniformMatrix4dvEXT = void Function(int program, int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlProgramUniformMatrix2x3dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix2x3dvEXT = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix2x3dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlProgramUniformMatrix2x3dvEXT = void Function(int program, int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlProgramUniformMatrix2x4dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix2x4dvEXT = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix2x4dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlProgramUniformMatrix2x4dvEXT = void Function(int program, int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlProgramUniformMatrix3x2dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix3x2dvEXT = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix3x2dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlProgramUniformMatrix3x2dvEXT = void Function(int program, int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlProgramUniformMatrix3x4dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix3x4dvEXT = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix3x4dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlProgramUniformMatrix3x4dvEXT = void Function(int program, int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlProgramUniformMatrix4x2dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix4x2dvEXT = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix4x2dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlProgramUniformMatrix4x2dvEXT = void Function(int program, int location, int count, int transpose, Pointer<Double> value);
 
-typedef GlProgramUniformMatrix4x3dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer value);
-typedef GlProgramUniformMatrix4x3dvEXT = void Function(int program, int location, int count, int transpose, Pointer value);
+typedef GlProgramUniformMatrix4x3dvEXTNative = Void Function(Uint32 program, Int32 location, Int32 count, Uint8 transpose, Pointer<Double> value);
+typedef GlProgramUniformMatrix4x3dvEXT = void Function(int program, int location, int count, int transpose, Pointer<Double> value);
 
 typedef GlTextureBufferRangeEXTNative = Void Function(Uint32 texture, Uint32 target, Uint32 internalformat, Uint32 buffer, Int64 offset, Int64 size);
 typedef GlTextureBufferRangeEXT = void Function(int texture, int target, int internalformat, int buffer, int offset, int size);
@@ -5752,8 +5810,8 @@ typedef GlFramebufferFetchBarrierEXTNative = Void Function();
 typedef GlFramebufferFetchBarrierEXT = void Function();
 
 //GL_EXT_window_rectangles
-typedef GlWindowRectanglesEXTNative = Void Function(Uint32 mode, Int32 count, Pointer box);
-typedef GlWindowRectanglesEXT = void Function(int mode, int count, Pointer box);
+typedef GlWindowRectanglesEXTNative = Void Function(Uint32 mode, Int32 count, Pointer<Int32> box);
+typedef GlWindowRectanglesEXT = void Function(int mode, int count, Pointer<Int32> box);
 
 //GL_INTEL_framebuffer_CMAA
 typedef GlApplyFramebufferAttachmentCMAAINTELNative = Void Function();
@@ -5763,8 +5821,8 @@ typedef GlApplyFramebufferAttachmentCMAAINTEL = void Function();
 typedef GlBeginPerfQueryINTELNative = Void Function(Uint32 queryHandle);
 typedef GlBeginPerfQueryINTEL = void Function(int queryHandle);
 
-typedef GlCreatePerfQueryINTELNative = Void Function(Uint32 queryId, Pointer queryHandle);
-typedef GlCreatePerfQueryINTEL = void Function(int queryId, Pointer queryHandle);
+typedef GlCreatePerfQueryINTELNative = Void Function(Uint32 queryId, Pointer<Uint32> queryHandle);
+typedef GlCreatePerfQueryINTEL = void Function(int queryId, Pointer<Uint32> queryHandle);
 
 typedef GlDeletePerfQueryINTELNative = Void Function(Uint32 queryHandle);
 typedef GlDeletePerfQueryINTEL = void Function(int queryHandle);
@@ -5772,23 +5830,30 @@ typedef GlDeletePerfQueryINTEL = void Function(int queryHandle);
 typedef GlEndPerfQueryINTELNative = Void Function(Uint32 queryHandle);
 typedef GlEndPerfQueryINTEL = void Function(int queryHandle);
 
-typedef GlGetFirstPerfQueryIdINTELNative = Void Function(Pointer queryId);
-typedef GlGetFirstPerfQueryIdINTEL = void Function(Pointer queryId);
+typedef GlGetFirstPerfQueryIdINTELNative = Void Function(Pointer<Uint32> queryId);
+typedef GlGetFirstPerfQueryIdINTEL = void Function(Pointer<Uint32> queryId);
 
-typedef GlGetNextPerfQueryIdINTELNative = Void Function(Uint32 queryId, Pointer nextQueryId);
-typedef GlGetNextPerfQueryIdINTEL = void Function(int queryId, Pointer nextQueryId);
+typedef GlGetNextPerfQueryIdINTELNative = Void Function(Uint32 queryId, Pointer<Uint32> nextQueryId);
+typedef GlGetNextPerfQueryIdINTEL = void Function(int queryId, Pointer<Uint32> nextQueryId);
 
-typedef GlGetPerfCounterInfoINTELNative = Void Function(Uint32 queryId, Uint32 counterId, Uint32 counterNameLength, Pointer counterName, Uint32 counterDescLength, Pointer counterDesc, Pointer counterOffset, Pointer counterDataSize, Pointer counterTypeEnum, Pointer counterDataTypeEnum, Pointer rawCounterMaxValue);
-typedef GlGetPerfCounterInfoINTEL = void Function(int queryId, int counterId, int counterNameLength, Pointer counterName, int counterDescLength, Pointer counterDesc, Pointer counterOffset, Pointer counterDataSize, Pointer counterTypeEnum, Pointer counterDataTypeEnum, Pointer rawCounterMaxValue);
+typedef GlGetPerfCounterInfoINTELNative = Void Function(Uint32 queryId, Uint32 counterId, Uint32 counterNameLength, Pointer counterName, Uint32 counterDescLength, Pointer counterDesc, Pointer<Uint32> counterOffset, Pointer<Uint32> counterDataSize, Pointer<Uint32> counterTypeEnum, Pointer<Uint32> counterDataTypeEnum, Pointer<Uint64> rawCounterMaxValue);
+typedef GlGetPerfCounterInfoINTEL = void Function(int queryId, int counterId, int counterNameLength, Pointer counterName, int counterDescLength, Pointer counterDesc, Pointer<Uint32> counterOffset, Pointer<Uint32> counterDataSize, Pointer<Uint32> counterTypeEnum, Pointer<Uint32> counterDataTypeEnum, Pointer<Uint64> rawCounterMaxValue);
 
-typedef GlGetPerfQueryDataINTELNative = Void Function(Uint32 queryHandle, Uint32 flags, Int32 dataSize, Pointer data, Pointer bytesWritten);
-typedef GlGetPerfQueryDataINTEL = void Function(int queryHandle, int flags, int dataSize, Pointer data, Pointer bytesWritten);
+typedef GlGetPerfQueryDataINTELNative = Void Function(Uint32 queryHandle, Uint32 flags, Int32 dataSize, Pointer data, Pointer<Uint32> bytesWritten);
+typedef GlGetPerfQueryDataINTEL = void Function(int queryHandle, int flags, int dataSize, Pointer data, Pointer<Uint32> bytesWritten);
 
-typedef GlGetPerfQueryIdByNameINTELNative = Void Function(Pointer queryName, Pointer queryId);
-typedef GlGetPerfQueryIdByNameINTEL = void Function(Pointer queryName, Pointer queryId);
+typedef GlGetPerfQueryIdByNameINTELNative = Void Function(Pointer queryName, Pointer<Uint32> queryId);
+typedef GlGetPerfQueryIdByNameINTEL = void Function(Pointer queryName, Pointer<Uint32> queryId);
 
-typedef GlGetPerfQueryInfoINTELNative = Void Function(Uint32 queryId, Uint32 queryNameLength, Pointer queryName, Pointer dataSize, Pointer noCounters, Pointer noInstances, Pointer capsMask);
-typedef GlGetPerfQueryInfoINTEL = void Function(int queryId, int queryNameLength, Pointer queryName, Pointer dataSize, Pointer noCounters, Pointer noInstances, Pointer capsMask);
+typedef GlGetPerfQueryInfoINTELNative = Void Function(Uint32 queryId, Uint32 queryNameLength, Pointer queryName, Pointer<Uint32> dataSize, Pointer<Uint32> noCounters, Pointer<Uint32> noInstances, Pointer<Uint32> capsMask);
+typedef GlGetPerfQueryInfoINTEL = void Function(int queryId, int queryNameLength, Pointer queryName, Pointer<Uint32> dataSize, Pointer<Uint32> noCounters, Pointer<Uint32> noInstances, Pointer<Uint32> capsMask);
+
+//GL_MESA_framebuffer_flip_y
+typedef GlFramebufferParameteriMESANative = Void Function(Uint32 target, Uint32 pname, Int32 param);
+typedef GlFramebufferParameteriMESA = void Function(int target, int pname, int param);
+
+typedef GlGetFramebufferParameterivMESANative = Void Function(Uint32 target, Uint32 pname, Pointer<Int32> params);
+typedef GlGetFramebufferParameterivMESA = void Function(int target, int pname, Pointer<Int32> params);
 
 //GL_NV_bindless_multi_draw_indirect
 typedef GlMultiDrawArraysIndirectBindlessNVNative = Void Function(Uint32 mode, Pointer indirect, Int32 drawCount, Int32 stride, Int32 vertexBufferCount);
@@ -5829,14 +5894,14 @@ typedef GlMakeImageHandleNonResidentNV = void Function(int handle);
 typedef GlUniformHandleui64NVNative = Void Function(Int32 location, Uint64 value);
 typedef GlUniformHandleui64NV = void Function(int location, int value);
 
-typedef GlUniformHandleui64vNVNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniformHandleui64vNV = void Function(int location, int count, Pointer value);
+typedef GlUniformHandleui64vNVNative = Void Function(Int32 location, Int32 count, Pointer<Uint64> value);
+typedef GlUniformHandleui64vNV = void Function(int location, int count, Pointer<Uint64> value);
 
 typedef GlProgramUniformHandleui64NVNative = Void Function(Uint32 program, Int32 location, Uint64 value);
 typedef GlProgramUniformHandleui64NV = void Function(int program, int location, int value);
 
-typedef GlProgramUniformHandleui64vNVNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer values);
-typedef GlProgramUniformHandleui64vNV = void Function(int program, int location, int count, Pointer values);
+typedef GlProgramUniformHandleui64vNVNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Uint64> values);
+typedef GlProgramUniformHandleui64vNV = void Function(int program, int location, int count, Pointer<Uint64> values);
 
 typedef GlIsTextureHandleResidentNVNative = Uint8 Function(Uint64 handle);
 typedef GlIsTextureHandleResidentNV = int Function(int handle);
@@ -5856,11 +5921,11 @@ typedef GlViewportPositionWScaleNVNative = Void Function(Uint32 index, Float xco
 typedef GlViewportPositionWScaleNV = void Function(int index, double xcoeff, double ycoeff);
 
 //GL_NV_command_list
-typedef GlCreateStatesNVNative = Void Function(Int32 n, Pointer states);
-typedef GlCreateStatesNV = void Function(int n, Pointer states);
+typedef GlCreateStatesNVNative = Void Function(Int32 n, Pointer<Uint32> states);
+typedef GlCreateStatesNV = void Function(int n, Pointer<Uint32> states);
 
-typedef GlDeleteStatesNVNative = Void Function(Int32 n, Pointer states);
-typedef GlDeleteStatesNV = void Function(int n, Pointer states);
+typedef GlDeleteStatesNVNative = Void Function(Int32 n, Pointer<Uint32> states);
+typedef GlDeleteStatesNV = void Function(int n, Pointer<Uint32> states);
 
 typedef GlIsStateNVNative = Uint8 Function(Uint32 state);
 typedef GlIsStateNV = int Function(int state);
@@ -5874,29 +5939,29 @@ typedef GlGetCommandHeaderNV = int Function(int tokenID, int size);
 typedef GlGetStageIndexNVNative = Uint16 Function(Uint32 shadertype);
 typedef GlGetStageIndexNV = int Function(int shadertype);
 
-typedef GlDrawCommandsNVNative = Void Function(Uint32 primitiveMode, Uint32 buffer, Pointer indirects, Pointer sizes, Uint32 count);
-typedef GlDrawCommandsNV = void Function(int primitiveMode, int buffer, Pointer indirects, Pointer sizes, int count);
+typedef GlDrawCommandsNVNative = Void Function(Uint32 primitiveMode, Uint32 buffer, Pointer<Int64> indirects, Pointer<Int32> sizes, Uint32 count);
+typedef GlDrawCommandsNV = void Function(int primitiveMode, int buffer, Pointer<Int64> indirects, Pointer<Int32> sizes, int count);
 
-typedef GlDrawCommandsAddressNVNative = Void Function(Uint32 primitiveMode, Pointer indirects, Pointer sizes, Uint32 count);
-typedef GlDrawCommandsAddressNV = void Function(int primitiveMode, Pointer indirects, Pointer sizes, int count);
+typedef GlDrawCommandsAddressNVNative = Void Function(Uint32 primitiveMode, Pointer<Uint64> indirects, Pointer<Int32> sizes, Uint32 count);
+typedef GlDrawCommandsAddressNV = void Function(int primitiveMode, Pointer<Uint64> indirects, Pointer<Int32> sizes, int count);
 
-typedef GlDrawCommandsStatesNVNative = Void Function(Uint32 buffer, Pointer indirects, Pointer sizes, Pointer states, Pointer fbos, Uint32 count);
-typedef GlDrawCommandsStatesNV = void Function(int buffer, Pointer indirects, Pointer sizes, Pointer states, Pointer fbos, int count);
+typedef GlDrawCommandsStatesNVNative = Void Function(Uint32 buffer, Pointer<Int64> indirects, Pointer<Int32> sizes, Pointer<Uint32> states, Pointer<Uint32> fbos, Uint32 count);
+typedef GlDrawCommandsStatesNV = void Function(int buffer, Pointer<Int64> indirects, Pointer<Int32> sizes, Pointer<Uint32> states, Pointer<Uint32> fbos, int count);
 
-typedef GlDrawCommandsStatesAddressNVNative = Void Function(Pointer indirects, Pointer sizes, Pointer states, Pointer fbos, Uint32 count);
-typedef GlDrawCommandsStatesAddressNV = void Function(Pointer indirects, Pointer sizes, Pointer states, Pointer fbos, int count);
+typedef GlDrawCommandsStatesAddressNVNative = Void Function(Pointer<Uint64> indirects, Pointer<Int32> sizes, Pointer<Uint32> states, Pointer<Uint32> fbos, Uint32 count);
+typedef GlDrawCommandsStatesAddressNV = void Function(Pointer<Uint64> indirects, Pointer<Int32> sizes, Pointer<Uint32> states, Pointer<Uint32> fbos, int count);
 
-typedef GlCreateCommandListsNVNative = Void Function(Int32 n, Pointer lists);
-typedef GlCreateCommandListsNV = void Function(int n, Pointer lists);
+typedef GlCreateCommandListsNVNative = Void Function(Int32 n, Pointer<Uint32> lists);
+typedef GlCreateCommandListsNV = void Function(int n, Pointer<Uint32> lists);
 
-typedef GlDeleteCommandListsNVNative = Void Function(Int32 n, Pointer lists);
-typedef GlDeleteCommandListsNV = void Function(int n, Pointer lists);
+typedef GlDeleteCommandListsNVNative = Void Function(Int32 n, Pointer<Uint32> lists);
+typedef GlDeleteCommandListsNV = void Function(int n, Pointer<Uint32> lists);
 
 typedef GlIsCommandListNVNative = Uint8 Function(Uint32 list);
 typedef GlIsCommandListNV = int Function(int list);
 
-typedef GlListDrawCommandsStatesClientNVNative = Void Function(Uint32 list, Uint32 segment, Pointer indirects, Pointer sizes, Pointer states, Pointer fbos, Uint32 count);
-typedef GlListDrawCommandsStatesClientNV = void Function(int list, int segment, Pointer indirects, Pointer sizes, Pointer states, Pointer fbos, int count);
+typedef GlListDrawCommandsStatesClientNVNative = Void Function(Uint32 list, Uint32 segment, Pointer indirects, Pointer<Int32> sizes, Pointer<Uint32> states, Pointer<Uint32> fbos, Uint32 count);
+typedef GlListDrawCommandsStatesClientNV = void Function(int list, int segment, Pointer indirects, Pointer<Int32> sizes, Pointer<Uint32> states, Pointer<Uint32> fbos, int count);
 
 typedef GlCommandListSegmentsNVNative = Void Function(Uint32 list, Uint32 segments);
 typedef GlCommandListSegmentsNV = void Function(int list, int segments);
@@ -5926,6 +5991,16 @@ typedef GlConservativeRasterParameterfNV = void Function(int pname, double value
 typedef GlConservativeRasterParameteriNVNative = Void Function(Uint32 pname, Int32 param);
 typedef GlConservativeRasterParameteriNV = void Function(int pname, int param);
 
+//GL_NV_depth_buffer_float
+typedef GlDepthRangedNVNative = Void Function(Double zNear, Double zFar);
+typedef GlDepthRangedNV = void Function(double zNear, double zFar);
+
+typedef GlClearDepthdNVNative = Void Function(Double depth);
+typedef GlClearDepthdNV = void Function(double depth);
+
+typedef GlDepthBoundsdNVNative = Void Function(Double zmin, Double zmax);
+typedef GlDepthBoundsdNV = void Function(double zmin, double zmax);
+
 //GL_NV_draw_vulkan_image
 typedef GlDrawVkImageNVNative = Void Function(Uint64 vkImage, Uint32 sampler, Float x0, Float y0, Float x1, Float y1, Float z, Float s0, Float t0, Float s1, Float t1);
 typedef GlDrawVkImageNV = void Function(int vkImage, int sampler, double x0, double y0, double x1, double y1, double z, double s0, double t0, double s1, double t1);
@@ -5947,11 +6022,11 @@ typedef GlFragmentCoverageColorNVNative = Void Function(Uint32 color);
 typedef GlFragmentCoverageColorNV = void Function(int color);
 
 //GL_NV_framebuffer_mixed_samples
-typedef GlCoverageModulationTableNVNative = Void Function(Int32 n, Pointer v);
-typedef GlCoverageModulationTableNV = void Function(int n, Pointer v);
+typedef GlCoverageModulationTableNVNative = Void Function(Int32 n, Pointer<Float> v);
+typedef GlCoverageModulationTableNV = void Function(int n, Pointer<Float> v);
 
-typedef GlGetCoverageModulationTableNVNative = Void Function(Int32 bufsize, Pointer v);
-typedef GlGetCoverageModulationTableNV = void Function(int bufsize, Pointer v);
+typedef GlGetCoverageModulationTableNVNative = Void Function(Int32 bufSize, Pointer<Float> v);
+typedef GlGetCoverageModulationTableNV = void Function(int bufSize, Pointer<Float> v);
 
 typedef GlCoverageModulationNVNative = Void Function(Uint32 components);
 typedef GlCoverageModulationNV = void Function(int components);
@@ -5973,17 +6048,17 @@ typedef GlUniform3i64NV = void Function(int location, int x, int y, int z);
 typedef GlUniform4i64NVNative = Void Function(Int32 location, Int64 x, Int64 y, Int64 z, Int64 w);
 typedef GlUniform4i64NV = void Function(int location, int x, int y, int z, int w);
 
-typedef GlUniform1i64vNVNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform1i64vNV = void Function(int location, int count, Pointer value);
+typedef GlUniform1i64vNVNative = Void Function(Int32 location, Int32 count, Pointer<Int64> value);
+typedef GlUniform1i64vNV = void Function(int location, int count, Pointer<Int64> value);
 
-typedef GlUniform2i64vNVNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform2i64vNV = void Function(int location, int count, Pointer value);
+typedef GlUniform2i64vNVNative = Void Function(Int32 location, Int32 count, Pointer<Int64> value);
+typedef GlUniform2i64vNV = void Function(int location, int count, Pointer<Int64> value);
 
-typedef GlUniform3i64vNVNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform3i64vNV = void Function(int location, int count, Pointer value);
+typedef GlUniform3i64vNVNative = Void Function(Int32 location, Int32 count, Pointer<Int64> value);
+typedef GlUniform3i64vNV = void Function(int location, int count, Pointer<Int64> value);
 
-typedef GlUniform4i64vNVNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform4i64vNV = void Function(int location, int count, Pointer value);
+typedef GlUniform4i64vNVNative = Void Function(Int32 location, Int32 count, Pointer<Int64> value);
+typedef GlUniform4i64vNV = void Function(int location, int count, Pointer<Int64> value);
 
 typedef GlUniform1ui64NVNative = Void Function(Int32 location, Uint64 x);
 typedef GlUniform1ui64NV = void Function(int location, int x);
@@ -5997,20 +6072,20 @@ typedef GlUniform3ui64NV = void Function(int location, int x, int y, int z);
 typedef GlUniform4ui64NVNative = Void Function(Int32 location, Uint64 x, Uint64 y, Uint64 z, Uint64 w);
 typedef GlUniform4ui64NV = void Function(int location, int x, int y, int z, int w);
 
-typedef GlUniform1ui64vNVNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform1ui64vNV = void Function(int location, int count, Pointer value);
+typedef GlUniform1ui64vNVNative = Void Function(Int32 location, Int32 count, Pointer<Uint64> value);
+typedef GlUniform1ui64vNV = void Function(int location, int count, Pointer<Uint64> value);
 
-typedef GlUniform2ui64vNVNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform2ui64vNV = void Function(int location, int count, Pointer value);
+typedef GlUniform2ui64vNVNative = Void Function(Int32 location, Int32 count, Pointer<Uint64> value);
+typedef GlUniform2ui64vNV = void Function(int location, int count, Pointer<Uint64> value);
 
-typedef GlUniform3ui64vNVNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform3ui64vNV = void Function(int location, int count, Pointer value);
+typedef GlUniform3ui64vNVNative = Void Function(Int32 location, Int32 count, Pointer<Uint64> value);
+typedef GlUniform3ui64vNV = void Function(int location, int count, Pointer<Uint64> value);
 
-typedef GlUniform4ui64vNVNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniform4ui64vNV = void Function(int location, int count, Pointer value);
+typedef GlUniform4ui64vNVNative = Void Function(Int32 location, Int32 count, Pointer<Uint64> value);
+typedef GlUniform4ui64vNV = void Function(int location, int count, Pointer<Uint64> value);
 
-typedef GlGetUniformi64vNVNative = Void Function(Uint32 program, Int32 location, Pointer params);
-typedef GlGetUniformi64vNV = void Function(int program, int location, Pointer params);
+typedef GlGetUniformi64vNVNative = Void Function(Uint32 program, Int32 location, Pointer<Int64> params);
+typedef GlGetUniformi64vNV = void Function(int program, int location, Pointer<Int64> params);
 
 typedef GlProgramUniform1i64NVNative = Void Function(Uint32 program, Int32 location, Int64 x);
 typedef GlProgramUniform1i64NV = void Function(int program, int location, int x);
@@ -6024,17 +6099,17 @@ typedef GlProgramUniform3i64NV = void Function(int program, int location, int x,
 typedef GlProgramUniform4i64NVNative = Void Function(Uint32 program, Int32 location, Int64 x, Int64 y, Int64 z, Int64 w);
 typedef GlProgramUniform4i64NV = void Function(int program, int location, int x, int y, int z, int w);
 
-typedef GlProgramUniform1i64vNVNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform1i64vNV = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform1i64vNVNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Int64> value);
+typedef GlProgramUniform1i64vNV = void Function(int program, int location, int count, Pointer<Int64> value);
 
-typedef GlProgramUniform2i64vNVNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform2i64vNV = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform2i64vNVNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Int64> value);
+typedef GlProgramUniform2i64vNV = void Function(int program, int location, int count, Pointer<Int64> value);
 
-typedef GlProgramUniform3i64vNVNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform3i64vNV = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform3i64vNVNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Int64> value);
+typedef GlProgramUniform3i64vNV = void Function(int program, int location, int count, Pointer<Int64> value);
 
-typedef GlProgramUniform4i64vNVNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform4i64vNV = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform4i64vNVNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Int64> value);
+typedef GlProgramUniform4i64vNV = void Function(int program, int location, int count, Pointer<Int64> value);
 
 typedef GlProgramUniform1ui64NVNative = Void Function(Uint32 program, Int32 location, Uint64 x);
 typedef GlProgramUniform1ui64NV = void Function(int program, int location, int x);
@@ -6048,25 +6123,25 @@ typedef GlProgramUniform3ui64NV = void Function(int program, int location, int x
 typedef GlProgramUniform4ui64NVNative = Void Function(Uint32 program, Int32 location, Uint64 x, Uint64 y, Uint64 z, Uint64 w);
 typedef GlProgramUniform4ui64NV = void Function(int program, int location, int x, int y, int z, int w);
 
-typedef GlProgramUniform1ui64vNVNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform1ui64vNV = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform1ui64vNVNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Uint64> value);
+typedef GlProgramUniform1ui64vNV = void Function(int program, int location, int count, Pointer<Uint64> value);
 
-typedef GlProgramUniform2ui64vNVNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform2ui64vNV = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform2ui64vNVNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Uint64> value);
+typedef GlProgramUniform2ui64vNV = void Function(int program, int location, int count, Pointer<Uint64> value);
 
-typedef GlProgramUniform3ui64vNVNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform3ui64vNV = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform3ui64vNVNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Uint64> value);
+typedef GlProgramUniform3ui64vNV = void Function(int program, int location, int count, Pointer<Uint64> value);
 
-typedef GlProgramUniform4ui64vNVNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniform4ui64vNV = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniform4ui64vNVNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Uint64> value);
+typedef GlProgramUniform4ui64vNV = void Function(int program, int location, int count, Pointer<Uint64> value);
 
 //GL_NV_internalformat_sample_query
-typedef GlGetInternalformatSampleivNVNative = Void Function(Uint32 target, Uint32 internalformat, Int32 samples, Uint32 pname, Int32 bufSize, Pointer params);
-typedef GlGetInternalformatSampleivNV = void Function(int target, int internalformat, int samples, int pname, int bufSize, Pointer params);
+typedef GlGetInternalformatSampleivNVNative = Void Function(Uint32 target, Uint32 internalformat, Int32 samples, Uint32 pname, Int32 count, Pointer<Int32> params);
+typedef GlGetInternalformatSampleivNV = void Function(int target, int internalformat, int samples, int pname, int count, Pointer<Int32> params);
 
 //GL_NV_memory_attachment
-typedef GlGetMemoryObjectDetachedResourcesuivNVNative = Void Function(Uint32 memory, Uint32 pname, Int32 first, Int32 count, Pointer params);
-typedef GlGetMemoryObjectDetachedResourcesuivNV = void Function(int memory, int pname, int first, int count, Pointer params);
+typedef GlGetMemoryObjectDetachedResourcesuivNVNative = Void Function(Uint32 memory, Uint32 pname, Int32 first, Int32 count, Pointer<Uint32> params);
+typedef GlGetMemoryObjectDetachedResourcesuivNV = void Function(int memory, int pname, int first, int count, Pointer<Uint32> params);
 
 typedef GlResetMemoryObjectParameterNVNative = Void Function(Uint32 memory, Uint32 pname);
 typedef GlResetMemoryObjectParameterNV = void Function(int memory, int pname);
@@ -6082,6 +6157,19 @@ typedef GlTextureAttachMemoryNV = void Function(int texture, int memory, int off
 
 typedef GlNamedBufferAttachMemoryNVNative = Void Function(Uint32 buffer, Uint32 memory, Uint64 offset);
 typedef GlNamedBufferAttachMemoryNV = void Function(int buffer, int memory, int offset);
+
+//GL_NV_memory_object_sparse
+typedef GlBufferPageCommitmentMemNVNative = Void Function(Uint32 target, Int64 offset, Int64 size, Uint32 memory, Uint64 memOffset, Uint8 commit);
+typedef GlBufferPageCommitmentMemNV = void Function(int target, int offset, int size, int memory, int memOffset, int commit);
+
+typedef GlTexPageCommitmentMemNVNative = Void Function(Uint32 target, Int32 layer, Int32 level, Int32 xoffset, Int32 yoffset, Int32 zoffset, Int32 width, Int32 height, Int32 depth, Uint32 memory, Uint64 offset, Uint8 commit);
+typedef GlTexPageCommitmentMemNV = void Function(int target, int layer, int level, int xoffset, int yoffset, int zoffset, int width, int height, int depth, int memory, int offset, int commit);
+
+typedef GlNamedBufferPageCommitmentMemNVNative = Void Function(Uint32 buffer, Int64 offset, Int64 size, Uint32 memory, Uint64 memOffset, Uint8 commit);
+typedef GlNamedBufferPageCommitmentMemNV = void Function(int buffer, int offset, int size, int memory, int memOffset, int commit);
+
+typedef GlTexturePageCommitmentMemNVNative = Void Function(Uint32 texture, Int32 layer, Int32 level, Int32 xoffset, Int32 yoffset, Int32 zoffset, Int32 width, Int32 height, Int32 depth, Uint32 memory, Uint64 offset, Uint8 commit);
+typedef GlTexturePageCommitmentMemNV = void Function(int texture, int layer, int level, int xoffset, int yoffset, int zoffset, int width, int height, int depth, int memory, int offset, int commit);
 
 //GL_NV_mesh_shader
 typedef GlDrawMeshTasksNVNative = Void Function(Uint32 first, Uint32 count);
@@ -6127,8 +6215,8 @@ typedef GlPathGlyphsNV = void Function(int firstPathName, int fontTarget, Pointe
 typedef GlPathGlyphRangeNVNative = Void Function(Uint32 firstPathName, Uint32 fontTarget, Pointer fontName, Uint32 fontStyle, Uint32 firstGlyph, Int32 numGlyphs, Uint32 handleMissingGlyphs, Uint32 pathParameterTemplate, Float emScale);
 typedef GlPathGlyphRangeNV = void Function(int firstPathName, int fontTarget, Pointer fontName, int fontStyle, int firstGlyph, int numGlyphs, int handleMissingGlyphs, int pathParameterTemplate, double emScale);
 
-typedef GlWeightPathsNVNative = Void Function(Uint32 resultPath, Int32 numPaths, Pointer paths, Pointer weights);
-typedef GlWeightPathsNV = void Function(int resultPath, int numPaths, Pointer paths, Pointer weights);
+typedef GlWeightPathsNVNative = Void Function(Uint32 resultPath, Int32 numPaths, Pointer<Uint32> paths, Pointer<Float> weights);
+typedef GlWeightPathsNV = void Function(int resultPath, int numPaths, Pointer<Uint32> paths, Pointer<Float> weights);
 
 typedef GlCopyPathNVNative = Void Function(Uint32 resultPath, Uint32 srcPath);
 typedef GlCopyPathNV = void Function(int resultPath, int srcPath);
@@ -6136,23 +6224,23 @@ typedef GlCopyPathNV = void Function(int resultPath, int srcPath);
 typedef GlInterpolatePathsNVNative = Void Function(Uint32 resultPath, Uint32 pathA, Uint32 pathB, Float weight);
 typedef GlInterpolatePathsNV = void Function(int resultPath, int pathA, int pathB, double weight);
 
-typedef GlTransformPathNVNative = Void Function(Uint32 resultPath, Uint32 srcPath, Uint32 transformType, Pointer transformValues);
-typedef GlTransformPathNV = void Function(int resultPath, int srcPath, int transformType, Pointer transformValues);
+typedef GlTransformPathNVNative = Void Function(Uint32 resultPath, Uint32 srcPath, Uint32 transformType, Pointer<Float> transformValues);
+typedef GlTransformPathNV = void Function(int resultPath, int srcPath, int transformType, Pointer<Float> transformValues);
 
-typedef GlPathParameterivNVNative = Void Function(Uint32 path, Uint32 pname, Pointer value);
-typedef GlPathParameterivNV = void Function(int path, int pname, Pointer value);
+typedef GlPathParameterivNVNative = Void Function(Uint32 path, Uint32 pname, Pointer<Int32> value);
+typedef GlPathParameterivNV = void Function(int path, int pname, Pointer<Int32> value);
 
 typedef GlPathParameteriNVNative = Void Function(Uint32 path, Uint32 pname, Int32 value);
 typedef GlPathParameteriNV = void Function(int path, int pname, int value);
 
-typedef GlPathParameterfvNVNative = Void Function(Uint32 path, Uint32 pname, Pointer value);
-typedef GlPathParameterfvNV = void Function(int path, int pname, Pointer value);
+typedef GlPathParameterfvNVNative = Void Function(Uint32 path, Uint32 pname, Pointer<Float> value);
+typedef GlPathParameterfvNV = void Function(int path, int pname, Pointer<Float> value);
 
 typedef GlPathParameterfNVNative = Void Function(Uint32 path, Uint32 pname, Float value);
 typedef GlPathParameterfNV = void Function(int path, int pname, double value);
 
-typedef GlPathDashArrayNVNative = Void Function(Uint32 path, Int32 dashCount, Pointer dashArray);
-typedef GlPathDashArrayNV = void Function(int path, int dashCount, Pointer dashArray);
+typedef GlPathDashArrayNVNative = Void Function(Uint32 path, Int32 dashCount, Pointer<Float> dashArray);
+typedef GlPathDashArrayNV = void Function(int path, int dashCount, Pointer<Float> dashArray);
 
 typedef GlPathStencilFuncNVNative = Void Function(Uint32 func, Int32 ref, Uint32 mask);
 typedef GlPathStencilFuncNV = void Function(int func, int ref, int mask);
@@ -6166,11 +6254,11 @@ typedef GlStencilFillPathNV = void Function(int path, int fillMode, int mask);
 typedef GlStencilStrokePathNVNative = Void Function(Uint32 path, Int32 reference, Uint32 mask);
 typedef GlStencilStrokePathNV = void Function(int path, int reference, int mask);
 
-typedef GlStencilFillPathInstancedNVNative = Void Function(Int32 numPaths, Uint32 pathNameType, Pointer paths, Uint32 pathBase, Uint32 fillMode, Uint32 mask, Uint32 transformType, Pointer transformValues);
-typedef GlStencilFillPathInstancedNV = void Function(int numPaths, int pathNameType, Pointer paths, int pathBase, int fillMode, int mask, int transformType, Pointer transformValues);
+typedef GlStencilFillPathInstancedNVNative = Void Function(Int32 numPaths, Uint32 pathNameType, Pointer paths, Uint32 pathBase, Uint32 fillMode, Uint32 mask, Uint32 transformType, Pointer<Float> transformValues);
+typedef GlStencilFillPathInstancedNV = void Function(int numPaths, int pathNameType, Pointer paths, int pathBase, int fillMode, int mask, int transformType, Pointer<Float> transformValues);
 
-typedef GlStencilStrokePathInstancedNVNative = Void Function(Int32 numPaths, Uint32 pathNameType, Pointer paths, Uint32 pathBase, Int32 reference, Uint32 mask, Uint32 transformType, Pointer transformValues);
-typedef GlStencilStrokePathInstancedNV = void Function(int numPaths, int pathNameType, Pointer paths, int pathBase, int reference, int mask, int transformType, Pointer transformValues);
+typedef GlStencilStrokePathInstancedNVNative = Void Function(Int32 numPaths, Uint32 pathNameType, Pointer paths, Uint32 pathBase, Int32 reference, Uint32 mask, Uint32 transformType, Pointer<Float> transformValues);
+typedef GlStencilStrokePathInstancedNV = void Function(int numPaths, int pathNameType, Pointer paths, int pathBase, int reference, int mask, int transformType, Pointer<Float> transformValues);
 
 typedef GlPathCoverDepthFuncNVNative = Void Function(Uint32 func);
 typedef GlPathCoverDepthFuncNV = void Function(int func);
@@ -6181,35 +6269,35 @@ typedef GlCoverFillPathNV = void Function(int path, int coverMode);
 typedef GlCoverStrokePathNVNative = Void Function(Uint32 path, Uint32 coverMode);
 typedef GlCoverStrokePathNV = void Function(int path, int coverMode);
 
-typedef GlCoverFillPathInstancedNVNative = Void Function(Int32 numPaths, Uint32 pathNameType, Pointer paths, Uint32 pathBase, Uint32 coverMode, Uint32 transformType, Pointer transformValues);
-typedef GlCoverFillPathInstancedNV = void Function(int numPaths, int pathNameType, Pointer paths, int pathBase, int coverMode, int transformType, Pointer transformValues);
+typedef GlCoverFillPathInstancedNVNative = Void Function(Int32 numPaths, Uint32 pathNameType, Pointer paths, Uint32 pathBase, Uint32 coverMode, Uint32 transformType, Pointer<Float> transformValues);
+typedef GlCoverFillPathInstancedNV = void Function(int numPaths, int pathNameType, Pointer paths, int pathBase, int coverMode, int transformType, Pointer<Float> transformValues);
 
-typedef GlCoverStrokePathInstancedNVNative = Void Function(Int32 numPaths, Uint32 pathNameType, Pointer paths, Uint32 pathBase, Uint32 coverMode, Uint32 transformType, Pointer transformValues);
-typedef GlCoverStrokePathInstancedNV = void Function(int numPaths, int pathNameType, Pointer paths, int pathBase, int coverMode, int transformType, Pointer transformValues);
+typedef GlCoverStrokePathInstancedNVNative = Void Function(Int32 numPaths, Uint32 pathNameType, Pointer paths, Uint32 pathBase, Uint32 coverMode, Uint32 transformType, Pointer<Float> transformValues);
+typedef GlCoverStrokePathInstancedNV = void Function(int numPaths, int pathNameType, Pointer paths, int pathBase, int coverMode, int transformType, Pointer<Float> transformValues);
 
-typedef GlGetPathParameterivNVNative = Void Function(Uint32 path, Uint32 pname, Pointer value);
-typedef GlGetPathParameterivNV = void Function(int path, int pname, Pointer value);
+typedef GlGetPathParameterivNVNative = Void Function(Uint32 path, Uint32 pname, Pointer<Int32> value);
+typedef GlGetPathParameterivNV = void Function(int path, int pname, Pointer<Int32> value);
 
-typedef GlGetPathParameterfvNVNative = Void Function(Uint32 path, Uint32 pname, Pointer value);
-typedef GlGetPathParameterfvNV = void Function(int path, int pname, Pointer value);
+typedef GlGetPathParameterfvNVNative = Void Function(Uint32 path, Uint32 pname, Pointer<Float> value);
+typedef GlGetPathParameterfvNV = void Function(int path, int pname, Pointer<Float> value);
 
-typedef GlGetPathCommandsNVNative = Void Function(Uint32 path, Pointer commands);
-typedef GlGetPathCommandsNV = void Function(int path, Pointer commands);
+typedef GlGetPathCommandsNVNative = Void Function(Uint32 path, Pointer<Uint8> commands);
+typedef GlGetPathCommandsNV = void Function(int path, Pointer<Uint8> commands);
 
-typedef GlGetPathCoordsNVNative = Void Function(Uint32 path, Pointer coords);
-typedef GlGetPathCoordsNV = void Function(int path, Pointer coords);
+typedef GlGetPathCoordsNVNative = Void Function(Uint32 path, Pointer<Float> coords);
+typedef GlGetPathCoordsNV = void Function(int path, Pointer<Float> coords);
 
-typedef GlGetPathDashArrayNVNative = Void Function(Uint32 path, Pointer dashArray);
-typedef GlGetPathDashArrayNV = void Function(int path, Pointer dashArray);
+typedef GlGetPathDashArrayNVNative = Void Function(Uint32 path, Pointer<Float> dashArray);
+typedef GlGetPathDashArrayNV = void Function(int path, Pointer<Float> dashArray);
 
-typedef GlGetPathMetricsNVNative = Void Function(Uint32 metricQueryMask, Int32 numPaths, Uint32 pathNameType, Pointer paths, Uint32 pathBase, Int32 stride, Pointer metrics);
-typedef GlGetPathMetricsNV = void Function(int metricQueryMask, int numPaths, int pathNameType, Pointer paths, int pathBase, int stride, Pointer metrics);
+typedef GlGetPathMetricsNVNative = Void Function(Uint32 metricQueryMask, Int32 numPaths, Uint32 pathNameType, Pointer paths, Uint32 pathBase, Int32 stride, Pointer<Float> metrics);
+typedef GlGetPathMetricsNV = void Function(int metricQueryMask, int numPaths, int pathNameType, Pointer paths, int pathBase, int stride, Pointer<Float> metrics);
 
-typedef GlGetPathMetricRangeNVNative = Void Function(Uint32 metricQueryMask, Uint32 firstPathName, Int32 numPaths, Int32 stride, Pointer metrics);
-typedef GlGetPathMetricRangeNV = void Function(int metricQueryMask, int firstPathName, int numPaths, int stride, Pointer metrics);
+typedef GlGetPathMetricRangeNVNative = Void Function(Uint32 metricQueryMask, Uint32 firstPathName, Int32 numPaths, Int32 stride, Pointer<Float> metrics);
+typedef GlGetPathMetricRangeNV = void Function(int metricQueryMask, int firstPathName, int numPaths, int stride, Pointer<Float> metrics);
 
-typedef GlGetPathSpacingNVNative = Void Function(Uint32 pathListMode, Int32 numPaths, Uint32 pathNameType, Pointer paths, Uint32 pathBase, Float advanceScale, Float kerningScale, Uint32 transformType, Pointer returnedSpacing);
-typedef GlGetPathSpacingNV = void Function(int pathListMode, int numPaths, int pathNameType, Pointer paths, int pathBase, double advanceScale, double kerningScale, int transformType, Pointer returnedSpacing);
+typedef GlGetPathSpacingNVNative = Void Function(Uint32 pathListMode, Int32 numPaths, Uint32 pathNameType, Pointer paths, Uint32 pathBase, Float advanceScale, Float kerningScale, Uint32 transformType, Pointer<Float> returnedSpacing);
+typedef GlGetPathSpacingNV = void Function(int pathListMode, int numPaths, int pathNameType, Pointer paths, int pathBase, double advanceScale, double kerningScale, int transformType, Pointer<Float> returnedSpacing);
 
 typedef GlIsPointInFillPathNVNative = Uint8 Function(Uint32 path, Uint32 mask, Float x, Float y);
 typedef GlIsPointInFillPathNV = int Function(int path, int mask, double x, double y);
@@ -6220,26 +6308,26 @@ typedef GlIsPointInStrokePathNV = int Function(int path, double x, double y);
 typedef GlGetPathLengthNVNative = Float Function(Uint32 path, Int32 startSegment, Int32 numSegments);
 typedef GlGetPathLengthNV = double Function(int path, int startSegment, int numSegments);
 
-typedef GlPointAlongPathNVNative = Uint8 Function(Uint32 path, Int32 startSegment, Int32 numSegments, Float distance, Pointer x, Pointer y, Pointer tangentX, Pointer tangentY);
-typedef GlPointAlongPathNV = int Function(int path, int startSegment, int numSegments, double distance, Pointer x, Pointer y, Pointer tangentX, Pointer tangentY);
+typedef GlPointAlongPathNVNative = Uint8 Function(Uint32 path, Int32 startSegment, Int32 numSegments, Float distance, Pointer<Float> x, Pointer<Float> y, Pointer<Float> tangentX, Pointer<Float> tangentY);
+typedef GlPointAlongPathNV = int Function(int path, int startSegment, int numSegments, double distance, Pointer<Float> x, Pointer<Float> y, Pointer<Float> tangentX, Pointer<Float> tangentY);
 
-typedef GlMatrixLoad3x2fNVNative = Void Function(Uint32 matrixMode, Pointer m);
-typedef GlMatrixLoad3x2fNV = void Function(int matrixMode, Pointer m);
+typedef GlMatrixLoad3x2fNVNative = Void Function(Uint32 matrixMode, Pointer<Float> m);
+typedef GlMatrixLoad3x2fNV = void Function(int matrixMode, Pointer<Float> m);
 
-typedef GlMatrixLoad3x3fNVNative = Void Function(Uint32 matrixMode, Pointer m);
-typedef GlMatrixLoad3x3fNV = void Function(int matrixMode, Pointer m);
+typedef GlMatrixLoad3x3fNVNative = Void Function(Uint32 matrixMode, Pointer<Float> m);
+typedef GlMatrixLoad3x3fNV = void Function(int matrixMode, Pointer<Float> m);
 
-typedef GlMatrixLoadTranspose3x3fNVNative = Void Function(Uint32 matrixMode, Pointer m);
-typedef GlMatrixLoadTranspose3x3fNV = void Function(int matrixMode, Pointer m);
+typedef GlMatrixLoadTranspose3x3fNVNative = Void Function(Uint32 matrixMode, Pointer<Float> m);
+typedef GlMatrixLoadTranspose3x3fNV = void Function(int matrixMode, Pointer<Float> m);
 
-typedef GlMatrixMult3x2fNVNative = Void Function(Uint32 matrixMode, Pointer m);
-typedef GlMatrixMult3x2fNV = void Function(int matrixMode, Pointer m);
+typedef GlMatrixMult3x2fNVNative = Void Function(Uint32 matrixMode, Pointer<Float> m);
+typedef GlMatrixMult3x2fNV = void Function(int matrixMode, Pointer<Float> m);
 
-typedef GlMatrixMult3x3fNVNative = Void Function(Uint32 matrixMode, Pointer m);
-typedef GlMatrixMult3x3fNV = void Function(int matrixMode, Pointer m);
+typedef GlMatrixMult3x3fNVNative = Void Function(Uint32 matrixMode, Pointer<Float> m);
+typedef GlMatrixMult3x3fNV = void Function(int matrixMode, Pointer<Float> m);
 
-typedef GlMatrixMultTranspose3x3fNVNative = Void Function(Uint32 matrixMode, Pointer m);
-typedef GlMatrixMultTranspose3x3fNV = void Function(int matrixMode, Pointer m);
+typedef GlMatrixMultTranspose3x3fNVNative = Void Function(Uint32 matrixMode, Pointer<Float> m);
+typedef GlMatrixMultTranspose3x3fNV = void Function(int matrixMode, Pointer<Float> m);
 
 typedef GlStencilThenCoverFillPathNVNative = Void Function(Uint32 path, Uint32 fillMode, Uint32 mask, Uint32 coverMode);
 typedef GlStencilThenCoverFillPathNV = void Function(int path, int fillMode, int mask, int coverMode);
@@ -6247,14 +6335,14 @@ typedef GlStencilThenCoverFillPathNV = void Function(int path, int fillMode, int
 typedef GlStencilThenCoverStrokePathNVNative = Void Function(Uint32 path, Int32 reference, Uint32 mask, Uint32 coverMode);
 typedef GlStencilThenCoverStrokePathNV = void Function(int path, int reference, int mask, int coverMode);
 
-typedef GlStencilThenCoverFillPathInstancedNVNative = Void Function(Int32 numPaths, Uint32 pathNameType, Pointer paths, Uint32 pathBase, Uint32 fillMode, Uint32 mask, Uint32 coverMode, Uint32 transformType, Pointer transformValues);
-typedef GlStencilThenCoverFillPathInstancedNV = void Function(int numPaths, int pathNameType, Pointer paths, int pathBase, int fillMode, int mask, int coverMode, int transformType, Pointer transformValues);
+typedef GlStencilThenCoverFillPathInstancedNVNative = Void Function(Int32 numPaths, Uint32 pathNameType, Pointer paths, Uint32 pathBase, Uint32 fillMode, Uint32 mask, Uint32 coverMode, Uint32 transformType, Pointer<Float> transformValues);
+typedef GlStencilThenCoverFillPathInstancedNV = void Function(int numPaths, int pathNameType, Pointer paths, int pathBase, int fillMode, int mask, int coverMode, int transformType, Pointer<Float> transformValues);
 
-typedef GlStencilThenCoverStrokePathInstancedNVNative = Void Function(Int32 numPaths, Uint32 pathNameType, Pointer paths, Uint32 pathBase, Int32 reference, Uint32 mask, Uint32 coverMode, Uint32 transformType, Pointer transformValues);
-typedef GlStencilThenCoverStrokePathInstancedNV = void Function(int numPaths, int pathNameType, Pointer paths, int pathBase, int reference, int mask, int coverMode, int transformType, Pointer transformValues);
+typedef GlStencilThenCoverStrokePathInstancedNVNative = Void Function(Int32 numPaths, Uint32 pathNameType, Pointer paths, Uint32 pathBase, Int32 reference, Uint32 mask, Uint32 coverMode, Uint32 transformType, Pointer<Float> transformValues);
+typedef GlStencilThenCoverStrokePathInstancedNV = void Function(int numPaths, int pathNameType, Pointer paths, int pathBase, int reference, int mask, int coverMode, int transformType, Pointer<Float> transformValues);
 
-typedef GlPathGlyphIndexRangeNVNative = Uint32 Function(Uint32 fontTarget, Pointer fontName, Uint32 fontStyle, Uint32 pathParameterTemplate, Float emScale, Pointer baseAndCount);
-typedef GlPathGlyphIndexRangeNV = int Function(int fontTarget, Pointer fontName, int fontStyle, int pathParameterTemplate, double emScale, Pointer baseAndCount);
+typedef GlPathGlyphIndexRangeNVNative = Uint32 Function(Uint32 fontTarget, Pointer fontName, Uint32 fontStyle, Uint32 pathParameterTemplate, Float emScale, Pointer<Uint32> baseAndCount);
+typedef GlPathGlyphIndexRangeNV = int Function(int fontTarget, Pointer fontName, int fontStyle, int pathParameterTemplate, double emScale, Pointer<Uint32> baseAndCount);
 
 typedef GlPathGlyphIndexArrayNVNative = Uint32 Function(Uint32 firstPathName, Uint32 fontTarget, Pointer fontName, Uint32 fontStyle, Uint32 firstGlyphIndex, Int32 numGlyphs, Uint32 pathParameterTemplate, Float emScale);
 typedef GlPathGlyphIndexArrayNV = int Function(int firstPathName, int fontTarget, Pointer fontName, int fontStyle, int firstGlyphIndex, int numGlyphs, int pathParameterTemplate, double emScale);
@@ -6262,18 +6350,18 @@ typedef GlPathGlyphIndexArrayNV = int Function(int firstPathName, int fontTarget
 typedef GlPathMemoryGlyphIndexArrayNVNative = Uint32 Function(Uint32 firstPathName, Uint32 fontTarget, Int64 fontSize, Pointer fontData, Int32 faceIndex, Uint32 firstGlyphIndex, Int32 numGlyphs, Uint32 pathParameterTemplate, Float emScale);
 typedef GlPathMemoryGlyphIndexArrayNV = int Function(int firstPathName, int fontTarget, int fontSize, Pointer fontData, int faceIndex, int firstGlyphIndex, int numGlyphs, int pathParameterTemplate, double emScale);
 
-typedef GlProgramPathFragmentInputGenNVNative = Void Function(Uint32 program, Int32 location, Uint32 genMode, Int32 components, Pointer coeffs);
-typedef GlProgramPathFragmentInputGenNV = void Function(int program, int location, int genMode, int components, Pointer coeffs);
+typedef GlProgramPathFragmentInputGenNVNative = Void Function(Uint32 program, Int32 location, Uint32 genMode, Int32 components, Pointer<Float> coeffs);
+typedef GlProgramPathFragmentInputGenNV = void Function(int program, int location, int genMode, int components, Pointer<Float> coeffs);
 
-typedef GlGetProgramResourcefvNVNative = Void Function(Uint32 program, Uint32 programInterface, Uint32 index, Int32 propCount, Pointer props, Int32 bufSize, Pointer length, Pointer params);
-typedef GlGetProgramResourcefvNV = void Function(int program, int programInterface, int index, int propCount, Pointer props, int bufSize, Pointer length, Pointer params);
+typedef GlGetProgramResourcefvNVNative = Void Function(Uint32 program, Uint32 programInterface, Uint32 index, Int32 propCount, Pointer<Uint32> props, Int32 count, Pointer<Int32> length, Pointer<Float> params);
+typedef GlGetProgramResourcefvNV = void Function(int program, int programInterface, int index, int propCount, Pointer<Uint32> props, int count, Pointer<Int32> length, Pointer<Float> params);
 
 //GL_NV_sample_locations
-typedef GlFramebufferSampleLocationsfvNVNative = Void Function(Uint32 target, Uint32 start, Int32 count, Pointer v);
-typedef GlFramebufferSampleLocationsfvNV = void Function(int target, int start, int count, Pointer v);
+typedef GlFramebufferSampleLocationsfvNVNative = Void Function(Uint32 target, Uint32 start, Int32 count, Pointer<Float> v);
+typedef GlFramebufferSampleLocationsfvNV = void Function(int target, int start, int count, Pointer<Float> v);
 
-typedef GlNamedFramebufferSampleLocationsfvNVNative = Void Function(Uint32 framebuffer, Uint32 start, Int32 count, Pointer v);
-typedef GlNamedFramebufferSampleLocationsfvNV = void Function(int framebuffer, int start, int count, Pointer v);
+typedef GlNamedFramebufferSampleLocationsfvNVNative = Void Function(Uint32 framebuffer, Uint32 start, Int32 count, Pointer<Float> v);
+typedef GlNamedFramebufferSampleLocationsfvNV = void Function(int framebuffer, int start, int count, Pointer<Float> v);
 
 typedef GlResolveDepthValuesNVNative = Void Function();
 typedef GlResolveDepthValuesNV = void Function();
@@ -6282,8 +6370,8 @@ typedef GlResolveDepthValuesNV = void Function();
 typedef GlScissorExclusiveNVNative = Void Function(Int32 x, Int32 y, Int32 width, Int32 height);
 typedef GlScissorExclusiveNV = void Function(int x, int y, int width, int height);
 
-typedef GlScissorExclusiveArrayvNVNative = Void Function(Uint32 first, Int32 count, Pointer v);
-typedef GlScissorExclusiveArrayvNV = void Function(int first, int count, Pointer v);
+typedef GlScissorExclusiveArrayvNVNative = Void Function(Uint32 first, Int32 count, Pointer<Int32> v);
+typedef GlScissorExclusiveArrayvNV = void Function(int first, int count, Pointer<Int32> v);
 
 //GL_NV_shader_buffer_load
 typedef GlMakeBufferResidentNVNative = Void Function(Uint32 target, Uint32 access);
@@ -6304,51 +6392,51 @@ typedef GlMakeNamedBufferNonResidentNV = void Function(int buffer);
 typedef GlIsNamedBufferResidentNVNative = Uint8 Function(Uint32 buffer);
 typedef GlIsNamedBufferResidentNV = int Function(int buffer);
 
-typedef GlGetBufferParameterui64vNVNative = Void Function(Uint32 target, Uint32 pname, Pointer params);
-typedef GlGetBufferParameterui64vNV = void Function(int target, int pname, Pointer params);
+typedef GlGetBufferParameterui64vNVNative = Void Function(Uint32 target, Uint32 pname, Pointer<Uint64> params);
+typedef GlGetBufferParameterui64vNV = void Function(int target, int pname, Pointer<Uint64> params);
 
-typedef GlGetNamedBufferParameterui64vNVNative = Void Function(Uint32 buffer, Uint32 pname, Pointer params);
-typedef GlGetNamedBufferParameterui64vNV = void Function(int buffer, int pname, Pointer params);
+typedef GlGetNamedBufferParameterui64vNVNative = Void Function(Uint32 buffer, Uint32 pname, Pointer<Uint64> params);
+typedef GlGetNamedBufferParameterui64vNV = void Function(int buffer, int pname, Pointer<Uint64> params);
 
-typedef GlGetIntegerui64vNVNative = Void Function(Uint32 value, Pointer result);
-typedef GlGetIntegerui64vNV = void Function(int value, Pointer result);
+typedef GlGetIntegerui64vNVNative = Void Function(Uint32 value, Pointer<Uint64> result);
+typedef GlGetIntegerui64vNV = void Function(int value, Pointer<Uint64> result);
 
 typedef GlUniformui64NVNative = Void Function(Int32 location, Uint64 value);
 typedef GlUniformui64NV = void Function(int location, int value);
 
-typedef GlUniformui64vNVNative = Void Function(Int32 location, Int32 count, Pointer value);
-typedef GlUniformui64vNV = void Function(int location, int count, Pointer value);
+typedef GlUniformui64vNVNative = Void Function(Int32 location, Int32 count, Pointer<Uint64> value);
+typedef GlUniformui64vNV = void Function(int location, int count, Pointer<Uint64> value);
 
-typedef GlGetUniformui64vNVNative = Void Function(Uint32 program, Int32 location, Pointer params);
-typedef GlGetUniformui64vNV = void Function(int program, int location, Pointer params);
+typedef GlGetUniformui64vNVNative = Void Function(Uint32 program, Int32 location, Pointer<Uint64> params);
+typedef GlGetUniformui64vNV = void Function(int program, int location, Pointer<Uint64> params);
 
 typedef GlProgramUniformui64NVNative = Void Function(Uint32 program, Int32 location, Uint64 value);
 typedef GlProgramUniformui64NV = void Function(int program, int location, int value);
 
-typedef GlProgramUniformui64vNVNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer value);
-typedef GlProgramUniformui64vNV = void Function(int program, int location, int count, Pointer value);
+typedef GlProgramUniformui64vNVNative = Void Function(Uint32 program, Int32 location, Int32 count, Pointer<Uint64> value);
+typedef GlProgramUniformui64vNV = void Function(int program, int location, int count, Pointer<Uint64> value);
 
 //GL_NV_shading_rate_image
 typedef GlBindShadingRateImageNVNative = Void Function(Uint32 texture);
 typedef GlBindShadingRateImageNV = void Function(int texture);
 
-typedef GlGetShadingRateImagePaletteNVNative = Void Function(Uint32 viewport, Uint32 entry, Pointer rate);
-typedef GlGetShadingRateImagePaletteNV = void Function(int viewport, int entry, Pointer rate);
+typedef GlGetShadingRateImagePaletteNVNative = Void Function(Uint32 viewport, Uint32 entry, Pointer<Uint32> rate);
+typedef GlGetShadingRateImagePaletteNV = void Function(int viewport, int entry, Pointer<Uint32> rate);
 
-typedef GlGetShadingRateSampleLocationivNVNative = Void Function(Uint32 rate, Uint32 samples, Uint32 index, Pointer location);
-typedef GlGetShadingRateSampleLocationivNV = void Function(int rate, int samples, int index, Pointer location);
+typedef GlGetShadingRateSampleLocationivNVNative = Void Function(Uint32 rate, Uint32 samples, Uint32 index, Pointer<Int32> location);
+typedef GlGetShadingRateSampleLocationivNV = void Function(int rate, int samples, int index, Pointer<Int32> location);
 
 typedef GlShadingRateImageBarrierNVNative = Void Function(Uint8 synchronize);
 typedef GlShadingRateImageBarrierNV = void Function(int synchronize);
 
-typedef GlShadingRateImagePaletteNVNative = Void Function(Uint32 viewport, Uint32 first, Int32 count, Pointer rates);
-typedef GlShadingRateImagePaletteNV = void Function(int viewport, int first, int count, Pointer rates);
+typedef GlShadingRateImagePaletteNVNative = Void Function(Uint32 viewport, Uint32 first, Int32 count, Pointer<Uint32> rates);
+typedef GlShadingRateImagePaletteNV = void Function(int viewport, int first, int count, Pointer<Uint32> rates);
 
 typedef GlShadingRateSampleOrderNVNative = Void Function(Uint32 order);
 typedef GlShadingRateSampleOrderNV = void Function(int order);
 
-typedef GlShadingRateSampleOrderCustomNVNative = Void Function(Uint32 rate, Uint32 samples, Pointer locations);
-typedef GlShadingRateSampleOrderCustomNV = void Function(int rate, int samples, Pointer locations);
+typedef GlShadingRateSampleOrderCustomNVNative = Void Function(Uint32 rate, Uint32 samples, Pointer<Int32> locations);
+typedef GlShadingRateSampleOrderCustomNV = void Function(int rate, int samples, Pointer<Int32> locations);
 
 //GL_NV_texture_barrier
 typedef GlTextureBarrierNVNative = Void Function();
@@ -6367,17 +6455,17 @@ typedef GlVertexAttribL3i64NV = void Function(int index, int x, int y, int z);
 typedef GlVertexAttribL4i64NVNative = Void Function(Uint32 index, Int64 x, Int64 y, Int64 z, Int64 w);
 typedef GlVertexAttribL4i64NV = void Function(int index, int x, int y, int z, int w);
 
-typedef GlVertexAttribL1i64vNVNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttribL1i64vNV = void Function(int index, Pointer v);
+typedef GlVertexAttribL1i64vNVNative = Void Function(Uint32 index, Pointer<Int64> v);
+typedef GlVertexAttribL1i64vNV = void Function(int index, Pointer<Int64> v);
 
-typedef GlVertexAttribL2i64vNVNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttribL2i64vNV = void Function(int index, Pointer v);
+typedef GlVertexAttribL2i64vNVNative = Void Function(Uint32 index, Pointer<Int64> v);
+typedef GlVertexAttribL2i64vNV = void Function(int index, Pointer<Int64> v);
 
-typedef GlVertexAttribL3i64vNVNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttribL3i64vNV = void Function(int index, Pointer v);
+typedef GlVertexAttribL3i64vNVNative = Void Function(Uint32 index, Pointer<Int64> v);
+typedef GlVertexAttribL3i64vNV = void Function(int index, Pointer<Int64> v);
 
-typedef GlVertexAttribL4i64vNVNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttribL4i64vNV = void Function(int index, Pointer v);
+typedef GlVertexAttribL4i64vNVNative = Void Function(Uint32 index, Pointer<Int64> v);
+typedef GlVertexAttribL4i64vNV = void Function(int index, Pointer<Int64> v);
 
 typedef GlVertexAttribL1ui64NVNative = Void Function(Uint32 index, Uint64 x);
 typedef GlVertexAttribL1ui64NV = void Function(int index, int x);
@@ -6391,23 +6479,23 @@ typedef GlVertexAttribL3ui64NV = void Function(int index, int x, int y, int z);
 typedef GlVertexAttribL4ui64NVNative = Void Function(Uint32 index, Uint64 x, Uint64 y, Uint64 z, Uint64 w);
 typedef GlVertexAttribL4ui64NV = void Function(int index, int x, int y, int z, int w);
 
-typedef GlVertexAttribL1ui64vNVNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttribL1ui64vNV = void Function(int index, Pointer v);
+typedef GlVertexAttribL1ui64vNVNative = Void Function(Uint32 index, Pointer<Uint64> v);
+typedef GlVertexAttribL1ui64vNV = void Function(int index, Pointer<Uint64> v);
 
-typedef GlVertexAttribL2ui64vNVNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttribL2ui64vNV = void Function(int index, Pointer v);
+typedef GlVertexAttribL2ui64vNVNative = Void Function(Uint32 index, Pointer<Uint64> v);
+typedef GlVertexAttribL2ui64vNV = void Function(int index, Pointer<Uint64> v);
 
-typedef GlVertexAttribL3ui64vNVNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttribL3ui64vNV = void Function(int index, Pointer v);
+typedef GlVertexAttribL3ui64vNVNative = Void Function(Uint32 index, Pointer<Uint64> v);
+typedef GlVertexAttribL3ui64vNV = void Function(int index, Pointer<Uint64> v);
 
-typedef GlVertexAttribL4ui64vNVNative = Void Function(Uint32 index, Pointer v);
-typedef GlVertexAttribL4ui64vNV = void Function(int index, Pointer v);
+typedef GlVertexAttribL4ui64vNVNative = Void Function(Uint32 index, Pointer<Uint64> v);
+typedef GlVertexAttribL4ui64vNV = void Function(int index, Pointer<Uint64> v);
 
-typedef GlGetVertexAttribLi64vNVNative = Void Function(Uint32 index, Uint32 pname, Pointer params);
-typedef GlGetVertexAttribLi64vNV = void Function(int index, int pname, Pointer params);
+typedef GlGetVertexAttribLi64vNVNative = Void Function(Uint32 index, Uint32 pname, Pointer<Int64> params);
+typedef GlGetVertexAttribLi64vNV = void Function(int index, int pname, Pointer<Int64> params);
 
-typedef GlGetVertexAttribLui64vNVNative = Void Function(Uint32 index, Uint32 pname, Pointer params);
-typedef GlGetVertexAttribLui64vNV = void Function(int index, int pname, Pointer params);
+typedef GlGetVertexAttribLui64vNVNative = Void Function(Uint32 index, Uint32 pname, Pointer<Uint64> params);
+typedef GlGetVertexAttribLui64vNV = void Function(int index, int pname, Pointer<Uint64> params);
 
 typedef GlVertexAttribLFormatNVNative = Void Function(Uint32 index, Int32 size, Uint32 type, Int32 stride);
 typedef GlVertexAttribLFormatNV = void Function(int index, int size, int type, int stride);
@@ -6446,8 +6534,8 @@ typedef GlVertexAttribFormatNV = void Function(int index, int size, int type, in
 typedef GlVertexAttribIFormatNVNative = Void Function(Uint32 index, Int32 size, Uint32 type, Int32 stride);
 typedef GlVertexAttribIFormatNV = void Function(int index, int size, int type, int stride);
 
-typedef GlGetIntegerui64i_vNVNative = Void Function(Uint32 value, Uint32 index, Pointer result);
-typedef GlGetIntegerui64i_vNV = void Function(int value, int index, Pointer result);
+typedef GlGetIntegerui64i_vNVNative = Void Function(Uint32 value, Uint32 index, Pointer<Uint64> result);
+typedef GlGetIntegerui64i_vNV = void Function(int value, int index, Pointer<Uint64> result);
 
 //GL_NV_viewport_swizzle
 typedef GlViewportSwizzleNVNative = Void Function(Uint32 index, Uint32 swizzlex, Uint32 swizzley, Uint32 swizzlez, Uint32 swizzlew);

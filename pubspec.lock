@@ -9,7 +9,7 @@ packages:
     source: hosted
     version: "0.1.3"
   ffi_utils:
-    dependency: "direct main"
+    dependency: "direct dev"
     description:
       name: ffi_utils
       url: "https://pub.dartlang.org"

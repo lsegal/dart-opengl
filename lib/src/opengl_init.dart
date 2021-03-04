@@ -771,6 +771,8 @@ GlNamedBufferPageCommitmentEXT glNamedBufferPageCommitmentEXT;
 GlNamedBufferPageCommitmentARB glNamedBufferPageCommitmentARB;
 GlTexPageCommitmentARB glTexPageCommitmentARB;
 GlTexBufferARB glTexBufferARB;
+GlDepthRangeArraydvNV glDepthRangeArraydvNV;
+GlDepthRangeIndexeddNV glDepthRangeIndexeddNV;
 GlBlendBarrierKHR glBlendBarrierKHR;
 GlMaxShaderCompilerThreadsKHR glMaxShaderCompilerThreadsKHR;
 GlRenderbufferStorageMultisampleAdvancedAMD glRenderbufferStorageMultisampleAdvancedAMD;
@@ -1068,6 +1070,8 @@ GlGetPerfCounterInfoINTEL glGetPerfCounterInfoINTEL;
 GlGetPerfQueryDataINTEL glGetPerfQueryDataINTEL;
 GlGetPerfQueryIdByNameINTEL glGetPerfQueryIdByNameINTEL;
 GlGetPerfQueryInfoINTEL glGetPerfQueryInfoINTEL;
+GlFramebufferParameteriMESA glFramebufferParameteriMESA;
+GlGetFramebufferParameterivMESA glGetFramebufferParameterivMESA;
 GlMultiDrawArraysIndirectBindlessNV glMultiDrawArraysIndirectBindlessNV;
 GlMultiDrawElementsIndirectBindlessNV glMultiDrawElementsIndirectBindlessNV;
 GlMultiDrawArraysIndirectBindlessCountNV glMultiDrawArraysIndirectBindlessCountNV;
@@ -1110,6 +1114,9 @@ GlEndConditionalRenderNV glEndConditionalRenderNV;
 GlSubpixelPrecisionBiasNV glSubpixelPrecisionBiasNV;
 GlConservativeRasterParameterfNV glConservativeRasterParameterfNV;
 GlConservativeRasterParameteriNV glConservativeRasterParameteriNV;
+GlDepthRangedNV glDepthRangedNV;
+GlClearDepthdNV glClearDepthdNV;
+GlDepthBoundsdNV glDepthBoundsdNV;
 GlDrawVkImageNV glDrawVkImageNV;
 GlGetVkProcAddrNV glGetVkProcAddrNV;
 GlWaitVkSemaphoreNV glWaitVkSemaphoreNV;
@@ -1160,6 +1167,10 @@ GlTexAttachMemoryNV glTexAttachMemoryNV;
 GlBufferAttachMemoryNV glBufferAttachMemoryNV;
 GlTextureAttachMemoryNV glTextureAttachMemoryNV;
 GlNamedBufferAttachMemoryNV glNamedBufferAttachMemoryNV;
+GlBufferPageCommitmentMemNV glBufferPageCommitmentMemNV;
+GlTexPageCommitmentMemNV glTexPageCommitmentMemNV;
+GlNamedBufferPageCommitmentMemNV glNamedBufferPageCommitmentMemNV;
+GlTexturePageCommitmentMemNV glTexturePageCommitmentMemNV;
 GlDrawMeshTasksNV glDrawMeshTasksNV;
 GlDrawMeshTasksIndirectNV glDrawMeshTasksIndirectNV;
 GlMultiDrawMeshTasksIndirectNV glMultiDrawMeshTasksIndirectNV;
@@ -1283,7 +1294,7 @@ GlViewportSwizzleNV glViewportSwizzleNV;
 GlFramebufferTextureMultiviewOVR glFramebufferTextureMultiviewOVR;
 
 void initOpenGL() {
-  var lib = loadLibrary();
+  DynamicLibrary lib = loadLibrary();
   glCullFace =  tryCall(() => lib.lookupFunction<GlCullFaceNative, GlCullFace>('glCullFace'));
   if (glCullFace == null && glGetProcAddress != null) {
     glCullFace =  tryCall(() => Pointer<NativeFunction<GlCullFaceNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glCullFace'))).asFunction<GlCullFace>());
@@ -4300,6 +4311,14 @@ void initOpenGL() {
   if (glTexBufferARB == null && glGetProcAddress != null) {
     glTexBufferARB =  tryCall(() => Pointer<NativeFunction<GlTexBufferARBNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexBufferARB'))).asFunction<GlTexBufferARB>());
   }
+  glDepthRangeArraydvNV =  tryCall(() => lib.lookupFunction<GlDepthRangeArraydvNVNative, GlDepthRangeArraydvNV>('glDepthRangeArraydvNV'));
+  if (glDepthRangeArraydvNV == null && glGetProcAddress != null) {
+    glDepthRangeArraydvNV =  tryCall(() => Pointer<NativeFunction<GlDepthRangeArraydvNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDepthRangeArraydvNV'))).asFunction<GlDepthRangeArraydvNV>());
+  }
+  glDepthRangeIndexeddNV =  tryCall(() => lib.lookupFunction<GlDepthRangeIndexeddNVNative, GlDepthRangeIndexeddNV>('glDepthRangeIndexeddNV'));
+  if (glDepthRangeIndexeddNV == null && glGetProcAddress != null) {
+    glDepthRangeIndexeddNV =  tryCall(() => Pointer<NativeFunction<GlDepthRangeIndexeddNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDepthRangeIndexeddNV'))).asFunction<GlDepthRangeIndexeddNV>());
+  }
   glBlendBarrierKHR =  tryCall(() => lib.lookupFunction<GlBlendBarrierKHRNative, GlBlendBarrierKHR>('glBlendBarrierKHR'));
   if (glBlendBarrierKHR == null && glGetProcAddress != null) {
     glBlendBarrierKHR =  tryCall(() => Pointer<NativeFunction<GlBlendBarrierKHRNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBlendBarrierKHR'))).asFunction<GlBlendBarrierKHR>());
@@ -5488,6 +5507,14 @@ void initOpenGL() {
   if (glGetPerfQueryInfoINTEL == null && glGetProcAddress != null) {
     glGetPerfQueryInfoINTEL =  tryCall(() => Pointer<NativeFunction<GlGetPerfQueryInfoINTELNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetPerfQueryInfoINTEL'))).asFunction<GlGetPerfQueryInfoINTEL>());
   }
+  glFramebufferParameteriMESA =  tryCall(() => lib.lookupFunction<GlFramebufferParameteriMESANative, GlFramebufferParameteriMESA>('glFramebufferParameteriMESA'));
+  if (glFramebufferParameteriMESA == null && glGetProcAddress != null) {
+    glFramebufferParameteriMESA =  tryCall(() => Pointer<NativeFunction<GlFramebufferParameteriMESANative>>.fromAddress(glGetProcAddress(NativeString.fromString('glFramebufferParameteriMESA'))).asFunction<GlFramebufferParameteriMESA>());
+  }
+  glGetFramebufferParameterivMESA =  tryCall(() => lib.lookupFunction<GlGetFramebufferParameterivMESANative, GlGetFramebufferParameterivMESA>('glGetFramebufferParameterivMESA'));
+  if (glGetFramebufferParameterivMESA == null && glGetProcAddress != null) {
+    glGetFramebufferParameterivMESA =  tryCall(() => Pointer<NativeFunction<GlGetFramebufferParameterivMESANative>>.fromAddress(glGetProcAddress(NativeString.fromString('glGetFramebufferParameterivMESA'))).asFunction<GlGetFramebufferParameterivMESA>());
+  }
   glMultiDrawArraysIndirectBindlessNV =  tryCall(() => lib.lookupFunction<GlMultiDrawArraysIndirectBindlessNVNative, GlMultiDrawArraysIndirectBindlessNV>('glMultiDrawArraysIndirectBindlessNV'));
   if (glMultiDrawArraysIndirectBindlessNV == null && glGetProcAddress != null) {
     glMultiDrawArraysIndirectBindlessNV =  tryCall(() => Pointer<NativeFunction<GlMultiDrawArraysIndirectBindlessNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glMultiDrawArraysIndirectBindlessNV'))).asFunction<GlMultiDrawArraysIndirectBindlessNV>());
@@ -5655,6 +5682,18 @@ void initOpenGL() {
   glConservativeRasterParameteriNV =  tryCall(() => lib.lookupFunction<GlConservativeRasterParameteriNVNative, GlConservativeRasterParameteriNV>('glConservativeRasterParameteriNV'));
   if (glConservativeRasterParameteriNV == null && glGetProcAddress != null) {
     glConservativeRasterParameteriNV =  tryCall(() => Pointer<NativeFunction<GlConservativeRasterParameteriNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glConservativeRasterParameteriNV'))).asFunction<GlConservativeRasterParameteriNV>());
+  }
+  glDepthRangedNV =  tryCall(() => lib.lookupFunction<GlDepthRangedNVNative, GlDepthRangedNV>('glDepthRangedNV'));
+  if (glDepthRangedNV == null && glGetProcAddress != null) {
+    glDepthRangedNV =  tryCall(() => Pointer<NativeFunction<GlDepthRangedNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDepthRangedNV'))).asFunction<GlDepthRangedNV>());
+  }
+  glClearDepthdNV =  tryCall(() => lib.lookupFunction<GlClearDepthdNVNative, GlClearDepthdNV>('glClearDepthdNV'));
+  if (glClearDepthdNV == null && glGetProcAddress != null) {
+    glClearDepthdNV =  tryCall(() => Pointer<NativeFunction<GlClearDepthdNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glClearDepthdNV'))).asFunction<GlClearDepthdNV>());
+  }
+  glDepthBoundsdNV =  tryCall(() => lib.lookupFunction<GlDepthBoundsdNVNative, GlDepthBoundsdNV>('glDepthBoundsdNV'));
+  if (glDepthBoundsdNV == null && glGetProcAddress != null) {
+    glDepthBoundsdNV =  tryCall(() => Pointer<NativeFunction<GlDepthBoundsdNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glDepthBoundsdNV'))).asFunction<GlDepthBoundsdNV>());
   }
   glDrawVkImageNV =  tryCall(() => lib.lookupFunction<GlDrawVkImageNVNative, GlDrawVkImageNV>('glDrawVkImageNV'));
   if (glDrawVkImageNV == null && glGetProcAddress != null) {
@@ -5855,6 +5894,22 @@ void initOpenGL() {
   glNamedBufferAttachMemoryNV =  tryCall(() => lib.lookupFunction<GlNamedBufferAttachMemoryNVNative, GlNamedBufferAttachMemoryNV>('glNamedBufferAttachMemoryNV'));
   if (glNamedBufferAttachMemoryNV == null && glGetProcAddress != null) {
     glNamedBufferAttachMemoryNV =  tryCall(() => Pointer<NativeFunction<GlNamedBufferAttachMemoryNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedBufferAttachMemoryNV'))).asFunction<GlNamedBufferAttachMemoryNV>());
+  }
+  glBufferPageCommitmentMemNV =  tryCall(() => lib.lookupFunction<GlBufferPageCommitmentMemNVNative, GlBufferPageCommitmentMemNV>('glBufferPageCommitmentMemNV'));
+  if (glBufferPageCommitmentMemNV == null && glGetProcAddress != null) {
+    glBufferPageCommitmentMemNV =  tryCall(() => Pointer<NativeFunction<GlBufferPageCommitmentMemNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glBufferPageCommitmentMemNV'))).asFunction<GlBufferPageCommitmentMemNV>());
+  }
+  glTexPageCommitmentMemNV =  tryCall(() => lib.lookupFunction<GlTexPageCommitmentMemNVNative, GlTexPageCommitmentMemNV>('glTexPageCommitmentMemNV'));
+  if (glTexPageCommitmentMemNV == null && glGetProcAddress != null) {
+    glTexPageCommitmentMemNV =  tryCall(() => Pointer<NativeFunction<GlTexPageCommitmentMemNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexPageCommitmentMemNV'))).asFunction<GlTexPageCommitmentMemNV>());
+  }
+  glNamedBufferPageCommitmentMemNV =  tryCall(() => lib.lookupFunction<GlNamedBufferPageCommitmentMemNVNative, GlNamedBufferPageCommitmentMemNV>('glNamedBufferPageCommitmentMemNV'));
+  if (glNamedBufferPageCommitmentMemNV == null && glGetProcAddress != null) {
+    glNamedBufferPageCommitmentMemNV =  tryCall(() => Pointer<NativeFunction<GlNamedBufferPageCommitmentMemNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glNamedBufferPageCommitmentMemNV'))).asFunction<GlNamedBufferPageCommitmentMemNV>());
+  }
+  glTexturePageCommitmentMemNV =  tryCall(() => lib.lookupFunction<GlTexturePageCommitmentMemNVNative, GlTexturePageCommitmentMemNV>('glTexturePageCommitmentMemNV'));
+  if (glTexturePageCommitmentMemNV == null && glGetProcAddress != null) {
+    glTexturePageCommitmentMemNV =  tryCall(() => Pointer<NativeFunction<GlTexturePageCommitmentMemNVNative>>.fromAddress(glGetProcAddress(NativeString.fromString('glTexturePageCommitmentMemNV'))).asFunction<GlTexturePageCommitmentMemNV>());
   }
   glDrawMeshTasksNV =  tryCall(() => lib.lookupFunction<GlDrawMeshTasksNVNative, GlDrawMeshTasksNV>('glDrawMeshTasksNV'));
   if (glDrawMeshTasksNV == null && glGetProcAddress != null) {
