@@ -37,7 +37,7 @@ DynamicLibrary loadLibrary() {
   try {
     library = DynamicLibrary.open(name);
   } catch (ex) {
-    throw Exception('failed to load OpenGL library ${name}');
+    throw Exception('failed to load OpenGL library $name');
   }
 
   var glGetProcAddressName;
@@ -47,9 +47,10 @@ DynamicLibrary loadLibrary() {
     glGetProcAddressName = 'glXGetProcAddress';
   }
 
-  try {    
+  try {
     if (glGetProcAddressName != null) {
-      glGetProcAddress = library.lookupFunction<GlGetProcAddressNative, GlGetProcAddress>(glGetProcAddressName);
+      glGetProcAddress = library.lookupFunction<GlGetProcAddressNative, GlGetProcAddress>(
+        glGetProcAddressName);
     }
   } catch (ex) {
     throw Exception('failed to loookup $glGetProcAddressName function');
@@ -58,6 +59,6 @@ DynamicLibrary loadLibrary() {
   return library;
 }
 
-Object tryCall(Function f) {
-  try { return f(); } catch(ex) { return null; }
+Object tryCall(Function function) {
+  try { return function(); } catch(ex) { return null; }
 }

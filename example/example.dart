@@ -9,9 +9,9 @@ void main() {
 
   // use OpenGL
   //...
-  var result = glGetError();
+  final result = glGetError();
 
-  // glGetError returns GL_NO_ERROR if successful, 
+  // glGetError returns GL_NO_ERROR if successful,
   // or GL_INVALID_OPERATION = 0x0502 (1282) without context in our case
-  print('glGetError() result is ${result == GL_NO_ERROR ? "GL_NO_ERROR" : result}');
+  print('glGetError() is ${result == GL_NO_ERROR ? "GL_NO_ERROR" : result}');
 }
