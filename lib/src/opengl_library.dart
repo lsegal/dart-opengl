@@ -18,7 +18,7 @@ import 'dart:io';
 typedef GlGetProcAddressNative = Int64 Function(Pointer name);
 typedef GlGetProcAddress = int Function(Pointer name);
 
-GlGetProcAddress glGetProcAddress;
+late GlGetProcAddress glGetProcAddress;
 
 DynamicLibrary loadLibrary() {
   DynamicLibrary library;
@@ -59,6 +59,6 @@ DynamicLibrary loadLibrary() {
   return library;
 }
 
-Object tryCall(Function function) {
+Object? tryCall(Function function) {
   try { return function(); } catch(ex) { return null; }
 }

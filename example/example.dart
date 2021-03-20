@@ -9,7 +9,7 @@ void main() {
 
   // use OpenGL
   //...
-  final result = glGetError();
+  final result = glGetError!();
 
   // glGetError returns GL_NO_ERROR if successful,
   // or GL_INVALID_OPERATION = 0x0502 (1282) without context in our case

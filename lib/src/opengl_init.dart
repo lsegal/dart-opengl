@@ -27,12853 +27,12853 @@ int _glGetProcAddress(String name) {
   }
 }
 
-GlCullFace glCullFace;
-GlFrontFace glFrontFace;
-GlHint glHint;
-GlLineWidth glLineWidth;
-GlPointSize glPointSize;
-GlPolygonMode glPolygonMode;
-GlScissor glScissor;
-GlTexParameterf glTexParameterf;
-GlTexParameterfv glTexParameterfv;
-GlTexParameteri glTexParameteri;
-GlTexParameteriv glTexParameteriv;
-GlTexImage1D glTexImage1D;
-GlTexImage2D glTexImage2D;
-GlDrawBuffer glDrawBuffer;
-GlClear glClear;
-GlClearColor glClearColor;
-GlClearStencil glClearStencil;
-GlClearDepth glClearDepth;
-GlStencilMask glStencilMask;
-GlColorMask glColorMask;
-GlDepthMask glDepthMask;
-GlDisable glDisable;
-GlEnable glEnable;
-GlFinish glFinish;
-GlFlush glFlush;
-GlBlendFunc glBlendFunc;
-GlLogicOp glLogicOp;
-GlStencilFunc glStencilFunc;
-GlStencilOp glStencilOp;
-GlDepthFunc glDepthFunc;
-GlPixelStoref glPixelStoref;
-GlPixelStorei glPixelStorei;
-GlReadBuffer glReadBuffer;
-GlReadPixels glReadPixels;
-GlGetBooleanv glGetBooleanv;
-GlGetDoublev glGetDoublev;
-GlGetError glGetError;
-GlGetFloatv glGetFloatv;
-GlGetIntegerv glGetIntegerv;
-GlGetString glGetString;
-GlGetTexImage glGetTexImage;
-GlGetTexParameterfv glGetTexParameterfv;
-GlGetTexParameteriv glGetTexParameteriv;
-GlGetTexLevelParameterfv glGetTexLevelParameterfv;
-GlGetTexLevelParameteriv glGetTexLevelParameteriv;
-GlIsEnabled glIsEnabled;
-GlDepthRange glDepthRange;
-GlViewport glViewport;
-GlDrawArrays glDrawArrays;
-GlDrawElements glDrawElements;
-GlGetPointerv glGetPointerv;
-GlPolygonOffset glPolygonOffset;
-GlCopyTexImage1D glCopyTexImage1D;
-GlCopyTexImage2D glCopyTexImage2D;
-GlCopyTexSubImage1D glCopyTexSubImage1D;
-GlCopyTexSubImage2D glCopyTexSubImage2D;
-GlTexSubImage1D glTexSubImage1D;
-GlTexSubImage2D glTexSubImage2D;
-GlBindTexture glBindTexture;
-GlDeleteTextures glDeleteTextures;
-GlGenTextures glGenTextures;
-GlIsTexture glIsTexture;
-GlDrawRangeElements glDrawRangeElements;
-GlTexImage3D glTexImage3D;
-GlTexSubImage3D glTexSubImage3D;
-GlCopyTexSubImage3D glCopyTexSubImage3D;
-GlActiveTexture glActiveTexture;
-GlSampleCoverage glSampleCoverage;
-GlCompressedTexImage3D glCompressedTexImage3D;
-GlCompressedTexImage2D glCompressedTexImage2D;
-GlCompressedTexImage1D glCompressedTexImage1D;
-GlCompressedTexSubImage3D glCompressedTexSubImage3D;
-GlCompressedTexSubImage2D glCompressedTexSubImage2D;
-GlCompressedTexSubImage1D glCompressedTexSubImage1D;
-GlGetCompressedTexImage glGetCompressedTexImage;
-GlBlendFuncSeparate glBlendFuncSeparate;
-GlMultiDrawArrays glMultiDrawArrays;
-GlMultiDrawElements glMultiDrawElements;
-GlPointParameterf glPointParameterf;
-GlPointParameterfv glPointParameterfv;
-GlPointParameteri glPointParameteri;
-GlPointParameteriv glPointParameteriv;
-GlBlendColor glBlendColor;
-GlBlendEquation glBlendEquation;
-GlGenQueries glGenQueries;
-GlDeleteQueries glDeleteQueries;
-GlIsQuery glIsQuery;
-GlBeginQuery glBeginQuery;
-GlEndQuery glEndQuery;
-GlGetQueryiv glGetQueryiv;
-GlGetQueryObjectiv glGetQueryObjectiv;
-GlGetQueryObjectuiv glGetQueryObjectuiv;
-GlBindBuffer glBindBuffer;
-GlDeleteBuffers glDeleteBuffers;
-GlGenBuffers glGenBuffers;
-GlIsBuffer glIsBuffer;
-GlBufferData glBufferData;
-GlBufferSubData glBufferSubData;
-GlGetBufferSubData glGetBufferSubData;
-GlMapBuffer glMapBuffer;
-GlUnmapBuffer glUnmapBuffer;
-GlGetBufferParameteriv glGetBufferParameteriv;
-GlGetBufferPointerv glGetBufferPointerv;
-GlBlendEquationSeparate glBlendEquationSeparate;
-GlDrawBuffers glDrawBuffers;
-GlStencilOpSeparate glStencilOpSeparate;
-GlStencilFuncSeparate glStencilFuncSeparate;
-GlStencilMaskSeparate glStencilMaskSeparate;
-GlAttachShader glAttachShader;
-GlBindAttribLocation glBindAttribLocation;
-GlCompileShader glCompileShader;
-GlCreateProgram glCreateProgram;
-GlCreateShader glCreateShader;
-GlDeleteProgram glDeleteProgram;
-GlDeleteShader glDeleteShader;
-GlDetachShader glDetachShader;
-GlDisableVertexAttribArray glDisableVertexAttribArray;
-GlEnableVertexAttribArray glEnableVertexAttribArray;
-GlGetActiveAttrib glGetActiveAttrib;
-GlGetActiveUniform glGetActiveUniform;
-GlGetAttachedShaders glGetAttachedShaders;
-GlGetAttribLocation glGetAttribLocation;
-GlGetProgramiv glGetProgramiv;
-GlGetProgramInfoLog glGetProgramInfoLog;
-GlGetShaderiv glGetShaderiv;
-GlGetShaderInfoLog glGetShaderInfoLog;
-GlGetShaderSource glGetShaderSource;
-GlGetUniformLocation glGetUniformLocation;
-GlGetUniformfv glGetUniformfv;
-GlGetUniformiv glGetUniformiv;
-GlGetVertexAttribdv glGetVertexAttribdv;
-GlGetVertexAttribfv glGetVertexAttribfv;
-GlGetVertexAttribiv glGetVertexAttribiv;
-GlGetVertexAttribPointerv glGetVertexAttribPointerv;
-GlIsProgram glIsProgram;
-GlIsShader glIsShader;
-GlLinkProgram glLinkProgram;
-GlShaderSource glShaderSource;
-GlUseProgram glUseProgram;
-GlUniform1f glUniform1f;
-GlUniform2f glUniform2f;
-GlUniform3f glUniform3f;
-GlUniform4f glUniform4f;
-GlUniform1i glUniform1i;
-GlUniform2i glUniform2i;
-GlUniform3i glUniform3i;
-GlUniform4i glUniform4i;
-GlUniform1fv glUniform1fv;
-GlUniform2fv glUniform2fv;
-GlUniform3fv glUniform3fv;
-GlUniform4fv glUniform4fv;
-GlUniform1iv glUniform1iv;
-GlUniform2iv glUniform2iv;
-GlUniform3iv glUniform3iv;
-GlUniform4iv glUniform4iv;
-GlUniformMatrix2fv glUniformMatrix2fv;
-GlUniformMatrix3fv glUniformMatrix3fv;
-GlUniformMatrix4fv glUniformMatrix4fv;
-GlValidateProgram glValidateProgram;
-GlVertexAttrib1d glVertexAttrib1d;
-GlVertexAttrib1dv glVertexAttrib1dv;
-GlVertexAttrib1f glVertexAttrib1f;
-GlVertexAttrib1fv glVertexAttrib1fv;
-GlVertexAttrib1s glVertexAttrib1s;
-GlVertexAttrib1sv glVertexAttrib1sv;
-GlVertexAttrib2d glVertexAttrib2d;
-GlVertexAttrib2dv glVertexAttrib2dv;
-GlVertexAttrib2f glVertexAttrib2f;
-GlVertexAttrib2fv glVertexAttrib2fv;
-GlVertexAttrib2s glVertexAttrib2s;
-GlVertexAttrib2sv glVertexAttrib2sv;
-GlVertexAttrib3d glVertexAttrib3d;
-GlVertexAttrib3dv glVertexAttrib3dv;
-GlVertexAttrib3f glVertexAttrib3f;
-GlVertexAttrib3fv glVertexAttrib3fv;
-GlVertexAttrib3s glVertexAttrib3s;
-GlVertexAttrib3sv glVertexAttrib3sv;
-GlVertexAttrib4Nbv glVertexAttrib4Nbv;
-GlVertexAttrib4Niv glVertexAttrib4Niv;
-GlVertexAttrib4Nsv glVertexAttrib4Nsv;
-GlVertexAttrib4Nub glVertexAttrib4Nub;
-GlVertexAttrib4Nubv glVertexAttrib4Nubv;
-GlVertexAttrib4Nuiv glVertexAttrib4Nuiv;
-GlVertexAttrib4Nusv glVertexAttrib4Nusv;
-GlVertexAttrib4bv glVertexAttrib4bv;
-GlVertexAttrib4d glVertexAttrib4d;
-GlVertexAttrib4dv glVertexAttrib4dv;
-GlVertexAttrib4f glVertexAttrib4f;
-GlVertexAttrib4fv glVertexAttrib4fv;
-GlVertexAttrib4iv glVertexAttrib4iv;
-GlVertexAttrib4s glVertexAttrib4s;
-GlVertexAttrib4sv glVertexAttrib4sv;
-GlVertexAttrib4ubv glVertexAttrib4ubv;
-GlVertexAttrib4uiv glVertexAttrib4uiv;
-GlVertexAttrib4usv glVertexAttrib4usv;
-GlVertexAttribPointer glVertexAttribPointer;
-GlUniformMatrix2x3fv glUniformMatrix2x3fv;
-GlUniformMatrix3x2fv glUniformMatrix3x2fv;
-GlUniformMatrix2x4fv glUniformMatrix2x4fv;
-GlUniformMatrix4x2fv glUniformMatrix4x2fv;
-GlUniformMatrix3x4fv glUniformMatrix3x4fv;
-GlUniformMatrix4x3fv glUniformMatrix4x3fv;
-GlColorMaski glColorMaski;
-GlGetBooleani_v glGetBooleani_v;
-GlGetIntegeri_v glGetIntegeri_v;
-GlEnablei glEnablei;
-GlDisablei glDisablei;
-GlIsEnabledi glIsEnabledi;
-GlBeginTransformFeedback glBeginTransformFeedback;
-GlEndTransformFeedback glEndTransformFeedback;
-GlBindBufferRange glBindBufferRange;
-GlBindBufferBase glBindBufferBase;
-GlTransformFeedbackVaryings glTransformFeedbackVaryings;
-GlGetTransformFeedbackVarying glGetTransformFeedbackVarying;
-GlClampColor glClampColor;
-GlBeginConditionalRender glBeginConditionalRender;
-GlEndConditionalRender glEndConditionalRender;
-GlVertexAttribIPointer glVertexAttribIPointer;
-GlGetVertexAttribIiv glGetVertexAttribIiv;
-GlGetVertexAttribIuiv glGetVertexAttribIuiv;
-GlVertexAttribI1i glVertexAttribI1i;
-GlVertexAttribI2i glVertexAttribI2i;
-GlVertexAttribI3i glVertexAttribI3i;
-GlVertexAttribI4i glVertexAttribI4i;
-GlVertexAttribI1ui glVertexAttribI1ui;
-GlVertexAttribI2ui glVertexAttribI2ui;
-GlVertexAttribI3ui glVertexAttribI3ui;
-GlVertexAttribI4ui glVertexAttribI4ui;
-GlVertexAttribI1iv glVertexAttribI1iv;
-GlVertexAttribI2iv glVertexAttribI2iv;
-GlVertexAttribI3iv glVertexAttribI3iv;
-GlVertexAttribI4iv glVertexAttribI4iv;
-GlVertexAttribI1uiv glVertexAttribI1uiv;
-GlVertexAttribI2uiv glVertexAttribI2uiv;
-GlVertexAttribI3uiv glVertexAttribI3uiv;
-GlVertexAttribI4uiv glVertexAttribI4uiv;
-GlVertexAttribI4bv glVertexAttribI4bv;
-GlVertexAttribI4sv glVertexAttribI4sv;
-GlVertexAttribI4ubv glVertexAttribI4ubv;
-GlVertexAttribI4usv glVertexAttribI4usv;
-GlGetUniformuiv glGetUniformuiv;
-GlBindFragDataLocation glBindFragDataLocation;
-GlGetFragDataLocation glGetFragDataLocation;
-GlUniform1ui glUniform1ui;
-GlUniform2ui glUniform2ui;
-GlUniform3ui glUniform3ui;
-GlUniform4ui glUniform4ui;
-GlUniform1uiv glUniform1uiv;
-GlUniform2uiv glUniform2uiv;
-GlUniform3uiv glUniform3uiv;
-GlUniform4uiv glUniform4uiv;
-GlTexParameterIiv glTexParameterIiv;
-GlTexParameterIuiv glTexParameterIuiv;
-GlGetTexParameterIiv glGetTexParameterIiv;
-GlGetTexParameterIuiv glGetTexParameterIuiv;
-GlClearBufferiv glClearBufferiv;
-GlClearBufferuiv glClearBufferuiv;
-GlClearBufferfv glClearBufferfv;
-GlClearBufferfi glClearBufferfi;
-GlGetStringi glGetStringi;
-GlIsRenderbuffer glIsRenderbuffer;
-GlBindRenderbuffer glBindRenderbuffer;
-GlDeleteRenderbuffers glDeleteRenderbuffers;
-GlGenRenderbuffers glGenRenderbuffers;
-GlRenderbufferStorage glRenderbufferStorage;
-GlGetRenderbufferParameteriv glGetRenderbufferParameteriv;
-GlIsFramebuffer glIsFramebuffer;
-GlBindFramebuffer glBindFramebuffer;
-GlDeleteFramebuffers glDeleteFramebuffers;
-GlGenFramebuffers glGenFramebuffers;
-GlCheckFramebufferStatus glCheckFramebufferStatus;
-GlFramebufferTexture1D glFramebufferTexture1D;
-GlFramebufferTexture2D glFramebufferTexture2D;
-GlFramebufferTexture3D glFramebufferTexture3D;
-GlFramebufferRenderbuffer glFramebufferRenderbuffer;
-GlGetFramebufferAttachmentParameteriv glGetFramebufferAttachmentParameteriv;
-GlGenerateMipmap glGenerateMipmap;
-GlBlitFramebuffer glBlitFramebuffer;
-GlRenderbufferStorageMultisample glRenderbufferStorageMultisample;
-GlFramebufferTextureLayer glFramebufferTextureLayer;
-GlMapBufferRange glMapBufferRange;
-GlFlushMappedBufferRange glFlushMappedBufferRange;
-GlBindVertexArray glBindVertexArray;
-GlDeleteVertexArrays glDeleteVertexArrays;
-GlGenVertexArrays glGenVertexArrays;
-GlIsVertexArray glIsVertexArray;
-GlDrawArraysInstanced glDrawArraysInstanced;
-GlDrawElementsInstanced glDrawElementsInstanced;
-GlTexBuffer glTexBuffer;
-GlPrimitiveRestartIndex glPrimitiveRestartIndex;
-GlCopyBufferSubData glCopyBufferSubData;
-GlGetUniformIndices glGetUniformIndices;
-GlGetActiveUniformsiv glGetActiveUniformsiv;
-GlGetActiveUniformName glGetActiveUniformName;
-GlGetUniformBlockIndex glGetUniformBlockIndex;
-GlGetActiveUniformBlockiv glGetActiveUniformBlockiv;
-GlGetActiveUniformBlockName glGetActiveUniformBlockName;
-GlUniformBlockBinding glUniformBlockBinding;
-GlDrawElementsBaseVertex glDrawElementsBaseVertex;
-GlDrawRangeElementsBaseVertex glDrawRangeElementsBaseVertex;
-GlDrawElementsInstancedBaseVertex glDrawElementsInstancedBaseVertex;
-GlMultiDrawElementsBaseVertex glMultiDrawElementsBaseVertex;
-GlProvokingVertex glProvokingVertex;
-GlFenceSync glFenceSync;
-GlIsSync glIsSync;
-GlDeleteSync glDeleteSync;
-GlClientWaitSync glClientWaitSync;
-GlWaitSync glWaitSync;
-GlGetInteger64v glGetInteger64v;
-GlGetSynciv glGetSynciv;
-GlGetInteger64i_v glGetInteger64i_v;
-GlGetBufferParameteri64v glGetBufferParameteri64v;
-GlFramebufferTexture glFramebufferTexture;
-GlTexImage2DMultisample glTexImage2DMultisample;
-GlTexImage3DMultisample glTexImage3DMultisample;
-GlGetMultisamplefv glGetMultisamplefv;
-GlSampleMaski glSampleMaski;
-GlBindFragDataLocationIndexed glBindFragDataLocationIndexed;
-GlGetFragDataIndex glGetFragDataIndex;
-GlGenSamplers glGenSamplers;
-GlDeleteSamplers glDeleteSamplers;
-GlIsSampler glIsSampler;
-GlBindSampler glBindSampler;
-GlSamplerParameteri glSamplerParameteri;
-GlSamplerParameteriv glSamplerParameteriv;
-GlSamplerParameterf glSamplerParameterf;
-GlSamplerParameterfv glSamplerParameterfv;
-GlSamplerParameterIiv glSamplerParameterIiv;
-GlSamplerParameterIuiv glSamplerParameterIuiv;
-GlGetSamplerParameteriv glGetSamplerParameteriv;
-GlGetSamplerParameterIiv glGetSamplerParameterIiv;
-GlGetSamplerParameterfv glGetSamplerParameterfv;
-GlGetSamplerParameterIuiv glGetSamplerParameterIuiv;
-GlQueryCounter glQueryCounter;
-GlGetQueryObjecti64v glGetQueryObjecti64v;
-GlGetQueryObjectui64v glGetQueryObjectui64v;
-GlVertexAttribDivisor glVertexAttribDivisor;
-GlVertexAttribP1ui glVertexAttribP1ui;
-GlVertexAttribP1uiv glVertexAttribP1uiv;
-GlVertexAttribP2ui glVertexAttribP2ui;
-GlVertexAttribP2uiv glVertexAttribP2uiv;
-GlVertexAttribP3ui glVertexAttribP3ui;
-GlVertexAttribP3uiv glVertexAttribP3uiv;
-GlVertexAttribP4ui glVertexAttribP4ui;
-GlVertexAttribP4uiv glVertexAttribP4uiv;
-GlMinSampleShading glMinSampleShading;
-GlBlendEquationi glBlendEquationi;
-GlBlendEquationSeparatei glBlendEquationSeparatei;
-GlBlendFunci glBlendFunci;
-GlBlendFuncSeparatei glBlendFuncSeparatei;
-GlDrawArraysIndirect glDrawArraysIndirect;
-GlDrawElementsIndirect glDrawElementsIndirect;
-GlUniform1d glUniform1d;
-GlUniform2d glUniform2d;
-GlUniform3d glUniform3d;
-GlUniform4d glUniform4d;
-GlUniform1dv glUniform1dv;
-GlUniform2dv glUniform2dv;
-GlUniform3dv glUniform3dv;
-GlUniform4dv glUniform4dv;
-GlUniformMatrix2dv glUniformMatrix2dv;
-GlUniformMatrix3dv glUniformMatrix3dv;
-GlUniformMatrix4dv glUniformMatrix4dv;
-GlUniformMatrix2x3dv glUniformMatrix2x3dv;
-GlUniformMatrix2x4dv glUniformMatrix2x4dv;
-GlUniformMatrix3x2dv glUniformMatrix3x2dv;
-GlUniformMatrix3x4dv glUniformMatrix3x4dv;
-GlUniformMatrix4x2dv glUniformMatrix4x2dv;
-GlUniformMatrix4x3dv glUniformMatrix4x3dv;
-GlGetUniformdv glGetUniformdv;
-GlGetSubroutineUniformLocation glGetSubroutineUniformLocation;
-GlGetSubroutineIndex glGetSubroutineIndex;
-GlGetActiveSubroutineUniformiv glGetActiveSubroutineUniformiv;
-GlGetActiveSubroutineUniformName glGetActiveSubroutineUniformName;
-GlGetActiveSubroutineName glGetActiveSubroutineName;
-GlUniformSubroutinesuiv glUniformSubroutinesuiv;
-GlGetUniformSubroutineuiv glGetUniformSubroutineuiv;
-GlGetProgramStageiv glGetProgramStageiv;
-GlPatchParameteri glPatchParameteri;
-GlPatchParameterfv glPatchParameterfv;
-GlBindTransformFeedback glBindTransformFeedback;
-GlDeleteTransformFeedbacks glDeleteTransformFeedbacks;
-GlGenTransformFeedbacks glGenTransformFeedbacks;
-GlIsTransformFeedback glIsTransformFeedback;
-GlPauseTransformFeedback glPauseTransformFeedback;
-GlResumeTransformFeedback glResumeTransformFeedback;
-GlDrawTransformFeedback glDrawTransformFeedback;
-GlDrawTransformFeedbackStream glDrawTransformFeedbackStream;
-GlBeginQueryIndexed glBeginQueryIndexed;
-GlEndQueryIndexed glEndQueryIndexed;
-GlGetQueryIndexediv glGetQueryIndexediv;
-GlReleaseShaderCompiler glReleaseShaderCompiler;
-GlShaderBinary glShaderBinary;
-GlGetShaderPrecisionFormat glGetShaderPrecisionFormat;
-GlDepthRangef glDepthRangef;
-GlClearDepthf glClearDepthf;
-GlGetProgramBinary glGetProgramBinary;
-GlProgramBinary glProgramBinary;
-GlProgramParameteri glProgramParameteri;
-GlUseProgramStages glUseProgramStages;
-GlActiveShaderProgram glActiveShaderProgram;
-GlCreateShaderProgramv glCreateShaderProgramv;
-GlBindProgramPipeline glBindProgramPipeline;
-GlDeleteProgramPipelines glDeleteProgramPipelines;
-GlGenProgramPipelines glGenProgramPipelines;
-GlIsProgramPipeline glIsProgramPipeline;
-GlGetProgramPipelineiv glGetProgramPipelineiv;
-GlProgramUniform1i glProgramUniform1i;
-GlProgramUniform1iv glProgramUniform1iv;
-GlProgramUniform1f glProgramUniform1f;
-GlProgramUniform1fv glProgramUniform1fv;
-GlProgramUniform1d glProgramUniform1d;
-GlProgramUniform1dv glProgramUniform1dv;
-GlProgramUniform1ui glProgramUniform1ui;
-GlProgramUniform1uiv glProgramUniform1uiv;
-GlProgramUniform2i glProgramUniform2i;
-GlProgramUniform2iv glProgramUniform2iv;
-GlProgramUniform2f glProgramUniform2f;
-GlProgramUniform2fv glProgramUniform2fv;
-GlProgramUniform2d glProgramUniform2d;
-GlProgramUniform2dv glProgramUniform2dv;
-GlProgramUniform2ui glProgramUniform2ui;
-GlProgramUniform2uiv glProgramUniform2uiv;
-GlProgramUniform3i glProgramUniform3i;
-GlProgramUniform3iv glProgramUniform3iv;
-GlProgramUniform3f glProgramUniform3f;
-GlProgramUniform3fv glProgramUniform3fv;
-GlProgramUniform3d glProgramUniform3d;
-GlProgramUniform3dv glProgramUniform3dv;
-GlProgramUniform3ui glProgramUniform3ui;
-GlProgramUniform3uiv glProgramUniform3uiv;
-GlProgramUniform4i glProgramUniform4i;
-GlProgramUniform4iv glProgramUniform4iv;
-GlProgramUniform4f glProgramUniform4f;
-GlProgramUniform4fv glProgramUniform4fv;
-GlProgramUniform4d glProgramUniform4d;
-GlProgramUniform4dv glProgramUniform4dv;
-GlProgramUniform4ui glProgramUniform4ui;
-GlProgramUniform4uiv glProgramUniform4uiv;
-GlProgramUniformMatrix2fv glProgramUniformMatrix2fv;
-GlProgramUniformMatrix3fv glProgramUniformMatrix3fv;
-GlProgramUniformMatrix4fv glProgramUniformMatrix4fv;
-GlProgramUniformMatrix2dv glProgramUniformMatrix2dv;
-GlProgramUniformMatrix3dv glProgramUniformMatrix3dv;
-GlProgramUniformMatrix4dv glProgramUniformMatrix4dv;
-GlProgramUniformMatrix2x3fv glProgramUniformMatrix2x3fv;
-GlProgramUniformMatrix3x2fv glProgramUniformMatrix3x2fv;
-GlProgramUniformMatrix2x4fv glProgramUniformMatrix2x4fv;
-GlProgramUniformMatrix4x2fv glProgramUniformMatrix4x2fv;
-GlProgramUniformMatrix3x4fv glProgramUniformMatrix3x4fv;
-GlProgramUniformMatrix4x3fv glProgramUniformMatrix4x3fv;
-GlProgramUniformMatrix2x3dv glProgramUniformMatrix2x3dv;
-GlProgramUniformMatrix3x2dv glProgramUniformMatrix3x2dv;
-GlProgramUniformMatrix2x4dv glProgramUniformMatrix2x4dv;
-GlProgramUniformMatrix4x2dv glProgramUniformMatrix4x2dv;
-GlProgramUniformMatrix3x4dv glProgramUniformMatrix3x4dv;
-GlProgramUniformMatrix4x3dv glProgramUniformMatrix4x3dv;
-GlValidateProgramPipeline glValidateProgramPipeline;
-GlGetProgramPipelineInfoLog glGetProgramPipelineInfoLog;
-GlVertexAttribL1d glVertexAttribL1d;
-GlVertexAttribL2d glVertexAttribL2d;
-GlVertexAttribL3d glVertexAttribL3d;
-GlVertexAttribL4d glVertexAttribL4d;
-GlVertexAttribL1dv glVertexAttribL1dv;
-GlVertexAttribL2dv glVertexAttribL2dv;
-GlVertexAttribL3dv glVertexAttribL3dv;
-GlVertexAttribL4dv glVertexAttribL4dv;
-GlVertexAttribLPointer glVertexAttribLPointer;
-GlGetVertexAttribLdv glGetVertexAttribLdv;
-GlViewportArrayv glViewportArrayv;
-GlViewportIndexedf glViewportIndexedf;
-GlViewportIndexedfv glViewportIndexedfv;
-GlScissorArrayv glScissorArrayv;
-GlScissorIndexed glScissorIndexed;
-GlScissorIndexedv glScissorIndexedv;
-GlDepthRangeArrayv glDepthRangeArrayv;
-GlDepthRangeIndexed glDepthRangeIndexed;
-GlGetFloati_v glGetFloati_v;
-GlGetDoublei_v glGetDoublei_v;
-GlDrawArraysInstancedBaseInstance glDrawArraysInstancedBaseInstance;
-GlDrawElementsInstancedBaseInstance glDrawElementsInstancedBaseInstance;
-GlDrawElementsInstancedBaseVertexBaseInstance
+GlCullFace? glCullFace;
+GlFrontFace? glFrontFace;
+GlHint? glHint;
+GlLineWidth? glLineWidth;
+GlPointSize? glPointSize;
+GlPolygonMode? glPolygonMode;
+GlScissor? glScissor;
+GlTexParameterf? glTexParameterf;
+GlTexParameterfv? glTexParameterfv;
+GlTexParameteri? glTexParameteri;
+GlTexParameteriv? glTexParameteriv;
+GlTexImage1D? glTexImage1D;
+GlTexImage2D? glTexImage2D;
+GlDrawBuffer? glDrawBuffer;
+GlClear? glClear;
+GlClearColor? glClearColor;
+GlClearStencil? glClearStencil;
+GlClearDepth? glClearDepth;
+GlStencilMask? glStencilMask;
+GlColorMask? glColorMask;
+GlDepthMask? glDepthMask;
+GlDisable? glDisable;
+GlEnable? glEnable;
+GlFinish? glFinish;
+GlFlush? glFlush;
+GlBlendFunc? glBlendFunc;
+GlLogicOp? glLogicOp;
+GlStencilFunc? glStencilFunc;
+GlStencilOp? glStencilOp;
+GlDepthFunc? glDepthFunc;
+GlPixelStoref? glPixelStoref;
+GlPixelStorei? glPixelStorei;
+GlReadBuffer? glReadBuffer;
+GlReadPixels? glReadPixels;
+GlGetBooleanv? glGetBooleanv;
+GlGetDoublev? glGetDoublev;
+GlGetError? glGetError;
+GlGetFloatv? glGetFloatv;
+GlGetIntegerv? glGetIntegerv;
+GlGetString? glGetString;
+GlGetTexImage? glGetTexImage;
+GlGetTexParameterfv? glGetTexParameterfv;
+GlGetTexParameteriv? glGetTexParameteriv;
+GlGetTexLevelParameterfv? glGetTexLevelParameterfv;
+GlGetTexLevelParameteriv? glGetTexLevelParameteriv;
+GlIsEnabled? glIsEnabled;
+GlDepthRange? glDepthRange;
+GlViewport? glViewport;
+GlDrawArrays? glDrawArrays;
+GlDrawElements? glDrawElements;
+GlGetPointerv? glGetPointerv;
+GlPolygonOffset? glPolygonOffset;
+GlCopyTexImage1D? glCopyTexImage1D;
+GlCopyTexImage2D? glCopyTexImage2D;
+GlCopyTexSubImage1D? glCopyTexSubImage1D;
+GlCopyTexSubImage2D? glCopyTexSubImage2D;
+GlTexSubImage1D? glTexSubImage1D;
+GlTexSubImage2D? glTexSubImage2D;
+GlBindTexture? glBindTexture;
+GlDeleteTextures? glDeleteTextures;
+GlGenTextures? glGenTextures;
+GlIsTexture? glIsTexture;
+GlDrawRangeElements? glDrawRangeElements;
+GlTexImage3D? glTexImage3D;
+GlTexSubImage3D? glTexSubImage3D;
+GlCopyTexSubImage3D? glCopyTexSubImage3D;
+GlActiveTexture? glActiveTexture;
+GlSampleCoverage? glSampleCoverage;
+GlCompressedTexImage3D? glCompressedTexImage3D;
+GlCompressedTexImage2D? glCompressedTexImage2D;
+GlCompressedTexImage1D? glCompressedTexImage1D;
+GlCompressedTexSubImage3D? glCompressedTexSubImage3D;
+GlCompressedTexSubImage2D? glCompressedTexSubImage2D;
+GlCompressedTexSubImage1D? glCompressedTexSubImage1D;
+GlGetCompressedTexImage? glGetCompressedTexImage;
+GlBlendFuncSeparate? glBlendFuncSeparate;
+GlMultiDrawArrays? glMultiDrawArrays;
+GlMultiDrawElements? glMultiDrawElements;
+GlPointParameterf? glPointParameterf;
+GlPointParameterfv? glPointParameterfv;
+GlPointParameteri? glPointParameteri;
+GlPointParameteriv? glPointParameteriv;
+GlBlendColor? glBlendColor;
+GlBlendEquation? glBlendEquation;
+GlGenQueries? glGenQueries;
+GlDeleteQueries? glDeleteQueries;
+GlIsQuery? glIsQuery;
+GlBeginQuery? glBeginQuery;
+GlEndQuery? glEndQuery;
+GlGetQueryiv? glGetQueryiv;
+GlGetQueryObjectiv? glGetQueryObjectiv;
+GlGetQueryObjectuiv? glGetQueryObjectuiv;
+GlBindBuffer? glBindBuffer;
+GlDeleteBuffers? glDeleteBuffers;
+GlGenBuffers? glGenBuffers;
+GlIsBuffer? glIsBuffer;
+GlBufferData? glBufferData;
+GlBufferSubData? glBufferSubData;
+GlGetBufferSubData? glGetBufferSubData;
+GlMapBuffer? glMapBuffer;
+GlUnmapBuffer? glUnmapBuffer;
+GlGetBufferParameteriv? glGetBufferParameteriv;
+GlGetBufferPointerv? glGetBufferPointerv;
+GlBlendEquationSeparate? glBlendEquationSeparate;
+GlDrawBuffers? glDrawBuffers;
+GlStencilOpSeparate? glStencilOpSeparate;
+GlStencilFuncSeparate? glStencilFuncSeparate;
+GlStencilMaskSeparate? glStencilMaskSeparate;
+GlAttachShader? glAttachShader;
+GlBindAttribLocation? glBindAttribLocation;
+GlCompileShader? glCompileShader;
+GlCreateProgram? glCreateProgram;
+GlCreateShader? glCreateShader;
+GlDeleteProgram? glDeleteProgram;
+GlDeleteShader? glDeleteShader;
+GlDetachShader? glDetachShader;
+GlDisableVertexAttribArray? glDisableVertexAttribArray;
+GlEnableVertexAttribArray? glEnableVertexAttribArray;
+GlGetActiveAttrib? glGetActiveAttrib;
+GlGetActiveUniform? glGetActiveUniform;
+GlGetAttachedShaders? glGetAttachedShaders;
+GlGetAttribLocation? glGetAttribLocation;
+GlGetProgramiv? glGetProgramiv;
+GlGetProgramInfoLog? glGetProgramInfoLog;
+GlGetShaderiv? glGetShaderiv;
+GlGetShaderInfoLog? glGetShaderInfoLog;
+GlGetShaderSource? glGetShaderSource;
+GlGetUniformLocation? glGetUniformLocation;
+GlGetUniformfv? glGetUniformfv;
+GlGetUniformiv? glGetUniformiv;
+GlGetVertexAttribdv? glGetVertexAttribdv;
+GlGetVertexAttribfv? glGetVertexAttribfv;
+GlGetVertexAttribiv? glGetVertexAttribiv;
+GlGetVertexAttribPointerv? glGetVertexAttribPointerv;
+GlIsProgram? glIsProgram;
+GlIsShader? glIsShader;
+GlLinkProgram? glLinkProgram;
+GlShaderSource? glShaderSource;
+GlUseProgram? glUseProgram;
+GlUniform1f? glUniform1f;
+GlUniform2f? glUniform2f;
+GlUniform3f? glUniform3f;
+GlUniform4f? glUniform4f;
+GlUniform1i? glUniform1i;
+GlUniform2i? glUniform2i;
+GlUniform3i? glUniform3i;
+GlUniform4i? glUniform4i;
+GlUniform1fv? glUniform1fv;
+GlUniform2fv? glUniform2fv;
+GlUniform3fv? glUniform3fv;
+GlUniform4fv? glUniform4fv;
+GlUniform1iv? glUniform1iv;
+GlUniform2iv? glUniform2iv;
+GlUniform3iv? glUniform3iv;
+GlUniform4iv? glUniform4iv;
+GlUniformMatrix2fv? glUniformMatrix2fv;
+GlUniformMatrix3fv? glUniformMatrix3fv;
+GlUniformMatrix4fv? glUniformMatrix4fv;
+GlValidateProgram? glValidateProgram;
+GlVertexAttrib1d? glVertexAttrib1d;
+GlVertexAttrib1dv? glVertexAttrib1dv;
+GlVertexAttrib1f? glVertexAttrib1f;
+GlVertexAttrib1fv? glVertexAttrib1fv;
+GlVertexAttrib1s? glVertexAttrib1s;
+GlVertexAttrib1sv? glVertexAttrib1sv;
+GlVertexAttrib2d? glVertexAttrib2d;
+GlVertexAttrib2dv? glVertexAttrib2dv;
+GlVertexAttrib2f? glVertexAttrib2f;
+GlVertexAttrib2fv? glVertexAttrib2fv;
+GlVertexAttrib2s? glVertexAttrib2s;
+GlVertexAttrib2sv? glVertexAttrib2sv;
+GlVertexAttrib3d? glVertexAttrib3d;
+GlVertexAttrib3dv? glVertexAttrib3dv;
+GlVertexAttrib3f? glVertexAttrib3f;
+GlVertexAttrib3fv? glVertexAttrib3fv;
+GlVertexAttrib3s? glVertexAttrib3s;
+GlVertexAttrib3sv? glVertexAttrib3sv;
+GlVertexAttrib4Nbv? glVertexAttrib4Nbv;
+GlVertexAttrib4Niv? glVertexAttrib4Niv;
+GlVertexAttrib4Nsv? glVertexAttrib4Nsv;
+GlVertexAttrib4Nub? glVertexAttrib4Nub;
+GlVertexAttrib4Nubv? glVertexAttrib4Nubv;
+GlVertexAttrib4Nuiv? glVertexAttrib4Nuiv;
+GlVertexAttrib4Nusv? glVertexAttrib4Nusv;
+GlVertexAttrib4bv? glVertexAttrib4bv;
+GlVertexAttrib4d? glVertexAttrib4d;
+GlVertexAttrib4dv? glVertexAttrib4dv;
+GlVertexAttrib4f? glVertexAttrib4f;
+GlVertexAttrib4fv? glVertexAttrib4fv;
+GlVertexAttrib4iv? glVertexAttrib4iv;
+GlVertexAttrib4s? glVertexAttrib4s;
+GlVertexAttrib4sv? glVertexAttrib4sv;
+GlVertexAttrib4ubv? glVertexAttrib4ubv;
+GlVertexAttrib4uiv? glVertexAttrib4uiv;
+GlVertexAttrib4usv? glVertexAttrib4usv;
+GlVertexAttribPointer? glVertexAttribPointer;
+GlUniformMatrix2x3fv? glUniformMatrix2x3fv;
+GlUniformMatrix3x2fv? glUniformMatrix3x2fv;
+GlUniformMatrix2x4fv? glUniformMatrix2x4fv;
+GlUniformMatrix4x2fv? glUniformMatrix4x2fv;
+GlUniformMatrix3x4fv? glUniformMatrix3x4fv;
+GlUniformMatrix4x3fv? glUniformMatrix4x3fv;
+GlColorMaski? glColorMaski;
+GlGetBooleani_v? glGetBooleani_v;
+GlGetIntegeri_v? glGetIntegeri_v;
+GlEnablei? glEnablei;
+GlDisablei? glDisablei;
+GlIsEnabledi? glIsEnabledi;
+GlBeginTransformFeedback? glBeginTransformFeedback;
+GlEndTransformFeedback? glEndTransformFeedback;
+GlBindBufferRange? glBindBufferRange;
+GlBindBufferBase? glBindBufferBase;
+GlTransformFeedbackVaryings? glTransformFeedbackVaryings;
+GlGetTransformFeedbackVarying? glGetTransformFeedbackVarying;
+GlClampColor? glClampColor;
+GlBeginConditionalRender? glBeginConditionalRender;
+GlEndConditionalRender? glEndConditionalRender;
+GlVertexAttribIPointer? glVertexAttribIPointer;
+GlGetVertexAttribIiv? glGetVertexAttribIiv;
+GlGetVertexAttribIuiv? glGetVertexAttribIuiv;
+GlVertexAttribI1i? glVertexAttribI1i;
+GlVertexAttribI2i? glVertexAttribI2i;
+GlVertexAttribI3i? glVertexAttribI3i;
+GlVertexAttribI4i? glVertexAttribI4i;
+GlVertexAttribI1ui? glVertexAttribI1ui;
+GlVertexAttribI2ui? glVertexAttribI2ui;
+GlVertexAttribI3ui? glVertexAttribI3ui;
+GlVertexAttribI4ui? glVertexAttribI4ui;
+GlVertexAttribI1iv? glVertexAttribI1iv;
+GlVertexAttribI2iv? glVertexAttribI2iv;
+GlVertexAttribI3iv? glVertexAttribI3iv;
+GlVertexAttribI4iv? glVertexAttribI4iv;
+GlVertexAttribI1uiv? glVertexAttribI1uiv;
+GlVertexAttribI2uiv? glVertexAttribI2uiv;
+GlVertexAttribI3uiv? glVertexAttribI3uiv;
+GlVertexAttribI4uiv? glVertexAttribI4uiv;
+GlVertexAttribI4bv? glVertexAttribI4bv;
+GlVertexAttribI4sv? glVertexAttribI4sv;
+GlVertexAttribI4ubv? glVertexAttribI4ubv;
+GlVertexAttribI4usv? glVertexAttribI4usv;
+GlGetUniformuiv? glGetUniformuiv;
+GlBindFragDataLocation? glBindFragDataLocation;
+GlGetFragDataLocation? glGetFragDataLocation;
+GlUniform1ui? glUniform1ui;
+GlUniform2ui? glUniform2ui;
+GlUniform3ui? glUniform3ui;
+GlUniform4ui? glUniform4ui;
+GlUniform1uiv? glUniform1uiv;
+GlUniform2uiv? glUniform2uiv;
+GlUniform3uiv? glUniform3uiv;
+GlUniform4uiv? glUniform4uiv;
+GlTexParameterIiv? glTexParameterIiv;
+GlTexParameterIuiv? glTexParameterIuiv;
+GlGetTexParameterIiv? glGetTexParameterIiv;
+GlGetTexParameterIuiv? glGetTexParameterIuiv;
+GlClearBufferiv? glClearBufferiv;
+GlClearBufferuiv? glClearBufferuiv;
+GlClearBufferfv? glClearBufferfv;
+GlClearBufferfi? glClearBufferfi;
+GlGetStringi? glGetStringi;
+GlIsRenderbuffer? glIsRenderbuffer;
+GlBindRenderbuffer? glBindRenderbuffer;
+GlDeleteRenderbuffers? glDeleteRenderbuffers;
+GlGenRenderbuffers? glGenRenderbuffers;
+GlRenderbufferStorage? glRenderbufferStorage;
+GlGetRenderbufferParameteriv? glGetRenderbufferParameteriv;
+GlIsFramebuffer? glIsFramebuffer;
+GlBindFramebuffer? glBindFramebuffer;
+GlDeleteFramebuffers? glDeleteFramebuffers;
+GlGenFramebuffers? glGenFramebuffers;
+GlCheckFramebufferStatus? glCheckFramebufferStatus;
+GlFramebufferTexture1D? glFramebufferTexture1D;
+GlFramebufferTexture2D? glFramebufferTexture2D;
+GlFramebufferTexture3D? glFramebufferTexture3D;
+GlFramebufferRenderbuffer? glFramebufferRenderbuffer;
+GlGetFramebufferAttachmentParameteriv? glGetFramebufferAttachmentParameteriv;
+GlGenerateMipmap? glGenerateMipmap;
+GlBlitFramebuffer? glBlitFramebuffer;
+GlRenderbufferStorageMultisample? glRenderbufferStorageMultisample;
+GlFramebufferTextureLayer? glFramebufferTextureLayer;
+GlMapBufferRange? glMapBufferRange;
+GlFlushMappedBufferRange? glFlushMappedBufferRange;
+GlBindVertexArray? glBindVertexArray;
+GlDeleteVertexArrays? glDeleteVertexArrays;
+GlGenVertexArrays? glGenVertexArrays;
+GlIsVertexArray? glIsVertexArray;
+GlDrawArraysInstanced? glDrawArraysInstanced;
+GlDrawElementsInstanced? glDrawElementsInstanced;
+GlTexBuffer? glTexBuffer;
+GlPrimitiveRestartIndex? glPrimitiveRestartIndex;
+GlCopyBufferSubData? glCopyBufferSubData;
+GlGetUniformIndices? glGetUniformIndices;
+GlGetActiveUniformsiv? glGetActiveUniformsiv;
+GlGetActiveUniformName? glGetActiveUniformName;
+GlGetUniformBlockIndex? glGetUniformBlockIndex;
+GlGetActiveUniformBlockiv? glGetActiveUniformBlockiv;
+GlGetActiveUniformBlockName? glGetActiveUniformBlockName;
+GlUniformBlockBinding? glUniformBlockBinding;
+GlDrawElementsBaseVertex? glDrawElementsBaseVertex;
+GlDrawRangeElementsBaseVertex? glDrawRangeElementsBaseVertex;
+GlDrawElementsInstancedBaseVertex? glDrawElementsInstancedBaseVertex;
+GlMultiDrawElementsBaseVertex? glMultiDrawElementsBaseVertex;
+GlProvokingVertex? glProvokingVertex;
+GlFenceSync? glFenceSync;
+GlIsSync? glIsSync;
+GlDeleteSync? glDeleteSync;
+GlClientWaitSync? glClientWaitSync;
+GlWaitSync? glWaitSync;
+GlGetInteger64v? glGetInteger64v;
+GlGetSynciv? glGetSynciv;
+GlGetInteger64i_v? glGetInteger64i_v;
+GlGetBufferParameteri64v? glGetBufferParameteri64v;
+GlFramebufferTexture? glFramebufferTexture;
+GlTexImage2DMultisample? glTexImage2DMultisample;
+GlTexImage3DMultisample? glTexImage3DMultisample;
+GlGetMultisamplefv? glGetMultisamplefv;
+GlSampleMaski? glSampleMaski;
+GlBindFragDataLocationIndexed? glBindFragDataLocationIndexed;
+GlGetFragDataIndex? glGetFragDataIndex;
+GlGenSamplers? glGenSamplers;
+GlDeleteSamplers? glDeleteSamplers;
+GlIsSampler? glIsSampler;
+GlBindSampler? glBindSampler;
+GlSamplerParameteri? glSamplerParameteri;
+GlSamplerParameteriv? glSamplerParameteriv;
+GlSamplerParameterf? glSamplerParameterf;
+GlSamplerParameterfv? glSamplerParameterfv;
+GlSamplerParameterIiv? glSamplerParameterIiv;
+GlSamplerParameterIuiv? glSamplerParameterIuiv;
+GlGetSamplerParameteriv? glGetSamplerParameteriv;
+GlGetSamplerParameterIiv? glGetSamplerParameterIiv;
+GlGetSamplerParameterfv? glGetSamplerParameterfv;
+GlGetSamplerParameterIuiv? glGetSamplerParameterIuiv;
+GlQueryCounter? glQueryCounter;
+GlGetQueryObjecti64v? glGetQueryObjecti64v;
+GlGetQueryObjectui64v? glGetQueryObjectui64v;
+GlVertexAttribDivisor? glVertexAttribDivisor;
+GlVertexAttribP1ui? glVertexAttribP1ui;
+GlVertexAttribP1uiv? glVertexAttribP1uiv;
+GlVertexAttribP2ui? glVertexAttribP2ui;
+GlVertexAttribP2uiv? glVertexAttribP2uiv;
+GlVertexAttribP3ui? glVertexAttribP3ui;
+GlVertexAttribP3uiv? glVertexAttribP3uiv;
+GlVertexAttribP4ui? glVertexAttribP4ui;
+GlVertexAttribP4uiv? glVertexAttribP4uiv;
+GlMinSampleShading? glMinSampleShading;
+GlBlendEquationi? glBlendEquationi;
+GlBlendEquationSeparatei? glBlendEquationSeparatei;
+GlBlendFunci? glBlendFunci;
+GlBlendFuncSeparatei? glBlendFuncSeparatei;
+GlDrawArraysIndirect? glDrawArraysIndirect;
+GlDrawElementsIndirect? glDrawElementsIndirect;
+GlUniform1d? glUniform1d;
+GlUniform2d? glUniform2d;
+GlUniform3d? glUniform3d;
+GlUniform4d? glUniform4d;
+GlUniform1dv? glUniform1dv;
+GlUniform2dv? glUniform2dv;
+GlUniform3dv? glUniform3dv;
+GlUniform4dv? glUniform4dv;
+GlUniformMatrix2dv? glUniformMatrix2dv;
+GlUniformMatrix3dv? glUniformMatrix3dv;
+GlUniformMatrix4dv? glUniformMatrix4dv;
+GlUniformMatrix2x3dv? glUniformMatrix2x3dv;
+GlUniformMatrix2x4dv? glUniformMatrix2x4dv;
+GlUniformMatrix3x2dv? glUniformMatrix3x2dv;
+GlUniformMatrix3x4dv? glUniformMatrix3x4dv;
+GlUniformMatrix4x2dv? glUniformMatrix4x2dv;
+GlUniformMatrix4x3dv? glUniformMatrix4x3dv;
+GlGetUniformdv? glGetUniformdv;
+GlGetSubroutineUniformLocation? glGetSubroutineUniformLocation;
+GlGetSubroutineIndex? glGetSubroutineIndex;
+GlGetActiveSubroutineUniformiv? glGetActiveSubroutineUniformiv;
+GlGetActiveSubroutineUniformName? glGetActiveSubroutineUniformName;
+GlGetActiveSubroutineName? glGetActiveSubroutineName;
+GlUniformSubroutinesuiv? glUniformSubroutinesuiv;
+GlGetUniformSubroutineuiv? glGetUniformSubroutineuiv;
+GlGetProgramStageiv? glGetProgramStageiv;
+GlPatchParameteri? glPatchParameteri;
+GlPatchParameterfv? glPatchParameterfv;
+GlBindTransformFeedback? glBindTransformFeedback;
+GlDeleteTransformFeedbacks? glDeleteTransformFeedbacks;
+GlGenTransformFeedbacks? glGenTransformFeedbacks;
+GlIsTransformFeedback? glIsTransformFeedback;
+GlPauseTransformFeedback? glPauseTransformFeedback;
+GlResumeTransformFeedback? glResumeTransformFeedback;
+GlDrawTransformFeedback? glDrawTransformFeedback;
+GlDrawTransformFeedbackStream? glDrawTransformFeedbackStream;
+GlBeginQueryIndexed? glBeginQueryIndexed;
+GlEndQueryIndexed? glEndQueryIndexed;
+GlGetQueryIndexediv? glGetQueryIndexediv;
+GlReleaseShaderCompiler? glReleaseShaderCompiler;
+GlShaderBinary? glShaderBinary;
+GlGetShaderPrecisionFormat? glGetShaderPrecisionFormat;
+GlDepthRangef? glDepthRangef;
+GlClearDepthf? glClearDepthf;
+GlGetProgramBinary? glGetProgramBinary;
+GlProgramBinary? glProgramBinary;
+GlProgramParameteri? glProgramParameteri;
+GlUseProgramStages? glUseProgramStages;
+GlActiveShaderProgram? glActiveShaderProgram;
+GlCreateShaderProgramv? glCreateShaderProgramv;
+GlBindProgramPipeline? glBindProgramPipeline;
+GlDeleteProgramPipelines? glDeleteProgramPipelines;
+GlGenProgramPipelines? glGenProgramPipelines;
+GlIsProgramPipeline? glIsProgramPipeline;
+GlGetProgramPipelineiv? glGetProgramPipelineiv;
+GlProgramUniform1i? glProgramUniform1i;
+GlProgramUniform1iv? glProgramUniform1iv;
+GlProgramUniform1f? glProgramUniform1f;
+GlProgramUniform1fv? glProgramUniform1fv;
+GlProgramUniform1d? glProgramUniform1d;
+GlProgramUniform1dv? glProgramUniform1dv;
+GlProgramUniform1ui? glProgramUniform1ui;
+GlProgramUniform1uiv? glProgramUniform1uiv;
+GlProgramUniform2i? glProgramUniform2i;
+GlProgramUniform2iv? glProgramUniform2iv;
+GlProgramUniform2f? glProgramUniform2f;
+GlProgramUniform2fv? glProgramUniform2fv;
+GlProgramUniform2d? glProgramUniform2d;
+GlProgramUniform2dv? glProgramUniform2dv;
+GlProgramUniform2ui? glProgramUniform2ui;
+GlProgramUniform2uiv? glProgramUniform2uiv;
+GlProgramUniform3i? glProgramUniform3i;
+GlProgramUniform3iv? glProgramUniform3iv;
+GlProgramUniform3f? glProgramUniform3f;
+GlProgramUniform3fv? glProgramUniform3fv;
+GlProgramUniform3d? glProgramUniform3d;
+GlProgramUniform3dv? glProgramUniform3dv;
+GlProgramUniform3ui? glProgramUniform3ui;
+GlProgramUniform3uiv? glProgramUniform3uiv;
+GlProgramUniform4i? glProgramUniform4i;
+GlProgramUniform4iv? glProgramUniform4iv;
+GlProgramUniform4f? glProgramUniform4f;
+GlProgramUniform4fv? glProgramUniform4fv;
+GlProgramUniform4d? glProgramUniform4d;
+GlProgramUniform4dv? glProgramUniform4dv;
+GlProgramUniform4ui? glProgramUniform4ui;
+GlProgramUniform4uiv? glProgramUniform4uiv;
+GlProgramUniformMatrix2fv? glProgramUniformMatrix2fv;
+GlProgramUniformMatrix3fv? glProgramUniformMatrix3fv;
+GlProgramUniformMatrix4fv? glProgramUniformMatrix4fv;
+GlProgramUniformMatrix2dv? glProgramUniformMatrix2dv;
+GlProgramUniformMatrix3dv? glProgramUniformMatrix3dv;
+GlProgramUniformMatrix4dv? glProgramUniformMatrix4dv;
+GlProgramUniformMatrix2x3fv? glProgramUniformMatrix2x3fv;
+GlProgramUniformMatrix3x2fv? glProgramUniformMatrix3x2fv;
+GlProgramUniformMatrix2x4fv? glProgramUniformMatrix2x4fv;
+GlProgramUniformMatrix4x2fv? glProgramUniformMatrix4x2fv;
+GlProgramUniformMatrix3x4fv? glProgramUniformMatrix3x4fv;
+GlProgramUniformMatrix4x3fv? glProgramUniformMatrix4x3fv;
+GlProgramUniformMatrix2x3dv? glProgramUniformMatrix2x3dv;
+GlProgramUniformMatrix3x2dv? glProgramUniformMatrix3x2dv;
+GlProgramUniformMatrix2x4dv? glProgramUniformMatrix2x4dv;
+GlProgramUniformMatrix4x2dv? glProgramUniformMatrix4x2dv;
+GlProgramUniformMatrix3x4dv? glProgramUniformMatrix3x4dv;
+GlProgramUniformMatrix4x3dv? glProgramUniformMatrix4x3dv;
+GlValidateProgramPipeline? glValidateProgramPipeline;
+GlGetProgramPipelineInfoLog? glGetProgramPipelineInfoLog;
+GlVertexAttribL1d? glVertexAttribL1d;
+GlVertexAttribL2d? glVertexAttribL2d;
+GlVertexAttribL3d? glVertexAttribL3d;
+GlVertexAttribL4d? glVertexAttribL4d;
+GlVertexAttribL1dv? glVertexAttribL1dv;
+GlVertexAttribL2dv? glVertexAttribL2dv;
+GlVertexAttribL3dv? glVertexAttribL3dv;
+GlVertexAttribL4dv? glVertexAttribL4dv;
+GlVertexAttribLPointer? glVertexAttribLPointer;
+GlGetVertexAttribLdv? glGetVertexAttribLdv;
+GlViewportArrayv? glViewportArrayv;
+GlViewportIndexedf? glViewportIndexedf;
+GlViewportIndexedfv? glViewportIndexedfv;
+GlScissorArrayv? glScissorArrayv;
+GlScissorIndexed? glScissorIndexed;
+GlScissorIndexedv? glScissorIndexedv;
+GlDepthRangeArrayv? glDepthRangeArrayv;
+GlDepthRangeIndexed? glDepthRangeIndexed;
+GlGetFloati_v? glGetFloati_v;
+GlGetDoublei_v? glGetDoublei_v;
+GlDrawArraysInstancedBaseInstance? glDrawArraysInstancedBaseInstance;
+GlDrawElementsInstancedBaseInstance? glDrawElementsInstancedBaseInstance;
+GlDrawElementsInstancedBaseVertexBaseInstance?
     glDrawElementsInstancedBaseVertexBaseInstance;
-GlGetInternalformativ glGetInternalformativ;
-GlGetActiveAtomicCounterBufferiv glGetActiveAtomicCounterBufferiv;
-GlBindImageTexture glBindImageTexture;
-GlMemoryBarrier glMemoryBarrier;
-GlTexStorage1D glTexStorage1D;
-GlTexStorage2D glTexStorage2D;
-GlTexStorage3D glTexStorage3D;
-GlDrawTransformFeedbackInstanced glDrawTransformFeedbackInstanced;
-GlDrawTransformFeedbackStreamInstanced glDrawTransformFeedbackStreamInstanced;
-GlClearBufferData glClearBufferData;
-GlClearBufferSubData glClearBufferSubData;
-GlDispatchCompute glDispatchCompute;
-GlDispatchComputeIndirect glDispatchComputeIndirect;
-GlCopyImageSubData glCopyImageSubData;
-GlFramebufferParameteri glFramebufferParameteri;
-GlGetFramebufferParameteriv glGetFramebufferParameteriv;
-GlGetInternalformati64v glGetInternalformati64v;
-GlInvalidateTexSubImage glInvalidateTexSubImage;
-GlInvalidateTexImage glInvalidateTexImage;
-GlInvalidateBufferSubData glInvalidateBufferSubData;
-GlInvalidateBufferData glInvalidateBufferData;
-GlInvalidateFramebuffer glInvalidateFramebuffer;
-GlInvalidateSubFramebuffer glInvalidateSubFramebuffer;
-GlMultiDrawArraysIndirect glMultiDrawArraysIndirect;
-GlMultiDrawElementsIndirect glMultiDrawElementsIndirect;
-GlGetProgramInterfaceiv glGetProgramInterfaceiv;
-GlGetProgramResourceIndex glGetProgramResourceIndex;
-GlGetProgramResourceName glGetProgramResourceName;
-GlGetProgramResourceiv glGetProgramResourceiv;
-GlGetProgramResourceLocation glGetProgramResourceLocation;
-GlGetProgramResourceLocationIndex glGetProgramResourceLocationIndex;
-GlShaderStorageBlockBinding glShaderStorageBlockBinding;
-GlTexBufferRange glTexBufferRange;
-GlTexStorage2DMultisample glTexStorage2DMultisample;
-GlTexStorage3DMultisample glTexStorage3DMultisample;
-GlTextureView glTextureView;
-GlBindVertexBuffer glBindVertexBuffer;
-GlVertexAttribFormat glVertexAttribFormat;
-GlVertexAttribIFormat glVertexAttribIFormat;
-GlVertexAttribLFormat glVertexAttribLFormat;
-GlVertexAttribBinding glVertexAttribBinding;
-GlVertexBindingDivisor glVertexBindingDivisor;
-GlDebugMessageControl glDebugMessageControl;
-GlDebugMessageInsert glDebugMessageInsert;
-GlDebugMessageCallback glDebugMessageCallback;
-GlGetDebugMessageLog glGetDebugMessageLog;
-GlPushDebugGroup glPushDebugGroup;
-GlPopDebugGroup glPopDebugGroup;
-GlObjectLabel glObjectLabel;
-GlGetObjectLabel glGetObjectLabel;
-GlObjectPtrLabel glObjectPtrLabel;
-GlGetObjectPtrLabel glGetObjectPtrLabel;
-GlBufferStorage glBufferStorage;
-GlClearTexImage glClearTexImage;
-GlClearTexSubImage glClearTexSubImage;
-GlBindBuffersBase glBindBuffersBase;
-GlBindBuffersRange glBindBuffersRange;
-GlBindTextures glBindTextures;
-GlBindSamplers glBindSamplers;
-GlBindImageTextures glBindImageTextures;
-GlBindVertexBuffers glBindVertexBuffers;
-GlClipControl glClipControl;
-GlCreateTransformFeedbacks glCreateTransformFeedbacks;
-GlTransformFeedbackBufferBase glTransformFeedbackBufferBase;
-GlTransformFeedbackBufferRange glTransformFeedbackBufferRange;
-GlGetTransformFeedbackiv glGetTransformFeedbackiv;
-GlGetTransformFeedbacki_v glGetTransformFeedbacki_v;
-GlGetTransformFeedbacki64_v glGetTransformFeedbacki64_v;
-GlCreateBuffers glCreateBuffers;
-GlNamedBufferStorage glNamedBufferStorage;
-GlNamedBufferData glNamedBufferData;
-GlNamedBufferSubData glNamedBufferSubData;
-GlCopyNamedBufferSubData glCopyNamedBufferSubData;
-GlClearNamedBufferData glClearNamedBufferData;
-GlClearNamedBufferSubData glClearNamedBufferSubData;
-GlMapNamedBuffer glMapNamedBuffer;
-GlMapNamedBufferRange glMapNamedBufferRange;
-GlUnmapNamedBuffer glUnmapNamedBuffer;
-GlFlushMappedNamedBufferRange glFlushMappedNamedBufferRange;
-GlGetNamedBufferParameteriv glGetNamedBufferParameteriv;
-GlGetNamedBufferParameteri64v glGetNamedBufferParameteri64v;
-GlGetNamedBufferPointerv glGetNamedBufferPointerv;
-GlGetNamedBufferSubData glGetNamedBufferSubData;
-GlCreateFramebuffers glCreateFramebuffers;
-GlNamedFramebufferRenderbuffer glNamedFramebufferRenderbuffer;
-GlNamedFramebufferParameteri glNamedFramebufferParameteri;
-GlNamedFramebufferTexture glNamedFramebufferTexture;
-GlNamedFramebufferTextureLayer glNamedFramebufferTextureLayer;
-GlNamedFramebufferDrawBuffer glNamedFramebufferDrawBuffer;
-GlNamedFramebufferDrawBuffers glNamedFramebufferDrawBuffers;
-GlNamedFramebufferReadBuffer glNamedFramebufferReadBuffer;
-GlInvalidateNamedFramebufferData glInvalidateNamedFramebufferData;
-GlInvalidateNamedFramebufferSubData glInvalidateNamedFramebufferSubData;
-GlClearNamedFramebufferiv glClearNamedFramebufferiv;
-GlClearNamedFramebufferuiv glClearNamedFramebufferuiv;
-GlClearNamedFramebufferfv glClearNamedFramebufferfv;
-GlClearNamedFramebufferfi glClearNamedFramebufferfi;
-GlBlitNamedFramebuffer glBlitNamedFramebuffer;
-GlCheckNamedFramebufferStatus glCheckNamedFramebufferStatus;
-GlGetNamedFramebufferParameteriv glGetNamedFramebufferParameteriv;
-GlGetNamedFramebufferAttachmentParameteriv
+GlGetInternalformativ? glGetInternalformativ;
+GlGetActiveAtomicCounterBufferiv? glGetActiveAtomicCounterBufferiv;
+GlBindImageTexture? glBindImageTexture;
+GlMemoryBarrier? glMemoryBarrier;
+GlTexStorage1D? glTexStorage1D;
+GlTexStorage2D? glTexStorage2D;
+GlTexStorage3D? glTexStorage3D;
+GlDrawTransformFeedbackInstanced? glDrawTransformFeedbackInstanced;
+GlDrawTransformFeedbackStreamInstanced? glDrawTransformFeedbackStreamInstanced;
+GlClearBufferData? glClearBufferData;
+GlClearBufferSubData? glClearBufferSubData;
+GlDispatchCompute? glDispatchCompute;
+GlDispatchComputeIndirect? glDispatchComputeIndirect;
+GlCopyImageSubData? glCopyImageSubData;
+GlFramebufferParameteri? glFramebufferParameteri;
+GlGetFramebufferParameteriv? glGetFramebufferParameteriv;
+GlGetInternalformati64v? glGetInternalformati64v;
+GlInvalidateTexSubImage? glInvalidateTexSubImage;
+GlInvalidateTexImage? glInvalidateTexImage;
+GlInvalidateBufferSubData? glInvalidateBufferSubData;
+GlInvalidateBufferData? glInvalidateBufferData;
+GlInvalidateFramebuffer? glInvalidateFramebuffer;
+GlInvalidateSubFramebuffer? glInvalidateSubFramebuffer;
+GlMultiDrawArraysIndirect? glMultiDrawArraysIndirect;
+GlMultiDrawElementsIndirect? glMultiDrawElementsIndirect;
+GlGetProgramInterfaceiv? glGetProgramInterfaceiv;
+GlGetProgramResourceIndex? glGetProgramResourceIndex;
+GlGetProgramResourceName? glGetProgramResourceName;
+GlGetProgramResourceiv? glGetProgramResourceiv;
+GlGetProgramResourceLocation? glGetProgramResourceLocation;
+GlGetProgramResourceLocationIndex? glGetProgramResourceLocationIndex;
+GlShaderStorageBlockBinding? glShaderStorageBlockBinding;
+GlTexBufferRange? glTexBufferRange;
+GlTexStorage2DMultisample? glTexStorage2DMultisample;
+GlTexStorage3DMultisample? glTexStorage3DMultisample;
+GlTextureView? glTextureView;
+GlBindVertexBuffer? glBindVertexBuffer;
+GlVertexAttribFormat? glVertexAttribFormat;
+GlVertexAttribIFormat? glVertexAttribIFormat;
+GlVertexAttribLFormat? glVertexAttribLFormat;
+GlVertexAttribBinding? glVertexAttribBinding;
+GlVertexBindingDivisor? glVertexBindingDivisor;
+GlDebugMessageControl? glDebugMessageControl;
+GlDebugMessageInsert? glDebugMessageInsert;
+GlDebugMessageCallback? glDebugMessageCallback;
+GlGetDebugMessageLog? glGetDebugMessageLog;
+GlPushDebugGroup? glPushDebugGroup;
+GlPopDebugGroup? glPopDebugGroup;
+GlObjectLabel? glObjectLabel;
+GlGetObjectLabel? glGetObjectLabel;
+GlObjectPtrLabel? glObjectPtrLabel;
+GlGetObjectPtrLabel? glGetObjectPtrLabel;
+GlBufferStorage? glBufferStorage;
+GlClearTexImage? glClearTexImage;
+GlClearTexSubImage? glClearTexSubImage;
+GlBindBuffersBase? glBindBuffersBase;
+GlBindBuffersRange? glBindBuffersRange;
+GlBindTextures? glBindTextures;
+GlBindSamplers? glBindSamplers;
+GlBindImageTextures? glBindImageTextures;
+GlBindVertexBuffers? glBindVertexBuffers;
+GlClipControl? glClipControl;
+GlCreateTransformFeedbacks? glCreateTransformFeedbacks;
+GlTransformFeedbackBufferBase? glTransformFeedbackBufferBase;
+GlTransformFeedbackBufferRange? glTransformFeedbackBufferRange;
+GlGetTransformFeedbackiv? glGetTransformFeedbackiv;
+GlGetTransformFeedbacki_v? glGetTransformFeedbacki_v;
+GlGetTransformFeedbacki64_v? glGetTransformFeedbacki64_v;
+GlCreateBuffers? glCreateBuffers;
+GlNamedBufferStorage? glNamedBufferStorage;
+GlNamedBufferData? glNamedBufferData;
+GlNamedBufferSubData? glNamedBufferSubData;
+GlCopyNamedBufferSubData? glCopyNamedBufferSubData;
+GlClearNamedBufferData? glClearNamedBufferData;
+GlClearNamedBufferSubData? glClearNamedBufferSubData;
+GlMapNamedBuffer? glMapNamedBuffer;
+GlMapNamedBufferRange? glMapNamedBufferRange;
+GlUnmapNamedBuffer? glUnmapNamedBuffer;
+GlFlushMappedNamedBufferRange? glFlushMappedNamedBufferRange;
+GlGetNamedBufferParameteriv? glGetNamedBufferParameteriv;
+GlGetNamedBufferParameteri64v? glGetNamedBufferParameteri64v;
+GlGetNamedBufferPointerv? glGetNamedBufferPointerv;
+GlGetNamedBufferSubData? glGetNamedBufferSubData;
+GlCreateFramebuffers? glCreateFramebuffers;
+GlNamedFramebufferRenderbuffer? glNamedFramebufferRenderbuffer;
+GlNamedFramebufferParameteri? glNamedFramebufferParameteri;
+GlNamedFramebufferTexture? glNamedFramebufferTexture;
+GlNamedFramebufferTextureLayer? glNamedFramebufferTextureLayer;
+GlNamedFramebufferDrawBuffer? glNamedFramebufferDrawBuffer;
+GlNamedFramebufferDrawBuffers? glNamedFramebufferDrawBuffers;
+GlNamedFramebufferReadBuffer? glNamedFramebufferReadBuffer;
+GlInvalidateNamedFramebufferData? glInvalidateNamedFramebufferData;
+GlInvalidateNamedFramebufferSubData? glInvalidateNamedFramebufferSubData;
+GlClearNamedFramebufferiv? glClearNamedFramebufferiv;
+GlClearNamedFramebufferuiv? glClearNamedFramebufferuiv;
+GlClearNamedFramebufferfv? glClearNamedFramebufferfv;
+GlClearNamedFramebufferfi? glClearNamedFramebufferfi;
+GlBlitNamedFramebuffer? glBlitNamedFramebuffer;
+GlCheckNamedFramebufferStatus? glCheckNamedFramebufferStatus;
+GlGetNamedFramebufferParameteriv? glGetNamedFramebufferParameteriv;
+GlGetNamedFramebufferAttachmentParameteriv?
     glGetNamedFramebufferAttachmentParameteriv;
-GlCreateRenderbuffers glCreateRenderbuffers;
-GlNamedRenderbufferStorage glNamedRenderbufferStorage;
-GlNamedRenderbufferStorageMultisample glNamedRenderbufferStorageMultisample;
-GlGetNamedRenderbufferParameteriv glGetNamedRenderbufferParameteriv;
-GlCreateTextures glCreateTextures;
-GlTextureBuffer glTextureBuffer;
-GlTextureBufferRange glTextureBufferRange;
-GlTextureStorage1D glTextureStorage1D;
-GlTextureStorage2D glTextureStorage2D;
-GlTextureStorage3D glTextureStorage3D;
-GlTextureStorage2DMultisample glTextureStorage2DMultisample;
-GlTextureStorage3DMultisample glTextureStorage3DMultisample;
-GlTextureSubImage1D glTextureSubImage1D;
-GlTextureSubImage2D glTextureSubImage2D;
-GlTextureSubImage3D glTextureSubImage3D;
-GlCompressedTextureSubImage1D glCompressedTextureSubImage1D;
-GlCompressedTextureSubImage2D glCompressedTextureSubImage2D;
-GlCompressedTextureSubImage3D glCompressedTextureSubImage3D;
-GlCopyTextureSubImage1D glCopyTextureSubImage1D;
-GlCopyTextureSubImage2D glCopyTextureSubImage2D;
-GlCopyTextureSubImage3D glCopyTextureSubImage3D;
-GlTextureParameterf glTextureParameterf;
-GlTextureParameterfv glTextureParameterfv;
-GlTextureParameteri glTextureParameteri;
-GlTextureParameterIiv glTextureParameterIiv;
-GlTextureParameterIuiv glTextureParameterIuiv;
-GlTextureParameteriv glTextureParameteriv;
-GlGenerateTextureMipmap glGenerateTextureMipmap;
-GlBindTextureUnit glBindTextureUnit;
-GlGetTextureImage glGetTextureImage;
-GlGetCompressedTextureImage glGetCompressedTextureImage;
-GlGetTextureLevelParameterfv glGetTextureLevelParameterfv;
-GlGetTextureLevelParameteriv glGetTextureLevelParameteriv;
-GlGetTextureParameterfv glGetTextureParameterfv;
-GlGetTextureParameterIiv glGetTextureParameterIiv;
-GlGetTextureParameterIuiv glGetTextureParameterIuiv;
-GlGetTextureParameteriv glGetTextureParameteriv;
-GlCreateVertexArrays glCreateVertexArrays;
-GlDisableVertexArrayAttrib glDisableVertexArrayAttrib;
-GlEnableVertexArrayAttrib glEnableVertexArrayAttrib;
-GlVertexArrayElementBuffer glVertexArrayElementBuffer;
-GlVertexArrayVertexBuffer glVertexArrayVertexBuffer;
-GlVertexArrayVertexBuffers glVertexArrayVertexBuffers;
-GlVertexArrayAttribBinding glVertexArrayAttribBinding;
-GlVertexArrayAttribFormat glVertexArrayAttribFormat;
-GlVertexArrayAttribIFormat glVertexArrayAttribIFormat;
-GlVertexArrayAttribLFormat glVertexArrayAttribLFormat;
-GlVertexArrayBindingDivisor glVertexArrayBindingDivisor;
-GlGetVertexArrayiv glGetVertexArrayiv;
-GlGetVertexArrayIndexediv glGetVertexArrayIndexediv;
-GlGetVertexArrayIndexed64iv glGetVertexArrayIndexed64iv;
-GlCreateSamplers glCreateSamplers;
-GlCreateProgramPipelines glCreateProgramPipelines;
-GlCreateQueries glCreateQueries;
-GlGetQueryBufferObjecti64v glGetQueryBufferObjecti64v;
-GlGetQueryBufferObjectiv glGetQueryBufferObjectiv;
-GlGetQueryBufferObjectui64v glGetQueryBufferObjectui64v;
-GlGetQueryBufferObjectuiv glGetQueryBufferObjectuiv;
-GlMemoryBarrierByRegion glMemoryBarrierByRegion;
-GlGetTextureSubImage glGetTextureSubImage;
-GlGetCompressedTextureSubImage glGetCompressedTextureSubImage;
-GlGetGraphicsResetStatus glGetGraphicsResetStatus;
-GlGetnCompressedTexImage glGetnCompressedTexImage;
-GlGetnTexImage glGetnTexImage;
-GlGetnUniformdv glGetnUniformdv;
-GlGetnUniformfv glGetnUniformfv;
-GlGetnUniformiv glGetnUniformiv;
-GlGetnUniformuiv glGetnUniformuiv;
-GlReadnPixels glReadnPixels;
-GlTextureBarrier glTextureBarrier;
-GlSpecializeShader glSpecializeShader;
-GlMultiDrawArraysIndirectCount glMultiDrawArraysIndirectCount;
-GlMultiDrawElementsIndirectCount glMultiDrawElementsIndirectCount;
-GlPolygonOffsetClamp glPolygonOffsetClamp;
-GlPrimitiveBoundingBoxARB glPrimitiveBoundingBoxARB;
-GlGetTextureHandleARB glGetTextureHandleARB;
-GlGetTextureSamplerHandleARB glGetTextureSamplerHandleARB;
-GlMakeTextureHandleResidentARB glMakeTextureHandleResidentARB;
-GlMakeTextureHandleNonResidentARB glMakeTextureHandleNonResidentARB;
-GlGetImageHandleARB glGetImageHandleARB;
-GlMakeImageHandleResidentARB glMakeImageHandleResidentARB;
-GlMakeImageHandleNonResidentARB glMakeImageHandleNonResidentARB;
-GlUniformHandleui64ARB glUniformHandleui64ARB;
-GlUniformHandleui64vARB glUniformHandleui64vARB;
-GlProgramUniformHandleui64ARB glProgramUniformHandleui64ARB;
-GlProgramUniformHandleui64vARB glProgramUniformHandleui64vARB;
-GlIsTextureHandleResidentARB glIsTextureHandleResidentARB;
-GlIsImageHandleResidentARB glIsImageHandleResidentARB;
-GlVertexAttribL1ui64ARB glVertexAttribL1ui64ARB;
-GlVertexAttribL1ui64vARB glVertexAttribL1ui64vARB;
-GlGetVertexAttribLui64vARB glGetVertexAttribLui64vARB;
-GlCreateSyncFromCLeventARB glCreateSyncFromCLeventARB;
-GlDispatchComputeGroupSizeARB glDispatchComputeGroupSizeARB;
-GlDebugMessageControlARB glDebugMessageControlARB;
-GlDebugMessageInsertARB glDebugMessageInsertARB;
-GlDebugMessageCallbackARB glDebugMessageCallbackARB;
-GlGetDebugMessageLogARB glGetDebugMessageLogARB;
-GlBlendEquationiARB glBlendEquationiARB;
-GlBlendEquationSeparateiARB glBlendEquationSeparateiARB;
-GlBlendFunciARB glBlendFunciARB;
-GlBlendFuncSeparateiARB glBlendFuncSeparateiARB;
-GlDrawArraysInstancedARB glDrawArraysInstancedARB;
-GlDrawElementsInstancedARB glDrawElementsInstancedARB;
-GlProgramParameteriARB glProgramParameteriARB;
-GlFramebufferTextureARB glFramebufferTextureARB;
-GlFramebufferTextureLayerARB glFramebufferTextureLayerARB;
-GlFramebufferTextureFaceARB glFramebufferTextureFaceARB;
-GlSpecializeShaderARB glSpecializeShaderARB;
-GlUniform1i64ARB glUniform1i64ARB;
-GlUniform2i64ARB glUniform2i64ARB;
-GlUniform3i64ARB glUniform3i64ARB;
-GlUniform4i64ARB glUniform4i64ARB;
-GlUniform1i64vARB glUniform1i64vARB;
-GlUniform2i64vARB glUniform2i64vARB;
-GlUniform3i64vARB glUniform3i64vARB;
-GlUniform4i64vARB glUniform4i64vARB;
-GlUniform1ui64ARB glUniform1ui64ARB;
-GlUniform2ui64ARB glUniform2ui64ARB;
-GlUniform3ui64ARB glUniform3ui64ARB;
-GlUniform4ui64ARB glUniform4ui64ARB;
-GlUniform1ui64vARB glUniform1ui64vARB;
-GlUniform2ui64vARB glUniform2ui64vARB;
-GlUniform3ui64vARB glUniform3ui64vARB;
-GlUniform4ui64vARB glUniform4ui64vARB;
-GlGetUniformi64vARB glGetUniformi64vARB;
-GlGetUniformui64vARB glGetUniformui64vARB;
-GlGetnUniformi64vARB glGetnUniformi64vARB;
-GlGetnUniformui64vARB glGetnUniformui64vARB;
-GlProgramUniform1i64ARB glProgramUniform1i64ARB;
-GlProgramUniform2i64ARB glProgramUniform2i64ARB;
-GlProgramUniform3i64ARB glProgramUniform3i64ARB;
-GlProgramUniform4i64ARB glProgramUniform4i64ARB;
-GlProgramUniform1i64vARB glProgramUniform1i64vARB;
-GlProgramUniform2i64vARB glProgramUniform2i64vARB;
-GlProgramUniform3i64vARB glProgramUniform3i64vARB;
-GlProgramUniform4i64vARB glProgramUniform4i64vARB;
-GlProgramUniform1ui64ARB glProgramUniform1ui64ARB;
-GlProgramUniform2ui64ARB glProgramUniform2ui64ARB;
-GlProgramUniform3ui64ARB glProgramUniform3ui64ARB;
-GlProgramUniform4ui64ARB glProgramUniform4ui64ARB;
-GlProgramUniform1ui64vARB glProgramUniform1ui64vARB;
-GlProgramUniform2ui64vARB glProgramUniform2ui64vARB;
-GlProgramUniform3ui64vARB glProgramUniform3ui64vARB;
-GlProgramUniform4ui64vARB glProgramUniform4ui64vARB;
-GlMultiDrawArraysIndirectCountARB glMultiDrawArraysIndirectCountARB;
-GlMultiDrawElementsIndirectCountARB glMultiDrawElementsIndirectCountARB;
-GlVertexAttribDivisorARB glVertexAttribDivisorARB;
-GlMaxShaderCompilerThreadsARB glMaxShaderCompilerThreadsARB;
-GlGetGraphicsResetStatusARB glGetGraphicsResetStatusARB;
-GlGetnTexImageARB glGetnTexImageARB;
-GlReadnPixelsARB glReadnPixelsARB;
-GlGetnCompressedTexImageARB glGetnCompressedTexImageARB;
-GlGetnUniformfvARB glGetnUniformfvARB;
-GlGetnUniformivARB glGetnUniformivARB;
-GlGetnUniformuivARB glGetnUniformuivARB;
-GlGetnUniformdvARB glGetnUniformdvARB;
-GlFramebufferSampleLocationsfvARB glFramebufferSampleLocationsfvARB;
-GlNamedFramebufferSampleLocationsfvARB glNamedFramebufferSampleLocationsfvARB;
-GlEvaluateDepthValuesARB glEvaluateDepthValuesARB;
-GlMinSampleShadingARB glMinSampleShadingARB;
-GlNamedStringARB glNamedStringARB;
-GlDeleteNamedStringARB glDeleteNamedStringARB;
-GlCompileShaderIncludeARB glCompileShaderIncludeARB;
-GlIsNamedStringARB glIsNamedStringARB;
-GlGetNamedStringARB glGetNamedStringARB;
-GlGetNamedStringivARB glGetNamedStringivARB;
-GlBufferPageCommitmentARB glBufferPageCommitmentARB;
-GlNamedBufferPageCommitmentEXT glNamedBufferPageCommitmentEXT;
-GlNamedBufferPageCommitmentARB glNamedBufferPageCommitmentARB;
-GlTexPageCommitmentARB glTexPageCommitmentARB;
-GlTexBufferARB glTexBufferARB;
-GlDepthRangeArraydvNV glDepthRangeArraydvNV;
-GlDepthRangeIndexeddNV glDepthRangeIndexeddNV;
-GlBlendBarrierKHR glBlendBarrierKHR;
-GlMaxShaderCompilerThreadsKHR glMaxShaderCompilerThreadsKHR;
-GlRenderbufferStorageMultisampleAdvancedAMD
+GlCreateRenderbuffers? glCreateRenderbuffers;
+GlNamedRenderbufferStorage? glNamedRenderbufferStorage;
+GlNamedRenderbufferStorageMultisample? glNamedRenderbufferStorageMultisample;
+GlGetNamedRenderbufferParameteriv? glGetNamedRenderbufferParameteriv;
+GlCreateTextures? glCreateTextures;
+GlTextureBuffer? glTextureBuffer;
+GlTextureBufferRange? glTextureBufferRange;
+GlTextureStorage1D? glTextureStorage1D;
+GlTextureStorage2D? glTextureStorage2D;
+GlTextureStorage3D? glTextureStorage3D;
+GlTextureStorage2DMultisample? glTextureStorage2DMultisample;
+GlTextureStorage3DMultisample? glTextureStorage3DMultisample;
+GlTextureSubImage1D? glTextureSubImage1D;
+GlTextureSubImage2D? glTextureSubImage2D;
+GlTextureSubImage3D? glTextureSubImage3D;
+GlCompressedTextureSubImage1D? glCompressedTextureSubImage1D;
+GlCompressedTextureSubImage2D? glCompressedTextureSubImage2D;
+GlCompressedTextureSubImage3D? glCompressedTextureSubImage3D;
+GlCopyTextureSubImage1D? glCopyTextureSubImage1D;
+GlCopyTextureSubImage2D? glCopyTextureSubImage2D;
+GlCopyTextureSubImage3D? glCopyTextureSubImage3D;
+GlTextureParameterf? glTextureParameterf;
+GlTextureParameterfv? glTextureParameterfv;
+GlTextureParameteri? glTextureParameteri;
+GlTextureParameterIiv? glTextureParameterIiv;
+GlTextureParameterIuiv? glTextureParameterIuiv;
+GlTextureParameteriv? glTextureParameteriv;
+GlGenerateTextureMipmap? glGenerateTextureMipmap;
+GlBindTextureUnit? glBindTextureUnit;
+GlGetTextureImage? glGetTextureImage;
+GlGetCompressedTextureImage? glGetCompressedTextureImage;
+GlGetTextureLevelParameterfv? glGetTextureLevelParameterfv;
+GlGetTextureLevelParameteriv? glGetTextureLevelParameteriv;
+GlGetTextureParameterfv? glGetTextureParameterfv;
+GlGetTextureParameterIiv? glGetTextureParameterIiv;
+GlGetTextureParameterIuiv? glGetTextureParameterIuiv;
+GlGetTextureParameteriv? glGetTextureParameteriv;
+GlCreateVertexArrays? glCreateVertexArrays;
+GlDisableVertexArrayAttrib? glDisableVertexArrayAttrib;
+GlEnableVertexArrayAttrib? glEnableVertexArrayAttrib;
+GlVertexArrayElementBuffer? glVertexArrayElementBuffer;
+GlVertexArrayVertexBuffer? glVertexArrayVertexBuffer;
+GlVertexArrayVertexBuffers? glVertexArrayVertexBuffers;
+GlVertexArrayAttribBinding? glVertexArrayAttribBinding;
+GlVertexArrayAttribFormat? glVertexArrayAttribFormat;
+GlVertexArrayAttribIFormat? glVertexArrayAttribIFormat;
+GlVertexArrayAttribLFormat? glVertexArrayAttribLFormat;
+GlVertexArrayBindingDivisor? glVertexArrayBindingDivisor;
+GlGetVertexArrayiv? glGetVertexArrayiv;
+GlGetVertexArrayIndexediv? glGetVertexArrayIndexediv;
+GlGetVertexArrayIndexed64iv? glGetVertexArrayIndexed64iv;
+GlCreateSamplers? glCreateSamplers;
+GlCreateProgramPipelines? glCreateProgramPipelines;
+GlCreateQueries? glCreateQueries;
+GlGetQueryBufferObjecti64v? glGetQueryBufferObjecti64v;
+GlGetQueryBufferObjectiv? glGetQueryBufferObjectiv;
+GlGetQueryBufferObjectui64v? glGetQueryBufferObjectui64v;
+GlGetQueryBufferObjectuiv? glGetQueryBufferObjectuiv;
+GlMemoryBarrierByRegion? glMemoryBarrierByRegion;
+GlGetTextureSubImage? glGetTextureSubImage;
+GlGetCompressedTextureSubImage? glGetCompressedTextureSubImage;
+GlGetGraphicsResetStatus? glGetGraphicsResetStatus;
+GlGetnCompressedTexImage? glGetnCompressedTexImage;
+GlGetnTexImage? glGetnTexImage;
+GlGetnUniformdv? glGetnUniformdv;
+GlGetnUniformfv? glGetnUniformfv;
+GlGetnUniformiv? glGetnUniformiv;
+GlGetnUniformuiv? glGetnUniformuiv;
+GlReadnPixels? glReadnPixels;
+GlTextureBarrier? glTextureBarrier;
+GlSpecializeShader? glSpecializeShader;
+GlMultiDrawArraysIndirectCount? glMultiDrawArraysIndirectCount;
+GlMultiDrawElementsIndirectCount? glMultiDrawElementsIndirectCount;
+GlPolygonOffsetClamp? glPolygonOffsetClamp;
+GlPrimitiveBoundingBoxARB? glPrimitiveBoundingBoxARB;
+GlGetTextureHandleARB? glGetTextureHandleARB;
+GlGetTextureSamplerHandleARB? glGetTextureSamplerHandleARB;
+GlMakeTextureHandleResidentARB? glMakeTextureHandleResidentARB;
+GlMakeTextureHandleNonResidentARB? glMakeTextureHandleNonResidentARB;
+GlGetImageHandleARB? glGetImageHandleARB;
+GlMakeImageHandleResidentARB? glMakeImageHandleResidentARB;
+GlMakeImageHandleNonResidentARB? glMakeImageHandleNonResidentARB;
+GlUniformHandleui64ARB? glUniformHandleui64ARB;
+GlUniformHandleui64vARB? glUniformHandleui64vARB;
+GlProgramUniformHandleui64ARB? glProgramUniformHandleui64ARB;
+GlProgramUniformHandleui64vARB? glProgramUniformHandleui64vARB;
+GlIsTextureHandleResidentARB? glIsTextureHandleResidentARB;
+GlIsImageHandleResidentARB? glIsImageHandleResidentARB;
+GlVertexAttribL1ui64ARB? glVertexAttribL1ui64ARB;
+GlVertexAttribL1ui64vARB? glVertexAttribL1ui64vARB;
+GlGetVertexAttribLui64vARB? glGetVertexAttribLui64vARB;
+GlCreateSyncFromCLeventARB? glCreateSyncFromCLeventARB;
+GlDispatchComputeGroupSizeARB? glDispatchComputeGroupSizeARB;
+GlDebugMessageControlARB? glDebugMessageControlARB;
+GlDebugMessageInsertARB? glDebugMessageInsertARB;
+GlDebugMessageCallbackARB? glDebugMessageCallbackARB;
+GlGetDebugMessageLogARB? glGetDebugMessageLogARB;
+GlBlendEquationiARB? glBlendEquationiARB;
+GlBlendEquationSeparateiARB? glBlendEquationSeparateiARB;
+GlBlendFunciARB? glBlendFunciARB;
+GlBlendFuncSeparateiARB? glBlendFuncSeparateiARB;
+GlDrawArraysInstancedARB? glDrawArraysInstancedARB;
+GlDrawElementsInstancedARB? glDrawElementsInstancedARB;
+GlProgramParameteriARB? glProgramParameteriARB;
+GlFramebufferTextureARB? glFramebufferTextureARB;
+GlFramebufferTextureLayerARB? glFramebufferTextureLayerARB;
+GlFramebufferTextureFaceARB? glFramebufferTextureFaceARB;
+GlSpecializeShaderARB? glSpecializeShaderARB;
+GlUniform1i64ARB? glUniform1i64ARB;
+GlUniform2i64ARB? glUniform2i64ARB;
+GlUniform3i64ARB? glUniform3i64ARB;
+GlUniform4i64ARB? glUniform4i64ARB;
+GlUniform1i64vARB? glUniform1i64vARB;
+GlUniform2i64vARB? glUniform2i64vARB;
+GlUniform3i64vARB? glUniform3i64vARB;
+GlUniform4i64vARB? glUniform4i64vARB;
+GlUniform1ui64ARB? glUniform1ui64ARB;
+GlUniform2ui64ARB? glUniform2ui64ARB;
+GlUniform3ui64ARB? glUniform3ui64ARB;
+GlUniform4ui64ARB? glUniform4ui64ARB;
+GlUniform1ui64vARB? glUniform1ui64vARB;
+GlUniform2ui64vARB? glUniform2ui64vARB;
+GlUniform3ui64vARB? glUniform3ui64vARB;
+GlUniform4ui64vARB? glUniform4ui64vARB;
+GlGetUniformi64vARB? glGetUniformi64vARB;
+GlGetUniformui64vARB? glGetUniformui64vARB;
+GlGetnUniformi64vARB? glGetnUniformi64vARB;
+GlGetnUniformui64vARB? glGetnUniformui64vARB;
+GlProgramUniform1i64ARB? glProgramUniform1i64ARB;
+GlProgramUniform2i64ARB? glProgramUniform2i64ARB;
+GlProgramUniform3i64ARB? glProgramUniform3i64ARB;
+GlProgramUniform4i64ARB? glProgramUniform4i64ARB;
+GlProgramUniform1i64vARB? glProgramUniform1i64vARB;
+GlProgramUniform2i64vARB? glProgramUniform2i64vARB;
+GlProgramUniform3i64vARB? glProgramUniform3i64vARB;
+GlProgramUniform4i64vARB? glProgramUniform4i64vARB;
+GlProgramUniform1ui64ARB? glProgramUniform1ui64ARB;
+GlProgramUniform2ui64ARB? glProgramUniform2ui64ARB;
+GlProgramUniform3ui64ARB? glProgramUniform3ui64ARB;
+GlProgramUniform4ui64ARB? glProgramUniform4ui64ARB;
+GlProgramUniform1ui64vARB? glProgramUniform1ui64vARB;
+GlProgramUniform2ui64vARB? glProgramUniform2ui64vARB;
+GlProgramUniform3ui64vARB? glProgramUniform3ui64vARB;
+GlProgramUniform4ui64vARB? glProgramUniform4ui64vARB;
+GlMultiDrawArraysIndirectCountARB? glMultiDrawArraysIndirectCountARB;
+GlMultiDrawElementsIndirectCountARB? glMultiDrawElementsIndirectCountARB;
+GlVertexAttribDivisorARB? glVertexAttribDivisorARB;
+GlMaxShaderCompilerThreadsARB? glMaxShaderCompilerThreadsARB;
+GlGetGraphicsResetStatusARB? glGetGraphicsResetStatusARB;
+GlGetnTexImageARB? glGetnTexImageARB;
+GlReadnPixelsARB? glReadnPixelsARB;
+GlGetnCompressedTexImageARB? glGetnCompressedTexImageARB;
+GlGetnUniformfvARB? glGetnUniformfvARB;
+GlGetnUniformivARB? glGetnUniformivARB;
+GlGetnUniformuivARB? glGetnUniformuivARB;
+GlGetnUniformdvARB? glGetnUniformdvARB;
+GlFramebufferSampleLocationsfvARB? glFramebufferSampleLocationsfvARB;
+GlNamedFramebufferSampleLocationsfvARB? glNamedFramebufferSampleLocationsfvARB;
+GlEvaluateDepthValuesARB? glEvaluateDepthValuesARB;
+GlMinSampleShadingARB? glMinSampleShadingARB;
+GlNamedStringARB? glNamedStringARB;
+GlDeleteNamedStringARB? glDeleteNamedStringARB;
+GlCompileShaderIncludeARB? glCompileShaderIncludeARB;
+GlIsNamedStringARB? glIsNamedStringARB;
+GlGetNamedStringARB? glGetNamedStringARB;
+GlGetNamedStringivARB? glGetNamedStringivARB;
+GlBufferPageCommitmentARB? glBufferPageCommitmentARB;
+GlNamedBufferPageCommitmentEXT? glNamedBufferPageCommitmentEXT;
+GlNamedBufferPageCommitmentARB? glNamedBufferPageCommitmentARB;
+GlTexPageCommitmentARB? glTexPageCommitmentARB;
+GlTexBufferARB? glTexBufferARB;
+GlDepthRangeArraydvNV? glDepthRangeArraydvNV;
+GlDepthRangeIndexeddNV? glDepthRangeIndexeddNV;
+GlBlendBarrierKHR? glBlendBarrierKHR;
+GlMaxShaderCompilerThreadsKHR? glMaxShaderCompilerThreadsKHR;
+GlRenderbufferStorageMultisampleAdvancedAMD?
     glRenderbufferStorageMultisampleAdvancedAMD;
-GlNamedRenderbufferStorageMultisampleAdvancedAMD
+GlNamedRenderbufferStorageMultisampleAdvancedAMD?
     glNamedRenderbufferStorageMultisampleAdvancedAMD;
-GlGetPerfMonitorGroupsAMD glGetPerfMonitorGroupsAMD;
-GlGetPerfMonitorCountersAMD glGetPerfMonitorCountersAMD;
-GlGetPerfMonitorGroupStringAMD glGetPerfMonitorGroupStringAMD;
-GlGetPerfMonitorCounterStringAMD glGetPerfMonitorCounterStringAMD;
-GlGetPerfMonitorCounterInfoAMD glGetPerfMonitorCounterInfoAMD;
-GlGenPerfMonitorsAMD glGenPerfMonitorsAMD;
-GlDeletePerfMonitorsAMD glDeletePerfMonitorsAMD;
-GlSelectPerfMonitorCountersAMD glSelectPerfMonitorCountersAMD;
-GlBeginPerfMonitorAMD glBeginPerfMonitorAMD;
-GlEndPerfMonitorAMD glEndPerfMonitorAMD;
-GlGetPerfMonitorCounterDataAMD glGetPerfMonitorCounterDataAMD;
-GlEGLImageTargetTexStorageEXT glEGLImageTargetTexStorageEXT;
-GlEGLImageTargetTextureStorageEXT glEGLImageTargetTextureStorageEXT;
-GlLabelObjectEXT glLabelObjectEXT;
-GlGetObjectLabelEXT glGetObjectLabelEXT;
-GlInsertEventMarkerEXT glInsertEventMarkerEXT;
-GlPushGroupMarkerEXT glPushGroupMarkerEXT;
-GlPopGroupMarkerEXT glPopGroupMarkerEXT;
-GlMatrixLoadfEXT glMatrixLoadfEXT;
-GlMatrixLoaddEXT glMatrixLoaddEXT;
-GlMatrixMultfEXT glMatrixMultfEXT;
-GlMatrixMultdEXT glMatrixMultdEXT;
-GlMatrixLoadIdentityEXT glMatrixLoadIdentityEXT;
-GlMatrixRotatefEXT glMatrixRotatefEXT;
-GlMatrixRotatedEXT glMatrixRotatedEXT;
-GlMatrixScalefEXT glMatrixScalefEXT;
-GlMatrixScaledEXT glMatrixScaledEXT;
-GlMatrixTranslatefEXT glMatrixTranslatefEXT;
-GlMatrixTranslatedEXT glMatrixTranslatedEXT;
-GlMatrixFrustumEXT glMatrixFrustumEXT;
-GlMatrixOrthoEXT glMatrixOrthoEXT;
-GlMatrixPopEXT glMatrixPopEXT;
-GlMatrixPushEXT glMatrixPushEXT;
-GlClientAttribDefaultEXT glClientAttribDefaultEXT;
-GlPushClientAttribDefaultEXT glPushClientAttribDefaultEXT;
-GlTextureParameterfEXT glTextureParameterfEXT;
-GlTextureParameterfvEXT glTextureParameterfvEXT;
-GlTextureParameteriEXT glTextureParameteriEXT;
-GlTextureParameterivEXT glTextureParameterivEXT;
-GlTextureImage1DEXT glTextureImage1DEXT;
-GlTextureImage2DEXT glTextureImage2DEXT;
-GlTextureSubImage1DEXT glTextureSubImage1DEXT;
-GlTextureSubImage2DEXT glTextureSubImage2DEXT;
-GlCopyTextureImage1DEXT glCopyTextureImage1DEXT;
-GlCopyTextureImage2DEXT glCopyTextureImage2DEXT;
-GlCopyTextureSubImage1DEXT glCopyTextureSubImage1DEXT;
-GlCopyTextureSubImage2DEXT glCopyTextureSubImage2DEXT;
-GlGetTextureImageEXT glGetTextureImageEXT;
-GlGetTextureParameterfvEXT glGetTextureParameterfvEXT;
-GlGetTextureParameterivEXT glGetTextureParameterivEXT;
-GlGetTextureLevelParameterfvEXT glGetTextureLevelParameterfvEXT;
-GlGetTextureLevelParameterivEXT glGetTextureLevelParameterivEXT;
-GlTextureImage3DEXT glTextureImage3DEXT;
-GlTextureSubImage3DEXT glTextureSubImage3DEXT;
-GlCopyTextureSubImage3DEXT glCopyTextureSubImage3DEXT;
-GlBindMultiTextureEXT glBindMultiTextureEXT;
-GlMultiTexCoordPointerEXT glMultiTexCoordPointerEXT;
-GlMultiTexEnvfEXT glMultiTexEnvfEXT;
-GlMultiTexEnvfvEXT glMultiTexEnvfvEXT;
-GlMultiTexEnviEXT glMultiTexEnviEXT;
-GlMultiTexEnvivEXT glMultiTexEnvivEXT;
-GlMultiTexGendEXT glMultiTexGendEXT;
-GlMultiTexGendvEXT glMultiTexGendvEXT;
-GlMultiTexGenfEXT glMultiTexGenfEXT;
-GlMultiTexGenfvEXT glMultiTexGenfvEXT;
-GlMultiTexGeniEXT glMultiTexGeniEXT;
-GlMultiTexGenivEXT glMultiTexGenivEXT;
-GlGetMultiTexEnvfvEXT glGetMultiTexEnvfvEXT;
-GlGetMultiTexEnvivEXT glGetMultiTexEnvivEXT;
-GlGetMultiTexGendvEXT glGetMultiTexGendvEXT;
-GlGetMultiTexGenfvEXT glGetMultiTexGenfvEXT;
-GlGetMultiTexGenivEXT glGetMultiTexGenivEXT;
-GlMultiTexParameteriEXT glMultiTexParameteriEXT;
-GlMultiTexParameterivEXT glMultiTexParameterivEXT;
-GlMultiTexParameterfEXT glMultiTexParameterfEXT;
-GlMultiTexParameterfvEXT glMultiTexParameterfvEXT;
-GlMultiTexImage1DEXT glMultiTexImage1DEXT;
-GlMultiTexImage2DEXT glMultiTexImage2DEXT;
-GlMultiTexSubImage1DEXT glMultiTexSubImage1DEXT;
-GlMultiTexSubImage2DEXT glMultiTexSubImage2DEXT;
-GlCopyMultiTexImage1DEXT glCopyMultiTexImage1DEXT;
-GlCopyMultiTexImage2DEXT glCopyMultiTexImage2DEXT;
-GlCopyMultiTexSubImage1DEXT glCopyMultiTexSubImage1DEXT;
-GlCopyMultiTexSubImage2DEXT glCopyMultiTexSubImage2DEXT;
-GlGetMultiTexImageEXT glGetMultiTexImageEXT;
-GlGetMultiTexParameterfvEXT glGetMultiTexParameterfvEXT;
-GlGetMultiTexParameterivEXT glGetMultiTexParameterivEXT;
-GlGetMultiTexLevelParameterfvEXT glGetMultiTexLevelParameterfvEXT;
-GlGetMultiTexLevelParameterivEXT glGetMultiTexLevelParameterivEXT;
-GlMultiTexImage3DEXT glMultiTexImage3DEXT;
-GlMultiTexSubImage3DEXT glMultiTexSubImage3DEXT;
-GlCopyMultiTexSubImage3DEXT glCopyMultiTexSubImage3DEXT;
-GlEnableClientStateIndexedEXT glEnableClientStateIndexedEXT;
-GlDisableClientStateIndexedEXT glDisableClientStateIndexedEXT;
-GlGetFloatIndexedvEXT glGetFloatIndexedvEXT;
-GlGetDoubleIndexedvEXT glGetDoubleIndexedvEXT;
-GlGetPointerIndexedvEXT glGetPointerIndexedvEXT;
-GlEnableIndexedEXT glEnableIndexedEXT;
-GlDisableIndexedEXT glDisableIndexedEXT;
-GlIsEnabledIndexedEXT glIsEnabledIndexedEXT;
-GlGetIntegerIndexedvEXT glGetIntegerIndexedvEXT;
-GlGetBooleanIndexedvEXT glGetBooleanIndexedvEXT;
-GlCompressedTextureImage3DEXT glCompressedTextureImage3DEXT;
-GlCompressedTextureImage2DEXT glCompressedTextureImage2DEXT;
-GlCompressedTextureImage1DEXT glCompressedTextureImage1DEXT;
-GlCompressedTextureSubImage3DEXT glCompressedTextureSubImage3DEXT;
-GlCompressedTextureSubImage2DEXT glCompressedTextureSubImage2DEXT;
-GlCompressedTextureSubImage1DEXT glCompressedTextureSubImage1DEXT;
-GlGetCompressedTextureImageEXT glGetCompressedTextureImageEXT;
-GlCompressedMultiTexImage3DEXT glCompressedMultiTexImage3DEXT;
-GlCompressedMultiTexImage2DEXT glCompressedMultiTexImage2DEXT;
-GlCompressedMultiTexImage1DEXT glCompressedMultiTexImage1DEXT;
-GlCompressedMultiTexSubImage3DEXT glCompressedMultiTexSubImage3DEXT;
-GlCompressedMultiTexSubImage2DEXT glCompressedMultiTexSubImage2DEXT;
-GlCompressedMultiTexSubImage1DEXT glCompressedMultiTexSubImage1DEXT;
-GlGetCompressedMultiTexImageEXT glGetCompressedMultiTexImageEXT;
-GlMatrixLoadTransposefEXT glMatrixLoadTransposefEXT;
-GlMatrixLoadTransposedEXT glMatrixLoadTransposedEXT;
-GlMatrixMultTransposefEXT glMatrixMultTransposefEXT;
-GlMatrixMultTransposedEXT glMatrixMultTransposedEXT;
-GlNamedBufferDataEXT glNamedBufferDataEXT;
-GlNamedBufferSubDataEXT glNamedBufferSubDataEXT;
-GlMapNamedBufferEXT glMapNamedBufferEXT;
-GlUnmapNamedBufferEXT glUnmapNamedBufferEXT;
-GlGetNamedBufferParameterivEXT glGetNamedBufferParameterivEXT;
-GlGetNamedBufferPointervEXT glGetNamedBufferPointervEXT;
-GlGetNamedBufferSubDataEXT glGetNamedBufferSubDataEXT;
-GlProgramUniform1fEXT glProgramUniform1fEXT;
-GlProgramUniform2fEXT glProgramUniform2fEXT;
-GlProgramUniform3fEXT glProgramUniform3fEXT;
-GlProgramUniform4fEXT glProgramUniform4fEXT;
-GlProgramUniform1iEXT glProgramUniform1iEXT;
-GlProgramUniform2iEXT glProgramUniform2iEXT;
-GlProgramUniform3iEXT glProgramUniform3iEXT;
-GlProgramUniform4iEXT glProgramUniform4iEXT;
-GlProgramUniform1fvEXT glProgramUniform1fvEXT;
-GlProgramUniform2fvEXT glProgramUniform2fvEXT;
-GlProgramUniform3fvEXT glProgramUniform3fvEXT;
-GlProgramUniform4fvEXT glProgramUniform4fvEXT;
-GlProgramUniform1ivEXT glProgramUniform1ivEXT;
-GlProgramUniform2ivEXT glProgramUniform2ivEXT;
-GlProgramUniform3ivEXT glProgramUniform3ivEXT;
-GlProgramUniform4ivEXT glProgramUniform4ivEXT;
-GlProgramUniformMatrix2fvEXT glProgramUniformMatrix2fvEXT;
-GlProgramUniformMatrix3fvEXT glProgramUniformMatrix3fvEXT;
-GlProgramUniformMatrix4fvEXT glProgramUniformMatrix4fvEXT;
-GlProgramUniformMatrix2x3fvEXT glProgramUniformMatrix2x3fvEXT;
-GlProgramUniformMatrix3x2fvEXT glProgramUniformMatrix3x2fvEXT;
-GlProgramUniformMatrix2x4fvEXT glProgramUniformMatrix2x4fvEXT;
-GlProgramUniformMatrix4x2fvEXT glProgramUniformMatrix4x2fvEXT;
-GlProgramUniformMatrix3x4fvEXT glProgramUniformMatrix3x4fvEXT;
-GlProgramUniformMatrix4x3fvEXT glProgramUniformMatrix4x3fvEXT;
-GlTextureBufferEXT glTextureBufferEXT;
-GlMultiTexBufferEXT glMultiTexBufferEXT;
-GlTextureParameterIivEXT glTextureParameterIivEXT;
-GlTextureParameterIuivEXT glTextureParameterIuivEXT;
-GlGetTextureParameterIivEXT glGetTextureParameterIivEXT;
-GlGetTextureParameterIuivEXT glGetTextureParameterIuivEXT;
-GlMultiTexParameterIivEXT glMultiTexParameterIivEXT;
-GlMultiTexParameterIuivEXT glMultiTexParameterIuivEXT;
-GlGetMultiTexParameterIivEXT glGetMultiTexParameterIivEXT;
-GlGetMultiTexParameterIuivEXT glGetMultiTexParameterIuivEXT;
-GlProgramUniform1uiEXT glProgramUniform1uiEXT;
-GlProgramUniform2uiEXT glProgramUniform2uiEXT;
-GlProgramUniform3uiEXT glProgramUniform3uiEXT;
-GlProgramUniform4uiEXT glProgramUniform4uiEXT;
-GlProgramUniform1uivEXT glProgramUniform1uivEXT;
-GlProgramUniform2uivEXT glProgramUniform2uivEXT;
-GlProgramUniform3uivEXT glProgramUniform3uivEXT;
-GlProgramUniform4uivEXT glProgramUniform4uivEXT;
-GlNamedProgramLocalParameters4fvEXT glNamedProgramLocalParameters4fvEXT;
-GlNamedProgramLocalParameterI4iEXT glNamedProgramLocalParameterI4iEXT;
-GlNamedProgramLocalParameterI4ivEXT glNamedProgramLocalParameterI4ivEXT;
-GlNamedProgramLocalParametersI4ivEXT glNamedProgramLocalParametersI4ivEXT;
-GlNamedProgramLocalParameterI4uiEXT glNamedProgramLocalParameterI4uiEXT;
-GlNamedProgramLocalParameterI4uivEXT glNamedProgramLocalParameterI4uivEXT;
-GlNamedProgramLocalParametersI4uivEXT glNamedProgramLocalParametersI4uivEXT;
-GlGetNamedProgramLocalParameterIivEXT glGetNamedProgramLocalParameterIivEXT;
-GlGetNamedProgramLocalParameterIuivEXT glGetNamedProgramLocalParameterIuivEXT;
-GlEnableClientStateiEXT glEnableClientStateiEXT;
-GlDisableClientStateiEXT glDisableClientStateiEXT;
-GlGetFloati_vEXT glGetFloati_vEXT;
-GlGetDoublei_vEXT glGetDoublei_vEXT;
-GlGetPointeri_vEXT glGetPointeri_vEXT;
-GlNamedProgramStringEXT glNamedProgramStringEXT;
-GlNamedProgramLocalParameter4dEXT glNamedProgramLocalParameter4dEXT;
-GlNamedProgramLocalParameter4dvEXT glNamedProgramLocalParameter4dvEXT;
-GlNamedProgramLocalParameter4fEXT glNamedProgramLocalParameter4fEXT;
-GlNamedProgramLocalParameter4fvEXT glNamedProgramLocalParameter4fvEXT;
-GlGetNamedProgramLocalParameterdvEXT glGetNamedProgramLocalParameterdvEXT;
-GlGetNamedProgramLocalParameterfvEXT glGetNamedProgramLocalParameterfvEXT;
-GlGetNamedProgramivEXT glGetNamedProgramivEXT;
-GlGetNamedProgramStringEXT glGetNamedProgramStringEXT;
-GlNamedRenderbufferStorageEXT glNamedRenderbufferStorageEXT;
-GlGetNamedRenderbufferParameterivEXT glGetNamedRenderbufferParameterivEXT;
-GlNamedRenderbufferStorageMultisampleEXT
+GlGetPerfMonitorGroupsAMD? glGetPerfMonitorGroupsAMD;
+GlGetPerfMonitorCountersAMD? glGetPerfMonitorCountersAMD;
+GlGetPerfMonitorGroupStringAMD? glGetPerfMonitorGroupStringAMD;
+GlGetPerfMonitorCounterStringAMD? glGetPerfMonitorCounterStringAMD;
+GlGetPerfMonitorCounterInfoAMD? glGetPerfMonitorCounterInfoAMD;
+GlGenPerfMonitorsAMD? glGenPerfMonitorsAMD;
+GlDeletePerfMonitorsAMD? glDeletePerfMonitorsAMD;
+GlSelectPerfMonitorCountersAMD? glSelectPerfMonitorCountersAMD;
+GlBeginPerfMonitorAMD? glBeginPerfMonitorAMD;
+GlEndPerfMonitorAMD? glEndPerfMonitorAMD;
+GlGetPerfMonitorCounterDataAMD? glGetPerfMonitorCounterDataAMD;
+GlEGLImageTargetTexStorageEXT? glEGLImageTargetTexStorageEXT;
+GlEGLImageTargetTextureStorageEXT? glEGLImageTargetTextureStorageEXT;
+GlLabelObjectEXT? glLabelObjectEXT;
+GlGetObjectLabelEXT? glGetObjectLabelEXT;
+GlInsertEventMarkerEXT? glInsertEventMarkerEXT;
+GlPushGroupMarkerEXT? glPushGroupMarkerEXT;
+GlPopGroupMarkerEXT? glPopGroupMarkerEXT;
+GlMatrixLoadfEXT? glMatrixLoadfEXT;
+GlMatrixLoaddEXT? glMatrixLoaddEXT;
+GlMatrixMultfEXT? glMatrixMultfEXT;
+GlMatrixMultdEXT? glMatrixMultdEXT;
+GlMatrixLoadIdentityEXT? glMatrixLoadIdentityEXT;
+GlMatrixRotatefEXT? glMatrixRotatefEXT;
+GlMatrixRotatedEXT? glMatrixRotatedEXT;
+GlMatrixScalefEXT? glMatrixScalefEXT;
+GlMatrixScaledEXT? glMatrixScaledEXT;
+GlMatrixTranslatefEXT? glMatrixTranslatefEXT;
+GlMatrixTranslatedEXT? glMatrixTranslatedEXT;
+GlMatrixFrustumEXT? glMatrixFrustumEXT;
+GlMatrixOrthoEXT? glMatrixOrthoEXT;
+GlMatrixPopEXT? glMatrixPopEXT;
+GlMatrixPushEXT? glMatrixPushEXT;
+GlClientAttribDefaultEXT? glClientAttribDefaultEXT;
+GlPushClientAttribDefaultEXT? glPushClientAttribDefaultEXT;
+GlTextureParameterfEXT? glTextureParameterfEXT;
+GlTextureParameterfvEXT? glTextureParameterfvEXT;
+GlTextureParameteriEXT? glTextureParameteriEXT;
+GlTextureParameterivEXT? glTextureParameterivEXT;
+GlTextureImage1DEXT? glTextureImage1DEXT;
+GlTextureImage2DEXT? glTextureImage2DEXT;
+GlTextureSubImage1DEXT? glTextureSubImage1DEXT;
+GlTextureSubImage2DEXT? glTextureSubImage2DEXT;
+GlCopyTextureImage1DEXT? glCopyTextureImage1DEXT;
+GlCopyTextureImage2DEXT? glCopyTextureImage2DEXT;
+GlCopyTextureSubImage1DEXT? glCopyTextureSubImage1DEXT;
+GlCopyTextureSubImage2DEXT? glCopyTextureSubImage2DEXT;
+GlGetTextureImageEXT? glGetTextureImageEXT;
+GlGetTextureParameterfvEXT? glGetTextureParameterfvEXT;
+GlGetTextureParameterivEXT? glGetTextureParameterivEXT;
+GlGetTextureLevelParameterfvEXT? glGetTextureLevelParameterfvEXT;
+GlGetTextureLevelParameterivEXT? glGetTextureLevelParameterivEXT;
+GlTextureImage3DEXT? glTextureImage3DEXT;
+GlTextureSubImage3DEXT? glTextureSubImage3DEXT;
+GlCopyTextureSubImage3DEXT? glCopyTextureSubImage3DEXT;
+GlBindMultiTextureEXT? glBindMultiTextureEXT;
+GlMultiTexCoordPointerEXT? glMultiTexCoordPointerEXT;
+GlMultiTexEnvfEXT? glMultiTexEnvfEXT;
+GlMultiTexEnvfvEXT? glMultiTexEnvfvEXT;
+GlMultiTexEnviEXT? glMultiTexEnviEXT;
+GlMultiTexEnvivEXT? glMultiTexEnvivEXT;
+GlMultiTexGendEXT? glMultiTexGendEXT;
+GlMultiTexGendvEXT? glMultiTexGendvEXT;
+GlMultiTexGenfEXT? glMultiTexGenfEXT;
+GlMultiTexGenfvEXT? glMultiTexGenfvEXT;
+GlMultiTexGeniEXT? glMultiTexGeniEXT;
+GlMultiTexGenivEXT? glMultiTexGenivEXT;
+GlGetMultiTexEnvfvEXT? glGetMultiTexEnvfvEXT;
+GlGetMultiTexEnvivEXT? glGetMultiTexEnvivEXT;
+GlGetMultiTexGendvEXT? glGetMultiTexGendvEXT;
+GlGetMultiTexGenfvEXT? glGetMultiTexGenfvEXT;
+GlGetMultiTexGenivEXT? glGetMultiTexGenivEXT;
+GlMultiTexParameteriEXT? glMultiTexParameteriEXT;
+GlMultiTexParameterivEXT? glMultiTexParameterivEXT;
+GlMultiTexParameterfEXT? glMultiTexParameterfEXT;
+GlMultiTexParameterfvEXT? glMultiTexParameterfvEXT;
+GlMultiTexImage1DEXT? glMultiTexImage1DEXT;
+GlMultiTexImage2DEXT? glMultiTexImage2DEXT;
+GlMultiTexSubImage1DEXT? glMultiTexSubImage1DEXT;
+GlMultiTexSubImage2DEXT? glMultiTexSubImage2DEXT;
+GlCopyMultiTexImage1DEXT? glCopyMultiTexImage1DEXT;
+GlCopyMultiTexImage2DEXT? glCopyMultiTexImage2DEXT;
+GlCopyMultiTexSubImage1DEXT? glCopyMultiTexSubImage1DEXT;
+GlCopyMultiTexSubImage2DEXT? glCopyMultiTexSubImage2DEXT;
+GlGetMultiTexImageEXT? glGetMultiTexImageEXT;
+GlGetMultiTexParameterfvEXT? glGetMultiTexParameterfvEXT;
+GlGetMultiTexParameterivEXT? glGetMultiTexParameterivEXT;
+GlGetMultiTexLevelParameterfvEXT? glGetMultiTexLevelParameterfvEXT;
+GlGetMultiTexLevelParameterivEXT? glGetMultiTexLevelParameterivEXT;
+GlMultiTexImage3DEXT? glMultiTexImage3DEXT;
+GlMultiTexSubImage3DEXT? glMultiTexSubImage3DEXT;
+GlCopyMultiTexSubImage3DEXT? glCopyMultiTexSubImage3DEXT;
+GlEnableClientStateIndexedEXT? glEnableClientStateIndexedEXT;
+GlDisableClientStateIndexedEXT? glDisableClientStateIndexedEXT;
+GlGetFloatIndexedvEXT? glGetFloatIndexedvEXT;
+GlGetDoubleIndexedvEXT? glGetDoubleIndexedvEXT;
+GlGetPointerIndexedvEXT? glGetPointerIndexedvEXT;
+GlEnableIndexedEXT? glEnableIndexedEXT;
+GlDisableIndexedEXT? glDisableIndexedEXT;
+GlIsEnabledIndexedEXT? glIsEnabledIndexedEXT;
+GlGetIntegerIndexedvEXT? glGetIntegerIndexedvEXT;
+GlGetBooleanIndexedvEXT? glGetBooleanIndexedvEXT;
+GlCompressedTextureImage3DEXT? glCompressedTextureImage3DEXT;
+GlCompressedTextureImage2DEXT? glCompressedTextureImage2DEXT;
+GlCompressedTextureImage1DEXT? glCompressedTextureImage1DEXT;
+GlCompressedTextureSubImage3DEXT? glCompressedTextureSubImage3DEXT;
+GlCompressedTextureSubImage2DEXT? glCompressedTextureSubImage2DEXT;
+GlCompressedTextureSubImage1DEXT? glCompressedTextureSubImage1DEXT;
+GlGetCompressedTextureImageEXT? glGetCompressedTextureImageEXT;
+GlCompressedMultiTexImage3DEXT? glCompressedMultiTexImage3DEXT;
+GlCompressedMultiTexImage2DEXT? glCompressedMultiTexImage2DEXT;
+GlCompressedMultiTexImage1DEXT? glCompressedMultiTexImage1DEXT;
+GlCompressedMultiTexSubImage3DEXT? glCompressedMultiTexSubImage3DEXT;
+GlCompressedMultiTexSubImage2DEXT? glCompressedMultiTexSubImage2DEXT;
+GlCompressedMultiTexSubImage1DEXT? glCompressedMultiTexSubImage1DEXT;
+GlGetCompressedMultiTexImageEXT? glGetCompressedMultiTexImageEXT;
+GlMatrixLoadTransposefEXT? glMatrixLoadTransposefEXT;
+GlMatrixLoadTransposedEXT? glMatrixLoadTransposedEXT;
+GlMatrixMultTransposefEXT? glMatrixMultTransposefEXT;
+GlMatrixMultTransposedEXT? glMatrixMultTransposedEXT;
+GlNamedBufferDataEXT? glNamedBufferDataEXT;
+GlNamedBufferSubDataEXT? glNamedBufferSubDataEXT;
+GlMapNamedBufferEXT? glMapNamedBufferEXT;
+GlUnmapNamedBufferEXT? glUnmapNamedBufferEXT;
+GlGetNamedBufferParameterivEXT? glGetNamedBufferParameterivEXT;
+GlGetNamedBufferPointervEXT? glGetNamedBufferPointervEXT;
+GlGetNamedBufferSubDataEXT? glGetNamedBufferSubDataEXT;
+GlProgramUniform1fEXT? glProgramUniform1fEXT;
+GlProgramUniform2fEXT? glProgramUniform2fEXT;
+GlProgramUniform3fEXT? glProgramUniform3fEXT;
+GlProgramUniform4fEXT? glProgramUniform4fEXT;
+GlProgramUniform1iEXT? glProgramUniform1iEXT;
+GlProgramUniform2iEXT? glProgramUniform2iEXT;
+GlProgramUniform3iEXT? glProgramUniform3iEXT;
+GlProgramUniform4iEXT? glProgramUniform4iEXT;
+GlProgramUniform1fvEXT? glProgramUniform1fvEXT;
+GlProgramUniform2fvEXT? glProgramUniform2fvEXT;
+GlProgramUniform3fvEXT? glProgramUniform3fvEXT;
+GlProgramUniform4fvEXT? glProgramUniform4fvEXT;
+GlProgramUniform1ivEXT? glProgramUniform1ivEXT;
+GlProgramUniform2ivEXT? glProgramUniform2ivEXT;
+GlProgramUniform3ivEXT? glProgramUniform3ivEXT;
+GlProgramUniform4ivEXT? glProgramUniform4ivEXT;
+GlProgramUniformMatrix2fvEXT? glProgramUniformMatrix2fvEXT;
+GlProgramUniformMatrix3fvEXT? glProgramUniformMatrix3fvEXT;
+GlProgramUniformMatrix4fvEXT? glProgramUniformMatrix4fvEXT;
+GlProgramUniformMatrix2x3fvEXT? glProgramUniformMatrix2x3fvEXT;
+GlProgramUniformMatrix3x2fvEXT? glProgramUniformMatrix3x2fvEXT;
+GlProgramUniformMatrix2x4fvEXT? glProgramUniformMatrix2x4fvEXT;
+GlProgramUniformMatrix4x2fvEXT? glProgramUniformMatrix4x2fvEXT;
+GlProgramUniformMatrix3x4fvEXT? glProgramUniformMatrix3x4fvEXT;
+GlProgramUniformMatrix4x3fvEXT? glProgramUniformMatrix4x3fvEXT;
+GlTextureBufferEXT? glTextureBufferEXT;
+GlMultiTexBufferEXT? glMultiTexBufferEXT;
+GlTextureParameterIivEXT? glTextureParameterIivEXT;
+GlTextureParameterIuivEXT? glTextureParameterIuivEXT;
+GlGetTextureParameterIivEXT? glGetTextureParameterIivEXT;
+GlGetTextureParameterIuivEXT? glGetTextureParameterIuivEXT;
+GlMultiTexParameterIivEXT? glMultiTexParameterIivEXT;
+GlMultiTexParameterIuivEXT? glMultiTexParameterIuivEXT;
+GlGetMultiTexParameterIivEXT? glGetMultiTexParameterIivEXT;
+GlGetMultiTexParameterIuivEXT? glGetMultiTexParameterIuivEXT;
+GlProgramUniform1uiEXT? glProgramUniform1uiEXT;
+GlProgramUniform2uiEXT? glProgramUniform2uiEXT;
+GlProgramUniform3uiEXT? glProgramUniform3uiEXT;
+GlProgramUniform4uiEXT? glProgramUniform4uiEXT;
+GlProgramUniform1uivEXT? glProgramUniform1uivEXT;
+GlProgramUniform2uivEXT? glProgramUniform2uivEXT;
+GlProgramUniform3uivEXT? glProgramUniform3uivEXT;
+GlProgramUniform4uivEXT? glProgramUniform4uivEXT;
+GlNamedProgramLocalParameters4fvEXT? glNamedProgramLocalParameters4fvEXT;
+GlNamedProgramLocalParameterI4iEXT? glNamedProgramLocalParameterI4iEXT;
+GlNamedProgramLocalParameterI4ivEXT? glNamedProgramLocalParameterI4ivEXT;
+GlNamedProgramLocalParametersI4ivEXT? glNamedProgramLocalParametersI4ivEXT;
+GlNamedProgramLocalParameterI4uiEXT? glNamedProgramLocalParameterI4uiEXT;
+GlNamedProgramLocalParameterI4uivEXT? glNamedProgramLocalParameterI4uivEXT;
+GlNamedProgramLocalParametersI4uivEXT? glNamedProgramLocalParametersI4uivEXT;
+GlGetNamedProgramLocalParameterIivEXT? glGetNamedProgramLocalParameterIivEXT;
+GlGetNamedProgramLocalParameterIuivEXT? glGetNamedProgramLocalParameterIuivEXT;
+GlEnableClientStateiEXT? glEnableClientStateiEXT;
+GlDisableClientStateiEXT? glDisableClientStateiEXT;
+GlGetFloati_vEXT? glGetFloati_vEXT;
+GlGetDoublei_vEXT? glGetDoublei_vEXT;
+GlGetPointeri_vEXT? glGetPointeri_vEXT;
+GlNamedProgramStringEXT? glNamedProgramStringEXT;
+GlNamedProgramLocalParameter4dEXT? glNamedProgramLocalParameter4dEXT;
+GlNamedProgramLocalParameter4dvEXT? glNamedProgramLocalParameter4dvEXT;
+GlNamedProgramLocalParameter4fEXT? glNamedProgramLocalParameter4fEXT;
+GlNamedProgramLocalParameter4fvEXT? glNamedProgramLocalParameter4fvEXT;
+GlGetNamedProgramLocalParameterdvEXT? glGetNamedProgramLocalParameterdvEXT;
+GlGetNamedProgramLocalParameterfvEXT? glGetNamedProgramLocalParameterfvEXT;
+GlGetNamedProgramivEXT? glGetNamedProgramivEXT;
+GlGetNamedProgramStringEXT? glGetNamedProgramStringEXT;
+GlNamedRenderbufferStorageEXT? glNamedRenderbufferStorageEXT;
+GlGetNamedRenderbufferParameterivEXT? glGetNamedRenderbufferParameterivEXT;
+GlNamedRenderbufferStorageMultisampleEXT?
     glNamedRenderbufferStorageMultisampleEXT;
-GlNamedRenderbufferStorageMultisampleCoverageEXT
+GlNamedRenderbufferStorageMultisampleCoverageEXT?
     glNamedRenderbufferStorageMultisampleCoverageEXT;
-GlCheckNamedFramebufferStatusEXT glCheckNamedFramebufferStatusEXT;
-GlNamedFramebufferTexture1DEXT glNamedFramebufferTexture1DEXT;
-GlNamedFramebufferTexture2DEXT glNamedFramebufferTexture2DEXT;
-GlNamedFramebufferTexture3DEXT glNamedFramebufferTexture3DEXT;
-GlNamedFramebufferRenderbufferEXT glNamedFramebufferRenderbufferEXT;
-GlGetNamedFramebufferAttachmentParameterivEXT
+GlCheckNamedFramebufferStatusEXT? glCheckNamedFramebufferStatusEXT;
+GlNamedFramebufferTexture1DEXT? glNamedFramebufferTexture1DEXT;
+GlNamedFramebufferTexture2DEXT? glNamedFramebufferTexture2DEXT;
+GlNamedFramebufferTexture3DEXT? glNamedFramebufferTexture3DEXT;
+GlNamedFramebufferRenderbufferEXT? glNamedFramebufferRenderbufferEXT;
+GlGetNamedFramebufferAttachmentParameterivEXT?
     glGetNamedFramebufferAttachmentParameterivEXT;
-GlGenerateTextureMipmapEXT glGenerateTextureMipmapEXT;
-GlGenerateMultiTexMipmapEXT glGenerateMultiTexMipmapEXT;
-GlFramebufferDrawBufferEXT glFramebufferDrawBufferEXT;
-GlFramebufferDrawBuffersEXT glFramebufferDrawBuffersEXT;
-GlFramebufferReadBufferEXT glFramebufferReadBufferEXT;
-GlGetFramebufferParameterivEXT glGetFramebufferParameterivEXT;
-GlNamedCopyBufferSubDataEXT glNamedCopyBufferSubDataEXT;
-GlNamedFramebufferTextureEXT glNamedFramebufferTextureEXT;
-GlNamedFramebufferTextureLayerEXT glNamedFramebufferTextureLayerEXT;
-GlNamedFramebufferTextureFaceEXT glNamedFramebufferTextureFaceEXT;
-GlTextureRenderbufferEXT glTextureRenderbufferEXT;
-GlMultiTexRenderbufferEXT glMultiTexRenderbufferEXT;
-GlVertexArrayVertexOffsetEXT glVertexArrayVertexOffsetEXT;
-GlVertexArrayColorOffsetEXT glVertexArrayColorOffsetEXT;
-GlVertexArrayEdgeFlagOffsetEXT glVertexArrayEdgeFlagOffsetEXT;
-GlVertexArrayIndexOffsetEXT glVertexArrayIndexOffsetEXT;
-GlVertexArrayNormalOffsetEXT glVertexArrayNormalOffsetEXT;
-GlVertexArrayTexCoordOffsetEXT glVertexArrayTexCoordOffsetEXT;
-GlVertexArrayMultiTexCoordOffsetEXT glVertexArrayMultiTexCoordOffsetEXT;
-GlVertexArrayFogCoordOffsetEXT glVertexArrayFogCoordOffsetEXT;
-GlVertexArraySecondaryColorOffsetEXT glVertexArraySecondaryColorOffsetEXT;
-GlVertexArrayVertexAttribOffsetEXT glVertexArrayVertexAttribOffsetEXT;
-GlVertexArrayVertexAttribIOffsetEXT glVertexArrayVertexAttribIOffsetEXT;
-GlEnableVertexArrayEXT glEnableVertexArrayEXT;
-GlDisableVertexArrayEXT glDisableVertexArrayEXT;
-GlEnableVertexArrayAttribEXT glEnableVertexArrayAttribEXT;
-GlDisableVertexArrayAttribEXT glDisableVertexArrayAttribEXT;
-GlGetVertexArrayIntegervEXT glGetVertexArrayIntegervEXT;
-GlGetVertexArrayPointervEXT glGetVertexArrayPointervEXT;
-GlGetVertexArrayIntegeri_vEXT glGetVertexArrayIntegeri_vEXT;
-GlGetVertexArrayPointeri_vEXT glGetVertexArrayPointeri_vEXT;
-GlMapNamedBufferRangeEXT glMapNamedBufferRangeEXT;
-GlFlushMappedNamedBufferRangeEXT glFlushMappedNamedBufferRangeEXT;
-GlNamedBufferStorageEXT glNamedBufferStorageEXT;
-GlClearNamedBufferDataEXT glClearNamedBufferDataEXT;
-GlClearNamedBufferSubDataEXT glClearNamedBufferSubDataEXT;
-GlNamedFramebufferParameteriEXT glNamedFramebufferParameteriEXT;
-GlGetNamedFramebufferParameterivEXT glGetNamedFramebufferParameterivEXT;
-GlProgramUniform1dEXT glProgramUniform1dEXT;
-GlProgramUniform2dEXT glProgramUniform2dEXT;
-GlProgramUniform3dEXT glProgramUniform3dEXT;
-GlProgramUniform4dEXT glProgramUniform4dEXT;
-GlProgramUniform1dvEXT glProgramUniform1dvEXT;
-GlProgramUniform2dvEXT glProgramUniform2dvEXT;
-GlProgramUniform3dvEXT glProgramUniform3dvEXT;
-GlProgramUniform4dvEXT glProgramUniform4dvEXT;
-GlProgramUniformMatrix2dvEXT glProgramUniformMatrix2dvEXT;
-GlProgramUniformMatrix3dvEXT glProgramUniformMatrix3dvEXT;
-GlProgramUniformMatrix4dvEXT glProgramUniformMatrix4dvEXT;
-GlProgramUniformMatrix2x3dvEXT glProgramUniformMatrix2x3dvEXT;
-GlProgramUniformMatrix2x4dvEXT glProgramUniformMatrix2x4dvEXT;
-GlProgramUniformMatrix3x2dvEXT glProgramUniformMatrix3x2dvEXT;
-GlProgramUniformMatrix3x4dvEXT glProgramUniformMatrix3x4dvEXT;
-GlProgramUniformMatrix4x2dvEXT glProgramUniformMatrix4x2dvEXT;
-GlProgramUniformMatrix4x3dvEXT glProgramUniformMatrix4x3dvEXT;
-GlTextureBufferRangeEXT glTextureBufferRangeEXT;
-GlTextureStorage1DEXT glTextureStorage1DEXT;
-GlTextureStorage2DEXT glTextureStorage2DEXT;
-GlTextureStorage3DEXT glTextureStorage3DEXT;
-GlTextureStorage2DMultisampleEXT glTextureStorage2DMultisampleEXT;
-GlTextureStorage3DMultisampleEXT glTextureStorage3DMultisampleEXT;
-GlVertexArrayBindVertexBufferEXT glVertexArrayBindVertexBufferEXT;
-GlVertexArrayVertexAttribFormatEXT glVertexArrayVertexAttribFormatEXT;
-GlVertexArrayVertexAttribIFormatEXT glVertexArrayVertexAttribIFormatEXT;
-GlVertexArrayVertexAttribLFormatEXT glVertexArrayVertexAttribLFormatEXT;
-GlVertexArrayVertexAttribBindingEXT glVertexArrayVertexAttribBindingEXT;
-GlVertexArrayVertexBindingDivisorEXT glVertexArrayVertexBindingDivisorEXT;
-GlVertexArrayVertexAttribLOffsetEXT glVertexArrayVertexAttribLOffsetEXT;
-GlTexturePageCommitmentEXT glTexturePageCommitmentEXT;
-GlVertexArrayVertexAttribDivisorEXT glVertexArrayVertexAttribDivisorEXT;
-GlDrawArraysInstancedEXT glDrawArraysInstancedEXT;
-GlDrawElementsInstancedEXT glDrawElementsInstancedEXT;
-GlPolygonOffsetClampEXT glPolygonOffsetClampEXT;
-GlRasterSamplesEXT glRasterSamplesEXT;
-GlUseShaderProgramEXT glUseShaderProgramEXT;
-GlActiveProgramEXT glActiveProgramEXT;
-GlCreateShaderProgramEXT glCreateShaderProgramEXT;
-GlFramebufferFetchBarrierEXT glFramebufferFetchBarrierEXT;
-GlWindowRectanglesEXT glWindowRectanglesEXT;
-GlApplyFramebufferAttachmentCMAAINTEL glApplyFramebufferAttachmentCMAAINTEL;
-GlBeginPerfQueryINTEL glBeginPerfQueryINTEL;
-GlCreatePerfQueryINTEL glCreatePerfQueryINTEL;
-GlDeletePerfQueryINTEL glDeletePerfQueryINTEL;
-GlEndPerfQueryINTEL glEndPerfQueryINTEL;
-GlGetFirstPerfQueryIdINTEL glGetFirstPerfQueryIdINTEL;
-GlGetNextPerfQueryIdINTEL glGetNextPerfQueryIdINTEL;
-GlGetPerfCounterInfoINTEL glGetPerfCounterInfoINTEL;
-GlGetPerfQueryDataINTEL glGetPerfQueryDataINTEL;
-GlGetPerfQueryIdByNameINTEL glGetPerfQueryIdByNameINTEL;
-GlGetPerfQueryInfoINTEL glGetPerfQueryInfoINTEL;
-GlFramebufferParameteriMESA glFramebufferParameteriMESA;
-GlGetFramebufferParameterivMESA glGetFramebufferParameterivMESA;
-GlMultiDrawArraysIndirectBindlessNV glMultiDrawArraysIndirectBindlessNV;
-GlMultiDrawElementsIndirectBindlessNV glMultiDrawElementsIndirectBindlessNV;
-GlMultiDrawArraysIndirectBindlessCountNV
+GlGenerateTextureMipmapEXT? glGenerateTextureMipmapEXT;
+GlGenerateMultiTexMipmapEXT? glGenerateMultiTexMipmapEXT;
+GlFramebufferDrawBufferEXT? glFramebufferDrawBufferEXT;
+GlFramebufferDrawBuffersEXT? glFramebufferDrawBuffersEXT;
+GlFramebufferReadBufferEXT? glFramebufferReadBufferEXT;
+GlGetFramebufferParameterivEXT? glGetFramebufferParameterivEXT;
+GlNamedCopyBufferSubDataEXT? glNamedCopyBufferSubDataEXT;
+GlNamedFramebufferTextureEXT? glNamedFramebufferTextureEXT;
+GlNamedFramebufferTextureLayerEXT? glNamedFramebufferTextureLayerEXT;
+GlNamedFramebufferTextureFaceEXT? glNamedFramebufferTextureFaceEXT;
+GlTextureRenderbufferEXT? glTextureRenderbufferEXT;
+GlMultiTexRenderbufferEXT? glMultiTexRenderbufferEXT;
+GlVertexArrayVertexOffsetEXT? glVertexArrayVertexOffsetEXT;
+GlVertexArrayColorOffsetEXT? glVertexArrayColorOffsetEXT;
+GlVertexArrayEdgeFlagOffsetEXT? glVertexArrayEdgeFlagOffsetEXT;
+GlVertexArrayIndexOffsetEXT? glVertexArrayIndexOffsetEXT;
+GlVertexArrayNormalOffsetEXT? glVertexArrayNormalOffsetEXT;
+GlVertexArrayTexCoordOffsetEXT? glVertexArrayTexCoordOffsetEXT;
+GlVertexArrayMultiTexCoordOffsetEXT? glVertexArrayMultiTexCoordOffsetEXT;
+GlVertexArrayFogCoordOffsetEXT? glVertexArrayFogCoordOffsetEXT;
+GlVertexArraySecondaryColorOffsetEXT? glVertexArraySecondaryColorOffsetEXT;
+GlVertexArrayVertexAttribOffsetEXT? glVertexArrayVertexAttribOffsetEXT;
+GlVertexArrayVertexAttribIOffsetEXT? glVertexArrayVertexAttribIOffsetEXT;
+GlEnableVertexArrayEXT? glEnableVertexArrayEXT;
+GlDisableVertexArrayEXT? glDisableVertexArrayEXT;
+GlEnableVertexArrayAttribEXT? glEnableVertexArrayAttribEXT;
+GlDisableVertexArrayAttribEXT? glDisableVertexArrayAttribEXT;
+GlGetVertexArrayIntegervEXT? glGetVertexArrayIntegervEXT;
+GlGetVertexArrayPointervEXT? glGetVertexArrayPointervEXT;
+GlGetVertexArrayIntegeri_vEXT? glGetVertexArrayIntegeri_vEXT;
+GlGetVertexArrayPointeri_vEXT? glGetVertexArrayPointeri_vEXT;
+GlMapNamedBufferRangeEXT? glMapNamedBufferRangeEXT;
+GlFlushMappedNamedBufferRangeEXT? glFlushMappedNamedBufferRangeEXT;
+GlNamedBufferStorageEXT? glNamedBufferStorageEXT;
+GlClearNamedBufferDataEXT? glClearNamedBufferDataEXT;
+GlClearNamedBufferSubDataEXT? glClearNamedBufferSubDataEXT;
+GlNamedFramebufferParameteriEXT? glNamedFramebufferParameteriEXT;
+GlGetNamedFramebufferParameterivEXT? glGetNamedFramebufferParameterivEXT;
+GlProgramUniform1dEXT? glProgramUniform1dEXT;
+GlProgramUniform2dEXT? glProgramUniform2dEXT;
+GlProgramUniform3dEXT? glProgramUniform3dEXT;
+GlProgramUniform4dEXT? glProgramUniform4dEXT;
+GlProgramUniform1dvEXT? glProgramUniform1dvEXT;
+GlProgramUniform2dvEXT? glProgramUniform2dvEXT;
+GlProgramUniform3dvEXT? glProgramUniform3dvEXT;
+GlProgramUniform4dvEXT? glProgramUniform4dvEXT;
+GlProgramUniformMatrix2dvEXT? glProgramUniformMatrix2dvEXT;
+GlProgramUniformMatrix3dvEXT? glProgramUniformMatrix3dvEXT;
+GlProgramUniformMatrix4dvEXT? glProgramUniformMatrix4dvEXT;
+GlProgramUniformMatrix2x3dvEXT? glProgramUniformMatrix2x3dvEXT;
+GlProgramUniformMatrix2x4dvEXT? glProgramUniformMatrix2x4dvEXT;
+GlProgramUniformMatrix3x2dvEXT? glProgramUniformMatrix3x2dvEXT;
+GlProgramUniformMatrix3x4dvEXT? glProgramUniformMatrix3x4dvEXT;
+GlProgramUniformMatrix4x2dvEXT? glProgramUniformMatrix4x2dvEXT;
+GlProgramUniformMatrix4x3dvEXT? glProgramUniformMatrix4x3dvEXT;
+GlTextureBufferRangeEXT? glTextureBufferRangeEXT;
+GlTextureStorage1DEXT? glTextureStorage1DEXT;
+GlTextureStorage2DEXT? glTextureStorage2DEXT;
+GlTextureStorage3DEXT? glTextureStorage3DEXT;
+GlTextureStorage2DMultisampleEXT? glTextureStorage2DMultisampleEXT;
+GlTextureStorage3DMultisampleEXT? glTextureStorage3DMultisampleEXT;
+GlVertexArrayBindVertexBufferEXT? glVertexArrayBindVertexBufferEXT;
+GlVertexArrayVertexAttribFormatEXT? glVertexArrayVertexAttribFormatEXT;
+GlVertexArrayVertexAttribIFormatEXT? glVertexArrayVertexAttribIFormatEXT;
+GlVertexArrayVertexAttribLFormatEXT? glVertexArrayVertexAttribLFormatEXT;
+GlVertexArrayVertexAttribBindingEXT? glVertexArrayVertexAttribBindingEXT;
+GlVertexArrayVertexBindingDivisorEXT? glVertexArrayVertexBindingDivisorEXT;
+GlVertexArrayVertexAttribLOffsetEXT? glVertexArrayVertexAttribLOffsetEXT;
+GlTexturePageCommitmentEXT? glTexturePageCommitmentEXT;
+GlVertexArrayVertexAttribDivisorEXT? glVertexArrayVertexAttribDivisorEXT;
+GlDrawArraysInstancedEXT? glDrawArraysInstancedEXT;
+GlDrawElementsInstancedEXT? glDrawElementsInstancedEXT;
+GlPolygonOffsetClampEXT? glPolygonOffsetClampEXT;
+GlRasterSamplesEXT? glRasterSamplesEXT;
+GlUseShaderProgramEXT? glUseShaderProgramEXT;
+GlActiveProgramEXT? glActiveProgramEXT;
+GlCreateShaderProgramEXT? glCreateShaderProgramEXT;
+GlFramebufferFetchBarrierEXT? glFramebufferFetchBarrierEXT;
+GlWindowRectanglesEXT? glWindowRectanglesEXT;
+GlApplyFramebufferAttachmentCMAAINTEL? glApplyFramebufferAttachmentCMAAINTEL;
+GlBeginPerfQueryINTEL? glBeginPerfQueryINTEL;
+GlCreatePerfQueryINTEL? glCreatePerfQueryINTEL;
+GlDeletePerfQueryINTEL? glDeletePerfQueryINTEL;
+GlEndPerfQueryINTEL? glEndPerfQueryINTEL;
+GlGetFirstPerfQueryIdINTEL? glGetFirstPerfQueryIdINTEL;
+GlGetNextPerfQueryIdINTEL? glGetNextPerfQueryIdINTEL;
+GlGetPerfCounterInfoINTEL? glGetPerfCounterInfoINTEL;
+GlGetPerfQueryDataINTEL? glGetPerfQueryDataINTEL;
+GlGetPerfQueryIdByNameINTEL? glGetPerfQueryIdByNameINTEL;
+GlGetPerfQueryInfoINTEL? glGetPerfQueryInfoINTEL;
+GlFramebufferParameteriMESA? glFramebufferParameteriMESA;
+GlGetFramebufferParameterivMESA? glGetFramebufferParameterivMESA;
+GlMultiDrawArraysIndirectBindlessNV? glMultiDrawArraysIndirectBindlessNV;
+GlMultiDrawElementsIndirectBindlessNV? glMultiDrawElementsIndirectBindlessNV;
+GlMultiDrawArraysIndirectBindlessCountNV?
     glMultiDrawArraysIndirectBindlessCountNV;
-GlMultiDrawElementsIndirectBindlessCountNV
+GlMultiDrawElementsIndirectBindlessCountNV?
     glMultiDrawElementsIndirectBindlessCountNV;
-GlGetTextureHandleNV glGetTextureHandleNV;
-GlGetTextureSamplerHandleNV glGetTextureSamplerHandleNV;
-GlMakeTextureHandleResidentNV glMakeTextureHandleResidentNV;
-GlMakeTextureHandleNonResidentNV glMakeTextureHandleNonResidentNV;
-GlGetImageHandleNV glGetImageHandleNV;
-GlMakeImageHandleResidentNV glMakeImageHandleResidentNV;
-GlMakeImageHandleNonResidentNV glMakeImageHandleNonResidentNV;
-GlUniformHandleui64NV glUniformHandleui64NV;
-GlUniformHandleui64vNV glUniformHandleui64vNV;
-GlProgramUniformHandleui64NV glProgramUniformHandleui64NV;
-GlProgramUniformHandleui64vNV glProgramUniformHandleui64vNV;
-GlIsTextureHandleResidentNV glIsTextureHandleResidentNV;
-GlIsImageHandleResidentNV glIsImageHandleResidentNV;
-GlBlendParameteriNV glBlendParameteriNV;
-GlBlendBarrierNV glBlendBarrierNV;
-GlViewportPositionWScaleNV glViewportPositionWScaleNV;
-GlCreateStatesNV glCreateStatesNV;
-GlDeleteStatesNV glDeleteStatesNV;
-GlIsStateNV glIsStateNV;
-GlStateCaptureNV glStateCaptureNV;
-GlGetCommandHeaderNV glGetCommandHeaderNV;
-GlGetStageIndexNV glGetStageIndexNV;
-GlDrawCommandsNV glDrawCommandsNV;
-GlDrawCommandsAddressNV glDrawCommandsAddressNV;
-GlDrawCommandsStatesNV glDrawCommandsStatesNV;
-GlDrawCommandsStatesAddressNV glDrawCommandsStatesAddressNV;
-GlCreateCommandListsNV glCreateCommandListsNV;
-GlDeleteCommandListsNV glDeleteCommandListsNV;
-GlIsCommandListNV glIsCommandListNV;
-GlListDrawCommandsStatesClientNV glListDrawCommandsStatesClientNV;
-GlCommandListSegmentsNV glCommandListSegmentsNV;
-GlCompileCommandListNV glCompileCommandListNV;
-GlCallCommandListNV glCallCommandListNV;
-GlBeginConditionalRenderNV glBeginConditionalRenderNV;
-GlEndConditionalRenderNV glEndConditionalRenderNV;
-GlSubpixelPrecisionBiasNV glSubpixelPrecisionBiasNV;
-GlConservativeRasterParameterfNV glConservativeRasterParameterfNV;
-GlConservativeRasterParameteriNV glConservativeRasterParameteriNV;
-GlDepthRangedNV glDepthRangedNV;
-GlClearDepthdNV glClearDepthdNV;
-GlDepthBoundsdNV glDepthBoundsdNV;
-GlDrawVkImageNV glDrawVkImageNV;
-GlGetVkProcAddrNV glGetVkProcAddrNV;
-GlWaitVkSemaphoreNV glWaitVkSemaphoreNV;
-GlSignalVkSemaphoreNV glSignalVkSemaphoreNV;
-GlSignalVkFenceNV glSignalVkFenceNV;
-GlFragmentCoverageColorNV glFragmentCoverageColorNV;
-GlCoverageModulationTableNV glCoverageModulationTableNV;
-GlGetCoverageModulationTableNV glGetCoverageModulationTableNV;
-GlCoverageModulationNV glCoverageModulationNV;
-GlRenderbufferStorageMultisampleCoverageNV
+GlGetTextureHandleNV? glGetTextureHandleNV;
+GlGetTextureSamplerHandleNV? glGetTextureSamplerHandleNV;
+GlMakeTextureHandleResidentNV? glMakeTextureHandleResidentNV;
+GlMakeTextureHandleNonResidentNV? glMakeTextureHandleNonResidentNV;
+GlGetImageHandleNV? glGetImageHandleNV;
+GlMakeImageHandleResidentNV? glMakeImageHandleResidentNV;
+GlMakeImageHandleNonResidentNV? glMakeImageHandleNonResidentNV;
+GlUniformHandleui64NV? glUniformHandleui64NV;
+GlUniformHandleui64vNV? glUniformHandleui64vNV;
+GlProgramUniformHandleui64NV? glProgramUniformHandleui64NV;
+GlProgramUniformHandleui64vNV? glProgramUniformHandleui64vNV;
+GlIsTextureHandleResidentNV? glIsTextureHandleResidentNV;
+GlIsImageHandleResidentNV? glIsImageHandleResidentNV;
+GlBlendParameteriNV? glBlendParameteriNV;
+GlBlendBarrierNV? glBlendBarrierNV;
+GlViewportPositionWScaleNV? glViewportPositionWScaleNV;
+GlCreateStatesNV? glCreateStatesNV;
+GlDeleteStatesNV? glDeleteStatesNV;
+GlIsStateNV? glIsStateNV;
+GlStateCaptureNV? glStateCaptureNV;
+GlGetCommandHeaderNV? glGetCommandHeaderNV;
+GlGetStageIndexNV? glGetStageIndexNV;
+GlDrawCommandsNV? glDrawCommandsNV;
+GlDrawCommandsAddressNV? glDrawCommandsAddressNV;
+GlDrawCommandsStatesNV? glDrawCommandsStatesNV;
+GlDrawCommandsStatesAddressNV? glDrawCommandsStatesAddressNV;
+GlCreateCommandListsNV? glCreateCommandListsNV;
+GlDeleteCommandListsNV? glDeleteCommandListsNV;
+GlIsCommandListNV? glIsCommandListNV;
+GlListDrawCommandsStatesClientNV? glListDrawCommandsStatesClientNV;
+GlCommandListSegmentsNV? glCommandListSegmentsNV;
+GlCompileCommandListNV? glCompileCommandListNV;
+GlCallCommandListNV? glCallCommandListNV;
+GlBeginConditionalRenderNV? glBeginConditionalRenderNV;
+GlEndConditionalRenderNV? glEndConditionalRenderNV;
+GlSubpixelPrecisionBiasNV? glSubpixelPrecisionBiasNV;
+GlConservativeRasterParameterfNV? glConservativeRasterParameterfNV;
+GlConservativeRasterParameteriNV? glConservativeRasterParameteriNV;
+GlDepthRangedNV? glDepthRangedNV;
+GlClearDepthdNV? glClearDepthdNV;
+GlDepthBoundsdNV? glDepthBoundsdNV;
+GlDrawVkImageNV? glDrawVkImageNV;
+GlGetVkProcAddrNV? glGetVkProcAddrNV;
+GlWaitVkSemaphoreNV? glWaitVkSemaphoreNV;
+GlSignalVkSemaphoreNV? glSignalVkSemaphoreNV;
+GlSignalVkFenceNV? glSignalVkFenceNV;
+GlFragmentCoverageColorNV? glFragmentCoverageColorNV;
+GlCoverageModulationTableNV? glCoverageModulationTableNV;
+GlGetCoverageModulationTableNV? glGetCoverageModulationTableNV;
+GlCoverageModulationNV? glCoverageModulationNV;
+GlRenderbufferStorageMultisampleCoverageNV?
     glRenderbufferStorageMultisampleCoverageNV;
-GlUniform1i64NV glUniform1i64NV;
-GlUniform2i64NV glUniform2i64NV;
-GlUniform3i64NV glUniform3i64NV;
-GlUniform4i64NV glUniform4i64NV;
-GlUniform1i64vNV glUniform1i64vNV;
-GlUniform2i64vNV glUniform2i64vNV;
-GlUniform3i64vNV glUniform3i64vNV;
-GlUniform4i64vNV glUniform4i64vNV;
-GlUniform1ui64NV glUniform1ui64NV;
-GlUniform2ui64NV glUniform2ui64NV;
-GlUniform3ui64NV glUniform3ui64NV;
-GlUniform4ui64NV glUniform4ui64NV;
-GlUniform1ui64vNV glUniform1ui64vNV;
-GlUniform2ui64vNV glUniform2ui64vNV;
-GlUniform3ui64vNV glUniform3ui64vNV;
-GlUniform4ui64vNV glUniform4ui64vNV;
-GlGetUniformi64vNV glGetUniformi64vNV;
-GlProgramUniform1i64NV glProgramUniform1i64NV;
-GlProgramUniform2i64NV glProgramUniform2i64NV;
-GlProgramUniform3i64NV glProgramUniform3i64NV;
-GlProgramUniform4i64NV glProgramUniform4i64NV;
-GlProgramUniform1i64vNV glProgramUniform1i64vNV;
-GlProgramUniform2i64vNV glProgramUniform2i64vNV;
-GlProgramUniform3i64vNV glProgramUniform3i64vNV;
-GlProgramUniform4i64vNV glProgramUniform4i64vNV;
-GlProgramUniform1ui64NV glProgramUniform1ui64NV;
-GlProgramUniform2ui64NV glProgramUniform2ui64NV;
-GlProgramUniform3ui64NV glProgramUniform3ui64NV;
-GlProgramUniform4ui64NV glProgramUniform4ui64NV;
-GlProgramUniform1ui64vNV glProgramUniform1ui64vNV;
-GlProgramUniform2ui64vNV glProgramUniform2ui64vNV;
-GlProgramUniform3ui64vNV glProgramUniform3ui64vNV;
-GlProgramUniform4ui64vNV glProgramUniform4ui64vNV;
-GlGetInternalformatSampleivNV glGetInternalformatSampleivNV;
-GlGetMemoryObjectDetachedResourcesuivNV glGetMemoryObjectDetachedResourcesuivNV;
-GlResetMemoryObjectParameterNV glResetMemoryObjectParameterNV;
-GlTexAttachMemoryNV glTexAttachMemoryNV;
-GlBufferAttachMemoryNV glBufferAttachMemoryNV;
-GlTextureAttachMemoryNV glTextureAttachMemoryNV;
-GlNamedBufferAttachMemoryNV glNamedBufferAttachMemoryNV;
-GlBufferPageCommitmentMemNV glBufferPageCommitmentMemNV;
-GlTexPageCommitmentMemNV glTexPageCommitmentMemNV;
-GlNamedBufferPageCommitmentMemNV glNamedBufferPageCommitmentMemNV;
-GlTexturePageCommitmentMemNV glTexturePageCommitmentMemNV;
-GlDrawMeshTasksNV glDrawMeshTasksNV;
-GlDrawMeshTasksIndirectNV glDrawMeshTasksIndirectNV;
-GlMultiDrawMeshTasksIndirectNV glMultiDrawMeshTasksIndirectNV;
-GlMultiDrawMeshTasksIndirectCountNV glMultiDrawMeshTasksIndirectCountNV;
-GlGenPathsNV glGenPathsNV;
-GlDeletePathsNV glDeletePathsNV;
-GlIsPathNV glIsPathNV;
-GlPathCommandsNV glPathCommandsNV;
-GlPathCoordsNV glPathCoordsNV;
-GlPathSubCommandsNV glPathSubCommandsNV;
-GlPathSubCoordsNV glPathSubCoordsNV;
-GlPathStringNV glPathStringNV;
-GlPathGlyphsNV glPathGlyphsNV;
-GlPathGlyphRangeNV glPathGlyphRangeNV;
-GlWeightPathsNV glWeightPathsNV;
-GlCopyPathNV glCopyPathNV;
-GlInterpolatePathsNV glInterpolatePathsNV;
-GlTransformPathNV glTransformPathNV;
-GlPathParameterivNV glPathParameterivNV;
-GlPathParameteriNV glPathParameteriNV;
-GlPathParameterfvNV glPathParameterfvNV;
-GlPathParameterfNV glPathParameterfNV;
-GlPathDashArrayNV glPathDashArrayNV;
-GlPathStencilFuncNV glPathStencilFuncNV;
-GlPathStencilDepthOffsetNV glPathStencilDepthOffsetNV;
-GlStencilFillPathNV glStencilFillPathNV;
-GlStencilStrokePathNV glStencilStrokePathNV;
-GlStencilFillPathInstancedNV glStencilFillPathInstancedNV;
-GlStencilStrokePathInstancedNV glStencilStrokePathInstancedNV;
-GlPathCoverDepthFuncNV glPathCoverDepthFuncNV;
-GlCoverFillPathNV glCoverFillPathNV;
-GlCoverStrokePathNV glCoverStrokePathNV;
-GlCoverFillPathInstancedNV glCoverFillPathInstancedNV;
-GlCoverStrokePathInstancedNV glCoverStrokePathInstancedNV;
-GlGetPathParameterivNV glGetPathParameterivNV;
-GlGetPathParameterfvNV glGetPathParameterfvNV;
-GlGetPathCommandsNV glGetPathCommandsNV;
-GlGetPathCoordsNV glGetPathCoordsNV;
-GlGetPathDashArrayNV glGetPathDashArrayNV;
-GlGetPathMetricsNV glGetPathMetricsNV;
-GlGetPathMetricRangeNV glGetPathMetricRangeNV;
-GlGetPathSpacingNV glGetPathSpacingNV;
-GlIsPointInFillPathNV glIsPointInFillPathNV;
-GlIsPointInStrokePathNV glIsPointInStrokePathNV;
-GlGetPathLengthNV glGetPathLengthNV;
-GlPointAlongPathNV glPointAlongPathNV;
-GlMatrixLoad3x2fNV glMatrixLoad3x2fNV;
-GlMatrixLoad3x3fNV glMatrixLoad3x3fNV;
-GlMatrixLoadTranspose3x3fNV glMatrixLoadTranspose3x3fNV;
-GlMatrixMult3x2fNV glMatrixMult3x2fNV;
-GlMatrixMult3x3fNV glMatrixMult3x3fNV;
-GlMatrixMultTranspose3x3fNV glMatrixMultTranspose3x3fNV;
-GlStencilThenCoverFillPathNV glStencilThenCoverFillPathNV;
-GlStencilThenCoverStrokePathNV glStencilThenCoverStrokePathNV;
-GlStencilThenCoverFillPathInstancedNV glStencilThenCoverFillPathInstancedNV;
-GlStencilThenCoverStrokePathInstancedNV glStencilThenCoverStrokePathInstancedNV;
-GlPathGlyphIndexRangeNV glPathGlyphIndexRangeNV;
-GlPathGlyphIndexArrayNV glPathGlyphIndexArrayNV;
-GlPathMemoryGlyphIndexArrayNV glPathMemoryGlyphIndexArrayNV;
-GlProgramPathFragmentInputGenNV glProgramPathFragmentInputGenNV;
-GlGetProgramResourcefvNV glGetProgramResourcefvNV;
-GlFramebufferSampleLocationsfvNV glFramebufferSampleLocationsfvNV;
-GlNamedFramebufferSampleLocationsfvNV glNamedFramebufferSampleLocationsfvNV;
-GlResolveDepthValuesNV glResolveDepthValuesNV;
-GlScissorExclusiveNV glScissorExclusiveNV;
-GlScissorExclusiveArrayvNV glScissorExclusiveArrayvNV;
-GlMakeBufferResidentNV glMakeBufferResidentNV;
-GlMakeBufferNonResidentNV glMakeBufferNonResidentNV;
-GlIsBufferResidentNV glIsBufferResidentNV;
-GlMakeNamedBufferResidentNV glMakeNamedBufferResidentNV;
-GlMakeNamedBufferNonResidentNV glMakeNamedBufferNonResidentNV;
-GlIsNamedBufferResidentNV glIsNamedBufferResidentNV;
-GlGetBufferParameterui64vNV glGetBufferParameterui64vNV;
-GlGetNamedBufferParameterui64vNV glGetNamedBufferParameterui64vNV;
-GlGetIntegerui64vNV glGetIntegerui64vNV;
-GlUniformui64NV glUniformui64NV;
-GlUniformui64vNV glUniformui64vNV;
-GlGetUniformui64vNV glGetUniformui64vNV;
-GlProgramUniformui64NV glProgramUniformui64NV;
-GlProgramUniformui64vNV glProgramUniformui64vNV;
-GlBindShadingRateImageNV glBindShadingRateImageNV;
-GlGetShadingRateImagePaletteNV glGetShadingRateImagePaletteNV;
-GlGetShadingRateSampleLocationivNV glGetShadingRateSampleLocationivNV;
-GlShadingRateImageBarrierNV glShadingRateImageBarrierNV;
-GlShadingRateImagePaletteNV glShadingRateImagePaletteNV;
-GlShadingRateSampleOrderNV glShadingRateSampleOrderNV;
-GlShadingRateSampleOrderCustomNV glShadingRateSampleOrderCustomNV;
-GlTextureBarrierNV glTextureBarrierNV;
-GlVertexAttribL1i64NV glVertexAttribL1i64NV;
-GlVertexAttribL2i64NV glVertexAttribL2i64NV;
-GlVertexAttribL3i64NV glVertexAttribL3i64NV;
-GlVertexAttribL4i64NV glVertexAttribL4i64NV;
-GlVertexAttribL1i64vNV glVertexAttribL1i64vNV;
-GlVertexAttribL2i64vNV glVertexAttribL2i64vNV;
-GlVertexAttribL3i64vNV glVertexAttribL3i64vNV;
-GlVertexAttribL4i64vNV glVertexAttribL4i64vNV;
-GlVertexAttribL1ui64NV glVertexAttribL1ui64NV;
-GlVertexAttribL2ui64NV glVertexAttribL2ui64NV;
-GlVertexAttribL3ui64NV glVertexAttribL3ui64NV;
-GlVertexAttribL4ui64NV glVertexAttribL4ui64NV;
-GlVertexAttribL1ui64vNV glVertexAttribL1ui64vNV;
-GlVertexAttribL2ui64vNV glVertexAttribL2ui64vNV;
-GlVertexAttribL3ui64vNV glVertexAttribL3ui64vNV;
-GlVertexAttribL4ui64vNV glVertexAttribL4ui64vNV;
-GlGetVertexAttribLi64vNV glGetVertexAttribLi64vNV;
-GlGetVertexAttribLui64vNV glGetVertexAttribLui64vNV;
-GlVertexAttribLFormatNV glVertexAttribLFormatNV;
-GlBufferAddressRangeNV glBufferAddressRangeNV;
-GlVertexFormatNV glVertexFormatNV;
-GlNormalFormatNV glNormalFormatNV;
-GlColorFormatNV glColorFormatNV;
-GlIndexFormatNV glIndexFormatNV;
-GlTexCoordFormatNV glTexCoordFormatNV;
-GlEdgeFlagFormatNV glEdgeFlagFormatNV;
-GlSecondaryColorFormatNV glSecondaryColorFormatNV;
-GlFogCoordFormatNV glFogCoordFormatNV;
-GlVertexAttribFormatNV glVertexAttribFormatNV;
-GlVertexAttribIFormatNV glVertexAttribIFormatNV;
-GlGetIntegerui64i_vNV glGetIntegerui64i_vNV;
-GlViewportSwizzleNV glViewportSwizzleNV;
-GlFramebufferTextureMultiviewOVR glFramebufferTextureMultiviewOVR;
+GlUniform1i64NV? glUniform1i64NV;
+GlUniform2i64NV? glUniform2i64NV;
+GlUniform3i64NV? glUniform3i64NV;
+GlUniform4i64NV? glUniform4i64NV;
+GlUniform1i64vNV? glUniform1i64vNV;
+GlUniform2i64vNV? glUniform2i64vNV;
+GlUniform3i64vNV? glUniform3i64vNV;
+GlUniform4i64vNV? glUniform4i64vNV;
+GlUniform1ui64NV? glUniform1ui64NV;
+GlUniform2ui64NV? glUniform2ui64NV;
+GlUniform3ui64NV? glUniform3ui64NV;
+GlUniform4ui64NV? glUniform4ui64NV;
+GlUniform1ui64vNV? glUniform1ui64vNV;
+GlUniform2ui64vNV? glUniform2ui64vNV;
+GlUniform3ui64vNV? glUniform3ui64vNV;
+GlUniform4ui64vNV? glUniform4ui64vNV;
+GlGetUniformi64vNV? glGetUniformi64vNV;
+GlProgramUniform1i64NV? glProgramUniform1i64NV;
+GlProgramUniform2i64NV? glProgramUniform2i64NV;
+GlProgramUniform3i64NV? glProgramUniform3i64NV;
+GlProgramUniform4i64NV? glProgramUniform4i64NV;
+GlProgramUniform1i64vNV? glProgramUniform1i64vNV;
+GlProgramUniform2i64vNV? glProgramUniform2i64vNV;
+GlProgramUniform3i64vNV? glProgramUniform3i64vNV;
+GlProgramUniform4i64vNV? glProgramUniform4i64vNV;
+GlProgramUniform1ui64NV? glProgramUniform1ui64NV;
+GlProgramUniform2ui64NV? glProgramUniform2ui64NV;
+GlProgramUniform3ui64NV? glProgramUniform3ui64NV;
+GlProgramUniform4ui64NV? glProgramUniform4ui64NV;
+GlProgramUniform1ui64vNV? glProgramUniform1ui64vNV;
+GlProgramUniform2ui64vNV? glProgramUniform2ui64vNV;
+GlProgramUniform3ui64vNV? glProgramUniform3ui64vNV;
+GlProgramUniform4ui64vNV? glProgramUniform4ui64vNV;
+GlGetInternalformatSampleivNV? glGetInternalformatSampleivNV;
+GlGetMemoryObjectDetachedResourcesuivNV? glGetMemoryObjectDetachedResourcesuivNV;
+GlResetMemoryObjectParameterNV? glResetMemoryObjectParameterNV;
+GlTexAttachMemoryNV? glTexAttachMemoryNV;
+GlBufferAttachMemoryNV? glBufferAttachMemoryNV;
+GlTextureAttachMemoryNV? glTextureAttachMemoryNV;
+GlNamedBufferAttachMemoryNV? glNamedBufferAttachMemoryNV;
+GlBufferPageCommitmentMemNV? glBufferPageCommitmentMemNV;
+GlTexPageCommitmentMemNV? glTexPageCommitmentMemNV;
+GlNamedBufferPageCommitmentMemNV? glNamedBufferPageCommitmentMemNV;
+GlTexturePageCommitmentMemNV? glTexturePageCommitmentMemNV;
+GlDrawMeshTasksNV? glDrawMeshTasksNV;
+GlDrawMeshTasksIndirectNV? glDrawMeshTasksIndirectNV;
+GlMultiDrawMeshTasksIndirectNV? glMultiDrawMeshTasksIndirectNV;
+GlMultiDrawMeshTasksIndirectCountNV? glMultiDrawMeshTasksIndirectCountNV;
+GlGenPathsNV? glGenPathsNV;
+GlDeletePathsNV? glDeletePathsNV;
+GlIsPathNV? glIsPathNV;
+GlPathCommandsNV? glPathCommandsNV;
+GlPathCoordsNV? glPathCoordsNV;
+GlPathSubCommandsNV? glPathSubCommandsNV;
+GlPathSubCoordsNV? glPathSubCoordsNV;
+GlPathStringNV? glPathStringNV;
+GlPathGlyphsNV? glPathGlyphsNV;
+GlPathGlyphRangeNV? glPathGlyphRangeNV;
+GlWeightPathsNV? glWeightPathsNV;
+GlCopyPathNV? glCopyPathNV;
+GlInterpolatePathsNV? glInterpolatePathsNV;
+GlTransformPathNV? glTransformPathNV;
+GlPathParameterivNV? glPathParameterivNV;
+GlPathParameteriNV? glPathParameteriNV;
+GlPathParameterfvNV? glPathParameterfvNV;
+GlPathParameterfNV? glPathParameterfNV;
+GlPathDashArrayNV? glPathDashArrayNV;
+GlPathStencilFuncNV? glPathStencilFuncNV;
+GlPathStencilDepthOffsetNV? glPathStencilDepthOffsetNV;
+GlStencilFillPathNV? glStencilFillPathNV;
+GlStencilStrokePathNV? glStencilStrokePathNV;
+GlStencilFillPathInstancedNV? glStencilFillPathInstancedNV;
+GlStencilStrokePathInstancedNV? glStencilStrokePathInstancedNV;
+GlPathCoverDepthFuncNV? glPathCoverDepthFuncNV;
+GlCoverFillPathNV? glCoverFillPathNV;
+GlCoverStrokePathNV? glCoverStrokePathNV;
+GlCoverFillPathInstancedNV? glCoverFillPathInstancedNV;
+GlCoverStrokePathInstancedNV? glCoverStrokePathInstancedNV;
+GlGetPathParameterivNV? glGetPathParameterivNV;
+GlGetPathParameterfvNV? glGetPathParameterfvNV;
+GlGetPathCommandsNV? glGetPathCommandsNV;
+GlGetPathCoordsNV? glGetPathCoordsNV;
+GlGetPathDashArrayNV? glGetPathDashArrayNV;
+GlGetPathMetricsNV? glGetPathMetricsNV;
+GlGetPathMetricRangeNV? glGetPathMetricRangeNV;
+GlGetPathSpacingNV? glGetPathSpacingNV;
+GlIsPointInFillPathNV? glIsPointInFillPathNV;
+GlIsPointInStrokePathNV? glIsPointInStrokePathNV;
+GlGetPathLengthNV? glGetPathLengthNV;
+GlPointAlongPathNV? glPointAlongPathNV;
+GlMatrixLoad3x2fNV? glMatrixLoad3x2fNV;
+GlMatrixLoad3x3fNV? glMatrixLoad3x3fNV;
+GlMatrixLoadTranspose3x3fNV? glMatrixLoadTranspose3x3fNV;
+GlMatrixMult3x2fNV? glMatrixMult3x2fNV;
+GlMatrixMult3x3fNV? glMatrixMult3x3fNV;
+GlMatrixMultTranspose3x3fNV? glMatrixMultTranspose3x3fNV;
+GlStencilThenCoverFillPathNV? glStencilThenCoverFillPathNV;
+GlStencilThenCoverStrokePathNV? glStencilThenCoverStrokePathNV;
+GlStencilThenCoverFillPathInstancedNV? glStencilThenCoverFillPathInstancedNV;
+GlStencilThenCoverStrokePathInstancedNV? glStencilThenCoverStrokePathInstancedNV;
+GlPathGlyphIndexRangeNV? glPathGlyphIndexRangeNV;
+GlPathGlyphIndexArrayNV? glPathGlyphIndexArrayNV;
+GlPathMemoryGlyphIndexArrayNV? glPathMemoryGlyphIndexArrayNV;
+GlProgramPathFragmentInputGenNV? glProgramPathFragmentInputGenNV;
+GlGetProgramResourcefvNV? glGetProgramResourcefvNV;
+GlFramebufferSampleLocationsfvNV? glFramebufferSampleLocationsfvNV;
+GlNamedFramebufferSampleLocationsfvNV? glNamedFramebufferSampleLocationsfvNV;
+GlResolveDepthValuesNV? glResolveDepthValuesNV;
+GlScissorExclusiveNV? glScissorExclusiveNV;
+GlScissorExclusiveArrayvNV? glScissorExclusiveArrayvNV;
+GlMakeBufferResidentNV? glMakeBufferResidentNV;
+GlMakeBufferNonResidentNV? glMakeBufferNonResidentNV;
+GlIsBufferResidentNV? glIsBufferResidentNV;
+GlMakeNamedBufferResidentNV? glMakeNamedBufferResidentNV;
+GlMakeNamedBufferNonResidentNV? glMakeNamedBufferNonResidentNV;
+GlIsNamedBufferResidentNV? glIsNamedBufferResidentNV;
+GlGetBufferParameterui64vNV? glGetBufferParameterui64vNV;
+GlGetNamedBufferParameterui64vNV? glGetNamedBufferParameterui64vNV;
+GlGetIntegerui64vNV? glGetIntegerui64vNV;
+GlUniformui64NV? glUniformui64NV;
+GlUniformui64vNV? glUniformui64vNV;
+GlGetUniformui64vNV? glGetUniformui64vNV;
+GlProgramUniformui64NV? glProgramUniformui64NV;
+GlProgramUniformui64vNV? glProgramUniformui64vNV;
+GlBindShadingRateImageNV? glBindShadingRateImageNV;
+GlGetShadingRateImagePaletteNV? glGetShadingRateImagePaletteNV;
+GlGetShadingRateSampleLocationivNV? glGetShadingRateSampleLocationivNV;
+GlShadingRateImageBarrierNV? glShadingRateImageBarrierNV;
+GlShadingRateImagePaletteNV? glShadingRateImagePaletteNV;
+GlShadingRateSampleOrderNV? glShadingRateSampleOrderNV;
+GlShadingRateSampleOrderCustomNV? glShadingRateSampleOrderCustomNV;
+GlTextureBarrierNV? glTextureBarrierNV;
+GlVertexAttribL1i64NV? glVertexAttribL1i64NV;
+GlVertexAttribL2i64NV? glVertexAttribL2i64NV;
+GlVertexAttribL3i64NV? glVertexAttribL3i64NV;
+GlVertexAttribL4i64NV? glVertexAttribL4i64NV;
+GlVertexAttribL1i64vNV? glVertexAttribL1i64vNV;
+GlVertexAttribL2i64vNV? glVertexAttribL2i64vNV;
+GlVertexAttribL3i64vNV? glVertexAttribL3i64vNV;
+GlVertexAttribL4i64vNV? glVertexAttribL4i64vNV;
+GlVertexAttribL1ui64NV? glVertexAttribL1ui64NV;
+GlVertexAttribL2ui64NV? glVertexAttribL2ui64NV;
+GlVertexAttribL3ui64NV? glVertexAttribL3ui64NV;
+GlVertexAttribL4ui64NV? glVertexAttribL4ui64NV;
+GlVertexAttribL1ui64vNV? glVertexAttribL1ui64vNV;
+GlVertexAttribL2ui64vNV? glVertexAttribL2ui64vNV;
+GlVertexAttribL3ui64vNV? glVertexAttribL3ui64vNV;
+GlVertexAttribL4ui64vNV? glVertexAttribL4ui64vNV;
+GlGetVertexAttribLi64vNV? glGetVertexAttribLi64vNV;
+GlGetVertexAttribLui64vNV? glGetVertexAttribLui64vNV;
+GlVertexAttribLFormatNV? glVertexAttribLFormatNV;
+GlBufferAddressRangeNV? glBufferAddressRangeNV;
+GlVertexFormatNV? glVertexFormatNV;
+GlNormalFormatNV? glNormalFormatNV;
+GlColorFormatNV? glColorFormatNV;
+GlIndexFormatNV? glIndexFormatNV;
+GlTexCoordFormatNV? glTexCoordFormatNV;
+GlEdgeFlagFormatNV? glEdgeFlagFormatNV;
+GlSecondaryColorFormatNV? glSecondaryColorFormatNV;
+GlFogCoordFormatNV? glFogCoordFormatNV;
+GlVertexAttribFormatNV? glVertexAttribFormatNV;
+GlVertexAttribIFormatNV? glVertexAttribIFormatNV;
+GlGetIntegerui64i_vNV? glGetIntegerui64i_vNV;
+GlViewportSwizzleNV? glViewportSwizzleNV;
+GlFramebufferTextureMultiviewOVR? glFramebufferTextureMultiviewOVR;
 
 void initOpenGL() {
   final lib = loadLibrary();
   glCullFace = tryCall(
-      () => lib.lookupFunction<GlCullFaceNative, GlCullFace>('glCullFace'));
+      () => lib.lookupFunction<GlCullFaceNative, GlCullFace>('glCullFace')) as void Function(int)?;
   if (glCullFace == null) {
     glCullFace = tryCall(() =>
         Pointer<NativeFunction<GlCullFaceNative>>.fromAddress(
                 _glGetProcAddress('glCullFace'))
-            .asFunction<GlCullFace>());
+            .asFunction<GlCullFace>()) as void Function(int)?;
   }
   glFrontFace = tryCall(
-      () => lib.lookupFunction<GlFrontFaceNative, GlFrontFace>('glFrontFace'));
+      () => lib.lookupFunction<GlFrontFaceNative, GlFrontFace>('glFrontFace')) as void Function(int)?;
   if (glFrontFace == null) {
     glFrontFace = tryCall(() =>
         Pointer<NativeFunction<GlFrontFaceNative>>.fromAddress(
                 _glGetProcAddress('glFrontFace'))
-            .asFunction<GlFrontFace>());
+            .asFunction<GlFrontFace>()) as void Function(int)?;
   }
-  glHint = tryCall(() => lib.lookupFunction<GlHintNative, GlHint>('glHint'));
+  glHint = tryCall(() => lib.lookupFunction<GlHintNative, GlHint>('glHint')) as void Function(int, int)?;
   if (glHint == null) {
     glHint = tryCall(() => Pointer<NativeFunction<GlHintNative>>.fromAddress(
             _glGetProcAddress('glHint'))
-        .asFunction<GlHint>());
+        .asFunction<GlHint>()) as void Function(int, int)?;
   }
   glLineWidth = tryCall(
-      () => lib.lookupFunction<GlLineWidthNative, GlLineWidth>('glLineWidth'));
+      () => lib.lookupFunction<GlLineWidthNative, GlLineWidth>('glLineWidth')) as void Function(double)?;
   if (glLineWidth == null) {
     glLineWidth = tryCall(() =>
         Pointer<NativeFunction<GlLineWidthNative>>.fromAddress(
                 _glGetProcAddress('glLineWidth'))
-            .asFunction<GlLineWidth>());
+            .asFunction<GlLineWidth>()) as void Function(double)?;
   }
   glPointSize = tryCall(
-      () => lib.lookupFunction<GlPointSizeNative, GlPointSize>('glPointSize'));
+      () => lib.lookupFunction<GlPointSizeNative, GlPointSize>('glPointSize')) as void Function(double)?;
   if (glPointSize == null) {
     glPointSize = tryCall(() =>
         Pointer<NativeFunction<GlPointSizeNative>>.fromAddress(
                 _glGetProcAddress('glPointSize'))
-            .asFunction<GlPointSize>());
+            .asFunction<GlPointSize>()) as void Function(double)?;
   }
   glPolygonMode = tryCall(() =>
-      lib.lookupFunction<GlPolygonModeNative, GlPolygonMode>('glPolygonMode'));
+      lib.lookupFunction<GlPolygonModeNative, GlPolygonMode>('glPolygonMode')) as void Function(int, int)?;
   if (glPolygonMode == null) {
     glPolygonMode = tryCall(() =>
         Pointer<NativeFunction<GlPolygonModeNative>>.fromAddress(
                 _glGetProcAddress('glPolygonMode'))
-            .asFunction<GlPolygonMode>());
+            .asFunction<GlPolygonMode>()) as void Function(int, int)?;
   }
   glScissor = tryCall(
-      () => lib.lookupFunction<GlScissorNative, GlScissor>('glScissor'));
+      () => lib.lookupFunction<GlScissorNative, GlScissor>('glScissor')) as void Function(int, int, int, int)?;
   if (glScissor == null) {
     glScissor = tryCall(() =>
         Pointer<NativeFunction<GlScissorNative>>.fromAddress(
                 _glGetProcAddress('glScissor'))
-            .asFunction<GlScissor>());
+            .asFunction<GlScissor>()) as void Function(int, int, int, int)?;
   }
   glTexParameterf = tryCall(() =>
       lib.lookupFunction<GlTexParameterfNative, GlTexParameterf>(
-          'glTexParameterf'));
+          'glTexParameterf')) as void Function(int, int, double)?;
   if (glTexParameterf == null) {
     glTexParameterf = tryCall(() =>
         Pointer<NativeFunction<GlTexParameterfNative>>.fromAddress(
                 _glGetProcAddress('glTexParameterf'))
-            .asFunction<GlTexParameterf>());
+            .asFunction<GlTexParameterf>()) as void Function(int, int, double)?;
   }
   glTexParameterfv = tryCall(() =>
       lib.lookupFunction<GlTexParameterfvNative, GlTexParameterfv>(
-          'glTexParameterfv'));
+          'glTexParameterfv')) as void Function(int, int, Pointer<Float>)?;
   if (glTexParameterfv == null) {
     glTexParameterfv = tryCall(() =>
         Pointer<NativeFunction<GlTexParameterfvNative>>.fromAddress(
                 _glGetProcAddress('glTexParameterfv'))
-            .asFunction<GlTexParameterfv>());
+            .asFunction<GlTexParameterfv>()) as void Function(int, int, Pointer<Float>)?;
   }
   glTexParameteri = tryCall(() =>
       lib.lookupFunction<GlTexParameteriNative, GlTexParameteri>(
-          'glTexParameteri'));
+          'glTexParameteri')) as void Function(int, int, int)?;
   if (glTexParameteri == null) {
     glTexParameteri = tryCall(() =>
         Pointer<NativeFunction<GlTexParameteriNative>>.fromAddress(
                 _glGetProcAddress('glTexParameteri'))
-            .asFunction<GlTexParameteri>());
+            .asFunction<GlTexParameteri>()) as void Function(int, int, int)?;
   }
   glTexParameteriv = tryCall(() =>
       lib.lookupFunction<GlTexParameterivNative, GlTexParameteriv>(
-          'glTexParameteriv'));
+          'glTexParameteriv')) as void Function(int, int, Pointer<Int32>)?;
   if (glTexParameteriv == null) {
     glTexParameteriv = tryCall(() =>
         Pointer<NativeFunction<GlTexParameterivNative>>.fromAddress(
                 _glGetProcAddress('glTexParameteriv'))
-            .asFunction<GlTexParameteriv>());
+            .asFunction<GlTexParameteriv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glTexImage1D = tryCall(() =>
-      lib.lookupFunction<GlTexImage1DNative, GlTexImage1D>('glTexImage1D'));
+      lib.lookupFunction<GlTexImage1DNative, GlTexImage1D>('glTexImage1D')) as void Function(int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glTexImage1D == null) {
     glTexImage1D = tryCall(() =>
         Pointer<NativeFunction<GlTexImage1DNative>>.fromAddress(
                 _glGetProcAddress('glTexImage1D'))
-            .asFunction<GlTexImage1D>());
+            .asFunction<GlTexImage1D>()) as void Function(int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glTexImage2D = tryCall(() =>
-      lib.lookupFunction<GlTexImage2DNative, GlTexImage2D>('glTexImage2D'));
+      lib.lookupFunction<GlTexImage2DNative, GlTexImage2D>('glTexImage2D')) as void Function(int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glTexImage2D == null) {
     glTexImage2D = tryCall(() =>
         Pointer<NativeFunction<GlTexImage2DNative>>.fromAddress(
                 _glGetProcAddress('glTexImage2D'))
-            .asFunction<GlTexImage2D>());
+            .asFunction<GlTexImage2D>()) as void Function(int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glDrawBuffer = tryCall(() =>
-      lib.lookupFunction<GlDrawBufferNative, GlDrawBuffer>('glDrawBuffer'));
+      lib.lookupFunction<GlDrawBufferNative, GlDrawBuffer>('glDrawBuffer')) as void Function(int)?;
   if (glDrawBuffer == null) {
     glDrawBuffer = tryCall(() =>
         Pointer<NativeFunction<GlDrawBufferNative>>.fromAddress(
                 _glGetProcAddress('glDrawBuffer'))
-            .asFunction<GlDrawBuffer>());
+            .asFunction<GlDrawBuffer>()) as void Function(int)?;
   }
   glClear =
-      tryCall(() => lib.lookupFunction<GlClearNative, GlClear>('glClear'));
+      tryCall(() => lib.lookupFunction<GlClearNative, GlClear>('glClear')) as void Function(int)?;
   if (glClear == null) {
     glClear = tryCall(() => Pointer<NativeFunction<GlClearNative>>.fromAddress(
             _glGetProcAddress('glClear'))
-        .asFunction<GlClear>());
+        .asFunction<GlClear>()) as void Function(int)?;
   }
   glClearColor = tryCall(() =>
-      lib.lookupFunction<GlClearColorNative, GlClearColor>('glClearColor'));
+      lib.lookupFunction<GlClearColorNative, GlClearColor>('glClearColor')) as void Function(double, double, double, double)?;
   if (glClearColor == null) {
     glClearColor = tryCall(() =>
         Pointer<NativeFunction<GlClearColorNative>>.fromAddress(
                 _glGetProcAddress('glClearColor'))
-            .asFunction<GlClearColor>());
+            .asFunction<GlClearColor>()) as void Function(double, double, double, double)?;
   }
   glClearStencil = tryCall(() => lib
-      .lookupFunction<GlClearStencilNative, GlClearStencil>('glClearStencil'));
+      .lookupFunction<GlClearStencilNative, GlClearStencil>('glClearStencil')) as void Function(int)?;
   if (glClearStencil == null) {
     glClearStencil = tryCall(() =>
         Pointer<NativeFunction<GlClearStencilNative>>.fromAddress(
                 _glGetProcAddress('glClearStencil'))
-            .asFunction<GlClearStencil>());
+            .asFunction<GlClearStencil>()) as void Function(int)?;
   }
   glClearDepth = tryCall(() =>
-      lib.lookupFunction<GlClearDepthNative, GlClearDepth>('glClearDepth'));
+      lib.lookupFunction<GlClearDepthNative, GlClearDepth>('glClearDepth')) as void Function(double)?;
   if (glClearDepth == null) {
     glClearDepth = tryCall(() =>
         Pointer<NativeFunction<GlClearDepthNative>>.fromAddress(
                 _glGetProcAddress('glClearDepth'))
-            .asFunction<GlClearDepth>());
+            .asFunction<GlClearDepth>()) as void Function(double)?;
   }
   glStencilMask = tryCall(() =>
-      lib.lookupFunction<GlStencilMaskNative, GlStencilMask>('glStencilMask'));
+      lib.lookupFunction<GlStencilMaskNative, GlStencilMask>('glStencilMask')) as void Function(int)?;
   if (glStencilMask == null) {
     glStencilMask = tryCall(() =>
         Pointer<NativeFunction<GlStencilMaskNative>>.fromAddress(
                 _glGetProcAddress('glStencilMask'))
-            .asFunction<GlStencilMask>());
+            .asFunction<GlStencilMask>()) as void Function(int)?;
   }
   glColorMask = tryCall(
-      () => lib.lookupFunction<GlColorMaskNative, GlColorMask>('glColorMask'));
+      () => lib.lookupFunction<GlColorMaskNative, GlColorMask>('glColorMask')) as void Function(int, int, int, int)?;
   if (glColorMask == null) {
     glColorMask = tryCall(() =>
         Pointer<NativeFunction<GlColorMaskNative>>.fromAddress(
                 _glGetProcAddress('glColorMask'))
-            .asFunction<GlColorMask>());
+            .asFunction<GlColorMask>()) as void Function(int, int, int, int)?;
   }
   glDepthMask = tryCall(
-      () => lib.lookupFunction<GlDepthMaskNative, GlDepthMask>('glDepthMask'));
+      () => lib.lookupFunction<GlDepthMaskNative, GlDepthMask>('glDepthMask')) as void Function(int)?;
   if (glDepthMask == null) {
     glDepthMask = tryCall(() =>
         Pointer<NativeFunction<GlDepthMaskNative>>.fromAddress(
                 _glGetProcAddress('glDepthMask'))
-            .asFunction<GlDepthMask>());
+            .asFunction<GlDepthMask>()) as void Function(int)?;
   }
   glDisable = tryCall(
-      () => lib.lookupFunction<GlDisableNative, GlDisable>('glDisable'));
+      () => lib.lookupFunction<GlDisableNative, GlDisable>('glDisable')) as void Function(int)?;
   if (glDisable == null) {
     glDisable = tryCall(() =>
         Pointer<NativeFunction<GlDisableNative>>.fromAddress(
                 _glGetProcAddress('glDisable'))
-            .asFunction<GlDisable>());
+            .asFunction<GlDisable>()) as void Function(int)?;
   }
   glEnable =
-      tryCall(() => lib.lookupFunction<GlEnableNative, GlEnable>('glEnable'));
+      tryCall(() => lib.lookupFunction<GlEnableNative, GlEnable>('glEnable')) as void Function(int)?;
   if (glEnable == null) {
     glEnable = tryCall(() =>
         Pointer<NativeFunction<GlEnableNative>>.fromAddress(
                 _glGetProcAddress('glEnable'))
-            .asFunction<GlEnable>());
+            .asFunction<GlEnable>()) as void Function(int)?;
   }
   glFinish =
-      tryCall(() => lib.lookupFunction<GlFinishNative, GlFinish>('glFinish'));
+      tryCall(() => lib.lookupFunction<GlFinishNative, GlFinish>('glFinish')) as void Function()?;
   if (glFinish == null) {
     glFinish = tryCall(() =>
         Pointer<NativeFunction<GlFinishNative>>.fromAddress(
                 _glGetProcAddress('glFinish'))
-            .asFunction<GlFinish>());
+            .asFunction<GlFinish>()) as void Function()?;
   }
   glFlush =
-      tryCall(() => lib.lookupFunction<GlFlushNative, GlFlush>('glFlush'));
+      tryCall(() => lib.lookupFunction<GlFlushNative, GlFlush>('glFlush')) as void Function()?;
   if (glFlush == null) {
     glFlush = tryCall(() => Pointer<NativeFunction<GlFlushNative>>.fromAddress(
             _glGetProcAddress('glFlush'))
-        .asFunction<GlFlush>());
+        .asFunction<GlFlush>()) as void Function()?;
   }
   glBlendFunc = tryCall(
-      () => lib.lookupFunction<GlBlendFuncNative, GlBlendFunc>('glBlendFunc'));
+      () => lib.lookupFunction<GlBlendFuncNative, GlBlendFunc>('glBlendFunc')) as void Function(int, int)?;
   if (glBlendFunc == null) {
     glBlendFunc = tryCall(() =>
         Pointer<NativeFunction<GlBlendFuncNative>>.fromAddress(
                 _glGetProcAddress('glBlendFunc'))
-            .asFunction<GlBlendFunc>());
+            .asFunction<GlBlendFunc>()) as void Function(int, int)?;
   }
   glLogicOp = tryCall(
-      () => lib.lookupFunction<GlLogicOpNative, GlLogicOp>('glLogicOp'));
+      () => lib.lookupFunction<GlLogicOpNative, GlLogicOp>('glLogicOp')) as void Function(int)?;
   if (glLogicOp == null) {
     glLogicOp = tryCall(() =>
         Pointer<NativeFunction<GlLogicOpNative>>.fromAddress(
                 _glGetProcAddress('glLogicOp'))
-            .asFunction<GlLogicOp>());
+            .asFunction<GlLogicOp>()) as void Function(int)?;
   }
   glStencilFunc = tryCall(() =>
-      lib.lookupFunction<GlStencilFuncNative, GlStencilFunc>('glStencilFunc'));
+      lib.lookupFunction<GlStencilFuncNative, GlStencilFunc>('glStencilFunc')) as void Function(int, int, int)?;
   if (glStencilFunc == null) {
     glStencilFunc = tryCall(() =>
         Pointer<NativeFunction<GlStencilFuncNative>>.fromAddress(
                 _glGetProcAddress('glStencilFunc'))
-            .asFunction<GlStencilFunc>());
+            .asFunction<GlStencilFunc>()) as void Function(int, int, int)?;
   }
   glStencilOp = tryCall(
-      () => lib.lookupFunction<GlStencilOpNative, GlStencilOp>('glStencilOp'));
+      () => lib.lookupFunction<GlStencilOpNative, GlStencilOp>('glStencilOp')) as void Function(int, int, int)?;
   if (glStencilOp == null) {
     glStencilOp = tryCall(() =>
         Pointer<NativeFunction<GlStencilOpNative>>.fromAddress(
                 _glGetProcAddress('glStencilOp'))
-            .asFunction<GlStencilOp>());
+            .asFunction<GlStencilOp>()) as void Function(int, int, int)?;
   }
   glDepthFunc = tryCall(
-      () => lib.lookupFunction<GlDepthFuncNative, GlDepthFunc>('glDepthFunc'));
+      () => lib.lookupFunction<GlDepthFuncNative, GlDepthFunc>('glDepthFunc')) as void Function(int)?;
   if (glDepthFunc == null) {
     glDepthFunc = tryCall(() =>
         Pointer<NativeFunction<GlDepthFuncNative>>.fromAddress(
                 _glGetProcAddress('glDepthFunc'))
-            .asFunction<GlDepthFunc>());
+            .asFunction<GlDepthFunc>()) as void Function(int)?;
   }
   glPixelStoref = tryCall(() =>
-      lib.lookupFunction<GlPixelStorefNative, GlPixelStoref>('glPixelStoref'));
+      lib.lookupFunction<GlPixelStorefNative, GlPixelStoref>('glPixelStoref')) as void Function(int, double)?;
   if (glPixelStoref == null) {
     glPixelStoref = tryCall(() =>
         Pointer<NativeFunction<GlPixelStorefNative>>.fromAddress(
                 _glGetProcAddress('glPixelStoref'))
-            .asFunction<GlPixelStoref>());
+            .asFunction<GlPixelStoref>()) as void Function(int, double)?;
   }
   glPixelStorei = tryCall(() =>
-      lib.lookupFunction<GlPixelStoreiNative, GlPixelStorei>('glPixelStorei'));
+      lib.lookupFunction<GlPixelStoreiNative, GlPixelStorei>('glPixelStorei')) as void Function(int, int)?;
   if (glPixelStorei == null) {
     glPixelStorei = tryCall(() =>
         Pointer<NativeFunction<GlPixelStoreiNative>>.fromAddress(
                 _glGetProcAddress('glPixelStorei'))
-            .asFunction<GlPixelStorei>());
+            .asFunction<GlPixelStorei>()) as void Function(int, int)?;
   }
   glReadBuffer = tryCall(() =>
-      lib.lookupFunction<GlReadBufferNative, GlReadBuffer>('glReadBuffer'));
+      lib.lookupFunction<GlReadBufferNative, GlReadBuffer>('glReadBuffer')) as void Function(int)?;
   if (glReadBuffer == null) {
     glReadBuffer = tryCall(() =>
         Pointer<NativeFunction<GlReadBufferNative>>.fromAddress(
                 _glGetProcAddress('glReadBuffer'))
-            .asFunction<GlReadBuffer>());
+            .asFunction<GlReadBuffer>()) as void Function(int)?;
   }
   glReadPixels = tryCall(() =>
-      lib.lookupFunction<GlReadPixelsNative, GlReadPixels>('glReadPixels'));
+      lib.lookupFunction<GlReadPixelsNative, GlReadPixels>('glReadPixels')) as void Function(int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glReadPixels == null) {
     glReadPixels = tryCall(() =>
         Pointer<NativeFunction<GlReadPixelsNative>>.fromAddress(
                 _glGetProcAddress('glReadPixels'))
-            .asFunction<GlReadPixels>());
+            .asFunction<GlReadPixels>()) as void Function(int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glGetBooleanv = tryCall(() =>
-      lib.lookupFunction<GlGetBooleanvNative, GlGetBooleanv>('glGetBooleanv'));
+      lib.lookupFunction<GlGetBooleanvNative, GlGetBooleanv>('glGetBooleanv')) as void Function(int, Pointer<NativeType>)?;
   if (glGetBooleanv == null) {
     glGetBooleanv = tryCall(() =>
         Pointer<NativeFunction<GlGetBooleanvNative>>.fromAddress(
                 _glGetProcAddress('glGetBooleanv'))
-            .asFunction<GlGetBooleanv>());
+            .asFunction<GlGetBooleanv>()) as void Function(int, Pointer<NativeType>)?;
   }
   glGetDoublev = tryCall(() =>
-      lib.lookupFunction<GlGetDoublevNative, GlGetDoublev>('glGetDoublev'));
+      lib.lookupFunction<GlGetDoublevNative, GlGetDoublev>('glGetDoublev')) as void Function(int, Pointer<Double>)?;
   if (glGetDoublev == null) {
     glGetDoublev = tryCall(() =>
         Pointer<NativeFunction<GlGetDoublevNative>>.fromAddress(
                 _glGetProcAddress('glGetDoublev'))
-            .asFunction<GlGetDoublev>());
+            .asFunction<GlGetDoublev>()) as void Function(int, Pointer<Double>)?;
   }
   glGetError = tryCall(
-      () => lib.lookupFunction<GlGetErrorNative, GlGetError>('glGetError'));
+      () => lib.lookupFunction<GlGetErrorNative, GlGetError>('glGetError')) as int Function()?;
   if (glGetError == null) {
     glGetError = tryCall(() =>
         Pointer<NativeFunction<GlGetErrorNative>>.fromAddress(
                 _glGetProcAddress('glGetError'))
-            .asFunction<GlGetError>());
+            .asFunction<GlGetError>()) as int Function()?;
   }
   glGetFloatv = tryCall(
-      () => lib.lookupFunction<GlGetFloatvNative, GlGetFloatv>('glGetFloatv'));
+      () => lib.lookupFunction<GlGetFloatvNative, GlGetFloatv>('glGetFloatv')) as void Function(int, Pointer<Float>)?;
   if (glGetFloatv == null) {
     glGetFloatv = tryCall(() =>
         Pointer<NativeFunction<GlGetFloatvNative>>.fromAddress(
                 _glGetProcAddress('glGetFloatv'))
-            .asFunction<GlGetFloatv>());
+            .asFunction<GlGetFloatv>()) as void Function(int, Pointer<Float>)?;
   }
   glGetIntegerv = tryCall(() =>
-      lib.lookupFunction<GlGetIntegervNative, GlGetIntegerv>('glGetIntegerv'));
+      lib.lookupFunction<GlGetIntegervNative, GlGetIntegerv>('glGetIntegerv')) as void Function(int, Pointer<Int32>)?;
   if (glGetIntegerv == null) {
     glGetIntegerv = tryCall(() =>
         Pointer<NativeFunction<GlGetIntegervNative>>.fromAddress(
                 _glGetProcAddress('glGetIntegerv'))
-            .asFunction<GlGetIntegerv>());
+            .asFunction<GlGetIntegerv>()) as void Function(int, Pointer<Int32>)?;
   }
   glGetString = tryCall(
-      () => lib.lookupFunction<GlGetStringNative, GlGetString>('glGetString'));
+      () => lib.lookupFunction<GlGetStringNative, GlGetString>('glGetString')) as Pointer<NativeType> Function(int)?;
   if (glGetString == null) {
     glGetString = tryCall(() =>
         Pointer<NativeFunction<GlGetStringNative>>.fromAddress(
                 _glGetProcAddress('glGetString'))
-            .asFunction<GlGetString>());
+            .asFunction<GlGetString>()) as Pointer<NativeType> Function(int)?;
   }
   glGetTexImage = tryCall(() =>
-      lib.lookupFunction<GlGetTexImageNative, GlGetTexImage>('glGetTexImage'));
+      lib.lookupFunction<GlGetTexImageNative, GlGetTexImage>('glGetTexImage')) as void Function(int, int, int, int, Pointer<NativeType>)?;
   if (glGetTexImage == null) {
     glGetTexImage = tryCall(() =>
         Pointer<NativeFunction<GlGetTexImageNative>>.fromAddress(
                 _glGetProcAddress('glGetTexImage'))
-            .asFunction<GlGetTexImage>());
+            .asFunction<GlGetTexImage>()) as void Function(int, int, int, int, Pointer<NativeType>)?;
   }
   glGetTexParameterfv = tryCall(() =>
       lib.lookupFunction<GlGetTexParameterfvNative, GlGetTexParameterfv>(
-          'glGetTexParameterfv'));
+          'glGetTexParameterfv')) as void Function(int, int, Pointer<Float>)?;
   if (glGetTexParameterfv == null) {
     glGetTexParameterfv = tryCall(() =>
         Pointer<NativeFunction<GlGetTexParameterfvNative>>.fromAddress(
                 _glGetProcAddress('glGetTexParameterfv'))
-            .asFunction<GlGetTexParameterfv>());
+            .asFunction<GlGetTexParameterfv>()) as void Function(int, int, Pointer<Float>)?;
   }
   glGetTexParameteriv = tryCall(() =>
       lib.lookupFunction<GlGetTexParameterivNative, GlGetTexParameteriv>(
-          'glGetTexParameteriv'));
+          'glGetTexParameteriv')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetTexParameteriv == null) {
     glGetTexParameteriv = tryCall(() =>
         Pointer<NativeFunction<GlGetTexParameterivNative>>.fromAddress(
                 _glGetProcAddress('glGetTexParameteriv'))
-            .asFunction<GlGetTexParameteriv>());
+            .asFunction<GlGetTexParameteriv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glGetTexLevelParameterfv = tryCall(() => lib.lookupFunction<
       GlGetTexLevelParameterfvNative,
-      GlGetTexLevelParameterfv>('glGetTexLevelParameterfv'));
+      GlGetTexLevelParameterfv>('glGetTexLevelParameterfv')) as void Function(int, int, int, Pointer<Float>)?;
   if (glGetTexLevelParameterfv == null) {
     glGetTexLevelParameterfv = tryCall(() =>
         Pointer<NativeFunction<GlGetTexLevelParameterfvNative>>.fromAddress(
                 _glGetProcAddress('glGetTexLevelParameterfv'))
-            .asFunction<GlGetTexLevelParameterfv>());
+            .asFunction<GlGetTexLevelParameterfv>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glGetTexLevelParameteriv = tryCall(() => lib.lookupFunction<
       GlGetTexLevelParameterivNative,
-      GlGetTexLevelParameteriv>('glGetTexLevelParameteriv'));
+      GlGetTexLevelParameteriv>('glGetTexLevelParameteriv')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glGetTexLevelParameteriv == null) {
     glGetTexLevelParameteriv = tryCall(() =>
         Pointer<NativeFunction<GlGetTexLevelParameterivNative>>.fromAddress(
                 _glGetProcAddress('glGetTexLevelParameteriv'))
-            .asFunction<GlGetTexLevelParameteriv>());
+            .asFunction<GlGetTexLevelParameteriv>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glIsEnabled = tryCall(
-      () => lib.lookupFunction<GlIsEnabledNative, GlIsEnabled>('glIsEnabled'));
+      () => lib.lookupFunction<GlIsEnabledNative, GlIsEnabled>('glIsEnabled')) as int Function(int)?;
   if (glIsEnabled == null) {
     glIsEnabled = tryCall(() =>
         Pointer<NativeFunction<GlIsEnabledNative>>.fromAddress(
                 _glGetProcAddress('glIsEnabled'))
-            .asFunction<GlIsEnabled>());
+            .asFunction<GlIsEnabled>()) as int Function(int)?;
   }
   glDepthRange = tryCall(() =>
-      lib.lookupFunction<GlDepthRangeNative, GlDepthRange>('glDepthRange'));
+      lib.lookupFunction<GlDepthRangeNative, GlDepthRange>('glDepthRange')) as void Function(double, double)?;
   if (glDepthRange == null) {
     glDepthRange = tryCall(() =>
         Pointer<NativeFunction<GlDepthRangeNative>>.fromAddress(
                 _glGetProcAddress('glDepthRange'))
-            .asFunction<GlDepthRange>());
+            .asFunction<GlDepthRange>()) as void Function(double, double)?;
   }
   glViewport = tryCall(
-      () => lib.lookupFunction<GlViewportNative, GlViewport>('glViewport'));
+      () => lib.lookupFunction<GlViewportNative, GlViewport>('glViewport')) as void Function(int, int, int, int)?;
   if (glViewport == null) {
     glViewport = tryCall(() =>
         Pointer<NativeFunction<GlViewportNative>>.fromAddress(
                 _glGetProcAddress('glViewport'))
-            .asFunction<GlViewport>());
+            .asFunction<GlViewport>()) as void Function(int, int, int, int)?;
   }
   glDrawArrays = tryCall(() =>
-      lib.lookupFunction<GlDrawArraysNative, GlDrawArrays>('glDrawArrays'));
+      lib.lookupFunction<GlDrawArraysNative, GlDrawArrays>('glDrawArrays')) as void Function(int, int, int)?;
   if (glDrawArrays == null) {
     glDrawArrays = tryCall(() =>
         Pointer<NativeFunction<GlDrawArraysNative>>.fromAddress(
                 _glGetProcAddress('glDrawArrays'))
-            .asFunction<GlDrawArrays>());
+            .asFunction<GlDrawArrays>()) as void Function(int, int, int)?;
   }
   glDrawElements = tryCall(() => lib
-      .lookupFunction<GlDrawElementsNative, GlDrawElements>('glDrawElements'));
+      .lookupFunction<GlDrawElementsNative, GlDrawElements>('glDrawElements')) as void Function(int, int, int, Pointer<NativeType>)?;
   if (glDrawElements == null) {
     glDrawElements = tryCall(() =>
         Pointer<NativeFunction<GlDrawElementsNative>>.fromAddress(
                 _glGetProcAddress('glDrawElements'))
-            .asFunction<GlDrawElements>());
+            .asFunction<GlDrawElements>()) as void Function(int, int, int, Pointer<NativeType>)?;
   }
   glGetPointerv = tryCall(() =>
-      lib.lookupFunction<GlGetPointervNative, GlGetPointerv>('glGetPointerv'));
+      lib.lookupFunction<GlGetPointervNative, GlGetPointerv>('glGetPointerv')) as void Function(int, Pointer<NativeType>)?;
   if (glGetPointerv == null) {
     glGetPointerv = tryCall(() =>
         Pointer<NativeFunction<GlGetPointervNative>>.fromAddress(
                 _glGetProcAddress('glGetPointerv'))
-            .asFunction<GlGetPointerv>());
+            .asFunction<GlGetPointerv>()) as void Function(int, Pointer<NativeType>)?;
   }
   glPolygonOffset = tryCall(() =>
       lib.lookupFunction<GlPolygonOffsetNative, GlPolygonOffset>(
-          'glPolygonOffset'));
+          'glPolygonOffset')) as void Function(double, double)?;
   if (glPolygonOffset == null) {
     glPolygonOffset = tryCall(() =>
         Pointer<NativeFunction<GlPolygonOffsetNative>>.fromAddress(
                 _glGetProcAddress('glPolygonOffset'))
-            .asFunction<GlPolygonOffset>());
+            .asFunction<GlPolygonOffset>()) as void Function(double, double)?;
   }
   glCopyTexImage1D = tryCall(() =>
       lib.lookupFunction<GlCopyTexImage1DNative, GlCopyTexImage1D>(
-          'glCopyTexImage1D'));
+          'glCopyTexImage1D')) as void Function(int, int, int, int, int, int, int)?;
   if (glCopyTexImage1D == null) {
     glCopyTexImage1D = tryCall(() =>
         Pointer<NativeFunction<GlCopyTexImage1DNative>>.fromAddress(
                 _glGetProcAddress('glCopyTexImage1D'))
-            .asFunction<GlCopyTexImage1D>());
+            .asFunction<GlCopyTexImage1D>()) as void Function(int, int, int, int, int, int, int)?;
   }
   glCopyTexImage2D = tryCall(() =>
       lib.lookupFunction<GlCopyTexImage2DNative, GlCopyTexImage2D>(
-          'glCopyTexImage2D'));
+          'glCopyTexImage2D')) as void Function(int, int, int, int, int, int, int, int)?;
   if (glCopyTexImage2D == null) {
     glCopyTexImage2D = tryCall(() =>
         Pointer<NativeFunction<GlCopyTexImage2DNative>>.fromAddress(
                 _glGetProcAddress('glCopyTexImage2D'))
-            .asFunction<GlCopyTexImage2D>());
+            .asFunction<GlCopyTexImage2D>()) as void Function(int, int, int, int, int, int, int, int)?;
   }
   glCopyTexSubImage1D = tryCall(() =>
       lib.lookupFunction<GlCopyTexSubImage1DNative, GlCopyTexSubImage1D>(
-          'glCopyTexSubImage1D'));
+          'glCopyTexSubImage1D')) as void Function(int, int, int, int, int, int)?;
   if (glCopyTexSubImage1D == null) {
     glCopyTexSubImage1D = tryCall(() =>
         Pointer<NativeFunction<GlCopyTexSubImage1DNative>>.fromAddress(
                 _glGetProcAddress('glCopyTexSubImage1D'))
-            .asFunction<GlCopyTexSubImage1D>());
+            .asFunction<GlCopyTexSubImage1D>()) as void Function(int, int, int, int, int, int)?;
   }
   glCopyTexSubImage2D = tryCall(() =>
       lib.lookupFunction<GlCopyTexSubImage2DNative, GlCopyTexSubImage2D>(
-          'glCopyTexSubImage2D'));
+          'glCopyTexSubImage2D')) as void Function(int, int, int, int, int, int, int, int)?;
   if (glCopyTexSubImage2D == null) {
     glCopyTexSubImage2D = tryCall(() =>
         Pointer<NativeFunction<GlCopyTexSubImage2DNative>>.fromAddress(
                 _glGetProcAddress('glCopyTexSubImage2D'))
-            .asFunction<GlCopyTexSubImage2D>());
+            .asFunction<GlCopyTexSubImage2D>()) as void Function(int, int, int, int, int, int, int, int)?;
   }
   glTexSubImage1D = tryCall(() =>
       lib.lookupFunction<GlTexSubImage1DNative, GlTexSubImage1D>(
-          'glTexSubImage1D'));
+          'glTexSubImage1D')) as void Function(int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glTexSubImage1D == null) {
     glTexSubImage1D = tryCall(() =>
         Pointer<NativeFunction<GlTexSubImage1DNative>>.fromAddress(
                 _glGetProcAddress('glTexSubImage1D'))
-            .asFunction<GlTexSubImage1D>());
+            .asFunction<GlTexSubImage1D>()) as void Function(int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glTexSubImage2D = tryCall(() =>
       lib.lookupFunction<GlTexSubImage2DNative, GlTexSubImage2D>(
-          'glTexSubImage2D'));
+          'glTexSubImage2D')) as void Function(int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glTexSubImage2D == null) {
     glTexSubImage2D = tryCall(() =>
         Pointer<NativeFunction<GlTexSubImage2DNative>>.fromAddress(
                 _glGetProcAddress('glTexSubImage2D'))
-            .asFunction<GlTexSubImage2D>());
+            .asFunction<GlTexSubImage2D>()) as void Function(int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glBindTexture = tryCall(() =>
-      lib.lookupFunction<GlBindTextureNative, GlBindTexture>('glBindTexture'));
+      lib.lookupFunction<GlBindTextureNative, GlBindTexture>('glBindTexture')) as void Function(int, int)?;
   if (glBindTexture == null) {
     glBindTexture = tryCall(() =>
         Pointer<NativeFunction<GlBindTextureNative>>.fromAddress(
                 _glGetProcAddress('glBindTexture'))
-            .asFunction<GlBindTexture>());
+            .asFunction<GlBindTexture>()) as void Function(int, int)?;
   }
   glDeleteTextures = tryCall(() =>
       lib.lookupFunction<GlDeleteTexturesNative, GlDeleteTextures>(
-          'glDeleteTextures'));
+          'glDeleteTextures')) as void Function(int, Pointer<Uint32>)?;
   if (glDeleteTextures == null) {
     glDeleteTextures = tryCall(() =>
         Pointer<NativeFunction<GlDeleteTexturesNative>>.fromAddress(
                 _glGetProcAddress('glDeleteTextures'))
-            .asFunction<GlDeleteTextures>());
+            .asFunction<GlDeleteTextures>()) as void Function(int, Pointer<Uint32>)?;
   }
   glGenTextures = tryCall(() =>
-      lib.lookupFunction<GlGenTexturesNative, GlGenTextures>('glGenTextures'));
+      lib.lookupFunction<GlGenTexturesNative, GlGenTextures>('glGenTextures')) as void Function(int, Pointer<Uint32>)?;
   if (glGenTextures == null) {
     glGenTextures = tryCall(() =>
         Pointer<NativeFunction<GlGenTexturesNative>>.fromAddress(
                 _glGetProcAddress('glGenTextures'))
-            .asFunction<GlGenTextures>());
+            .asFunction<GlGenTextures>()) as void Function(int, Pointer<Uint32>)?;
   }
   glIsTexture = tryCall(
-      () => lib.lookupFunction<GlIsTextureNative, GlIsTexture>('glIsTexture'));
+      () => lib.lookupFunction<GlIsTextureNative, GlIsTexture>('glIsTexture')) as int Function(int)?;
   if (glIsTexture == null) {
     glIsTexture = tryCall(() =>
         Pointer<NativeFunction<GlIsTextureNative>>.fromAddress(
                 _glGetProcAddress('glIsTexture'))
-            .asFunction<GlIsTexture>());
+            .asFunction<GlIsTexture>()) as int Function(int)?;
   }
   glDrawRangeElements = tryCall(() =>
       lib.lookupFunction<GlDrawRangeElementsNative, GlDrawRangeElements>(
-          'glDrawRangeElements'));
+          'glDrawRangeElements')) as void Function(int, int, int, int, int, Pointer<NativeType>)?;
   if (glDrawRangeElements == null) {
     glDrawRangeElements = tryCall(() =>
         Pointer<NativeFunction<GlDrawRangeElementsNative>>.fromAddress(
                 _glGetProcAddress('glDrawRangeElements'))
-            .asFunction<GlDrawRangeElements>());
+            .asFunction<GlDrawRangeElements>()) as void Function(int, int, int, int, int, Pointer<NativeType>)?;
   }
   glTexImage3D = tryCall(() =>
-      lib.lookupFunction<GlTexImage3DNative, GlTexImage3D>('glTexImage3D'));
+      lib.lookupFunction<GlTexImage3DNative, GlTexImage3D>('glTexImage3D')) as void Function(int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glTexImage3D == null) {
     glTexImage3D = tryCall(() =>
         Pointer<NativeFunction<GlTexImage3DNative>>.fromAddress(
                 _glGetProcAddress('glTexImage3D'))
-            .asFunction<GlTexImage3D>());
+            .asFunction<GlTexImage3D>()) as void Function(int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glTexSubImage3D = tryCall(() =>
       lib.lookupFunction<GlTexSubImage3DNative, GlTexSubImage3D>(
-          'glTexSubImage3D'));
+          'glTexSubImage3D')) as void Function(int, int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glTexSubImage3D == null) {
     glTexSubImage3D = tryCall(() =>
         Pointer<NativeFunction<GlTexSubImage3DNative>>.fromAddress(
                 _glGetProcAddress('glTexSubImage3D'))
-            .asFunction<GlTexSubImage3D>());
+            .asFunction<GlTexSubImage3D>()) as void Function(int, int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glCopyTexSubImage3D = tryCall(() =>
       lib.lookupFunction<GlCopyTexSubImage3DNative, GlCopyTexSubImage3D>(
-          'glCopyTexSubImage3D'));
+          'glCopyTexSubImage3D')) as void Function(int, int, int, int, int, int, int, int, int)?;
   if (glCopyTexSubImage3D == null) {
     glCopyTexSubImage3D = tryCall(() =>
         Pointer<NativeFunction<GlCopyTexSubImage3DNative>>.fromAddress(
                 _glGetProcAddress('glCopyTexSubImage3D'))
-            .asFunction<GlCopyTexSubImage3D>());
+            .asFunction<GlCopyTexSubImage3D>()) as void Function(int, int, int, int, int, int, int, int, int)?;
   }
   glActiveTexture = tryCall(() =>
       lib.lookupFunction<GlActiveTextureNative, GlActiveTexture>(
-          'glActiveTexture'));
+          'glActiveTexture')) as void Function(int)?;
   if (glActiveTexture == null) {
     glActiveTexture = tryCall(() =>
         Pointer<NativeFunction<GlActiveTextureNative>>.fromAddress(
                 _glGetProcAddress('glActiveTexture'))
-            .asFunction<GlActiveTexture>());
+            .asFunction<GlActiveTexture>()) as void Function(int)?;
   }
   glSampleCoverage = tryCall(() =>
       lib.lookupFunction<GlSampleCoverageNative, GlSampleCoverage>(
-          'glSampleCoverage'));
+          'glSampleCoverage')) as void Function(double, int)?;
   if (glSampleCoverage == null) {
     glSampleCoverage = tryCall(() =>
         Pointer<NativeFunction<GlSampleCoverageNative>>.fromAddress(
                 _glGetProcAddress('glSampleCoverage'))
-            .asFunction<GlSampleCoverage>());
+            .asFunction<GlSampleCoverage>()) as void Function(double, int)?;
   }
   glCompressedTexImage3D = tryCall(() =>
       lib.lookupFunction<GlCompressedTexImage3DNative, GlCompressedTexImage3D>(
-          'glCompressedTexImage3D'));
+          'glCompressedTexImage3D')) as void Function(int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glCompressedTexImage3D == null) {
     glCompressedTexImage3D = tryCall(() =>
         Pointer<NativeFunction<GlCompressedTexImage3DNative>>.fromAddress(
                 _glGetProcAddress('glCompressedTexImage3D'))
-            .asFunction<GlCompressedTexImage3D>());
+            .asFunction<GlCompressedTexImage3D>()) as void Function(int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glCompressedTexImage2D = tryCall(() =>
       lib.lookupFunction<GlCompressedTexImage2DNative, GlCompressedTexImage2D>(
-          'glCompressedTexImage2D'));
+          'glCompressedTexImage2D')) as void Function(int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glCompressedTexImage2D == null) {
     glCompressedTexImage2D = tryCall(() =>
         Pointer<NativeFunction<GlCompressedTexImage2DNative>>.fromAddress(
                 _glGetProcAddress('glCompressedTexImage2D'))
-            .asFunction<GlCompressedTexImage2D>());
+            .asFunction<GlCompressedTexImage2D>()) as void Function(int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glCompressedTexImage1D = tryCall(() =>
       lib.lookupFunction<GlCompressedTexImage1DNative, GlCompressedTexImage1D>(
-          'glCompressedTexImage1D'));
+          'glCompressedTexImage1D')) as void Function(int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glCompressedTexImage1D == null) {
     glCompressedTexImage1D = tryCall(() =>
         Pointer<NativeFunction<GlCompressedTexImage1DNative>>.fromAddress(
                 _glGetProcAddress('glCompressedTexImage1D'))
-            .asFunction<GlCompressedTexImage1D>());
+            .asFunction<GlCompressedTexImage1D>()) as void Function(int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glCompressedTexSubImage3D = tryCall(() => lib.lookupFunction<
       GlCompressedTexSubImage3DNative,
-      GlCompressedTexSubImage3D>('glCompressedTexSubImage3D'));
+      GlCompressedTexSubImage3D>('glCompressedTexSubImage3D')) as void Function(int, int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glCompressedTexSubImage3D == null) {
     glCompressedTexSubImage3D = tryCall(() =>
         Pointer<NativeFunction<GlCompressedTexSubImage3DNative>>.fromAddress(
                 _glGetProcAddress('glCompressedTexSubImage3D'))
-            .asFunction<GlCompressedTexSubImage3D>());
+            .asFunction<GlCompressedTexSubImage3D>()) as void Function(int, int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glCompressedTexSubImage2D = tryCall(() => lib.lookupFunction<
       GlCompressedTexSubImage2DNative,
-      GlCompressedTexSubImage2D>('glCompressedTexSubImage2D'));
+      GlCompressedTexSubImage2D>('glCompressedTexSubImage2D')) as void Function(int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glCompressedTexSubImage2D == null) {
     glCompressedTexSubImage2D = tryCall(() =>
         Pointer<NativeFunction<GlCompressedTexSubImage2DNative>>.fromAddress(
                 _glGetProcAddress('glCompressedTexSubImage2D'))
-            .asFunction<GlCompressedTexSubImage2D>());
+            .asFunction<GlCompressedTexSubImage2D>()) as void Function(int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glCompressedTexSubImage1D = tryCall(() => lib.lookupFunction<
       GlCompressedTexSubImage1DNative,
-      GlCompressedTexSubImage1D>('glCompressedTexSubImage1D'));
+      GlCompressedTexSubImage1D>('glCompressedTexSubImage1D')) as void Function(int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glCompressedTexSubImage1D == null) {
     glCompressedTexSubImage1D = tryCall(() =>
         Pointer<NativeFunction<GlCompressedTexSubImage1DNative>>.fromAddress(
                 _glGetProcAddress('glCompressedTexSubImage1D'))
-            .asFunction<GlCompressedTexSubImage1D>());
+            .asFunction<GlCompressedTexSubImage1D>()) as void Function(int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glGetCompressedTexImage = tryCall(() => lib.lookupFunction<
       GlGetCompressedTexImageNative,
-      GlGetCompressedTexImage>('glGetCompressedTexImage'));
+      GlGetCompressedTexImage>('glGetCompressedTexImage')) as void Function(int, int, Pointer<NativeType>)?;
   if (glGetCompressedTexImage == null) {
     glGetCompressedTexImage = tryCall(() =>
         Pointer<NativeFunction<GlGetCompressedTexImageNative>>.fromAddress(
                 _glGetProcAddress('glGetCompressedTexImage'))
-            .asFunction<GlGetCompressedTexImage>());
+            .asFunction<GlGetCompressedTexImage>()) as void Function(int, int, Pointer<NativeType>)?;
   }
   glBlendFuncSeparate = tryCall(() =>
       lib.lookupFunction<GlBlendFuncSeparateNative, GlBlendFuncSeparate>(
-          'glBlendFuncSeparate'));
+          'glBlendFuncSeparate')) as void Function(int, int, int, int)?;
   if (glBlendFuncSeparate == null) {
     glBlendFuncSeparate = tryCall(() =>
         Pointer<NativeFunction<GlBlendFuncSeparateNative>>.fromAddress(
                 _glGetProcAddress('glBlendFuncSeparate'))
-            .asFunction<GlBlendFuncSeparate>());
+            .asFunction<GlBlendFuncSeparate>()) as void Function(int, int, int, int)?;
   }
   glMultiDrawArrays = tryCall(() =>
       lib.lookupFunction<GlMultiDrawArraysNative, GlMultiDrawArrays>(
-          'glMultiDrawArrays'));
+          'glMultiDrawArrays')) as void Function(int, Pointer<Int32>, Pointer<Int32>, int)?;
   if (glMultiDrawArrays == null) {
     glMultiDrawArrays = tryCall(() =>
         Pointer<NativeFunction<GlMultiDrawArraysNative>>.fromAddress(
                 _glGetProcAddress('glMultiDrawArrays'))
-            .asFunction<GlMultiDrawArrays>());
+            .asFunction<GlMultiDrawArrays>()) as void Function(int, Pointer<Int32>, Pointer<Int32>, int)?;
   }
   glMultiDrawElements = tryCall(() =>
       lib.lookupFunction<GlMultiDrawElementsNative, GlMultiDrawElements>(
-          'glMultiDrawElements'));
+          'glMultiDrawElements')) as void Function(int, Pointer<Int32>, int, Pointer<NativeType>, int)?;
   if (glMultiDrawElements == null) {
     glMultiDrawElements = tryCall(() =>
         Pointer<NativeFunction<GlMultiDrawElementsNative>>.fromAddress(
                 _glGetProcAddress('glMultiDrawElements'))
-            .asFunction<GlMultiDrawElements>());
+            .asFunction<GlMultiDrawElements>()) as void Function(int, Pointer<Int32>, int, Pointer<NativeType>, int)?;
   }
   glPointParameterf = tryCall(() =>
       lib.lookupFunction<GlPointParameterfNative, GlPointParameterf>(
-          'glPointParameterf'));
+          'glPointParameterf')) as void Function(int, double)?;
   if (glPointParameterf == null) {
     glPointParameterf = tryCall(() =>
         Pointer<NativeFunction<GlPointParameterfNative>>.fromAddress(
                 _glGetProcAddress('glPointParameterf'))
-            .asFunction<GlPointParameterf>());
+            .asFunction<GlPointParameterf>()) as void Function(int, double)?;
   }
   glPointParameterfv = tryCall(() =>
       lib.lookupFunction<GlPointParameterfvNative, GlPointParameterfv>(
-          'glPointParameterfv'));
+          'glPointParameterfv')) as void Function(int, Pointer<Float>)?;
   if (glPointParameterfv == null) {
     glPointParameterfv = tryCall(() =>
         Pointer<NativeFunction<GlPointParameterfvNative>>.fromAddress(
                 _glGetProcAddress('glPointParameterfv'))
-            .asFunction<GlPointParameterfv>());
+            .asFunction<GlPointParameterfv>()) as void Function(int, Pointer<Float>)?;
   }
   glPointParameteri = tryCall(() =>
       lib.lookupFunction<GlPointParameteriNative, GlPointParameteri>(
-          'glPointParameteri'));
+          'glPointParameteri')) as void Function(int, int)?;
   if (glPointParameteri == null) {
     glPointParameteri = tryCall(() =>
         Pointer<NativeFunction<GlPointParameteriNative>>.fromAddress(
                 _glGetProcAddress('glPointParameteri'))
-            .asFunction<GlPointParameteri>());
+            .asFunction<GlPointParameteri>()) as void Function(int, int)?;
   }
   glPointParameteriv = tryCall(() =>
       lib.lookupFunction<GlPointParameterivNative, GlPointParameteriv>(
-          'glPointParameteriv'));
+          'glPointParameteriv')) as void Function(int, Pointer<Int32>)?;
   if (glPointParameteriv == null) {
     glPointParameteriv = tryCall(() =>
         Pointer<NativeFunction<GlPointParameterivNative>>.fromAddress(
                 _glGetProcAddress('glPointParameteriv'))
-            .asFunction<GlPointParameteriv>());
+            .asFunction<GlPointParameteriv>()) as void Function(int, Pointer<Int32>)?;
   }
   glBlendColor = tryCall(() =>
-      lib.lookupFunction<GlBlendColorNative, GlBlendColor>('glBlendColor'));
+      lib.lookupFunction<GlBlendColorNative, GlBlendColor>('glBlendColor')) as void Function(double, double, double, double)?;
   if (glBlendColor == null) {
     glBlendColor = tryCall(() =>
         Pointer<NativeFunction<GlBlendColorNative>>.fromAddress(
                 _glGetProcAddress('glBlendColor'))
-            .asFunction<GlBlendColor>());
+            .asFunction<GlBlendColor>()) as void Function(double, double, double, double)?;
   }
   glBlendEquation = tryCall(() =>
       lib.lookupFunction<GlBlendEquationNative, GlBlendEquation>(
-          'glBlendEquation'));
+          'glBlendEquation')) as void Function(int)?;
   if (glBlendEquation == null) {
     glBlendEquation = tryCall(() =>
         Pointer<NativeFunction<GlBlendEquationNative>>.fromAddress(
                 _glGetProcAddress('glBlendEquation'))
-            .asFunction<GlBlendEquation>());
+            .asFunction<GlBlendEquation>()) as void Function(int)?;
   }
   glGenQueries = tryCall(() =>
-      lib.lookupFunction<GlGenQueriesNative, GlGenQueries>('glGenQueries'));
+      lib.lookupFunction<GlGenQueriesNative, GlGenQueries>('glGenQueries')) as void Function(int, Pointer<Uint32>)?;
   if (glGenQueries == null) {
     glGenQueries = tryCall(() =>
         Pointer<NativeFunction<GlGenQueriesNative>>.fromAddress(
                 _glGetProcAddress('glGenQueries'))
-            .asFunction<GlGenQueries>());
+            .asFunction<GlGenQueries>()) as void Function(int, Pointer<Uint32>)?;
   }
   glDeleteQueries = tryCall(() =>
       lib.lookupFunction<GlDeleteQueriesNative, GlDeleteQueries>(
-          'glDeleteQueries'));
+          'glDeleteQueries')) as void Function(int, Pointer<Uint32>)?;
   if (glDeleteQueries == null) {
     glDeleteQueries = tryCall(() =>
         Pointer<NativeFunction<GlDeleteQueriesNative>>.fromAddress(
                 _glGetProcAddress('glDeleteQueries'))
-            .asFunction<GlDeleteQueries>());
+            .asFunction<GlDeleteQueries>()) as void Function(int, Pointer<Uint32>)?;
   }
   glIsQuery = tryCall(
-      () => lib.lookupFunction<GlIsQueryNative, GlIsQuery>('glIsQuery'));
+      () => lib.lookupFunction<GlIsQueryNative, GlIsQuery>('glIsQuery')) as int Function(int)?;
   if (glIsQuery == null) {
     glIsQuery = tryCall(() =>
         Pointer<NativeFunction<GlIsQueryNative>>.fromAddress(
                 _glGetProcAddress('glIsQuery'))
-            .asFunction<GlIsQuery>());
+            .asFunction<GlIsQuery>()) as int Function(int)?;
   }
   glBeginQuery = tryCall(() =>
-      lib.lookupFunction<GlBeginQueryNative, GlBeginQuery>('glBeginQuery'));
+      lib.lookupFunction<GlBeginQueryNative, GlBeginQuery>('glBeginQuery')) as void Function(int, int)?;
   if (glBeginQuery == null) {
     glBeginQuery = tryCall(() =>
         Pointer<NativeFunction<GlBeginQueryNative>>.fromAddress(
                 _glGetProcAddress('glBeginQuery'))
-            .asFunction<GlBeginQuery>());
+            .asFunction<GlBeginQuery>()) as void Function(int, int)?;
   }
   glEndQuery = tryCall(
-      () => lib.lookupFunction<GlEndQueryNative, GlEndQuery>('glEndQuery'));
+      () => lib.lookupFunction<GlEndQueryNative, GlEndQuery>('glEndQuery')) as void Function(int)?;
   if (glEndQuery == null) {
     glEndQuery = tryCall(() =>
         Pointer<NativeFunction<GlEndQueryNative>>.fromAddress(
                 _glGetProcAddress('glEndQuery'))
-            .asFunction<GlEndQuery>());
+            .asFunction<GlEndQuery>()) as void Function(int)?;
   }
   glGetQueryiv = tryCall(() =>
-      lib.lookupFunction<GlGetQueryivNative, GlGetQueryiv>('glGetQueryiv'));
+      lib.lookupFunction<GlGetQueryivNative, GlGetQueryiv>('glGetQueryiv')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetQueryiv == null) {
     glGetQueryiv = tryCall(() =>
         Pointer<NativeFunction<GlGetQueryivNative>>.fromAddress(
                 _glGetProcAddress('glGetQueryiv'))
-            .asFunction<GlGetQueryiv>());
+            .asFunction<GlGetQueryiv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glGetQueryObjectiv = tryCall(() =>
       lib.lookupFunction<GlGetQueryObjectivNative, GlGetQueryObjectiv>(
-          'glGetQueryObjectiv'));
+          'glGetQueryObjectiv')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetQueryObjectiv == null) {
     glGetQueryObjectiv = tryCall(() =>
         Pointer<NativeFunction<GlGetQueryObjectivNative>>.fromAddress(
                 _glGetProcAddress('glGetQueryObjectiv'))
-            .asFunction<GlGetQueryObjectiv>());
+            .asFunction<GlGetQueryObjectiv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glGetQueryObjectuiv = tryCall(() =>
       lib.lookupFunction<GlGetQueryObjectuivNative, GlGetQueryObjectuiv>(
-          'glGetQueryObjectuiv'));
+          'glGetQueryObjectuiv')) as void Function(int, int, Pointer<Uint32>)?;
   if (glGetQueryObjectuiv == null) {
     glGetQueryObjectuiv = tryCall(() =>
         Pointer<NativeFunction<GlGetQueryObjectuivNative>>.fromAddress(
                 _glGetProcAddress('glGetQueryObjectuiv'))
-            .asFunction<GlGetQueryObjectuiv>());
+            .asFunction<GlGetQueryObjectuiv>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glBindBuffer = tryCall(() =>
-      lib.lookupFunction<GlBindBufferNative, GlBindBuffer>('glBindBuffer'));
+      lib.lookupFunction<GlBindBufferNative, GlBindBuffer>('glBindBuffer')) as void Function(int, int)?;
   if (glBindBuffer == null) {
     glBindBuffer = tryCall(() =>
         Pointer<NativeFunction<GlBindBufferNative>>.fromAddress(
                 _glGetProcAddress('glBindBuffer'))
-            .asFunction<GlBindBuffer>());
+            .asFunction<GlBindBuffer>()) as void Function(int, int)?;
   }
   glDeleteBuffers = tryCall(() =>
       lib.lookupFunction<GlDeleteBuffersNative, GlDeleteBuffers>(
-          'glDeleteBuffers'));
+          'glDeleteBuffers')) as void Function(int, Pointer<Uint32>)?;
   if (glDeleteBuffers == null) {
     glDeleteBuffers = tryCall(() =>
         Pointer<NativeFunction<GlDeleteBuffersNative>>.fromAddress(
                 _glGetProcAddress('glDeleteBuffers'))
-            .asFunction<GlDeleteBuffers>());
+            .asFunction<GlDeleteBuffers>()) as void Function(int, Pointer<Uint32>)?;
   }
   glGenBuffers = tryCall(() =>
-      lib.lookupFunction<GlGenBuffersNative, GlGenBuffers>('glGenBuffers'));
+      lib.lookupFunction<GlGenBuffersNative, GlGenBuffers>('glGenBuffers')) as void Function(int, Pointer<Uint32>)?;
   if (glGenBuffers == null) {
     glGenBuffers = tryCall(() =>
         Pointer<NativeFunction<GlGenBuffersNative>>.fromAddress(
                 _glGetProcAddress('glGenBuffers'))
-            .asFunction<GlGenBuffers>());
+            .asFunction<GlGenBuffers>()) as void Function(int, Pointer<Uint32>)?;
   }
   glIsBuffer = tryCall(
-      () => lib.lookupFunction<GlIsBufferNative, GlIsBuffer>('glIsBuffer'));
+      () => lib.lookupFunction<GlIsBufferNative, GlIsBuffer>('glIsBuffer')) as int Function(int)?;
   if (glIsBuffer == null) {
     glIsBuffer = tryCall(() =>
         Pointer<NativeFunction<GlIsBufferNative>>.fromAddress(
                 _glGetProcAddress('glIsBuffer'))
-            .asFunction<GlIsBuffer>());
+            .asFunction<GlIsBuffer>()) as int Function(int)?;
   }
   glBufferData = tryCall(() =>
-      lib.lookupFunction<GlBufferDataNative, GlBufferData>('glBufferData'));
+      lib.lookupFunction<GlBufferDataNative, GlBufferData>('glBufferData')) as void Function(int, int, Pointer<NativeType>, int)?;
   if (glBufferData == null) {
     glBufferData = tryCall(() =>
         Pointer<NativeFunction<GlBufferDataNative>>.fromAddress(
                 _glGetProcAddress('glBufferData'))
-            .asFunction<GlBufferData>());
+            .asFunction<GlBufferData>()) as void Function(int, int, Pointer<NativeType>, int)?;
   }
   glBufferSubData = tryCall(() =>
       lib.lookupFunction<GlBufferSubDataNative, GlBufferSubData>(
-          'glBufferSubData'));
+          'glBufferSubData')) as void Function(int, int, int, Pointer<NativeType>)?;
   if (glBufferSubData == null) {
     glBufferSubData = tryCall(() =>
         Pointer<NativeFunction<GlBufferSubDataNative>>.fromAddress(
                 _glGetProcAddress('glBufferSubData'))
-            .asFunction<GlBufferSubData>());
+            .asFunction<GlBufferSubData>()) as void Function(int, int, int, Pointer<NativeType>)?;
   }
   glGetBufferSubData = tryCall(() =>
       lib.lookupFunction<GlGetBufferSubDataNative, GlGetBufferSubData>(
-          'glGetBufferSubData'));
+          'glGetBufferSubData')) as void Function(int, int, int, Pointer<NativeType>)?;
   if (glGetBufferSubData == null) {
     glGetBufferSubData = tryCall(() =>
         Pointer<NativeFunction<GlGetBufferSubDataNative>>.fromAddress(
                 _glGetProcAddress('glGetBufferSubData'))
-            .asFunction<GlGetBufferSubData>());
+            .asFunction<GlGetBufferSubData>()) as void Function(int, int, int, Pointer<NativeType>)?;
   }
   glMapBuffer = tryCall(
-      () => lib.lookupFunction<GlMapBufferNative, GlMapBuffer>('glMapBuffer'));
+      () => lib.lookupFunction<GlMapBufferNative, GlMapBuffer>('glMapBuffer')) as Pointer<NativeType> Function(int, int)?;
   if (glMapBuffer == null) {
     glMapBuffer = tryCall(() =>
         Pointer<NativeFunction<GlMapBufferNative>>.fromAddress(
                 _glGetProcAddress('glMapBuffer'))
-            .asFunction<GlMapBuffer>());
+            .asFunction<GlMapBuffer>()) as Pointer<NativeType> Function(int, int)?;
   }
   glUnmapBuffer = tryCall(() =>
-      lib.lookupFunction<GlUnmapBufferNative, GlUnmapBuffer>('glUnmapBuffer'));
+      lib.lookupFunction<GlUnmapBufferNative, GlUnmapBuffer>('glUnmapBuffer')) as int Function(int)?;
   if (glUnmapBuffer == null) {
     glUnmapBuffer = tryCall(() =>
         Pointer<NativeFunction<GlUnmapBufferNative>>.fromAddress(
                 _glGetProcAddress('glUnmapBuffer'))
-            .asFunction<GlUnmapBuffer>());
+            .asFunction<GlUnmapBuffer>()) as int Function(int)?;
   }
   glGetBufferParameteriv = tryCall(() =>
       lib.lookupFunction<GlGetBufferParameterivNative, GlGetBufferParameteriv>(
-          'glGetBufferParameteriv'));
+          'glGetBufferParameteriv')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetBufferParameteriv == null) {
     glGetBufferParameteriv = tryCall(() =>
         Pointer<NativeFunction<GlGetBufferParameterivNative>>.fromAddress(
                 _glGetProcAddress('glGetBufferParameteriv'))
-            .asFunction<GlGetBufferParameteriv>());
+            .asFunction<GlGetBufferParameteriv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glGetBufferPointerv = tryCall(() =>
       lib.lookupFunction<GlGetBufferPointervNative, GlGetBufferPointerv>(
-          'glGetBufferPointerv'));
+          'glGetBufferPointerv')) as void Function(int, int, Pointer<NativeType>)?;
   if (glGetBufferPointerv == null) {
     glGetBufferPointerv = tryCall(() =>
         Pointer<NativeFunction<GlGetBufferPointervNative>>.fromAddress(
                 _glGetProcAddress('glGetBufferPointerv'))
-            .asFunction<GlGetBufferPointerv>());
+            .asFunction<GlGetBufferPointerv>()) as void Function(int, int, Pointer<NativeType>)?;
   }
   glBlendEquationSeparate = tryCall(() => lib.lookupFunction<
       GlBlendEquationSeparateNative,
-      GlBlendEquationSeparate>('glBlendEquationSeparate'));
+      GlBlendEquationSeparate>('glBlendEquationSeparate')) as void Function(int, int)?;
   if (glBlendEquationSeparate == null) {
     glBlendEquationSeparate = tryCall(() =>
         Pointer<NativeFunction<GlBlendEquationSeparateNative>>.fromAddress(
                 _glGetProcAddress('glBlendEquationSeparate'))
-            .asFunction<GlBlendEquationSeparate>());
+            .asFunction<GlBlendEquationSeparate>()) as void Function(int, int)?;
   }
   glDrawBuffers = tryCall(() =>
-      lib.lookupFunction<GlDrawBuffersNative, GlDrawBuffers>('glDrawBuffers'));
+      lib.lookupFunction<GlDrawBuffersNative, GlDrawBuffers>('glDrawBuffers')) as void Function(int, Pointer<Uint32>)?;
   if (glDrawBuffers == null) {
     glDrawBuffers = tryCall(() =>
         Pointer<NativeFunction<GlDrawBuffersNative>>.fromAddress(
                 _glGetProcAddress('glDrawBuffers'))
-            .asFunction<GlDrawBuffers>());
+            .asFunction<GlDrawBuffers>()) as void Function(int, Pointer<Uint32>)?;
   }
   glStencilOpSeparate = tryCall(() =>
       lib.lookupFunction<GlStencilOpSeparateNative, GlStencilOpSeparate>(
-          'glStencilOpSeparate'));
+          'glStencilOpSeparate')) as void Function(int, int, int, int)?;
   if (glStencilOpSeparate == null) {
     glStencilOpSeparate = tryCall(() =>
         Pointer<NativeFunction<GlStencilOpSeparateNative>>.fromAddress(
                 _glGetProcAddress('glStencilOpSeparate'))
-            .asFunction<GlStencilOpSeparate>());
+            .asFunction<GlStencilOpSeparate>()) as void Function(int, int, int, int)?;
   }
   glStencilFuncSeparate = tryCall(() =>
       lib.lookupFunction<GlStencilFuncSeparateNative, GlStencilFuncSeparate>(
-          'glStencilFuncSeparate'));
+          'glStencilFuncSeparate')) as void Function(int, int, int, int)?;
   if (glStencilFuncSeparate == null) {
     glStencilFuncSeparate = tryCall(() =>
         Pointer<NativeFunction<GlStencilFuncSeparateNative>>.fromAddress(
                 _glGetProcAddress('glStencilFuncSeparate'))
-            .asFunction<GlStencilFuncSeparate>());
+            .asFunction<GlStencilFuncSeparate>()) as void Function(int, int, int, int)?;
   }
   glStencilMaskSeparate = tryCall(() =>
       lib.lookupFunction<GlStencilMaskSeparateNative, GlStencilMaskSeparate>(
-          'glStencilMaskSeparate'));
+          'glStencilMaskSeparate')) as void Function(int, int)?;
   if (glStencilMaskSeparate == null) {
     glStencilMaskSeparate = tryCall(() =>
         Pointer<NativeFunction<GlStencilMaskSeparateNative>>.fromAddress(
                 _glGetProcAddress('glStencilMaskSeparate'))
-            .asFunction<GlStencilMaskSeparate>());
+            .asFunction<GlStencilMaskSeparate>()) as void Function(int, int)?;
   }
   glAttachShader = tryCall(() => lib
-      .lookupFunction<GlAttachShaderNative, GlAttachShader>('glAttachShader'));
+      .lookupFunction<GlAttachShaderNative, GlAttachShader>('glAttachShader')) as void Function(int, int)?;
   if (glAttachShader == null) {
     glAttachShader = tryCall(() =>
         Pointer<NativeFunction<GlAttachShaderNative>>.fromAddress(
                 _glGetProcAddress('glAttachShader'))
-            .asFunction<GlAttachShader>());
+            .asFunction<GlAttachShader>()) as void Function(int, int)?;
   }
   glBindAttribLocation = tryCall(() =>
       lib.lookupFunction<GlBindAttribLocationNative, GlBindAttribLocation>(
-          'glBindAttribLocation'));
+          'glBindAttribLocation')) as void Function(int, int, Pointer<NativeType>)?;
   if (glBindAttribLocation == null) {
     glBindAttribLocation = tryCall(() =>
         Pointer<NativeFunction<GlBindAttribLocationNative>>.fromAddress(
                 _glGetProcAddress('glBindAttribLocation'))
-            .asFunction<GlBindAttribLocation>());
+            .asFunction<GlBindAttribLocation>()) as void Function(int, int, Pointer<NativeType>)?;
   }
   glCompileShader = tryCall(() =>
       lib.lookupFunction<GlCompileShaderNative, GlCompileShader>(
-          'glCompileShader'));
+          'glCompileShader')) as void Function(int)?;
   if (glCompileShader == null) {
     glCompileShader = tryCall(() =>
         Pointer<NativeFunction<GlCompileShaderNative>>.fromAddress(
                 _glGetProcAddress('glCompileShader'))
-            .asFunction<GlCompileShader>());
+            .asFunction<GlCompileShader>()) as void Function(int)?;
   }
   glCreateProgram = tryCall(() =>
       lib.lookupFunction<GlCreateProgramNative, GlCreateProgram>(
-          'glCreateProgram'));
+          'glCreateProgram')) as int Function()?;
   if (glCreateProgram == null) {
     glCreateProgram = tryCall(() =>
         Pointer<NativeFunction<GlCreateProgramNative>>.fromAddress(
                 _glGetProcAddress('glCreateProgram'))
-            .asFunction<GlCreateProgram>());
+            .asFunction<GlCreateProgram>()) as int Function()?;
   }
   glCreateShader = tryCall(() => lib
-      .lookupFunction<GlCreateShaderNative, GlCreateShader>('glCreateShader'));
+      .lookupFunction<GlCreateShaderNative, GlCreateShader>('glCreateShader')) as int Function(int)?;
   if (glCreateShader == null) {
     glCreateShader = tryCall(() =>
         Pointer<NativeFunction<GlCreateShaderNative>>.fromAddress(
                 _glGetProcAddress('glCreateShader'))
-            .asFunction<GlCreateShader>());
+            .asFunction<GlCreateShader>()) as int Function(int)?;
   }
   glDeleteProgram = tryCall(() =>
       lib.lookupFunction<GlDeleteProgramNative, GlDeleteProgram>(
-          'glDeleteProgram'));
+          'glDeleteProgram')) as void Function(int)?;
   if (glDeleteProgram == null) {
     glDeleteProgram = tryCall(() =>
         Pointer<NativeFunction<GlDeleteProgramNative>>.fromAddress(
                 _glGetProcAddress('glDeleteProgram'))
-            .asFunction<GlDeleteProgram>());
+            .asFunction<GlDeleteProgram>()) as void Function(int)?;
   }
   glDeleteShader = tryCall(() => lib
-      .lookupFunction<GlDeleteShaderNative, GlDeleteShader>('glDeleteShader'));
+      .lookupFunction<GlDeleteShaderNative, GlDeleteShader>('glDeleteShader')) as void Function(int)?;
   if (glDeleteShader == null) {
     glDeleteShader = tryCall(() =>
         Pointer<NativeFunction<GlDeleteShaderNative>>.fromAddress(
                 _glGetProcAddress('glDeleteShader'))
-            .asFunction<GlDeleteShader>());
+            .asFunction<GlDeleteShader>()) as void Function(int)?;
   }
   glDetachShader = tryCall(() => lib
-      .lookupFunction<GlDetachShaderNative, GlDetachShader>('glDetachShader'));
+      .lookupFunction<GlDetachShaderNative, GlDetachShader>('glDetachShader')) as void Function(int, int)?;
   if (glDetachShader == null) {
     glDetachShader = tryCall(() =>
         Pointer<NativeFunction<GlDetachShaderNative>>.fromAddress(
                 _glGetProcAddress('glDetachShader'))
-            .asFunction<GlDetachShader>());
+            .asFunction<GlDetachShader>()) as void Function(int, int)?;
   }
   glDisableVertexAttribArray = tryCall(() => lib.lookupFunction<
       GlDisableVertexAttribArrayNative,
-      GlDisableVertexAttribArray>('glDisableVertexAttribArray'));
+      GlDisableVertexAttribArray>('glDisableVertexAttribArray')) as void Function(int)?;
   if (glDisableVertexAttribArray == null) {
     glDisableVertexAttribArray = tryCall(() =>
         Pointer<NativeFunction<GlDisableVertexAttribArrayNative>>.fromAddress(
                 _glGetProcAddress('glDisableVertexAttribArray'))
-            .asFunction<GlDisableVertexAttribArray>());
+            .asFunction<GlDisableVertexAttribArray>()) as void Function(int)?;
   }
   glEnableVertexAttribArray = tryCall(() => lib.lookupFunction<
       GlEnableVertexAttribArrayNative,
-      GlEnableVertexAttribArray>('glEnableVertexAttribArray'));
+      GlEnableVertexAttribArray>('glEnableVertexAttribArray')) as void Function(int)?;
   if (glEnableVertexAttribArray == null) {
     glEnableVertexAttribArray = tryCall(() =>
         Pointer<NativeFunction<GlEnableVertexAttribArrayNative>>.fromAddress(
                 _glGetProcAddress('glEnableVertexAttribArray'))
-            .asFunction<GlEnableVertexAttribArray>());
+            .asFunction<GlEnableVertexAttribArray>()) as void Function(int)?;
   }
   glGetActiveAttrib = tryCall(() =>
       lib.lookupFunction<GlGetActiveAttribNative, GlGetActiveAttrib>(
-          'glGetActiveAttrib'));
+          'glGetActiveAttrib')) as void Function(int, int, int, Pointer<Int32>, Pointer<Int32>, Pointer<Uint32>, Pointer<NativeType>)?;
   if (glGetActiveAttrib == null) {
     glGetActiveAttrib = tryCall(() =>
         Pointer<NativeFunction<GlGetActiveAttribNative>>.fromAddress(
                 _glGetProcAddress('glGetActiveAttrib'))
-            .asFunction<GlGetActiveAttrib>());
+            .asFunction<GlGetActiveAttrib>()) as void Function(int, int, int, Pointer<Int32>, Pointer<Int32>, Pointer<Uint32>, Pointer<NativeType>)?;
   }
   glGetActiveUniform = tryCall(() =>
       lib.lookupFunction<GlGetActiveUniformNative, GlGetActiveUniform>(
-          'glGetActiveUniform'));
+          'glGetActiveUniform')) as void Function(int, int, int, Pointer<Int32>, Pointer<Int32>, Pointer<Uint32>, Pointer<NativeType>)?;
   if (glGetActiveUniform == null) {
     glGetActiveUniform = tryCall(() =>
         Pointer<NativeFunction<GlGetActiveUniformNative>>.fromAddress(
                 _glGetProcAddress('glGetActiveUniform'))
-            .asFunction<GlGetActiveUniform>());
+            .asFunction<GlGetActiveUniform>()) as void Function(int, int, int, Pointer<Int32>, Pointer<Int32>, Pointer<Uint32>, Pointer<NativeType>)?;
   }
   glGetAttachedShaders = tryCall(() =>
       lib.lookupFunction<GlGetAttachedShadersNative, GlGetAttachedShaders>(
-          'glGetAttachedShaders'));
+          'glGetAttachedShaders')) as void Function(int, int, Pointer<Int32>, Pointer<Uint32>)?;
   if (glGetAttachedShaders == null) {
     glGetAttachedShaders = tryCall(() =>
         Pointer<NativeFunction<GlGetAttachedShadersNative>>.fromAddress(
                 _glGetProcAddress('glGetAttachedShaders'))
-            .asFunction<GlGetAttachedShaders>());
+            .asFunction<GlGetAttachedShaders>()) as void Function(int, int, Pointer<Int32>, Pointer<Uint32>)?;
   }
   glGetAttribLocation = tryCall(() =>
       lib.lookupFunction<GlGetAttribLocationNative, GlGetAttribLocation>(
-          'glGetAttribLocation'));
+          'glGetAttribLocation')) as int Function(int, Pointer<NativeType>)?;
   if (glGetAttribLocation == null) {
     glGetAttribLocation = tryCall(() =>
         Pointer<NativeFunction<GlGetAttribLocationNative>>.fromAddress(
                 _glGetProcAddress('glGetAttribLocation'))
-            .asFunction<GlGetAttribLocation>());
+            .asFunction<GlGetAttribLocation>()) as int Function(int, Pointer<NativeType>)?;
   }
   glGetProgramiv = tryCall(() => lib
-      .lookupFunction<GlGetProgramivNative, GlGetProgramiv>('glGetProgramiv'));
+      .lookupFunction<GlGetProgramivNative, GlGetProgramiv>('glGetProgramiv')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetProgramiv == null) {
     glGetProgramiv = tryCall(() =>
         Pointer<NativeFunction<GlGetProgramivNative>>.fromAddress(
                 _glGetProcAddress('glGetProgramiv'))
-            .asFunction<GlGetProgramiv>());
+            .asFunction<GlGetProgramiv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glGetProgramInfoLog = tryCall(() =>
       lib.lookupFunction<GlGetProgramInfoLogNative, GlGetProgramInfoLog>(
-          'glGetProgramInfoLog'));
+          'glGetProgramInfoLog')) as void Function(int, int, Pointer<Int32>, Pointer<NativeType>)?;
   if (glGetProgramInfoLog == null) {
     glGetProgramInfoLog = tryCall(() =>
         Pointer<NativeFunction<GlGetProgramInfoLogNative>>.fromAddress(
                 _glGetProcAddress('glGetProgramInfoLog'))
-            .asFunction<GlGetProgramInfoLog>());
+            .asFunction<GlGetProgramInfoLog>()) as void Function(int, int, Pointer<Int32>, Pointer<NativeType>)?;
   }
   glGetShaderiv = tryCall(() =>
-      lib.lookupFunction<GlGetShaderivNative, GlGetShaderiv>('glGetShaderiv'));
+      lib.lookupFunction<GlGetShaderivNative, GlGetShaderiv>('glGetShaderiv')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetShaderiv == null) {
     glGetShaderiv = tryCall(() =>
         Pointer<NativeFunction<GlGetShaderivNative>>.fromAddress(
                 _glGetProcAddress('glGetShaderiv'))
-            .asFunction<GlGetShaderiv>());
+            .asFunction<GlGetShaderiv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glGetShaderInfoLog = tryCall(() =>
       lib.lookupFunction<GlGetShaderInfoLogNative, GlGetShaderInfoLog>(
-          'glGetShaderInfoLog'));
+          'glGetShaderInfoLog')) as void Function(int, int, Pointer<Int32>, Pointer<NativeType>)?;
   if (glGetShaderInfoLog == null) {
     glGetShaderInfoLog = tryCall(() =>
         Pointer<NativeFunction<GlGetShaderInfoLogNative>>.fromAddress(
                 _glGetProcAddress('glGetShaderInfoLog'))
-            .asFunction<GlGetShaderInfoLog>());
+            .asFunction<GlGetShaderInfoLog>()) as void Function(int, int, Pointer<Int32>, Pointer<NativeType>)?;
   }
   glGetShaderSource = tryCall(() =>
       lib.lookupFunction<GlGetShaderSourceNative, GlGetShaderSource>(
-          'glGetShaderSource'));
+          'glGetShaderSource')) as void Function(int, int, Pointer<Int32>, Pointer<NativeType>)?;
   if (glGetShaderSource == null) {
     glGetShaderSource = tryCall(() =>
         Pointer<NativeFunction<GlGetShaderSourceNative>>.fromAddress(
                 _glGetProcAddress('glGetShaderSource'))
-            .asFunction<GlGetShaderSource>());
+            .asFunction<GlGetShaderSource>()) as void Function(int, int, Pointer<Int32>, Pointer<NativeType>)?;
   }
   glGetUniformLocation = tryCall(() =>
       lib.lookupFunction<GlGetUniformLocationNative, GlGetUniformLocation>(
-          'glGetUniformLocation'));
+          'glGetUniformLocation')) as int Function(int, Pointer<NativeType>)?;
   if (glGetUniformLocation == null) {
     glGetUniformLocation = tryCall(() =>
         Pointer<NativeFunction<GlGetUniformLocationNative>>.fromAddress(
                 _glGetProcAddress('glGetUniformLocation'))
-            .asFunction<GlGetUniformLocation>());
+            .asFunction<GlGetUniformLocation>()) as int Function(int, Pointer<NativeType>)?;
   }
   glGetUniformfv = tryCall(() => lib
-      .lookupFunction<GlGetUniformfvNative, GlGetUniformfv>('glGetUniformfv'));
+      .lookupFunction<GlGetUniformfvNative, GlGetUniformfv>('glGetUniformfv')) as void Function(int, int, Pointer<Float>)?;
   if (glGetUniformfv == null) {
     glGetUniformfv = tryCall(() =>
         Pointer<NativeFunction<GlGetUniformfvNative>>.fromAddress(
                 _glGetProcAddress('glGetUniformfv'))
-            .asFunction<GlGetUniformfv>());
+            .asFunction<GlGetUniformfv>()) as void Function(int, int, Pointer<Float>)?;
   }
   glGetUniformiv = tryCall(() => lib
-      .lookupFunction<GlGetUniformivNative, GlGetUniformiv>('glGetUniformiv'));
+      .lookupFunction<GlGetUniformivNative, GlGetUniformiv>('glGetUniformiv')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetUniformiv == null) {
     glGetUniformiv = tryCall(() =>
         Pointer<NativeFunction<GlGetUniformivNative>>.fromAddress(
                 _glGetProcAddress('glGetUniformiv'))
-            .asFunction<GlGetUniformiv>());
+            .asFunction<GlGetUniformiv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glGetVertexAttribdv = tryCall(() =>
       lib.lookupFunction<GlGetVertexAttribdvNative, GlGetVertexAttribdv>(
-          'glGetVertexAttribdv'));
+          'glGetVertexAttribdv')) as void Function(int, int, Pointer<Double>)?;
   if (glGetVertexAttribdv == null) {
     glGetVertexAttribdv = tryCall(() =>
         Pointer<NativeFunction<GlGetVertexAttribdvNative>>.fromAddress(
                 _glGetProcAddress('glGetVertexAttribdv'))
-            .asFunction<GlGetVertexAttribdv>());
+            .asFunction<GlGetVertexAttribdv>()) as void Function(int, int, Pointer<Double>)?;
   }
   glGetVertexAttribfv = tryCall(() =>
       lib.lookupFunction<GlGetVertexAttribfvNative, GlGetVertexAttribfv>(
-          'glGetVertexAttribfv'));
+          'glGetVertexAttribfv')) as void Function(int, int, Pointer<Float>)?;
   if (glGetVertexAttribfv == null) {
     glGetVertexAttribfv = tryCall(() =>
         Pointer<NativeFunction<GlGetVertexAttribfvNative>>.fromAddress(
                 _glGetProcAddress('glGetVertexAttribfv'))
-            .asFunction<GlGetVertexAttribfv>());
+            .asFunction<GlGetVertexAttribfv>()) as void Function(int, int, Pointer<Float>)?;
   }
   glGetVertexAttribiv = tryCall(() =>
       lib.lookupFunction<GlGetVertexAttribivNative, GlGetVertexAttribiv>(
-          'glGetVertexAttribiv'));
+          'glGetVertexAttribiv')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetVertexAttribiv == null) {
     glGetVertexAttribiv = tryCall(() =>
         Pointer<NativeFunction<GlGetVertexAttribivNative>>.fromAddress(
                 _glGetProcAddress('glGetVertexAttribiv'))
-            .asFunction<GlGetVertexAttribiv>());
+            .asFunction<GlGetVertexAttribiv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glGetVertexAttribPointerv = tryCall(() => lib.lookupFunction<
       GlGetVertexAttribPointervNative,
-      GlGetVertexAttribPointerv>('glGetVertexAttribPointerv'));
+      GlGetVertexAttribPointerv>('glGetVertexAttribPointerv')) as void Function(int, int, Pointer<NativeType>)?;
   if (glGetVertexAttribPointerv == null) {
     glGetVertexAttribPointerv = tryCall(() =>
         Pointer<NativeFunction<GlGetVertexAttribPointervNative>>.fromAddress(
                 _glGetProcAddress('glGetVertexAttribPointerv'))
-            .asFunction<GlGetVertexAttribPointerv>());
+            .asFunction<GlGetVertexAttribPointerv>()) as void Function(int, int, Pointer<NativeType>)?;
   }
   glIsProgram = tryCall(
-      () => lib.lookupFunction<GlIsProgramNative, GlIsProgram>('glIsProgram'));
+      () => lib.lookupFunction<GlIsProgramNative, GlIsProgram>('glIsProgram')) as int Function(int)?;
   if (glIsProgram == null) {
     glIsProgram = tryCall(() =>
         Pointer<NativeFunction<GlIsProgramNative>>.fromAddress(
                 _glGetProcAddress('glIsProgram'))
-            .asFunction<GlIsProgram>());
+            .asFunction<GlIsProgram>()) as int Function(int)?;
   }
   glIsShader = tryCall(
-      () => lib.lookupFunction<GlIsShaderNative, GlIsShader>('glIsShader'));
+      () => lib.lookupFunction<GlIsShaderNative, GlIsShader>('glIsShader')) as int Function(int)?;
   if (glIsShader == null) {
     glIsShader = tryCall(() =>
         Pointer<NativeFunction<GlIsShaderNative>>.fromAddress(
                 _glGetProcAddress('glIsShader'))
-            .asFunction<GlIsShader>());
+            .asFunction<GlIsShader>()) as int Function(int)?;
   }
   glLinkProgram = tryCall(() =>
-      lib.lookupFunction<GlLinkProgramNative, GlLinkProgram>('glLinkProgram'));
+      lib.lookupFunction<GlLinkProgramNative, GlLinkProgram>('glLinkProgram')) as void Function(int)?;
   if (glLinkProgram == null) {
     glLinkProgram = tryCall(() =>
         Pointer<NativeFunction<GlLinkProgramNative>>.fromAddress(
                 _glGetProcAddress('glLinkProgram'))
-            .asFunction<GlLinkProgram>());
+            .asFunction<GlLinkProgram>()) as void Function(int)?;
   }
   glShaderSource = tryCall(() => lib
-      .lookupFunction<GlShaderSourceNative, GlShaderSource>('glShaderSource'));
+      .lookupFunction<GlShaderSourceNative, GlShaderSource>('glShaderSource')) as void Function(int, int, Pointer<NativeType>, Pointer<Int32>)?;
   if (glShaderSource == null) {
     glShaderSource = tryCall(() =>
         Pointer<NativeFunction<GlShaderSourceNative>>.fromAddress(
                 _glGetProcAddress('glShaderSource'))
-            .asFunction<GlShaderSource>());
+            .asFunction<GlShaderSource>()) as void Function(int, int, Pointer<NativeType>, Pointer<Int32>)?;
   }
   glUseProgram = tryCall(() =>
-      lib.lookupFunction<GlUseProgramNative, GlUseProgram>('glUseProgram'));
+      lib.lookupFunction<GlUseProgramNative, GlUseProgram>('glUseProgram')) as void Function(int)?;
   if (glUseProgram == null) {
     glUseProgram = tryCall(() =>
         Pointer<NativeFunction<GlUseProgramNative>>.fromAddress(
                 _glGetProcAddress('glUseProgram'))
-            .asFunction<GlUseProgram>());
+            .asFunction<GlUseProgram>()) as void Function(int)?;
   }
   glUniform1f = tryCall(
-      () => lib.lookupFunction<GlUniform1fNative, GlUniform1f>('glUniform1f'));
+      () => lib.lookupFunction<GlUniform1fNative, GlUniform1f>('glUniform1f')) as void Function(int, double)?;
   if (glUniform1f == null) {
     glUniform1f = tryCall(() =>
         Pointer<NativeFunction<GlUniform1fNative>>.fromAddress(
                 _glGetProcAddress('glUniform1f'))
-            .asFunction<GlUniform1f>());
+            .asFunction<GlUniform1f>()) as void Function(int, double)?;
   }
   glUniform2f = tryCall(
-      () => lib.lookupFunction<GlUniform2fNative, GlUniform2f>('glUniform2f'));
+      () => lib.lookupFunction<GlUniform2fNative, GlUniform2f>('glUniform2f')) as void Function(int, double, double)?;
   if (glUniform2f == null) {
     glUniform2f = tryCall(() =>
         Pointer<NativeFunction<GlUniform2fNative>>.fromAddress(
                 _glGetProcAddress('glUniform2f'))
-            .asFunction<GlUniform2f>());
+            .asFunction<GlUniform2f>()) as void Function(int, double, double)?;
   }
   glUniform3f = tryCall(
-      () => lib.lookupFunction<GlUniform3fNative, GlUniform3f>('glUniform3f'));
+      () => lib.lookupFunction<GlUniform3fNative, GlUniform3f>('glUniform3f')) as void Function(int, double, double, double)?;
   if (glUniform3f == null) {
     glUniform3f = tryCall(() =>
         Pointer<NativeFunction<GlUniform3fNative>>.fromAddress(
                 _glGetProcAddress('glUniform3f'))
-            .asFunction<GlUniform3f>());
+            .asFunction<GlUniform3f>()) as void Function(int, double, double, double)?;
   }
   glUniform4f = tryCall(
-      () => lib.lookupFunction<GlUniform4fNative, GlUniform4f>('glUniform4f'));
+      () => lib.lookupFunction<GlUniform4fNative, GlUniform4f>('glUniform4f')) as void Function(int, double, double, double, double)?;
   if (glUniform4f == null) {
     glUniform4f = tryCall(() =>
         Pointer<NativeFunction<GlUniform4fNative>>.fromAddress(
                 _glGetProcAddress('glUniform4f'))
-            .asFunction<GlUniform4f>());
+            .asFunction<GlUniform4f>()) as void Function(int, double, double, double, double)?;
   }
   glUniform1i = tryCall(
-      () => lib.lookupFunction<GlUniform1iNative, GlUniform1i>('glUniform1i'));
+      () => lib.lookupFunction<GlUniform1iNative, GlUniform1i>('glUniform1i')) as void Function(int, int)?;
   if (glUniform1i == null) {
     glUniform1i = tryCall(() =>
         Pointer<NativeFunction<GlUniform1iNative>>.fromAddress(
                 _glGetProcAddress('glUniform1i'))
-            .asFunction<GlUniform1i>());
+            .asFunction<GlUniform1i>()) as void Function(int, int)?;
   }
   glUniform2i = tryCall(
-      () => lib.lookupFunction<GlUniform2iNative, GlUniform2i>('glUniform2i'));
+      () => lib.lookupFunction<GlUniform2iNative, GlUniform2i>('glUniform2i')) as void Function(int, int, int)?;
   if (glUniform2i == null) {
     glUniform2i = tryCall(() =>
         Pointer<NativeFunction<GlUniform2iNative>>.fromAddress(
                 _glGetProcAddress('glUniform2i'))
-            .asFunction<GlUniform2i>());
+            .asFunction<GlUniform2i>()) as void Function(int, int, int)?;
   }
   glUniform3i = tryCall(
-      () => lib.lookupFunction<GlUniform3iNative, GlUniform3i>('glUniform3i'));
+      () => lib.lookupFunction<GlUniform3iNative, GlUniform3i>('glUniform3i')) as void Function(int, int, int, int)?;
   if (glUniform3i == null) {
     glUniform3i = tryCall(() =>
         Pointer<NativeFunction<GlUniform3iNative>>.fromAddress(
                 _glGetProcAddress('glUniform3i'))
-            .asFunction<GlUniform3i>());
+            .asFunction<GlUniform3i>()) as void Function(int, int, int, int)?;
   }
   glUniform4i = tryCall(
-      () => lib.lookupFunction<GlUniform4iNative, GlUniform4i>('glUniform4i'));
+      () => lib.lookupFunction<GlUniform4iNative, GlUniform4i>('glUniform4i')) as void Function(int, int, int, int, int)?;
   if (glUniform4i == null) {
     glUniform4i = tryCall(() =>
         Pointer<NativeFunction<GlUniform4iNative>>.fromAddress(
                 _glGetProcAddress('glUniform4i'))
-            .asFunction<GlUniform4i>());
+            .asFunction<GlUniform4i>()) as void Function(int, int, int, int, int)?;
   }
   glUniform1fv = tryCall(() =>
-      lib.lookupFunction<GlUniform1fvNative, GlUniform1fv>('glUniform1fv'));
+      lib.lookupFunction<GlUniform1fvNative, GlUniform1fv>('glUniform1fv')) as void Function(int, int, Pointer<Float>)?;
   if (glUniform1fv == null) {
     glUniform1fv = tryCall(() =>
         Pointer<NativeFunction<GlUniform1fvNative>>.fromAddress(
                 _glGetProcAddress('glUniform1fv'))
-            .asFunction<GlUniform1fv>());
+            .asFunction<GlUniform1fv>()) as void Function(int, int, Pointer<Float>)?;
   }
   glUniform2fv = tryCall(() =>
-      lib.lookupFunction<GlUniform2fvNative, GlUniform2fv>('glUniform2fv'));
+      lib.lookupFunction<GlUniform2fvNative, GlUniform2fv>('glUniform2fv')) as void Function(int, int, Pointer<Float>)?;
   if (glUniform2fv == null) {
     glUniform2fv = tryCall(() =>
         Pointer<NativeFunction<GlUniform2fvNative>>.fromAddress(
                 _glGetProcAddress('glUniform2fv'))
-            .asFunction<GlUniform2fv>());
+            .asFunction<GlUniform2fv>()) as void Function(int, int, Pointer<Float>)?;
   }
   glUniform3fv = tryCall(() =>
-      lib.lookupFunction<GlUniform3fvNative, GlUniform3fv>('glUniform3fv'));
+      lib.lookupFunction<GlUniform3fvNative, GlUniform3fv>('glUniform3fv')) as void Function(int, int, Pointer<Float>)?;
   if (glUniform3fv == null) {
     glUniform3fv = tryCall(() =>
         Pointer<NativeFunction<GlUniform3fvNative>>.fromAddress(
                 _glGetProcAddress('glUniform3fv'))
-            .asFunction<GlUniform3fv>());
+            .asFunction<GlUniform3fv>()) as void Function(int, int, Pointer<Float>)?;
   }
   glUniform4fv = tryCall(() =>
-      lib.lookupFunction<GlUniform4fvNative, GlUniform4fv>('glUniform4fv'));
+      lib.lookupFunction<GlUniform4fvNative, GlUniform4fv>('glUniform4fv')) as void Function(int, int, Pointer<Float>)?;
   if (glUniform4fv == null) {
     glUniform4fv = tryCall(() =>
         Pointer<NativeFunction<GlUniform4fvNative>>.fromAddress(
                 _glGetProcAddress('glUniform4fv'))
-            .asFunction<GlUniform4fv>());
+            .asFunction<GlUniform4fv>()) as void Function(int, int, Pointer<Float>)?;
   }
   glUniform1iv = tryCall(() =>
-      lib.lookupFunction<GlUniform1ivNative, GlUniform1iv>('glUniform1iv'));
+      lib.lookupFunction<GlUniform1ivNative, GlUniform1iv>('glUniform1iv')) as void Function(int, int, Pointer<Int32>)?;
   if (glUniform1iv == null) {
     glUniform1iv = tryCall(() =>
         Pointer<NativeFunction<GlUniform1ivNative>>.fromAddress(
                 _glGetProcAddress('glUniform1iv'))
-            .asFunction<GlUniform1iv>());
+            .asFunction<GlUniform1iv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glUniform2iv = tryCall(() =>
-      lib.lookupFunction<GlUniform2ivNative, GlUniform2iv>('glUniform2iv'));
+      lib.lookupFunction<GlUniform2ivNative, GlUniform2iv>('glUniform2iv')) as void Function(int, int, Pointer<Int32>)?;
   if (glUniform2iv == null) {
     glUniform2iv = tryCall(() =>
         Pointer<NativeFunction<GlUniform2ivNative>>.fromAddress(
                 _glGetProcAddress('glUniform2iv'))
-            .asFunction<GlUniform2iv>());
+            .asFunction<GlUniform2iv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glUniform3iv = tryCall(() =>
-      lib.lookupFunction<GlUniform3ivNative, GlUniform3iv>('glUniform3iv'));
+      lib.lookupFunction<GlUniform3ivNative, GlUniform3iv>('glUniform3iv')) as void Function(int, int, Pointer<Int32>)?;
   if (glUniform3iv == null) {
     glUniform3iv = tryCall(() =>
         Pointer<NativeFunction<GlUniform3ivNative>>.fromAddress(
                 _glGetProcAddress('glUniform3iv'))
-            .asFunction<GlUniform3iv>());
+            .asFunction<GlUniform3iv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glUniform4iv = tryCall(() =>
-      lib.lookupFunction<GlUniform4ivNative, GlUniform4iv>('glUniform4iv'));
+      lib.lookupFunction<GlUniform4ivNative, GlUniform4iv>('glUniform4iv')) as void Function(int, int, Pointer<Int32>)?;
   if (glUniform4iv == null) {
     glUniform4iv = tryCall(() =>
         Pointer<NativeFunction<GlUniform4ivNative>>.fromAddress(
                 _glGetProcAddress('glUniform4iv'))
-            .asFunction<GlUniform4iv>());
+            .asFunction<GlUniform4iv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glUniformMatrix2fv = tryCall(() =>
       lib.lookupFunction<GlUniformMatrix2fvNative, GlUniformMatrix2fv>(
-          'glUniformMatrix2fv'));
+          'glUniformMatrix2fv')) as void Function(int, int, int, Pointer<Float>)?;
   if (glUniformMatrix2fv == null) {
     glUniformMatrix2fv = tryCall(() =>
         Pointer<NativeFunction<GlUniformMatrix2fvNative>>.fromAddress(
                 _glGetProcAddress('glUniformMatrix2fv'))
-            .asFunction<GlUniformMatrix2fv>());
+            .asFunction<GlUniformMatrix2fv>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glUniformMatrix3fv = tryCall(() =>
       lib.lookupFunction<GlUniformMatrix3fvNative, GlUniformMatrix3fv>(
-          'glUniformMatrix3fv'));
+          'glUniformMatrix3fv')) as void Function(int, int, int, Pointer<Float>)?;
   if (glUniformMatrix3fv == null) {
     glUniformMatrix3fv = tryCall(() =>
         Pointer<NativeFunction<GlUniformMatrix3fvNative>>.fromAddress(
                 _glGetProcAddress('glUniformMatrix3fv'))
-            .asFunction<GlUniformMatrix3fv>());
+            .asFunction<GlUniformMatrix3fv>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glUniformMatrix4fv = tryCall(() =>
       lib.lookupFunction<GlUniformMatrix4fvNative, GlUniformMatrix4fv>(
-          'glUniformMatrix4fv'));
+          'glUniformMatrix4fv')) as void Function(int, int, int, Pointer<Float>)?;
   if (glUniformMatrix4fv == null) {
     glUniformMatrix4fv = tryCall(() =>
         Pointer<NativeFunction<GlUniformMatrix4fvNative>>.fromAddress(
                 _glGetProcAddress('glUniformMatrix4fv'))
-            .asFunction<GlUniformMatrix4fv>());
+            .asFunction<GlUniformMatrix4fv>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glValidateProgram = tryCall(() =>
       lib.lookupFunction<GlValidateProgramNative, GlValidateProgram>(
-          'glValidateProgram'));
+          'glValidateProgram')) as void Function(int)?;
   if (glValidateProgram == null) {
     glValidateProgram = tryCall(() =>
         Pointer<NativeFunction<GlValidateProgramNative>>.fromAddress(
                 _glGetProcAddress('glValidateProgram'))
-            .asFunction<GlValidateProgram>());
+            .asFunction<GlValidateProgram>()) as void Function(int)?;
   }
   glVertexAttrib1d = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib1dNative, GlVertexAttrib1d>(
-          'glVertexAttrib1d'));
+          'glVertexAttrib1d')) as void Function(int, double)?;
   if (glVertexAttrib1d == null) {
     glVertexAttrib1d = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib1dNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib1d'))
-            .asFunction<GlVertexAttrib1d>());
+            .asFunction<GlVertexAttrib1d>()) as void Function(int, double)?;
   }
   glVertexAttrib1dv = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib1dvNative, GlVertexAttrib1dv>(
-          'glVertexAttrib1dv'));
+          'glVertexAttrib1dv')) as void Function(int, Pointer<Double>)?;
   if (glVertexAttrib1dv == null) {
     glVertexAttrib1dv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib1dvNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib1dv'))
-            .asFunction<GlVertexAttrib1dv>());
+            .asFunction<GlVertexAttrib1dv>()) as void Function(int, Pointer<Double>)?;
   }
   glVertexAttrib1f = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib1fNative, GlVertexAttrib1f>(
-          'glVertexAttrib1f'));
+          'glVertexAttrib1f')) as void Function(int, double)?;
   if (glVertexAttrib1f == null) {
     glVertexAttrib1f = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib1fNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib1f'))
-            .asFunction<GlVertexAttrib1f>());
+            .asFunction<GlVertexAttrib1f>()) as void Function(int, double)?;
   }
   glVertexAttrib1fv = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib1fvNative, GlVertexAttrib1fv>(
-          'glVertexAttrib1fv'));
+          'glVertexAttrib1fv')) as void Function(int, Pointer<Float>)?;
   if (glVertexAttrib1fv == null) {
     glVertexAttrib1fv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib1fvNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib1fv'))
-            .asFunction<GlVertexAttrib1fv>());
+            .asFunction<GlVertexAttrib1fv>()) as void Function(int, Pointer<Float>)?;
   }
   glVertexAttrib1s = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib1sNative, GlVertexAttrib1s>(
-          'glVertexAttrib1s'));
+          'glVertexAttrib1s')) as void Function(int, int)?;
   if (glVertexAttrib1s == null) {
     glVertexAttrib1s = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib1sNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib1s'))
-            .asFunction<GlVertexAttrib1s>());
+            .asFunction<GlVertexAttrib1s>()) as void Function(int, int)?;
   }
   glVertexAttrib1sv = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib1svNative, GlVertexAttrib1sv>(
-          'glVertexAttrib1sv'));
+          'glVertexAttrib1sv')) as void Function(int, Pointer<Int16>)?;
   if (glVertexAttrib1sv == null) {
     glVertexAttrib1sv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib1svNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib1sv'))
-            .asFunction<GlVertexAttrib1sv>());
+            .asFunction<GlVertexAttrib1sv>()) as void Function(int, Pointer<Int16>)?;
   }
   glVertexAttrib2d = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib2dNative, GlVertexAttrib2d>(
-          'glVertexAttrib2d'));
+          'glVertexAttrib2d')) as void Function(int, double, double)?;
   if (glVertexAttrib2d == null) {
     glVertexAttrib2d = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib2dNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib2d'))
-            .asFunction<GlVertexAttrib2d>());
+            .asFunction<GlVertexAttrib2d>()) as void Function(int, double, double)?;
   }
   glVertexAttrib2dv = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib2dvNative, GlVertexAttrib2dv>(
-          'glVertexAttrib2dv'));
+          'glVertexAttrib2dv')) as void Function(int, Pointer<Double>)?;
   if (glVertexAttrib2dv == null) {
     glVertexAttrib2dv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib2dvNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib2dv'))
-            .asFunction<GlVertexAttrib2dv>());
+            .asFunction<GlVertexAttrib2dv>()) as void Function(int, Pointer<Double>)?;
   }
   glVertexAttrib2f = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib2fNative, GlVertexAttrib2f>(
-          'glVertexAttrib2f'));
+          'glVertexAttrib2f')) as void Function(int, double, double)?;
   if (glVertexAttrib2f == null) {
     glVertexAttrib2f = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib2fNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib2f'))
-            .asFunction<GlVertexAttrib2f>());
+            .asFunction<GlVertexAttrib2f>()) as void Function(int, double, double)?;
   }
   glVertexAttrib2fv = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib2fvNative, GlVertexAttrib2fv>(
-          'glVertexAttrib2fv'));
+          'glVertexAttrib2fv')) as void Function(int, Pointer<Float>)?;
   if (glVertexAttrib2fv == null) {
     glVertexAttrib2fv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib2fvNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib2fv'))
-            .asFunction<GlVertexAttrib2fv>());
+            .asFunction<GlVertexAttrib2fv>()) as void Function(int, Pointer<Float>)?;
   }
   glVertexAttrib2s = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib2sNative, GlVertexAttrib2s>(
-          'glVertexAttrib2s'));
+          'glVertexAttrib2s')) as void Function(int, int, int)?;
   if (glVertexAttrib2s == null) {
     glVertexAttrib2s = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib2sNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib2s'))
-            .asFunction<GlVertexAttrib2s>());
+            .asFunction<GlVertexAttrib2s>()) as void Function(int, int, int)?;
   }
   glVertexAttrib2sv = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib2svNative, GlVertexAttrib2sv>(
-          'glVertexAttrib2sv'));
+          'glVertexAttrib2sv')) as void Function(int, Pointer<Int16>)?;
   if (glVertexAttrib2sv == null) {
     glVertexAttrib2sv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib2svNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib2sv'))
-            .asFunction<GlVertexAttrib2sv>());
+            .asFunction<GlVertexAttrib2sv>()) as void Function(int, Pointer<Int16>)?;
   }
   glVertexAttrib3d = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib3dNative, GlVertexAttrib3d>(
-          'glVertexAttrib3d'));
+          'glVertexAttrib3d')) as void Function(int, double, double, double)?;
   if (glVertexAttrib3d == null) {
     glVertexAttrib3d = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib3dNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib3d'))
-            .asFunction<GlVertexAttrib3d>());
+            .asFunction<GlVertexAttrib3d>()) as void Function(int, double, double, double)?;
   }
   glVertexAttrib3dv = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib3dvNative, GlVertexAttrib3dv>(
-          'glVertexAttrib3dv'));
+          'glVertexAttrib3dv')) as void Function(int, Pointer<Double>)?;
   if (glVertexAttrib3dv == null) {
     glVertexAttrib3dv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib3dvNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib3dv'))
-            .asFunction<GlVertexAttrib3dv>());
+            .asFunction<GlVertexAttrib3dv>()) as void Function(int, Pointer<Double>)?;
   }
   glVertexAttrib3f = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib3fNative, GlVertexAttrib3f>(
-          'glVertexAttrib3f'));
+          'glVertexAttrib3f')) as void Function(int, double, double, double)?;
   if (glVertexAttrib3f == null) {
     glVertexAttrib3f = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib3fNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib3f'))
-            .asFunction<GlVertexAttrib3f>());
+            .asFunction<GlVertexAttrib3f>()) as void Function(int, double, double, double)?;
   }
   glVertexAttrib3fv = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib3fvNative, GlVertexAttrib3fv>(
-          'glVertexAttrib3fv'));
+          'glVertexAttrib3fv')) as void Function(int, Pointer<Float>)?;
   if (glVertexAttrib3fv == null) {
     glVertexAttrib3fv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib3fvNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib3fv'))
-            .asFunction<GlVertexAttrib3fv>());
+            .asFunction<GlVertexAttrib3fv>()) as void Function(int, Pointer<Float>)?;
   }
   glVertexAttrib3s = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib3sNative, GlVertexAttrib3s>(
-          'glVertexAttrib3s'));
+          'glVertexAttrib3s')) as void Function(int, int, int, int)?;
   if (glVertexAttrib3s == null) {
     glVertexAttrib3s = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib3sNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib3s'))
-            .asFunction<GlVertexAttrib3s>());
+            .asFunction<GlVertexAttrib3s>()) as void Function(int, int, int, int)?;
   }
   glVertexAttrib3sv = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib3svNative, GlVertexAttrib3sv>(
-          'glVertexAttrib3sv'));
+          'glVertexAttrib3sv')) as void Function(int, Pointer<Int16>)?;
   if (glVertexAttrib3sv == null) {
     glVertexAttrib3sv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib3svNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib3sv'))
-            .asFunction<GlVertexAttrib3sv>());
+            .asFunction<GlVertexAttrib3sv>()) as void Function(int, Pointer<Int16>)?;
   }
   glVertexAttrib4Nbv = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib4NbvNative, GlVertexAttrib4Nbv>(
-          'glVertexAttrib4Nbv'));
+          'glVertexAttrib4Nbv')) as void Function(int, Pointer<Int8>)?;
   if (glVertexAttrib4Nbv == null) {
     glVertexAttrib4Nbv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib4NbvNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib4Nbv'))
-            .asFunction<GlVertexAttrib4Nbv>());
+            .asFunction<GlVertexAttrib4Nbv>()) as void Function(int, Pointer<Int8>)?;
   }
   glVertexAttrib4Niv = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib4NivNative, GlVertexAttrib4Niv>(
-          'glVertexAttrib4Niv'));
+          'glVertexAttrib4Niv')) as void Function(int, Pointer<Int32>)?;
   if (glVertexAttrib4Niv == null) {
     glVertexAttrib4Niv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib4NivNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib4Niv'))
-            .asFunction<GlVertexAttrib4Niv>());
+            .asFunction<GlVertexAttrib4Niv>()) as void Function(int, Pointer<Int32>)?;
   }
   glVertexAttrib4Nsv = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib4NsvNative, GlVertexAttrib4Nsv>(
-          'glVertexAttrib4Nsv'));
+          'glVertexAttrib4Nsv')) as void Function(int, Pointer<Int16>)?;
   if (glVertexAttrib4Nsv == null) {
     glVertexAttrib4Nsv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib4NsvNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib4Nsv'))
-            .asFunction<GlVertexAttrib4Nsv>());
+            .asFunction<GlVertexAttrib4Nsv>()) as void Function(int, Pointer<Int16>)?;
   }
   glVertexAttrib4Nub = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib4NubNative, GlVertexAttrib4Nub>(
-          'glVertexAttrib4Nub'));
+          'glVertexAttrib4Nub')) as void Function(int, int, int, int, int)?;
   if (glVertexAttrib4Nub == null) {
     glVertexAttrib4Nub = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib4NubNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib4Nub'))
-            .asFunction<GlVertexAttrib4Nub>());
+            .asFunction<GlVertexAttrib4Nub>()) as void Function(int, int, int, int, int)?;
   }
   glVertexAttrib4Nubv = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib4NubvNative, GlVertexAttrib4Nubv>(
-          'glVertexAttrib4Nubv'));
+          'glVertexAttrib4Nubv')) as void Function(int, Pointer<NativeType>)?;
   if (glVertexAttrib4Nubv == null) {
     glVertexAttrib4Nubv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib4NubvNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib4Nubv'))
-            .asFunction<GlVertexAttrib4Nubv>());
+            .asFunction<GlVertexAttrib4Nubv>()) as void Function(int, Pointer<NativeType>)?;
   }
   glVertexAttrib4Nuiv = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib4NuivNative, GlVertexAttrib4Nuiv>(
-          'glVertexAttrib4Nuiv'));
+          'glVertexAttrib4Nuiv')) as void Function(int, Pointer<Uint32>)?;
   if (glVertexAttrib4Nuiv == null) {
     glVertexAttrib4Nuiv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib4NuivNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib4Nuiv'))
-            .asFunction<GlVertexAttrib4Nuiv>());
+            .asFunction<GlVertexAttrib4Nuiv>()) as void Function(int, Pointer<Uint32>)?;
   }
   glVertexAttrib4Nusv = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib4NusvNative, GlVertexAttrib4Nusv>(
-          'glVertexAttrib4Nusv'));
+          'glVertexAttrib4Nusv')) as void Function(int, Pointer<Uint16>)?;
   if (glVertexAttrib4Nusv == null) {
     glVertexAttrib4Nusv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib4NusvNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib4Nusv'))
-            .asFunction<GlVertexAttrib4Nusv>());
+            .asFunction<GlVertexAttrib4Nusv>()) as void Function(int, Pointer<Uint16>)?;
   }
   glVertexAttrib4bv = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib4bvNative, GlVertexAttrib4bv>(
-          'glVertexAttrib4bv'));
+          'glVertexAttrib4bv')) as void Function(int, Pointer<Int8>)?;
   if (glVertexAttrib4bv == null) {
     glVertexAttrib4bv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib4bvNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib4bv'))
-            .asFunction<GlVertexAttrib4bv>());
+            .asFunction<GlVertexAttrib4bv>()) as void Function(int, Pointer<Int8>)?;
   }
   glVertexAttrib4d = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib4dNative, GlVertexAttrib4d>(
-          'glVertexAttrib4d'));
+          'glVertexAttrib4d')) as void Function(int, double, double, double, double)?;
   if (glVertexAttrib4d == null) {
     glVertexAttrib4d = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib4dNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib4d'))
-            .asFunction<GlVertexAttrib4d>());
+            .asFunction<GlVertexAttrib4d>()) as void Function(int, double, double, double, double)?;
   }
   glVertexAttrib4dv = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib4dvNative, GlVertexAttrib4dv>(
-          'glVertexAttrib4dv'));
+          'glVertexAttrib4dv')) as void Function(int, Pointer<Double>)?;
   if (glVertexAttrib4dv == null) {
     glVertexAttrib4dv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib4dvNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib4dv'))
-            .asFunction<GlVertexAttrib4dv>());
+            .asFunction<GlVertexAttrib4dv>()) as void Function(int, Pointer<Double>)?;
   }
   glVertexAttrib4f = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib4fNative, GlVertexAttrib4f>(
-          'glVertexAttrib4f'));
+          'glVertexAttrib4f')) as void Function(int, double, double, double, double)?;
   if (glVertexAttrib4f == null) {
     glVertexAttrib4f = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib4fNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib4f'))
-            .asFunction<GlVertexAttrib4f>());
+            .asFunction<GlVertexAttrib4f>()) as void Function(int, double, double, double, double)?;
   }
   glVertexAttrib4fv = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib4fvNative, GlVertexAttrib4fv>(
-          'glVertexAttrib4fv'));
+          'glVertexAttrib4fv')) as void Function(int, Pointer<Float>)?;
   if (glVertexAttrib4fv == null) {
     glVertexAttrib4fv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib4fvNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib4fv'))
-            .asFunction<GlVertexAttrib4fv>());
+            .asFunction<GlVertexAttrib4fv>()) as void Function(int, Pointer<Float>)?;
   }
   glVertexAttrib4iv = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib4ivNative, GlVertexAttrib4iv>(
-          'glVertexAttrib4iv'));
+          'glVertexAttrib4iv')) as void Function(int, Pointer<Int32>)?;
   if (glVertexAttrib4iv == null) {
     glVertexAttrib4iv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib4ivNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib4iv'))
-            .asFunction<GlVertexAttrib4iv>());
+            .asFunction<GlVertexAttrib4iv>()) as void Function(int, Pointer<Int32>)?;
   }
   glVertexAttrib4s = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib4sNative, GlVertexAttrib4s>(
-          'glVertexAttrib4s'));
+          'glVertexAttrib4s')) as void Function(int, int, int, int, int)?;
   if (glVertexAttrib4s == null) {
     glVertexAttrib4s = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib4sNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib4s'))
-            .asFunction<GlVertexAttrib4s>());
+            .asFunction<GlVertexAttrib4s>()) as void Function(int, int, int, int, int)?;
   }
   glVertexAttrib4sv = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib4svNative, GlVertexAttrib4sv>(
-          'glVertexAttrib4sv'));
+          'glVertexAttrib4sv')) as void Function(int, Pointer<Int16>)?;
   if (glVertexAttrib4sv == null) {
     glVertexAttrib4sv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib4svNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib4sv'))
-            .asFunction<GlVertexAttrib4sv>());
+            .asFunction<GlVertexAttrib4sv>()) as void Function(int, Pointer<Int16>)?;
   }
   glVertexAttrib4ubv = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib4ubvNative, GlVertexAttrib4ubv>(
-          'glVertexAttrib4ubv'));
+          'glVertexAttrib4ubv')) as void Function(int, Pointer<NativeType>)?;
   if (glVertexAttrib4ubv == null) {
     glVertexAttrib4ubv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib4ubvNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib4ubv'))
-            .asFunction<GlVertexAttrib4ubv>());
+            .asFunction<GlVertexAttrib4ubv>()) as void Function(int, Pointer<NativeType>)?;
   }
   glVertexAttrib4uiv = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib4uivNative, GlVertexAttrib4uiv>(
-          'glVertexAttrib4uiv'));
+          'glVertexAttrib4uiv')) as void Function(int, Pointer<Uint32>)?;
   if (glVertexAttrib4uiv == null) {
     glVertexAttrib4uiv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib4uivNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib4uiv'))
-            .asFunction<GlVertexAttrib4uiv>());
+            .asFunction<GlVertexAttrib4uiv>()) as void Function(int, Pointer<Uint32>)?;
   }
   glVertexAttrib4usv = tryCall(() =>
       lib.lookupFunction<GlVertexAttrib4usvNative, GlVertexAttrib4usv>(
-          'glVertexAttrib4usv'));
+          'glVertexAttrib4usv')) as void Function(int, Pointer<Uint16>)?;
   if (glVertexAttrib4usv == null) {
     glVertexAttrib4usv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttrib4usvNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttrib4usv'))
-            .asFunction<GlVertexAttrib4usv>());
+            .asFunction<GlVertexAttrib4usv>()) as void Function(int, Pointer<Uint16>)?;
   }
   glVertexAttribPointer = tryCall(() =>
       lib.lookupFunction<GlVertexAttribPointerNative, GlVertexAttribPointer>(
-          'glVertexAttribPointer'));
+          'glVertexAttribPointer')) as void Function(int, int, int, int, int, int)?;
   if (glVertexAttribPointer == null) {
     glVertexAttribPointer = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribPointerNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribPointer'))
-            .asFunction<GlVertexAttribPointer>());
+            .asFunction<GlVertexAttribPointer>()) as void Function(int, int, int, int, int, int)?;
   }
   glUniformMatrix2x3fv = tryCall(() =>
       lib.lookupFunction<GlUniformMatrix2x3fvNative, GlUniformMatrix2x3fv>(
-          'glUniformMatrix2x3fv'));
+          'glUniformMatrix2x3fv')) as void Function(int, int, int, Pointer<Float>)?;
   if (glUniformMatrix2x3fv == null) {
     glUniformMatrix2x3fv = tryCall(() =>
         Pointer<NativeFunction<GlUniformMatrix2x3fvNative>>.fromAddress(
                 _glGetProcAddress('glUniformMatrix2x3fv'))
-            .asFunction<GlUniformMatrix2x3fv>());
+            .asFunction<GlUniformMatrix2x3fv>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glUniformMatrix3x2fv = tryCall(() =>
       lib.lookupFunction<GlUniformMatrix3x2fvNative, GlUniformMatrix3x2fv>(
-          'glUniformMatrix3x2fv'));
+          'glUniformMatrix3x2fv')) as void Function(int, int, int, Pointer<Float>)?;
   if (glUniformMatrix3x2fv == null) {
     glUniformMatrix3x2fv = tryCall(() =>
         Pointer<NativeFunction<GlUniformMatrix3x2fvNative>>.fromAddress(
                 _glGetProcAddress('glUniformMatrix3x2fv'))
-            .asFunction<GlUniformMatrix3x2fv>());
+            .asFunction<GlUniformMatrix3x2fv>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glUniformMatrix2x4fv = tryCall(() =>
       lib.lookupFunction<GlUniformMatrix2x4fvNative, GlUniformMatrix2x4fv>(
-          'glUniformMatrix2x4fv'));
+          'glUniformMatrix2x4fv')) as void Function(int, int, int, Pointer<Float>)?;
   if (glUniformMatrix2x4fv == null) {
     glUniformMatrix2x4fv = tryCall(() =>
         Pointer<NativeFunction<GlUniformMatrix2x4fvNative>>.fromAddress(
                 _glGetProcAddress('glUniformMatrix2x4fv'))
-            .asFunction<GlUniformMatrix2x4fv>());
+            .asFunction<GlUniformMatrix2x4fv>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glUniformMatrix4x2fv = tryCall(() =>
       lib.lookupFunction<GlUniformMatrix4x2fvNative, GlUniformMatrix4x2fv>(
-          'glUniformMatrix4x2fv'));
+          'glUniformMatrix4x2fv')) as void Function(int, int, int, Pointer<Float>)?;
   if (glUniformMatrix4x2fv == null) {
     glUniformMatrix4x2fv = tryCall(() =>
         Pointer<NativeFunction<GlUniformMatrix4x2fvNative>>.fromAddress(
                 _glGetProcAddress('glUniformMatrix4x2fv'))
-            .asFunction<GlUniformMatrix4x2fv>());
+            .asFunction<GlUniformMatrix4x2fv>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glUniformMatrix3x4fv = tryCall(() =>
       lib.lookupFunction<GlUniformMatrix3x4fvNative, GlUniformMatrix3x4fv>(
-          'glUniformMatrix3x4fv'));
+          'glUniformMatrix3x4fv')) as void Function(int, int, int, Pointer<Float>)?;
   if (glUniformMatrix3x4fv == null) {
     glUniformMatrix3x4fv = tryCall(() =>
         Pointer<NativeFunction<GlUniformMatrix3x4fvNative>>.fromAddress(
                 _glGetProcAddress('glUniformMatrix3x4fv'))
-            .asFunction<GlUniformMatrix3x4fv>());
+            .asFunction<GlUniformMatrix3x4fv>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glUniformMatrix4x3fv = tryCall(() =>
       lib.lookupFunction<GlUniformMatrix4x3fvNative, GlUniformMatrix4x3fv>(
-          'glUniformMatrix4x3fv'));
+          'glUniformMatrix4x3fv')) as void Function(int, int, int, Pointer<Float>)?;
   if (glUniformMatrix4x3fv == null) {
     glUniformMatrix4x3fv = tryCall(() =>
         Pointer<NativeFunction<GlUniformMatrix4x3fvNative>>.fromAddress(
                 _glGetProcAddress('glUniformMatrix4x3fv'))
-            .asFunction<GlUniformMatrix4x3fv>());
+            .asFunction<GlUniformMatrix4x3fv>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glColorMaski = tryCall(() =>
-      lib.lookupFunction<GlColorMaskiNative, GlColorMaski>('glColorMaski'));
+      lib.lookupFunction<GlColorMaskiNative, GlColorMaski>('glColorMaski')) as void Function(int, int, int, int, int)?;
   if (glColorMaski == null) {
     glColorMaski = tryCall(() =>
         Pointer<NativeFunction<GlColorMaskiNative>>.fromAddress(
                 _glGetProcAddress('glColorMaski'))
-            .asFunction<GlColorMaski>());
+            .asFunction<GlColorMaski>()) as void Function(int, int, int, int, int)?;
   }
   glGetBooleani_v = tryCall(() =>
       lib.lookupFunction<GlGetBooleani_vNative, GlGetBooleani_v>(
-          'glGetBooleani_v'));
+          'glGetBooleani_v')) as void Function(int, int, Pointer<NativeType>)?;
   if (glGetBooleani_v == null) {
     glGetBooleani_v = tryCall(() =>
         Pointer<NativeFunction<GlGetBooleani_vNative>>.fromAddress(
                 _glGetProcAddress('glGetBooleani_v'))
-            .asFunction<GlGetBooleani_v>());
+            .asFunction<GlGetBooleani_v>()) as void Function(int, int, Pointer<NativeType>)?;
   }
   glGetIntegeri_v = tryCall(() =>
       lib.lookupFunction<GlGetIntegeri_vNative, GlGetIntegeri_v>(
-          'glGetIntegeri_v'));
+          'glGetIntegeri_v')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetIntegeri_v == null) {
     glGetIntegeri_v = tryCall(() =>
         Pointer<NativeFunction<GlGetIntegeri_vNative>>.fromAddress(
                 _glGetProcAddress('glGetIntegeri_v'))
-            .asFunction<GlGetIntegeri_v>());
+            .asFunction<GlGetIntegeri_v>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glEnablei = tryCall(
-      () => lib.lookupFunction<GlEnableiNative, GlEnablei>('glEnablei'));
+      () => lib.lookupFunction<GlEnableiNative, GlEnablei>('glEnablei')) as void Function(int, int)?;
   if (glEnablei == null) {
     glEnablei = tryCall(() =>
         Pointer<NativeFunction<GlEnableiNative>>.fromAddress(
                 _glGetProcAddress('glEnablei'))
-            .asFunction<GlEnablei>());
+            .asFunction<GlEnablei>()) as void Function(int, int)?;
   }
   glDisablei = tryCall(
-      () => lib.lookupFunction<GlDisableiNative, GlDisablei>('glDisablei'));
+      () => lib.lookupFunction<GlDisableiNative, GlDisablei>('glDisablei')) as void Function(int, int)?;
   if (glDisablei == null) {
     glDisablei = tryCall(() =>
         Pointer<NativeFunction<GlDisableiNative>>.fromAddress(
                 _glGetProcAddress('glDisablei'))
-            .asFunction<GlDisablei>());
+            .asFunction<GlDisablei>()) as void Function(int, int)?;
   }
   glIsEnabledi = tryCall(() =>
-      lib.lookupFunction<GlIsEnablediNative, GlIsEnabledi>('glIsEnabledi'));
+      lib.lookupFunction<GlIsEnablediNative, GlIsEnabledi>('glIsEnabledi')) as int Function(int, int)?;
   if (glIsEnabledi == null) {
     glIsEnabledi = tryCall(() =>
         Pointer<NativeFunction<GlIsEnablediNative>>.fromAddress(
                 _glGetProcAddress('glIsEnabledi'))
-            .asFunction<GlIsEnabledi>());
+            .asFunction<GlIsEnabledi>()) as int Function(int, int)?;
   }
   glBeginTransformFeedback = tryCall(() => lib.lookupFunction<
       GlBeginTransformFeedbackNative,
-      GlBeginTransformFeedback>('glBeginTransformFeedback'));
+      GlBeginTransformFeedback>('glBeginTransformFeedback')) as void Function(int)?;
   if (glBeginTransformFeedback == null) {
     glBeginTransformFeedback = tryCall(() =>
         Pointer<NativeFunction<GlBeginTransformFeedbackNative>>.fromAddress(
                 _glGetProcAddress('glBeginTransformFeedback'))
-            .asFunction<GlBeginTransformFeedback>());
+            .asFunction<GlBeginTransformFeedback>()) as void Function(int)?;
   }
   glEndTransformFeedback = tryCall(() =>
       lib.lookupFunction<GlEndTransformFeedbackNative, GlEndTransformFeedback>(
-          'glEndTransformFeedback'));
+          'glEndTransformFeedback')) as void Function()?;
   if (glEndTransformFeedback == null) {
     glEndTransformFeedback = tryCall(() =>
         Pointer<NativeFunction<GlEndTransformFeedbackNative>>.fromAddress(
                 _glGetProcAddress('glEndTransformFeedback'))
-            .asFunction<GlEndTransformFeedback>());
+            .asFunction<GlEndTransformFeedback>()) as void Function()?;
   }
   glBindBufferRange = tryCall(() =>
       lib.lookupFunction<GlBindBufferRangeNative, GlBindBufferRange>(
-          'glBindBufferRange'));
+          'glBindBufferRange')) as void Function(int, int, int, int, int)?;
   if (glBindBufferRange == null) {
     glBindBufferRange = tryCall(() =>
         Pointer<NativeFunction<GlBindBufferRangeNative>>.fromAddress(
                 _glGetProcAddress('glBindBufferRange'))
-            .asFunction<GlBindBufferRange>());
+            .asFunction<GlBindBufferRange>()) as void Function(int, int, int, int, int)?;
   }
   glBindBufferBase = tryCall(() =>
       lib.lookupFunction<GlBindBufferBaseNative, GlBindBufferBase>(
-          'glBindBufferBase'));
+          'glBindBufferBase')) as void Function(int, int, int)?;
   if (glBindBufferBase == null) {
     glBindBufferBase = tryCall(() =>
         Pointer<NativeFunction<GlBindBufferBaseNative>>.fromAddress(
                 _glGetProcAddress('glBindBufferBase'))
-            .asFunction<GlBindBufferBase>());
+            .asFunction<GlBindBufferBase>()) as void Function(int, int, int)?;
   }
   glTransformFeedbackVaryings = tryCall(() => lib.lookupFunction<
       GlTransformFeedbackVaryingsNative,
-      GlTransformFeedbackVaryings>('glTransformFeedbackVaryings'));
+      GlTransformFeedbackVaryings>('glTransformFeedbackVaryings')) as void Function(int, int, Pointer<NativeType>, int)?;
   if (glTransformFeedbackVaryings == null) {
     glTransformFeedbackVaryings = tryCall(() =>
         Pointer<NativeFunction<GlTransformFeedbackVaryingsNative>>.fromAddress(
                 _glGetProcAddress('glTransformFeedbackVaryings'))
-            .asFunction<GlTransformFeedbackVaryings>());
+            .asFunction<GlTransformFeedbackVaryings>()) as void Function(int, int, Pointer<NativeType>, int)?;
   }
   glGetTransformFeedbackVarying = tryCall(() => lib.lookupFunction<
       GlGetTransformFeedbackVaryingNative,
-      GlGetTransformFeedbackVarying>('glGetTransformFeedbackVarying'));
+      GlGetTransformFeedbackVarying>('glGetTransformFeedbackVarying')) as void Function(int, int, int, Pointer<Int32>, Pointer<Int32>, Pointer<Uint32>, Pointer<NativeType>)?;
   if (glGetTransformFeedbackVarying == null) {
     glGetTransformFeedbackVarying = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetTransformFeedbackVaryingNative>>.fromAddress(
             _glGetProcAddress('glGetTransformFeedbackVarying'))
-        .asFunction<GlGetTransformFeedbackVarying>());
+        .asFunction<GlGetTransformFeedbackVarying>()) as void Function(int, int, int, Pointer<Int32>, Pointer<Int32>, Pointer<Uint32>, Pointer<NativeType>)?;
   }
   glClampColor = tryCall(() =>
-      lib.lookupFunction<GlClampColorNative, GlClampColor>('glClampColor'));
+      lib.lookupFunction<GlClampColorNative, GlClampColor>('glClampColor')) as void Function(int, int)?;
   if (glClampColor == null) {
     glClampColor = tryCall(() =>
         Pointer<NativeFunction<GlClampColorNative>>.fromAddress(
                 _glGetProcAddress('glClampColor'))
-            .asFunction<GlClampColor>());
+            .asFunction<GlClampColor>()) as void Function(int, int)?;
   }
   glBeginConditionalRender = tryCall(() => lib.lookupFunction<
       GlBeginConditionalRenderNative,
-      GlBeginConditionalRender>('glBeginConditionalRender'));
+      GlBeginConditionalRender>('glBeginConditionalRender')) as void Function(int, int)?;
   if (glBeginConditionalRender == null) {
     glBeginConditionalRender = tryCall(() =>
         Pointer<NativeFunction<GlBeginConditionalRenderNative>>.fromAddress(
                 _glGetProcAddress('glBeginConditionalRender'))
-            .asFunction<GlBeginConditionalRender>());
+            .asFunction<GlBeginConditionalRender>()) as void Function(int, int)?;
   }
   glEndConditionalRender = tryCall(() =>
       lib.lookupFunction<GlEndConditionalRenderNative, GlEndConditionalRender>(
-          'glEndConditionalRender'));
+          'glEndConditionalRender')) as void Function()?;
   if (glEndConditionalRender == null) {
     glEndConditionalRender = tryCall(() =>
         Pointer<NativeFunction<GlEndConditionalRenderNative>>.fromAddress(
                 _glGetProcAddress('glEndConditionalRender'))
-            .asFunction<GlEndConditionalRender>());
+            .asFunction<GlEndConditionalRender>()) as void Function()?;
   }
   glVertexAttribIPointer = tryCall(() =>
       lib.lookupFunction<GlVertexAttribIPointerNative, GlVertexAttribIPointer>(
-          'glVertexAttribIPointer'));
+          'glVertexAttribIPointer')) as void Function(int, int, int, int, int)?;
   if (glVertexAttribIPointer == null) {
     glVertexAttribIPointer = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribIPointerNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribIPointer'))
-            .asFunction<GlVertexAttribIPointer>());
+            .asFunction<GlVertexAttribIPointer>()) as void Function(int, int, int, int, int)?;
   }
   glGetVertexAttribIiv = tryCall(() =>
       lib.lookupFunction<GlGetVertexAttribIivNative, GlGetVertexAttribIiv>(
-          'glGetVertexAttribIiv'));
+          'glGetVertexAttribIiv')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetVertexAttribIiv == null) {
     glGetVertexAttribIiv = tryCall(() =>
         Pointer<NativeFunction<GlGetVertexAttribIivNative>>.fromAddress(
                 _glGetProcAddress('glGetVertexAttribIiv'))
-            .asFunction<GlGetVertexAttribIiv>());
+            .asFunction<GlGetVertexAttribIiv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glGetVertexAttribIuiv = tryCall(() =>
       lib.lookupFunction<GlGetVertexAttribIuivNative, GlGetVertexAttribIuiv>(
-          'glGetVertexAttribIuiv'));
+          'glGetVertexAttribIuiv')) as void Function(int, int, Pointer<Uint32>)?;
   if (glGetVertexAttribIuiv == null) {
     glGetVertexAttribIuiv = tryCall(() =>
         Pointer<NativeFunction<GlGetVertexAttribIuivNative>>.fromAddress(
                 _glGetProcAddress('glGetVertexAttribIuiv'))
-            .asFunction<GlGetVertexAttribIuiv>());
+            .asFunction<GlGetVertexAttribIuiv>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glVertexAttribI1i = tryCall(() =>
       lib.lookupFunction<GlVertexAttribI1iNative, GlVertexAttribI1i>(
-          'glVertexAttribI1i'));
+          'glVertexAttribI1i')) as void Function(int, int)?;
   if (glVertexAttribI1i == null) {
     glVertexAttribI1i = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribI1iNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribI1i'))
-            .asFunction<GlVertexAttribI1i>());
+            .asFunction<GlVertexAttribI1i>()) as void Function(int, int)?;
   }
   glVertexAttribI2i = tryCall(() =>
       lib.lookupFunction<GlVertexAttribI2iNative, GlVertexAttribI2i>(
-          'glVertexAttribI2i'));
+          'glVertexAttribI2i')) as void Function(int, int, int)?;
   if (glVertexAttribI2i == null) {
     glVertexAttribI2i = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribI2iNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribI2i'))
-            .asFunction<GlVertexAttribI2i>());
+            .asFunction<GlVertexAttribI2i>()) as void Function(int, int, int)?;
   }
   glVertexAttribI3i = tryCall(() =>
       lib.lookupFunction<GlVertexAttribI3iNative, GlVertexAttribI3i>(
-          'glVertexAttribI3i'));
+          'glVertexAttribI3i')) as void Function(int, int, int, int)?;
   if (glVertexAttribI3i == null) {
     glVertexAttribI3i = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribI3iNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribI3i'))
-            .asFunction<GlVertexAttribI3i>());
+            .asFunction<GlVertexAttribI3i>()) as void Function(int, int, int, int)?;
   }
   glVertexAttribI4i = tryCall(() =>
       lib.lookupFunction<GlVertexAttribI4iNative, GlVertexAttribI4i>(
-          'glVertexAttribI4i'));
+          'glVertexAttribI4i')) as void Function(int, int, int, int, int)?;
   if (glVertexAttribI4i == null) {
     glVertexAttribI4i = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribI4iNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribI4i'))
-            .asFunction<GlVertexAttribI4i>());
+            .asFunction<GlVertexAttribI4i>()) as void Function(int, int, int, int, int)?;
   }
   glVertexAttribI1ui = tryCall(() =>
       lib.lookupFunction<GlVertexAttribI1uiNative, GlVertexAttribI1ui>(
-          'glVertexAttribI1ui'));
+          'glVertexAttribI1ui')) as void Function(int, int)?;
   if (glVertexAttribI1ui == null) {
     glVertexAttribI1ui = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribI1uiNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribI1ui'))
-            .asFunction<GlVertexAttribI1ui>());
+            .asFunction<GlVertexAttribI1ui>()) as void Function(int, int)?;
   }
   glVertexAttribI2ui = tryCall(() =>
       lib.lookupFunction<GlVertexAttribI2uiNative, GlVertexAttribI2ui>(
-          'glVertexAttribI2ui'));
+          'glVertexAttribI2ui')) as void Function(int, int, int)?;
   if (glVertexAttribI2ui == null) {
     glVertexAttribI2ui = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribI2uiNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribI2ui'))
-            .asFunction<GlVertexAttribI2ui>());
+            .asFunction<GlVertexAttribI2ui>()) as void Function(int, int, int)?;
   }
   glVertexAttribI3ui = tryCall(() =>
       lib.lookupFunction<GlVertexAttribI3uiNative, GlVertexAttribI3ui>(
-          'glVertexAttribI3ui'));
+          'glVertexAttribI3ui')) as void Function(int, int, int, int)?;
   if (glVertexAttribI3ui == null) {
     glVertexAttribI3ui = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribI3uiNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribI3ui'))
-            .asFunction<GlVertexAttribI3ui>());
+            .asFunction<GlVertexAttribI3ui>()) as void Function(int, int, int, int)?;
   }
   glVertexAttribI4ui = tryCall(() =>
       lib.lookupFunction<GlVertexAttribI4uiNative, GlVertexAttribI4ui>(
-          'glVertexAttribI4ui'));
+          'glVertexAttribI4ui')) as void Function(int, int, int, int, int)?;
   if (glVertexAttribI4ui == null) {
     glVertexAttribI4ui = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribI4uiNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribI4ui'))
-            .asFunction<GlVertexAttribI4ui>());
+            .asFunction<GlVertexAttribI4ui>()) as void Function(int, int, int, int, int)?;
   }
   glVertexAttribI1iv = tryCall(() =>
       lib.lookupFunction<GlVertexAttribI1ivNative, GlVertexAttribI1iv>(
-          'glVertexAttribI1iv'));
+          'glVertexAttribI1iv')) as void Function(int, Pointer<Int32>)?;
   if (glVertexAttribI1iv == null) {
     glVertexAttribI1iv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribI1ivNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribI1iv'))
-            .asFunction<GlVertexAttribI1iv>());
+            .asFunction<GlVertexAttribI1iv>()) as void Function(int, Pointer<Int32>)?;
   }
   glVertexAttribI2iv = tryCall(() =>
       lib.lookupFunction<GlVertexAttribI2ivNative, GlVertexAttribI2iv>(
-          'glVertexAttribI2iv'));
+          'glVertexAttribI2iv')) as void Function(int, Pointer<Int32>)?;
   if (glVertexAttribI2iv == null) {
     glVertexAttribI2iv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribI2ivNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribI2iv'))
-            .asFunction<GlVertexAttribI2iv>());
+            .asFunction<GlVertexAttribI2iv>()) as void Function(int, Pointer<Int32>)?;
   }
   glVertexAttribI3iv = tryCall(() =>
       lib.lookupFunction<GlVertexAttribI3ivNative, GlVertexAttribI3iv>(
-          'glVertexAttribI3iv'));
+          'glVertexAttribI3iv')) as void Function(int, Pointer<Int32>)?;
   if (glVertexAttribI3iv == null) {
     glVertexAttribI3iv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribI3ivNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribI3iv'))
-            .asFunction<GlVertexAttribI3iv>());
+            .asFunction<GlVertexAttribI3iv>()) as void Function(int, Pointer<Int32>)?;
   }
   glVertexAttribI4iv = tryCall(() =>
       lib.lookupFunction<GlVertexAttribI4ivNative, GlVertexAttribI4iv>(
-          'glVertexAttribI4iv'));
+          'glVertexAttribI4iv')) as void Function(int, Pointer<Int32>)?;
   if (glVertexAttribI4iv == null) {
     glVertexAttribI4iv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribI4ivNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribI4iv'))
-            .asFunction<GlVertexAttribI4iv>());
+            .asFunction<GlVertexAttribI4iv>()) as void Function(int, Pointer<Int32>)?;
   }
   glVertexAttribI1uiv = tryCall(() =>
       lib.lookupFunction<GlVertexAttribI1uivNative, GlVertexAttribI1uiv>(
-          'glVertexAttribI1uiv'));
+          'glVertexAttribI1uiv')) as void Function(int, Pointer<Uint32>)?;
   if (glVertexAttribI1uiv == null) {
     glVertexAttribI1uiv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribI1uivNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribI1uiv'))
-            .asFunction<GlVertexAttribI1uiv>());
+            .asFunction<GlVertexAttribI1uiv>()) as void Function(int, Pointer<Uint32>)?;
   }
   glVertexAttribI2uiv = tryCall(() =>
       lib.lookupFunction<GlVertexAttribI2uivNative, GlVertexAttribI2uiv>(
-          'glVertexAttribI2uiv'));
+          'glVertexAttribI2uiv')) as void Function(int, Pointer<Uint32>)?;
   if (glVertexAttribI2uiv == null) {
     glVertexAttribI2uiv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribI2uivNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribI2uiv'))
-            .asFunction<GlVertexAttribI2uiv>());
+            .asFunction<GlVertexAttribI2uiv>()) as void Function(int, Pointer<Uint32>)?;
   }
   glVertexAttribI3uiv = tryCall(() =>
       lib.lookupFunction<GlVertexAttribI3uivNative, GlVertexAttribI3uiv>(
-          'glVertexAttribI3uiv'));
+          'glVertexAttribI3uiv')) as void Function(int, Pointer<Uint32>)?;
   if (glVertexAttribI3uiv == null) {
     glVertexAttribI3uiv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribI3uivNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribI3uiv'))
-            .asFunction<GlVertexAttribI3uiv>());
+            .asFunction<GlVertexAttribI3uiv>()) as void Function(int, Pointer<Uint32>)?;
   }
   glVertexAttribI4uiv = tryCall(() =>
       lib.lookupFunction<GlVertexAttribI4uivNative, GlVertexAttribI4uiv>(
-          'glVertexAttribI4uiv'));
+          'glVertexAttribI4uiv')) as void Function(int, Pointer<Uint32>)?;
   if (glVertexAttribI4uiv == null) {
     glVertexAttribI4uiv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribI4uivNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribI4uiv'))
-            .asFunction<GlVertexAttribI4uiv>());
+            .asFunction<GlVertexAttribI4uiv>()) as void Function(int, Pointer<Uint32>)?;
   }
   glVertexAttribI4bv = tryCall(() =>
       lib.lookupFunction<GlVertexAttribI4bvNative, GlVertexAttribI4bv>(
-          'glVertexAttribI4bv'));
+          'glVertexAttribI4bv')) as void Function(int, Pointer<Int8>)?;
   if (glVertexAttribI4bv == null) {
     glVertexAttribI4bv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribI4bvNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribI4bv'))
-            .asFunction<GlVertexAttribI4bv>());
+            .asFunction<GlVertexAttribI4bv>()) as void Function(int, Pointer<Int8>)?;
   }
   glVertexAttribI4sv = tryCall(() =>
       lib.lookupFunction<GlVertexAttribI4svNative, GlVertexAttribI4sv>(
-          'glVertexAttribI4sv'));
+          'glVertexAttribI4sv')) as void Function(int, Pointer<Int16>)?;
   if (glVertexAttribI4sv == null) {
     glVertexAttribI4sv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribI4svNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribI4sv'))
-            .asFunction<GlVertexAttribI4sv>());
+            .asFunction<GlVertexAttribI4sv>()) as void Function(int, Pointer<Int16>)?;
   }
   glVertexAttribI4ubv = tryCall(() =>
       lib.lookupFunction<GlVertexAttribI4ubvNative, GlVertexAttribI4ubv>(
-          'glVertexAttribI4ubv'));
+          'glVertexAttribI4ubv')) as void Function(int, Pointer<NativeType>)?;
   if (glVertexAttribI4ubv == null) {
     glVertexAttribI4ubv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribI4ubvNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribI4ubv'))
-            .asFunction<GlVertexAttribI4ubv>());
+            .asFunction<GlVertexAttribI4ubv>()) as void Function(int, Pointer<NativeType>)?;
   }
   glVertexAttribI4usv = tryCall(() =>
       lib.lookupFunction<GlVertexAttribI4usvNative, GlVertexAttribI4usv>(
-          'glVertexAttribI4usv'));
+          'glVertexAttribI4usv')) as void Function(int, Pointer<Uint16>)?;
   if (glVertexAttribI4usv == null) {
     glVertexAttribI4usv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribI4usvNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribI4usv'))
-            .asFunction<GlVertexAttribI4usv>());
+            .asFunction<GlVertexAttribI4usv>()) as void Function(int, Pointer<Uint16>)?;
   }
   glGetUniformuiv = tryCall(() =>
       lib.lookupFunction<GlGetUniformuivNative, GlGetUniformuiv>(
-          'glGetUniformuiv'));
+          'glGetUniformuiv')) as void Function(int, int, Pointer<Uint32>)?;
   if (glGetUniformuiv == null) {
     glGetUniformuiv = tryCall(() =>
         Pointer<NativeFunction<GlGetUniformuivNative>>.fromAddress(
                 _glGetProcAddress('glGetUniformuiv'))
-            .asFunction<GlGetUniformuiv>());
+            .asFunction<GlGetUniformuiv>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glBindFragDataLocation = tryCall(() =>
       lib.lookupFunction<GlBindFragDataLocationNative, GlBindFragDataLocation>(
-          'glBindFragDataLocation'));
+          'glBindFragDataLocation')) as void Function(int, int, Pointer<NativeType>)?;
   if (glBindFragDataLocation == null) {
     glBindFragDataLocation = tryCall(() =>
         Pointer<NativeFunction<GlBindFragDataLocationNative>>.fromAddress(
                 _glGetProcAddress('glBindFragDataLocation'))
-            .asFunction<GlBindFragDataLocation>());
+            .asFunction<GlBindFragDataLocation>()) as void Function(int, int, Pointer<NativeType>)?;
   }
   glGetFragDataLocation = tryCall(() =>
       lib.lookupFunction<GlGetFragDataLocationNative, GlGetFragDataLocation>(
-          'glGetFragDataLocation'));
+          'glGetFragDataLocation')) as int Function(int, Pointer<NativeType>)?;
   if (glGetFragDataLocation == null) {
     glGetFragDataLocation = tryCall(() =>
         Pointer<NativeFunction<GlGetFragDataLocationNative>>.fromAddress(
                 _glGetProcAddress('glGetFragDataLocation'))
-            .asFunction<GlGetFragDataLocation>());
+            .asFunction<GlGetFragDataLocation>()) as int Function(int, Pointer<NativeType>)?;
   }
   glUniform1ui = tryCall(() =>
-      lib.lookupFunction<GlUniform1uiNative, GlUniform1ui>('glUniform1ui'));
+      lib.lookupFunction<GlUniform1uiNative, GlUniform1ui>('glUniform1ui')) as void Function(int, int)?;
   if (glUniform1ui == null) {
     glUniform1ui = tryCall(() =>
         Pointer<NativeFunction<GlUniform1uiNative>>.fromAddress(
                 _glGetProcAddress('glUniform1ui'))
-            .asFunction<GlUniform1ui>());
+            .asFunction<GlUniform1ui>()) as void Function(int, int)?;
   }
   glUniform2ui = tryCall(() =>
-      lib.lookupFunction<GlUniform2uiNative, GlUniform2ui>('glUniform2ui'));
+      lib.lookupFunction<GlUniform2uiNative, GlUniform2ui>('glUniform2ui')) as void Function(int, int, int)?;
   if (glUniform2ui == null) {
     glUniform2ui = tryCall(() =>
         Pointer<NativeFunction<GlUniform2uiNative>>.fromAddress(
                 _glGetProcAddress('glUniform2ui'))
-            .asFunction<GlUniform2ui>());
+            .asFunction<GlUniform2ui>()) as void Function(int, int, int)?;
   }
   glUniform3ui = tryCall(() =>
-      lib.lookupFunction<GlUniform3uiNative, GlUniform3ui>('glUniform3ui'));
+      lib.lookupFunction<GlUniform3uiNative, GlUniform3ui>('glUniform3ui')) as void Function(int, int, int, int)?;
   if (glUniform3ui == null) {
     glUniform3ui = tryCall(() =>
         Pointer<NativeFunction<GlUniform3uiNative>>.fromAddress(
                 _glGetProcAddress('glUniform3ui'))
-            .asFunction<GlUniform3ui>());
+            .asFunction<GlUniform3ui>()) as void Function(int, int, int, int)?;
   }
   glUniform4ui = tryCall(() =>
-      lib.lookupFunction<GlUniform4uiNative, GlUniform4ui>('glUniform4ui'));
+      lib.lookupFunction<GlUniform4uiNative, GlUniform4ui>('glUniform4ui')) as void Function(int, int, int, int, int)?;
   if (glUniform4ui == null) {
     glUniform4ui = tryCall(() =>
         Pointer<NativeFunction<GlUniform4uiNative>>.fromAddress(
                 _glGetProcAddress('glUniform4ui'))
-            .asFunction<GlUniform4ui>());
+            .asFunction<GlUniform4ui>()) as void Function(int, int, int, int, int)?;
   }
   glUniform1uiv = tryCall(() =>
-      lib.lookupFunction<GlUniform1uivNative, GlUniform1uiv>('glUniform1uiv'));
+      lib.lookupFunction<GlUniform1uivNative, GlUniform1uiv>('glUniform1uiv')) as void Function(int, int, Pointer<Uint32>)?;
   if (glUniform1uiv == null) {
     glUniform1uiv = tryCall(() =>
         Pointer<NativeFunction<GlUniform1uivNative>>.fromAddress(
                 _glGetProcAddress('glUniform1uiv'))
-            .asFunction<GlUniform1uiv>());
+            .asFunction<GlUniform1uiv>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glUniform2uiv = tryCall(() =>
-      lib.lookupFunction<GlUniform2uivNative, GlUniform2uiv>('glUniform2uiv'));
+      lib.lookupFunction<GlUniform2uivNative, GlUniform2uiv>('glUniform2uiv')) as void Function(int, int, Pointer<Uint32>)?;
   if (glUniform2uiv == null) {
     glUniform2uiv = tryCall(() =>
         Pointer<NativeFunction<GlUniform2uivNative>>.fromAddress(
                 _glGetProcAddress('glUniform2uiv'))
-            .asFunction<GlUniform2uiv>());
+            .asFunction<GlUniform2uiv>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glUniform3uiv = tryCall(() =>
-      lib.lookupFunction<GlUniform3uivNative, GlUniform3uiv>('glUniform3uiv'));
+      lib.lookupFunction<GlUniform3uivNative, GlUniform3uiv>('glUniform3uiv')) as void Function(int, int, Pointer<Uint32>)?;
   if (glUniform3uiv == null) {
     glUniform3uiv = tryCall(() =>
         Pointer<NativeFunction<GlUniform3uivNative>>.fromAddress(
                 _glGetProcAddress('glUniform3uiv'))
-            .asFunction<GlUniform3uiv>());
+            .asFunction<GlUniform3uiv>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glUniform4uiv = tryCall(() =>
-      lib.lookupFunction<GlUniform4uivNative, GlUniform4uiv>('glUniform4uiv'));
+      lib.lookupFunction<GlUniform4uivNative, GlUniform4uiv>('glUniform4uiv')) as void Function(int, int, Pointer<Uint32>)?;
   if (glUniform4uiv == null) {
     glUniform4uiv = tryCall(() =>
         Pointer<NativeFunction<GlUniform4uivNative>>.fromAddress(
                 _glGetProcAddress('glUniform4uiv'))
-            .asFunction<GlUniform4uiv>());
+            .asFunction<GlUniform4uiv>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glTexParameterIiv = tryCall(() =>
       lib.lookupFunction<GlTexParameterIivNative, GlTexParameterIiv>(
-          'glTexParameterIiv'));
+          'glTexParameterIiv')) as void Function(int, int, Pointer<Int32>)?;
   if (glTexParameterIiv == null) {
     glTexParameterIiv = tryCall(() =>
         Pointer<NativeFunction<GlTexParameterIivNative>>.fromAddress(
                 _glGetProcAddress('glTexParameterIiv'))
-            .asFunction<GlTexParameterIiv>());
+            .asFunction<GlTexParameterIiv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glTexParameterIuiv = tryCall(() =>
       lib.lookupFunction<GlTexParameterIuivNative, GlTexParameterIuiv>(
-          'glTexParameterIuiv'));
+          'glTexParameterIuiv')) as void Function(int, int, Pointer<Uint32>)?;
   if (glTexParameterIuiv == null) {
     glTexParameterIuiv = tryCall(() =>
         Pointer<NativeFunction<GlTexParameterIuivNative>>.fromAddress(
                 _glGetProcAddress('glTexParameterIuiv'))
-            .asFunction<GlTexParameterIuiv>());
+            .asFunction<GlTexParameterIuiv>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glGetTexParameterIiv = tryCall(() =>
       lib.lookupFunction<GlGetTexParameterIivNative, GlGetTexParameterIiv>(
-          'glGetTexParameterIiv'));
+          'glGetTexParameterIiv')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetTexParameterIiv == null) {
     glGetTexParameterIiv = tryCall(() =>
         Pointer<NativeFunction<GlGetTexParameterIivNative>>.fromAddress(
                 _glGetProcAddress('glGetTexParameterIiv'))
-            .asFunction<GlGetTexParameterIiv>());
+            .asFunction<GlGetTexParameterIiv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glGetTexParameterIuiv = tryCall(() =>
       lib.lookupFunction<GlGetTexParameterIuivNative, GlGetTexParameterIuiv>(
-          'glGetTexParameterIuiv'));
+          'glGetTexParameterIuiv')) as void Function(int, int, Pointer<Uint32>)?;
   if (glGetTexParameterIuiv == null) {
     glGetTexParameterIuiv = tryCall(() =>
         Pointer<NativeFunction<GlGetTexParameterIuivNative>>.fromAddress(
                 _glGetProcAddress('glGetTexParameterIuiv'))
-            .asFunction<GlGetTexParameterIuiv>());
+            .asFunction<GlGetTexParameterIuiv>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glClearBufferiv = tryCall(() =>
       lib.lookupFunction<GlClearBufferivNative, GlClearBufferiv>(
-          'glClearBufferiv'));
+          'glClearBufferiv')) as void Function(int, int, Pointer<Int32>)?;
   if (glClearBufferiv == null) {
     glClearBufferiv = tryCall(() =>
         Pointer<NativeFunction<GlClearBufferivNative>>.fromAddress(
                 _glGetProcAddress('glClearBufferiv'))
-            .asFunction<GlClearBufferiv>());
+            .asFunction<GlClearBufferiv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glClearBufferuiv = tryCall(() =>
       lib.lookupFunction<GlClearBufferuivNative, GlClearBufferuiv>(
-          'glClearBufferuiv'));
+          'glClearBufferuiv')) as void Function(int, int, Pointer<Uint32>)?;
   if (glClearBufferuiv == null) {
     glClearBufferuiv = tryCall(() =>
         Pointer<NativeFunction<GlClearBufferuivNative>>.fromAddress(
                 _glGetProcAddress('glClearBufferuiv'))
-            .asFunction<GlClearBufferuiv>());
+            .asFunction<GlClearBufferuiv>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glClearBufferfv = tryCall(() =>
       lib.lookupFunction<GlClearBufferfvNative, GlClearBufferfv>(
-          'glClearBufferfv'));
+          'glClearBufferfv')) as void Function(int, int, Pointer<Float>)?;
   if (glClearBufferfv == null) {
     glClearBufferfv = tryCall(() =>
         Pointer<NativeFunction<GlClearBufferfvNative>>.fromAddress(
                 _glGetProcAddress('glClearBufferfv'))
-            .asFunction<GlClearBufferfv>());
+            .asFunction<GlClearBufferfv>()) as void Function(int, int, Pointer<Float>)?;
   }
   glClearBufferfi = tryCall(() =>
       lib.lookupFunction<GlClearBufferfiNative, GlClearBufferfi>(
-          'glClearBufferfi'));
+          'glClearBufferfi')) as void Function(int, int, double, int)?;
   if (glClearBufferfi == null) {
     glClearBufferfi = tryCall(() =>
         Pointer<NativeFunction<GlClearBufferfiNative>>.fromAddress(
                 _glGetProcAddress('glClearBufferfi'))
-            .asFunction<GlClearBufferfi>());
+            .asFunction<GlClearBufferfi>()) as void Function(int, int, double, int)?;
   }
   glGetStringi = tryCall(() =>
-      lib.lookupFunction<GlGetStringiNative, GlGetStringi>('glGetStringi'));
+      lib.lookupFunction<GlGetStringiNative, GlGetStringi>('glGetStringi')) as Pointer<NativeType> Function(int, int)?;
   if (glGetStringi == null) {
     glGetStringi = tryCall(() =>
         Pointer<NativeFunction<GlGetStringiNative>>.fromAddress(
                 _glGetProcAddress('glGetStringi'))
-            .asFunction<GlGetStringi>());
+            .asFunction<GlGetStringi>()) as Pointer<NativeType> Function(int, int)?;
   }
   glIsRenderbuffer = tryCall(() =>
       lib.lookupFunction<GlIsRenderbufferNative, GlIsRenderbuffer>(
-          'glIsRenderbuffer'));
+          'glIsRenderbuffer')) as int Function(int)?;
   if (glIsRenderbuffer == null) {
     glIsRenderbuffer = tryCall(() =>
         Pointer<NativeFunction<GlIsRenderbufferNative>>.fromAddress(
                 _glGetProcAddress('glIsRenderbuffer'))
-            .asFunction<GlIsRenderbuffer>());
+            .asFunction<GlIsRenderbuffer>()) as int Function(int)?;
   }
   glBindRenderbuffer = tryCall(() =>
       lib.lookupFunction<GlBindRenderbufferNative, GlBindRenderbuffer>(
-          'glBindRenderbuffer'));
+          'glBindRenderbuffer')) as void Function(int, int)?;
   if (glBindRenderbuffer == null) {
     glBindRenderbuffer = tryCall(() =>
         Pointer<NativeFunction<GlBindRenderbufferNative>>.fromAddress(
                 _glGetProcAddress('glBindRenderbuffer'))
-            .asFunction<GlBindRenderbuffer>());
+            .asFunction<GlBindRenderbuffer>()) as void Function(int, int)?;
   }
   glDeleteRenderbuffers = tryCall(() =>
       lib.lookupFunction<GlDeleteRenderbuffersNative, GlDeleteRenderbuffers>(
-          'glDeleteRenderbuffers'));
+          'glDeleteRenderbuffers')) as void Function(int, Pointer<Uint32>)?;
   if (glDeleteRenderbuffers == null) {
     glDeleteRenderbuffers = tryCall(() =>
         Pointer<NativeFunction<GlDeleteRenderbuffersNative>>.fromAddress(
                 _glGetProcAddress('glDeleteRenderbuffers'))
-            .asFunction<GlDeleteRenderbuffers>());
+            .asFunction<GlDeleteRenderbuffers>()) as void Function(int, Pointer<Uint32>)?;
   }
   glGenRenderbuffers = tryCall(() =>
       lib.lookupFunction<GlGenRenderbuffersNative, GlGenRenderbuffers>(
-          'glGenRenderbuffers'));
+          'glGenRenderbuffers')) as void Function(int, Pointer<Uint32>)?;
   if (glGenRenderbuffers == null) {
     glGenRenderbuffers = tryCall(() =>
         Pointer<NativeFunction<GlGenRenderbuffersNative>>.fromAddress(
                 _glGetProcAddress('glGenRenderbuffers'))
-            .asFunction<GlGenRenderbuffers>());
+            .asFunction<GlGenRenderbuffers>()) as void Function(int, Pointer<Uint32>)?;
   }
   glRenderbufferStorage = tryCall(() =>
       lib.lookupFunction<GlRenderbufferStorageNative, GlRenderbufferStorage>(
-          'glRenderbufferStorage'));
+          'glRenderbufferStorage')) as void Function(int, int, int, int)?;
   if (glRenderbufferStorage == null) {
     glRenderbufferStorage = tryCall(() =>
         Pointer<NativeFunction<GlRenderbufferStorageNative>>.fromAddress(
                 _glGetProcAddress('glRenderbufferStorage'))
-            .asFunction<GlRenderbufferStorage>());
+            .asFunction<GlRenderbufferStorage>()) as void Function(int, int, int, int)?;
   }
   glGetRenderbufferParameteriv = tryCall(() => lib.lookupFunction<
       GlGetRenderbufferParameterivNative,
-      GlGetRenderbufferParameteriv>('glGetRenderbufferParameteriv'));
+      GlGetRenderbufferParameteriv>('glGetRenderbufferParameteriv')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetRenderbufferParameteriv == null) {
     glGetRenderbufferParameteriv = tryCall(() =>
         Pointer<NativeFunction<GlGetRenderbufferParameterivNative>>.fromAddress(
                 _glGetProcAddress('glGetRenderbufferParameteriv'))
-            .asFunction<GlGetRenderbufferParameteriv>());
+            .asFunction<GlGetRenderbufferParameteriv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glIsFramebuffer = tryCall(() =>
       lib.lookupFunction<GlIsFramebufferNative, GlIsFramebuffer>(
-          'glIsFramebuffer'));
+          'glIsFramebuffer')) as int Function(int)?;
   if (glIsFramebuffer == null) {
     glIsFramebuffer = tryCall(() =>
         Pointer<NativeFunction<GlIsFramebufferNative>>.fromAddress(
                 _glGetProcAddress('glIsFramebuffer'))
-            .asFunction<GlIsFramebuffer>());
+            .asFunction<GlIsFramebuffer>()) as int Function(int)?;
   }
   glBindFramebuffer = tryCall(() =>
       lib.lookupFunction<GlBindFramebufferNative, GlBindFramebuffer>(
-          'glBindFramebuffer'));
+          'glBindFramebuffer')) as void Function(int, int)?;
   if (glBindFramebuffer == null) {
     glBindFramebuffer = tryCall(() =>
         Pointer<NativeFunction<GlBindFramebufferNative>>.fromAddress(
                 _glGetProcAddress('glBindFramebuffer'))
-            .asFunction<GlBindFramebuffer>());
+            .asFunction<GlBindFramebuffer>()) as void Function(int, int)?;
   }
   glDeleteFramebuffers = tryCall(() =>
       lib.lookupFunction<GlDeleteFramebuffersNative, GlDeleteFramebuffers>(
-          'glDeleteFramebuffers'));
+          'glDeleteFramebuffers')) as void Function(int, Pointer<Uint32>)?;
   if (glDeleteFramebuffers == null) {
     glDeleteFramebuffers = tryCall(() =>
         Pointer<NativeFunction<GlDeleteFramebuffersNative>>.fromAddress(
                 _glGetProcAddress('glDeleteFramebuffers'))
-            .asFunction<GlDeleteFramebuffers>());
+            .asFunction<GlDeleteFramebuffers>()) as void Function(int, Pointer<Uint32>)?;
   }
   glGenFramebuffers = tryCall(() =>
       lib.lookupFunction<GlGenFramebuffersNative, GlGenFramebuffers>(
-          'glGenFramebuffers'));
+          'glGenFramebuffers')) as void Function(int, Pointer<Uint32>)?;
   if (glGenFramebuffers == null) {
     glGenFramebuffers = tryCall(() =>
         Pointer<NativeFunction<GlGenFramebuffersNative>>.fromAddress(
                 _glGetProcAddress('glGenFramebuffers'))
-            .asFunction<GlGenFramebuffers>());
+            .asFunction<GlGenFramebuffers>()) as void Function(int, Pointer<Uint32>)?;
   }
   glCheckFramebufferStatus = tryCall(() => lib.lookupFunction<
       GlCheckFramebufferStatusNative,
-      GlCheckFramebufferStatus>('glCheckFramebufferStatus'));
+      GlCheckFramebufferStatus>('glCheckFramebufferStatus')) as int Function(int)?;
   if (glCheckFramebufferStatus == null) {
     glCheckFramebufferStatus = tryCall(() =>
         Pointer<NativeFunction<GlCheckFramebufferStatusNative>>.fromAddress(
                 _glGetProcAddress('glCheckFramebufferStatus'))
-            .asFunction<GlCheckFramebufferStatus>());
+            .asFunction<GlCheckFramebufferStatus>()) as int Function(int)?;
   }
   glFramebufferTexture1D = tryCall(() =>
       lib.lookupFunction<GlFramebufferTexture1DNative, GlFramebufferTexture1D>(
-          'glFramebufferTexture1D'));
+          'glFramebufferTexture1D')) as void Function(int, int, int, int, int)?;
   if (glFramebufferTexture1D == null) {
     glFramebufferTexture1D = tryCall(() =>
         Pointer<NativeFunction<GlFramebufferTexture1DNative>>.fromAddress(
                 _glGetProcAddress('glFramebufferTexture1D'))
-            .asFunction<GlFramebufferTexture1D>());
+            .asFunction<GlFramebufferTexture1D>()) as void Function(int, int, int, int, int)?;
   }
   glFramebufferTexture2D = tryCall(() =>
       lib.lookupFunction<GlFramebufferTexture2DNative, GlFramebufferTexture2D>(
-          'glFramebufferTexture2D'));
+          'glFramebufferTexture2D')) as void Function(int, int, int, int, int)?;
   if (glFramebufferTexture2D == null) {
     glFramebufferTexture2D = tryCall(() =>
         Pointer<NativeFunction<GlFramebufferTexture2DNative>>.fromAddress(
                 _glGetProcAddress('glFramebufferTexture2D'))
-            .asFunction<GlFramebufferTexture2D>());
+            .asFunction<GlFramebufferTexture2D>()) as void Function(int, int, int, int, int)?;
   }
   glFramebufferTexture3D = tryCall(() =>
       lib.lookupFunction<GlFramebufferTexture3DNative, GlFramebufferTexture3D>(
-          'glFramebufferTexture3D'));
+          'glFramebufferTexture3D')) as void Function(int, int, int, int, int, int)?;
   if (glFramebufferTexture3D == null) {
     glFramebufferTexture3D = tryCall(() =>
         Pointer<NativeFunction<GlFramebufferTexture3DNative>>.fromAddress(
                 _glGetProcAddress('glFramebufferTexture3D'))
-            .asFunction<GlFramebufferTexture3D>());
+            .asFunction<GlFramebufferTexture3D>()) as void Function(int, int, int, int, int, int)?;
   }
   glFramebufferRenderbuffer = tryCall(() => lib.lookupFunction<
       GlFramebufferRenderbufferNative,
-      GlFramebufferRenderbuffer>('glFramebufferRenderbuffer'));
+      GlFramebufferRenderbuffer>('glFramebufferRenderbuffer')) as void Function(int, int, int, int)?;
   if (glFramebufferRenderbuffer == null) {
     glFramebufferRenderbuffer = tryCall(() =>
         Pointer<NativeFunction<GlFramebufferRenderbufferNative>>.fromAddress(
                 _glGetProcAddress('glFramebufferRenderbuffer'))
-            .asFunction<GlFramebufferRenderbuffer>());
+            .asFunction<GlFramebufferRenderbuffer>()) as void Function(int, int, int, int)?;
   }
   glGetFramebufferAttachmentParameteriv = tryCall(() => lib.lookupFunction<
           GlGetFramebufferAttachmentParameterivNative,
           GlGetFramebufferAttachmentParameteriv>(
-      'glGetFramebufferAttachmentParameteriv'));
+      'glGetFramebufferAttachmentParameteriv')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glGetFramebufferAttachmentParameteriv == null) {
     glGetFramebufferAttachmentParameteriv = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetFramebufferAttachmentParameterivNative>>.fromAddress(
             _glGetProcAddress('glGetFramebufferAttachmentParameteriv'))
-        .asFunction<GlGetFramebufferAttachmentParameteriv>());
+        .asFunction<GlGetFramebufferAttachmentParameteriv>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glGenerateMipmap = tryCall(() =>
       lib.lookupFunction<GlGenerateMipmapNative, GlGenerateMipmap>(
-          'glGenerateMipmap'));
+          'glGenerateMipmap')) as void Function(int)?;
   if (glGenerateMipmap == null) {
     glGenerateMipmap = tryCall(() =>
         Pointer<NativeFunction<GlGenerateMipmapNative>>.fromAddress(
                 _glGetProcAddress('glGenerateMipmap'))
-            .asFunction<GlGenerateMipmap>());
+            .asFunction<GlGenerateMipmap>()) as void Function(int)?;
   }
   glBlitFramebuffer = tryCall(() =>
       lib.lookupFunction<GlBlitFramebufferNative, GlBlitFramebuffer>(
-          'glBlitFramebuffer'));
+          'glBlitFramebuffer')) as void Function(int, int, int, int, int, int, int, int, int, int)?;
   if (glBlitFramebuffer == null) {
     glBlitFramebuffer = tryCall(() =>
         Pointer<NativeFunction<GlBlitFramebufferNative>>.fromAddress(
                 _glGetProcAddress('glBlitFramebuffer'))
-            .asFunction<GlBlitFramebuffer>());
+            .asFunction<GlBlitFramebuffer>()) as void Function(int, int, int, int, int, int, int, int, int, int)?;
   }
   glRenderbufferStorageMultisample = tryCall(() => lib.lookupFunction<
       GlRenderbufferStorageMultisampleNative,
-      GlRenderbufferStorageMultisample>('glRenderbufferStorageMultisample'));
+      GlRenderbufferStorageMultisample>('glRenderbufferStorageMultisample')) as void Function(int, int, int, int, int)?;
   if (glRenderbufferStorageMultisample == null) {
     glRenderbufferStorageMultisample = tryCall(() => Pointer<
                 NativeFunction<
                     GlRenderbufferStorageMultisampleNative>>.fromAddress(
             _glGetProcAddress('glRenderbufferStorageMultisample'))
-        .asFunction<GlRenderbufferStorageMultisample>());
+        .asFunction<GlRenderbufferStorageMultisample>()) as void Function(int, int, int, int, int)?;
   }
   glFramebufferTextureLayer = tryCall(() => lib.lookupFunction<
       GlFramebufferTextureLayerNative,
-      GlFramebufferTextureLayer>('glFramebufferTextureLayer'));
+      GlFramebufferTextureLayer>('glFramebufferTextureLayer')) as void Function(int, int, int, int, int)?;
   if (glFramebufferTextureLayer == null) {
     glFramebufferTextureLayer = tryCall(() =>
         Pointer<NativeFunction<GlFramebufferTextureLayerNative>>.fromAddress(
                 _glGetProcAddress('glFramebufferTextureLayer'))
-            .asFunction<GlFramebufferTextureLayer>());
+            .asFunction<GlFramebufferTextureLayer>()) as void Function(int, int, int, int, int)?;
   }
   glMapBufferRange = tryCall(() =>
       lib.lookupFunction<GlMapBufferRangeNative, GlMapBufferRange>(
-          'glMapBufferRange'));
+          'glMapBufferRange')) as Pointer<NativeType> Function(int, int, int, int)?;
   if (glMapBufferRange == null) {
     glMapBufferRange = tryCall(() =>
         Pointer<NativeFunction<GlMapBufferRangeNative>>.fromAddress(
                 _glGetProcAddress('glMapBufferRange'))
-            .asFunction<GlMapBufferRange>());
+            .asFunction<GlMapBufferRange>()) as Pointer<NativeType> Function(int, int, int, int)?;
   }
   glFlushMappedBufferRange = tryCall(() => lib.lookupFunction<
       GlFlushMappedBufferRangeNative,
-      GlFlushMappedBufferRange>('glFlushMappedBufferRange'));
+      GlFlushMappedBufferRange>('glFlushMappedBufferRange')) as void Function(int, int, int)?;
   if (glFlushMappedBufferRange == null) {
     glFlushMappedBufferRange = tryCall(() =>
         Pointer<NativeFunction<GlFlushMappedBufferRangeNative>>.fromAddress(
                 _glGetProcAddress('glFlushMappedBufferRange'))
-            .asFunction<GlFlushMappedBufferRange>());
+            .asFunction<GlFlushMappedBufferRange>()) as void Function(int, int, int)?;
   }
   glBindVertexArray = tryCall(() =>
       lib.lookupFunction<GlBindVertexArrayNative, GlBindVertexArray>(
-          'glBindVertexArray'));
+          'glBindVertexArray')) as void Function(int)?;
   if (glBindVertexArray == null) {
     glBindVertexArray = tryCall(() =>
         Pointer<NativeFunction<GlBindVertexArrayNative>>.fromAddress(
                 _glGetProcAddress('glBindVertexArray'))
-            .asFunction<GlBindVertexArray>());
+            .asFunction<GlBindVertexArray>()) as void Function(int)?;
   }
   glDeleteVertexArrays = tryCall(() =>
       lib.lookupFunction<GlDeleteVertexArraysNative, GlDeleteVertexArrays>(
-          'glDeleteVertexArrays'));
+          'glDeleteVertexArrays')) as void Function(int, Pointer<Uint32>)?;
   if (glDeleteVertexArrays == null) {
     glDeleteVertexArrays = tryCall(() =>
         Pointer<NativeFunction<GlDeleteVertexArraysNative>>.fromAddress(
                 _glGetProcAddress('glDeleteVertexArrays'))
-            .asFunction<GlDeleteVertexArrays>());
+            .asFunction<GlDeleteVertexArrays>()) as void Function(int, Pointer<Uint32>)?;
   }
   glGenVertexArrays = tryCall(() =>
       lib.lookupFunction<GlGenVertexArraysNative, GlGenVertexArrays>(
-          'glGenVertexArrays'));
+          'glGenVertexArrays')) as void Function(int, Pointer<Uint32>)?;
   if (glGenVertexArrays == null) {
     glGenVertexArrays = tryCall(() =>
         Pointer<NativeFunction<GlGenVertexArraysNative>>.fromAddress(
                 _glGetProcAddress('glGenVertexArrays'))
-            .asFunction<GlGenVertexArrays>());
+            .asFunction<GlGenVertexArrays>()) as void Function(int, Pointer<Uint32>)?;
   }
   glIsVertexArray = tryCall(() =>
       lib.lookupFunction<GlIsVertexArrayNative, GlIsVertexArray>(
-          'glIsVertexArray'));
+          'glIsVertexArray')) as int Function(int)?;
   if (glIsVertexArray == null) {
     glIsVertexArray = tryCall(() =>
         Pointer<NativeFunction<GlIsVertexArrayNative>>.fromAddress(
                 _glGetProcAddress('glIsVertexArray'))
-            .asFunction<GlIsVertexArray>());
+            .asFunction<GlIsVertexArray>()) as int Function(int)?;
   }
   glDrawArraysInstanced = tryCall(() =>
       lib.lookupFunction<GlDrawArraysInstancedNative, GlDrawArraysInstanced>(
-          'glDrawArraysInstanced'));
+          'glDrawArraysInstanced')) as void Function(int, int, int, int)?;
   if (glDrawArraysInstanced == null) {
     glDrawArraysInstanced = tryCall(() =>
         Pointer<NativeFunction<GlDrawArraysInstancedNative>>.fromAddress(
                 _glGetProcAddress('glDrawArraysInstanced'))
-            .asFunction<GlDrawArraysInstanced>());
+            .asFunction<GlDrawArraysInstanced>()) as void Function(int, int, int, int)?;
   }
   glDrawElementsInstanced = tryCall(() => lib.lookupFunction<
       GlDrawElementsInstancedNative,
-      GlDrawElementsInstanced>('glDrawElementsInstanced'));
+      GlDrawElementsInstanced>('glDrawElementsInstanced')) as void Function(int, int, int, Pointer<NativeType>, int)?;
   if (glDrawElementsInstanced == null) {
     glDrawElementsInstanced = tryCall(() =>
         Pointer<NativeFunction<GlDrawElementsInstancedNative>>.fromAddress(
                 _glGetProcAddress('glDrawElementsInstanced'))
-            .asFunction<GlDrawElementsInstanced>());
+            .asFunction<GlDrawElementsInstanced>()) as void Function(int, int, int, Pointer<NativeType>, int)?;
   }
   glTexBuffer = tryCall(
-      () => lib.lookupFunction<GlTexBufferNative, GlTexBuffer>('glTexBuffer'));
+      () => lib.lookupFunction<GlTexBufferNative, GlTexBuffer>('glTexBuffer')) as void Function(int, int, int)?;
   if (glTexBuffer == null) {
     glTexBuffer = tryCall(() =>
         Pointer<NativeFunction<GlTexBufferNative>>.fromAddress(
                 _glGetProcAddress('glTexBuffer'))
-            .asFunction<GlTexBuffer>());
+            .asFunction<GlTexBuffer>()) as void Function(int, int, int)?;
   }
   glPrimitiveRestartIndex = tryCall(() => lib.lookupFunction<
       GlPrimitiveRestartIndexNative,
-      GlPrimitiveRestartIndex>('glPrimitiveRestartIndex'));
+      GlPrimitiveRestartIndex>('glPrimitiveRestartIndex')) as void Function(int)?;
   if (glPrimitiveRestartIndex == null) {
     glPrimitiveRestartIndex = tryCall(() =>
         Pointer<NativeFunction<GlPrimitiveRestartIndexNative>>.fromAddress(
                 _glGetProcAddress('glPrimitiveRestartIndex'))
-            .asFunction<GlPrimitiveRestartIndex>());
+            .asFunction<GlPrimitiveRestartIndex>()) as void Function(int)?;
   }
   glCopyBufferSubData = tryCall(() =>
       lib.lookupFunction<GlCopyBufferSubDataNative, GlCopyBufferSubData>(
-          'glCopyBufferSubData'));
+          'glCopyBufferSubData')) as void Function(int, int, int, int, int)?;
   if (glCopyBufferSubData == null) {
     glCopyBufferSubData = tryCall(() =>
         Pointer<NativeFunction<GlCopyBufferSubDataNative>>.fromAddress(
                 _glGetProcAddress('glCopyBufferSubData'))
-            .asFunction<GlCopyBufferSubData>());
+            .asFunction<GlCopyBufferSubData>()) as void Function(int, int, int, int, int)?;
   }
   glGetUniformIndices = tryCall(() =>
       lib.lookupFunction<GlGetUniformIndicesNative, GlGetUniformIndices>(
-          'glGetUniformIndices'));
+          'glGetUniformIndices')) as void Function(int, int, Pointer<NativeType>, Pointer<Uint32>)?;
   if (glGetUniformIndices == null) {
     glGetUniformIndices = tryCall(() =>
         Pointer<NativeFunction<GlGetUniformIndicesNative>>.fromAddress(
                 _glGetProcAddress('glGetUniformIndices'))
-            .asFunction<GlGetUniformIndices>());
+            .asFunction<GlGetUniformIndices>()) as void Function(int, int, Pointer<NativeType>, Pointer<Uint32>)?;
   }
   glGetActiveUniformsiv = tryCall(() =>
       lib.lookupFunction<GlGetActiveUniformsivNative, GlGetActiveUniformsiv>(
-          'glGetActiveUniformsiv'));
+          'glGetActiveUniformsiv')) as void Function(int, int, Pointer<Uint32>, int, Pointer<Int32>)?;
   if (glGetActiveUniformsiv == null) {
     glGetActiveUniformsiv = tryCall(() =>
         Pointer<NativeFunction<GlGetActiveUniformsivNative>>.fromAddress(
                 _glGetProcAddress('glGetActiveUniformsiv'))
-            .asFunction<GlGetActiveUniformsiv>());
+            .asFunction<GlGetActiveUniformsiv>()) as void Function(int, int, Pointer<Uint32>, int, Pointer<Int32>)?;
   }
   glGetActiveUniformName = tryCall(() =>
       lib.lookupFunction<GlGetActiveUniformNameNative, GlGetActiveUniformName>(
-          'glGetActiveUniformName'));
+          'glGetActiveUniformName')) as void Function(int, int, int, Pointer<Int32>, Pointer<NativeType>)?;
   if (glGetActiveUniformName == null) {
     glGetActiveUniformName = tryCall(() =>
         Pointer<NativeFunction<GlGetActiveUniformNameNative>>.fromAddress(
                 _glGetProcAddress('glGetActiveUniformName'))
-            .asFunction<GlGetActiveUniformName>());
+            .asFunction<GlGetActiveUniformName>()) as void Function(int, int, int, Pointer<Int32>, Pointer<NativeType>)?;
   }
   glGetUniformBlockIndex = tryCall(() =>
       lib.lookupFunction<GlGetUniformBlockIndexNative, GlGetUniformBlockIndex>(
-          'glGetUniformBlockIndex'));
+          'glGetUniformBlockIndex')) as int Function(int, Pointer<NativeType>)?;
   if (glGetUniformBlockIndex == null) {
     glGetUniformBlockIndex = tryCall(() =>
         Pointer<NativeFunction<GlGetUniformBlockIndexNative>>.fromAddress(
                 _glGetProcAddress('glGetUniformBlockIndex'))
-            .asFunction<GlGetUniformBlockIndex>());
+            .asFunction<GlGetUniformBlockIndex>()) as int Function(int, Pointer<NativeType>)?;
   }
   glGetActiveUniformBlockiv = tryCall(() => lib.lookupFunction<
       GlGetActiveUniformBlockivNative,
-      GlGetActiveUniformBlockiv>('glGetActiveUniformBlockiv'));
+      GlGetActiveUniformBlockiv>('glGetActiveUniformBlockiv')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glGetActiveUniformBlockiv == null) {
     glGetActiveUniformBlockiv = tryCall(() =>
         Pointer<NativeFunction<GlGetActiveUniformBlockivNative>>.fromAddress(
                 _glGetProcAddress('glGetActiveUniformBlockiv'))
-            .asFunction<GlGetActiveUniformBlockiv>());
+            .asFunction<GlGetActiveUniformBlockiv>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glGetActiveUniformBlockName = tryCall(() => lib.lookupFunction<
       GlGetActiveUniformBlockNameNative,
-      GlGetActiveUniformBlockName>('glGetActiveUniformBlockName'));
+      GlGetActiveUniformBlockName>('glGetActiveUniformBlockName')) as void Function(int, int, int, Pointer<Int32>, Pointer<NativeType>)?;
   if (glGetActiveUniformBlockName == null) {
     glGetActiveUniformBlockName = tryCall(() =>
         Pointer<NativeFunction<GlGetActiveUniformBlockNameNative>>.fromAddress(
                 _glGetProcAddress('glGetActiveUniformBlockName'))
-            .asFunction<GlGetActiveUniformBlockName>());
+            .asFunction<GlGetActiveUniformBlockName>()) as void Function(int, int, int, Pointer<Int32>, Pointer<NativeType>)?;
   }
   glUniformBlockBinding = tryCall(() =>
       lib.lookupFunction<GlUniformBlockBindingNative, GlUniformBlockBinding>(
-          'glUniformBlockBinding'));
+          'glUniformBlockBinding')) as void Function(int, int, int)?;
   if (glUniformBlockBinding == null) {
     glUniformBlockBinding = tryCall(() =>
         Pointer<NativeFunction<GlUniformBlockBindingNative>>.fromAddress(
                 _glGetProcAddress('glUniformBlockBinding'))
-            .asFunction<GlUniformBlockBinding>());
+            .asFunction<GlUniformBlockBinding>()) as void Function(int, int, int)?;
   }
   glDrawElementsBaseVertex = tryCall(() => lib.lookupFunction<
       GlDrawElementsBaseVertexNative,
-      GlDrawElementsBaseVertex>('glDrawElementsBaseVertex'));
+      GlDrawElementsBaseVertex>('glDrawElementsBaseVertex')) as void Function(int, int, int, Pointer<NativeType>, int)?;
   if (glDrawElementsBaseVertex == null) {
     glDrawElementsBaseVertex = tryCall(() =>
         Pointer<NativeFunction<GlDrawElementsBaseVertexNative>>.fromAddress(
                 _glGetProcAddress('glDrawElementsBaseVertex'))
-            .asFunction<GlDrawElementsBaseVertex>());
+            .asFunction<GlDrawElementsBaseVertex>()) as void Function(int, int, int, Pointer<NativeType>, int)?;
   }
   glDrawRangeElementsBaseVertex = tryCall(() => lib.lookupFunction<
       GlDrawRangeElementsBaseVertexNative,
-      GlDrawRangeElementsBaseVertex>('glDrawRangeElementsBaseVertex'));
+      GlDrawRangeElementsBaseVertex>('glDrawRangeElementsBaseVertex')) as void Function(int, int, int, int, int, Pointer<NativeType>, int)?;
   if (glDrawRangeElementsBaseVertex == null) {
     glDrawRangeElementsBaseVertex = tryCall(() => Pointer<
                 NativeFunction<
                     GlDrawRangeElementsBaseVertexNative>>.fromAddress(
             _glGetProcAddress('glDrawRangeElementsBaseVertex'))
-        .asFunction<GlDrawRangeElementsBaseVertex>());
+        .asFunction<GlDrawRangeElementsBaseVertex>()) as void Function(int, int, int, int, int, Pointer<NativeType>, int)?;
   }
   glDrawElementsInstancedBaseVertex = tryCall(() => lib.lookupFunction<
       GlDrawElementsInstancedBaseVertexNative,
-      GlDrawElementsInstancedBaseVertex>('glDrawElementsInstancedBaseVertex'));
+      GlDrawElementsInstancedBaseVertex>('glDrawElementsInstancedBaseVertex')) as void Function(int, int, int, Pointer<NativeType>, int, int)?;
   if (glDrawElementsInstancedBaseVertex == null) {
     glDrawElementsInstancedBaseVertex = tryCall(() => Pointer<
                 NativeFunction<
                     GlDrawElementsInstancedBaseVertexNative>>.fromAddress(
             _glGetProcAddress('glDrawElementsInstancedBaseVertex'))
-        .asFunction<GlDrawElementsInstancedBaseVertex>());
+        .asFunction<GlDrawElementsInstancedBaseVertex>()) as void Function(int, int, int, Pointer<NativeType>, int, int)?;
   }
   glMultiDrawElementsBaseVertex = tryCall(() => lib.lookupFunction<
       GlMultiDrawElementsBaseVertexNative,
-      GlMultiDrawElementsBaseVertex>('glMultiDrawElementsBaseVertex'));
+      GlMultiDrawElementsBaseVertex>('glMultiDrawElementsBaseVertex')) as void Function(int, Pointer<Int32>, int, Pointer<NativeType>, int, Pointer<Int32>)?;
   if (glMultiDrawElementsBaseVertex == null) {
     glMultiDrawElementsBaseVertex = tryCall(() => Pointer<
                 NativeFunction<
                     GlMultiDrawElementsBaseVertexNative>>.fromAddress(
             _glGetProcAddress('glMultiDrawElementsBaseVertex'))
-        .asFunction<GlMultiDrawElementsBaseVertex>());
+        .asFunction<GlMultiDrawElementsBaseVertex>()) as void Function(int, Pointer<Int32>, int, Pointer<NativeType>, int, Pointer<Int32>)?;
   }
   glProvokingVertex = tryCall(() =>
       lib.lookupFunction<GlProvokingVertexNative, GlProvokingVertex>(
-          'glProvokingVertex'));
+          'glProvokingVertex')) as void Function(int)?;
   if (glProvokingVertex == null) {
     glProvokingVertex = tryCall(() =>
         Pointer<NativeFunction<GlProvokingVertexNative>>.fromAddress(
                 _glGetProcAddress('glProvokingVertex'))
-            .asFunction<GlProvokingVertex>());
+            .asFunction<GlProvokingVertex>()) as void Function(int)?;
   }
   glFenceSync = tryCall(
-      () => lib.lookupFunction<GlFenceSyncNative, GlFenceSync>('glFenceSync'));
+      () => lib.lookupFunction<GlFenceSyncNative, GlFenceSync>('glFenceSync')) as Pointer<NativeType> Function(int, int)?;
   if (glFenceSync == null) {
     glFenceSync = tryCall(() =>
         Pointer<NativeFunction<GlFenceSyncNative>>.fromAddress(
                 _glGetProcAddress('glFenceSync'))
-            .asFunction<GlFenceSync>());
+            .asFunction<GlFenceSync>()) as Pointer<NativeType> Function(int, int)?;
   }
   glIsSync =
-      tryCall(() => lib.lookupFunction<GlIsSyncNative, GlIsSync>('glIsSync'));
+      tryCall(() => lib.lookupFunction<GlIsSyncNative, GlIsSync>('glIsSync')) as int Function(Pointer<NativeType>)?;
   if (glIsSync == null) {
     glIsSync = tryCall(() =>
         Pointer<NativeFunction<GlIsSyncNative>>.fromAddress(
                 _glGetProcAddress('glIsSync'))
-            .asFunction<GlIsSync>());
+            .asFunction<GlIsSync>()) as int Function(Pointer<NativeType>)?;
   }
   glDeleteSync = tryCall(() =>
-      lib.lookupFunction<GlDeleteSyncNative, GlDeleteSync>('glDeleteSync'));
+      lib.lookupFunction<GlDeleteSyncNative, GlDeleteSync>('glDeleteSync')) as void Function(Pointer<NativeType>)?;
   if (glDeleteSync == null) {
     glDeleteSync = tryCall(() =>
         Pointer<NativeFunction<GlDeleteSyncNative>>.fromAddress(
                 _glGetProcAddress('glDeleteSync'))
-            .asFunction<GlDeleteSync>());
+            .asFunction<GlDeleteSync>()) as void Function(Pointer<NativeType>)?;
   }
   glClientWaitSync = tryCall(() =>
       lib.lookupFunction<GlClientWaitSyncNative, GlClientWaitSync>(
-          'glClientWaitSync'));
+          'glClientWaitSync')) as int Function(Pointer<NativeType>, int, int)?;
   if (glClientWaitSync == null) {
     glClientWaitSync = tryCall(() =>
         Pointer<NativeFunction<GlClientWaitSyncNative>>.fromAddress(
                 _glGetProcAddress('glClientWaitSync'))
-            .asFunction<GlClientWaitSync>());
+            .asFunction<GlClientWaitSync>()) as int Function(Pointer<NativeType>, int, int)?;
   }
   glWaitSync = tryCall(
-      () => lib.lookupFunction<GlWaitSyncNative, GlWaitSync>('glWaitSync'));
+      () => lib.lookupFunction<GlWaitSyncNative, GlWaitSync>('glWaitSync')) as void Function(Pointer<NativeType>, int, int)?;
   if (glWaitSync == null) {
     glWaitSync = tryCall(() =>
         Pointer<NativeFunction<GlWaitSyncNative>>.fromAddress(
                 _glGetProcAddress('glWaitSync'))
-            .asFunction<GlWaitSync>());
+            .asFunction<GlWaitSync>()) as void Function(Pointer<NativeType>, int, int)?;
   }
   glGetInteger64v = tryCall(() =>
       lib.lookupFunction<GlGetInteger64vNative, GlGetInteger64v>(
-          'glGetInteger64v'));
+          'glGetInteger64v')) as void Function(int, Pointer<Int64>)?;
   if (glGetInteger64v == null) {
     glGetInteger64v = tryCall(() =>
         Pointer<NativeFunction<GlGetInteger64vNative>>.fromAddress(
                 _glGetProcAddress('glGetInteger64v'))
-            .asFunction<GlGetInteger64v>());
+            .asFunction<GlGetInteger64v>()) as void Function(int, Pointer<Int64>)?;
   }
   glGetSynciv = tryCall(
-      () => lib.lookupFunction<GlGetSyncivNative, GlGetSynciv>('glGetSynciv'));
+      () => lib.lookupFunction<GlGetSyncivNative, GlGetSynciv>('glGetSynciv')) as void Function(Pointer<NativeType>, int, int, Pointer<Int32>, Pointer<Int32>)?;
   if (glGetSynciv == null) {
     glGetSynciv = tryCall(() =>
         Pointer<NativeFunction<GlGetSyncivNative>>.fromAddress(
                 _glGetProcAddress('glGetSynciv'))
-            .asFunction<GlGetSynciv>());
+            .asFunction<GlGetSynciv>()) as void Function(Pointer<NativeType>, int, int, Pointer<Int32>, Pointer<Int32>)?;
   }
   glGetInteger64i_v = tryCall(() =>
       lib.lookupFunction<GlGetInteger64i_vNative, GlGetInteger64i_v>(
-          'glGetInteger64i_v'));
+          'glGetInteger64i_v')) as void Function(int, int, Pointer<Int64>)?;
   if (glGetInteger64i_v == null) {
     glGetInteger64i_v = tryCall(() =>
         Pointer<NativeFunction<GlGetInteger64i_vNative>>.fromAddress(
                 _glGetProcAddress('glGetInteger64i_v'))
-            .asFunction<GlGetInteger64i_v>());
+            .asFunction<GlGetInteger64i_v>()) as void Function(int, int, Pointer<Int64>)?;
   }
   glGetBufferParameteri64v = tryCall(() => lib.lookupFunction<
       GlGetBufferParameteri64vNative,
-      GlGetBufferParameteri64v>('glGetBufferParameteri64v'));
+      GlGetBufferParameteri64v>('glGetBufferParameteri64v')) as void Function(int, int, Pointer<Int64>)?;
   if (glGetBufferParameteri64v == null) {
     glGetBufferParameteri64v = tryCall(() =>
         Pointer<NativeFunction<GlGetBufferParameteri64vNative>>.fromAddress(
                 _glGetProcAddress('glGetBufferParameteri64v'))
-            .asFunction<GlGetBufferParameteri64v>());
+            .asFunction<GlGetBufferParameteri64v>()) as void Function(int, int, Pointer<Int64>)?;
   }
   glFramebufferTexture = tryCall(() =>
       lib.lookupFunction<GlFramebufferTextureNative, GlFramebufferTexture>(
-          'glFramebufferTexture'));
+          'glFramebufferTexture')) as void Function(int, int, int, int)?;
   if (glFramebufferTexture == null) {
     glFramebufferTexture = tryCall(() =>
         Pointer<NativeFunction<GlFramebufferTextureNative>>.fromAddress(
                 _glGetProcAddress('glFramebufferTexture'))
-            .asFunction<GlFramebufferTexture>());
+            .asFunction<GlFramebufferTexture>()) as void Function(int, int, int, int)?;
   }
   glTexImage2DMultisample = tryCall(() => lib.lookupFunction<
       GlTexImage2DMultisampleNative,
-      GlTexImage2DMultisample>('glTexImage2DMultisample'));
+      GlTexImage2DMultisample>('glTexImage2DMultisample')) as void Function(int, int, int, int, int, int)?;
   if (glTexImage2DMultisample == null) {
     glTexImage2DMultisample = tryCall(() =>
         Pointer<NativeFunction<GlTexImage2DMultisampleNative>>.fromAddress(
                 _glGetProcAddress('glTexImage2DMultisample'))
-            .asFunction<GlTexImage2DMultisample>());
+            .asFunction<GlTexImage2DMultisample>()) as void Function(int, int, int, int, int, int)?;
   }
   glTexImage3DMultisample = tryCall(() => lib.lookupFunction<
       GlTexImage3DMultisampleNative,
-      GlTexImage3DMultisample>('glTexImage3DMultisample'));
+      GlTexImage3DMultisample>('glTexImage3DMultisample')) as void Function(int, int, int, int, int, int, int)?;
   if (glTexImage3DMultisample == null) {
     glTexImage3DMultisample = tryCall(() =>
         Pointer<NativeFunction<GlTexImage3DMultisampleNative>>.fromAddress(
                 _glGetProcAddress('glTexImage3DMultisample'))
-            .asFunction<GlTexImage3DMultisample>());
+            .asFunction<GlTexImage3DMultisample>()) as void Function(int, int, int, int, int, int, int)?;
   }
   glGetMultisamplefv = tryCall(() =>
       lib.lookupFunction<GlGetMultisamplefvNative, GlGetMultisamplefv>(
-          'glGetMultisamplefv'));
+          'glGetMultisamplefv')) as void Function(int, int, Pointer<Float>)?;
   if (glGetMultisamplefv == null) {
     glGetMultisamplefv = tryCall(() =>
         Pointer<NativeFunction<GlGetMultisamplefvNative>>.fromAddress(
                 _glGetProcAddress('glGetMultisamplefv'))
-            .asFunction<GlGetMultisamplefv>());
+            .asFunction<GlGetMultisamplefv>()) as void Function(int, int, Pointer<Float>)?;
   }
   glSampleMaski = tryCall(() =>
-      lib.lookupFunction<GlSampleMaskiNative, GlSampleMaski>('glSampleMaski'));
+      lib.lookupFunction<GlSampleMaskiNative, GlSampleMaski>('glSampleMaski')) as void Function(int, int)?;
   if (glSampleMaski == null) {
     glSampleMaski = tryCall(() =>
         Pointer<NativeFunction<GlSampleMaskiNative>>.fromAddress(
                 _glGetProcAddress('glSampleMaski'))
-            .asFunction<GlSampleMaski>());
+            .asFunction<GlSampleMaski>()) as void Function(int, int)?;
   }
   glBindFragDataLocationIndexed = tryCall(() => lib.lookupFunction<
       GlBindFragDataLocationIndexedNative,
-      GlBindFragDataLocationIndexed>('glBindFragDataLocationIndexed'));
+      GlBindFragDataLocationIndexed>('glBindFragDataLocationIndexed')) as void Function(int, int, int, Pointer<NativeType>)?;
   if (glBindFragDataLocationIndexed == null) {
     glBindFragDataLocationIndexed = tryCall(() => Pointer<
                 NativeFunction<
                     GlBindFragDataLocationIndexedNative>>.fromAddress(
             _glGetProcAddress('glBindFragDataLocationIndexed'))
-        .asFunction<GlBindFragDataLocationIndexed>());
+        .asFunction<GlBindFragDataLocationIndexed>()) as void Function(int, int, int, Pointer<NativeType>)?;
   }
   glGetFragDataIndex = tryCall(() =>
       lib.lookupFunction<GlGetFragDataIndexNative, GlGetFragDataIndex>(
-          'glGetFragDataIndex'));
+          'glGetFragDataIndex')) as int Function(int, Pointer<NativeType>)?;
   if (glGetFragDataIndex == null) {
     glGetFragDataIndex = tryCall(() =>
         Pointer<NativeFunction<GlGetFragDataIndexNative>>.fromAddress(
                 _glGetProcAddress('glGetFragDataIndex'))
-            .asFunction<GlGetFragDataIndex>());
+            .asFunction<GlGetFragDataIndex>()) as int Function(int, Pointer<NativeType>)?;
   }
   glGenSamplers = tryCall(() =>
-      lib.lookupFunction<GlGenSamplersNative, GlGenSamplers>('glGenSamplers'));
+      lib.lookupFunction<GlGenSamplersNative, GlGenSamplers>('glGenSamplers')) as void Function(int, Pointer<Uint32>)?;
   if (glGenSamplers == null) {
     glGenSamplers = tryCall(() =>
         Pointer<NativeFunction<GlGenSamplersNative>>.fromAddress(
                 _glGetProcAddress('glGenSamplers'))
-            .asFunction<GlGenSamplers>());
+            .asFunction<GlGenSamplers>()) as void Function(int, Pointer<Uint32>)?;
   }
   glDeleteSamplers = tryCall(() =>
       lib.lookupFunction<GlDeleteSamplersNative, GlDeleteSamplers>(
-          'glDeleteSamplers'));
+          'glDeleteSamplers')) as void Function(int, Pointer<Uint32>)?;
   if (glDeleteSamplers == null) {
     glDeleteSamplers = tryCall(() =>
         Pointer<NativeFunction<GlDeleteSamplersNative>>.fromAddress(
                 _glGetProcAddress('glDeleteSamplers'))
-            .asFunction<GlDeleteSamplers>());
+            .asFunction<GlDeleteSamplers>()) as void Function(int, Pointer<Uint32>)?;
   }
   glIsSampler = tryCall(
-      () => lib.lookupFunction<GlIsSamplerNative, GlIsSampler>('glIsSampler'));
+      () => lib.lookupFunction<GlIsSamplerNative, GlIsSampler>('glIsSampler')) as int Function(int)?;
   if (glIsSampler == null) {
     glIsSampler = tryCall(() =>
         Pointer<NativeFunction<GlIsSamplerNative>>.fromAddress(
                 _glGetProcAddress('glIsSampler'))
-            .asFunction<GlIsSampler>());
+            .asFunction<GlIsSampler>()) as int Function(int)?;
   }
   glBindSampler = tryCall(() =>
-      lib.lookupFunction<GlBindSamplerNative, GlBindSampler>('glBindSampler'));
+      lib.lookupFunction<GlBindSamplerNative, GlBindSampler>('glBindSampler')) as void Function(int, int)?;
   if (glBindSampler == null) {
     glBindSampler = tryCall(() =>
         Pointer<NativeFunction<GlBindSamplerNative>>.fromAddress(
                 _glGetProcAddress('glBindSampler'))
-            .asFunction<GlBindSampler>());
+            .asFunction<GlBindSampler>()) as void Function(int, int)?;
   }
   glSamplerParameteri = tryCall(() =>
       lib.lookupFunction<GlSamplerParameteriNative, GlSamplerParameteri>(
-          'glSamplerParameteri'));
+          'glSamplerParameteri')) as void Function(int, int, int)?;
   if (glSamplerParameteri == null) {
     glSamplerParameteri = tryCall(() =>
         Pointer<NativeFunction<GlSamplerParameteriNative>>.fromAddress(
                 _glGetProcAddress('glSamplerParameteri'))
-            .asFunction<GlSamplerParameteri>());
+            .asFunction<GlSamplerParameteri>()) as void Function(int, int, int)?;
   }
   glSamplerParameteriv = tryCall(() =>
       lib.lookupFunction<GlSamplerParameterivNative, GlSamplerParameteriv>(
-          'glSamplerParameteriv'));
+          'glSamplerParameteriv')) as void Function(int, int, Pointer<Int32>)?;
   if (glSamplerParameteriv == null) {
     glSamplerParameteriv = tryCall(() =>
         Pointer<NativeFunction<GlSamplerParameterivNative>>.fromAddress(
                 _glGetProcAddress('glSamplerParameteriv'))
-            .asFunction<GlSamplerParameteriv>());
+            .asFunction<GlSamplerParameteriv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glSamplerParameterf = tryCall(() =>
       lib.lookupFunction<GlSamplerParameterfNative, GlSamplerParameterf>(
-          'glSamplerParameterf'));
+          'glSamplerParameterf')) as void Function(int, int, double)?;
   if (glSamplerParameterf == null) {
     glSamplerParameterf = tryCall(() =>
         Pointer<NativeFunction<GlSamplerParameterfNative>>.fromAddress(
                 _glGetProcAddress('glSamplerParameterf'))
-            .asFunction<GlSamplerParameterf>());
+            .asFunction<GlSamplerParameterf>()) as void Function(int, int, double)?;
   }
   glSamplerParameterfv = tryCall(() =>
       lib.lookupFunction<GlSamplerParameterfvNative, GlSamplerParameterfv>(
-          'glSamplerParameterfv'));
+          'glSamplerParameterfv')) as void Function(int, int, Pointer<Float>)?;
   if (glSamplerParameterfv == null) {
     glSamplerParameterfv = tryCall(() =>
         Pointer<NativeFunction<GlSamplerParameterfvNative>>.fromAddress(
                 _glGetProcAddress('glSamplerParameterfv'))
-            .asFunction<GlSamplerParameterfv>());
+            .asFunction<GlSamplerParameterfv>()) as void Function(int, int, Pointer<Float>)?;
   }
   glSamplerParameterIiv = tryCall(() =>
       lib.lookupFunction<GlSamplerParameterIivNative, GlSamplerParameterIiv>(
-          'glSamplerParameterIiv'));
+          'glSamplerParameterIiv')) as void Function(int, int, Pointer<Int32>)?;
   if (glSamplerParameterIiv == null) {
     glSamplerParameterIiv = tryCall(() =>
         Pointer<NativeFunction<GlSamplerParameterIivNative>>.fromAddress(
                 _glGetProcAddress('glSamplerParameterIiv'))
-            .asFunction<GlSamplerParameterIiv>());
+            .asFunction<GlSamplerParameterIiv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glSamplerParameterIuiv = tryCall(() =>
       lib.lookupFunction<GlSamplerParameterIuivNative, GlSamplerParameterIuiv>(
-          'glSamplerParameterIuiv'));
+          'glSamplerParameterIuiv')) as void Function(int, int, Pointer<Uint32>)?;
   if (glSamplerParameterIuiv == null) {
     glSamplerParameterIuiv = tryCall(() =>
         Pointer<NativeFunction<GlSamplerParameterIuivNative>>.fromAddress(
                 _glGetProcAddress('glSamplerParameterIuiv'))
-            .asFunction<GlSamplerParameterIuiv>());
+            .asFunction<GlSamplerParameterIuiv>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glGetSamplerParameteriv = tryCall(() => lib.lookupFunction<
       GlGetSamplerParameterivNative,
-      GlGetSamplerParameteriv>('glGetSamplerParameteriv'));
+      GlGetSamplerParameteriv>('glGetSamplerParameteriv')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetSamplerParameteriv == null) {
     glGetSamplerParameteriv = tryCall(() =>
         Pointer<NativeFunction<GlGetSamplerParameterivNative>>.fromAddress(
                 _glGetProcAddress('glGetSamplerParameteriv'))
-            .asFunction<GlGetSamplerParameteriv>());
+            .asFunction<GlGetSamplerParameteriv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glGetSamplerParameterIiv = tryCall(() => lib.lookupFunction<
       GlGetSamplerParameterIivNative,
-      GlGetSamplerParameterIiv>('glGetSamplerParameterIiv'));
+      GlGetSamplerParameterIiv>('glGetSamplerParameterIiv')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetSamplerParameterIiv == null) {
     glGetSamplerParameterIiv = tryCall(() =>
         Pointer<NativeFunction<GlGetSamplerParameterIivNative>>.fromAddress(
                 _glGetProcAddress('glGetSamplerParameterIiv'))
-            .asFunction<GlGetSamplerParameterIiv>());
+            .asFunction<GlGetSamplerParameterIiv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glGetSamplerParameterfv = tryCall(() => lib.lookupFunction<
       GlGetSamplerParameterfvNative,
-      GlGetSamplerParameterfv>('glGetSamplerParameterfv'));
+      GlGetSamplerParameterfv>('glGetSamplerParameterfv')) as void Function(int, int, Pointer<Float>)?;
   if (glGetSamplerParameterfv == null) {
     glGetSamplerParameterfv = tryCall(() =>
         Pointer<NativeFunction<GlGetSamplerParameterfvNative>>.fromAddress(
                 _glGetProcAddress('glGetSamplerParameterfv'))
-            .asFunction<GlGetSamplerParameterfv>());
+            .asFunction<GlGetSamplerParameterfv>()) as void Function(int, int, Pointer<Float>)?;
   }
   glGetSamplerParameterIuiv = tryCall(() => lib.lookupFunction<
       GlGetSamplerParameterIuivNative,
-      GlGetSamplerParameterIuiv>('glGetSamplerParameterIuiv'));
+      GlGetSamplerParameterIuiv>('glGetSamplerParameterIuiv')) as void Function(int, int, Pointer<Uint32>)?;
   if (glGetSamplerParameterIuiv == null) {
     glGetSamplerParameterIuiv = tryCall(() =>
         Pointer<NativeFunction<GlGetSamplerParameterIuivNative>>.fromAddress(
                 _glGetProcAddress('glGetSamplerParameterIuiv'))
-            .asFunction<GlGetSamplerParameterIuiv>());
+            .asFunction<GlGetSamplerParameterIuiv>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glQueryCounter = tryCall(() => lib
-      .lookupFunction<GlQueryCounterNative, GlQueryCounter>('glQueryCounter'));
+      .lookupFunction<GlQueryCounterNative, GlQueryCounter>('glQueryCounter')) as void Function(int, int)?;
   if (glQueryCounter == null) {
     glQueryCounter = tryCall(() =>
         Pointer<NativeFunction<GlQueryCounterNative>>.fromAddress(
                 _glGetProcAddress('glQueryCounter'))
-            .asFunction<GlQueryCounter>());
+            .asFunction<GlQueryCounter>()) as void Function(int, int)?;
   }
   glGetQueryObjecti64v = tryCall(() =>
       lib.lookupFunction<GlGetQueryObjecti64vNative, GlGetQueryObjecti64v>(
-          'glGetQueryObjecti64v'));
+          'glGetQueryObjecti64v')) as void Function(int, int, Pointer<Int64>)?;
   if (glGetQueryObjecti64v == null) {
     glGetQueryObjecti64v = tryCall(() =>
         Pointer<NativeFunction<GlGetQueryObjecti64vNative>>.fromAddress(
                 _glGetProcAddress('glGetQueryObjecti64v'))
-            .asFunction<GlGetQueryObjecti64v>());
+            .asFunction<GlGetQueryObjecti64v>()) as void Function(int, int, Pointer<Int64>)?;
   }
   glGetQueryObjectui64v = tryCall(() =>
       lib.lookupFunction<GlGetQueryObjectui64vNative, GlGetQueryObjectui64v>(
-          'glGetQueryObjectui64v'));
+          'glGetQueryObjectui64v')) as void Function(int, int, Pointer<Uint64>)?;
   if (glGetQueryObjectui64v == null) {
     glGetQueryObjectui64v = tryCall(() =>
         Pointer<NativeFunction<GlGetQueryObjectui64vNative>>.fromAddress(
                 _glGetProcAddress('glGetQueryObjectui64v'))
-            .asFunction<GlGetQueryObjectui64v>());
+            .asFunction<GlGetQueryObjectui64v>()) as void Function(int, int, Pointer<Uint64>)?;
   }
   glVertexAttribDivisor = tryCall(() =>
       lib.lookupFunction<GlVertexAttribDivisorNative, GlVertexAttribDivisor>(
-          'glVertexAttribDivisor'));
+          'glVertexAttribDivisor')) as void Function(int, int)?;
   if (glVertexAttribDivisor == null) {
     glVertexAttribDivisor = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribDivisorNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribDivisor'))
-            .asFunction<GlVertexAttribDivisor>());
+            .asFunction<GlVertexAttribDivisor>()) as void Function(int, int)?;
   }
   glVertexAttribP1ui = tryCall(() =>
       lib.lookupFunction<GlVertexAttribP1uiNative, GlVertexAttribP1ui>(
-          'glVertexAttribP1ui'));
+          'glVertexAttribP1ui')) as void Function(int, int, int, int)?;
   if (glVertexAttribP1ui == null) {
     glVertexAttribP1ui = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribP1uiNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribP1ui'))
-            .asFunction<GlVertexAttribP1ui>());
+            .asFunction<GlVertexAttribP1ui>()) as void Function(int, int, int, int)?;
   }
   glVertexAttribP1uiv = tryCall(() =>
       lib.lookupFunction<GlVertexAttribP1uivNative, GlVertexAttribP1uiv>(
-          'glVertexAttribP1uiv'));
+          'glVertexAttribP1uiv')) as void Function(int, int, int, Pointer<Uint32>)?;
   if (glVertexAttribP1uiv == null) {
     glVertexAttribP1uiv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribP1uivNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribP1uiv'))
-            .asFunction<GlVertexAttribP1uiv>());
+            .asFunction<GlVertexAttribP1uiv>()) as void Function(int, int, int, Pointer<Uint32>)?;
   }
   glVertexAttribP2ui = tryCall(() =>
       lib.lookupFunction<GlVertexAttribP2uiNative, GlVertexAttribP2ui>(
-          'glVertexAttribP2ui'));
+          'glVertexAttribP2ui')) as void Function(int, int, int, int)?;
   if (glVertexAttribP2ui == null) {
     glVertexAttribP2ui = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribP2uiNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribP2ui'))
-            .asFunction<GlVertexAttribP2ui>());
+            .asFunction<GlVertexAttribP2ui>()) as void Function(int, int, int, int)?;
   }
   glVertexAttribP2uiv = tryCall(() =>
       lib.lookupFunction<GlVertexAttribP2uivNative, GlVertexAttribP2uiv>(
-          'glVertexAttribP2uiv'));
+          'glVertexAttribP2uiv')) as void Function(int, int, int, Pointer<Uint32>)?;
   if (glVertexAttribP2uiv == null) {
     glVertexAttribP2uiv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribP2uivNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribP2uiv'))
-            .asFunction<GlVertexAttribP2uiv>());
+            .asFunction<GlVertexAttribP2uiv>()) as void Function(int, int, int, Pointer<Uint32>)?;
   }
   glVertexAttribP3ui = tryCall(() =>
       lib.lookupFunction<GlVertexAttribP3uiNative, GlVertexAttribP3ui>(
-          'glVertexAttribP3ui'));
+          'glVertexAttribP3ui')) as void Function(int, int, int, int)?;
   if (glVertexAttribP3ui == null) {
     glVertexAttribP3ui = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribP3uiNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribP3ui'))
-            .asFunction<GlVertexAttribP3ui>());
+            .asFunction<GlVertexAttribP3ui>()) as void Function(int, int, int, int)?;
   }
   glVertexAttribP3uiv = tryCall(() =>
       lib.lookupFunction<GlVertexAttribP3uivNative, GlVertexAttribP3uiv>(
-          'glVertexAttribP3uiv'));
+          'glVertexAttribP3uiv')) as void Function(int, int, int, Pointer<Uint32>)?;
   if (glVertexAttribP3uiv == null) {
     glVertexAttribP3uiv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribP3uivNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribP3uiv'))
-            .asFunction<GlVertexAttribP3uiv>());
+            .asFunction<GlVertexAttribP3uiv>()) as void Function(int, int, int, Pointer<Uint32>)?;
   }
   glVertexAttribP4ui = tryCall(() =>
       lib.lookupFunction<GlVertexAttribP4uiNative, GlVertexAttribP4ui>(
-          'glVertexAttribP4ui'));
+          'glVertexAttribP4ui')) as void Function(int, int, int, int)?;
   if (glVertexAttribP4ui == null) {
     glVertexAttribP4ui = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribP4uiNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribP4ui'))
-            .asFunction<GlVertexAttribP4ui>());
+            .asFunction<GlVertexAttribP4ui>()) as void Function(int, int, int, int)?;
   }
   glVertexAttribP4uiv = tryCall(() =>
       lib.lookupFunction<GlVertexAttribP4uivNative, GlVertexAttribP4uiv>(
-          'glVertexAttribP4uiv'));
+          'glVertexAttribP4uiv')) as void Function(int, int, int, Pointer<Uint32>)?;
   if (glVertexAttribP4uiv == null) {
     glVertexAttribP4uiv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribP4uivNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribP4uiv'))
-            .asFunction<GlVertexAttribP4uiv>());
+            .asFunction<GlVertexAttribP4uiv>()) as void Function(int, int, int, Pointer<Uint32>)?;
   }
   glMinSampleShading = tryCall(() =>
       lib.lookupFunction<GlMinSampleShadingNative, GlMinSampleShading>(
-          'glMinSampleShading'));
+          'glMinSampleShading')) as void Function(double)?;
   if (glMinSampleShading == null) {
     glMinSampleShading = tryCall(() =>
         Pointer<NativeFunction<GlMinSampleShadingNative>>.fromAddress(
                 _glGetProcAddress('glMinSampleShading'))
-            .asFunction<GlMinSampleShading>());
+            .asFunction<GlMinSampleShading>()) as void Function(double)?;
   }
   glBlendEquationi = tryCall(() =>
       lib.lookupFunction<GlBlendEquationiNative, GlBlendEquationi>(
-          'glBlendEquationi'));
+          'glBlendEquationi')) as void Function(int, int)?;
   if (glBlendEquationi == null) {
     glBlendEquationi = tryCall(() =>
         Pointer<NativeFunction<GlBlendEquationiNative>>.fromAddress(
                 _glGetProcAddress('glBlendEquationi'))
-            .asFunction<GlBlendEquationi>());
+            .asFunction<GlBlendEquationi>()) as void Function(int, int)?;
   }
   glBlendEquationSeparatei = tryCall(() => lib.lookupFunction<
       GlBlendEquationSeparateiNative,
-      GlBlendEquationSeparatei>('glBlendEquationSeparatei'));
+      GlBlendEquationSeparatei>('glBlendEquationSeparatei')) as void Function(int, int, int)?;
   if (glBlendEquationSeparatei == null) {
     glBlendEquationSeparatei = tryCall(() =>
         Pointer<NativeFunction<GlBlendEquationSeparateiNative>>.fromAddress(
                 _glGetProcAddress('glBlendEquationSeparatei'))
-            .asFunction<GlBlendEquationSeparatei>());
+            .asFunction<GlBlendEquationSeparatei>()) as void Function(int, int, int)?;
   }
   glBlendFunci = tryCall(() =>
-      lib.lookupFunction<GlBlendFunciNative, GlBlendFunci>('glBlendFunci'));
+      lib.lookupFunction<GlBlendFunciNative, GlBlendFunci>('glBlendFunci')) as void Function(int, int, int)?;
   if (glBlendFunci == null) {
     glBlendFunci = tryCall(() =>
         Pointer<NativeFunction<GlBlendFunciNative>>.fromAddress(
                 _glGetProcAddress('glBlendFunci'))
-            .asFunction<GlBlendFunci>());
+            .asFunction<GlBlendFunci>()) as void Function(int, int, int)?;
   }
   glBlendFuncSeparatei = tryCall(() =>
       lib.lookupFunction<GlBlendFuncSeparateiNative, GlBlendFuncSeparatei>(
-          'glBlendFuncSeparatei'));
+          'glBlendFuncSeparatei')) as void Function(int, int, int, int, int)?;
   if (glBlendFuncSeparatei == null) {
     glBlendFuncSeparatei = tryCall(() =>
         Pointer<NativeFunction<GlBlendFuncSeparateiNative>>.fromAddress(
                 _glGetProcAddress('glBlendFuncSeparatei'))
-            .asFunction<GlBlendFuncSeparatei>());
+            .asFunction<GlBlendFuncSeparatei>()) as void Function(int, int, int, int, int)?;
   }
   glDrawArraysIndirect = tryCall(() =>
       lib.lookupFunction<GlDrawArraysIndirectNative, GlDrawArraysIndirect>(
-          'glDrawArraysIndirect'));
+          'glDrawArraysIndirect')) as void Function(int, Pointer<NativeType>)?;
   if (glDrawArraysIndirect == null) {
     glDrawArraysIndirect = tryCall(() =>
         Pointer<NativeFunction<GlDrawArraysIndirectNative>>.fromAddress(
                 _glGetProcAddress('glDrawArraysIndirect'))
-            .asFunction<GlDrawArraysIndirect>());
+            .asFunction<GlDrawArraysIndirect>()) as void Function(int, Pointer<NativeType>)?;
   }
   glDrawElementsIndirect = tryCall(() =>
       lib.lookupFunction<GlDrawElementsIndirectNative, GlDrawElementsIndirect>(
-          'glDrawElementsIndirect'));
+          'glDrawElementsIndirect')) as void Function(int, int, Pointer<NativeType>)?;
   if (glDrawElementsIndirect == null) {
     glDrawElementsIndirect = tryCall(() =>
         Pointer<NativeFunction<GlDrawElementsIndirectNative>>.fromAddress(
                 _glGetProcAddress('glDrawElementsIndirect'))
-            .asFunction<GlDrawElementsIndirect>());
+            .asFunction<GlDrawElementsIndirect>()) as void Function(int, int, Pointer<NativeType>)?;
   }
   glUniform1d = tryCall(
-      () => lib.lookupFunction<GlUniform1dNative, GlUniform1d>('glUniform1d'));
+      () => lib.lookupFunction<GlUniform1dNative, GlUniform1d>('glUniform1d')) as void Function(int, double)?;
   if (glUniform1d == null) {
     glUniform1d = tryCall(() =>
         Pointer<NativeFunction<GlUniform1dNative>>.fromAddress(
                 _glGetProcAddress('glUniform1d'))
-            .asFunction<GlUniform1d>());
+            .asFunction<GlUniform1d>()) as void Function(int, double)?;
   }
   glUniform2d = tryCall(
-      () => lib.lookupFunction<GlUniform2dNative, GlUniform2d>('glUniform2d'));
+      () => lib.lookupFunction<GlUniform2dNative, GlUniform2d>('glUniform2d')) as void Function(int, double, double)?;
   if (glUniform2d == null) {
     glUniform2d = tryCall(() =>
         Pointer<NativeFunction<GlUniform2dNative>>.fromAddress(
                 _glGetProcAddress('glUniform2d'))
-            .asFunction<GlUniform2d>());
+            .asFunction<GlUniform2d>()) as void Function(int, double, double)?;
   }
   glUniform3d = tryCall(
-      () => lib.lookupFunction<GlUniform3dNative, GlUniform3d>('glUniform3d'));
+      () => lib.lookupFunction<GlUniform3dNative, GlUniform3d>('glUniform3d')) as void Function(int, double, double, double)?;
   if (glUniform3d == null) {
     glUniform3d = tryCall(() =>
         Pointer<NativeFunction<GlUniform3dNative>>.fromAddress(
                 _glGetProcAddress('glUniform3d'))
-            .asFunction<GlUniform3d>());
+            .asFunction<GlUniform3d>()) as void Function(int, double, double, double)?;
   }
   glUniform4d = tryCall(
-      () => lib.lookupFunction<GlUniform4dNative, GlUniform4d>('glUniform4d'));
+      () => lib.lookupFunction<GlUniform4dNative, GlUniform4d>('glUniform4d')) as void Function(int, double, double, double, double)?;
   if (glUniform4d == null) {
     glUniform4d = tryCall(() =>
         Pointer<NativeFunction<GlUniform4dNative>>.fromAddress(
                 _glGetProcAddress('glUniform4d'))
-            .asFunction<GlUniform4d>());
+            .asFunction<GlUniform4d>()) as void Function(int, double, double, double, double)?;
   }
   glUniform1dv = tryCall(() =>
-      lib.lookupFunction<GlUniform1dvNative, GlUniform1dv>('glUniform1dv'));
+      lib.lookupFunction<GlUniform1dvNative, GlUniform1dv>('glUniform1dv')) as void Function(int, int, Pointer<Double>)?;
   if (glUniform1dv == null) {
     glUniform1dv = tryCall(() =>
         Pointer<NativeFunction<GlUniform1dvNative>>.fromAddress(
                 _glGetProcAddress('glUniform1dv'))
-            .asFunction<GlUniform1dv>());
+            .asFunction<GlUniform1dv>()) as void Function(int, int, Pointer<Double>)?;
   }
   glUniform2dv = tryCall(() =>
-      lib.lookupFunction<GlUniform2dvNative, GlUniform2dv>('glUniform2dv'));
+      lib.lookupFunction<GlUniform2dvNative, GlUniform2dv>('glUniform2dv')) as void Function(int, int, Pointer<Double>)?;
   if (glUniform2dv == null) {
     glUniform2dv = tryCall(() =>
         Pointer<NativeFunction<GlUniform2dvNative>>.fromAddress(
                 _glGetProcAddress('glUniform2dv'))
-            .asFunction<GlUniform2dv>());
+            .asFunction<GlUniform2dv>()) as void Function(int, int, Pointer<Double>)?;
   }
   glUniform3dv = tryCall(() =>
-      lib.lookupFunction<GlUniform3dvNative, GlUniform3dv>('glUniform3dv'));
+      lib.lookupFunction<GlUniform3dvNative, GlUniform3dv>('glUniform3dv')) as void Function(int, int, Pointer<Double>)?;
   if (glUniform3dv == null) {
     glUniform3dv = tryCall(() =>
         Pointer<NativeFunction<GlUniform3dvNative>>.fromAddress(
                 _glGetProcAddress('glUniform3dv'))
-            .asFunction<GlUniform3dv>());
+            .asFunction<GlUniform3dv>()) as void Function(int, int, Pointer<Double>)?;
   }
   glUniform4dv = tryCall(() =>
-      lib.lookupFunction<GlUniform4dvNative, GlUniform4dv>('glUniform4dv'));
+      lib.lookupFunction<GlUniform4dvNative, GlUniform4dv>('glUniform4dv')) as void Function(int, int, Pointer<Double>)?;
   if (glUniform4dv == null) {
     glUniform4dv = tryCall(() =>
         Pointer<NativeFunction<GlUniform4dvNative>>.fromAddress(
                 _glGetProcAddress('glUniform4dv'))
-            .asFunction<GlUniform4dv>());
+            .asFunction<GlUniform4dv>()) as void Function(int, int, Pointer<Double>)?;
   }
   glUniformMatrix2dv = tryCall(() =>
       lib.lookupFunction<GlUniformMatrix2dvNative, GlUniformMatrix2dv>(
-          'glUniformMatrix2dv'));
+          'glUniformMatrix2dv')) as void Function(int, int, int, Pointer<Double>)?;
   if (glUniformMatrix2dv == null) {
     glUniformMatrix2dv = tryCall(() =>
         Pointer<NativeFunction<GlUniformMatrix2dvNative>>.fromAddress(
                 _glGetProcAddress('glUniformMatrix2dv'))
-            .asFunction<GlUniformMatrix2dv>());
+            .asFunction<GlUniformMatrix2dv>()) as void Function(int, int, int, Pointer<Double>)?;
   }
   glUniformMatrix3dv = tryCall(() =>
       lib.lookupFunction<GlUniformMatrix3dvNative, GlUniformMatrix3dv>(
-          'glUniformMatrix3dv'));
+          'glUniformMatrix3dv')) as void Function(int, int, int, Pointer<Double>)?;
   if (glUniformMatrix3dv == null) {
     glUniformMatrix3dv = tryCall(() =>
         Pointer<NativeFunction<GlUniformMatrix3dvNative>>.fromAddress(
                 _glGetProcAddress('glUniformMatrix3dv'))
-            .asFunction<GlUniformMatrix3dv>());
+            .asFunction<GlUniformMatrix3dv>()) as void Function(int, int, int, Pointer<Double>)?;
   }
   glUniformMatrix4dv = tryCall(() =>
       lib.lookupFunction<GlUniformMatrix4dvNative, GlUniformMatrix4dv>(
-          'glUniformMatrix4dv'));
+          'glUniformMatrix4dv')) as void Function(int, int, int, Pointer<Double>)?;
   if (glUniformMatrix4dv == null) {
     glUniformMatrix4dv = tryCall(() =>
         Pointer<NativeFunction<GlUniformMatrix4dvNative>>.fromAddress(
                 _glGetProcAddress('glUniformMatrix4dv'))
-            .asFunction<GlUniformMatrix4dv>());
+            .asFunction<GlUniformMatrix4dv>()) as void Function(int, int, int, Pointer<Double>)?;
   }
   glUniformMatrix2x3dv = tryCall(() =>
       lib.lookupFunction<GlUniformMatrix2x3dvNative, GlUniformMatrix2x3dv>(
-          'glUniformMatrix2x3dv'));
+          'glUniformMatrix2x3dv')) as void Function(int, int, int, Pointer<Double>)?;
   if (glUniformMatrix2x3dv == null) {
     glUniformMatrix2x3dv = tryCall(() =>
         Pointer<NativeFunction<GlUniformMatrix2x3dvNative>>.fromAddress(
                 _glGetProcAddress('glUniformMatrix2x3dv'))
-            .asFunction<GlUniformMatrix2x3dv>());
+            .asFunction<GlUniformMatrix2x3dv>()) as void Function(int, int, int, Pointer<Double>)?;
   }
   glUniformMatrix2x4dv = tryCall(() =>
       lib.lookupFunction<GlUniformMatrix2x4dvNative, GlUniformMatrix2x4dv>(
-          'glUniformMatrix2x4dv'));
+          'glUniformMatrix2x4dv')) as void Function(int, int, int, Pointer<Double>)?;
   if (glUniformMatrix2x4dv == null) {
     glUniformMatrix2x4dv = tryCall(() =>
         Pointer<NativeFunction<GlUniformMatrix2x4dvNative>>.fromAddress(
                 _glGetProcAddress('glUniformMatrix2x4dv'))
-            .asFunction<GlUniformMatrix2x4dv>());
+            .asFunction<GlUniformMatrix2x4dv>()) as void Function(int, int, int, Pointer<Double>)?;
   }
   glUniformMatrix3x2dv = tryCall(() =>
       lib.lookupFunction<GlUniformMatrix3x2dvNative, GlUniformMatrix3x2dv>(
-          'glUniformMatrix3x2dv'));
+          'glUniformMatrix3x2dv')) as void Function(int, int, int, Pointer<Double>)?;
   if (glUniformMatrix3x2dv == null) {
     glUniformMatrix3x2dv = tryCall(() =>
         Pointer<NativeFunction<GlUniformMatrix3x2dvNative>>.fromAddress(
                 _glGetProcAddress('glUniformMatrix3x2dv'))
-            .asFunction<GlUniformMatrix3x2dv>());
+            .asFunction<GlUniformMatrix3x2dv>()) as void Function(int, int, int, Pointer<Double>)?;
   }
   glUniformMatrix3x4dv = tryCall(() =>
       lib.lookupFunction<GlUniformMatrix3x4dvNative, GlUniformMatrix3x4dv>(
-          'glUniformMatrix3x4dv'));
+          'glUniformMatrix3x4dv')) as void Function(int, int, int, Pointer<Double>)?;
   if (glUniformMatrix3x4dv == null) {
     glUniformMatrix3x4dv = tryCall(() =>
         Pointer<NativeFunction<GlUniformMatrix3x4dvNative>>.fromAddress(
                 _glGetProcAddress('glUniformMatrix3x4dv'))
-            .asFunction<GlUniformMatrix3x4dv>());
+            .asFunction<GlUniformMatrix3x4dv>()) as void Function(int, int, int, Pointer<Double>)?;
   }
   glUniformMatrix4x2dv = tryCall(() =>
       lib.lookupFunction<GlUniformMatrix4x2dvNative, GlUniformMatrix4x2dv>(
-          'glUniformMatrix4x2dv'));
+          'glUniformMatrix4x2dv')) as void Function(int, int, int, Pointer<Double>)?;
   if (glUniformMatrix4x2dv == null) {
     glUniformMatrix4x2dv = tryCall(() =>
         Pointer<NativeFunction<GlUniformMatrix4x2dvNative>>.fromAddress(
                 _glGetProcAddress('glUniformMatrix4x2dv'))
-            .asFunction<GlUniformMatrix4x2dv>());
+            .asFunction<GlUniformMatrix4x2dv>()) as void Function(int, int, int, Pointer<Double>)?;
   }
   glUniformMatrix4x3dv = tryCall(() =>
       lib.lookupFunction<GlUniformMatrix4x3dvNative, GlUniformMatrix4x3dv>(
-          'glUniformMatrix4x3dv'));
+          'glUniformMatrix4x3dv')) as void Function(int, int, int, Pointer<Double>)?;
   if (glUniformMatrix4x3dv == null) {
     glUniformMatrix4x3dv = tryCall(() =>
         Pointer<NativeFunction<GlUniformMatrix4x3dvNative>>.fromAddress(
                 _glGetProcAddress('glUniformMatrix4x3dv'))
-            .asFunction<GlUniformMatrix4x3dv>());
+            .asFunction<GlUniformMatrix4x3dv>()) as void Function(int, int, int, Pointer<Double>)?;
   }
   glGetUniformdv = tryCall(() => lib
-      .lookupFunction<GlGetUniformdvNative, GlGetUniformdv>('glGetUniformdv'));
+      .lookupFunction<GlGetUniformdvNative, GlGetUniformdv>('glGetUniformdv')) as void Function(int, int, Pointer<Double>)?;
   if (glGetUniformdv == null) {
     glGetUniformdv = tryCall(() =>
         Pointer<NativeFunction<GlGetUniformdvNative>>.fromAddress(
                 _glGetProcAddress('glGetUniformdv'))
-            .asFunction<GlGetUniformdv>());
+            .asFunction<GlGetUniformdv>()) as void Function(int, int, Pointer<Double>)?;
   }
   glGetSubroutineUniformLocation = tryCall(() => lib.lookupFunction<
       GlGetSubroutineUniformLocationNative,
-      GlGetSubroutineUniformLocation>('glGetSubroutineUniformLocation'));
+      GlGetSubroutineUniformLocation>('glGetSubroutineUniformLocation')) as int Function(int, int, Pointer<NativeType>)?;
   if (glGetSubroutineUniformLocation == null) {
     glGetSubroutineUniformLocation = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetSubroutineUniformLocationNative>>.fromAddress(
             _glGetProcAddress('glGetSubroutineUniformLocation'))
-        .asFunction<GlGetSubroutineUniformLocation>());
+        .asFunction<GlGetSubroutineUniformLocation>()) as int Function(int, int, Pointer<NativeType>)?;
   }
   glGetSubroutineIndex = tryCall(() =>
       lib.lookupFunction<GlGetSubroutineIndexNative, GlGetSubroutineIndex>(
-          'glGetSubroutineIndex'));
+          'glGetSubroutineIndex')) as int Function(int, int, Pointer<NativeType>)?;
   if (glGetSubroutineIndex == null) {
     glGetSubroutineIndex = tryCall(() =>
         Pointer<NativeFunction<GlGetSubroutineIndexNative>>.fromAddress(
                 _glGetProcAddress('glGetSubroutineIndex'))
-            .asFunction<GlGetSubroutineIndex>());
+            .asFunction<GlGetSubroutineIndex>()) as int Function(int, int, Pointer<NativeType>)?;
   }
   glGetActiveSubroutineUniformiv = tryCall(() => lib.lookupFunction<
       GlGetActiveSubroutineUniformivNative,
-      GlGetActiveSubroutineUniformiv>('glGetActiveSubroutineUniformiv'));
+      GlGetActiveSubroutineUniformiv>('glGetActiveSubroutineUniformiv')) as void Function(int, int, int, int, Pointer<Int32>)?;
   if (glGetActiveSubroutineUniformiv == null) {
     glGetActiveSubroutineUniformiv = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetActiveSubroutineUniformivNative>>.fromAddress(
             _glGetProcAddress('glGetActiveSubroutineUniformiv'))
-        .asFunction<GlGetActiveSubroutineUniformiv>());
+        .asFunction<GlGetActiveSubroutineUniformiv>()) as void Function(int, int, int, int, Pointer<Int32>)?;
   }
   glGetActiveSubroutineUniformName = tryCall(() => lib.lookupFunction<
       GlGetActiveSubroutineUniformNameNative,
-      GlGetActiveSubroutineUniformName>('glGetActiveSubroutineUniformName'));
+      GlGetActiveSubroutineUniformName>('glGetActiveSubroutineUniformName')) as void Function(int, int, int, int, Pointer<Int32>, Pointer<NativeType>)?;
   if (glGetActiveSubroutineUniformName == null) {
     glGetActiveSubroutineUniformName = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetActiveSubroutineUniformNameNative>>.fromAddress(
             _glGetProcAddress('glGetActiveSubroutineUniformName'))
-        .asFunction<GlGetActiveSubroutineUniformName>());
+        .asFunction<GlGetActiveSubroutineUniformName>()) as void Function(int, int, int, int, Pointer<Int32>, Pointer<NativeType>)?;
   }
   glGetActiveSubroutineName = tryCall(() => lib.lookupFunction<
       GlGetActiveSubroutineNameNative,
-      GlGetActiveSubroutineName>('glGetActiveSubroutineName'));
+      GlGetActiveSubroutineName>('glGetActiveSubroutineName')) as void Function(int, int, int, int, Pointer<Int32>, Pointer<NativeType>)?;
   if (glGetActiveSubroutineName == null) {
     glGetActiveSubroutineName = tryCall(() =>
         Pointer<NativeFunction<GlGetActiveSubroutineNameNative>>.fromAddress(
                 _glGetProcAddress('glGetActiveSubroutineName'))
-            .asFunction<GlGetActiveSubroutineName>());
+            .asFunction<GlGetActiveSubroutineName>()) as void Function(int, int, int, int, Pointer<Int32>, Pointer<NativeType>)?;
   }
   glUniformSubroutinesuiv = tryCall(() => lib.lookupFunction<
       GlUniformSubroutinesuivNative,
-      GlUniformSubroutinesuiv>('glUniformSubroutinesuiv'));
+      GlUniformSubroutinesuiv>('glUniformSubroutinesuiv')) as void Function(int, int, Pointer<Uint32>)?;
   if (glUniformSubroutinesuiv == null) {
     glUniformSubroutinesuiv = tryCall(() =>
         Pointer<NativeFunction<GlUniformSubroutinesuivNative>>.fromAddress(
                 _glGetProcAddress('glUniformSubroutinesuiv'))
-            .asFunction<GlUniformSubroutinesuiv>());
+            .asFunction<GlUniformSubroutinesuiv>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glGetUniformSubroutineuiv = tryCall(() => lib.lookupFunction<
       GlGetUniformSubroutineuivNative,
-      GlGetUniformSubroutineuiv>('glGetUniformSubroutineuiv'));
+      GlGetUniformSubroutineuiv>('glGetUniformSubroutineuiv')) as void Function(int, int, Pointer<Uint32>)?;
   if (glGetUniformSubroutineuiv == null) {
     glGetUniformSubroutineuiv = tryCall(() =>
         Pointer<NativeFunction<GlGetUniformSubroutineuivNative>>.fromAddress(
                 _glGetProcAddress('glGetUniformSubroutineuiv'))
-            .asFunction<GlGetUniformSubroutineuiv>());
+            .asFunction<GlGetUniformSubroutineuiv>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glGetProgramStageiv = tryCall(() =>
       lib.lookupFunction<GlGetProgramStageivNative, GlGetProgramStageiv>(
-          'glGetProgramStageiv'));
+          'glGetProgramStageiv')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glGetProgramStageiv == null) {
     glGetProgramStageiv = tryCall(() =>
         Pointer<NativeFunction<GlGetProgramStageivNative>>.fromAddress(
                 _glGetProcAddress('glGetProgramStageiv'))
-            .asFunction<GlGetProgramStageiv>());
+            .asFunction<GlGetProgramStageiv>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glPatchParameteri = tryCall(() =>
       lib.lookupFunction<GlPatchParameteriNative, GlPatchParameteri>(
-          'glPatchParameteri'));
+          'glPatchParameteri')) as void Function(int, int)?;
   if (glPatchParameteri == null) {
     glPatchParameteri = tryCall(() =>
         Pointer<NativeFunction<GlPatchParameteriNative>>.fromAddress(
                 _glGetProcAddress('glPatchParameteri'))
-            .asFunction<GlPatchParameteri>());
+            .asFunction<GlPatchParameteri>()) as void Function(int, int)?;
   }
   glPatchParameterfv = tryCall(() =>
       lib.lookupFunction<GlPatchParameterfvNative, GlPatchParameterfv>(
-          'glPatchParameterfv'));
+          'glPatchParameterfv')) as void Function(int, Pointer<Float>)?;
   if (glPatchParameterfv == null) {
     glPatchParameterfv = tryCall(() =>
         Pointer<NativeFunction<GlPatchParameterfvNative>>.fromAddress(
                 _glGetProcAddress('glPatchParameterfv'))
-            .asFunction<GlPatchParameterfv>());
+            .asFunction<GlPatchParameterfv>()) as void Function(int, Pointer<Float>)?;
   }
   glBindTransformFeedback = tryCall(() => lib.lookupFunction<
       GlBindTransformFeedbackNative,
-      GlBindTransformFeedback>('glBindTransformFeedback'));
+      GlBindTransformFeedback>('glBindTransformFeedback')) as void Function(int, int)?;
   if (glBindTransformFeedback == null) {
     glBindTransformFeedback = tryCall(() =>
         Pointer<NativeFunction<GlBindTransformFeedbackNative>>.fromAddress(
                 _glGetProcAddress('glBindTransformFeedback'))
-            .asFunction<GlBindTransformFeedback>());
+            .asFunction<GlBindTransformFeedback>()) as void Function(int, int)?;
   }
   glDeleteTransformFeedbacks = tryCall(() => lib.lookupFunction<
       GlDeleteTransformFeedbacksNative,
-      GlDeleteTransformFeedbacks>('glDeleteTransformFeedbacks'));
+      GlDeleteTransformFeedbacks>('glDeleteTransformFeedbacks')) as void Function(int, Pointer<Uint32>)?;
   if (glDeleteTransformFeedbacks == null) {
     glDeleteTransformFeedbacks = tryCall(() =>
         Pointer<NativeFunction<GlDeleteTransformFeedbacksNative>>.fromAddress(
                 _glGetProcAddress('glDeleteTransformFeedbacks'))
-            .asFunction<GlDeleteTransformFeedbacks>());
+            .asFunction<GlDeleteTransformFeedbacks>()) as void Function(int, Pointer<Uint32>)?;
   }
   glGenTransformFeedbacks = tryCall(() => lib.lookupFunction<
       GlGenTransformFeedbacksNative,
-      GlGenTransformFeedbacks>('glGenTransformFeedbacks'));
+      GlGenTransformFeedbacks>('glGenTransformFeedbacks')) as void Function(int, Pointer<Uint32>)?;
   if (glGenTransformFeedbacks == null) {
     glGenTransformFeedbacks = tryCall(() =>
         Pointer<NativeFunction<GlGenTransformFeedbacksNative>>.fromAddress(
                 _glGetProcAddress('glGenTransformFeedbacks'))
-            .asFunction<GlGenTransformFeedbacks>());
+            .asFunction<GlGenTransformFeedbacks>()) as void Function(int, Pointer<Uint32>)?;
   }
   glIsTransformFeedback = tryCall(() =>
       lib.lookupFunction<GlIsTransformFeedbackNative, GlIsTransformFeedback>(
-          'glIsTransformFeedback'));
+          'glIsTransformFeedback')) as int Function(int)?;
   if (glIsTransformFeedback == null) {
     glIsTransformFeedback = tryCall(() =>
         Pointer<NativeFunction<GlIsTransformFeedbackNative>>.fromAddress(
                 _glGetProcAddress('glIsTransformFeedback'))
-            .asFunction<GlIsTransformFeedback>());
+            .asFunction<GlIsTransformFeedback>()) as int Function(int)?;
   }
   glPauseTransformFeedback = tryCall(() => lib.lookupFunction<
       GlPauseTransformFeedbackNative,
-      GlPauseTransformFeedback>('glPauseTransformFeedback'));
+      GlPauseTransformFeedback>('glPauseTransformFeedback')) as void Function()?;
   if (glPauseTransformFeedback == null) {
     glPauseTransformFeedback = tryCall(() =>
         Pointer<NativeFunction<GlPauseTransformFeedbackNative>>.fromAddress(
                 _glGetProcAddress('glPauseTransformFeedback'))
-            .asFunction<GlPauseTransformFeedback>());
+            .asFunction<GlPauseTransformFeedback>()) as void Function()?;
   }
   glResumeTransformFeedback = tryCall(() => lib.lookupFunction<
       GlResumeTransformFeedbackNative,
-      GlResumeTransformFeedback>('glResumeTransformFeedback'));
+      GlResumeTransformFeedback>('glResumeTransformFeedback')) as void Function()?;
   if (glResumeTransformFeedback == null) {
     glResumeTransformFeedback = tryCall(() =>
         Pointer<NativeFunction<GlResumeTransformFeedbackNative>>.fromAddress(
                 _glGetProcAddress('glResumeTransformFeedback'))
-            .asFunction<GlResumeTransformFeedback>());
+            .asFunction<GlResumeTransformFeedback>()) as void Function()?;
   }
   glDrawTransformFeedback = tryCall(() => lib.lookupFunction<
       GlDrawTransformFeedbackNative,
-      GlDrawTransformFeedback>('glDrawTransformFeedback'));
+      GlDrawTransformFeedback>('glDrawTransformFeedback')) as void Function(int, int)?;
   if (glDrawTransformFeedback == null) {
     glDrawTransformFeedback = tryCall(() =>
         Pointer<NativeFunction<GlDrawTransformFeedbackNative>>.fromAddress(
                 _glGetProcAddress('glDrawTransformFeedback'))
-            .asFunction<GlDrawTransformFeedback>());
+            .asFunction<GlDrawTransformFeedback>()) as void Function(int, int)?;
   }
   glDrawTransformFeedbackStream = tryCall(() => lib.lookupFunction<
       GlDrawTransformFeedbackStreamNative,
-      GlDrawTransformFeedbackStream>('glDrawTransformFeedbackStream'));
+      GlDrawTransformFeedbackStream>('glDrawTransformFeedbackStream')) as void Function(int, int, int)?;
   if (glDrawTransformFeedbackStream == null) {
     glDrawTransformFeedbackStream = tryCall(() => Pointer<
                 NativeFunction<
                     GlDrawTransformFeedbackStreamNative>>.fromAddress(
             _glGetProcAddress('glDrawTransformFeedbackStream'))
-        .asFunction<GlDrawTransformFeedbackStream>());
+        .asFunction<GlDrawTransformFeedbackStream>()) as void Function(int, int, int)?;
   }
   glBeginQueryIndexed = tryCall(() =>
       lib.lookupFunction<GlBeginQueryIndexedNative, GlBeginQueryIndexed>(
-          'glBeginQueryIndexed'));
+          'glBeginQueryIndexed')) as void Function(int, int, int)?;
   if (glBeginQueryIndexed == null) {
     glBeginQueryIndexed = tryCall(() =>
         Pointer<NativeFunction<GlBeginQueryIndexedNative>>.fromAddress(
                 _glGetProcAddress('glBeginQueryIndexed'))
-            .asFunction<GlBeginQueryIndexed>());
+            .asFunction<GlBeginQueryIndexed>()) as void Function(int, int, int)?;
   }
   glEndQueryIndexed = tryCall(() =>
       lib.lookupFunction<GlEndQueryIndexedNative, GlEndQueryIndexed>(
-          'glEndQueryIndexed'));
+          'glEndQueryIndexed')) as void Function(int, int)?;
   if (glEndQueryIndexed == null) {
     glEndQueryIndexed = tryCall(() =>
         Pointer<NativeFunction<GlEndQueryIndexedNative>>.fromAddress(
                 _glGetProcAddress('glEndQueryIndexed'))
-            .asFunction<GlEndQueryIndexed>());
+            .asFunction<GlEndQueryIndexed>()) as void Function(int, int)?;
   }
   glGetQueryIndexediv = tryCall(() =>
       lib.lookupFunction<GlGetQueryIndexedivNative, GlGetQueryIndexediv>(
-          'glGetQueryIndexediv'));
+          'glGetQueryIndexediv')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glGetQueryIndexediv == null) {
     glGetQueryIndexediv = tryCall(() =>
         Pointer<NativeFunction<GlGetQueryIndexedivNative>>.fromAddress(
                 _glGetProcAddress('glGetQueryIndexediv'))
-            .asFunction<GlGetQueryIndexediv>());
+            .asFunction<GlGetQueryIndexediv>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glReleaseShaderCompiler = tryCall(() => lib.lookupFunction<
       GlReleaseShaderCompilerNative,
-      GlReleaseShaderCompiler>('glReleaseShaderCompiler'));
+      GlReleaseShaderCompiler>('glReleaseShaderCompiler')) as void Function()?;
   if (glReleaseShaderCompiler == null) {
     glReleaseShaderCompiler = tryCall(() =>
         Pointer<NativeFunction<GlReleaseShaderCompilerNative>>.fromAddress(
                 _glGetProcAddress('glReleaseShaderCompiler'))
-            .asFunction<GlReleaseShaderCompiler>());
+            .asFunction<GlReleaseShaderCompiler>()) as void Function()?;
   }
   glShaderBinary = tryCall(() => lib
-      .lookupFunction<GlShaderBinaryNative, GlShaderBinary>('glShaderBinary'));
+      .lookupFunction<GlShaderBinaryNative, GlShaderBinary>('glShaderBinary')) as void Function(int, Pointer<Uint32>, int, Pointer<NativeType>, int)?;
   if (glShaderBinary == null) {
     glShaderBinary = tryCall(() =>
         Pointer<NativeFunction<GlShaderBinaryNative>>.fromAddress(
                 _glGetProcAddress('glShaderBinary'))
-            .asFunction<GlShaderBinary>());
+            .asFunction<GlShaderBinary>()) as void Function(int, Pointer<Uint32>, int, Pointer<NativeType>, int)?;
   }
   glGetShaderPrecisionFormat = tryCall(() => lib.lookupFunction<
       GlGetShaderPrecisionFormatNative,
-      GlGetShaderPrecisionFormat>('glGetShaderPrecisionFormat'));
+      GlGetShaderPrecisionFormat>('glGetShaderPrecisionFormat')) as void Function(int, int, Pointer<Int32>, Pointer<Int32>)?;
   if (glGetShaderPrecisionFormat == null) {
     glGetShaderPrecisionFormat = tryCall(() =>
         Pointer<NativeFunction<GlGetShaderPrecisionFormatNative>>.fromAddress(
                 _glGetProcAddress('glGetShaderPrecisionFormat'))
-            .asFunction<GlGetShaderPrecisionFormat>());
+            .asFunction<GlGetShaderPrecisionFormat>()) as void Function(int, int, Pointer<Int32>, Pointer<Int32>)?;
   }
   glDepthRangef = tryCall(() =>
-      lib.lookupFunction<GlDepthRangefNative, GlDepthRangef>('glDepthRangef'));
+      lib.lookupFunction<GlDepthRangefNative, GlDepthRangef>('glDepthRangef')) as void Function(double, double)?;
   if (glDepthRangef == null) {
     glDepthRangef = tryCall(() =>
         Pointer<NativeFunction<GlDepthRangefNative>>.fromAddress(
                 _glGetProcAddress('glDepthRangef'))
-            .asFunction<GlDepthRangef>());
+            .asFunction<GlDepthRangef>()) as void Function(double, double)?;
   }
   glClearDepthf = tryCall(() =>
-      lib.lookupFunction<GlClearDepthfNative, GlClearDepthf>('glClearDepthf'));
+      lib.lookupFunction<GlClearDepthfNative, GlClearDepthf>('glClearDepthf')) as void Function(double)?;
   if (glClearDepthf == null) {
     glClearDepthf = tryCall(() =>
         Pointer<NativeFunction<GlClearDepthfNative>>.fromAddress(
                 _glGetProcAddress('glClearDepthf'))
-            .asFunction<GlClearDepthf>());
+            .asFunction<GlClearDepthf>()) as void Function(double)?;
   }
   glGetProgramBinary = tryCall(() =>
       lib.lookupFunction<GlGetProgramBinaryNative, GlGetProgramBinary>(
-          'glGetProgramBinary'));
+          'glGetProgramBinary')) as void Function(int, int, Pointer<Int32>, Pointer<Uint32>, Pointer<NativeType>)?;
   if (glGetProgramBinary == null) {
     glGetProgramBinary = tryCall(() =>
         Pointer<NativeFunction<GlGetProgramBinaryNative>>.fromAddress(
                 _glGetProcAddress('glGetProgramBinary'))
-            .asFunction<GlGetProgramBinary>());
+            .asFunction<GlGetProgramBinary>()) as void Function(int, int, Pointer<Int32>, Pointer<Uint32>, Pointer<NativeType>)?;
   }
   glProgramBinary = tryCall(() =>
       lib.lookupFunction<GlProgramBinaryNative, GlProgramBinary>(
-          'glProgramBinary'));
+          'glProgramBinary')) as void Function(int, int, Pointer<NativeType>, int)?;
   if (glProgramBinary == null) {
     glProgramBinary = tryCall(() =>
         Pointer<NativeFunction<GlProgramBinaryNative>>.fromAddress(
                 _glGetProcAddress('glProgramBinary'))
-            .asFunction<GlProgramBinary>());
+            .asFunction<GlProgramBinary>()) as void Function(int, int, Pointer<NativeType>, int)?;
   }
   glProgramParameteri = tryCall(() =>
       lib.lookupFunction<GlProgramParameteriNative, GlProgramParameteri>(
-          'glProgramParameteri'));
+          'glProgramParameteri')) as void Function(int, int, int)?;
   if (glProgramParameteri == null) {
     glProgramParameteri = tryCall(() =>
         Pointer<NativeFunction<GlProgramParameteriNative>>.fromAddress(
                 _glGetProcAddress('glProgramParameteri'))
-            .asFunction<GlProgramParameteri>());
+            .asFunction<GlProgramParameteri>()) as void Function(int, int, int)?;
   }
   glUseProgramStages = tryCall(() =>
       lib.lookupFunction<GlUseProgramStagesNative, GlUseProgramStages>(
-          'glUseProgramStages'));
+          'glUseProgramStages')) as void Function(int, int, int)?;
   if (glUseProgramStages == null) {
     glUseProgramStages = tryCall(() =>
         Pointer<NativeFunction<GlUseProgramStagesNative>>.fromAddress(
                 _glGetProcAddress('glUseProgramStages'))
-            .asFunction<GlUseProgramStages>());
+            .asFunction<GlUseProgramStages>()) as void Function(int, int, int)?;
   }
   glActiveShaderProgram = tryCall(() =>
       lib.lookupFunction<GlActiveShaderProgramNative, GlActiveShaderProgram>(
-          'glActiveShaderProgram'));
+          'glActiveShaderProgram')) as void Function(int, int)?;
   if (glActiveShaderProgram == null) {
     glActiveShaderProgram = tryCall(() =>
         Pointer<NativeFunction<GlActiveShaderProgramNative>>.fromAddress(
                 _glGetProcAddress('glActiveShaderProgram'))
-            .asFunction<GlActiveShaderProgram>());
+            .asFunction<GlActiveShaderProgram>()) as void Function(int, int)?;
   }
   glCreateShaderProgramv = tryCall(() =>
       lib.lookupFunction<GlCreateShaderProgramvNative, GlCreateShaderProgramv>(
-          'glCreateShaderProgramv'));
+          'glCreateShaderProgramv')) as int Function(int, int, Pointer<NativeType>)?;
   if (glCreateShaderProgramv == null) {
     glCreateShaderProgramv = tryCall(() =>
         Pointer<NativeFunction<GlCreateShaderProgramvNative>>.fromAddress(
                 _glGetProcAddress('glCreateShaderProgramv'))
-            .asFunction<GlCreateShaderProgramv>());
+            .asFunction<GlCreateShaderProgramv>()) as int Function(int, int, Pointer<NativeType>)?;
   }
   glBindProgramPipeline = tryCall(() =>
       lib.lookupFunction<GlBindProgramPipelineNative, GlBindProgramPipeline>(
-          'glBindProgramPipeline'));
+          'glBindProgramPipeline')) as void Function(int)?;
   if (glBindProgramPipeline == null) {
     glBindProgramPipeline = tryCall(() =>
         Pointer<NativeFunction<GlBindProgramPipelineNative>>.fromAddress(
                 _glGetProcAddress('glBindProgramPipeline'))
-            .asFunction<GlBindProgramPipeline>());
+            .asFunction<GlBindProgramPipeline>()) as void Function(int)?;
   }
   glDeleteProgramPipelines = tryCall(() => lib.lookupFunction<
       GlDeleteProgramPipelinesNative,
-      GlDeleteProgramPipelines>('glDeleteProgramPipelines'));
+      GlDeleteProgramPipelines>('glDeleteProgramPipelines')) as void Function(int, Pointer<Uint32>)?;
   if (glDeleteProgramPipelines == null) {
     glDeleteProgramPipelines = tryCall(() =>
         Pointer<NativeFunction<GlDeleteProgramPipelinesNative>>.fromAddress(
                 _glGetProcAddress('glDeleteProgramPipelines'))
-            .asFunction<GlDeleteProgramPipelines>());
+            .asFunction<GlDeleteProgramPipelines>()) as void Function(int, Pointer<Uint32>)?;
   }
   glGenProgramPipelines = tryCall(() =>
       lib.lookupFunction<GlGenProgramPipelinesNative, GlGenProgramPipelines>(
-          'glGenProgramPipelines'));
+          'glGenProgramPipelines')) as void Function(int, Pointer<Uint32>)?;
   if (glGenProgramPipelines == null) {
     glGenProgramPipelines = tryCall(() =>
         Pointer<NativeFunction<GlGenProgramPipelinesNative>>.fromAddress(
                 _glGetProcAddress('glGenProgramPipelines'))
-            .asFunction<GlGenProgramPipelines>());
+            .asFunction<GlGenProgramPipelines>()) as void Function(int, Pointer<Uint32>)?;
   }
   glIsProgramPipeline = tryCall(() =>
       lib.lookupFunction<GlIsProgramPipelineNative, GlIsProgramPipeline>(
-          'glIsProgramPipeline'));
+          'glIsProgramPipeline')) as int Function(int)?;
   if (glIsProgramPipeline == null) {
     glIsProgramPipeline = tryCall(() =>
         Pointer<NativeFunction<GlIsProgramPipelineNative>>.fromAddress(
                 _glGetProcAddress('glIsProgramPipeline'))
-            .asFunction<GlIsProgramPipeline>());
+            .asFunction<GlIsProgramPipeline>()) as int Function(int)?;
   }
   glGetProgramPipelineiv = tryCall(() =>
       lib.lookupFunction<GlGetProgramPipelineivNative, GlGetProgramPipelineiv>(
-          'glGetProgramPipelineiv'));
+          'glGetProgramPipelineiv')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetProgramPipelineiv == null) {
     glGetProgramPipelineiv = tryCall(() =>
         Pointer<NativeFunction<GlGetProgramPipelineivNative>>.fromAddress(
                 _glGetProcAddress('glGetProgramPipelineiv'))
-            .asFunction<GlGetProgramPipelineiv>());
+            .asFunction<GlGetProgramPipelineiv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glProgramUniform1i = tryCall(() =>
       lib.lookupFunction<GlProgramUniform1iNative, GlProgramUniform1i>(
-          'glProgramUniform1i'));
+          'glProgramUniform1i')) as void Function(int, int, int)?;
   if (glProgramUniform1i == null) {
     glProgramUniform1i = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform1iNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform1i'))
-            .asFunction<GlProgramUniform1i>());
+            .asFunction<GlProgramUniform1i>()) as void Function(int, int, int)?;
   }
   glProgramUniform1iv = tryCall(() =>
       lib.lookupFunction<GlProgramUniform1ivNative, GlProgramUniform1iv>(
-          'glProgramUniform1iv'));
+          'glProgramUniform1iv')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glProgramUniform1iv == null) {
     glProgramUniform1iv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform1ivNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform1iv'))
-            .asFunction<GlProgramUniform1iv>());
+            .asFunction<GlProgramUniform1iv>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glProgramUniform1f = tryCall(() =>
       lib.lookupFunction<GlProgramUniform1fNative, GlProgramUniform1f>(
-          'glProgramUniform1f'));
+          'glProgramUniform1f')) as void Function(int, int, double)?;
   if (glProgramUniform1f == null) {
     glProgramUniform1f = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform1fNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform1f'))
-            .asFunction<GlProgramUniform1f>());
+            .asFunction<GlProgramUniform1f>()) as void Function(int, int, double)?;
   }
   glProgramUniform1fv = tryCall(() =>
       lib.lookupFunction<GlProgramUniform1fvNative, GlProgramUniform1fv>(
-          'glProgramUniform1fv'));
+          'glProgramUniform1fv')) as void Function(int, int, int, Pointer<Float>)?;
   if (glProgramUniform1fv == null) {
     glProgramUniform1fv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform1fvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform1fv'))
-            .asFunction<GlProgramUniform1fv>());
+            .asFunction<GlProgramUniform1fv>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glProgramUniform1d = tryCall(() =>
       lib.lookupFunction<GlProgramUniform1dNative, GlProgramUniform1d>(
-          'glProgramUniform1d'));
+          'glProgramUniform1d')) as void Function(int, int, double)?;
   if (glProgramUniform1d == null) {
     glProgramUniform1d = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform1dNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform1d'))
-            .asFunction<GlProgramUniform1d>());
+            .asFunction<GlProgramUniform1d>()) as void Function(int, int, double)?;
   }
   glProgramUniform1dv = tryCall(() =>
       lib.lookupFunction<GlProgramUniform1dvNative, GlProgramUniform1dv>(
-          'glProgramUniform1dv'));
+          'glProgramUniform1dv')) as void Function(int, int, int, Pointer<Double>)?;
   if (glProgramUniform1dv == null) {
     glProgramUniform1dv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform1dvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform1dv'))
-            .asFunction<GlProgramUniform1dv>());
+            .asFunction<GlProgramUniform1dv>()) as void Function(int, int, int, Pointer<Double>)?;
   }
   glProgramUniform1ui = tryCall(() =>
       lib.lookupFunction<GlProgramUniform1uiNative, GlProgramUniform1ui>(
-          'glProgramUniform1ui'));
+          'glProgramUniform1ui')) as void Function(int, int, int)?;
   if (glProgramUniform1ui == null) {
     glProgramUniform1ui = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform1uiNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform1ui'))
-            .asFunction<GlProgramUniform1ui>());
+            .asFunction<GlProgramUniform1ui>()) as void Function(int, int, int)?;
   }
   glProgramUniform1uiv = tryCall(() =>
       lib.lookupFunction<GlProgramUniform1uivNative, GlProgramUniform1uiv>(
-          'glProgramUniform1uiv'));
+          'glProgramUniform1uiv')) as void Function(int, int, int, Pointer<Uint32>)?;
   if (glProgramUniform1uiv == null) {
     glProgramUniform1uiv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform1uivNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform1uiv'))
-            .asFunction<GlProgramUniform1uiv>());
+            .asFunction<GlProgramUniform1uiv>()) as void Function(int, int, int, Pointer<Uint32>)?;
   }
   glProgramUniform2i = tryCall(() =>
       lib.lookupFunction<GlProgramUniform2iNative, GlProgramUniform2i>(
-          'glProgramUniform2i'));
+          'glProgramUniform2i')) as void Function(int, int, int, int)?;
   if (glProgramUniform2i == null) {
     glProgramUniform2i = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform2iNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform2i'))
-            .asFunction<GlProgramUniform2i>());
+            .asFunction<GlProgramUniform2i>()) as void Function(int, int, int, int)?;
   }
   glProgramUniform2iv = tryCall(() =>
       lib.lookupFunction<GlProgramUniform2ivNative, GlProgramUniform2iv>(
-          'glProgramUniform2iv'));
+          'glProgramUniform2iv')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glProgramUniform2iv == null) {
     glProgramUniform2iv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform2ivNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform2iv'))
-            .asFunction<GlProgramUniform2iv>());
+            .asFunction<GlProgramUniform2iv>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glProgramUniform2f = tryCall(() =>
       lib.lookupFunction<GlProgramUniform2fNative, GlProgramUniform2f>(
-          'glProgramUniform2f'));
+          'glProgramUniform2f')) as void Function(int, int, double, double)?;
   if (glProgramUniform2f == null) {
     glProgramUniform2f = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform2fNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform2f'))
-            .asFunction<GlProgramUniform2f>());
+            .asFunction<GlProgramUniform2f>()) as void Function(int, int, double, double)?;
   }
   glProgramUniform2fv = tryCall(() =>
       lib.lookupFunction<GlProgramUniform2fvNative, GlProgramUniform2fv>(
-          'glProgramUniform2fv'));
+          'glProgramUniform2fv')) as void Function(int, int, int, Pointer<Float>)?;
   if (glProgramUniform2fv == null) {
     glProgramUniform2fv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform2fvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform2fv'))
-            .asFunction<GlProgramUniform2fv>());
+            .asFunction<GlProgramUniform2fv>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glProgramUniform2d = tryCall(() =>
       lib.lookupFunction<GlProgramUniform2dNative, GlProgramUniform2d>(
-          'glProgramUniform2d'));
+          'glProgramUniform2d')) as void Function(int, int, double, double)?;
   if (glProgramUniform2d == null) {
     glProgramUniform2d = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform2dNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform2d'))
-            .asFunction<GlProgramUniform2d>());
+            .asFunction<GlProgramUniform2d>()) as void Function(int, int, double, double)?;
   }
   glProgramUniform2dv = tryCall(() =>
       lib.lookupFunction<GlProgramUniform2dvNative, GlProgramUniform2dv>(
-          'glProgramUniform2dv'));
+          'glProgramUniform2dv')) as void Function(int, int, int, Pointer<Double>)?;
   if (glProgramUniform2dv == null) {
     glProgramUniform2dv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform2dvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform2dv'))
-            .asFunction<GlProgramUniform2dv>());
+            .asFunction<GlProgramUniform2dv>()) as void Function(int, int, int, Pointer<Double>)?;
   }
   glProgramUniform2ui = tryCall(() =>
       lib.lookupFunction<GlProgramUniform2uiNative, GlProgramUniform2ui>(
-          'glProgramUniform2ui'));
+          'glProgramUniform2ui')) as void Function(int, int, int, int)?;
   if (glProgramUniform2ui == null) {
     glProgramUniform2ui = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform2uiNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform2ui'))
-            .asFunction<GlProgramUniform2ui>());
+            .asFunction<GlProgramUniform2ui>()) as void Function(int, int, int, int)?;
   }
   glProgramUniform2uiv = tryCall(() =>
       lib.lookupFunction<GlProgramUniform2uivNative, GlProgramUniform2uiv>(
-          'glProgramUniform2uiv'));
+          'glProgramUniform2uiv')) as void Function(int, int, int, Pointer<Uint32>)?;
   if (glProgramUniform2uiv == null) {
     glProgramUniform2uiv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform2uivNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform2uiv'))
-            .asFunction<GlProgramUniform2uiv>());
+            .asFunction<GlProgramUniform2uiv>()) as void Function(int, int, int, Pointer<Uint32>)?;
   }
   glProgramUniform3i = tryCall(() =>
       lib.lookupFunction<GlProgramUniform3iNative, GlProgramUniform3i>(
-          'glProgramUniform3i'));
+          'glProgramUniform3i')) as void Function(int, int, int, int, int)?;
   if (glProgramUniform3i == null) {
     glProgramUniform3i = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform3iNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform3i'))
-            .asFunction<GlProgramUniform3i>());
+            .asFunction<GlProgramUniform3i>()) as void Function(int, int, int, int, int)?;
   }
   glProgramUniform3iv = tryCall(() =>
       lib.lookupFunction<GlProgramUniform3ivNative, GlProgramUniform3iv>(
-          'glProgramUniform3iv'));
+          'glProgramUniform3iv')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glProgramUniform3iv == null) {
     glProgramUniform3iv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform3ivNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform3iv'))
-            .asFunction<GlProgramUniform3iv>());
+            .asFunction<GlProgramUniform3iv>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glProgramUniform3f = tryCall(() =>
       lib.lookupFunction<GlProgramUniform3fNative, GlProgramUniform3f>(
-          'glProgramUniform3f'));
+          'glProgramUniform3f')) as void Function(int, int, double, double, double)?;
   if (glProgramUniform3f == null) {
     glProgramUniform3f = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform3fNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform3f'))
-            .asFunction<GlProgramUniform3f>());
+            .asFunction<GlProgramUniform3f>()) as void Function(int, int, double, double, double)?;
   }
   glProgramUniform3fv = tryCall(() =>
       lib.lookupFunction<GlProgramUniform3fvNative, GlProgramUniform3fv>(
-          'glProgramUniform3fv'));
+          'glProgramUniform3fv')) as void Function(int, int, int, Pointer<Float>)?;
   if (glProgramUniform3fv == null) {
     glProgramUniform3fv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform3fvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform3fv'))
-            .asFunction<GlProgramUniform3fv>());
+            .asFunction<GlProgramUniform3fv>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glProgramUniform3d = tryCall(() =>
       lib.lookupFunction<GlProgramUniform3dNative, GlProgramUniform3d>(
-          'glProgramUniform3d'));
+          'glProgramUniform3d')) as void Function(int, int, double, double, double)?;
   if (glProgramUniform3d == null) {
     glProgramUniform3d = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform3dNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform3d'))
-            .asFunction<GlProgramUniform3d>());
+            .asFunction<GlProgramUniform3d>()) as void Function(int, int, double, double, double)?;
   }
   glProgramUniform3dv = tryCall(() =>
       lib.lookupFunction<GlProgramUniform3dvNative, GlProgramUniform3dv>(
-          'glProgramUniform3dv'));
+          'glProgramUniform3dv')) as void Function(int, int, int, Pointer<Double>)?;
   if (glProgramUniform3dv == null) {
     glProgramUniform3dv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform3dvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform3dv'))
-            .asFunction<GlProgramUniform3dv>());
+            .asFunction<GlProgramUniform3dv>()) as void Function(int, int, int, Pointer<Double>)?;
   }
   glProgramUniform3ui = tryCall(() =>
       lib.lookupFunction<GlProgramUniform3uiNative, GlProgramUniform3ui>(
-          'glProgramUniform3ui'));
+          'glProgramUniform3ui')) as void Function(int, int, int, int, int)?;
   if (glProgramUniform3ui == null) {
     glProgramUniform3ui = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform3uiNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform3ui'))
-            .asFunction<GlProgramUniform3ui>());
+            .asFunction<GlProgramUniform3ui>()) as void Function(int, int, int, int, int)?;
   }
   glProgramUniform3uiv = tryCall(() =>
       lib.lookupFunction<GlProgramUniform3uivNative, GlProgramUniform3uiv>(
-          'glProgramUniform3uiv'));
+          'glProgramUniform3uiv')) as void Function(int, int, int, Pointer<Uint32>)?;
   if (glProgramUniform3uiv == null) {
     glProgramUniform3uiv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform3uivNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform3uiv'))
-            .asFunction<GlProgramUniform3uiv>());
+            .asFunction<GlProgramUniform3uiv>()) as void Function(int, int, int, Pointer<Uint32>)?;
   }
   glProgramUniform4i = tryCall(() =>
       lib.lookupFunction<GlProgramUniform4iNative, GlProgramUniform4i>(
-          'glProgramUniform4i'));
+          'glProgramUniform4i')) as void Function(int, int, int, int, int, int)?;
   if (glProgramUniform4i == null) {
     glProgramUniform4i = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform4iNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform4i'))
-            .asFunction<GlProgramUniform4i>());
+            .asFunction<GlProgramUniform4i>()) as void Function(int, int, int, int, int, int)?;
   }
   glProgramUniform4iv = tryCall(() =>
       lib.lookupFunction<GlProgramUniform4ivNative, GlProgramUniform4iv>(
-          'glProgramUniform4iv'));
+          'glProgramUniform4iv')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glProgramUniform4iv == null) {
     glProgramUniform4iv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform4ivNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform4iv'))
-            .asFunction<GlProgramUniform4iv>());
+            .asFunction<GlProgramUniform4iv>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glProgramUniform4f = tryCall(() =>
       lib.lookupFunction<GlProgramUniform4fNative, GlProgramUniform4f>(
-          'glProgramUniform4f'));
+          'glProgramUniform4f')) as void Function(int, int, double, double, double, double)?;
   if (glProgramUniform4f == null) {
     glProgramUniform4f = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform4fNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform4f'))
-            .asFunction<GlProgramUniform4f>());
+            .asFunction<GlProgramUniform4f>()) as void Function(int, int, double, double, double, double)?;
   }
   glProgramUniform4fv = tryCall(() =>
       lib.lookupFunction<GlProgramUniform4fvNative, GlProgramUniform4fv>(
-          'glProgramUniform4fv'));
+          'glProgramUniform4fv')) as void Function(int, int, int, Pointer<Float>)?;
   if (glProgramUniform4fv == null) {
     glProgramUniform4fv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform4fvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform4fv'))
-            .asFunction<GlProgramUniform4fv>());
+            .asFunction<GlProgramUniform4fv>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glProgramUniform4d = tryCall(() =>
       lib.lookupFunction<GlProgramUniform4dNative, GlProgramUniform4d>(
-          'glProgramUniform4d'));
+          'glProgramUniform4d')) as void Function(int, int, double, double, double, double)?;
   if (glProgramUniform4d == null) {
     glProgramUniform4d = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform4dNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform4d'))
-            .asFunction<GlProgramUniform4d>());
+            .asFunction<GlProgramUniform4d>()) as void Function(int, int, double, double, double, double)?;
   }
   glProgramUniform4dv = tryCall(() =>
       lib.lookupFunction<GlProgramUniform4dvNative, GlProgramUniform4dv>(
-          'glProgramUniform4dv'));
+          'glProgramUniform4dv')) as void Function(int, int, int, Pointer<Double>)?;
   if (glProgramUniform4dv == null) {
     glProgramUniform4dv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform4dvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform4dv'))
-            .asFunction<GlProgramUniform4dv>());
+            .asFunction<GlProgramUniform4dv>()) as void Function(int, int, int, Pointer<Double>)?;
   }
   glProgramUniform4ui = tryCall(() =>
       lib.lookupFunction<GlProgramUniform4uiNative, GlProgramUniform4ui>(
-          'glProgramUniform4ui'));
+          'glProgramUniform4ui')) as void Function(int, int, int, int, int, int)?;
   if (glProgramUniform4ui == null) {
     glProgramUniform4ui = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform4uiNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform4ui'))
-            .asFunction<GlProgramUniform4ui>());
+            .asFunction<GlProgramUniform4ui>()) as void Function(int, int, int, int, int, int)?;
   }
   glProgramUniform4uiv = tryCall(() =>
       lib.lookupFunction<GlProgramUniform4uivNative, GlProgramUniform4uiv>(
-          'glProgramUniform4uiv'));
+          'glProgramUniform4uiv')) as void Function(int, int, int, Pointer<Uint32>)?;
   if (glProgramUniform4uiv == null) {
     glProgramUniform4uiv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform4uivNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform4uiv'))
-            .asFunction<GlProgramUniform4uiv>());
+            .asFunction<GlProgramUniform4uiv>()) as void Function(int, int, int, Pointer<Uint32>)?;
   }
   glProgramUniformMatrix2fv = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix2fvNative,
-      GlProgramUniformMatrix2fv>('glProgramUniformMatrix2fv'));
+      GlProgramUniformMatrix2fv>('glProgramUniformMatrix2fv')) as void Function(int, int, int, int, Pointer<Float>)?;
   if (glProgramUniformMatrix2fv == null) {
     glProgramUniformMatrix2fv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformMatrix2fvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformMatrix2fv'))
-            .asFunction<GlProgramUniformMatrix2fv>());
+            .asFunction<GlProgramUniformMatrix2fv>()) as void Function(int, int, int, int, Pointer<Float>)?;
   }
   glProgramUniformMatrix3fv = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix3fvNative,
-      GlProgramUniformMatrix3fv>('glProgramUniformMatrix3fv'));
+      GlProgramUniformMatrix3fv>('glProgramUniformMatrix3fv')) as void Function(int, int, int, int, Pointer<Float>)?;
   if (glProgramUniformMatrix3fv == null) {
     glProgramUniformMatrix3fv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformMatrix3fvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformMatrix3fv'))
-            .asFunction<GlProgramUniformMatrix3fv>());
+            .asFunction<GlProgramUniformMatrix3fv>()) as void Function(int, int, int, int, Pointer<Float>)?;
   }
   glProgramUniformMatrix4fv = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix4fvNative,
-      GlProgramUniformMatrix4fv>('glProgramUniformMatrix4fv'));
+      GlProgramUniformMatrix4fv>('glProgramUniformMatrix4fv')) as void Function(int, int, int, int, Pointer<Float>)?;
   if (glProgramUniformMatrix4fv == null) {
     glProgramUniformMatrix4fv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformMatrix4fvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformMatrix4fv'))
-            .asFunction<GlProgramUniformMatrix4fv>());
+            .asFunction<GlProgramUniformMatrix4fv>()) as void Function(int, int, int, int, Pointer<Float>)?;
   }
   glProgramUniformMatrix2dv = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix2dvNative,
-      GlProgramUniformMatrix2dv>('glProgramUniformMatrix2dv'));
+      GlProgramUniformMatrix2dv>('glProgramUniformMatrix2dv')) as void Function(int, int, int, int, Pointer<Double>)?;
   if (glProgramUniformMatrix2dv == null) {
     glProgramUniformMatrix2dv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformMatrix2dvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformMatrix2dv'))
-            .asFunction<GlProgramUniformMatrix2dv>());
+            .asFunction<GlProgramUniformMatrix2dv>()) as void Function(int, int, int, int, Pointer<Double>)?;
   }
   glProgramUniformMatrix3dv = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix3dvNative,
-      GlProgramUniformMatrix3dv>('glProgramUniformMatrix3dv'));
+      GlProgramUniformMatrix3dv>('glProgramUniformMatrix3dv')) as void Function(int, int, int, int, Pointer<Double>)?;
   if (glProgramUniformMatrix3dv == null) {
     glProgramUniformMatrix3dv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformMatrix3dvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformMatrix3dv'))
-            .asFunction<GlProgramUniformMatrix3dv>());
+            .asFunction<GlProgramUniformMatrix3dv>()) as void Function(int, int, int, int, Pointer<Double>)?;
   }
   glProgramUniformMatrix4dv = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix4dvNative,
-      GlProgramUniformMatrix4dv>('glProgramUniformMatrix4dv'));
+      GlProgramUniformMatrix4dv>('glProgramUniformMatrix4dv')) as void Function(int, int, int, int, Pointer<Double>)?;
   if (glProgramUniformMatrix4dv == null) {
     glProgramUniformMatrix4dv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformMatrix4dvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformMatrix4dv'))
-            .asFunction<GlProgramUniformMatrix4dv>());
+            .asFunction<GlProgramUniformMatrix4dv>()) as void Function(int, int, int, int, Pointer<Double>)?;
   }
   glProgramUniformMatrix2x3fv = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix2x3fvNative,
-      GlProgramUniformMatrix2x3fv>('glProgramUniformMatrix2x3fv'));
+      GlProgramUniformMatrix2x3fv>('glProgramUniformMatrix2x3fv')) as void Function(int, int, int, int, Pointer<Float>)?;
   if (glProgramUniformMatrix2x3fv == null) {
     glProgramUniformMatrix2x3fv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformMatrix2x3fvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformMatrix2x3fv'))
-            .asFunction<GlProgramUniformMatrix2x3fv>());
+            .asFunction<GlProgramUniformMatrix2x3fv>()) as void Function(int, int, int, int, Pointer<Float>)?;
   }
   glProgramUniformMatrix3x2fv = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix3x2fvNative,
-      GlProgramUniformMatrix3x2fv>('glProgramUniformMatrix3x2fv'));
+      GlProgramUniformMatrix3x2fv>('glProgramUniformMatrix3x2fv')) as void Function(int, int, int, int, Pointer<Float>)?;
   if (glProgramUniformMatrix3x2fv == null) {
     glProgramUniformMatrix3x2fv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformMatrix3x2fvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformMatrix3x2fv'))
-            .asFunction<GlProgramUniformMatrix3x2fv>());
+            .asFunction<GlProgramUniformMatrix3x2fv>()) as void Function(int, int, int, int, Pointer<Float>)?;
   }
   glProgramUniformMatrix2x4fv = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix2x4fvNative,
-      GlProgramUniformMatrix2x4fv>('glProgramUniformMatrix2x4fv'));
+      GlProgramUniformMatrix2x4fv>('glProgramUniformMatrix2x4fv')) as void Function(int, int, int, int, Pointer<Float>)?;
   if (glProgramUniformMatrix2x4fv == null) {
     glProgramUniformMatrix2x4fv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformMatrix2x4fvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformMatrix2x4fv'))
-            .asFunction<GlProgramUniformMatrix2x4fv>());
+            .asFunction<GlProgramUniformMatrix2x4fv>()) as void Function(int, int, int, int, Pointer<Float>)?;
   }
   glProgramUniformMatrix4x2fv = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix4x2fvNative,
-      GlProgramUniformMatrix4x2fv>('glProgramUniformMatrix4x2fv'));
+      GlProgramUniformMatrix4x2fv>('glProgramUniformMatrix4x2fv')) as void Function(int, int, int, int, Pointer<Float>)?;
   if (glProgramUniformMatrix4x2fv == null) {
     glProgramUniformMatrix4x2fv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformMatrix4x2fvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformMatrix4x2fv'))
-            .asFunction<GlProgramUniformMatrix4x2fv>());
+            .asFunction<GlProgramUniformMatrix4x2fv>()) as void Function(int, int, int, int, Pointer<Float>)?;
   }
   glProgramUniformMatrix3x4fv = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix3x4fvNative,
-      GlProgramUniformMatrix3x4fv>('glProgramUniformMatrix3x4fv'));
+      GlProgramUniformMatrix3x4fv>('glProgramUniformMatrix3x4fv')) as void Function(int, int, int, int, Pointer<Float>)?;
   if (glProgramUniformMatrix3x4fv == null) {
     glProgramUniformMatrix3x4fv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformMatrix3x4fvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformMatrix3x4fv'))
-            .asFunction<GlProgramUniformMatrix3x4fv>());
+            .asFunction<GlProgramUniformMatrix3x4fv>()) as void Function(int, int, int, int, Pointer<Float>)?;
   }
   glProgramUniformMatrix4x3fv = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix4x3fvNative,
-      GlProgramUniformMatrix4x3fv>('glProgramUniformMatrix4x3fv'));
+      GlProgramUniformMatrix4x3fv>('glProgramUniformMatrix4x3fv')) as void Function(int, int, int, int, Pointer<Float>)?;
   if (glProgramUniformMatrix4x3fv == null) {
     glProgramUniformMatrix4x3fv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformMatrix4x3fvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformMatrix4x3fv'))
-            .asFunction<GlProgramUniformMatrix4x3fv>());
+            .asFunction<GlProgramUniformMatrix4x3fv>()) as void Function(int, int, int, int, Pointer<Float>)?;
   }
   glProgramUniformMatrix2x3dv = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix2x3dvNative,
-      GlProgramUniformMatrix2x3dv>('glProgramUniformMatrix2x3dv'));
+      GlProgramUniformMatrix2x3dv>('glProgramUniformMatrix2x3dv')) as void Function(int, int, int, int, Pointer<Double>)?;
   if (glProgramUniformMatrix2x3dv == null) {
     glProgramUniformMatrix2x3dv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformMatrix2x3dvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformMatrix2x3dv'))
-            .asFunction<GlProgramUniformMatrix2x3dv>());
+            .asFunction<GlProgramUniformMatrix2x3dv>()) as void Function(int, int, int, int, Pointer<Double>)?;
   }
   glProgramUniformMatrix3x2dv = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix3x2dvNative,
-      GlProgramUniformMatrix3x2dv>('glProgramUniformMatrix3x2dv'));
+      GlProgramUniformMatrix3x2dv>('glProgramUniformMatrix3x2dv')) as void Function(int, int, int, int, Pointer<Double>)?;
   if (glProgramUniformMatrix3x2dv == null) {
     glProgramUniformMatrix3x2dv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformMatrix3x2dvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformMatrix3x2dv'))
-            .asFunction<GlProgramUniformMatrix3x2dv>());
+            .asFunction<GlProgramUniformMatrix3x2dv>()) as void Function(int, int, int, int, Pointer<Double>)?;
   }
   glProgramUniformMatrix2x4dv = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix2x4dvNative,
-      GlProgramUniformMatrix2x4dv>('glProgramUniformMatrix2x4dv'));
+      GlProgramUniformMatrix2x4dv>('glProgramUniformMatrix2x4dv')) as void Function(int, int, int, int, Pointer<Double>)?;
   if (glProgramUniformMatrix2x4dv == null) {
     glProgramUniformMatrix2x4dv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformMatrix2x4dvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformMatrix2x4dv'))
-            .asFunction<GlProgramUniformMatrix2x4dv>());
+            .asFunction<GlProgramUniformMatrix2x4dv>()) as void Function(int, int, int, int, Pointer<Double>)?;
   }
   glProgramUniformMatrix4x2dv = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix4x2dvNative,
-      GlProgramUniformMatrix4x2dv>('glProgramUniformMatrix4x2dv'));
+      GlProgramUniformMatrix4x2dv>('glProgramUniformMatrix4x2dv')) as void Function(int, int, int, int, Pointer<Double>)?;
   if (glProgramUniformMatrix4x2dv == null) {
     glProgramUniformMatrix4x2dv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformMatrix4x2dvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformMatrix4x2dv'))
-            .asFunction<GlProgramUniformMatrix4x2dv>());
+            .asFunction<GlProgramUniformMatrix4x2dv>()) as void Function(int, int, int, int, Pointer<Double>)?;
   }
   glProgramUniformMatrix3x4dv = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix3x4dvNative,
-      GlProgramUniformMatrix3x4dv>('glProgramUniformMatrix3x4dv'));
+      GlProgramUniformMatrix3x4dv>('glProgramUniformMatrix3x4dv')) as void Function(int, int, int, int, Pointer<Double>)?;
   if (glProgramUniformMatrix3x4dv == null) {
     glProgramUniformMatrix3x4dv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformMatrix3x4dvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformMatrix3x4dv'))
-            .asFunction<GlProgramUniformMatrix3x4dv>());
+            .asFunction<GlProgramUniformMatrix3x4dv>()) as void Function(int, int, int, int, Pointer<Double>)?;
   }
   glProgramUniformMatrix4x3dv = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix4x3dvNative,
-      GlProgramUniformMatrix4x3dv>('glProgramUniformMatrix4x3dv'));
+      GlProgramUniformMatrix4x3dv>('glProgramUniformMatrix4x3dv')) as void Function(int, int, int, int, Pointer<Double>)?;
   if (glProgramUniformMatrix4x3dv == null) {
     glProgramUniformMatrix4x3dv = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformMatrix4x3dvNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformMatrix4x3dv'))
-            .asFunction<GlProgramUniformMatrix4x3dv>());
+            .asFunction<GlProgramUniformMatrix4x3dv>()) as void Function(int, int, int, int, Pointer<Double>)?;
   }
   glValidateProgramPipeline = tryCall(() => lib.lookupFunction<
       GlValidateProgramPipelineNative,
-      GlValidateProgramPipeline>('glValidateProgramPipeline'));
+      GlValidateProgramPipeline>('glValidateProgramPipeline')) as void Function(int)?;
   if (glValidateProgramPipeline == null) {
     glValidateProgramPipeline = tryCall(() =>
         Pointer<NativeFunction<GlValidateProgramPipelineNative>>.fromAddress(
                 _glGetProcAddress('glValidateProgramPipeline'))
-            .asFunction<GlValidateProgramPipeline>());
+            .asFunction<GlValidateProgramPipeline>()) as void Function(int)?;
   }
   glGetProgramPipelineInfoLog = tryCall(() => lib.lookupFunction<
       GlGetProgramPipelineInfoLogNative,
-      GlGetProgramPipelineInfoLog>('glGetProgramPipelineInfoLog'));
+      GlGetProgramPipelineInfoLog>('glGetProgramPipelineInfoLog')) as void Function(int, int, Pointer<Int32>, Pointer<NativeType>)?;
   if (glGetProgramPipelineInfoLog == null) {
     glGetProgramPipelineInfoLog = tryCall(() =>
         Pointer<NativeFunction<GlGetProgramPipelineInfoLogNative>>.fromAddress(
                 _glGetProcAddress('glGetProgramPipelineInfoLog'))
-            .asFunction<GlGetProgramPipelineInfoLog>());
+            .asFunction<GlGetProgramPipelineInfoLog>()) as void Function(int, int, Pointer<Int32>, Pointer<NativeType>)?;
   }
   glVertexAttribL1d = tryCall(() =>
       lib.lookupFunction<GlVertexAttribL1dNative, GlVertexAttribL1d>(
-          'glVertexAttribL1d'));
+          'glVertexAttribL1d')) as void Function(int, double)?;
   if (glVertexAttribL1d == null) {
     glVertexAttribL1d = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL1dNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL1d'))
-            .asFunction<GlVertexAttribL1d>());
+            .asFunction<GlVertexAttribL1d>()) as void Function(int, double)?;
   }
   glVertexAttribL2d = tryCall(() =>
       lib.lookupFunction<GlVertexAttribL2dNative, GlVertexAttribL2d>(
-          'glVertexAttribL2d'));
+          'glVertexAttribL2d')) as void Function(int, double, double)?;
   if (glVertexAttribL2d == null) {
     glVertexAttribL2d = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL2dNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL2d'))
-            .asFunction<GlVertexAttribL2d>());
+            .asFunction<GlVertexAttribL2d>()) as void Function(int, double, double)?;
   }
   glVertexAttribL3d = tryCall(() =>
       lib.lookupFunction<GlVertexAttribL3dNative, GlVertexAttribL3d>(
-          'glVertexAttribL3d'));
+          'glVertexAttribL3d')) as void Function(int, double, double, double)?;
   if (glVertexAttribL3d == null) {
     glVertexAttribL3d = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL3dNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL3d'))
-            .asFunction<GlVertexAttribL3d>());
+            .asFunction<GlVertexAttribL3d>()) as void Function(int, double, double, double)?;
   }
   glVertexAttribL4d = tryCall(() =>
       lib.lookupFunction<GlVertexAttribL4dNative, GlVertexAttribL4d>(
-          'glVertexAttribL4d'));
+          'glVertexAttribL4d')) as void Function(int, double, double, double, double)?;
   if (glVertexAttribL4d == null) {
     glVertexAttribL4d = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL4dNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL4d'))
-            .asFunction<GlVertexAttribL4d>());
+            .asFunction<GlVertexAttribL4d>()) as void Function(int, double, double, double, double)?;
   }
   glVertexAttribL1dv = tryCall(() =>
       lib.lookupFunction<GlVertexAttribL1dvNative, GlVertexAttribL1dv>(
-          'glVertexAttribL1dv'));
+          'glVertexAttribL1dv')) as void Function(int, Pointer<Double>)?;
   if (glVertexAttribL1dv == null) {
     glVertexAttribL1dv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL1dvNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL1dv'))
-            .asFunction<GlVertexAttribL1dv>());
+            .asFunction<GlVertexAttribL1dv>()) as void Function(int, Pointer<Double>)?;
   }
   glVertexAttribL2dv = tryCall(() =>
       lib.lookupFunction<GlVertexAttribL2dvNative, GlVertexAttribL2dv>(
-          'glVertexAttribL2dv'));
+          'glVertexAttribL2dv')) as void Function(int, Pointer<Double>)?;
   if (glVertexAttribL2dv == null) {
     glVertexAttribL2dv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL2dvNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL2dv'))
-            .asFunction<GlVertexAttribL2dv>());
+            .asFunction<GlVertexAttribL2dv>()) as void Function(int, Pointer<Double>)?;
   }
   glVertexAttribL3dv = tryCall(() =>
       lib.lookupFunction<GlVertexAttribL3dvNative, GlVertexAttribL3dv>(
-          'glVertexAttribL3dv'));
+          'glVertexAttribL3dv')) as void Function(int, Pointer<Double>)?;
   if (glVertexAttribL3dv == null) {
     glVertexAttribL3dv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL3dvNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL3dv'))
-            .asFunction<GlVertexAttribL3dv>());
+            .asFunction<GlVertexAttribL3dv>()) as void Function(int, Pointer<Double>)?;
   }
   glVertexAttribL4dv = tryCall(() =>
       lib.lookupFunction<GlVertexAttribL4dvNative, GlVertexAttribL4dv>(
-          'glVertexAttribL4dv'));
+          'glVertexAttribL4dv')) as void Function(int, Pointer<Double>)?;
   if (glVertexAttribL4dv == null) {
     glVertexAttribL4dv = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL4dvNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL4dv'))
-            .asFunction<GlVertexAttribL4dv>());
+            .asFunction<GlVertexAttribL4dv>()) as void Function(int, Pointer<Double>)?;
   }
   glVertexAttribLPointer = tryCall(() =>
       lib.lookupFunction<GlVertexAttribLPointerNative, GlVertexAttribLPointer>(
-          'glVertexAttribLPointer'));
+          'glVertexAttribLPointer')) as void Function(int, int, int, int, int)?;
   if (glVertexAttribLPointer == null) {
     glVertexAttribLPointer = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribLPointerNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribLPointer'))
-            .asFunction<GlVertexAttribLPointer>());
+            .asFunction<GlVertexAttribLPointer>()) as void Function(int, int, int, int, int)?;
   }
   glGetVertexAttribLdv = tryCall(() =>
       lib.lookupFunction<GlGetVertexAttribLdvNative, GlGetVertexAttribLdv>(
-          'glGetVertexAttribLdv'));
+          'glGetVertexAttribLdv')) as void Function(int, int, Pointer<Double>)?;
   if (glGetVertexAttribLdv == null) {
     glGetVertexAttribLdv = tryCall(() =>
         Pointer<NativeFunction<GlGetVertexAttribLdvNative>>.fromAddress(
                 _glGetProcAddress('glGetVertexAttribLdv'))
-            .asFunction<GlGetVertexAttribLdv>());
+            .asFunction<GlGetVertexAttribLdv>()) as void Function(int, int, Pointer<Double>)?;
   }
   glViewportArrayv = tryCall(() =>
       lib.lookupFunction<GlViewportArrayvNative, GlViewportArrayv>(
-          'glViewportArrayv'));
+          'glViewportArrayv')) as void Function(int, int, Pointer<Float>)?;
   if (glViewportArrayv == null) {
     glViewportArrayv = tryCall(() =>
         Pointer<NativeFunction<GlViewportArrayvNative>>.fromAddress(
                 _glGetProcAddress('glViewportArrayv'))
-            .asFunction<GlViewportArrayv>());
+            .asFunction<GlViewportArrayv>()) as void Function(int, int, Pointer<Float>)?;
   }
   glViewportIndexedf = tryCall(() =>
       lib.lookupFunction<GlViewportIndexedfNative, GlViewportIndexedf>(
-          'glViewportIndexedf'));
+          'glViewportIndexedf')) as void Function(int, double, double, double, double)?;
   if (glViewportIndexedf == null) {
     glViewportIndexedf = tryCall(() =>
         Pointer<NativeFunction<GlViewportIndexedfNative>>.fromAddress(
                 _glGetProcAddress('glViewportIndexedf'))
-            .asFunction<GlViewportIndexedf>());
+            .asFunction<GlViewportIndexedf>()) as void Function(int, double, double, double, double)?;
   }
   glViewportIndexedfv = tryCall(() =>
       lib.lookupFunction<GlViewportIndexedfvNative, GlViewportIndexedfv>(
-          'glViewportIndexedfv'));
+          'glViewportIndexedfv')) as void Function(int, Pointer<Float>)?;
   if (glViewportIndexedfv == null) {
     glViewportIndexedfv = tryCall(() =>
         Pointer<NativeFunction<GlViewportIndexedfvNative>>.fromAddress(
                 _glGetProcAddress('glViewportIndexedfv'))
-            .asFunction<GlViewportIndexedfv>());
+            .asFunction<GlViewportIndexedfv>()) as void Function(int, Pointer<Float>)?;
   }
   glScissorArrayv = tryCall(() =>
       lib.lookupFunction<GlScissorArrayvNative, GlScissorArrayv>(
-          'glScissorArrayv'));
+          'glScissorArrayv')) as void Function(int, int, Pointer<Int32>)?;
   if (glScissorArrayv == null) {
     glScissorArrayv = tryCall(() =>
         Pointer<NativeFunction<GlScissorArrayvNative>>.fromAddress(
                 _glGetProcAddress('glScissorArrayv'))
-            .asFunction<GlScissorArrayv>());
+            .asFunction<GlScissorArrayv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glScissorIndexed = tryCall(() =>
       lib.lookupFunction<GlScissorIndexedNative, GlScissorIndexed>(
-          'glScissorIndexed'));
+          'glScissorIndexed')) as void Function(int, int, int, int, int)?;
   if (glScissorIndexed == null) {
     glScissorIndexed = tryCall(() =>
         Pointer<NativeFunction<GlScissorIndexedNative>>.fromAddress(
                 _glGetProcAddress('glScissorIndexed'))
-            .asFunction<GlScissorIndexed>());
+            .asFunction<GlScissorIndexed>()) as void Function(int, int, int, int, int)?;
   }
   glScissorIndexedv = tryCall(() =>
       lib.lookupFunction<GlScissorIndexedvNative, GlScissorIndexedv>(
-          'glScissorIndexedv'));
+          'glScissorIndexedv')) as void Function(int, Pointer<Int32>)?;
   if (glScissorIndexedv == null) {
     glScissorIndexedv = tryCall(() =>
         Pointer<NativeFunction<GlScissorIndexedvNative>>.fromAddress(
                 _glGetProcAddress('glScissorIndexedv'))
-            .asFunction<GlScissorIndexedv>());
+            .asFunction<GlScissorIndexedv>()) as void Function(int, Pointer<Int32>)?;
   }
   glDepthRangeArrayv = tryCall(() =>
       lib.lookupFunction<GlDepthRangeArrayvNative, GlDepthRangeArrayv>(
-          'glDepthRangeArrayv'));
+          'glDepthRangeArrayv')) as void Function(int, int, Pointer<Double>)?;
   if (glDepthRangeArrayv == null) {
     glDepthRangeArrayv = tryCall(() =>
         Pointer<NativeFunction<GlDepthRangeArrayvNative>>.fromAddress(
                 _glGetProcAddress('glDepthRangeArrayv'))
-            .asFunction<GlDepthRangeArrayv>());
+            .asFunction<GlDepthRangeArrayv>()) as void Function(int, int, Pointer<Double>)?;
   }
   glDepthRangeIndexed = tryCall(() =>
       lib.lookupFunction<GlDepthRangeIndexedNative, GlDepthRangeIndexed>(
-          'glDepthRangeIndexed'));
+          'glDepthRangeIndexed')) as void Function(int, double, double)?;
   if (glDepthRangeIndexed == null) {
     glDepthRangeIndexed = tryCall(() =>
         Pointer<NativeFunction<GlDepthRangeIndexedNative>>.fromAddress(
                 _glGetProcAddress('glDepthRangeIndexed'))
-            .asFunction<GlDepthRangeIndexed>());
+            .asFunction<GlDepthRangeIndexed>()) as void Function(int, double, double)?;
   }
   glGetFloati_v = tryCall(() =>
-      lib.lookupFunction<GlGetFloati_vNative, GlGetFloati_v>('glGetFloati_v'));
+      lib.lookupFunction<GlGetFloati_vNative, GlGetFloati_v>('glGetFloati_v')) as void Function(int, int, Pointer<Float>)?;
   if (glGetFloati_v == null) {
     glGetFloati_v = tryCall(() =>
         Pointer<NativeFunction<GlGetFloati_vNative>>.fromAddress(
                 _glGetProcAddress('glGetFloati_v'))
-            .asFunction<GlGetFloati_v>());
+            .asFunction<GlGetFloati_v>()) as void Function(int, int, Pointer<Float>)?;
   }
   glGetDoublei_v = tryCall(() => lib
-      .lookupFunction<GlGetDoublei_vNative, GlGetDoublei_v>('glGetDoublei_v'));
+      .lookupFunction<GlGetDoublei_vNative, GlGetDoublei_v>('glGetDoublei_v')) as void Function(int, int, Pointer<Double>)?;
   if (glGetDoublei_v == null) {
     glGetDoublei_v = tryCall(() =>
         Pointer<NativeFunction<GlGetDoublei_vNative>>.fromAddress(
                 _glGetProcAddress('glGetDoublei_v'))
-            .asFunction<GlGetDoublei_v>());
+            .asFunction<GlGetDoublei_v>()) as void Function(int, int, Pointer<Double>)?;
   }
   glDrawArraysInstancedBaseInstance = tryCall(() => lib.lookupFunction<
       GlDrawArraysInstancedBaseInstanceNative,
-      GlDrawArraysInstancedBaseInstance>('glDrawArraysInstancedBaseInstance'));
+      GlDrawArraysInstancedBaseInstance>('glDrawArraysInstancedBaseInstance')) as void Function(int, int, int, int, int)?;
   if (glDrawArraysInstancedBaseInstance == null) {
     glDrawArraysInstancedBaseInstance = tryCall(() => Pointer<
                 NativeFunction<
                     GlDrawArraysInstancedBaseInstanceNative>>.fromAddress(
             _glGetProcAddress('glDrawArraysInstancedBaseInstance'))
-        .asFunction<GlDrawArraysInstancedBaseInstance>());
+        .asFunction<GlDrawArraysInstancedBaseInstance>()) as void Function(int, int, int, int, int)?;
   }
   glDrawElementsInstancedBaseInstance = tryCall(() => lib.lookupFunction<
           GlDrawElementsInstancedBaseInstanceNative,
           GlDrawElementsInstancedBaseInstance>(
-      'glDrawElementsInstancedBaseInstance'));
+      'glDrawElementsInstancedBaseInstance')) as void Function(int, int, int, Pointer<NativeType>, int, int)?;
   if (glDrawElementsInstancedBaseInstance == null) {
     glDrawElementsInstancedBaseInstance = tryCall(() => Pointer<
                 NativeFunction<
                     GlDrawElementsInstancedBaseInstanceNative>>.fromAddress(
             _glGetProcAddress('glDrawElementsInstancedBaseInstance'))
-        .asFunction<GlDrawElementsInstancedBaseInstance>());
+        .asFunction<GlDrawElementsInstancedBaseInstance>()) as void Function(int, int, int, Pointer<NativeType>, int, int)?;
   }
   glDrawElementsInstancedBaseVertexBaseInstance = tryCall(() =>
       lib.lookupFunction<GlDrawElementsInstancedBaseVertexBaseInstanceNative,
               GlDrawElementsInstancedBaseVertexBaseInstance>(
-          'glDrawElementsInstancedBaseVertexBaseInstance'));
+          'glDrawElementsInstancedBaseVertexBaseInstance')) as void Function(int, int, int, Pointer<NativeType>, int, int, int)?;
   if (glDrawElementsInstancedBaseVertexBaseInstance == null) {
     glDrawElementsInstancedBaseVertexBaseInstance = tryCall(() => Pointer<
                 NativeFunction<
                     GlDrawElementsInstancedBaseVertexBaseInstanceNative>>.fromAddress(
             _glGetProcAddress('glDrawElementsInstancedBaseVertexBaseInstance'))
-        .asFunction<GlDrawElementsInstancedBaseVertexBaseInstance>());
+        .asFunction<GlDrawElementsInstancedBaseVertexBaseInstance>()) as void Function(int, int, int, Pointer<NativeType>, int, int, int)?;
   }
   glGetInternalformativ = tryCall(() =>
       lib.lookupFunction<GlGetInternalformativNative, GlGetInternalformativ>(
-          'glGetInternalformativ'));
+          'glGetInternalformativ')) as void Function(int, int, int, int, Pointer<Int32>)?;
   if (glGetInternalformativ == null) {
     glGetInternalformativ = tryCall(() =>
         Pointer<NativeFunction<GlGetInternalformativNative>>.fromAddress(
                 _glGetProcAddress('glGetInternalformativ'))
-            .asFunction<GlGetInternalformativ>());
+            .asFunction<GlGetInternalformativ>()) as void Function(int, int, int, int, Pointer<Int32>)?;
   }
   glGetActiveAtomicCounterBufferiv = tryCall(() => lib.lookupFunction<
       GlGetActiveAtomicCounterBufferivNative,
-      GlGetActiveAtomicCounterBufferiv>('glGetActiveAtomicCounterBufferiv'));
+      GlGetActiveAtomicCounterBufferiv>('glGetActiveAtomicCounterBufferiv')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glGetActiveAtomicCounterBufferiv == null) {
     glGetActiveAtomicCounterBufferiv = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetActiveAtomicCounterBufferivNative>>.fromAddress(
             _glGetProcAddress('glGetActiveAtomicCounterBufferiv'))
-        .asFunction<GlGetActiveAtomicCounterBufferiv>());
+        .asFunction<GlGetActiveAtomicCounterBufferiv>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glBindImageTexture = tryCall(() =>
       lib.lookupFunction<GlBindImageTextureNative, GlBindImageTexture>(
-          'glBindImageTexture'));
+          'glBindImageTexture')) as void Function(int, int, int, int, int, int, int)?;
   if (glBindImageTexture == null) {
     glBindImageTexture = tryCall(() =>
         Pointer<NativeFunction<GlBindImageTextureNative>>.fromAddress(
                 _glGetProcAddress('glBindImageTexture'))
-            .asFunction<GlBindImageTexture>());
+            .asFunction<GlBindImageTexture>()) as void Function(int, int, int, int, int, int, int)?;
   }
   glMemoryBarrier = tryCall(() =>
       lib.lookupFunction<GlMemoryBarrierNative, GlMemoryBarrier>(
-          'glMemoryBarrier'));
+          'glMemoryBarrier')) as void Function(int)?;
   if (glMemoryBarrier == null) {
     glMemoryBarrier = tryCall(() =>
         Pointer<NativeFunction<GlMemoryBarrierNative>>.fromAddress(
                 _glGetProcAddress('glMemoryBarrier'))
-            .asFunction<GlMemoryBarrier>());
+            .asFunction<GlMemoryBarrier>()) as void Function(int)?;
   }
   glTexStorage1D = tryCall(() => lib
-      .lookupFunction<GlTexStorage1DNative, GlTexStorage1D>('glTexStorage1D'));
+      .lookupFunction<GlTexStorage1DNative, GlTexStorage1D>('glTexStorage1D')) as void Function(int, int, int, int)?;
   if (glTexStorage1D == null) {
     glTexStorage1D = tryCall(() =>
         Pointer<NativeFunction<GlTexStorage1DNative>>.fromAddress(
                 _glGetProcAddress('glTexStorage1D'))
-            .asFunction<GlTexStorage1D>());
+            .asFunction<GlTexStorage1D>()) as void Function(int, int, int, int)?;
   }
   glTexStorage2D = tryCall(() => lib
-      .lookupFunction<GlTexStorage2DNative, GlTexStorage2D>('glTexStorage2D'));
+      .lookupFunction<GlTexStorage2DNative, GlTexStorage2D>('glTexStorage2D')) as void Function(int, int, int, int, int)?;
   if (glTexStorage2D == null) {
     glTexStorage2D = tryCall(() =>
         Pointer<NativeFunction<GlTexStorage2DNative>>.fromAddress(
                 _glGetProcAddress('glTexStorage2D'))
-            .asFunction<GlTexStorage2D>());
+            .asFunction<GlTexStorage2D>()) as void Function(int, int, int, int, int)?;
   }
   glTexStorage3D = tryCall(() => lib
-      .lookupFunction<GlTexStorage3DNative, GlTexStorage3D>('glTexStorage3D'));
+      .lookupFunction<GlTexStorage3DNative, GlTexStorage3D>('glTexStorage3D')) as void Function(int, int, int, int, int, int)?;
   if (glTexStorage3D == null) {
     glTexStorage3D = tryCall(() =>
         Pointer<NativeFunction<GlTexStorage3DNative>>.fromAddress(
                 _glGetProcAddress('glTexStorage3D'))
-            .asFunction<GlTexStorage3D>());
+            .asFunction<GlTexStorage3D>()) as void Function(int, int, int, int, int, int)?;
   }
   glDrawTransformFeedbackInstanced = tryCall(() => lib.lookupFunction<
       GlDrawTransformFeedbackInstancedNative,
-      GlDrawTransformFeedbackInstanced>('glDrawTransformFeedbackInstanced'));
+      GlDrawTransformFeedbackInstanced>('glDrawTransformFeedbackInstanced')) as void Function(int, int, int)?;
   if (glDrawTransformFeedbackInstanced == null) {
     glDrawTransformFeedbackInstanced = tryCall(() => Pointer<
                 NativeFunction<
                     GlDrawTransformFeedbackInstancedNative>>.fromAddress(
             _glGetProcAddress('glDrawTransformFeedbackInstanced'))
-        .asFunction<GlDrawTransformFeedbackInstanced>());
+        .asFunction<GlDrawTransformFeedbackInstanced>()) as void Function(int, int, int)?;
   }
   glDrawTransformFeedbackStreamInstanced = tryCall(() => lib.lookupFunction<
           GlDrawTransformFeedbackStreamInstancedNative,
           GlDrawTransformFeedbackStreamInstanced>(
-      'glDrawTransformFeedbackStreamInstanced'));
+      'glDrawTransformFeedbackStreamInstanced')) as void Function(int, int, int, int)?;
   if (glDrawTransformFeedbackStreamInstanced == null) {
     glDrawTransformFeedbackStreamInstanced = tryCall(() => Pointer<
                 NativeFunction<
                     GlDrawTransformFeedbackStreamInstancedNative>>.fromAddress(
             _glGetProcAddress('glDrawTransformFeedbackStreamInstanced'))
-        .asFunction<GlDrawTransformFeedbackStreamInstanced>());
+        .asFunction<GlDrawTransformFeedbackStreamInstanced>()) as void Function(int, int, int, int)?;
   }
   glClearBufferData = tryCall(() =>
       lib.lookupFunction<GlClearBufferDataNative, GlClearBufferData>(
-          'glClearBufferData'));
+          'glClearBufferData')) as void Function(int, int, int, int, Pointer<NativeType>)?;
   if (glClearBufferData == null) {
     glClearBufferData = tryCall(() =>
         Pointer<NativeFunction<GlClearBufferDataNative>>.fromAddress(
                 _glGetProcAddress('glClearBufferData'))
-            .asFunction<GlClearBufferData>());
+            .asFunction<GlClearBufferData>()) as void Function(int, int, int, int, Pointer<NativeType>)?;
   }
   glClearBufferSubData = tryCall(() =>
       lib.lookupFunction<GlClearBufferSubDataNative, GlClearBufferSubData>(
-          'glClearBufferSubData'));
+          'glClearBufferSubData')) as void Function(int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glClearBufferSubData == null) {
     glClearBufferSubData = tryCall(() =>
         Pointer<NativeFunction<GlClearBufferSubDataNative>>.fromAddress(
                 _glGetProcAddress('glClearBufferSubData'))
-            .asFunction<GlClearBufferSubData>());
+            .asFunction<GlClearBufferSubData>()) as void Function(int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glDispatchCompute = tryCall(() =>
       lib.lookupFunction<GlDispatchComputeNative, GlDispatchCompute>(
-          'glDispatchCompute'));
+          'glDispatchCompute')) as void Function(int, int, int)?;
   if (glDispatchCompute == null) {
     glDispatchCompute = tryCall(() =>
         Pointer<NativeFunction<GlDispatchComputeNative>>.fromAddress(
                 _glGetProcAddress('glDispatchCompute'))
-            .asFunction<GlDispatchCompute>());
+            .asFunction<GlDispatchCompute>()) as void Function(int, int, int)?;
   }
   glDispatchComputeIndirect = tryCall(() => lib.lookupFunction<
       GlDispatchComputeIndirectNative,
-      GlDispatchComputeIndirect>('glDispatchComputeIndirect'));
+      GlDispatchComputeIndirect>('glDispatchComputeIndirect')) as void Function(int)?;
   if (glDispatchComputeIndirect == null) {
     glDispatchComputeIndirect = tryCall(() =>
         Pointer<NativeFunction<GlDispatchComputeIndirectNative>>.fromAddress(
                 _glGetProcAddress('glDispatchComputeIndirect'))
-            .asFunction<GlDispatchComputeIndirect>());
+            .asFunction<GlDispatchComputeIndirect>()) as void Function(int)?;
   }
   glCopyImageSubData = tryCall(() =>
       lib.lookupFunction<GlCopyImageSubDataNative, GlCopyImageSubData>(
-          'glCopyImageSubData'));
+          'glCopyImageSubData')) as void Function(int, int, int, int, int, int, int, int, int, int, int, int, int, int, int)?;
   if (glCopyImageSubData == null) {
     glCopyImageSubData = tryCall(() =>
         Pointer<NativeFunction<GlCopyImageSubDataNative>>.fromAddress(
                 _glGetProcAddress('glCopyImageSubData'))
-            .asFunction<GlCopyImageSubData>());
+            .asFunction<GlCopyImageSubData>()) as void Function(int, int, int, int, int, int, int, int, int, int, int, int, int, int, int)?;
   }
   glFramebufferParameteri = tryCall(() => lib.lookupFunction<
       GlFramebufferParameteriNative,
-      GlFramebufferParameteri>('glFramebufferParameteri'));
+      GlFramebufferParameteri>('glFramebufferParameteri')) as void Function(int, int, int)?;
   if (glFramebufferParameteri == null) {
     glFramebufferParameteri = tryCall(() =>
         Pointer<NativeFunction<GlFramebufferParameteriNative>>.fromAddress(
                 _glGetProcAddress('glFramebufferParameteri'))
-            .asFunction<GlFramebufferParameteri>());
+            .asFunction<GlFramebufferParameteri>()) as void Function(int, int, int)?;
   }
   glGetFramebufferParameteriv = tryCall(() => lib.lookupFunction<
       GlGetFramebufferParameterivNative,
-      GlGetFramebufferParameteriv>('glGetFramebufferParameteriv'));
+      GlGetFramebufferParameteriv>('glGetFramebufferParameteriv')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetFramebufferParameteriv == null) {
     glGetFramebufferParameteriv = tryCall(() =>
         Pointer<NativeFunction<GlGetFramebufferParameterivNative>>.fromAddress(
                 _glGetProcAddress('glGetFramebufferParameteriv'))
-            .asFunction<GlGetFramebufferParameteriv>());
+            .asFunction<GlGetFramebufferParameteriv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glGetInternalformati64v = tryCall(() => lib.lookupFunction<
       GlGetInternalformati64vNative,
-      GlGetInternalformati64v>('glGetInternalformati64v'));
+      GlGetInternalformati64v>('glGetInternalformati64v')) as void Function(int, int, int, int, Pointer<Int64>)?;
   if (glGetInternalformati64v == null) {
     glGetInternalformati64v = tryCall(() =>
         Pointer<NativeFunction<GlGetInternalformati64vNative>>.fromAddress(
                 _glGetProcAddress('glGetInternalformati64v'))
-            .asFunction<GlGetInternalformati64v>());
+            .asFunction<GlGetInternalformati64v>()) as void Function(int, int, int, int, Pointer<Int64>)?;
   }
   glInvalidateTexSubImage = tryCall(() => lib.lookupFunction<
       GlInvalidateTexSubImageNative,
-      GlInvalidateTexSubImage>('glInvalidateTexSubImage'));
+      GlInvalidateTexSubImage>('glInvalidateTexSubImage')) as void Function(int, int, int, int, int, int, int, int)?;
   if (glInvalidateTexSubImage == null) {
     glInvalidateTexSubImage = tryCall(() =>
         Pointer<NativeFunction<GlInvalidateTexSubImageNative>>.fromAddress(
                 _glGetProcAddress('glInvalidateTexSubImage'))
-            .asFunction<GlInvalidateTexSubImage>());
+            .asFunction<GlInvalidateTexSubImage>()) as void Function(int, int, int, int, int, int, int, int)?;
   }
   glInvalidateTexImage = tryCall(() =>
       lib.lookupFunction<GlInvalidateTexImageNative, GlInvalidateTexImage>(
-          'glInvalidateTexImage'));
+          'glInvalidateTexImage')) as void Function(int, int)?;
   if (glInvalidateTexImage == null) {
     glInvalidateTexImage = tryCall(() =>
         Pointer<NativeFunction<GlInvalidateTexImageNative>>.fromAddress(
                 _glGetProcAddress('glInvalidateTexImage'))
-            .asFunction<GlInvalidateTexImage>());
+            .asFunction<GlInvalidateTexImage>()) as void Function(int, int)?;
   }
   glInvalidateBufferSubData = tryCall(() => lib.lookupFunction<
       GlInvalidateBufferSubDataNative,
-      GlInvalidateBufferSubData>('glInvalidateBufferSubData'));
+      GlInvalidateBufferSubData>('glInvalidateBufferSubData')) as void Function(int, int, int)?;
   if (glInvalidateBufferSubData == null) {
     glInvalidateBufferSubData = tryCall(() =>
         Pointer<NativeFunction<GlInvalidateBufferSubDataNative>>.fromAddress(
                 _glGetProcAddress('glInvalidateBufferSubData'))
-            .asFunction<GlInvalidateBufferSubData>());
+            .asFunction<GlInvalidateBufferSubData>()) as void Function(int, int, int)?;
   }
   glInvalidateBufferData = tryCall(() =>
       lib.lookupFunction<GlInvalidateBufferDataNative, GlInvalidateBufferData>(
-          'glInvalidateBufferData'));
+          'glInvalidateBufferData')) as void Function(int)?;
   if (glInvalidateBufferData == null) {
     glInvalidateBufferData = tryCall(() =>
         Pointer<NativeFunction<GlInvalidateBufferDataNative>>.fromAddress(
                 _glGetProcAddress('glInvalidateBufferData'))
-            .asFunction<GlInvalidateBufferData>());
+            .asFunction<GlInvalidateBufferData>()) as void Function(int)?;
   }
   glInvalidateFramebuffer = tryCall(() => lib.lookupFunction<
       GlInvalidateFramebufferNative,
-      GlInvalidateFramebuffer>('glInvalidateFramebuffer'));
+      GlInvalidateFramebuffer>('glInvalidateFramebuffer')) as void Function(int, int, Pointer<Uint32>)?;
   if (glInvalidateFramebuffer == null) {
     glInvalidateFramebuffer = tryCall(() =>
         Pointer<NativeFunction<GlInvalidateFramebufferNative>>.fromAddress(
                 _glGetProcAddress('glInvalidateFramebuffer'))
-            .asFunction<GlInvalidateFramebuffer>());
+            .asFunction<GlInvalidateFramebuffer>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glInvalidateSubFramebuffer = tryCall(() => lib.lookupFunction<
       GlInvalidateSubFramebufferNative,
-      GlInvalidateSubFramebuffer>('glInvalidateSubFramebuffer'));
+      GlInvalidateSubFramebuffer>('glInvalidateSubFramebuffer')) as void Function(int, int, Pointer<Uint32>, int, int, int, int)?;
   if (glInvalidateSubFramebuffer == null) {
     glInvalidateSubFramebuffer = tryCall(() =>
         Pointer<NativeFunction<GlInvalidateSubFramebufferNative>>.fromAddress(
                 _glGetProcAddress('glInvalidateSubFramebuffer'))
-            .asFunction<GlInvalidateSubFramebuffer>());
+            .asFunction<GlInvalidateSubFramebuffer>()) as void Function(int, int, Pointer<Uint32>, int, int, int, int)?;
   }
   glMultiDrawArraysIndirect = tryCall(() => lib.lookupFunction<
       GlMultiDrawArraysIndirectNative,
-      GlMultiDrawArraysIndirect>('glMultiDrawArraysIndirect'));
+      GlMultiDrawArraysIndirect>('glMultiDrawArraysIndirect')) as void Function(int, Pointer<NativeType>, int, int)?;
   if (glMultiDrawArraysIndirect == null) {
     glMultiDrawArraysIndirect = tryCall(() =>
         Pointer<NativeFunction<GlMultiDrawArraysIndirectNative>>.fromAddress(
                 _glGetProcAddress('glMultiDrawArraysIndirect'))
-            .asFunction<GlMultiDrawArraysIndirect>());
+            .asFunction<GlMultiDrawArraysIndirect>()) as void Function(int, Pointer<NativeType>, int, int)?;
   }
   glMultiDrawElementsIndirect = tryCall(() => lib.lookupFunction<
       GlMultiDrawElementsIndirectNative,
-      GlMultiDrawElementsIndirect>('glMultiDrawElementsIndirect'));
+      GlMultiDrawElementsIndirect>('glMultiDrawElementsIndirect')) as void Function(int, int, Pointer<NativeType>, int, int)?;
   if (glMultiDrawElementsIndirect == null) {
     glMultiDrawElementsIndirect = tryCall(() =>
         Pointer<NativeFunction<GlMultiDrawElementsIndirectNative>>.fromAddress(
                 _glGetProcAddress('glMultiDrawElementsIndirect'))
-            .asFunction<GlMultiDrawElementsIndirect>());
+            .asFunction<GlMultiDrawElementsIndirect>()) as void Function(int, int, Pointer<NativeType>, int, int)?;
   }
   glGetProgramInterfaceiv = tryCall(() => lib.lookupFunction<
       GlGetProgramInterfaceivNative,
-      GlGetProgramInterfaceiv>('glGetProgramInterfaceiv'));
+      GlGetProgramInterfaceiv>('glGetProgramInterfaceiv')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glGetProgramInterfaceiv == null) {
     glGetProgramInterfaceiv = tryCall(() =>
         Pointer<NativeFunction<GlGetProgramInterfaceivNative>>.fromAddress(
                 _glGetProcAddress('glGetProgramInterfaceiv'))
-            .asFunction<GlGetProgramInterfaceiv>());
+            .asFunction<GlGetProgramInterfaceiv>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glGetProgramResourceIndex = tryCall(() => lib.lookupFunction<
       GlGetProgramResourceIndexNative,
-      GlGetProgramResourceIndex>('glGetProgramResourceIndex'));
+      GlGetProgramResourceIndex>('glGetProgramResourceIndex')) as int Function(int, int, Pointer<NativeType>)?;
   if (glGetProgramResourceIndex == null) {
     glGetProgramResourceIndex = tryCall(() =>
         Pointer<NativeFunction<GlGetProgramResourceIndexNative>>.fromAddress(
                 _glGetProcAddress('glGetProgramResourceIndex'))
-            .asFunction<GlGetProgramResourceIndex>());
+            .asFunction<GlGetProgramResourceIndex>()) as int Function(int, int, Pointer<NativeType>)?;
   }
   glGetProgramResourceName = tryCall(() => lib.lookupFunction<
       GlGetProgramResourceNameNative,
-      GlGetProgramResourceName>('glGetProgramResourceName'));
+      GlGetProgramResourceName>('glGetProgramResourceName')) as void Function(int, int, int, int, Pointer<Int32>, Pointer<NativeType>)?;
   if (glGetProgramResourceName == null) {
     glGetProgramResourceName = tryCall(() =>
         Pointer<NativeFunction<GlGetProgramResourceNameNative>>.fromAddress(
                 _glGetProcAddress('glGetProgramResourceName'))
-            .asFunction<GlGetProgramResourceName>());
+            .asFunction<GlGetProgramResourceName>()) as void Function(int, int, int, int, Pointer<Int32>, Pointer<NativeType>)?;
   }
   glGetProgramResourceiv = tryCall(() =>
       lib.lookupFunction<GlGetProgramResourceivNative, GlGetProgramResourceiv>(
-          'glGetProgramResourceiv'));
+          'glGetProgramResourceiv')) as void Function(int, int, int, int, Pointer<Uint32>, int, Pointer<Int32>, Pointer<Int32>)?;
   if (glGetProgramResourceiv == null) {
     glGetProgramResourceiv = tryCall(() =>
         Pointer<NativeFunction<GlGetProgramResourceivNative>>.fromAddress(
                 _glGetProcAddress('glGetProgramResourceiv'))
-            .asFunction<GlGetProgramResourceiv>());
+            .asFunction<GlGetProgramResourceiv>()) as void Function(int, int, int, int, Pointer<Uint32>, int, Pointer<Int32>, Pointer<Int32>)?;
   }
   glGetProgramResourceLocation = tryCall(() => lib.lookupFunction<
       GlGetProgramResourceLocationNative,
-      GlGetProgramResourceLocation>('glGetProgramResourceLocation'));
+      GlGetProgramResourceLocation>('glGetProgramResourceLocation')) as int Function(int, int, Pointer<NativeType>)?;
   if (glGetProgramResourceLocation == null) {
     glGetProgramResourceLocation = tryCall(() =>
         Pointer<NativeFunction<GlGetProgramResourceLocationNative>>.fromAddress(
                 _glGetProcAddress('glGetProgramResourceLocation'))
-            .asFunction<GlGetProgramResourceLocation>());
+            .asFunction<GlGetProgramResourceLocation>()) as int Function(int, int, Pointer<NativeType>)?;
   }
   glGetProgramResourceLocationIndex = tryCall(() => lib.lookupFunction<
       GlGetProgramResourceLocationIndexNative,
-      GlGetProgramResourceLocationIndex>('glGetProgramResourceLocationIndex'));
+      GlGetProgramResourceLocationIndex>('glGetProgramResourceLocationIndex')) as int Function(int, int, Pointer<NativeType>)?;
   if (glGetProgramResourceLocationIndex == null) {
     glGetProgramResourceLocationIndex = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetProgramResourceLocationIndexNative>>.fromAddress(
             _glGetProcAddress('glGetProgramResourceLocationIndex'))
-        .asFunction<GlGetProgramResourceLocationIndex>());
+        .asFunction<GlGetProgramResourceLocationIndex>()) as int Function(int, int, Pointer<NativeType>)?;
   }
   glShaderStorageBlockBinding = tryCall(() => lib.lookupFunction<
       GlShaderStorageBlockBindingNative,
-      GlShaderStorageBlockBinding>('glShaderStorageBlockBinding'));
+      GlShaderStorageBlockBinding>('glShaderStorageBlockBinding')) as void Function(int, int, int)?;
   if (glShaderStorageBlockBinding == null) {
     glShaderStorageBlockBinding = tryCall(() =>
         Pointer<NativeFunction<GlShaderStorageBlockBindingNative>>.fromAddress(
                 _glGetProcAddress('glShaderStorageBlockBinding'))
-            .asFunction<GlShaderStorageBlockBinding>());
+            .asFunction<GlShaderStorageBlockBinding>()) as void Function(int, int, int)?;
   }
   glTexBufferRange = tryCall(() =>
       lib.lookupFunction<GlTexBufferRangeNative, GlTexBufferRange>(
-          'glTexBufferRange'));
+          'glTexBufferRange')) as void Function(int, int, int, int, int)?;
   if (glTexBufferRange == null) {
     glTexBufferRange = tryCall(() =>
         Pointer<NativeFunction<GlTexBufferRangeNative>>.fromAddress(
                 _glGetProcAddress('glTexBufferRange'))
-            .asFunction<GlTexBufferRange>());
+            .asFunction<GlTexBufferRange>()) as void Function(int, int, int, int, int)?;
   }
   glTexStorage2DMultisample = tryCall(() => lib.lookupFunction<
       GlTexStorage2DMultisampleNative,
-      GlTexStorage2DMultisample>('glTexStorage2DMultisample'));
+      GlTexStorage2DMultisample>('glTexStorage2DMultisample')) as void Function(int, int, int, int, int, int)?;
   if (glTexStorage2DMultisample == null) {
     glTexStorage2DMultisample = tryCall(() =>
         Pointer<NativeFunction<GlTexStorage2DMultisampleNative>>.fromAddress(
                 _glGetProcAddress('glTexStorage2DMultisample'))
-            .asFunction<GlTexStorage2DMultisample>());
+            .asFunction<GlTexStorage2DMultisample>()) as void Function(int, int, int, int, int, int)?;
   }
   glTexStorage3DMultisample = tryCall(() => lib.lookupFunction<
       GlTexStorage3DMultisampleNative,
-      GlTexStorage3DMultisample>('glTexStorage3DMultisample'));
+      GlTexStorage3DMultisample>('glTexStorage3DMultisample')) as void Function(int, int, int, int, int, int, int)?;
   if (glTexStorage3DMultisample == null) {
     glTexStorage3DMultisample = tryCall(() =>
         Pointer<NativeFunction<GlTexStorage3DMultisampleNative>>.fromAddress(
                 _glGetProcAddress('glTexStorage3DMultisample'))
-            .asFunction<GlTexStorage3DMultisample>());
+            .asFunction<GlTexStorage3DMultisample>()) as void Function(int, int, int, int, int, int, int)?;
   }
   glTextureView = tryCall(() =>
-      lib.lookupFunction<GlTextureViewNative, GlTextureView>('glTextureView'));
+      lib.lookupFunction<GlTextureViewNative, GlTextureView>('glTextureView')) as void Function(int, int, int, int, int, int, int, int)?;
   if (glTextureView == null) {
     glTextureView = tryCall(() =>
         Pointer<NativeFunction<GlTextureViewNative>>.fromAddress(
                 _glGetProcAddress('glTextureView'))
-            .asFunction<GlTextureView>());
+            .asFunction<GlTextureView>()) as void Function(int, int, int, int, int, int, int, int)?;
   }
   glBindVertexBuffer = tryCall(() =>
       lib.lookupFunction<GlBindVertexBufferNative, GlBindVertexBuffer>(
-          'glBindVertexBuffer'));
+          'glBindVertexBuffer')) as void Function(int, int, int, int)?;
   if (glBindVertexBuffer == null) {
     glBindVertexBuffer = tryCall(() =>
         Pointer<NativeFunction<GlBindVertexBufferNative>>.fromAddress(
                 _glGetProcAddress('glBindVertexBuffer'))
-            .asFunction<GlBindVertexBuffer>());
+            .asFunction<GlBindVertexBuffer>()) as void Function(int, int, int, int)?;
   }
   glVertexAttribFormat = tryCall(() =>
       lib.lookupFunction<GlVertexAttribFormatNative, GlVertexAttribFormat>(
-          'glVertexAttribFormat'));
+          'glVertexAttribFormat')) as void Function(int, int, int, int, int)?;
   if (glVertexAttribFormat == null) {
     glVertexAttribFormat = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribFormatNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribFormat'))
-            .asFunction<GlVertexAttribFormat>());
+            .asFunction<GlVertexAttribFormat>()) as void Function(int, int, int, int, int)?;
   }
   glVertexAttribIFormat = tryCall(() =>
       lib.lookupFunction<GlVertexAttribIFormatNative, GlVertexAttribIFormat>(
-          'glVertexAttribIFormat'));
+          'glVertexAttribIFormat')) as void Function(int, int, int, int)?;
   if (glVertexAttribIFormat == null) {
     glVertexAttribIFormat = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribIFormatNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribIFormat'))
-            .asFunction<GlVertexAttribIFormat>());
+            .asFunction<GlVertexAttribIFormat>()) as void Function(int, int, int, int)?;
   }
   glVertexAttribLFormat = tryCall(() =>
       lib.lookupFunction<GlVertexAttribLFormatNative, GlVertexAttribLFormat>(
-          'glVertexAttribLFormat'));
+          'glVertexAttribLFormat')) as void Function(int, int, int, int)?;
   if (glVertexAttribLFormat == null) {
     glVertexAttribLFormat = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribLFormatNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribLFormat'))
-            .asFunction<GlVertexAttribLFormat>());
+            .asFunction<GlVertexAttribLFormat>()) as void Function(int, int, int, int)?;
   }
   glVertexAttribBinding = tryCall(() =>
       lib.lookupFunction<GlVertexAttribBindingNative, GlVertexAttribBinding>(
-          'glVertexAttribBinding'));
+          'glVertexAttribBinding')) as void Function(int, int)?;
   if (glVertexAttribBinding == null) {
     glVertexAttribBinding = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribBindingNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribBinding'))
-            .asFunction<GlVertexAttribBinding>());
+            .asFunction<GlVertexAttribBinding>()) as void Function(int, int)?;
   }
   glVertexBindingDivisor = tryCall(() =>
       lib.lookupFunction<GlVertexBindingDivisorNative, GlVertexBindingDivisor>(
-          'glVertexBindingDivisor'));
+          'glVertexBindingDivisor')) as void Function(int, int)?;
   if (glVertexBindingDivisor == null) {
     glVertexBindingDivisor = tryCall(() =>
         Pointer<NativeFunction<GlVertexBindingDivisorNative>>.fromAddress(
                 _glGetProcAddress('glVertexBindingDivisor'))
-            .asFunction<GlVertexBindingDivisor>());
+            .asFunction<GlVertexBindingDivisor>()) as void Function(int, int)?;
   }
   glDebugMessageControl = tryCall(() =>
       lib.lookupFunction<GlDebugMessageControlNative, GlDebugMessageControl>(
-          'glDebugMessageControl'));
+          'glDebugMessageControl')) as void Function(int, int, int, int, Pointer<Uint32>, int)?;
   if (glDebugMessageControl == null) {
     glDebugMessageControl = tryCall(() =>
         Pointer<NativeFunction<GlDebugMessageControlNative>>.fromAddress(
                 _glGetProcAddress('glDebugMessageControl'))
-            .asFunction<GlDebugMessageControl>());
+            .asFunction<GlDebugMessageControl>()) as void Function(int, int, int, int, Pointer<Uint32>, int)?;
   }
   glDebugMessageInsert = tryCall(() =>
       lib.lookupFunction<GlDebugMessageInsertNative, GlDebugMessageInsert>(
-          'glDebugMessageInsert'));
+          'glDebugMessageInsert')) as void Function(int, int, int, int, int, Pointer<NativeType>)?;
   if (glDebugMessageInsert == null) {
     glDebugMessageInsert = tryCall(() =>
         Pointer<NativeFunction<GlDebugMessageInsertNative>>.fromAddress(
                 _glGetProcAddress('glDebugMessageInsert'))
-            .asFunction<GlDebugMessageInsert>());
+            .asFunction<GlDebugMessageInsert>()) as void Function(int, int, int, int, int, Pointer<NativeType>)?;
   }
   glDebugMessageCallback = tryCall(() =>
       lib.lookupFunction<GlDebugMessageCallbackNative, GlDebugMessageCallback>(
-          'glDebugMessageCallback'));
+          'glDebugMessageCallback')) as void Function(Pointer<NativeType>, Pointer<NativeType>)?;
   if (glDebugMessageCallback == null) {
     glDebugMessageCallback = tryCall(() =>
         Pointer<NativeFunction<GlDebugMessageCallbackNative>>.fromAddress(
                 _glGetProcAddress('glDebugMessageCallback'))
-            .asFunction<GlDebugMessageCallback>());
+            .asFunction<GlDebugMessageCallback>()) as void Function(Pointer<NativeType>, Pointer<NativeType>)?;
   }
   glGetDebugMessageLog = tryCall(() =>
       lib.lookupFunction<GlGetDebugMessageLogNative, GlGetDebugMessageLog>(
-          'glGetDebugMessageLog'));
+          'glGetDebugMessageLog')) as int Function(int, int, Pointer<Uint32>, Pointer<Uint32>, Pointer<Uint32>, Pointer<Uint32>, Pointer<Int32>, Pointer<NativeType>)?;
   if (glGetDebugMessageLog == null) {
     glGetDebugMessageLog = tryCall(() =>
         Pointer<NativeFunction<GlGetDebugMessageLogNative>>.fromAddress(
                 _glGetProcAddress('glGetDebugMessageLog'))
-            .asFunction<GlGetDebugMessageLog>());
+            .asFunction<GlGetDebugMessageLog>()) as int Function(int, int, Pointer<Uint32>, Pointer<Uint32>, Pointer<Uint32>, Pointer<Uint32>, Pointer<Int32>, Pointer<NativeType>)?;
   }
   glPushDebugGroup = tryCall(() =>
       lib.lookupFunction<GlPushDebugGroupNative, GlPushDebugGroup>(
-          'glPushDebugGroup'));
+          'glPushDebugGroup')) as void Function(int, int, int, Pointer<NativeType>)?;
   if (glPushDebugGroup == null) {
     glPushDebugGroup = tryCall(() =>
         Pointer<NativeFunction<GlPushDebugGroupNative>>.fromAddress(
                 _glGetProcAddress('glPushDebugGroup'))
-            .asFunction<GlPushDebugGroup>());
+            .asFunction<GlPushDebugGroup>()) as void Function(int, int, int, Pointer<NativeType>)?;
   }
   glPopDebugGroup = tryCall(() =>
       lib.lookupFunction<GlPopDebugGroupNative, GlPopDebugGroup>(
-          'glPopDebugGroup'));
+          'glPopDebugGroup')) as void Function()?;
   if (glPopDebugGroup == null) {
     glPopDebugGroup = tryCall(() =>
         Pointer<NativeFunction<GlPopDebugGroupNative>>.fromAddress(
                 _glGetProcAddress('glPopDebugGroup'))
-            .asFunction<GlPopDebugGroup>());
+            .asFunction<GlPopDebugGroup>()) as void Function()?;
   }
   glObjectLabel = tryCall(() =>
-      lib.lookupFunction<GlObjectLabelNative, GlObjectLabel>('glObjectLabel'));
+      lib.lookupFunction<GlObjectLabelNative, GlObjectLabel>('glObjectLabel')) as void Function(int, int, int, Pointer<NativeType>)?;
   if (glObjectLabel == null) {
     glObjectLabel = tryCall(() =>
         Pointer<NativeFunction<GlObjectLabelNative>>.fromAddress(
                 _glGetProcAddress('glObjectLabel'))
-            .asFunction<GlObjectLabel>());
+            .asFunction<GlObjectLabel>()) as void Function(int, int, int, Pointer<NativeType>)?;
   }
   glGetObjectLabel = tryCall(() =>
       lib.lookupFunction<GlGetObjectLabelNative, GlGetObjectLabel>(
-          'glGetObjectLabel'));
+          'glGetObjectLabel')) as void Function(int, int, int, Pointer<Int32>, Pointer<NativeType>)?;
   if (glGetObjectLabel == null) {
     glGetObjectLabel = tryCall(() =>
         Pointer<NativeFunction<GlGetObjectLabelNative>>.fromAddress(
                 _glGetProcAddress('glGetObjectLabel'))
-            .asFunction<GlGetObjectLabel>());
+            .asFunction<GlGetObjectLabel>()) as void Function(int, int, int, Pointer<Int32>, Pointer<NativeType>)?;
   }
   glObjectPtrLabel = tryCall(() =>
       lib.lookupFunction<GlObjectPtrLabelNative, GlObjectPtrLabel>(
-          'glObjectPtrLabel'));
+          'glObjectPtrLabel')) as void Function(Pointer<NativeType>, int, Pointer<NativeType>)?;
   if (glObjectPtrLabel == null) {
     glObjectPtrLabel = tryCall(() =>
         Pointer<NativeFunction<GlObjectPtrLabelNative>>.fromAddress(
                 _glGetProcAddress('glObjectPtrLabel'))
-            .asFunction<GlObjectPtrLabel>());
+            .asFunction<GlObjectPtrLabel>()) as void Function(Pointer<NativeType>, int, Pointer<NativeType>)?;
   }
   glGetObjectPtrLabel = tryCall(() =>
       lib.lookupFunction<GlGetObjectPtrLabelNative, GlGetObjectPtrLabel>(
-          'glGetObjectPtrLabel'));
+          'glGetObjectPtrLabel')) as void Function(Pointer<NativeType>, int, Pointer<Int32>, Pointer<NativeType>)?;
   if (glGetObjectPtrLabel == null) {
     glGetObjectPtrLabel = tryCall(() =>
         Pointer<NativeFunction<GlGetObjectPtrLabelNative>>.fromAddress(
                 _glGetProcAddress('glGetObjectPtrLabel'))
-            .asFunction<GlGetObjectPtrLabel>());
+            .asFunction<GlGetObjectPtrLabel>()) as void Function(Pointer<NativeType>, int, Pointer<Int32>, Pointer<NativeType>)?;
   }
   glBufferStorage = tryCall(() =>
       lib.lookupFunction<GlBufferStorageNative, GlBufferStorage>(
-          'glBufferStorage'));
+          'glBufferStorage')) as void Function(int, int, Pointer<NativeType>, int)?;
   if (glBufferStorage == null) {
     glBufferStorage = tryCall(() =>
         Pointer<NativeFunction<GlBufferStorageNative>>.fromAddress(
                 _glGetProcAddress('glBufferStorage'))
-            .asFunction<GlBufferStorage>());
+            .asFunction<GlBufferStorage>()) as void Function(int, int, Pointer<NativeType>, int)?;
   }
   glClearTexImage = tryCall(() =>
       lib.lookupFunction<GlClearTexImageNative, GlClearTexImage>(
-          'glClearTexImage'));
+          'glClearTexImage')) as void Function(int, int, int, int, Pointer<NativeType>)?;
   if (glClearTexImage == null) {
     glClearTexImage = tryCall(() =>
         Pointer<NativeFunction<GlClearTexImageNative>>.fromAddress(
                 _glGetProcAddress('glClearTexImage'))
-            .asFunction<GlClearTexImage>());
+            .asFunction<GlClearTexImage>()) as void Function(int, int, int, int, Pointer<NativeType>)?;
   }
   glClearTexSubImage = tryCall(() =>
       lib.lookupFunction<GlClearTexSubImageNative, GlClearTexSubImage>(
-          'glClearTexSubImage'));
+          'glClearTexSubImage')) as void Function(int, int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glClearTexSubImage == null) {
     glClearTexSubImage = tryCall(() =>
         Pointer<NativeFunction<GlClearTexSubImageNative>>.fromAddress(
                 _glGetProcAddress('glClearTexSubImage'))
-            .asFunction<GlClearTexSubImage>());
+            .asFunction<GlClearTexSubImage>()) as void Function(int, int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glBindBuffersBase = tryCall(() =>
       lib.lookupFunction<GlBindBuffersBaseNative, GlBindBuffersBase>(
-          'glBindBuffersBase'));
+          'glBindBuffersBase')) as void Function(int, int, int, Pointer<Uint32>)?;
   if (glBindBuffersBase == null) {
     glBindBuffersBase = tryCall(() =>
         Pointer<NativeFunction<GlBindBuffersBaseNative>>.fromAddress(
                 _glGetProcAddress('glBindBuffersBase'))
-            .asFunction<GlBindBuffersBase>());
+            .asFunction<GlBindBuffersBase>()) as void Function(int, int, int, Pointer<Uint32>)?;
   }
   glBindBuffersRange = tryCall(() =>
       lib.lookupFunction<GlBindBuffersRangeNative, GlBindBuffersRange>(
-          'glBindBuffersRange'));
+          'glBindBuffersRange')) as void Function(int, int, int, Pointer<Uint32>, Pointer<Int64>, Pointer<Int64>)?;
   if (glBindBuffersRange == null) {
     glBindBuffersRange = tryCall(() =>
         Pointer<NativeFunction<GlBindBuffersRangeNative>>.fromAddress(
                 _glGetProcAddress('glBindBuffersRange'))
-            .asFunction<GlBindBuffersRange>());
+            .asFunction<GlBindBuffersRange>()) as void Function(int, int, int, Pointer<Uint32>, Pointer<Int64>, Pointer<Int64>)?;
   }
   glBindTextures = tryCall(() => lib
-      .lookupFunction<GlBindTexturesNative, GlBindTextures>('glBindTextures'));
+      .lookupFunction<GlBindTexturesNative, GlBindTextures>('glBindTextures')) as void Function(int, int, Pointer<Uint32>)?;
   if (glBindTextures == null) {
     glBindTextures = tryCall(() =>
         Pointer<NativeFunction<GlBindTexturesNative>>.fromAddress(
                 _glGetProcAddress('glBindTextures'))
-            .asFunction<GlBindTextures>());
+            .asFunction<GlBindTextures>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glBindSamplers = tryCall(() => lib
-      .lookupFunction<GlBindSamplersNative, GlBindSamplers>('glBindSamplers'));
+      .lookupFunction<GlBindSamplersNative, GlBindSamplers>('glBindSamplers')) as void Function(int, int, Pointer<Uint32>)?;
   if (glBindSamplers == null) {
     glBindSamplers = tryCall(() =>
         Pointer<NativeFunction<GlBindSamplersNative>>.fromAddress(
                 _glGetProcAddress('glBindSamplers'))
-            .asFunction<GlBindSamplers>());
+            .asFunction<GlBindSamplers>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glBindImageTextures = tryCall(() =>
       lib.lookupFunction<GlBindImageTexturesNative, GlBindImageTextures>(
-          'glBindImageTextures'));
+          'glBindImageTextures')) as void Function(int, int, Pointer<Uint32>)?;
   if (glBindImageTextures == null) {
     glBindImageTextures = tryCall(() =>
         Pointer<NativeFunction<GlBindImageTexturesNative>>.fromAddress(
                 _glGetProcAddress('glBindImageTextures'))
-            .asFunction<GlBindImageTextures>());
+            .asFunction<GlBindImageTextures>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glBindVertexBuffers = tryCall(() =>
       lib.lookupFunction<GlBindVertexBuffersNative, GlBindVertexBuffers>(
-          'glBindVertexBuffers'));
+          'glBindVertexBuffers')) as void Function(int, int, Pointer<Uint32>, Pointer<Int64>, Pointer<Int32>)?;
   if (glBindVertexBuffers == null) {
     glBindVertexBuffers = tryCall(() =>
         Pointer<NativeFunction<GlBindVertexBuffersNative>>.fromAddress(
                 _glGetProcAddress('glBindVertexBuffers'))
-            .asFunction<GlBindVertexBuffers>());
+            .asFunction<GlBindVertexBuffers>()) as void Function(int, int, Pointer<Uint32>, Pointer<Int64>, Pointer<Int32>)?;
   }
   glClipControl = tryCall(() =>
-      lib.lookupFunction<GlClipControlNative, GlClipControl>('glClipControl'));
+      lib.lookupFunction<GlClipControlNative, GlClipControl>('glClipControl')) as void Function(int, int)?;
   if (glClipControl == null) {
     glClipControl = tryCall(() =>
         Pointer<NativeFunction<GlClipControlNative>>.fromAddress(
                 _glGetProcAddress('glClipControl'))
-            .asFunction<GlClipControl>());
+            .asFunction<GlClipControl>()) as void Function(int, int)?;
   }
   glCreateTransformFeedbacks = tryCall(() => lib.lookupFunction<
       GlCreateTransformFeedbacksNative,
-      GlCreateTransformFeedbacks>('glCreateTransformFeedbacks'));
+      GlCreateTransformFeedbacks>('glCreateTransformFeedbacks')) as void Function(int, Pointer<Uint32>)?;
   if (glCreateTransformFeedbacks == null) {
     glCreateTransformFeedbacks = tryCall(() =>
         Pointer<NativeFunction<GlCreateTransformFeedbacksNative>>.fromAddress(
                 _glGetProcAddress('glCreateTransformFeedbacks'))
-            .asFunction<GlCreateTransformFeedbacks>());
+            .asFunction<GlCreateTransformFeedbacks>()) as void Function(int, Pointer<Uint32>)?;
   }
   glTransformFeedbackBufferBase = tryCall(() => lib.lookupFunction<
       GlTransformFeedbackBufferBaseNative,
-      GlTransformFeedbackBufferBase>('glTransformFeedbackBufferBase'));
+      GlTransformFeedbackBufferBase>('glTransformFeedbackBufferBase')) as void Function(int, int, int)?;
   if (glTransformFeedbackBufferBase == null) {
     glTransformFeedbackBufferBase = tryCall(() => Pointer<
                 NativeFunction<
                     GlTransformFeedbackBufferBaseNative>>.fromAddress(
             _glGetProcAddress('glTransformFeedbackBufferBase'))
-        .asFunction<GlTransformFeedbackBufferBase>());
+        .asFunction<GlTransformFeedbackBufferBase>()) as void Function(int, int, int)?;
   }
   glTransformFeedbackBufferRange = tryCall(() => lib.lookupFunction<
       GlTransformFeedbackBufferRangeNative,
-      GlTransformFeedbackBufferRange>('glTransformFeedbackBufferRange'));
+      GlTransformFeedbackBufferRange>('glTransformFeedbackBufferRange')) as void Function(int, int, int, int, int)?;
   if (glTransformFeedbackBufferRange == null) {
     glTransformFeedbackBufferRange = tryCall(() => Pointer<
                 NativeFunction<
                     GlTransformFeedbackBufferRangeNative>>.fromAddress(
             _glGetProcAddress('glTransformFeedbackBufferRange'))
-        .asFunction<GlTransformFeedbackBufferRange>());
+        .asFunction<GlTransformFeedbackBufferRange>()) as void Function(int, int, int, int, int)?;
   }
   glGetTransformFeedbackiv = tryCall(() => lib.lookupFunction<
       GlGetTransformFeedbackivNative,
-      GlGetTransformFeedbackiv>('glGetTransformFeedbackiv'));
+      GlGetTransformFeedbackiv>('glGetTransformFeedbackiv')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetTransformFeedbackiv == null) {
     glGetTransformFeedbackiv = tryCall(() =>
         Pointer<NativeFunction<GlGetTransformFeedbackivNative>>.fromAddress(
                 _glGetProcAddress('glGetTransformFeedbackiv'))
-            .asFunction<GlGetTransformFeedbackiv>());
+            .asFunction<GlGetTransformFeedbackiv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glGetTransformFeedbacki_v = tryCall(() => lib.lookupFunction<
       GlGetTransformFeedbacki_vNative,
-      GlGetTransformFeedbacki_v>('glGetTransformFeedbacki_v'));
+      GlGetTransformFeedbacki_v>('glGetTransformFeedbacki_v')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glGetTransformFeedbacki_v == null) {
     glGetTransformFeedbacki_v = tryCall(() =>
         Pointer<NativeFunction<GlGetTransformFeedbacki_vNative>>.fromAddress(
                 _glGetProcAddress('glGetTransformFeedbacki_v'))
-            .asFunction<GlGetTransformFeedbacki_v>());
+            .asFunction<GlGetTransformFeedbacki_v>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glGetTransformFeedbacki64_v = tryCall(() => lib.lookupFunction<
       GlGetTransformFeedbacki64_vNative,
-      GlGetTransformFeedbacki64_v>('glGetTransformFeedbacki64_v'));
+      GlGetTransformFeedbacki64_v>('glGetTransformFeedbacki64_v')) as void Function(int, int, int, Pointer<Int64>)?;
   if (glGetTransformFeedbacki64_v == null) {
     glGetTransformFeedbacki64_v = tryCall(() =>
         Pointer<NativeFunction<GlGetTransformFeedbacki64_vNative>>.fromAddress(
                 _glGetProcAddress('glGetTransformFeedbacki64_v'))
-            .asFunction<GlGetTransformFeedbacki64_v>());
+            .asFunction<GlGetTransformFeedbacki64_v>()) as void Function(int, int, int, Pointer<Int64>)?;
   }
   glCreateBuffers = tryCall(() =>
       lib.lookupFunction<GlCreateBuffersNative, GlCreateBuffers>(
-          'glCreateBuffers'));
+          'glCreateBuffers')) as void Function(int, Pointer<Uint32>)?;
   if (glCreateBuffers == null) {
     glCreateBuffers = tryCall(() =>
         Pointer<NativeFunction<GlCreateBuffersNative>>.fromAddress(
                 _glGetProcAddress('glCreateBuffers'))
-            .asFunction<GlCreateBuffers>());
+            .asFunction<GlCreateBuffers>()) as void Function(int, Pointer<Uint32>)?;
   }
   glNamedBufferStorage = tryCall(() =>
       lib.lookupFunction<GlNamedBufferStorageNative, GlNamedBufferStorage>(
-          'glNamedBufferStorage'));
+          'glNamedBufferStorage')) as void Function(int, int, Pointer<NativeType>, int)?;
   if (glNamedBufferStorage == null) {
     glNamedBufferStorage = tryCall(() =>
         Pointer<NativeFunction<GlNamedBufferStorageNative>>.fromAddress(
                 _glGetProcAddress('glNamedBufferStorage'))
-            .asFunction<GlNamedBufferStorage>());
+            .asFunction<GlNamedBufferStorage>()) as void Function(int, int, Pointer<NativeType>, int)?;
   }
   glNamedBufferData = tryCall(() =>
       lib.lookupFunction<GlNamedBufferDataNative, GlNamedBufferData>(
-          'glNamedBufferData'));
+          'glNamedBufferData')) as void Function(int, int, Pointer<NativeType>, int)?;
   if (glNamedBufferData == null) {
     glNamedBufferData = tryCall(() =>
         Pointer<NativeFunction<GlNamedBufferDataNative>>.fromAddress(
                 _glGetProcAddress('glNamedBufferData'))
-            .asFunction<GlNamedBufferData>());
+            .asFunction<GlNamedBufferData>()) as void Function(int, int, Pointer<NativeType>, int)?;
   }
   glNamedBufferSubData = tryCall(() =>
       lib.lookupFunction<GlNamedBufferSubDataNative, GlNamedBufferSubData>(
-          'glNamedBufferSubData'));
+          'glNamedBufferSubData')) as void Function(int, int, int, Pointer<NativeType>)?;
   if (glNamedBufferSubData == null) {
     glNamedBufferSubData = tryCall(() =>
         Pointer<NativeFunction<GlNamedBufferSubDataNative>>.fromAddress(
                 _glGetProcAddress('glNamedBufferSubData'))
-            .asFunction<GlNamedBufferSubData>());
+            .asFunction<GlNamedBufferSubData>()) as void Function(int, int, int, Pointer<NativeType>)?;
   }
   glCopyNamedBufferSubData = tryCall(() => lib.lookupFunction<
       GlCopyNamedBufferSubDataNative,
-      GlCopyNamedBufferSubData>('glCopyNamedBufferSubData'));
+      GlCopyNamedBufferSubData>('glCopyNamedBufferSubData')) as void Function(int, int, int, int, int)?;
   if (glCopyNamedBufferSubData == null) {
     glCopyNamedBufferSubData = tryCall(() =>
         Pointer<NativeFunction<GlCopyNamedBufferSubDataNative>>.fromAddress(
                 _glGetProcAddress('glCopyNamedBufferSubData'))
-            .asFunction<GlCopyNamedBufferSubData>());
+            .asFunction<GlCopyNamedBufferSubData>()) as void Function(int, int, int, int, int)?;
   }
   glClearNamedBufferData = tryCall(() =>
       lib.lookupFunction<GlClearNamedBufferDataNative, GlClearNamedBufferData>(
-          'glClearNamedBufferData'));
+          'glClearNamedBufferData')) as void Function(int, int, int, int, Pointer<NativeType>)?;
   if (glClearNamedBufferData == null) {
     glClearNamedBufferData = tryCall(() =>
         Pointer<NativeFunction<GlClearNamedBufferDataNative>>.fromAddress(
                 _glGetProcAddress('glClearNamedBufferData'))
-            .asFunction<GlClearNamedBufferData>());
+            .asFunction<GlClearNamedBufferData>()) as void Function(int, int, int, int, Pointer<NativeType>)?;
   }
   glClearNamedBufferSubData = tryCall(() => lib.lookupFunction<
       GlClearNamedBufferSubDataNative,
-      GlClearNamedBufferSubData>('glClearNamedBufferSubData'));
+      GlClearNamedBufferSubData>('glClearNamedBufferSubData')) as void Function(int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glClearNamedBufferSubData == null) {
     glClearNamedBufferSubData = tryCall(() =>
         Pointer<NativeFunction<GlClearNamedBufferSubDataNative>>.fromAddress(
                 _glGetProcAddress('glClearNamedBufferSubData'))
-            .asFunction<GlClearNamedBufferSubData>());
+            .asFunction<GlClearNamedBufferSubData>()) as void Function(int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glMapNamedBuffer = tryCall(() =>
       lib.lookupFunction<GlMapNamedBufferNative, GlMapNamedBuffer>(
-          'glMapNamedBuffer'));
+          'glMapNamedBuffer')) as Pointer<NativeType> Function(int, int)?;
   if (glMapNamedBuffer == null) {
     glMapNamedBuffer = tryCall(() =>
         Pointer<NativeFunction<GlMapNamedBufferNative>>.fromAddress(
                 _glGetProcAddress('glMapNamedBuffer'))
-            .asFunction<GlMapNamedBuffer>());
+            .asFunction<GlMapNamedBuffer>()) as Pointer<NativeType> Function(int, int)?;
   }
   glMapNamedBufferRange = tryCall(() =>
       lib.lookupFunction<GlMapNamedBufferRangeNative, GlMapNamedBufferRange>(
-          'glMapNamedBufferRange'));
+          'glMapNamedBufferRange')) as Pointer<NativeType> Function(int, int, int, int)?;
   if (glMapNamedBufferRange == null) {
     glMapNamedBufferRange = tryCall(() =>
         Pointer<NativeFunction<GlMapNamedBufferRangeNative>>.fromAddress(
                 _glGetProcAddress('glMapNamedBufferRange'))
-            .asFunction<GlMapNamedBufferRange>());
+            .asFunction<GlMapNamedBufferRange>()) as Pointer<NativeType> Function(int, int, int, int)?;
   }
   glUnmapNamedBuffer = tryCall(() =>
       lib.lookupFunction<GlUnmapNamedBufferNative, GlUnmapNamedBuffer>(
-          'glUnmapNamedBuffer'));
+          'glUnmapNamedBuffer')) as int Function(int)?;
   if (glUnmapNamedBuffer == null) {
     glUnmapNamedBuffer = tryCall(() =>
         Pointer<NativeFunction<GlUnmapNamedBufferNative>>.fromAddress(
                 _glGetProcAddress('glUnmapNamedBuffer'))
-            .asFunction<GlUnmapNamedBuffer>());
+            .asFunction<GlUnmapNamedBuffer>()) as int Function(int)?;
   }
   glFlushMappedNamedBufferRange = tryCall(() => lib.lookupFunction<
       GlFlushMappedNamedBufferRangeNative,
-      GlFlushMappedNamedBufferRange>('glFlushMappedNamedBufferRange'));
+      GlFlushMappedNamedBufferRange>('glFlushMappedNamedBufferRange')) as void Function(int, int, int)?;
   if (glFlushMappedNamedBufferRange == null) {
     glFlushMappedNamedBufferRange = tryCall(() => Pointer<
                 NativeFunction<
                     GlFlushMappedNamedBufferRangeNative>>.fromAddress(
             _glGetProcAddress('glFlushMappedNamedBufferRange'))
-        .asFunction<GlFlushMappedNamedBufferRange>());
+        .asFunction<GlFlushMappedNamedBufferRange>()) as void Function(int, int, int)?;
   }
   glGetNamedBufferParameteriv = tryCall(() => lib.lookupFunction<
       GlGetNamedBufferParameterivNative,
-      GlGetNamedBufferParameteriv>('glGetNamedBufferParameteriv'));
+      GlGetNamedBufferParameteriv>('glGetNamedBufferParameteriv')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetNamedBufferParameteriv == null) {
     glGetNamedBufferParameteriv = tryCall(() =>
         Pointer<NativeFunction<GlGetNamedBufferParameterivNative>>.fromAddress(
                 _glGetProcAddress('glGetNamedBufferParameteriv'))
-            .asFunction<GlGetNamedBufferParameteriv>());
+            .asFunction<GlGetNamedBufferParameteriv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glGetNamedBufferParameteri64v = tryCall(() => lib.lookupFunction<
       GlGetNamedBufferParameteri64vNative,
-      GlGetNamedBufferParameteri64v>('glGetNamedBufferParameteri64v'));
+      GlGetNamedBufferParameteri64v>('glGetNamedBufferParameteri64v')) as void Function(int, int, Pointer<Int64>)?;
   if (glGetNamedBufferParameteri64v == null) {
     glGetNamedBufferParameteri64v = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetNamedBufferParameteri64vNative>>.fromAddress(
             _glGetProcAddress('glGetNamedBufferParameteri64v'))
-        .asFunction<GlGetNamedBufferParameteri64v>());
+        .asFunction<GlGetNamedBufferParameteri64v>()) as void Function(int, int, Pointer<Int64>)?;
   }
   glGetNamedBufferPointerv = tryCall(() => lib.lookupFunction<
       GlGetNamedBufferPointervNative,
-      GlGetNamedBufferPointerv>('glGetNamedBufferPointerv'));
+      GlGetNamedBufferPointerv>('glGetNamedBufferPointerv')) as void Function(int, int, Pointer<NativeType>)?;
   if (glGetNamedBufferPointerv == null) {
     glGetNamedBufferPointerv = tryCall(() =>
         Pointer<NativeFunction<GlGetNamedBufferPointervNative>>.fromAddress(
                 _glGetProcAddress('glGetNamedBufferPointerv'))
-            .asFunction<GlGetNamedBufferPointerv>());
+            .asFunction<GlGetNamedBufferPointerv>()) as void Function(int, int, Pointer<NativeType>)?;
   }
   glGetNamedBufferSubData = tryCall(() => lib.lookupFunction<
       GlGetNamedBufferSubDataNative,
-      GlGetNamedBufferSubData>('glGetNamedBufferSubData'));
+      GlGetNamedBufferSubData>('glGetNamedBufferSubData')) as void Function(int, int, int, Pointer<NativeType>)?;
   if (glGetNamedBufferSubData == null) {
     glGetNamedBufferSubData = tryCall(() =>
         Pointer<NativeFunction<GlGetNamedBufferSubDataNative>>.fromAddress(
                 _glGetProcAddress('glGetNamedBufferSubData'))
-            .asFunction<GlGetNamedBufferSubData>());
+            .asFunction<GlGetNamedBufferSubData>()) as void Function(int, int, int, Pointer<NativeType>)?;
   }
   glCreateFramebuffers = tryCall(() =>
       lib.lookupFunction<GlCreateFramebuffersNative, GlCreateFramebuffers>(
-          'glCreateFramebuffers'));
+          'glCreateFramebuffers')) as void Function(int, Pointer<Uint32>)?;
   if (glCreateFramebuffers == null) {
     glCreateFramebuffers = tryCall(() =>
         Pointer<NativeFunction<GlCreateFramebuffersNative>>.fromAddress(
                 _glGetProcAddress('glCreateFramebuffers'))
-            .asFunction<GlCreateFramebuffers>());
+            .asFunction<GlCreateFramebuffers>()) as void Function(int, Pointer<Uint32>)?;
   }
   glNamedFramebufferRenderbuffer = tryCall(() => lib.lookupFunction<
       GlNamedFramebufferRenderbufferNative,
-      GlNamedFramebufferRenderbuffer>('glNamedFramebufferRenderbuffer'));
+      GlNamedFramebufferRenderbuffer>('glNamedFramebufferRenderbuffer')) as void Function(int, int, int, int)?;
   if (glNamedFramebufferRenderbuffer == null) {
     glNamedFramebufferRenderbuffer = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedFramebufferRenderbufferNative>>.fromAddress(
             _glGetProcAddress('glNamedFramebufferRenderbuffer'))
-        .asFunction<GlNamedFramebufferRenderbuffer>());
+        .asFunction<GlNamedFramebufferRenderbuffer>()) as void Function(int, int, int, int)?;
   }
   glNamedFramebufferParameteri = tryCall(() => lib.lookupFunction<
       GlNamedFramebufferParameteriNative,
-      GlNamedFramebufferParameteri>('glNamedFramebufferParameteri'));
+      GlNamedFramebufferParameteri>('glNamedFramebufferParameteri')) as void Function(int, int, int)?;
   if (glNamedFramebufferParameteri == null) {
     glNamedFramebufferParameteri = tryCall(() =>
         Pointer<NativeFunction<GlNamedFramebufferParameteriNative>>.fromAddress(
                 _glGetProcAddress('glNamedFramebufferParameteri'))
-            .asFunction<GlNamedFramebufferParameteri>());
+            .asFunction<GlNamedFramebufferParameteri>()) as void Function(int, int, int)?;
   }
   glNamedFramebufferTexture = tryCall(() => lib.lookupFunction<
       GlNamedFramebufferTextureNative,
-      GlNamedFramebufferTexture>('glNamedFramebufferTexture'));
+      GlNamedFramebufferTexture>('glNamedFramebufferTexture')) as void Function(int, int, int, int)?;
   if (glNamedFramebufferTexture == null) {
     glNamedFramebufferTexture = tryCall(() =>
         Pointer<NativeFunction<GlNamedFramebufferTextureNative>>.fromAddress(
                 _glGetProcAddress('glNamedFramebufferTexture'))
-            .asFunction<GlNamedFramebufferTexture>());
+            .asFunction<GlNamedFramebufferTexture>()) as void Function(int, int, int, int)?;
   }
   glNamedFramebufferTextureLayer = tryCall(() => lib.lookupFunction<
       GlNamedFramebufferTextureLayerNative,
-      GlNamedFramebufferTextureLayer>('glNamedFramebufferTextureLayer'));
+      GlNamedFramebufferTextureLayer>('glNamedFramebufferTextureLayer')) as void Function(int, int, int, int, int)?;
   if (glNamedFramebufferTextureLayer == null) {
     glNamedFramebufferTextureLayer = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedFramebufferTextureLayerNative>>.fromAddress(
             _glGetProcAddress('glNamedFramebufferTextureLayer'))
-        .asFunction<GlNamedFramebufferTextureLayer>());
+        .asFunction<GlNamedFramebufferTextureLayer>()) as void Function(int, int, int, int, int)?;
   }
   glNamedFramebufferDrawBuffer = tryCall(() => lib.lookupFunction<
       GlNamedFramebufferDrawBufferNative,
-      GlNamedFramebufferDrawBuffer>('glNamedFramebufferDrawBuffer'));
+      GlNamedFramebufferDrawBuffer>('glNamedFramebufferDrawBuffer')) as void Function(int, int)?;
   if (glNamedFramebufferDrawBuffer == null) {
     glNamedFramebufferDrawBuffer = tryCall(() =>
         Pointer<NativeFunction<GlNamedFramebufferDrawBufferNative>>.fromAddress(
                 _glGetProcAddress('glNamedFramebufferDrawBuffer'))
-            .asFunction<GlNamedFramebufferDrawBuffer>());
+            .asFunction<GlNamedFramebufferDrawBuffer>()) as void Function(int, int)?;
   }
   glNamedFramebufferDrawBuffers = tryCall(() => lib.lookupFunction<
       GlNamedFramebufferDrawBuffersNative,
-      GlNamedFramebufferDrawBuffers>('glNamedFramebufferDrawBuffers'));
+      GlNamedFramebufferDrawBuffers>('glNamedFramebufferDrawBuffers')) as void Function(int, int, Pointer<Uint32>)?;
   if (glNamedFramebufferDrawBuffers == null) {
     glNamedFramebufferDrawBuffers = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedFramebufferDrawBuffersNative>>.fromAddress(
             _glGetProcAddress('glNamedFramebufferDrawBuffers'))
-        .asFunction<GlNamedFramebufferDrawBuffers>());
+        .asFunction<GlNamedFramebufferDrawBuffers>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glNamedFramebufferReadBuffer = tryCall(() => lib.lookupFunction<
       GlNamedFramebufferReadBufferNative,
-      GlNamedFramebufferReadBuffer>('glNamedFramebufferReadBuffer'));
+      GlNamedFramebufferReadBuffer>('glNamedFramebufferReadBuffer')) as void Function(int, int)?;
   if (glNamedFramebufferReadBuffer == null) {
     glNamedFramebufferReadBuffer = tryCall(() =>
         Pointer<NativeFunction<GlNamedFramebufferReadBufferNative>>.fromAddress(
                 _glGetProcAddress('glNamedFramebufferReadBuffer'))
-            .asFunction<GlNamedFramebufferReadBuffer>());
+            .asFunction<GlNamedFramebufferReadBuffer>()) as void Function(int, int)?;
   }
   glInvalidateNamedFramebufferData = tryCall(() => lib.lookupFunction<
       GlInvalidateNamedFramebufferDataNative,
-      GlInvalidateNamedFramebufferData>('glInvalidateNamedFramebufferData'));
+      GlInvalidateNamedFramebufferData>('glInvalidateNamedFramebufferData')) as void Function(int, int, Pointer<Uint32>)?;
   if (glInvalidateNamedFramebufferData == null) {
     glInvalidateNamedFramebufferData = tryCall(() => Pointer<
                 NativeFunction<
                     GlInvalidateNamedFramebufferDataNative>>.fromAddress(
             _glGetProcAddress('glInvalidateNamedFramebufferData'))
-        .asFunction<GlInvalidateNamedFramebufferData>());
+        .asFunction<GlInvalidateNamedFramebufferData>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glInvalidateNamedFramebufferSubData = tryCall(() => lib.lookupFunction<
           GlInvalidateNamedFramebufferSubDataNative,
           GlInvalidateNamedFramebufferSubData>(
-      'glInvalidateNamedFramebufferSubData'));
+      'glInvalidateNamedFramebufferSubData')) as void Function(int, int, Pointer<Uint32>, int, int, int, int)?;
   if (glInvalidateNamedFramebufferSubData == null) {
     glInvalidateNamedFramebufferSubData = tryCall(() => Pointer<
                 NativeFunction<
                     GlInvalidateNamedFramebufferSubDataNative>>.fromAddress(
             _glGetProcAddress('glInvalidateNamedFramebufferSubData'))
-        .asFunction<GlInvalidateNamedFramebufferSubData>());
+        .asFunction<GlInvalidateNamedFramebufferSubData>()) as void Function(int, int, Pointer<Uint32>, int, int, int, int)?;
   }
   glClearNamedFramebufferiv = tryCall(() => lib.lookupFunction<
       GlClearNamedFramebufferivNative,
-      GlClearNamedFramebufferiv>('glClearNamedFramebufferiv'));
+      GlClearNamedFramebufferiv>('glClearNamedFramebufferiv')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glClearNamedFramebufferiv == null) {
     glClearNamedFramebufferiv = tryCall(() =>
         Pointer<NativeFunction<GlClearNamedFramebufferivNative>>.fromAddress(
                 _glGetProcAddress('glClearNamedFramebufferiv'))
-            .asFunction<GlClearNamedFramebufferiv>());
+            .asFunction<GlClearNamedFramebufferiv>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glClearNamedFramebufferuiv = tryCall(() => lib.lookupFunction<
       GlClearNamedFramebufferuivNative,
-      GlClearNamedFramebufferuiv>('glClearNamedFramebufferuiv'));
+      GlClearNamedFramebufferuiv>('glClearNamedFramebufferuiv')) as void Function(int, int, int, Pointer<Uint32>)?;
   if (glClearNamedFramebufferuiv == null) {
     glClearNamedFramebufferuiv = tryCall(() =>
         Pointer<NativeFunction<GlClearNamedFramebufferuivNative>>.fromAddress(
                 _glGetProcAddress('glClearNamedFramebufferuiv'))
-            .asFunction<GlClearNamedFramebufferuiv>());
+            .asFunction<GlClearNamedFramebufferuiv>()) as void Function(int, int, int, Pointer<Uint32>)?;
   }
   glClearNamedFramebufferfv = tryCall(() => lib.lookupFunction<
       GlClearNamedFramebufferfvNative,
-      GlClearNamedFramebufferfv>('glClearNamedFramebufferfv'));
+      GlClearNamedFramebufferfv>('glClearNamedFramebufferfv')) as void Function(int, int, int, Pointer<Float>)?;
   if (glClearNamedFramebufferfv == null) {
     glClearNamedFramebufferfv = tryCall(() =>
         Pointer<NativeFunction<GlClearNamedFramebufferfvNative>>.fromAddress(
                 _glGetProcAddress('glClearNamedFramebufferfv'))
-            .asFunction<GlClearNamedFramebufferfv>());
+            .asFunction<GlClearNamedFramebufferfv>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glClearNamedFramebufferfi = tryCall(() => lib.lookupFunction<
       GlClearNamedFramebufferfiNative,
-      GlClearNamedFramebufferfi>('glClearNamedFramebufferfi'));
+      GlClearNamedFramebufferfi>('glClearNamedFramebufferfi')) as void Function(int, int, int, double, int)?;
   if (glClearNamedFramebufferfi == null) {
     glClearNamedFramebufferfi = tryCall(() =>
         Pointer<NativeFunction<GlClearNamedFramebufferfiNative>>.fromAddress(
                 _glGetProcAddress('glClearNamedFramebufferfi'))
-            .asFunction<GlClearNamedFramebufferfi>());
+            .asFunction<GlClearNamedFramebufferfi>()) as void Function(int, int, int, double, int)?;
   }
   glBlitNamedFramebuffer = tryCall(() =>
       lib.lookupFunction<GlBlitNamedFramebufferNative, GlBlitNamedFramebuffer>(
-          'glBlitNamedFramebuffer'));
+          'glBlitNamedFramebuffer')) as void Function(int, int, int, int, int, int, int, int, int, int, int, int)?;
   if (glBlitNamedFramebuffer == null) {
     glBlitNamedFramebuffer = tryCall(() =>
         Pointer<NativeFunction<GlBlitNamedFramebufferNative>>.fromAddress(
                 _glGetProcAddress('glBlitNamedFramebuffer'))
-            .asFunction<GlBlitNamedFramebuffer>());
+            .asFunction<GlBlitNamedFramebuffer>()) as void Function(int, int, int, int, int, int, int, int, int, int, int, int)?;
   }
   glCheckNamedFramebufferStatus = tryCall(() => lib.lookupFunction<
       GlCheckNamedFramebufferStatusNative,
-      GlCheckNamedFramebufferStatus>('glCheckNamedFramebufferStatus'));
+      GlCheckNamedFramebufferStatus>('glCheckNamedFramebufferStatus')) as int Function(int, int)?;
   if (glCheckNamedFramebufferStatus == null) {
     glCheckNamedFramebufferStatus = tryCall(() => Pointer<
                 NativeFunction<
                     GlCheckNamedFramebufferStatusNative>>.fromAddress(
             _glGetProcAddress('glCheckNamedFramebufferStatus'))
-        .asFunction<GlCheckNamedFramebufferStatus>());
+        .asFunction<GlCheckNamedFramebufferStatus>()) as int Function(int, int)?;
   }
   glGetNamedFramebufferParameteriv = tryCall(() => lib.lookupFunction<
       GlGetNamedFramebufferParameterivNative,
-      GlGetNamedFramebufferParameteriv>('glGetNamedFramebufferParameteriv'));
+      GlGetNamedFramebufferParameteriv>('glGetNamedFramebufferParameteriv')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetNamedFramebufferParameteriv == null) {
     glGetNamedFramebufferParameteriv = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetNamedFramebufferParameterivNative>>.fromAddress(
             _glGetProcAddress('glGetNamedFramebufferParameteriv'))
-        .asFunction<GlGetNamedFramebufferParameteriv>());
+        .asFunction<GlGetNamedFramebufferParameteriv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glGetNamedFramebufferAttachmentParameteriv = tryCall(() => lib.lookupFunction<
           GlGetNamedFramebufferAttachmentParameterivNative,
           GlGetNamedFramebufferAttachmentParameteriv>(
-      'glGetNamedFramebufferAttachmentParameteriv'));
+      'glGetNamedFramebufferAttachmentParameteriv')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glGetNamedFramebufferAttachmentParameteriv == null) {
     glGetNamedFramebufferAttachmentParameteriv = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetNamedFramebufferAttachmentParameterivNative>>.fromAddress(
             _glGetProcAddress('glGetNamedFramebufferAttachmentParameteriv'))
-        .asFunction<GlGetNamedFramebufferAttachmentParameteriv>());
+        .asFunction<GlGetNamedFramebufferAttachmentParameteriv>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glCreateRenderbuffers = tryCall(() =>
       lib.lookupFunction<GlCreateRenderbuffersNative, GlCreateRenderbuffers>(
-          'glCreateRenderbuffers'));
+          'glCreateRenderbuffers')) as void Function(int, Pointer<Uint32>)?;
   if (glCreateRenderbuffers == null) {
     glCreateRenderbuffers = tryCall(() =>
         Pointer<NativeFunction<GlCreateRenderbuffersNative>>.fromAddress(
                 _glGetProcAddress('glCreateRenderbuffers'))
-            .asFunction<GlCreateRenderbuffers>());
+            .asFunction<GlCreateRenderbuffers>()) as void Function(int, Pointer<Uint32>)?;
   }
   glNamedRenderbufferStorage = tryCall(() => lib.lookupFunction<
       GlNamedRenderbufferStorageNative,
-      GlNamedRenderbufferStorage>('glNamedRenderbufferStorage'));
+      GlNamedRenderbufferStorage>('glNamedRenderbufferStorage')) as void Function(int, int, int, int)?;
   if (glNamedRenderbufferStorage == null) {
     glNamedRenderbufferStorage = tryCall(() =>
         Pointer<NativeFunction<GlNamedRenderbufferStorageNative>>.fromAddress(
                 _glGetProcAddress('glNamedRenderbufferStorage'))
-            .asFunction<GlNamedRenderbufferStorage>());
+            .asFunction<GlNamedRenderbufferStorage>()) as void Function(int, int, int, int)?;
   }
   glNamedRenderbufferStorageMultisample = tryCall(() => lib.lookupFunction<
           GlNamedRenderbufferStorageMultisampleNative,
           GlNamedRenderbufferStorageMultisample>(
-      'glNamedRenderbufferStorageMultisample'));
+      'glNamedRenderbufferStorageMultisample')) as void Function(int, int, int, int, int)?;
   if (glNamedRenderbufferStorageMultisample == null) {
     glNamedRenderbufferStorageMultisample = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedRenderbufferStorageMultisampleNative>>.fromAddress(
             _glGetProcAddress('glNamedRenderbufferStorageMultisample'))
-        .asFunction<GlNamedRenderbufferStorageMultisample>());
+        .asFunction<GlNamedRenderbufferStorageMultisample>()) as void Function(int, int, int, int, int)?;
   }
   glGetNamedRenderbufferParameteriv = tryCall(() => lib.lookupFunction<
       GlGetNamedRenderbufferParameterivNative,
-      GlGetNamedRenderbufferParameteriv>('glGetNamedRenderbufferParameteriv'));
+      GlGetNamedRenderbufferParameteriv>('glGetNamedRenderbufferParameteriv')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetNamedRenderbufferParameteriv == null) {
     glGetNamedRenderbufferParameteriv = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetNamedRenderbufferParameterivNative>>.fromAddress(
             _glGetProcAddress('glGetNamedRenderbufferParameteriv'))
-        .asFunction<GlGetNamedRenderbufferParameteriv>());
+        .asFunction<GlGetNamedRenderbufferParameteriv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glCreateTextures = tryCall(() =>
       lib.lookupFunction<GlCreateTexturesNative, GlCreateTextures>(
-          'glCreateTextures'));
+          'glCreateTextures')) as void Function(int, int, Pointer<Uint32>)?;
   if (glCreateTextures == null) {
     glCreateTextures = tryCall(() =>
         Pointer<NativeFunction<GlCreateTexturesNative>>.fromAddress(
                 _glGetProcAddress('glCreateTextures'))
-            .asFunction<GlCreateTextures>());
+            .asFunction<GlCreateTextures>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glTextureBuffer = tryCall(() =>
       lib.lookupFunction<GlTextureBufferNative, GlTextureBuffer>(
-          'glTextureBuffer'));
+          'glTextureBuffer')) as void Function(int, int, int)?;
   if (glTextureBuffer == null) {
     glTextureBuffer = tryCall(() =>
         Pointer<NativeFunction<GlTextureBufferNative>>.fromAddress(
                 _glGetProcAddress('glTextureBuffer'))
-            .asFunction<GlTextureBuffer>());
+            .asFunction<GlTextureBuffer>()) as void Function(int, int, int)?;
   }
   glTextureBufferRange = tryCall(() =>
       lib.lookupFunction<GlTextureBufferRangeNative, GlTextureBufferRange>(
-          'glTextureBufferRange'));
+          'glTextureBufferRange')) as void Function(int, int, int, int, int)?;
   if (glTextureBufferRange == null) {
     glTextureBufferRange = tryCall(() =>
         Pointer<NativeFunction<GlTextureBufferRangeNative>>.fromAddress(
                 _glGetProcAddress('glTextureBufferRange'))
-            .asFunction<GlTextureBufferRange>());
+            .asFunction<GlTextureBufferRange>()) as void Function(int, int, int, int, int)?;
   }
   glTextureStorage1D = tryCall(() =>
       lib.lookupFunction<GlTextureStorage1DNative, GlTextureStorage1D>(
-          'glTextureStorage1D'));
+          'glTextureStorage1D')) as void Function(int, int, int, int)?;
   if (glTextureStorage1D == null) {
     glTextureStorage1D = tryCall(() =>
         Pointer<NativeFunction<GlTextureStorage1DNative>>.fromAddress(
                 _glGetProcAddress('glTextureStorage1D'))
-            .asFunction<GlTextureStorage1D>());
+            .asFunction<GlTextureStorage1D>()) as void Function(int, int, int, int)?;
   }
   glTextureStorage2D = tryCall(() =>
       lib.lookupFunction<GlTextureStorage2DNative, GlTextureStorage2D>(
-          'glTextureStorage2D'));
+          'glTextureStorage2D')) as void Function(int, int, int, int, int)?;
   if (glTextureStorage2D == null) {
     glTextureStorage2D = tryCall(() =>
         Pointer<NativeFunction<GlTextureStorage2DNative>>.fromAddress(
                 _glGetProcAddress('glTextureStorage2D'))
-            .asFunction<GlTextureStorage2D>());
+            .asFunction<GlTextureStorage2D>()) as void Function(int, int, int, int, int)?;
   }
   glTextureStorage3D = tryCall(() =>
       lib.lookupFunction<GlTextureStorage3DNative, GlTextureStorage3D>(
-          'glTextureStorage3D'));
+          'glTextureStorage3D')) as void Function(int, int, int, int, int, int)?;
   if (glTextureStorage3D == null) {
     glTextureStorage3D = tryCall(() =>
         Pointer<NativeFunction<GlTextureStorage3DNative>>.fromAddress(
                 _glGetProcAddress('glTextureStorage3D'))
-            .asFunction<GlTextureStorage3D>());
+            .asFunction<GlTextureStorage3D>()) as void Function(int, int, int, int, int, int)?;
   }
   glTextureStorage2DMultisample = tryCall(() => lib.lookupFunction<
       GlTextureStorage2DMultisampleNative,
-      GlTextureStorage2DMultisample>('glTextureStorage2DMultisample'));
+      GlTextureStorage2DMultisample>('glTextureStorage2DMultisample')) as void Function(int, int, int, int, int, int)?;
   if (glTextureStorage2DMultisample == null) {
     glTextureStorage2DMultisample = tryCall(() => Pointer<
                 NativeFunction<
                     GlTextureStorage2DMultisampleNative>>.fromAddress(
             _glGetProcAddress('glTextureStorage2DMultisample'))
-        .asFunction<GlTextureStorage2DMultisample>());
+        .asFunction<GlTextureStorage2DMultisample>()) as void Function(int, int, int, int, int, int)?;
   }
   glTextureStorage3DMultisample = tryCall(() => lib.lookupFunction<
       GlTextureStorage3DMultisampleNative,
-      GlTextureStorage3DMultisample>('glTextureStorage3DMultisample'));
+      GlTextureStorage3DMultisample>('glTextureStorage3DMultisample')) as void Function(int, int, int, int, int, int, int)?;
   if (glTextureStorage3DMultisample == null) {
     glTextureStorage3DMultisample = tryCall(() => Pointer<
                 NativeFunction<
                     GlTextureStorage3DMultisampleNative>>.fromAddress(
             _glGetProcAddress('glTextureStorage3DMultisample'))
-        .asFunction<GlTextureStorage3DMultisample>());
+        .asFunction<GlTextureStorage3DMultisample>()) as void Function(int, int, int, int, int, int, int)?;
   }
   glTextureSubImage1D = tryCall(() =>
       lib.lookupFunction<GlTextureSubImage1DNative, GlTextureSubImage1D>(
-          'glTextureSubImage1D'));
+          'glTextureSubImage1D')) as void Function(int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glTextureSubImage1D == null) {
     glTextureSubImage1D = tryCall(() =>
         Pointer<NativeFunction<GlTextureSubImage1DNative>>.fromAddress(
                 _glGetProcAddress('glTextureSubImage1D'))
-            .asFunction<GlTextureSubImage1D>());
+            .asFunction<GlTextureSubImage1D>()) as void Function(int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glTextureSubImage2D = tryCall(() =>
       lib.lookupFunction<GlTextureSubImage2DNative, GlTextureSubImage2D>(
-          'glTextureSubImage2D'));
+          'glTextureSubImage2D')) as void Function(int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glTextureSubImage2D == null) {
     glTextureSubImage2D = tryCall(() =>
         Pointer<NativeFunction<GlTextureSubImage2DNative>>.fromAddress(
                 _glGetProcAddress('glTextureSubImage2D'))
-            .asFunction<GlTextureSubImage2D>());
+            .asFunction<GlTextureSubImage2D>()) as void Function(int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glTextureSubImage3D = tryCall(() =>
       lib.lookupFunction<GlTextureSubImage3DNative, GlTextureSubImage3D>(
-          'glTextureSubImage3D'));
+          'glTextureSubImage3D')) as void Function(int, int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glTextureSubImage3D == null) {
     glTextureSubImage3D = tryCall(() =>
         Pointer<NativeFunction<GlTextureSubImage3DNative>>.fromAddress(
                 _glGetProcAddress('glTextureSubImage3D'))
-            .asFunction<GlTextureSubImage3D>());
+            .asFunction<GlTextureSubImage3D>()) as void Function(int, int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glCompressedTextureSubImage1D = tryCall(() => lib.lookupFunction<
       GlCompressedTextureSubImage1DNative,
-      GlCompressedTextureSubImage1D>('glCompressedTextureSubImage1D'));
+      GlCompressedTextureSubImage1D>('glCompressedTextureSubImage1D')) as void Function(int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glCompressedTextureSubImage1D == null) {
     glCompressedTextureSubImage1D = tryCall(() => Pointer<
                 NativeFunction<
                     GlCompressedTextureSubImage1DNative>>.fromAddress(
             _glGetProcAddress('glCompressedTextureSubImage1D'))
-        .asFunction<GlCompressedTextureSubImage1D>());
+        .asFunction<GlCompressedTextureSubImage1D>()) as void Function(int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glCompressedTextureSubImage2D = tryCall(() => lib.lookupFunction<
       GlCompressedTextureSubImage2DNative,
-      GlCompressedTextureSubImage2D>('glCompressedTextureSubImage2D'));
+      GlCompressedTextureSubImage2D>('glCompressedTextureSubImage2D')) as void Function(int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glCompressedTextureSubImage2D == null) {
     glCompressedTextureSubImage2D = tryCall(() => Pointer<
                 NativeFunction<
                     GlCompressedTextureSubImage2DNative>>.fromAddress(
             _glGetProcAddress('glCompressedTextureSubImage2D'))
-        .asFunction<GlCompressedTextureSubImage2D>());
+        .asFunction<GlCompressedTextureSubImage2D>()) as void Function(int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glCompressedTextureSubImage3D = tryCall(() => lib.lookupFunction<
       GlCompressedTextureSubImage3DNative,
-      GlCompressedTextureSubImage3D>('glCompressedTextureSubImage3D'));
+      GlCompressedTextureSubImage3D>('glCompressedTextureSubImage3D')) as void Function(int, int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glCompressedTextureSubImage3D == null) {
     glCompressedTextureSubImage3D = tryCall(() => Pointer<
                 NativeFunction<
                     GlCompressedTextureSubImage3DNative>>.fromAddress(
             _glGetProcAddress('glCompressedTextureSubImage3D'))
-        .asFunction<GlCompressedTextureSubImage3D>());
+        .asFunction<GlCompressedTextureSubImage3D>()) as void Function(int, int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glCopyTextureSubImage1D = tryCall(() => lib.lookupFunction<
       GlCopyTextureSubImage1DNative,
-      GlCopyTextureSubImage1D>('glCopyTextureSubImage1D'));
+      GlCopyTextureSubImage1D>('glCopyTextureSubImage1D')) as void Function(int, int, int, int, int, int)?;
   if (glCopyTextureSubImage1D == null) {
     glCopyTextureSubImage1D = tryCall(() =>
         Pointer<NativeFunction<GlCopyTextureSubImage1DNative>>.fromAddress(
                 _glGetProcAddress('glCopyTextureSubImage1D'))
-            .asFunction<GlCopyTextureSubImage1D>());
+            .asFunction<GlCopyTextureSubImage1D>()) as void Function(int, int, int, int, int, int)?;
   }
   glCopyTextureSubImage2D = tryCall(() => lib.lookupFunction<
       GlCopyTextureSubImage2DNative,
-      GlCopyTextureSubImage2D>('glCopyTextureSubImage2D'));
+      GlCopyTextureSubImage2D>('glCopyTextureSubImage2D')) as void Function(int, int, int, int, int, int, int, int)?;
   if (glCopyTextureSubImage2D == null) {
     glCopyTextureSubImage2D = tryCall(() =>
         Pointer<NativeFunction<GlCopyTextureSubImage2DNative>>.fromAddress(
                 _glGetProcAddress('glCopyTextureSubImage2D'))
-            .asFunction<GlCopyTextureSubImage2D>());
+            .asFunction<GlCopyTextureSubImage2D>()) as void Function(int, int, int, int, int, int, int, int)?;
   }
   glCopyTextureSubImage3D = tryCall(() => lib.lookupFunction<
       GlCopyTextureSubImage3DNative,
-      GlCopyTextureSubImage3D>('glCopyTextureSubImage3D'));
+      GlCopyTextureSubImage3D>('glCopyTextureSubImage3D')) as void Function(int, int, int, int, int, int, int, int, int)?;
   if (glCopyTextureSubImage3D == null) {
     glCopyTextureSubImage3D = tryCall(() =>
         Pointer<NativeFunction<GlCopyTextureSubImage3DNative>>.fromAddress(
                 _glGetProcAddress('glCopyTextureSubImage3D'))
-            .asFunction<GlCopyTextureSubImage3D>());
+            .asFunction<GlCopyTextureSubImage3D>()) as void Function(int, int, int, int, int, int, int, int, int)?;
   }
   glTextureParameterf = tryCall(() =>
       lib.lookupFunction<GlTextureParameterfNative, GlTextureParameterf>(
-          'glTextureParameterf'));
+          'glTextureParameterf')) as void Function(int, int, double)?;
   if (glTextureParameterf == null) {
     glTextureParameterf = tryCall(() =>
         Pointer<NativeFunction<GlTextureParameterfNative>>.fromAddress(
                 _glGetProcAddress('glTextureParameterf'))
-            .asFunction<GlTextureParameterf>());
+            .asFunction<GlTextureParameterf>()) as void Function(int, int, double)?;
   }
   glTextureParameterfv = tryCall(() =>
       lib.lookupFunction<GlTextureParameterfvNative, GlTextureParameterfv>(
-          'glTextureParameterfv'));
+          'glTextureParameterfv')) as void Function(int, int, Pointer<Float>)?;
   if (glTextureParameterfv == null) {
     glTextureParameterfv = tryCall(() =>
         Pointer<NativeFunction<GlTextureParameterfvNative>>.fromAddress(
                 _glGetProcAddress('glTextureParameterfv'))
-            .asFunction<GlTextureParameterfv>());
+            .asFunction<GlTextureParameterfv>()) as void Function(int, int, Pointer<Float>)?;
   }
   glTextureParameteri = tryCall(() =>
       lib.lookupFunction<GlTextureParameteriNative, GlTextureParameteri>(
-          'glTextureParameteri'));
+          'glTextureParameteri')) as void Function(int, int, int)?;
   if (glTextureParameteri == null) {
     glTextureParameteri = tryCall(() =>
         Pointer<NativeFunction<GlTextureParameteriNative>>.fromAddress(
                 _glGetProcAddress('glTextureParameteri'))
-            .asFunction<GlTextureParameteri>());
+            .asFunction<GlTextureParameteri>()) as void Function(int, int, int)?;
   }
   glTextureParameterIiv = tryCall(() =>
       lib.lookupFunction<GlTextureParameterIivNative, GlTextureParameterIiv>(
-          'glTextureParameterIiv'));
+          'glTextureParameterIiv')) as void Function(int, int, Pointer<Int32>)?;
   if (glTextureParameterIiv == null) {
     glTextureParameterIiv = tryCall(() =>
         Pointer<NativeFunction<GlTextureParameterIivNative>>.fromAddress(
                 _glGetProcAddress('glTextureParameterIiv'))
-            .asFunction<GlTextureParameterIiv>());
+            .asFunction<GlTextureParameterIiv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glTextureParameterIuiv = tryCall(() =>
       lib.lookupFunction<GlTextureParameterIuivNative, GlTextureParameterIuiv>(
-          'glTextureParameterIuiv'));
+          'glTextureParameterIuiv')) as void Function(int, int, Pointer<Uint32>)?;
   if (glTextureParameterIuiv == null) {
     glTextureParameterIuiv = tryCall(() =>
         Pointer<NativeFunction<GlTextureParameterIuivNative>>.fromAddress(
                 _glGetProcAddress('glTextureParameterIuiv'))
-            .asFunction<GlTextureParameterIuiv>());
+            .asFunction<GlTextureParameterIuiv>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glTextureParameteriv = tryCall(() =>
       lib.lookupFunction<GlTextureParameterivNative, GlTextureParameteriv>(
-          'glTextureParameteriv'));
+          'glTextureParameteriv')) as void Function(int, int, Pointer<Int32>)?;
   if (glTextureParameteriv == null) {
     glTextureParameteriv = tryCall(() =>
         Pointer<NativeFunction<GlTextureParameterivNative>>.fromAddress(
                 _glGetProcAddress('glTextureParameteriv'))
-            .asFunction<GlTextureParameteriv>());
+            .asFunction<GlTextureParameteriv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glGenerateTextureMipmap = tryCall(() => lib.lookupFunction<
       GlGenerateTextureMipmapNative,
-      GlGenerateTextureMipmap>('glGenerateTextureMipmap'));
+      GlGenerateTextureMipmap>('glGenerateTextureMipmap')) as void Function(int)?;
   if (glGenerateTextureMipmap == null) {
     glGenerateTextureMipmap = tryCall(() =>
         Pointer<NativeFunction<GlGenerateTextureMipmapNative>>.fromAddress(
                 _glGetProcAddress('glGenerateTextureMipmap'))
-            .asFunction<GlGenerateTextureMipmap>());
+            .asFunction<GlGenerateTextureMipmap>()) as void Function(int)?;
   }
   glBindTextureUnit = tryCall(() =>
       lib.lookupFunction<GlBindTextureUnitNative, GlBindTextureUnit>(
-          'glBindTextureUnit'));
+          'glBindTextureUnit')) as void Function(int, int)?;
   if (glBindTextureUnit == null) {
     glBindTextureUnit = tryCall(() =>
         Pointer<NativeFunction<GlBindTextureUnitNative>>.fromAddress(
                 _glGetProcAddress('glBindTextureUnit'))
-            .asFunction<GlBindTextureUnit>());
+            .asFunction<GlBindTextureUnit>()) as void Function(int, int)?;
   }
   glGetTextureImage = tryCall(() =>
       lib.lookupFunction<GlGetTextureImageNative, GlGetTextureImage>(
-          'glGetTextureImage'));
+          'glGetTextureImage')) as void Function(int, int, int, int, int, Pointer<NativeType>)?;
   if (glGetTextureImage == null) {
     glGetTextureImage = tryCall(() =>
         Pointer<NativeFunction<GlGetTextureImageNative>>.fromAddress(
                 _glGetProcAddress('glGetTextureImage'))
-            .asFunction<GlGetTextureImage>());
+            .asFunction<GlGetTextureImage>()) as void Function(int, int, int, int, int, Pointer<NativeType>)?;
   }
   glGetCompressedTextureImage = tryCall(() => lib.lookupFunction<
       GlGetCompressedTextureImageNative,
-      GlGetCompressedTextureImage>('glGetCompressedTextureImage'));
+      GlGetCompressedTextureImage>('glGetCompressedTextureImage')) as void Function(int, int, int, Pointer<NativeType>)?;
   if (glGetCompressedTextureImage == null) {
     glGetCompressedTextureImage = tryCall(() =>
         Pointer<NativeFunction<GlGetCompressedTextureImageNative>>.fromAddress(
                 _glGetProcAddress('glGetCompressedTextureImage'))
-            .asFunction<GlGetCompressedTextureImage>());
+            .asFunction<GlGetCompressedTextureImage>()) as void Function(int, int, int, Pointer<NativeType>)?;
   }
   glGetTextureLevelParameterfv = tryCall(() => lib.lookupFunction<
       GlGetTextureLevelParameterfvNative,
-      GlGetTextureLevelParameterfv>('glGetTextureLevelParameterfv'));
+      GlGetTextureLevelParameterfv>('glGetTextureLevelParameterfv')) as void Function(int, int, int, Pointer<Float>)?;
   if (glGetTextureLevelParameterfv == null) {
     glGetTextureLevelParameterfv = tryCall(() =>
         Pointer<NativeFunction<GlGetTextureLevelParameterfvNative>>.fromAddress(
                 _glGetProcAddress('glGetTextureLevelParameterfv'))
-            .asFunction<GlGetTextureLevelParameterfv>());
+            .asFunction<GlGetTextureLevelParameterfv>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glGetTextureLevelParameteriv = tryCall(() => lib.lookupFunction<
       GlGetTextureLevelParameterivNative,
-      GlGetTextureLevelParameteriv>('glGetTextureLevelParameteriv'));
+      GlGetTextureLevelParameteriv>('glGetTextureLevelParameteriv')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glGetTextureLevelParameteriv == null) {
     glGetTextureLevelParameteriv = tryCall(() =>
         Pointer<NativeFunction<GlGetTextureLevelParameterivNative>>.fromAddress(
                 _glGetProcAddress('glGetTextureLevelParameteriv'))
-            .asFunction<GlGetTextureLevelParameteriv>());
+            .asFunction<GlGetTextureLevelParameteriv>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glGetTextureParameterfv = tryCall(() => lib.lookupFunction<
       GlGetTextureParameterfvNative,
-      GlGetTextureParameterfv>('glGetTextureParameterfv'));
+      GlGetTextureParameterfv>('glGetTextureParameterfv')) as void Function(int, int, Pointer<Float>)?;
   if (glGetTextureParameterfv == null) {
     glGetTextureParameterfv = tryCall(() =>
         Pointer<NativeFunction<GlGetTextureParameterfvNative>>.fromAddress(
                 _glGetProcAddress('glGetTextureParameterfv'))
-            .asFunction<GlGetTextureParameterfv>());
+            .asFunction<GlGetTextureParameterfv>()) as void Function(int, int, Pointer<Float>)?;
   }
   glGetTextureParameterIiv = tryCall(() => lib.lookupFunction<
       GlGetTextureParameterIivNative,
-      GlGetTextureParameterIiv>('glGetTextureParameterIiv'));
+      GlGetTextureParameterIiv>('glGetTextureParameterIiv')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetTextureParameterIiv == null) {
     glGetTextureParameterIiv = tryCall(() =>
         Pointer<NativeFunction<GlGetTextureParameterIivNative>>.fromAddress(
                 _glGetProcAddress('glGetTextureParameterIiv'))
-            .asFunction<GlGetTextureParameterIiv>());
+            .asFunction<GlGetTextureParameterIiv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glGetTextureParameterIuiv = tryCall(() => lib.lookupFunction<
       GlGetTextureParameterIuivNative,
-      GlGetTextureParameterIuiv>('glGetTextureParameterIuiv'));
+      GlGetTextureParameterIuiv>('glGetTextureParameterIuiv')) as void Function(int, int, Pointer<Uint32>)?;
   if (glGetTextureParameterIuiv == null) {
     glGetTextureParameterIuiv = tryCall(() =>
         Pointer<NativeFunction<GlGetTextureParameterIuivNative>>.fromAddress(
                 _glGetProcAddress('glGetTextureParameterIuiv'))
-            .asFunction<GlGetTextureParameterIuiv>());
+            .asFunction<GlGetTextureParameterIuiv>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glGetTextureParameteriv = tryCall(() => lib.lookupFunction<
       GlGetTextureParameterivNative,
-      GlGetTextureParameteriv>('glGetTextureParameteriv'));
+      GlGetTextureParameteriv>('glGetTextureParameteriv')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetTextureParameteriv == null) {
     glGetTextureParameteriv = tryCall(() =>
         Pointer<NativeFunction<GlGetTextureParameterivNative>>.fromAddress(
                 _glGetProcAddress('glGetTextureParameteriv'))
-            .asFunction<GlGetTextureParameteriv>());
+            .asFunction<GlGetTextureParameteriv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glCreateVertexArrays = tryCall(() =>
       lib.lookupFunction<GlCreateVertexArraysNative, GlCreateVertexArrays>(
-          'glCreateVertexArrays'));
+          'glCreateVertexArrays')) as void Function(int, Pointer<Uint32>)?;
   if (glCreateVertexArrays == null) {
     glCreateVertexArrays = tryCall(() =>
         Pointer<NativeFunction<GlCreateVertexArraysNative>>.fromAddress(
                 _glGetProcAddress('glCreateVertexArrays'))
-            .asFunction<GlCreateVertexArrays>());
+            .asFunction<GlCreateVertexArrays>()) as void Function(int, Pointer<Uint32>)?;
   }
   glDisableVertexArrayAttrib = tryCall(() => lib.lookupFunction<
       GlDisableVertexArrayAttribNative,
-      GlDisableVertexArrayAttrib>('glDisableVertexArrayAttrib'));
+      GlDisableVertexArrayAttrib>('glDisableVertexArrayAttrib')) as void Function(int, int)?;
   if (glDisableVertexArrayAttrib == null) {
     glDisableVertexArrayAttrib = tryCall(() =>
         Pointer<NativeFunction<GlDisableVertexArrayAttribNative>>.fromAddress(
                 _glGetProcAddress('glDisableVertexArrayAttrib'))
-            .asFunction<GlDisableVertexArrayAttrib>());
+            .asFunction<GlDisableVertexArrayAttrib>()) as void Function(int, int)?;
   }
   glEnableVertexArrayAttrib = tryCall(() => lib.lookupFunction<
       GlEnableVertexArrayAttribNative,
-      GlEnableVertexArrayAttrib>('glEnableVertexArrayAttrib'));
+      GlEnableVertexArrayAttrib>('glEnableVertexArrayAttrib')) as void Function(int, int)?;
   if (glEnableVertexArrayAttrib == null) {
     glEnableVertexArrayAttrib = tryCall(() =>
         Pointer<NativeFunction<GlEnableVertexArrayAttribNative>>.fromAddress(
                 _glGetProcAddress('glEnableVertexArrayAttrib'))
-            .asFunction<GlEnableVertexArrayAttrib>());
+            .asFunction<GlEnableVertexArrayAttrib>()) as void Function(int, int)?;
   }
   glVertexArrayElementBuffer = tryCall(() => lib.lookupFunction<
       GlVertexArrayElementBufferNative,
-      GlVertexArrayElementBuffer>('glVertexArrayElementBuffer'));
+      GlVertexArrayElementBuffer>('glVertexArrayElementBuffer')) as void Function(int, int)?;
   if (glVertexArrayElementBuffer == null) {
     glVertexArrayElementBuffer = tryCall(() =>
         Pointer<NativeFunction<GlVertexArrayElementBufferNative>>.fromAddress(
                 _glGetProcAddress('glVertexArrayElementBuffer'))
-            .asFunction<GlVertexArrayElementBuffer>());
+            .asFunction<GlVertexArrayElementBuffer>()) as void Function(int, int)?;
   }
   glVertexArrayVertexBuffer = tryCall(() => lib.lookupFunction<
       GlVertexArrayVertexBufferNative,
-      GlVertexArrayVertexBuffer>('glVertexArrayVertexBuffer'));
+      GlVertexArrayVertexBuffer>('glVertexArrayVertexBuffer')) as void Function(int, int, int, int, int)?;
   if (glVertexArrayVertexBuffer == null) {
     glVertexArrayVertexBuffer = tryCall(() =>
         Pointer<NativeFunction<GlVertexArrayVertexBufferNative>>.fromAddress(
                 _glGetProcAddress('glVertexArrayVertexBuffer'))
-            .asFunction<GlVertexArrayVertexBuffer>());
+            .asFunction<GlVertexArrayVertexBuffer>()) as void Function(int, int, int, int, int)?;
   }
   glVertexArrayVertexBuffers = tryCall(() => lib.lookupFunction<
       GlVertexArrayVertexBuffersNative,
-      GlVertexArrayVertexBuffers>('glVertexArrayVertexBuffers'));
+      GlVertexArrayVertexBuffers>('glVertexArrayVertexBuffers')) as void Function(int, int, int, Pointer<Uint32>, Pointer<Int64>, Pointer<Int32>)?;
   if (glVertexArrayVertexBuffers == null) {
     glVertexArrayVertexBuffers = tryCall(() =>
         Pointer<NativeFunction<GlVertexArrayVertexBuffersNative>>.fromAddress(
                 _glGetProcAddress('glVertexArrayVertexBuffers'))
-            .asFunction<GlVertexArrayVertexBuffers>());
+            .asFunction<GlVertexArrayVertexBuffers>()) as void Function(int, int, int, Pointer<Uint32>, Pointer<Int64>, Pointer<Int32>)?;
   }
   glVertexArrayAttribBinding = tryCall(() => lib.lookupFunction<
       GlVertexArrayAttribBindingNative,
-      GlVertexArrayAttribBinding>('glVertexArrayAttribBinding'));
+      GlVertexArrayAttribBinding>('glVertexArrayAttribBinding')) as void Function(int, int, int)?;
   if (glVertexArrayAttribBinding == null) {
     glVertexArrayAttribBinding = tryCall(() =>
         Pointer<NativeFunction<GlVertexArrayAttribBindingNative>>.fromAddress(
                 _glGetProcAddress('glVertexArrayAttribBinding'))
-            .asFunction<GlVertexArrayAttribBinding>());
+            .asFunction<GlVertexArrayAttribBinding>()) as void Function(int, int, int)?;
   }
   glVertexArrayAttribFormat = tryCall(() => lib.lookupFunction<
       GlVertexArrayAttribFormatNative,
-      GlVertexArrayAttribFormat>('glVertexArrayAttribFormat'));
+      GlVertexArrayAttribFormat>('glVertexArrayAttribFormat')) as void Function(int, int, int, int, int, int)?;
   if (glVertexArrayAttribFormat == null) {
     glVertexArrayAttribFormat = tryCall(() =>
         Pointer<NativeFunction<GlVertexArrayAttribFormatNative>>.fromAddress(
                 _glGetProcAddress('glVertexArrayAttribFormat'))
-            .asFunction<GlVertexArrayAttribFormat>());
+            .asFunction<GlVertexArrayAttribFormat>()) as void Function(int, int, int, int, int, int)?;
   }
   glVertexArrayAttribIFormat = tryCall(() => lib.lookupFunction<
       GlVertexArrayAttribIFormatNative,
-      GlVertexArrayAttribIFormat>('glVertexArrayAttribIFormat'));
+      GlVertexArrayAttribIFormat>('glVertexArrayAttribIFormat')) as void Function(int, int, int, int, int)?;
   if (glVertexArrayAttribIFormat == null) {
     glVertexArrayAttribIFormat = tryCall(() =>
         Pointer<NativeFunction<GlVertexArrayAttribIFormatNative>>.fromAddress(
                 _glGetProcAddress('glVertexArrayAttribIFormat'))
-            .asFunction<GlVertexArrayAttribIFormat>());
+            .asFunction<GlVertexArrayAttribIFormat>()) as void Function(int, int, int, int, int)?;
   }
   glVertexArrayAttribLFormat = tryCall(() => lib.lookupFunction<
       GlVertexArrayAttribLFormatNative,
-      GlVertexArrayAttribLFormat>('glVertexArrayAttribLFormat'));
+      GlVertexArrayAttribLFormat>('glVertexArrayAttribLFormat')) as void Function(int, int, int, int, int)?;
   if (glVertexArrayAttribLFormat == null) {
     glVertexArrayAttribLFormat = tryCall(() =>
         Pointer<NativeFunction<GlVertexArrayAttribLFormatNative>>.fromAddress(
                 _glGetProcAddress('glVertexArrayAttribLFormat'))
-            .asFunction<GlVertexArrayAttribLFormat>());
+            .asFunction<GlVertexArrayAttribLFormat>()) as void Function(int, int, int, int, int)?;
   }
   glVertexArrayBindingDivisor = tryCall(() => lib.lookupFunction<
       GlVertexArrayBindingDivisorNative,
-      GlVertexArrayBindingDivisor>('glVertexArrayBindingDivisor'));
+      GlVertexArrayBindingDivisor>('glVertexArrayBindingDivisor')) as void Function(int, int, int)?;
   if (glVertexArrayBindingDivisor == null) {
     glVertexArrayBindingDivisor = tryCall(() =>
         Pointer<NativeFunction<GlVertexArrayBindingDivisorNative>>.fromAddress(
                 _glGetProcAddress('glVertexArrayBindingDivisor'))
-            .asFunction<GlVertexArrayBindingDivisor>());
+            .asFunction<GlVertexArrayBindingDivisor>()) as void Function(int, int, int)?;
   }
   glGetVertexArrayiv = tryCall(() =>
       lib.lookupFunction<GlGetVertexArrayivNative, GlGetVertexArrayiv>(
-          'glGetVertexArrayiv'));
+          'glGetVertexArrayiv')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetVertexArrayiv == null) {
     glGetVertexArrayiv = tryCall(() =>
         Pointer<NativeFunction<GlGetVertexArrayivNative>>.fromAddress(
                 _glGetProcAddress('glGetVertexArrayiv'))
-            .asFunction<GlGetVertexArrayiv>());
+            .asFunction<GlGetVertexArrayiv>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glGetVertexArrayIndexediv = tryCall(() => lib.lookupFunction<
       GlGetVertexArrayIndexedivNative,
-      GlGetVertexArrayIndexediv>('glGetVertexArrayIndexediv'));
+      GlGetVertexArrayIndexediv>('glGetVertexArrayIndexediv')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glGetVertexArrayIndexediv == null) {
     glGetVertexArrayIndexediv = tryCall(() =>
         Pointer<NativeFunction<GlGetVertexArrayIndexedivNative>>.fromAddress(
                 _glGetProcAddress('glGetVertexArrayIndexediv'))
-            .asFunction<GlGetVertexArrayIndexediv>());
+            .asFunction<GlGetVertexArrayIndexediv>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glGetVertexArrayIndexed64iv = tryCall(() => lib.lookupFunction<
       GlGetVertexArrayIndexed64ivNative,
-      GlGetVertexArrayIndexed64iv>('glGetVertexArrayIndexed64iv'));
+      GlGetVertexArrayIndexed64iv>('glGetVertexArrayIndexed64iv')) as void Function(int, int, int, Pointer<Int64>)?;
   if (glGetVertexArrayIndexed64iv == null) {
     glGetVertexArrayIndexed64iv = tryCall(() =>
         Pointer<NativeFunction<GlGetVertexArrayIndexed64ivNative>>.fromAddress(
                 _glGetProcAddress('glGetVertexArrayIndexed64iv'))
-            .asFunction<GlGetVertexArrayIndexed64iv>());
+            .asFunction<GlGetVertexArrayIndexed64iv>()) as void Function(int, int, int, Pointer<Int64>)?;
   }
   glCreateSamplers = tryCall(() =>
       lib.lookupFunction<GlCreateSamplersNative, GlCreateSamplers>(
-          'glCreateSamplers'));
+          'glCreateSamplers')) as void Function(int, Pointer<Uint32>)?;
   if (glCreateSamplers == null) {
     glCreateSamplers = tryCall(() =>
         Pointer<NativeFunction<GlCreateSamplersNative>>.fromAddress(
                 _glGetProcAddress('glCreateSamplers'))
-            .asFunction<GlCreateSamplers>());
+            .asFunction<GlCreateSamplers>()) as void Function(int, Pointer<Uint32>)?;
   }
   glCreateProgramPipelines = tryCall(() => lib.lookupFunction<
       GlCreateProgramPipelinesNative,
-      GlCreateProgramPipelines>('glCreateProgramPipelines'));
+      GlCreateProgramPipelines>('glCreateProgramPipelines')) as void Function(int, Pointer<Uint32>)?;
   if (glCreateProgramPipelines == null) {
     glCreateProgramPipelines = tryCall(() =>
         Pointer<NativeFunction<GlCreateProgramPipelinesNative>>.fromAddress(
                 _glGetProcAddress('glCreateProgramPipelines'))
-            .asFunction<GlCreateProgramPipelines>());
+            .asFunction<GlCreateProgramPipelines>()) as void Function(int, Pointer<Uint32>)?;
   }
   glCreateQueries = tryCall(() =>
       lib.lookupFunction<GlCreateQueriesNative, GlCreateQueries>(
-          'glCreateQueries'));
+          'glCreateQueries')) as void Function(int, int, Pointer<Uint32>)?;
   if (glCreateQueries == null) {
     glCreateQueries = tryCall(() =>
         Pointer<NativeFunction<GlCreateQueriesNative>>.fromAddress(
                 _glGetProcAddress('glCreateQueries'))
-            .asFunction<GlCreateQueries>());
+            .asFunction<GlCreateQueries>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glGetQueryBufferObjecti64v = tryCall(() => lib.lookupFunction<
       GlGetQueryBufferObjecti64vNative,
-      GlGetQueryBufferObjecti64v>('glGetQueryBufferObjecti64v'));
+      GlGetQueryBufferObjecti64v>('glGetQueryBufferObjecti64v')) as void Function(int, int, int, int)?;
   if (glGetQueryBufferObjecti64v == null) {
     glGetQueryBufferObjecti64v = tryCall(() =>
         Pointer<NativeFunction<GlGetQueryBufferObjecti64vNative>>.fromAddress(
                 _glGetProcAddress('glGetQueryBufferObjecti64v'))
-            .asFunction<GlGetQueryBufferObjecti64v>());
+            .asFunction<GlGetQueryBufferObjecti64v>()) as void Function(int, int, int, int)?;
   }
   glGetQueryBufferObjectiv = tryCall(() => lib.lookupFunction<
       GlGetQueryBufferObjectivNative,
-      GlGetQueryBufferObjectiv>('glGetQueryBufferObjectiv'));
+      GlGetQueryBufferObjectiv>('glGetQueryBufferObjectiv')) as void Function(int, int, int, int)?;
   if (glGetQueryBufferObjectiv == null) {
     glGetQueryBufferObjectiv = tryCall(() =>
         Pointer<NativeFunction<GlGetQueryBufferObjectivNative>>.fromAddress(
                 _glGetProcAddress('glGetQueryBufferObjectiv'))
-            .asFunction<GlGetQueryBufferObjectiv>());
+            .asFunction<GlGetQueryBufferObjectiv>()) as void Function(int, int, int, int)?;
   }
   glGetQueryBufferObjectui64v = tryCall(() => lib.lookupFunction<
       GlGetQueryBufferObjectui64vNative,
-      GlGetQueryBufferObjectui64v>('glGetQueryBufferObjectui64v'));
+      GlGetQueryBufferObjectui64v>('glGetQueryBufferObjectui64v')) as void Function(int, int, int, int)?;
   if (glGetQueryBufferObjectui64v == null) {
     glGetQueryBufferObjectui64v = tryCall(() =>
         Pointer<NativeFunction<GlGetQueryBufferObjectui64vNative>>.fromAddress(
                 _glGetProcAddress('glGetQueryBufferObjectui64v'))
-            .asFunction<GlGetQueryBufferObjectui64v>());
+            .asFunction<GlGetQueryBufferObjectui64v>()) as void Function(int, int, int, int)?;
   }
   glGetQueryBufferObjectuiv = tryCall(() => lib.lookupFunction<
       GlGetQueryBufferObjectuivNative,
-      GlGetQueryBufferObjectuiv>('glGetQueryBufferObjectuiv'));
+      GlGetQueryBufferObjectuiv>('glGetQueryBufferObjectuiv')) as void Function(int, int, int, int)?;
   if (glGetQueryBufferObjectuiv == null) {
     glGetQueryBufferObjectuiv = tryCall(() =>
         Pointer<NativeFunction<GlGetQueryBufferObjectuivNative>>.fromAddress(
                 _glGetProcAddress('glGetQueryBufferObjectuiv'))
-            .asFunction<GlGetQueryBufferObjectuiv>());
+            .asFunction<GlGetQueryBufferObjectuiv>()) as void Function(int, int, int, int)?;
   }
   glMemoryBarrierByRegion = tryCall(() => lib.lookupFunction<
       GlMemoryBarrierByRegionNative,
-      GlMemoryBarrierByRegion>('glMemoryBarrierByRegion'));
+      GlMemoryBarrierByRegion>('glMemoryBarrierByRegion')) as void Function(int)?;
   if (glMemoryBarrierByRegion == null) {
     glMemoryBarrierByRegion = tryCall(() =>
         Pointer<NativeFunction<GlMemoryBarrierByRegionNative>>.fromAddress(
                 _glGetProcAddress('glMemoryBarrierByRegion'))
-            .asFunction<GlMemoryBarrierByRegion>());
+            .asFunction<GlMemoryBarrierByRegion>()) as void Function(int)?;
   }
   glGetTextureSubImage = tryCall(() =>
       lib.lookupFunction<GlGetTextureSubImageNative, GlGetTextureSubImage>(
-          'glGetTextureSubImage'));
+          'glGetTextureSubImage')) as void Function(int, int, int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glGetTextureSubImage == null) {
     glGetTextureSubImage = tryCall(() =>
         Pointer<NativeFunction<GlGetTextureSubImageNative>>.fromAddress(
                 _glGetProcAddress('glGetTextureSubImage'))
-            .asFunction<GlGetTextureSubImage>());
+            .asFunction<GlGetTextureSubImage>()) as void Function(int, int, int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glGetCompressedTextureSubImage = tryCall(() => lib.lookupFunction<
       GlGetCompressedTextureSubImageNative,
-      GlGetCompressedTextureSubImage>('glGetCompressedTextureSubImage'));
+      GlGetCompressedTextureSubImage>('glGetCompressedTextureSubImage')) as void Function(int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glGetCompressedTextureSubImage == null) {
     glGetCompressedTextureSubImage = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetCompressedTextureSubImageNative>>.fromAddress(
             _glGetProcAddress('glGetCompressedTextureSubImage'))
-        .asFunction<GlGetCompressedTextureSubImage>());
+        .asFunction<GlGetCompressedTextureSubImage>()) as void Function(int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glGetGraphicsResetStatus = tryCall(() => lib.lookupFunction<
       GlGetGraphicsResetStatusNative,
-      GlGetGraphicsResetStatus>('glGetGraphicsResetStatus'));
+      GlGetGraphicsResetStatus>('glGetGraphicsResetStatus')) as int Function()?;
   if (glGetGraphicsResetStatus == null) {
     glGetGraphicsResetStatus = tryCall(() =>
         Pointer<NativeFunction<GlGetGraphicsResetStatusNative>>.fromAddress(
                 _glGetProcAddress('glGetGraphicsResetStatus'))
-            .asFunction<GlGetGraphicsResetStatus>());
+            .asFunction<GlGetGraphicsResetStatus>()) as int Function()?;
   }
   glGetnCompressedTexImage = tryCall(() => lib.lookupFunction<
       GlGetnCompressedTexImageNative,
-      GlGetnCompressedTexImage>('glGetnCompressedTexImage'));
+      GlGetnCompressedTexImage>('glGetnCompressedTexImage')) as void Function(int, int, int, Pointer<NativeType>)?;
   if (glGetnCompressedTexImage == null) {
     glGetnCompressedTexImage = tryCall(() =>
         Pointer<NativeFunction<GlGetnCompressedTexImageNative>>.fromAddress(
                 _glGetProcAddress('glGetnCompressedTexImage'))
-            .asFunction<GlGetnCompressedTexImage>());
+            .asFunction<GlGetnCompressedTexImage>()) as void Function(int, int, int, Pointer<NativeType>)?;
   }
   glGetnTexImage = tryCall(() => lib
-      .lookupFunction<GlGetnTexImageNative, GlGetnTexImage>('glGetnTexImage'));
+      .lookupFunction<GlGetnTexImageNative, GlGetnTexImage>('glGetnTexImage')) as void Function(int, int, int, int, int, Pointer<NativeType>)?;
   if (glGetnTexImage == null) {
     glGetnTexImage = tryCall(() =>
         Pointer<NativeFunction<GlGetnTexImageNative>>.fromAddress(
                 _glGetProcAddress('glGetnTexImage'))
-            .asFunction<GlGetnTexImage>());
+            .asFunction<GlGetnTexImage>()) as void Function(int, int, int, int, int, Pointer<NativeType>)?;
   }
   glGetnUniformdv = tryCall(() =>
       lib.lookupFunction<GlGetnUniformdvNative, GlGetnUniformdv>(
-          'glGetnUniformdv'));
+          'glGetnUniformdv')) as void Function(int, int, int, Pointer<Double>)?;
   if (glGetnUniformdv == null) {
     glGetnUniformdv = tryCall(() =>
         Pointer<NativeFunction<GlGetnUniformdvNative>>.fromAddress(
                 _glGetProcAddress('glGetnUniformdv'))
-            .asFunction<GlGetnUniformdv>());
+            .asFunction<GlGetnUniformdv>()) as void Function(int, int, int, Pointer<Double>)?;
   }
   glGetnUniformfv = tryCall(() =>
       lib.lookupFunction<GlGetnUniformfvNative, GlGetnUniformfv>(
-          'glGetnUniformfv'));
+          'glGetnUniformfv')) as void Function(int, int, int, Pointer<Float>)?;
   if (glGetnUniformfv == null) {
     glGetnUniformfv = tryCall(() =>
         Pointer<NativeFunction<GlGetnUniformfvNative>>.fromAddress(
                 _glGetProcAddress('glGetnUniformfv'))
-            .asFunction<GlGetnUniformfv>());
+            .asFunction<GlGetnUniformfv>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glGetnUniformiv = tryCall(() =>
       lib.lookupFunction<GlGetnUniformivNative, GlGetnUniformiv>(
-          'glGetnUniformiv'));
+          'glGetnUniformiv')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glGetnUniformiv == null) {
     glGetnUniformiv = tryCall(() =>
         Pointer<NativeFunction<GlGetnUniformivNative>>.fromAddress(
                 _glGetProcAddress('glGetnUniformiv'))
-            .asFunction<GlGetnUniformiv>());
+            .asFunction<GlGetnUniformiv>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glGetnUniformuiv = tryCall(() =>
       lib.lookupFunction<GlGetnUniformuivNative, GlGetnUniformuiv>(
-          'glGetnUniformuiv'));
+          'glGetnUniformuiv')) as void Function(int, int, int, Pointer<Uint32>)?;
   if (glGetnUniformuiv == null) {
     glGetnUniformuiv = tryCall(() =>
         Pointer<NativeFunction<GlGetnUniformuivNative>>.fromAddress(
                 _glGetProcAddress('glGetnUniformuiv'))
-            .asFunction<GlGetnUniformuiv>());
+            .asFunction<GlGetnUniformuiv>()) as void Function(int, int, int, Pointer<Uint32>)?;
   }
   glReadnPixels = tryCall(() =>
-      lib.lookupFunction<GlReadnPixelsNative, GlReadnPixels>('glReadnPixels'));
+      lib.lookupFunction<GlReadnPixelsNative, GlReadnPixels>('glReadnPixels')) as void Function(int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glReadnPixels == null) {
     glReadnPixels = tryCall(() =>
         Pointer<NativeFunction<GlReadnPixelsNative>>.fromAddress(
                 _glGetProcAddress('glReadnPixels'))
-            .asFunction<GlReadnPixels>());
+            .asFunction<GlReadnPixels>()) as void Function(int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glTextureBarrier = tryCall(() =>
       lib.lookupFunction<GlTextureBarrierNative, GlTextureBarrier>(
-          'glTextureBarrier'));
+          'glTextureBarrier')) as void Function()?;
   if (glTextureBarrier == null) {
     glTextureBarrier = tryCall(() =>
         Pointer<NativeFunction<GlTextureBarrierNative>>.fromAddress(
                 _glGetProcAddress('glTextureBarrier'))
-            .asFunction<GlTextureBarrier>());
+            .asFunction<GlTextureBarrier>()) as void Function()?;
   }
   glSpecializeShader = tryCall(() =>
       lib.lookupFunction<GlSpecializeShaderNative, GlSpecializeShader>(
-          'glSpecializeShader'));
+          'glSpecializeShader')) as void Function(int, Pointer<NativeType>, int, Pointer<Uint32>, Pointer<Uint32>)?;
   if (glSpecializeShader == null) {
     glSpecializeShader = tryCall(() =>
         Pointer<NativeFunction<GlSpecializeShaderNative>>.fromAddress(
                 _glGetProcAddress('glSpecializeShader'))
-            .asFunction<GlSpecializeShader>());
+            .asFunction<GlSpecializeShader>()) as void Function(int, Pointer<NativeType>, int, Pointer<Uint32>, Pointer<Uint32>)?;
   }
   glMultiDrawArraysIndirectCount = tryCall(() => lib.lookupFunction<
       GlMultiDrawArraysIndirectCountNative,
-      GlMultiDrawArraysIndirectCount>('glMultiDrawArraysIndirectCount'));
+      GlMultiDrawArraysIndirectCount>('glMultiDrawArraysIndirectCount')) as void Function(int, Pointer<NativeType>, int, int, int)?;
   if (glMultiDrawArraysIndirectCount == null) {
     glMultiDrawArraysIndirectCount = tryCall(() => Pointer<
                 NativeFunction<
                     GlMultiDrawArraysIndirectCountNative>>.fromAddress(
             _glGetProcAddress('glMultiDrawArraysIndirectCount'))
-        .asFunction<GlMultiDrawArraysIndirectCount>());
+        .asFunction<GlMultiDrawArraysIndirectCount>()) as void Function(int, Pointer<NativeType>, int, int, int)?;
   }
   glMultiDrawElementsIndirectCount = tryCall(() => lib.lookupFunction<
       GlMultiDrawElementsIndirectCountNative,
-      GlMultiDrawElementsIndirectCount>('glMultiDrawElementsIndirectCount'));
+      GlMultiDrawElementsIndirectCount>('glMultiDrawElementsIndirectCount')) as void Function(int, int, Pointer<NativeType>, int, int, int)?;
   if (glMultiDrawElementsIndirectCount == null) {
     glMultiDrawElementsIndirectCount = tryCall(() => Pointer<
                 NativeFunction<
                     GlMultiDrawElementsIndirectCountNative>>.fromAddress(
             _glGetProcAddress('glMultiDrawElementsIndirectCount'))
-        .asFunction<GlMultiDrawElementsIndirectCount>());
+        .asFunction<GlMultiDrawElementsIndirectCount>()) as void Function(int, int, Pointer<NativeType>, int, int, int)?;
   }
   glPolygonOffsetClamp = tryCall(() =>
       lib.lookupFunction<GlPolygonOffsetClampNative, GlPolygonOffsetClamp>(
-          'glPolygonOffsetClamp'));
+          'glPolygonOffsetClamp')) as void Function(double, double, double)?;
   if (glPolygonOffsetClamp == null) {
     glPolygonOffsetClamp = tryCall(() =>
         Pointer<NativeFunction<GlPolygonOffsetClampNative>>.fromAddress(
                 _glGetProcAddress('glPolygonOffsetClamp'))
-            .asFunction<GlPolygonOffsetClamp>());
+            .asFunction<GlPolygonOffsetClamp>()) as void Function(double, double, double)?;
   }
   glPrimitiveBoundingBoxARB = tryCall(() => lib.lookupFunction<
       GlPrimitiveBoundingBoxARBNative,
-      GlPrimitiveBoundingBoxARB>('glPrimitiveBoundingBoxARB'));
+      GlPrimitiveBoundingBoxARB>('glPrimitiveBoundingBoxARB')) as void Function(double, double, double, double, double, double, double, double)?;
   if (glPrimitiveBoundingBoxARB == null) {
     glPrimitiveBoundingBoxARB = tryCall(() =>
         Pointer<NativeFunction<GlPrimitiveBoundingBoxARBNative>>.fromAddress(
                 _glGetProcAddress('glPrimitiveBoundingBoxARB'))
-            .asFunction<GlPrimitiveBoundingBoxARB>());
+            .asFunction<GlPrimitiveBoundingBoxARB>()) as void Function(double, double, double, double, double, double, double, double)?;
   }
   glGetTextureHandleARB = tryCall(() =>
       lib.lookupFunction<GlGetTextureHandleARBNative, GlGetTextureHandleARB>(
-          'glGetTextureHandleARB'));
+          'glGetTextureHandleARB')) as int Function(int)?;
   if (glGetTextureHandleARB == null) {
     glGetTextureHandleARB = tryCall(() =>
         Pointer<NativeFunction<GlGetTextureHandleARBNative>>.fromAddress(
                 _glGetProcAddress('glGetTextureHandleARB'))
-            .asFunction<GlGetTextureHandleARB>());
+            .asFunction<GlGetTextureHandleARB>()) as int Function(int)?;
   }
   glGetTextureSamplerHandleARB = tryCall(() => lib.lookupFunction<
       GlGetTextureSamplerHandleARBNative,
-      GlGetTextureSamplerHandleARB>('glGetTextureSamplerHandleARB'));
+      GlGetTextureSamplerHandleARB>('glGetTextureSamplerHandleARB')) as int Function(int, int)?;
   if (glGetTextureSamplerHandleARB == null) {
     glGetTextureSamplerHandleARB = tryCall(() =>
         Pointer<NativeFunction<GlGetTextureSamplerHandleARBNative>>.fromAddress(
                 _glGetProcAddress('glGetTextureSamplerHandleARB'))
-            .asFunction<GlGetTextureSamplerHandleARB>());
+            .asFunction<GlGetTextureSamplerHandleARB>()) as int Function(int, int)?;
   }
   glMakeTextureHandleResidentARB = tryCall(() => lib.lookupFunction<
       GlMakeTextureHandleResidentARBNative,
-      GlMakeTextureHandleResidentARB>('glMakeTextureHandleResidentARB'));
+      GlMakeTextureHandleResidentARB>('glMakeTextureHandleResidentARB')) as void Function(int)?;
   if (glMakeTextureHandleResidentARB == null) {
     glMakeTextureHandleResidentARB = tryCall(() => Pointer<
                 NativeFunction<
                     GlMakeTextureHandleResidentARBNative>>.fromAddress(
             _glGetProcAddress('glMakeTextureHandleResidentARB'))
-        .asFunction<GlMakeTextureHandleResidentARB>());
+        .asFunction<GlMakeTextureHandleResidentARB>()) as void Function(int)?;
   }
   glMakeTextureHandleNonResidentARB = tryCall(() => lib.lookupFunction<
       GlMakeTextureHandleNonResidentARBNative,
-      GlMakeTextureHandleNonResidentARB>('glMakeTextureHandleNonResidentARB'));
+      GlMakeTextureHandleNonResidentARB>('glMakeTextureHandleNonResidentARB')) as void Function(int)?;
   if (glMakeTextureHandleNonResidentARB == null) {
     glMakeTextureHandleNonResidentARB = tryCall(() => Pointer<
                 NativeFunction<
                     GlMakeTextureHandleNonResidentARBNative>>.fromAddress(
             _glGetProcAddress('glMakeTextureHandleNonResidentARB'))
-        .asFunction<GlMakeTextureHandleNonResidentARB>());
+        .asFunction<GlMakeTextureHandleNonResidentARB>()) as void Function(int)?;
   }
   glGetImageHandleARB = tryCall(() =>
       lib.lookupFunction<GlGetImageHandleARBNative, GlGetImageHandleARB>(
-          'glGetImageHandleARB'));
+          'glGetImageHandleARB')) as int Function(int, int, int, int, int)?;
   if (glGetImageHandleARB == null) {
     glGetImageHandleARB = tryCall(() =>
         Pointer<NativeFunction<GlGetImageHandleARBNative>>.fromAddress(
                 _glGetProcAddress('glGetImageHandleARB'))
-            .asFunction<GlGetImageHandleARB>());
+            .asFunction<GlGetImageHandleARB>()) as int Function(int, int, int, int, int)?;
   }
   glMakeImageHandleResidentARB = tryCall(() => lib.lookupFunction<
       GlMakeImageHandleResidentARBNative,
-      GlMakeImageHandleResidentARB>('glMakeImageHandleResidentARB'));
+      GlMakeImageHandleResidentARB>('glMakeImageHandleResidentARB')) as void Function(int, int)?;
   if (glMakeImageHandleResidentARB == null) {
     glMakeImageHandleResidentARB = tryCall(() =>
         Pointer<NativeFunction<GlMakeImageHandleResidentARBNative>>.fromAddress(
                 _glGetProcAddress('glMakeImageHandleResidentARB'))
-            .asFunction<GlMakeImageHandleResidentARB>());
+            .asFunction<GlMakeImageHandleResidentARB>()) as void Function(int, int)?;
   }
   glMakeImageHandleNonResidentARB = tryCall(() => lib.lookupFunction<
       GlMakeImageHandleNonResidentARBNative,
-      GlMakeImageHandleNonResidentARB>('glMakeImageHandleNonResidentARB'));
+      GlMakeImageHandleNonResidentARB>('glMakeImageHandleNonResidentARB')) as void Function(int)?;
   if (glMakeImageHandleNonResidentARB == null) {
     glMakeImageHandleNonResidentARB = tryCall(() => Pointer<
                 NativeFunction<
                     GlMakeImageHandleNonResidentARBNative>>.fromAddress(
             _glGetProcAddress('glMakeImageHandleNonResidentARB'))
-        .asFunction<GlMakeImageHandleNonResidentARB>());
+        .asFunction<GlMakeImageHandleNonResidentARB>()) as void Function(int)?;
   }
   glUniformHandleui64ARB = tryCall(() =>
       lib.lookupFunction<GlUniformHandleui64ARBNative, GlUniformHandleui64ARB>(
-          'glUniformHandleui64ARB'));
+          'glUniformHandleui64ARB')) as void Function(int, int)?;
   if (glUniformHandleui64ARB == null) {
     glUniformHandleui64ARB = tryCall(() =>
         Pointer<NativeFunction<GlUniformHandleui64ARBNative>>.fromAddress(
                 _glGetProcAddress('glUniformHandleui64ARB'))
-            .asFunction<GlUniformHandleui64ARB>());
+            .asFunction<GlUniformHandleui64ARB>()) as void Function(int, int)?;
   }
   glUniformHandleui64vARB = tryCall(() => lib.lookupFunction<
       GlUniformHandleui64vARBNative,
-      GlUniformHandleui64vARB>('glUniformHandleui64vARB'));
+      GlUniformHandleui64vARB>('glUniformHandleui64vARB')) as void Function(int, int, Pointer<Uint64>)?;
   if (glUniformHandleui64vARB == null) {
     glUniformHandleui64vARB = tryCall(() =>
         Pointer<NativeFunction<GlUniformHandleui64vARBNative>>.fromAddress(
                 _glGetProcAddress('glUniformHandleui64vARB'))
-            .asFunction<GlUniformHandleui64vARB>());
+            .asFunction<GlUniformHandleui64vARB>()) as void Function(int, int, Pointer<Uint64>)?;
   }
   glProgramUniformHandleui64ARB = tryCall(() => lib.lookupFunction<
       GlProgramUniformHandleui64ARBNative,
-      GlProgramUniformHandleui64ARB>('glProgramUniformHandleui64ARB'));
+      GlProgramUniformHandleui64ARB>('glProgramUniformHandleui64ARB')) as void Function(int, int, int)?;
   if (glProgramUniformHandleui64ARB == null) {
     glProgramUniformHandleui64ARB = tryCall(() => Pointer<
                 NativeFunction<
                     GlProgramUniformHandleui64ARBNative>>.fromAddress(
             _glGetProcAddress('glProgramUniformHandleui64ARB'))
-        .asFunction<GlProgramUniformHandleui64ARB>());
+        .asFunction<GlProgramUniformHandleui64ARB>()) as void Function(int, int, int)?;
   }
   glProgramUniformHandleui64vARB = tryCall(() => lib.lookupFunction<
       GlProgramUniformHandleui64vARBNative,
-      GlProgramUniformHandleui64vARB>('glProgramUniformHandleui64vARB'));
+      GlProgramUniformHandleui64vARB>('glProgramUniformHandleui64vARB')) as void Function(int, int, int, Pointer<Uint64>)?;
   if (glProgramUniformHandleui64vARB == null) {
     glProgramUniformHandleui64vARB = tryCall(() => Pointer<
                 NativeFunction<
                     GlProgramUniformHandleui64vARBNative>>.fromAddress(
             _glGetProcAddress('glProgramUniformHandleui64vARB'))
-        .asFunction<GlProgramUniformHandleui64vARB>());
+        .asFunction<GlProgramUniformHandleui64vARB>()) as void Function(int, int, int, Pointer<Uint64>)?;
   }
   glIsTextureHandleResidentARB = tryCall(() => lib.lookupFunction<
       GlIsTextureHandleResidentARBNative,
-      GlIsTextureHandleResidentARB>('glIsTextureHandleResidentARB'));
+      GlIsTextureHandleResidentARB>('glIsTextureHandleResidentARB')) as int Function(int)?;
   if (glIsTextureHandleResidentARB == null) {
     glIsTextureHandleResidentARB = tryCall(() =>
         Pointer<NativeFunction<GlIsTextureHandleResidentARBNative>>.fromAddress(
                 _glGetProcAddress('glIsTextureHandleResidentARB'))
-            .asFunction<GlIsTextureHandleResidentARB>());
+            .asFunction<GlIsTextureHandleResidentARB>()) as int Function(int)?;
   }
   glIsImageHandleResidentARB = tryCall(() => lib.lookupFunction<
       GlIsImageHandleResidentARBNative,
-      GlIsImageHandleResidentARB>('glIsImageHandleResidentARB'));
+      GlIsImageHandleResidentARB>('glIsImageHandleResidentARB')) as int Function(int)?;
   if (glIsImageHandleResidentARB == null) {
     glIsImageHandleResidentARB = tryCall(() =>
         Pointer<NativeFunction<GlIsImageHandleResidentARBNative>>.fromAddress(
                 _glGetProcAddress('glIsImageHandleResidentARB'))
-            .asFunction<GlIsImageHandleResidentARB>());
+            .asFunction<GlIsImageHandleResidentARB>()) as int Function(int)?;
   }
   glVertexAttribL1ui64ARB = tryCall(() => lib.lookupFunction<
       GlVertexAttribL1ui64ARBNative,
-      GlVertexAttribL1ui64ARB>('glVertexAttribL1ui64ARB'));
+      GlVertexAttribL1ui64ARB>('glVertexAttribL1ui64ARB')) as void Function(int, int)?;
   if (glVertexAttribL1ui64ARB == null) {
     glVertexAttribL1ui64ARB = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL1ui64ARBNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL1ui64ARB'))
-            .asFunction<GlVertexAttribL1ui64ARB>());
+            .asFunction<GlVertexAttribL1ui64ARB>()) as void Function(int, int)?;
   }
   glVertexAttribL1ui64vARB = tryCall(() => lib.lookupFunction<
       GlVertexAttribL1ui64vARBNative,
-      GlVertexAttribL1ui64vARB>('glVertexAttribL1ui64vARB'));
+      GlVertexAttribL1ui64vARB>('glVertexAttribL1ui64vARB')) as void Function(int, Pointer<Uint64>)?;
   if (glVertexAttribL1ui64vARB == null) {
     glVertexAttribL1ui64vARB = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL1ui64vARBNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL1ui64vARB'))
-            .asFunction<GlVertexAttribL1ui64vARB>());
+            .asFunction<GlVertexAttribL1ui64vARB>()) as void Function(int, Pointer<Uint64>)?;
   }
   glGetVertexAttribLui64vARB = tryCall(() => lib.lookupFunction<
       GlGetVertexAttribLui64vARBNative,
-      GlGetVertexAttribLui64vARB>('glGetVertexAttribLui64vARB'));
+      GlGetVertexAttribLui64vARB>('glGetVertexAttribLui64vARB')) as void Function(int, int, Pointer<Uint64>)?;
   if (glGetVertexAttribLui64vARB == null) {
     glGetVertexAttribLui64vARB = tryCall(() =>
         Pointer<NativeFunction<GlGetVertexAttribLui64vARBNative>>.fromAddress(
                 _glGetProcAddress('glGetVertexAttribLui64vARB'))
-            .asFunction<GlGetVertexAttribLui64vARB>());
+            .asFunction<GlGetVertexAttribLui64vARB>()) as void Function(int, int, Pointer<Uint64>)?;
   }
   glCreateSyncFromCLeventARB = tryCall(() => lib.lookupFunction<
       GlCreateSyncFromCLeventARBNative,
-      GlCreateSyncFromCLeventARB>('glCreateSyncFromCLeventARB'));
+      GlCreateSyncFromCLeventARB>('glCreateSyncFromCLeventARB')) as Pointer<NativeType> Function(Pointer<NativeType>, Pointer<NativeType>, int)?;
   if (glCreateSyncFromCLeventARB == null) {
     glCreateSyncFromCLeventARB = tryCall(() =>
         Pointer<NativeFunction<GlCreateSyncFromCLeventARBNative>>.fromAddress(
                 _glGetProcAddress('glCreateSyncFromCLeventARB'))
-            .asFunction<GlCreateSyncFromCLeventARB>());
+            .asFunction<GlCreateSyncFromCLeventARB>()) as Pointer<NativeType> Function(Pointer<NativeType>, Pointer<NativeType>, int)?;
   }
   glDispatchComputeGroupSizeARB = tryCall(() => lib.lookupFunction<
       GlDispatchComputeGroupSizeARBNative,
-      GlDispatchComputeGroupSizeARB>('glDispatchComputeGroupSizeARB'));
+      GlDispatchComputeGroupSizeARB>('glDispatchComputeGroupSizeARB')) as void Function(int, int, int, int, int, int)?;
   if (glDispatchComputeGroupSizeARB == null) {
     glDispatchComputeGroupSizeARB = tryCall(() => Pointer<
                 NativeFunction<
                     GlDispatchComputeGroupSizeARBNative>>.fromAddress(
             _glGetProcAddress('glDispatchComputeGroupSizeARB'))
-        .asFunction<GlDispatchComputeGroupSizeARB>());
+        .asFunction<GlDispatchComputeGroupSizeARB>()) as void Function(int, int, int, int, int, int)?;
   }
   glDebugMessageControlARB = tryCall(() => lib.lookupFunction<
       GlDebugMessageControlARBNative,
-      GlDebugMessageControlARB>('glDebugMessageControlARB'));
+      GlDebugMessageControlARB>('glDebugMessageControlARB')) as void Function(int, int, int, int, Pointer<Uint32>, int)?;
   if (glDebugMessageControlARB == null) {
     glDebugMessageControlARB = tryCall(() =>
         Pointer<NativeFunction<GlDebugMessageControlARBNative>>.fromAddress(
                 _glGetProcAddress('glDebugMessageControlARB'))
-            .asFunction<GlDebugMessageControlARB>());
+            .asFunction<GlDebugMessageControlARB>()) as void Function(int, int, int, int, Pointer<Uint32>, int)?;
   }
   glDebugMessageInsertARB = tryCall(() => lib.lookupFunction<
       GlDebugMessageInsertARBNative,
-      GlDebugMessageInsertARB>('glDebugMessageInsertARB'));
+      GlDebugMessageInsertARB>('glDebugMessageInsertARB')) as void Function(int, int, int, int, int, Pointer<NativeType>)?;
   if (glDebugMessageInsertARB == null) {
     glDebugMessageInsertARB = tryCall(() =>
         Pointer<NativeFunction<GlDebugMessageInsertARBNative>>.fromAddress(
                 _glGetProcAddress('glDebugMessageInsertARB'))
-            .asFunction<GlDebugMessageInsertARB>());
+            .asFunction<GlDebugMessageInsertARB>()) as void Function(int, int, int, int, int, Pointer<NativeType>)?;
   }
   glDebugMessageCallbackARB = tryCall(() => lib.lookupFunction<
       GlDebugMessageCallbackARBNative,
-      GlDebugMessageCallbackARB>('glDebugMessageCallbackARB'));
+      GlDebugMessageCallbackARB>('glDebugMessageCallbackARB')) as void Function(Pointer<NativeType>, Pointer<NativeType>)?;
   if (glDebugMessageCallbackARB == null) {
     glDebugMessageCallbackARB = tryCall(() =>
         Pointer<NativeFunction<GlDebugMessageCallbackARBNative>>.fromAddress(
                 _glGetProcAddress('glDebugMessageCallbackARB'))
-            .asFunction<GlDebugMessageCallbackARB>());
+            .asFunction<GlDebugMessageCallbackARB>()) as void Function(Pointer<NativeType>, Pointer<NativeType>)?;
   }
   glGetDebugMessageLogARB = tryCall(() => lib.lookupFunction<
       GlGetDebugMessageLogARBNative,
-      GlGetDebugMessageLogARB>('glGetDebugMessageLogARB'));
+      GlGetDebugMessageLogARB>('glGetDebugMessageLogARB')) as int Function(int, int, Pointer<Uint32>, Pointer<Uint32>, Pointer<Uint32>, Pointer<Uint32>, Pointer<Int32>, Pointer<NativeType>)?;
   if (glGetDebugMessageLogARB == null) {
     glGetDebugMessageLogARB = tryCall(() =>
         Pointer<NativeFunction<GlGetDebugMessageLogARBNative>>.fromAddress(
                 _glGetProcAddress('glGetDebugMessageLogARB'))
-            .asFunction<GlGetDebugMessageLogARB>());
+            .asFunction<GlGetDebugMessageLogARB>()) as int Function(int, int, Pointer<Uint32>, Pointer<Uint32>, Pointer<Uint32>, Pointer<Uint32>, Pointer<Int32>, Pointer<NativeType>)?;
   }
   glBlendEquationiARB = tryCall(() =>
       lib.lookupFunction<GlBlendEquationiARBNative, GlBlendEquationiARB>(
-          'glBlendEquationiARB'));
+          'glBlendEquationiARB')) as void Function(int, int)?;
   if (glBlendEquationiARB == null) {
     glBlendEquationiARB = tryCall(() =>
         Pointer<NativeFunction<GlBlendEquationiARBNative>>.fromAddress(
                 _glGetProcAddress('glBlendEquationiARB'))
-            .asFunction<GlBlendEquationiARB>());
+            .asFunction<GlBlendEquationiARB>()) as void Function(int, int)?;
   }
   glBlendEquationSeparateiARB = tryCall(() => lib.lookupFunction<
       GlBlendEquationSeparateiARBNative,
-      GlBlendEquationSeparateiARB>('glBlendEquationSeparateiARB'));
+      GlBlendEquationSeparateiARB>('glBlendEquationSeparateiARB')) as void Function(int, int, int)?;
   if (glBlendEquationSeparateiARB == null) {
     glBlendEquationSeparateiARB = tryCall(() =>
         Pointer<NativeFunction<GlBlendEquationSeparateiARBNative>>.fromAddress(
                 _glGetProcAddress('glBlendEquationSeparateiARB'))
-            .asFunction<GlBlendEquationSeparateiARB>());
+            .asFunction<GlBlendEquationSeparateiARB>()) as void Function(int, int, int)?;
   }
   glBlendFunciARB = tryCall(() =>
       lib.lookupFunction<GlBlendFunciARBNative, GlBlendFunciARB>(
-          'glBlendFunciARB'));
+          'glBlendFunciARB')) as void Function(int, int, int)?;
   if (glBlendFunciARB == null) {
     glBlendFunciARB = tryCall(() =>
         Pointer<NativeFunction<GlBlendFunciARBNative>>.fromAddress(
                 _glGetProcAddress('glBlendFunciARB'))
-            .asFunction<GlBlendFunciARB>());
+            .asFunction<GlBlendFunciARB>()) as void Function(int, int, int)?;
   }
   glBlendFuncSeparateiARB = tryCall(() => lib.lookupFunction<
       GlBlendFuncSeparateiARBNative,
-      GlBlendFuncSeparateiARB>('glBlendFuncSeparateiARB'));
+      GlBlendFuncSeparateiARB>('glBlendFuncSeparateiARB')) as void Function(int, int, int, int, int)?;
   if (glBlendFuncSeparateiARB == null) {
     glBlendFuncSeparateiARB = tryCall(() =>
         Pointer<NativeFunction<GlBlendFuncSeparateiARBNative>>.fromAddress(
                 _glGetProcAddress('glBlendFuncSeparateiARB'))
-            .asFunction<GlBlendFuncSeparateiARB>());
+            .asFunction<GlBlendFuncSeparateiARB>()) as void Function(int, int, int, int, int)?;
   }
   glDrawArraysInstancedARB = tryCall(() => lib.lookupFunction<
       GlDrawArraysInstancedARBNative,
-      GlDrawArraysInstancedARB>('glDrawArraysInstancedARB'));
+      GlDrawArraysInstancedARB>('glDrawArraysInstancedARB')) as void Function(int, int, int, int)?;
   if (glDrawArraysInstancedARB == null) {
     glDrawArraysInstancedARB = tryCall(() =>
         Pointer<NativeFunction<GlDrawArraysInstancedARBNative>>.fromAddress(
                 _glGetProcAddress('glDrawArraysInstancedARB'))
-            .asFunction<GlDrawArraysInstancedARB>());
+            .asFunction<GlDrawArraysInstancedARB>()) as void Function(int, int, int, int)?;
   }
   glDrawElementsInstancedARB = tryCall(() => lib.lookupFunction<
       GlDrawElementsInstancedARBNative,
-      GlDrawElementsInstancedARB>('glDrawElementsInstancedARB'));
+      GlDrawElementsInstancedARB>('glDrawElementsInstancedARB')) as void Function(int, int, int, Pointer<NativeType>, int)?;
   if (glDrawElementsInstancedARB == null) {
     glDrawElementsInstancedARB = tryCall(() =>
         Pointer<NativeFunction<GlDrawElementsInstancedARBNative>>.fromAddress(
                 _glGetProcAddress('glDrawElementsInstancedARB'))
-            .asFunction<GlDrawElementsInstancedARB>());
+            .asFunction<GlDrawElementsInstancedARB>()) as void Function(int, int, int, Pointer<NativeType>, int)?;
   }
   glProgramParameteriARB = tryCall(() =>
       lib.lookupFunction<GlProgramParameteriARBNative, GlProgramParameteriARB>(
-          'glProgramParameteriARB'));
+          'glProgramParameteriARB')) as void Function(int, int, int)?;
   if (glProgramParameteriARB == null) {
     glProgramParameteriARB = tryCall(() =>
         Pointer<NativeFunction<GlProgramParameteriARBNative>>.fromAddress(
                 _glGetProcAddress('glProgramParameteriARB'))
-            .asFunction<GlProgramParameteriARB>());
+            .asFunction<GlProgramParameteriARB>()) as void Function(int, int, int)?;
   }
   glFramebufferTextureARB = tryCall(() => lib.lookupFunction<
       GlFramebufferTextureARBNative,
-      GlFramebufferTextureARB>('glFramebufferTextureARB'));
+      GlFramebufferTextureARB>('glFramebufferTextureARB')) as void Function(int, int, int, int)?;
   if (glFramebufferTextureARB == null) {
     glFramebufferTextureARB = tryCall(() =>
         Pointer<NativeFunction<GlFramebufferTextureARBNative>>.fromAddress(
                 _glGetProcAddress('glFramebufferTextureARB'))
-            .asFunction<GlFramebufferTextureARB>());
+            .asFunction<GlFramebufferTextureARB>()) as void Function(int, int, int, int)?;
   }
   glFramebufferTextureLayerARB = tryCall(() => lib.lookupFunction<
       GlFramebufferTextureLayerARBNative,
-      GlFramebufferTextureLayerARB>('glFramebufferTextureLayerARB'));
+      GlFramebufferTextureLayerARB>('glFramebufferTextureLayerARB')) as void Function(int, int, int, int, int)?;
   if (glFramebufferTextureLayerARB == null) {
     glFramebufferTextureLayerARB = tryCall(() =>
         Pointer<NativeFunction<GlFramebufferTextureLayerARBNative>>.fromAddress(
                 _glGetProcAddress('glFramebufferTextureLayerARB'))
-            .asFunction<GlFramebufferTextureLayerARB>());
+            .asFunction<GlFramebufferTextureLayerARB>()) as void Function(int, int, int, int, int)?;
   }
   glFramebufferTextureFaceARB = tryCall(() => lib.lookupFunction<
       GlFramebufferTextureFaceARBNative,
-      GlFramebufferTextureFaceARB>('glFramebufferTextureFaceARB'));
+      GlFramebufferTextureFaceARB>('glFramebufferTextureFaceARB')) as void Function(int, int, int, int, int)?;
   if (glFramebufferTextureFaceARB == null) {
     glFramebufferTextureFaceARB = tryCall(() =>
         Pointer<NativeFunction<GlFramebufferTextureFaceARBNative>>.fromAddress(
                 _glGetProcAddress('glFramebufferTextureFaceARB'))
-            .asFunction<GlFramebufferTextureFaceARB>());
+            .asFunction<GlFramebufferTextureFaceARB>()) as void Function(int, int, int, int, int)?;
   }
   glSpecializeShaderARB = tryCall(() =>
       lib.lookupFunction<GlSpecializeShaderARBNative, GlSpecializeShaderARB>(
-          'glSpecializeShaderARB'));
+          'glSpecializeShaderARB')) as void Function(int, Pointer<NativeType>, int, Pointer<Uint32>, Pointer<Uint32>)?;
   if (glSpecializeShaderARB == null) {
     glSpecializeShaderARB = tryCall(() =>
         Pointer<NativeFunction<GlSpecializeShaderARBNative>>.fromAddress(
                 _glGetProcAddress('glSpecializeShaderARB'))
-            .asFunction<GlSpecializeShaderARB>());
+            .asFunction<GlSpecializeShaderARB>()) as void Function(int, Pointer<NativeType>, int, Pointer<Uint32>, Pointer<Uint32>)?;
   }
   glUniform1i64ARB = tryCall(() =>
       lib.lookupFunction<GlUniform1i64ARBNative, GlUniform1i64ARB>(
-          'glUniform1i64ARB'));
+          'glUniform1i64ARB')) as void Function(int, int)?;
   if (glUniform1i64ARB == null) {
     glUniform1i64ARB = tryCall(() =>
         Pointer<NativeFunction<GlUniform1i64ARBNative>>.fromAddress(
                 _glGetProcAddress('glUniform1i64ARB'))
-            .asFunction<GlUniform1i64ARB>());
+            .asFunction<GlUniform1i64ARB>()) as void Function(int, int)?;
   }
   glUniform2i64ARB = tryCall(() =>
       lib.lookupFunction<GlUniform2i64ARBNative, GlUniform2i64ARB>(
-          'glUniform2i64ARB'));
+          'glUniform2i64ARB')) as void Function(int, int, int)?;
   if (glUniform2i64ARB == null) {
     glUniform2i64ARB = tryCall(() =>
         Pointer<NativeFunction<GlUniform2i64ARBNative>>.fromAddress(
                 _glGetProcAddress('glUniform2i64ARB'))
-            .asFunction<GlUniform2i64ARB>());
+            .asFunction<GlUniform2i64ARB>()) as void Function(int, int, int)?;
   }
   glUniform3i64ARB = tryCall(() =>
       lib.lookupFunction<GlUniform3i64ARBNative, GlUniform3i64ARB>(
-          'glUniform3i64ARB'));
+          'glUniform3i64ARB')) as void Function(int, int, int, int)?;
   if (glUniform3i64ARB == null) {
     glUniform3i64ARB = tryCall(() =>
         Pointer<NativeFunction<GlUniform3i64ARBNative>>.fromAddress(
                 _glGetProcAddress('glUniform3i64ARB'))
-            .asFunction<GlUniform3i64ARB>());
+            .asFunction<GlUniform3i64ARB>()) as void Function(int, int, int, int)?;
   }
   glUniform4i64ARB = tryCall(() =>
       lib.lookupFunction<GlUniform4i64ARBNative, GlUniform4i64ARB>(
-          'glUniform4i64ARB'));
+          'glUniform4i64ARB')) as void Function(int, int, int, int, int)?;
   if (glUniform4i64ARB == null) {
     glUniform4i64ARB = tryCall(() =>
         Pointer<NativeFunction<GlUniform4i64ARBNative>>.fromAddress(
                 _glGetProcAddress('glUniform4i64ARB'))
-            .asFunction<GlUniform4i64ARB>());
+            .asFunction<GlUniform4i64ARB>()) as void Function(int, int, int, int, int)?;
   }
   glUniform1i64vARB = tryCall(() =>
       lib.lookupFunction<GlUniform1i64vARBNative, GlUniform1i64vARB>(
-          'glUniform1i64vARB'));
+          'glUniform1i64vARB')) as void Function(int, int, Pointer<Int64>)?;
   if (glUniform1i64vARB == null) {
     glUniform1i64vARB = tryCall(() =>
         Pointer<NativeFunction<GlUniform1i64vARBNative>>.fromAddress(
                 _glGetProcAddress('glUniform1i64vARB'))
-            .asFunction<GlUniform1i64vARB>());
+            .asFunction<GlUniform1i64vARB>()) as void Function(int, int, Pointer<Int64>)?;
   }
   glUniform2i64vARB = tryCall(() =>
       lib.lookupFunction<GlUniform2i64vARBNative, GlUniform2i64vARB>(
-          'glUniform2i64vARB'));
+          'glUniform2i64vARB')) as void Function(int, int, Pointer<Int64>)?;
   if (glUniform2i64vARB == null) {
     glUniform2i64vARB = tryCall(() =>
         Pointer<NativeFunction<GlUniform2i64vARBNative>>.fromAddress(
                 _glGetProcAddress('glUniform2i64vARB'))
-            .asFunction<GlUniform2i64vARB>());
+            .asFunction<GlUniform2i64vARB>()) as void Function(int, int, Pointer<Int64>)?;
   }
   glUniform3i64vARB = tryCall(() =>
       lib.lookupFunction<GlUniform3i64vARBNative, GlUniform3i64vARB>(
-          'glUniform3i64vARB'));
+          'glUniform3i64vARB')) as void Function(int, int, Pointer<Int64>)?;
   if (glUniform3i64vARB == null) {
     glUniform3i64vARB = tryCall(() =>
         Pointer<NativeFunction<GlUniform3i64vARBNative>>.fromAddress(
                 _glGetProcAddress('glUniform3i64vARB'))
-            .asFunction<GlUniform3i64vARB>());
+            .asFunction<GlUniform3i64vARB>()) as void Function(int, int, Pointer<Int64>)?;
   }
   glUniform4i64vARB = tryCall(() =>
       lib.lookupFunction<GlUniform4i64vARBNative, GlUniform4i64vARB>(
-          'glUniform4i64vARB'));
+          'glUniform4i64vARB')) as void Function(int, int, Pointer<Int64>)?;
   if (glUniform4i64vARB == null) {
     glUniform4i64vARB = tryCall(() =>
         Pointer<NativeFunction<GlUniform4i64vARBNative>>.fromAddress(
                 _glGetProcAddress('glUniform4i64vARB'))
-            .asFunction<GlUniform4i64vARB>());
+            .asFunction<GlUniform4i64vARB>()) as void Function(int, int, Pointer<Int64>)?;
   }
   glUniform1ui64ARB = tryCall(() =>
       lib.lookupFunction<GlUniform1ui64ARBNative, GlUniform1ui64ARB>(
-          'glUniform1ui64ARB'));
+          'glUniform1ui64ARB')) as void Function(int, int)?;
   if (glUniform1ui64ARB == null) {
     glUniform1ui64ARB = tryCall(() =>
         Pointer<NativeFunction<GlUniform1ui64ARBNative>>.fromAddress(
                 _glGetProcAddress('glUniform1ui64ARB'))
-            .asFunction<GlUniform1ui64ARB>());
+            .asFunction<GlUniform1ui64ARB>()) as void Function(int, int)?;
   }
   glUniform2ui64ARB = tryCall(() =>
       lib.lookupFunction<GlUniform2ui64ARBNative, GlUniform2ui64ARB>(
-          'glUniform2ui64ARB'));
+          'glUniform2ui64ARB')) as void Function(int, int, int)?;
   if (glUniform2ui64ARB == null) {
     glUniform2ui64ARB = tryCall(() =>
         Pointer<NativeFunction<GlUniform2ui64ARBNative>>.fromAddress(
                 _glGetProcAddress('glUniform2ui64ARB'))
-            .asFunction<GlUniform2ui64ARB>());
+            .asFunction<GlUniform2ui64ARB>()) as void Function(int, int, int)?;
   }
   glUniform3ui64ARB = tryCall(() =>
       lib.lookupFunction<GlUniform3ui64ARBNative, GlUniform3ui64ARB>(
-          'glUniform3ui64ARB'));
+          'glUniform3ui64ARB')) as void Function(int, int, int, int)?;
   if (glUniform3ui64ARB == null) {
     glUniform3ui64ARB = tryCall(() =>
         Pointer<NativeFunction<GlUniform3ui64ARBNative>>.fromAddress(
                 _glGetProcAddress('glUniform3ui64ARB'))
-            .asFunction<GlUniform3ui64ARB>());
+            .asFunction<GlUniform3ui64ARB>()) as void Function(int, int, int, int)?;
   }
   glUniform4ui64ARB = tryCall(() =>
       lib.lookupFunction<GlUniform4ui64ARBNative, GlUniform4ui64ARB>(
-          'glUniform4ui64ARB'));
+          'glUniform4ui64ARB')) as void Function(int, int, int, int, int)?;
   if (glUniform4ui64ARB == null) {
     glUniform4ui64ARB = tryCall(() =>
         Pointer<NativeFunction<GlUniform4ui64ARBNative>>.fromAddress(
                 _glGetProcAddress('glUniform4ui64ARB'))
-            .asFunction<GlUniform4ui64ARB>());
+            .asFunction<GlUniform4ui64ARB>()) as void Function(int, int, int, int, int)?;
   }
   glUniform1ui64vARB = tryCall(() =>
       lib.lookupFunction<GlUniform1ui64vARBNative, GlUniform1ui64vARB>(
-          'glUniform1ui64vARB'));
+          'glUniform1ui64vARB')) as void Function(int, int, Pointer<Uint64>)?;
   if (glUniform1ui64vARB == null) {
     glUniform1ui64vARB = tryCall(() =>
         Pointer<NativeFunction<GlUniform1ui64vARBNative>>.fromAddress(
                 _glGetProcAddress('glUniform1ui64vARB'))
-            .asFunction<GlUniform1ui64vARB>());
+            .asFunction<GlUniform1ui64vARB>()) as void Function(int, int, Pointer<Uint64>)?;
   }
   glUniform2ui64vARB = tryCall(() =>
       lib.lookupFunction<GlUniform2ui64vARBNative, GlUniform2ui64vARB>(
-          'glUniform2ui64vARB'));
+          'glUniform2ui64vARB')) as void Function(int, int, Pointer<Uint64>)?;
   if (glUniform2ui64vARB == null) {
     glUniform2ui64vARB = tryCall(() =>
         Pointer<NativeFunction<GlUniform2ui64vARBNative>>.fromAddress(
                 _glGetProcAddress('glUniform2ui64vARB'))
-            .asFunction<GlUniform2ui64vARB>());
+            .asFunction<GlUniform2ui64vARB>()) as void Function(int, int, Pointer<Uint64>)?;
   }
   glUniform3ui64vARB = tryCall(() =>
       lib.lookupFunction<GlUniform3ui64vARBNative, GlUniform3ui64vARB>(
-          'glUniform3ui64vARB'));
+          'glUniform3ui64vARB')) as void Function(int, int, Pointer<Uint64>)?;
   if (glUniform3ui64vARB == null) {
     glUniform3ui64vARB = tryCall(() =>
         Pointer<NativeFunction<GlUniform3ui64vARBNative>>.fromAddress(
                 _glGetProcAddress('glUniform3ui64vARB'))
-            .asFunction<GlUniform3ui64vARB>());
+            .asFunction<GlUniform3ui64vARB>()) as void Function(int, int, Pointer<Uint64>)?;
   }
   glUniform4ui64vARB = tryCall(() =>
       lib.lookupFunction<GlUniform4ui64vARBNative, GlUniform4ui64vARB>(
-          'glUniform4ui64vARB'));
+          'glUniform4ui64vARB')) as void Function(int, int, Pointer<Uint64>)?;
   if (glUniform4ui64vARB == null) {
     glUniform4ui64vARB = tryCall(() =>
         Pointer<NativeFunction<GlUniform4ui64vARBNative>>.fromAddress(
                 _glGetProcAddress('glUniform4ui64vARB'))
-            .asFunction<GlUniform4ui64vARB>());
+            .asFunction<GlUniform4ui64vARB>()) as void Function(int, int, Pointer<Uint64>)?;
   }
   glGetUniformi64vARB = tryCall(() =>
       lib.lookupFunction<GlGetUniformi64vARBNative, GlGetUniformi64vARB>(
-          'glGetUniformi64vARB'));
+          'glGetUniformi64vARB')) as void Function(int, int, Pointer<Int64>)?;
   if (glGetUniformi64vARB == null) {
     glGetUniformi64vARB = tryCall(() =>
         Pointer<NativeFunction<GlGetUniformi64vARBNative>>.fromAddress(
                 _glGetProcAddress('glGetUniformi64vARB'))
-            .asFunction<GlGetUniformi64vARB>());
+            .asFunction<GlGetUniformi64vARB>()) as void Function(int, int, Pointer<Int64>)?;
   }
   glGetUniformui64vARB = tryCall(() =>
       lib.lookupFunction<GlGetUniformui64vARBNative, GlGetUniformui64vARB>(
-          'glGetUniformui64vARB'));
+          'glGetUniformui64vARB')) as void Function(int, int, Pointer<Uint64>)?;
   if (glGetUniformui64vARB == null) {
     glGetUniformui64vARB = tryCall(() =>
         Pointer<NativeFunction<GlGetUniformui64vARBNative>>.fromAddress(
                 _glGetProcAddress('glGetUniformui64vARB'))
-            .asFunction<GlGetUniformui64vARB>());
+            .asFunction<GlGetUniformui64vARB>()) as void Function(int, int, Pointer<Uint64>)?;
   }
   glGetnUniformi64vARB = tryCall(() =>
       lib.lookupFunction<GlGetnUniformi64vARBNative, GlGetnUniformi64vARB>(
-          'glGetnUniformi64vARB'));
+          'glGetnUniformi64vARB')) as void Function(int, int, int, Pointer<Int64>)?;
   if (glGetnUniformi64vARB == null) {
     glGetnUniformi64vARB = tryCall(() =>
         Pointer<NativeFunction<GlGetnUniformi64vARBNative>>.fromAddress(
                 _glGetProcAddress('glGetnUniformi64vARB'))
-            .asFunction<GlGetnUniformi64vARB>());
+            .asFunction<GlGetnUniformi64vARB>()) as void Function(int, int, int, Pointer<Int64>)?;
   }
   glGetnUniformui64vARB = tryCall(() =>
       lib.lookupFunction<GlGetnUniformui64vARBNative, GlGetnUniformui64vARB>(
-          'glGetnUniformui64vARB'));
+          'glGetnUniformui64vARB')) as void Function(int, int, int, Pointer<Uint64>)?;
   if (glGetnUniformui64vARB == null) {
     glGetnUniformui64vARB = tryCall(() =>
         Pointer<NativeFunction<GlGetnUniformui64vARBNative>>.fromAddress(
                 _glGetProcAddress('glGetnUniformui64vARB'))
-            .asFunction<GlGetnUniformui64vARB>());
+            .asFunction<GlGetnUniformui64vARB>()) as void Function(int, int, int, Pointer<Uint64>)?;
   }
   glProgramUniform1i64ARB = tryCall(() => lib.lookupFunction<
       GlProgramUniform1i64ARBNative,
-      GlProgramUniform1i64ARB>('glProgramUniform1i64ARB'));
+      GlProgramUniform1i64ARB>('glProgramUniform1i64ARB')) as void Function(int, int, int)?;
   if (glProgramUniform1i64ARB == null) {
     glProgramUniform1i64ARB = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform1i64ARBNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform1i64ARB'))
-            .asFunction<GlProgramUniform1i64ARB>());
+            .asFunction<GlProgramUniform1i64ARB>()) as void Function(int, int, int)?;
   }
   glProgramUniform2i64ARB = tryCall(() => lib.lookupFunction<
       GlProgramUniform2i64ARBNative,
-      GlProgramUniform2i64ARB>('glProgramUniform2i64ARB'));
+      GlProgramUniform2i64ARB>('glProgramUniform2i64ARB')) as void Function(int, int, int, int)?;
   if (glProgramUniform2i64ARB == null) {
     glProgramUniform2i64ARB = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform2i64ARBNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform2i64ARB'))
-            .asFunction<GlProgramUniform2i64ARB>());
+            .asFunction<GlProgramUniform2i64ARB>()) as void Function(int, int, int, int)?;
   }
   glProgramUniform3i64ARB = tryCall(() => lib.lookupFunction<
       GlProgramUniform3i64ARBNative,
-      GlProgramUniform3i64ARB>('glProgramUniform3i64ARB'));
+      GlProgramUniform3i64ARB>('glProgramUniform3i64ARB')) as void Function(int, int, int, int, int)?;
   if (glProgramUniform3i64ARB == null) {
     glProgramUniform3i64ARB = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform3i64ARBNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform3i64ARB'))
-            .asFunction<GlProgramUniform3i64ARB>());
+            .asFunction<GlProgramUniform3i64ARB>()) as void Function(int, int, int, int, int)?;
   }
   glProgramUniform4i64ARB = tryCall(() => lib.lookupFunction<
       GlProgramUniform4i64ARBNative,
-      GlProgramUniform4i64ARB>('glProgramUniform4i64ARB'));
+      GlProgramUniform4i64ARB>('glProgramUniform4i64ARB')) as void Function(int, int, int, int, int, int)?;
   if (glProgramUniform4i64ARB == null) {
     glProgramUniform4i64ARB = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform4i64ARBNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform4i64ARB'))
-            .asFunction<GlProgramUniform4i64ARB>());
+            .asFunction<GlProgramUniform4i64ARB>()) as void Function(int, int, int, int, int, int)?;
   }
   glProgramUniform1i64vARB = tryCall(() => lib.lookupFunction<
       GlProgramUniform1i64vARBNative,
-      GlProgramUniform1i64vARB>('glProgramUniform1i64vARB'));
+      GlProgramUniform1i64vARB>('glProgramUniform1i64vARB')) as void Function(int, int, int, Pointer<Int64>)?;
   if (glProgramUniform1i64vARB == null) {
     glProgramUniform1i64vARB = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform1i64vARBNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform1i64vARB'))
-            .asFunction<GlProgramUniform1i64vARB>());
+            .asFunction<GlProgramUniform1i64vARB>()) as void Function(int, int, int, Pointer<Int64>)?;
   }
   glProgramUniform2i64vARB = tryCall(() => lib.lookupFunction<
       GlProgramUniform2i64vARBNative,
-      GlProgramUniform2i64vARB>('glProgramUniform2i64vARB'));
+      GlProgramUniform2i64vARB>('glProgramUniform2i64vARB')) as void Function(int, int, int, Pointer<Int64>)?;
   if (glProgramUniform2i64vARB == null) {
     glProgramUniform2i64vARB = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform2i64vARBNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform2i64vARB'))
-            .asFunction<GlProgramUniform2i64vARB>());
+            .asFunction<GlProgramUniform2i64vARB>()) as void Function(int, int, int, Pointer<Int64>)?;
   }
   glProgramUniform3i64vARB = tryCall(() => lib.lookupFunction<
       GlProgramUniform3i64vARBNative,
-      GlProgramUniform3i64vARB>('glProgramUniform3i64vARB'));
+      GlProgramUniform3i64vARB>('glProgramUniform3i64vARB')) as void Function(int, int, int, Pointer<Int64>)?;
   if (glProgramUniform3i64vARB == null) {
     glProgramUniform3i64vARB = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform3i64vARBNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform3i64vARB'))
-            .asFunction<GlProgramUniform3i64vARB>());
+            .asFunction<GlProgramUniform3i64vARB>()) as void Function(int, int, int, Pointer<Int64>)?;
   }
   glProgramUniform4i64vARB = tryCall(() => lib.lookupFunction<
       GlProgramUniform4i64vARBNative,
-      GlProgramUniform4i64vARB>('glProgramUniform4i64vARB'));
+      GlProgramUniform4i64vARB>('glProgramUniform4i64vARB')) as void Function(int, int, int, Pointer<Int64>)?;
   if (glProgramUniform4i64vARB == null) {
     glProgramUniform4i64vARB = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform4i64vARBNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform4i64vARB'))
-            .asFunction<GlProgramUniform4i64vARB>());
+            .asFunction<GlProgramUniform4i64vARB>()) as void Function(int, int, int, Pointer<Int64>)?;
   }
   glProgramUniform1ui64ARB = tryCall(() => lib.lookupFunction<
       GlProgramUniform1ui64ARBNative,
-      GlProgramUniform1ui64ARB>('glProgramUniform1ui64ARB'));
+      GlProgramUniform1ui64ARB>('glProgramUniform1ui64ARB')) as void Function(int, int, int)?;
   if (glProgramUniform1ui64ARB == null) {
     glProgramUniform1ui64ARB = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform1ui64ARBNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform1ui64ARB'))
-            .asFunction<GlProgramUniform1ui64ARB>());
+            .asFunction<GlProgramUniform1ui64ARB>()) as void Function(int, int, int)?;
   }
   glProgramUniform2ui64ARB = tryCall(() => lib.lookupFunction<
       GlProgramUniform2ui64ARBNative,
-      GlProgramUniform2ui64ARB>('glProgramUniform2ui64ARB'));
+      GlProgramUniform2ui64ARB>('glProgramUniform2ui64ARB')) as void Function(int, int, int, int)?;
   if (glProgramUniform2ui64ARB == null) {
     glProgramUniform2ui64ARB = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform2ui64ARBNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform2ui64ARB'))
-            .asFunction<GlProgramUniform2ui64ARB>());
+            .asFunction<GlProgramUniform2ui64ARB>()) as void Function(int, int, int, int)?;
   }
   glProgramUniform3ui64ARB = tryCall(() => lib.lookupFunction<
       GlProgramUniform3ui64ARBNative,
-      GlProgramUniform3ui64ARB>('glProgramUniform3ui64ARB'));
+      GlProgramUniform3ui64ARB>('glProgramUniform3ui64ARB')) as void Function(int, int, int, int, int)?;
   if (glProgramUniform3ui64ARB == null) {
     glProgramUniform3ui64ARB = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform3ui64ARBNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform3ui64ARB'))
-            .asFunction<GlProgramUniform3ui64ARB>());
+            .asFunction<GlProgramUniform3ui64ARB>()) as void Function(int, int, int, int, int)?;
   }
   glProgramUniform4ui64ARB = tryCall(() => lib.lookupFunction<
       GlProgramUniform4ui64ARBNative,
-      GlProgramUniform4ui64ARB>('glProgramUniform4ui64ARB'));
+      GlProgramUniform4ui64ARB>('glProgramUniform4ui64ARB')) as void Function(int, int, int, int, int, int)?;
   if (glProgramUniform4ui64ARB == null) {
     glProgramUniform4ui64ARB = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform4ui64ARBNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform4ui64ARB'))
-            .asFunction<GlProgramUniform4ui64ARB>());
+            .asFunction<GlProgramUniform4ui64ARB>()) as void Function(int, int, int, int, int, int)?;
   }
   glProgramUniform1ui64vARB = tryCall(() => lib.lookupFunction<
       GlProgramUniform1ui64vARBNative,
-      GlProgramUniform1ui64vARB>('glProgramUniform1ui64vARB'));
+      GlProgramUniform1ui64vARB>('glProgramUniform1ui64vARB')) as void Function(int, int, int, Pointer<Uint64>)?;
   if (glProgramUniform1ui64vARB == null) {
     glProgramUniform1ui64vARB = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform1ui64vARBNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform1ui64vARB'))
-            .asFunction<GlProgramUniform1ui64vARB>());
+            .asFunction<GlProgramUniform1ui64vARB>()) as void Function(int, int, int, Pointer<Uint64>)?;
   }
   glProgramUniform2ui64vARB = tryCall(() => lib.lookupFunction<
       GlProgramUniform2ui64vARBNative,
-      GlProgramUniform2ui64vARB>('glProgramUniform2ui64vARB'));
+      GlProgramUniform2ui64vARB>('glProgramUniform2ui64vARB')) as void Function(int, int, int, Pointer<Uint64>)?;
   if (glProgramUniform2ui64vARB == null) {
     glProgramUniform2ui64vARB = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform2ui64vARBNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform2ui64vARB'))
-            .asFunction<GlProgramUniform2ui64vARB>());
+            .asFunction<GlProgramUniform2ui64vARB>()) as void Function(int, int, int, Pointer<Uint64>)?;
   }
   glProgramUniform3ui64vARB = tryCall(() => lib.lookupFunction<
       GlProgramUniform3ui64vARBNative,
-      GlProgramUniform3ui64vARB>('glProgramUniform3ui64vARB'));
+      GlProgramUniform3ui64vARB>('glProgramUniform3ui64vARB')) as void Function(int, int, int, Pointer<Uint64>)?;
   if (glProgramUniform3ui64vARB == null) {
     glProgramUniform3ui64vARB = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform3ui64vARBNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform3ui64vARB'))
-            .asFunction<GlProgramUniform3ui64vARB>());
+            .asFunction<GlProgramUniform3ui64vARB>()) as void Function(int, int, int, Pointer<Uint64>)?;
   }
   glProgramUniform4ui64vARB = tryCall(() => lib.lookupFunction<
       GlProgramUniform4ui64vARBNative,
-      GlProgramUniform4ui64vARB>('glProgramUniform4ui64vARB'));
+      GlProgramUniform4ui64vARB>('glProgramUniform4ui64vARB')) as void Function(int, int, int, Pointer<Uint64>)?;
   if (glProgramUniform4ui64vARB == null) {
     glProgramUniform4ui64vARB = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform4ui64vARBNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform4ui64vARB'))
-            .asFunction<GlProgramUniform4ui64vARB>());
+            .asFunction<GlProgramUniform4ui64vARB>()) as void Function(int, int, int, Pointer<Uint64>)?;
   }
   glMultiDrawArraysIndirectCountARB = tryCall(() => lib.lookupFunction<
       GlMultiDrawArraysIndirectCountARBNative,
-      GlMultiDrawArraysIndirectCountARB>('glMultiDrawArraysIndirectCountARB'));
+      GlMultiDrawArraysIndirectCountARB>('glMultiDrawArraysIndirectCountARB')) as void Function(int, Pointer<NativeType>, int, int, int)?;
   if (glMultiDrawArraysIndirectCountARB == null) {
     glMultiDrawArraysIndirectCountARB = tryCall(() => Pointer<
                 NativeFunction<
                     GlMultiDrawArraysIndirectCountARBNative>>.fromAddress(
             _glGetProcAddress('glMultiDrawArraysIndirectCountARB'))
-        .asFunction<GlMultiDrawArraysIndirectCountARB>());
+        .asFunction<GlMultiDrawArraysIndirectCountARB>()) as void Function(int, Pointer<NativeType>, int, int, int)?;
   }
   glMultiDrawElementsIndirectCountARB = tryCall(() => lib.lookupFunction<
           GlMultiDrawElementsIndirectCountARBNative,
           GlMultiDrawElementsIndirectCountARB>(
-      'glMultiDrawElementsIndirectCountARB'));
+      'glMultiDrawElementsIndirectCountARB')) as void Function(int, int, Pointer<NativeType>, int, int, int)?;
   if (glMultiDrawElementsIndirectCountARB == null) {
     glMultiDrawElementsIndirectCountARB = tryCall(() => Pointer<
                 NativeFunction<
                     GlMultiDrawElementsIndirectCountARBNative>>.fromAddress(
             _glGetProcAddress('glMultiDrawElementsIndirectCountARB'))
-        .asFunction<GlMultiDrawElementsIndirectCountARB>());
+        .asFunction<GlMultiDrawElementsIndirectCountARB>()) as void Function(int, int, Pointer<NativeType>, int, int, int)?;
   }
   glVertexAttribDivisorARB = tryCall(() => lib.lookupFunction<
       GlVertexAttribDivisorARBNative,
-      GlVertexAttribDivisorARB>('glVertexAttribDivisorARB'));
+      GlVertexAttribDivisorARB>('glVertexAttribDivisorARB')) as void Function(int, int)?;
   if (glVertexAttribDivisorARB == null) {
     glVertexAttribDivisorARB = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribDivisorARBNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribDivisorARB'))
-            .asFunction<GlVertexAttribDivisorARB>());
+            .asFunction<GlVertexAttribDivisorARB>()) as void Function(int, int)?;
   }
   glMaxShaderCompilerThreadsARB = tryCall(() => lib.lookupFunction<
       GlMaxShaderCompilerThreadsARBNative,
-      GlMaxShaderCompilerThreadsARB>('glMaxShaderCompilerThreadsARB'));
+      GlMaxShaderCompilerThreadsARB>('glMaxShaderCompilerThreadsARB')) as void Function(int)?;
   if (glMaxShaderCompilerThreadsARB == null) {
     glMaxShaderCompilerThreadsARB = tryCall(() => Pointer<
                 NativeFunction<
                     GlMaxShaderCompilerThreadsARBNative>>.fromAddress(
             _glGetProcAddress('glMaxShaderCompilerThreadsARB'))
-        .asFunction<GlMaxShaderCompilerThreadsARB>());
+        .asFunction<GlMaxShaderCompilerThreadsARB>()) as void Function(int)?;
   }
   glGetGraphicsResetStatusARB = tryCall(() => lib.lookupFunction<
       GlGetGraphicsResetStatusARBNative,
-      GlGetGraphicsResetStatusARB>('glGetGraphicsResetStatusARB'));
+      GlGetGraphicsResetStatusARB>('glGetGraphicsResetStatusARB')) as int Function()?;
   if (glGetGraphicsResetStatusARB == null) {
     glGetGraphicsResetStatusARB = tryCall(() =>
         Pointer<NativeFunction<GlGetGraphicsResetStatusARBNative>>.fromAddress(
                 _glGetProcAddress('glGetGraphicsResetStatusARB'))
-            .asFunction<GlGetGraphicsResetStatusARB>());
+            .asFunction<GlGetGraphicsResetStatusARB>()) as int Function()?;
   }
   glGetnTexImageARB = tryCall(() =>
       lib.lookupFunction<GlGetnTexImageARBNative, GlGetnTexImageARB>(
-          'glGetnTexImageARB'));
+          'glGetnTexImageARB')) as void Function(int, int, int, int, int, Pointer<NativeType>)?;
   if (glGetnTexImageARB == null) {
     glGetnTexImageARB = tryCall(() =>
         Pointer<NativeFunction<GlGetnTexImageARBNative>>.fromAddress(
                 _glGetProcAddress('glGetnTexImageARB'))
-            .asFunction<GlGetnTexImageARB>());
+            .asFunction<GlGetnTexImageARB>()) as void Function(int, int, int, int, int, Pointer<NativeType>)?;
   }
   glReadnPixelsARB = tryCall(() =>
       lib.lookupFunction<GlReadnPixelsARBNative, GlReadnPixelsARB>(
-          'glReadnPixelsARB'));
+          'glReadnPixelsARB')) as void Function(int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glReadnPixelsARB == null) {
     glReadnPixelsARB = tryCall(() =>
         Pointer<NativeFunction<GlReadnPixelsARBNative>>.fromAddress(
                 _glGetProcAddress('glReadnPixelsARB'))
-            .asFunction<GlReadnPixelsARB>());
+            .asFunction<GlReadnPixelsARB>()) as void Function(int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glGetnCompressedTexImageARB = tryCall(() => lib.lookupFunction<
       GlGetnCompressedTexImageARBNative,
-      GlGetnCompressedTexImageARB>('glGetnCompressedTexImageARB'));
+      GlGetnCompressedTexImageARB>('glGetnCompressedTexImageARB')) as void Function(int, int, int, Pointer<NativeType>)?;
   if (glGetnCompressedTexImageARB == null) {
     glGetnCompressedTexImageARB = tryCall(() =>
         Pointer<NativeFunction<GlGetnCompressedTexImageARBNative>>.fromAddress(
                 _glGetProcAddress('glGetnCompressedTexImageARB'))
-            .asFunction<GlGetnCompressedTexImageARB>());
+            .asFunction<GlGetnCompressedTexImageARB>()) as void Function(int, int, int, Pointer<NativeType>)?;
   }
   glGetnUniformfvARB = tryCall(() =>
       lib.lookupFunction<GlGetnUniformfvARBNative, GlGetnUniformfvARB>(
-          'glGetnUniformfvARB'));
+          'glGetnUniformfvARB')) as void Function(int, int, int, Pointer<Float>)?;
   if (glGetnUniformfvARB == null) {
     glGetnUniformfvARB = tryCall(() =>
         Pointer<NativeFunction<GlGetnUniformfvARBNative>>.fromAddress(
                 _glGetProcAddress('glGetnUniformfvARB'))
-            .asFunction<GlGetnUniformfvARB>());
+            .asFunction<GlGetnUniformfvARB>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glGetnUniformivARB = tryCall(() =>
       lib.lookupFunction<GlGetnUniformivARBNative, GlGetnUniformivARB>(
-          'glGetnUniformivARB'));
+          'glGetnUniformivARB')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glGetnUniformivARB == null) {
     glGetnUniformivARB = tryCall(() =>
         Pointer<NativeFunction<GlGetnUniformivARBNative>>.fromAddress(
                 _glGetProcAddress('glGetnUniformivARB'))
-            .asFunction<GlGetnUniformivARB>());
+            .asFunction<GlGetnUniformivARB>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glGetnUniformuivARB = tryCall(() =>
       lib.lookupFunction<GlGetnUniformuivARBNative, GlGetnUniformuivARB>(
-          'glGetnUniformuivARB'));
+          'glGetnUniformuivARB')) as void Function(int, int, int, Pointer<Uint32>)?;
   if (glGetnUniformuivARB == null) {
     glGetnUniformuivARB = tryCall(() =>
         Pointer<NativeFunction<GlGetnUniformuivARBNative>>.fromAddress(
                 _glGetProcAddress('glGetnUniformuivARB'))
-            .asFunction<GlGetnUniformuivARB>());
+            .asFunction<GlGetnUniformuivARB>()) as void Function(int, int, int, Pointer<Uint32>)?;
   }
   glGetnUniformdvARB = tryCall(() =>
       lib.lookupFunction<GlGetnUniformdvARBNative, GlGetnUniformdvARB>(
-          'glGetnUniformdvARB'));
+          'glGetnUniformdvARB')) as void Function(int, int, int, Pointer<Double>)?;
   if (glGetnUniformdvARB == null) {
     glGetnUniformdvARB = tryCall(() =>
         Pointer<NativeFunction<GlGetnUniformdvARBNative>>.fromAddress(
                 _glGetProcAddress('glGetnUniformdvARB'))
-            .asFunction<GlGetnUniformdvARB>());
+            .asFunction<GlGetnUniformdvARB>()) as void Function(int, int, int, Pointer<Double>)?;
   }
   glFramebufferSampleLocationsfvARB = tryCall(() => lib.lookupFunction<
       GlFramebufferSampleLocationsfvARBNative,
-      GlFramebufferSampleLocationsfvARB>('glFramebufferSampleLocationsfvARB'));
+      GlFramebufferSampleLocationsfvARB>('glFramebufferSampleLocationsfvARB')) as void Function(int, int, int, Pointer<Float>)?;
   if (glFramebufferSampleLocationsfvARB == null) {
     glFramebufferSampleLocationsfvARB = tryCall(() => Pointer<
                 NativeFunction<
                     GlFramebufferSampleLocationsfvARBNative>>.fromAddress(
             _glGetProcAddress('glFramebufferSampleLocationsfvARB'))
-        .asFunction<GlFramebufferSampleLocationsfvARB>());
+        .asFunction<GlFramebufferSampleLocationsfvARB>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glNamedFramebufferSampleLocationsfvARB = tryCall(() => lib.lookupFunction<
           GlNamedFramebufferSampleLocationsfvARBNative,
           GlNamedFramebufferSampleLocationsfvARB>(
-      'glNamedFramebufferSampleLocationsfvARB'));
+      'glNamedFramebufferSampleLocationsfvARB')) as void Function(int, int, int, Pointer<Float>)?;
   if (glNamedFramebufferSampleLocationsfvARB == null) {
     glNamedFramebufferSampleLocationsfvARB = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedFramebufferSampleLocationsfvARBNative>>.fromAddress(
             _glGetProcAddress('glNamedFramebufferSampleLocationsfvARB'))
-        .asFunction<GlNamedFramebufferSampleLocationsfvARB>());
+        .asFunction<GlNamedFramebufferSampleLocationsfvARB>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glEvaluateDepthValuesARB = tryCall(() => lib.lookupFunction<
       GlEvaluateDepthValuesARBNative,
-      GlEvaluateDepthValuesARB>('glEvaluateDepthValuesARB'));
+      GlEvaluateDepthValuesARB>('glEvaluateDepthValuesARB')) as void Function()?;
   if (glEvaluateDepthValuesARB == null) {
     glEvaluateDepthValuesARB = tryCall(() =>
         Pointer<NativeFunction<GlEvaluateDepthValuesARBNative>>.fromAddress(
                 _glGetProcAddress('glEvaluateDepthValuesARB'))
-            .asFunction<GlEvaluateDepthValuesARB>());
+            .asFunction<GlEvaluateDepthValuesARB>()) as void Function()?;
   }
   glMinSampleShadingARB = tryCall(() =>
       lib.lookupFunction<GlMinSampleShadingARBNative, GlMinSampleShadingARB>(
-          'glMinSampleShadingARB'));
+          'glMinSampleShadingARB')) as void Function(double)?;
   if (glMinSampleShadingARB == null) {
     glMinSampleShadingARB = tryCall(() =>
         Pointer<NativeFunction<GlMinSampleShadingARBNative>>.fromAddress(
                 _glGetProcAddress('glMinSampleShadingARB'))
-            .asFunction<GlMinSampleShadingARB>());
+            .asFunction<GlMinSampleShadingARB>()) as void Function(double)?;
   }
   glNamedStringARB = tryCall(() =>
       lib.lookupFunction<GlNamedStringARBNative, GlNamedStringARB>(
-          'glNamedStringARB'));
+          'glNamedStringARB')) as void Function(int, int, Pointer<NativeType>, int, Pointer<NativeType>)?;
   if (glNamedStringARB == null) {
     glNamedStringARB = tryCall(() =>
         Pointer<NativeFunction<GlNamedStringARBNative>>.fromAddress(
                 _glGetProcAddress('glNamedStringARB'))
-            .asFunction<GlNamedStringARB>());
+            .asFunction<GlNamedStringARB>()) as void Function(int, int, Pointer<NativeType>, int, Pointer<NativeType>)?;
   }
   glDeleteNamedStringARB = tryCall(() =>
       lib.lookupFunction<GlDeleteNamedStringARBNative, GlDeleteNamedStringARB>(
-          'glDeleteNamedStringARB'));
+          'glDeleteNamedStringARB')) as void Function(int, Pointer<NativeType>)?;
   if (glDeleteNamedStringARB == null) {
     glDeleteNamedStringARB = tryCall(() =>
         Pointer<NativeFunction<GlDeleteNamedStringARBNative>>.fromAddress(
                 _glGetProcAddress('glDeleteNamedStringARB'))
-            .asFunction<GlDeleteNamedStringARB>());
+            .asFunction<GlDeleteNamedStringARB>()) as void Function(int, Pointer<NativeType>)?;
   }
   glCompileShaderIncludeARB = tryCall(() => lib.lookupFunction<
       GlCompileShaderIncludeARBNative,
-      GlCompileShaderIncludeARB>('glCompileShaderIncludeARB'));
+      GlCompileShaderIncludeARB>('glCompileShaderIncludeARB')) as void Function(int, int, Pointer<NativeType>, Pointer<Int32>)?;
   if (glCompileShaderIncludeARB == null) {
     glCompileShaderIncludeARB = tryCall(() =>
         Pointer<NativeFunction<GlCompileShaderIncludeARBNative>>.fromAddress(
                 _glGetProcAddress('glCompileShaderIncludeARB'))
-            .asFunction<GlCompileShaderIncludeARB>());
+            .asFunction<GlCompileShaderIncludeARB>()) as void Function(int, int, Pointer<NativeType>, Pointer<Int32>)?;
   }
   glIsNamedStringARB = tryCall(() =>
       lib.lookupFunction<GlIsNamedStringARBNative, GlIsNamedStringARB>(
-          'glIsNamedStringARB'));
+          'glIsNamedStringARB')) as int Function(int, Pointer<NativeType>)?;
   if (glIsNamedStringARB == null) {
     glIsNamedStringARB = tryCall(() =>
         Pointer<NativeFunction<GlIsNamedStringARBNative>>.fromAddress(
                 _glGetProcAddress('glIsNamedStringARB'))
-            .asFunction<GlIsNamedStringARB>());
+            .asFunction<GlIsNamedStringARB>()) as int Function(int, Pointer<NativeType>)?;
   }
   glGetNamedStringARB = tryCall(() =>
       lib.lookupFunction<GlGetNamedStringARBNative, GlGetNamedStringARB>(
-          'glGetNamedStringARB'));
+          'glGetNamedStringARB')) as void Function(int, Pointer<NativeType>, int, Pointer<Int32>, Pointer<NativeType>)?;
   if (glGetNamedStringARB == null) {
     glGetNamedStringARB = tryCall(() =>
         Pointer<NativeFunction<GlGetNamedStringARBNative>>.fromAddress(
                 _glGetProcAddress('glGetNamedStringARB'))
-            .asFunction<GlGetNamedStringARB>());
+            .asFunction<GlGetNamedStringARB>()) as void Function(int, Pointer<NativeType>, int, Pointer<Int32>, Pointer<NativeType>)?;
   }
   glGetNamedStringivARB = tryCall(() =>
       lib.lookupFunction<GlGetNamedStringivARBNative, GlGetNamedStringivARB>(
-          'glGetNamedStringivARB'));
+          'glGetNamedStringivARB')) as void Function(int, Pointer<NativeType>, int, Pointer<Int32>)?;
   if (glGetNamedStringivARB == null) {
     glGetNamedStringivARB = tryCall(() =>
         Pointer<NativeFunction<GlGetNamedStringivARBNative>>.fromAddress(
                 _glGetProcAddress('glGetNamedStringivARB'))
-            .asFunction<GlGetNamedStringivARB>());
+            .asFunction<GlGetNamedStringivARB>()) as void Function(int, Pointer<NativeType>, int, Pointer<Int32>)?;
   }
   glBufferPageCommitmentARB = tryCall(() => lib.lookupFunction<
       GlBufferPageCommitmentARBNative,
-      GlBufferPageCommitmentARB>('glBufferPageCommitmentARB'));
+      GlBufferPageCommitmentARB>('glBufferPageCommitmentARB')) as void Function(int, int, int, int)?;
   if (glBufferPageCommitmentARB == null) {
     glBufferPageCommitmentARB = tryCall(() =>
         Pointer<NativeFunction<GlBufferPageCommitmentARBNative>>.fromAddress(
                 _glGetProcAddress('glBufferPageCommitmentARB'))
-            .asFunction<GlBufferPageCommitmentARB>());
+            .asFunction<GlBufferPageCommitmentARB>()) as void Function(int, int, int, int)?;
   }
   glNamedBufferPageCommitmentEXT = tryCall(() => lib.lookupFunction<
       GlNamedBufferPageCommitmentEXTNative,
-      GlNamedBufferPageCommitmentEXT>('glNamedBufferPageCommitmentEXT'));
+      GlNamedBufferPageCommitmentEXT>('glNamedBufferPageCommitmentEXT')) as void Function(int, int, int, int)?;
   if (glNamedBufferPageCommitmentEXT == null) {
     glNamedBufferPageCommitmentEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedBufferPageCommitmentEXTNative>>.fromAddress(
             _glGetProcAddress('glNamedBufferPageCommitmentEXT'))
-        .asFunction<GlNamedBufferPageCommitmentEXT>());
+        .asFunction<GlNamedBufferPageCommitmentEXT>()) as void Function(int, int, int, int)?;
   }
   glNamedBufferPageCommitmentARB = tryCall(() => lib.lookupFunction<
       GlNamedBufferPageCommitmentARBNative,
-      GlNamedBufferPageCommitmentARB>('glNamedBufferPageCommitmentARB'));
+      GlNamedBufferPageCommitmentARB>('glNamedBufferPageCommitmentARB')) as void Function(int, int, int, int)?;
   if (glNamedBufferPageCommitmentARB == null) {
     glNamedBufferPageCommitmentARB = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedBufferPageCommitmentARBNative>>.fromAddress(
             _glGetProcAddress('glNamedBufferPageCommitmentARB'))
-        .asFunction<GlNamedBufferPageCommitmentARB>());
+        .asFunction<GlNamedBufferPageCommitmentARB>()) as void Function(int, int, int, int)?;
   }
   glTexPageCommitmentARB = tryCall(() =>
       lib.lookupFunction<GlTexPageCommitmentARBNative, GlTexPageCommitmentARB>(
-          'glTexPageCommitmentARB'));
+          'glTexPageCommitmentARB')) as void Function(int, int, int, int, int, int, int, int, int)?;
   if (glTexPageCommitmentARB == null) {
     glTexPageCommitmentARB = tryCall(() =>
         Pointer<NativeFunction<GlTexPageCommitmentARBNative>>.fromAddress(
                 _glGetProcAddress('glTexPageCommitmentARB'))
-            .asFunction<GlTexPageCommitmentARB>());
+            .asFunction<GlTexPageCommitmentARB>()) as void Function(int, int, int, int, int, int, int, int, int)?;
   }
   glTexBufferARB = tryCall(() => lib
-      .lookupFunction<GlTexBufferARBNative, GlTexBufferARB>('glTexBufferARB'));
+      .lookupFunction<GlTexBufferARBNative, GlTexBufferARB>('glTexBufferARB')) as void Function(int, int, int)?;
   if (glTexBufferARB == null) {
     glTexBufferARB = tryCall(() =>
         Pointer<NativeFunction<GlTexBufferARBNative>>.fromAddress(
                 _glGetProcAddress('glTexBufferARB'))
-            .asFunction<GlTexBufferARB>());
+            .asFunction<GlTexBufferARB>()) as void Function(int, int, int)?;
   }
   glDepthRangeArraydvNV = tryCall(() =>
       lib.lookupFunction<GlDepthRangeArraydvNVNative, GlDepthRangeArraydvNV>(
-          'glDepthRangeArraydvNV'));
+          'glDepthRangeArraydvNV')) as void Function(int, int, Pointer<Double>)?;
   if (glDepthRangeArraydvNV == null) {
     glDepthRangeArraydvNV = tryCall(() =>
         Pointer<NativeFunction<GlDepthRangeArraydvNVNative>>.fromAddress(
                 _glGetProcAddress('glDepthRangeArraydvNV'))
-            .asFunction<GlDepthRangeArraydvNV>());
+            .asFunction<GlDepthRangeArraydvNV>()) as void Function(int, int, Pointer<Double>)?;
   }
   glDepthRangeIndexeddNV = tryCall(() =>
       lib.lookupFunction<GlDepthRangeIndexeddNVNative, GlDepthRangeIndexeddNV>(
-          'glDepthRangeIndexeddNV'));
+          'glDepthRangeIndexeddNV')) as void Function(int, double, double)?;
   if (glDepthRangeIndexeddNV == null) {
     glDepthRangeIndexeddNV = tryCall(() =>
         Pointer<NativeFunction<GlDepthRangeIndexeddNVNative>>.fromAddress(
                 _glGetProcAddress('glDepthRangeIndexeddNV'))
-            .asFunction<GlDepthRangeIndexeddNV>());
+            .asFunction<GlDepthRangeIndexeddNV>()) as void Function(int, double, double)?;
   }
   glBlendBarrierKHR = tryCall(() =>
       lib.lookupFunction<GlBlendBarrierKHRNative, GlBlendBarrierKHR>(
-          'glBlendBarrierKHR'));
+          'glBlendBarrierKHR')) as void Function()?;
   if (glBlendBarrierKHR == null) {
     glBlendBarrierKHR = tryCall(() =>
         Pointer<NativeFunction<GlBlendBarrierKHRNative>>.fromAddress(
                 _glGetProcAddress('glBlendBarrierKHR'))
-            .asFunction<GlBlendBarrierKHR>());
+            .asFunction<GlBlendBarrierKHR>()) as void Function()?;
   }
   glMaxShaderCompilerThreadsKHR = tryCall(() => lib.lookupFunction<
       GlMaxShaderCompilerThreadsKHRNative,
-      GlMaxShaderCompilerThreadsKHR>('glMaxShaderCompilerThreadsKHR'));
+      GlMaxShaderCompilerThreadsKHR>('glMaxShaderCompilerThreadsKHR')) as void Function(int)?;
   if (glMaxShaderCompilerThreadsKHR == null) {
     glMaxShaderCompilerThreadsKHR = tryCall(() => Pointer<
                 NativeFunction<
                     GlMaxShaderCompilerThreadsKHRNative>>.fromAddress(
             _glGetProcAddress('glMaxShaderCompilerThreadsKHR'))
-        .asFunction<GlMaxShaderCompilerThreadsKHR>());
+        .asFunction<GlMaxShaderCompilerThreadsKHR>()) as void Function(int)?;
   }
   glRenderbufferStorageMultisampleAdvancedAMD = tryCall(() =>
       lib.lookupFunction<GlRenderbufferStorageMultisampleAdvancedAMDNative,
               GlRenderbufferStorageMultisampleAdvancedAMD>(
-          'glRenderbufferStorageMultisampleAdvancedAMD'));
+          'glRenderbufferStorageMultisampleAdvancedAMD')) as void Function(int, int, int, int, int, int)?;
   if (glRenderbufferStorageMultisampleAdvancedAMD == null) {
     glRenderbufferStorageMultisampleAdvancedAMD = tryCall(() => Pointer<
                 NativeFunction<
                     GlRenderbufferStorageMultisampleAdvancedAMDNative>>.fromAddress(
             _glGetProcAddress('glRenderbufferStorageMultisampleAdvancedAMD'))
-        .asFunction<GlRenderbufferStorageMultisampleAdvancedAMD>());
+        .asFunction<GlRenderbufferStorageMultisampleAdvancedAMD>()) as void Function(int, int, int, int, int, int)?;
   }
   glNamedRenderbufferStorageMultisampleAdvancedAMD = tryCall(() =>
       lib.lookupFunction<GlNamedRenderbufferStorageMultisampleAdvancedAMDNative,
               GlNamedRenderbufferStorageMultisampleAdvancedAMD>(
-          'glNamedRenderbufferStorageMultisampleAdvancedAMD'));
+          'glNamedRenderbufferStorageMultisampleAdvancedAMD')) as void Function(int, int, int, int, int, int)?;
   if (glNamedRenderbufferStorageMultisampleAdvancedAMD == null) {
     glNamedRenderbufferStorageMultisampleAdvancedAMD = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedRenderbufferStorageMultisampleAdvancedAMDNative>>.fromAddress(
             _glGetProcAddress(
                 'glNamedRenderbufferStorageMultisampleAdvancedAMD'))
-        .asFunction<GlNamedRenderbufferStorageMultisampleAdvancedAMD>());
+        .asFunction<GlNamedRenderbufferStorageMultisampleAdvancedAMD>()) as void Function(int, int, int, int, int, int)?;
   }
   glGetPerfMonitorGroupsAMD = tryCall(() => lib.lookupFunction<
       GlGetPerfMonitorGroupsAMDNative,
-      GlGetPerfMonitorGroupsAMD>('glGetPerfMonitorGroupsAMD'));
+      GlGetPerfMonitorGroupsAMD>('glGetPerfMonitorGroupsAMD')) as void Function(Pointer<Int32>, int, Pointer<Uint32>)?;
   if (glGetPerfMonitorGroupsAMD == null) {
     glGetPerfMonitorGroupsAMD = tryCall(() =>
         Pointer<NativeFunction<GlGetPerfMonitorGroupsAMDNative>>.fromAddress(
                 _glGetProcAddress('glGetPerfMonitorGroupsAMD'))
-            .asFunction<GlGetPerfMonitorGroupsAMD>());
+            .asFunction<GlGetPerfMonitorGroupsAMD>()) as void Function(Pointer<Int32>, int, Pointer<Uint32>)?;
   }
   glGetPerfMonitorCountersAMD = tryCall(() => lib.lookupFunction<
       GlGetPerfMonitorCountersAMDNative,
-      GlGetPerfMonitorCountersAMD>('glGetPerfMonitorCountersAMD'));
+      GlGetPerfMonitorCountersAMD>('glGetPerfMonitorCountersAMD')) as void Function(int, Pointer<Int32>, Pointer<Int32>, int, Pointer<Uint32>)?;
   if (glGetPerfMonitorCountersAMD == null) {
     glGetPerfMonitorCountersAMD = tryCall(() =>
         Pointer<NativeFunction<GlGetPerfMonitorCountersAMDNative>>.fromAddress(
                 _glGetProcAddress('glGetPerfMonitorCountersAMD'))
-            .asFunction<GlGetPerfMonitorCountersAMD>());
+            .asFunction<GlGetPerfMonitorCountersAMD>()) as void Function(int, Pointer<Int32>, Pointer<Int32>, int, Pointer<Uint32>)?;
   }
   glGetPerfMonitorGroupStringAMD = tryCall(() => lib.lookupFunction<
       GlGetPerfMonitorGroupStringAMDNative,
-      GlGetPerfMonitorGroupStringAMD>('glGetPerfMonitorGroupStringAMD'));
+      GlGetPerfMonitorGroupStringAMD>('glGetPerfMonitorGroupStringAMD')) as void Function(int, int, Pointer<Int32>, Pointer<NativeType>)?;
   if (glGetPerfMonitorGroupStringAMD == null) {
     glGetPerfMonitorGroupStringAMD = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetPerfMonitorGroupStringAMDNative>>.fromAddress(
             _glGetProcAddress('glGetPerfMonitorGroupStringAMD'))
-        .asFunction<GlGetPerfMonitorGroupStringAMD>());
+        .asFunction<GlGetPerfMonitorGroupStringAMD>()) as void Function(int, int, Pointer<Int32>, Pointer<NativeType>)?;
   }
   glGetPerfMonitorCounterStringAMD = tryCall(() => lib.lookupFunction<
       GlGetPerfMonitorCounterStringAMDNative,
-      GlGetPerfMonitorCounterStringAMD>('glGetPerfMonitorCounterStringAMD'));
+      GlGetPerfMonitorCounterStringAMD>('glGetPerfMonitorCounterStringAMD')) as void Function(int, int, int, Pointer<Int32>, Pointer<NativeType>)?;
   if (glGetPerfMonitorCounterStringAMD == null) {
     glGetPerfMonitorCounterStringAMD = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetPerfMonitorCounterStringAMDNative>>.fromAddress(
             _glGetProcAddress('glGetPerfMonitorCounterStringAMD'))
-        .asFunction<GlGetPerfMonitorCounterStringAMD>());
+        .asFunction<GlGetPerfMonitorCounterStringAMD>()) as void Function(int, int, int, Pointer<Int32>, Pointer<NativeType>)?;
   }
   glGetPerfMonitorCounterInfoAMD = tryCall(() => lib.lookupFunction<
       GlGetPerfMonitorCounterInfoAMDNative,
-      GlGetPerfMonitorCounterInfoAMD>('glGetPerfMonitorCounterInfoAMD'));
+      GlGetPerfMonitorCounterInfoAMD>('glGetPerfMonitorCounterInfoAMD')) as void Function(int, int, int, Pointer<NativeType>)?;
   if (glGetPerfMonitorCounterInfoAMD == null) {
     glGetPerfMonitorCounterInfoAMD = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetPerfMonitorCounterInfoAMDNative>>.fromAddress(
             _glGetProcAddress('glGetPerfMonitorCounterInfoAMD'))
-        .asFunction<GlGetPerfMonitorCounterInfoAMD>());
+        .asFunction<GlGetPerfMonitorCounterInfoAMD>()) as void Function(int, int, int, Pointer<NativeType>)?;
   }
   glGenPerfMonitorsAMD = tryCall(() =>
       lib.lookupFunction<GlGenPerfMonitorsAMDNative, GlGenPerfMonitorsAMD>(
-          'glGenPerfMonitorsAMD'));
+          'glGenPerfMonitorsAMD')) as void Function(int, Pointer<Uint32>)?;
   if (glGenPerfMonitorsAMD == null) {
     glGenPerfMonitorsAMD = tryCall(() =>
         Pointer<NativeFunction<GlGenPerfMonitorsAMDNative>>.fromAddress(
                 _glGetProcAddress('glGenPerfMonitorsAMD'))
-            .asFunction<GlGenPerfMonitorsAMD>());
+            .asFunction<GlGenPerfMonitorsAMD>()) as void Function(int, Pointer<Uint32>)?;
   }
   glDeletePerfMonitorsAMD = tryCall(() => lib.lookupFunction<
       GlDeletePerfMonitorsAMDNative,
-      GlDeletePerfMonitorsAMD>('glDeletePerfMonitorsAMD'));
+      GlDeletePerfMonitorsAMD>('glDeletePerfMonitorsAMD')) as void Function(int, Pointer<Uint32>)?;
   if (glDeletePerfMonitorsAMD == null) {
     glDeletePerfMonitorsAMD = tryCall(() =>
         Pointer<NativeFunction<GlDeletePerfMonitorsAMDNative>>.fromAddress(
                 _glGetProcAddress('glDeletePerfMonitorsAMD'))
-            .asFunction<GlDeletePerfMonitorsAMD>());
+            .asFunction<GlDeletePerfMonitorsAMD>()) as void Function(int, Pointer<Uint32>)?;
   }
   glSelectPerfMonitorCountersAMD = tryCall(() => lib.lookupFunction<
       GlSelectPerfMonitorCountersAMDNative,
-      GlSelectPerfMonitorCountersAMD>('glSelectPerfMonitorCountersAMD'));
+      GlSelectPerfMonitorCountersAMD>('glSelectPerfMonitorCountersAMD')) as void Function(int, int, int, int, Pointer<Uint32>)?;
   if (glSelectPerfMonitorCountersAMD == null) {
     glSelectPerfMonitorCountersAMD = tryCall(() => Pointer<
                 NativeFunction<
                     GlSelectPerfMonitorCountersAMDNative>>.fromAddress(
             _glGetProcAddress('glSelectPerfMonitorCountersAMD'))
-        .asFunction<GlSelectPerfMonitorCountersAMD>());
+        .asFunction<GlSelectPerfMonitorCountersAMD>()) as void Function(int, int, int, int, Pointer<Uint32>)?;
   }
   glBeginPerfMonitorAMD = tryCall(() =>
       lib.lookupFunction<GlBeginPerfMonitorAMDNative, GlBeginPerfMonitorAMD>(
-          'glBeginPerfMonitorAMD'));
+          'glBeginPerfMonitorAMD')) as void Function(int)?;
   if (glBeginPerfMonitorAMD == null) {
     glBeginPerfMonitorAMD = tryCall(() =>
         Pointer<NativeFunction<GlBeginPerfMonitorAMDNative>>.fromAddress(
                 _glGetProcAddress('glBeginPerfMonitorAMD'))
-            .asFunction<GlBeginPerfMonitorAMD>());
+            .asFunction<GlBeginPerfMonitorAMD>()) as void Function(int)?;
   }
   glEndPerfMonitorAMD = tryCall(() =>
       lib.lookupFunction<GlEndPerfMonitorAMDNative, GlEndPerfMonitorAMD>(
-          'glEndPerfMonitorAMD'));
+          'glEndPerfMonitorAMD')) as void Function(int)?;
   if (glEndPerfMonitorAMD == null) {
     glEndPerfMonitorAMD = tryCall(() =>
         Pointer<NativeFunction<GlEndPerfMonitorAMDNative>>.fromAddress(
                 _glGetProcAddress('glEndPerfMonitorAMD'))
-            .asFunction<GlEndPerfMonitorAMD>());
+            .asFunction<GlEndPerfMonitorAMD>()) as void Function(int)?;
   }
   glGetPerfMonitorCounterDataAMD = tryCall(() => lib.lookupFunction<
       GlGetPerfMonitorCounterDataAMDNative,
-      GlGetPerfMonitorCounterDataAMD>('glGetPerfMonitorCounterDataAMD'));
+      GlGetPerfMonitorCounterDataAMD>('glGetPerfMonitorCounterDataAMD')) as void Function(int, int, int, Pointer<Uint32>, Pointer<Int32>)?;
   if (glGetPerfMonitorCounterDataAMD == null) {
     glGetPerfMonitorCounterDataAMD = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetPerfMonitorCounterDataAMDNative>>.fromAddress(
             _glGetProcAddress('glGetPerfMonitorCounterDataAMD'))
-        .asFunction<GlGetPerfMonitorCounterDataAMD>());
+        .asFunction<GlGetPerfMonitorCounterDataAMD>()) as void Function(int, int, int, Pointer<Uint32>, Pointer<Int32>)?;
   }
   glEGLImageTargetTexStorageEXT = tryCall(() => lib.lookupFunction<
       GlEGLImageTargetTexStorageEXTNative,
-      GlEGLImageTargetTexStorageEXT>('glEGLImageTargetTexStorageEXT'));
+      GlEGLImageTargetTexStorageEXT>('glEGLImageTargetTexStorageEXT')) as void Function(int, Pointer<NativeType>, Pointer<Int32>)?;
   if (glEGLImageTargetTexStorageEXT == null) {
     glEGLImageTargetTexStorageEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlEGLImageTargetTexStorageEXTNative>>.fromAddress(
             _glGetProcAddress('glEGLImageTargetTexStorageEXT'))
-        .asFunction<GlEGLImageTargetTexStorageEXT>());
+        .asFunction<GlEGLImageTargetTexStorageEXT>()) as void Function(int, Pointer<NativeType>, Pointer<Int32>)?;
   }
   glEGLImageTargetTextureStorageEXT = tryCall(() => lib.lookupFunction<
       GlEGLImageTargetTextureStorageEXTNative,
-      GlEGLImageTargetTextureStorageEXT>('glEGLImageTargetTextureStorageEXT'));
+      GlEGLImageTargetTextureStorageEXT>('glEGLImageTargetTextureStorageEXT')) as void Function(int, Pointer<NativeType>, Pointer<Int32>)?;
   if (glEGLImageTargetTextureStorageEXT == null) {
     glEGLImageTargetTextureStorageEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlEGLImageTargetTextureStorageEXTNative>>.fromAddress(
             _glGetProcAddress('glEGLImageTargetTextureStorageEXT'))
-        .asFunction<GlEGLImageTargetTextureStorageEXT>());
+        .asFunction<GlEGLImageTargetTextureStorageEXT>()) as void Function(int, Pointer<NativeType>, Pointer<Int32>)?;
   }
   glLabelObjectEXT = tryCall(() =>
       lib.lookupFunction<GlLabelObjectEXTNative, GlLabelObjectEXT>(
-          'glLabelObjectEXT'));
+          'glLabelObjectEXT')) as void Function(int, int, int, Pointer<NativeType>)?;
   if (glLabelObjectEXT == null) {
     glLabelObjectEXT = tryCall(() =>
         Pointer<NativeFunction<GlLabelObjectEXTNative>>.fromAddress(
                 _glGetProcAddress('glLabelObjectEXT'))
-            .asFunction<GlLabelObjectEXT>());
+            .asFunction<GlLabelObjectEXT>()) as void Function(int, int, int, Pointer<NativeType>)?;
   }
   glGetObjectLabelEXT = tryCall(() =>
       lib.lookupFunction<GlGetObjectLabelEXTNative, GlGetObjectLabelEXT>(
-          'glGetObjectLabelEXT'));
+          'glGetObjectLabelEXT')) as void Function(int, int, int, Pointer<Int32>, Pointer<NativeType>)?;
   if (glGetObjectLabelEXT == null) {
     glGetObjectLabelEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetObjectLabelEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetObjectLabelEXT'))
-            .asFunction<GlGetObjectLabelEXT>());
+            .asFunction<GlGetObjectLabelEXT>()) as void Function(int, int, int, Pointer<Int32>, Pointer<NativeType>)?;
   }
   glInsertEventMarkerEXT = tryCall(() =>
       lib.lookupFunction<GlInsertEventMarkerEXTNative, GlInsertEventMarkerEXT>(
-          'glInsertEventMarkerEXT'));
+          'glInsertEventMarkerEXT')) as void Function(int, Pointer<NativeType>)?;
   if (glInsertEventMarkerEXT == null) {
     glInsertEventMarkerEXT = tryCall(() =>
         Pointer<NativeFunction<GlInsertEventMarkerEXTNative>>.fromAddress(
                 _glGetProcAddress('glInsertEventMarkerEXT'))
-            .asFunction<GlInsertEventMarkerEXT>());
+            .asFunction<GlInsertEventMarkerEXT>()) as void Function(int, Pointer<NativeType>)?;
   }
   glPushGroupMarkerEXT = tryCall(() =>
       lib.lookupFunction<GlPushGroupMarkerEXTNative, GlPushGroupMarkerEXT>(
-          'glPushGroupMarkerEXT'));
+          'glPushGroupMarkerEXT')) as void Function(int, Pointer<NativeType>)?;
   if (glPushGroupMarkerEXT == null) {
     glPushGroupMarkerEXT = tryCall(() =>
         Pointer<NativeFunction<GlPushGroupMarkerEXTNative>>.fromAddress(
                 _glGetProcAddress('glPushGroupMarkerEXT'))
-            .asFunction<GlPushGroupMarkerEXT>());
+            .asFunction<GlPushGroupMarkerEXT>()) as void Function(int, Pointer<NativeType>)?;
   }
   glPopGroupMarkerEXT = tryCall(() =>
       lib.lookupFunction<GlPopGroupMarkerEXTNative, GlPopGroupMarkerEXT>(
-          'glPopGroupMarkerEXT'));
+          'glPopGroupMarkerEXT')) as void Function()?;
   if (glPopGroupMarkerEXT == null) {
     glPopGroupMarkerEXT = tryCall(() =>
         Pointer<NativeFunction<GlPopGroupMarkerEXTNative>>.fromAddress(
                 _glGetProcAddress('glPopGroupMarkerEXT'))
-            .asFunction<GlPopGroupMarkerEXT>());
+            .asFunction<GlPopGroupMarkerEXT>()) as void Function()?;
   }
   glMatrixLoadfEXT = tryCall(() =>
       lib.lookupFunction<GlMatrixLoadfEXTNative, GlMatrixLoadfEXT>(
-          'glMatrixLoadfEXT'));
+          'glMatrixLoadfEXT')) as void Function(int, Pointer<Float>)?;
   if (glMatrixLoadfEXT == null) {
     glMatrixLoadfEXT = tryCall(() =>
         Pointer<NativeFunction<GlMatrixLoadfEXTNative>>.fromAddress(
                 _glGetProcAddress('glMatrixLoadfEXT'))
-            .asFunction<GlMatrixLoadfEXT>());
+            .asFunction<GlMatrixLoadfEXT>()) as void Function(int, Pointer<Float>)?;
   }
   glMatrixLoaddEXT = tryCall(() =>
       lib.lookupFunction<GlMatrixLoaddEXTNative, GlMatrixLoaddEXT>(
-          'glMatrixLoaddEXT'));
+          'glMatrixLoaddEXT')) as void Function(int, Pointer<Double>)?;
   if (glMatrixLoaddEXT == null) {
     glMatrixLoaddEXT = tryCall(() =>
         Pointer<NativeFunction<GlMatrixLoaddEXTNative>>.fromAddress(
                 _glGetProcAddress('glMatrixLoaddEXT'))
-            .asFunction<GlMatrixLoaddEXT>());
+            .asFunction<GlMatrixLoaddEXT>()) as void Function(int, Pointer<Double>)?;
   }
   glMatrixMultfEXT = tryCall(() =>
       lib.lookupFunction<GlMatrixMultfEXTNative, GlMatrixMultfEXT>(
-          'glMatrixMultfEXT'));
+          'glMatrixMultfEXT')) as void Function(int, Pointer<Float>)?;
   if (glMatrixMultfEXT == null) {
     glMatrixMultfEXT = tryCall(() =>
         Pointer<NativeFunction<GlMatrixMultfEXTNative>>.fromAddress(
                 _glGetProcAddress('glMatrixMultfEXT'))
-            .asFunction<GlMatrixMultfEXT>());
+            .asFunction<GlMatrixMultfEXT>()) as void Function(int, Pointer<Float>)?;
   }
   glMatrixMultdEXT = tryCall(() =>
       lib.lookupFunction<GlMatrixMultdEXTNative, GlMatrixMultdEXT>(
-          'glMatrixMultdEXT'));
+          'glMatrixMultdEXT')) as void Function(int, Pointer<Double>)?;
   if (glMatrixMultdEXT == null) {
     glMatrixMultdEXT = tryCall(() =>
         Pointer<NativeFunction<GlMatrixMultdEXTNative>>.fromAddress(
                 _glGetProcAddress('glMatrixMultdEXT'))
-            .asFunction<GlMatrixMultdEXT>());
+            .asFunction<GlMatrixMultdEXT>()) as void Function(int, Pointer<Double>)?;
   }
   glMatrixLoadIdentityEXT = tryCall(() => lib.lookupFunction<
       GlMatrixLoadIdentityEXTNative,
-      GlMatrixLoadIdentityEXT>('glMatrixLoadIdentityEXT'));
+      GlMatrixLoadIdentityEXT>('glMatrixLoadIdentityEXT')) as void Function(int)?;
   if (glMatrixLoadIdentityEXT == null) {
     glMatrixLoadIdentityEXT = tryCall(() =>
         Pointer<NativeFunction<GlMatrixLoadIdentityEXTNative>>.fromAddress(
                 _glGetProcAddress('glMatrixLoadIdentityEXT'))
-            .asFunction<GlMatrixLoadIdentityEXT>());
+            .asFunction<GlMatrixLoadIdentityEXT>()) as void Function(int)?;
   }
   glMatrixRotatefEXT = tryCall(() =>
       lib.lookupFunction<GlMatrixRotatefEXTNative, GlMatrixRotatefEXT>(
-          'glMatrixRotatefEXT'));
+          'glMatrixRotatefEXT')) as void Function(int, double, double, double, double)?;
   if (glMatrixRotatefEXT == null) {
     glMatrixRotatefEXT = tryCall(() =>
         Pointer<NativeFunction<GlMatrixRotatefEXTNative>>.fromAddress(
                 _glGetProcAddress('glMatrixRotatefEXT'))
-            .asFunction<GlMatrixRotatefEXT>());
+            .asFunction<GlMatrixRotatefEXT>()) as void Function(int, double, double, double, double)?;
   }
   glMatrixRotatedEXT = tryCall(() =>
       lib.lookupFunction<GlMatrixRotatedEXTNative, GlMatrixRotatedEXT>(
-          'glMatrixRotatedEXT'));
+          'glMatrixRotatedEXT')) as void Function(int, double, double, double, double)?;
   if (glMatrixRotatedEXT == null) {
     glMatrixRotatedEXT = tryCall(() =>
         Pointer<NativeFunction<GlMatrixRotatedEXTNative>>.fromAddress(
                 _glGetProcAddress('glMatrixRotatedEXT'))
-            .asFunction<GlMatrixRotatedEXT>());
+            .asFunction<GlMatrixRotatedEXT>()) as void Function(int, double, double, double, double)?;
   }
   glMatrixScalefEXT = tryCall(() =>
       lib.lookupFunction<GlMatrixScalefEXTNative, GlMatrixScalefEXT>(
-          'glMatrixScalefEXT'));
+          'glMatrixScalefEXT')) as void Function(int, double, double, double)?;
   if (glMatrixScalefEXT == null) {
     glMatrixScalefEXT = tryCall(() =>
         Pointer<NativeFunction<GlMatrixScalefEXTNative>>.fromAddress(
                 _glGetProcAddress('glMatrixScalefEXT'))
-            .asFunction<GlMatrixScalefEXT>());
+            .asFunction<GlMatrixScalefEXT>()) as void Function(int, double, double, double)?;
   }
   glMatrixScaledEXT = tryCall(() =>
       lib.lookupFunction<GlMatrixScaledEXTNative, GlMatrixScaledEXT>(
-          'glMatrixScaledEXT'));
+          'glMatrixScaledEXT')) as void Function(int, double, double, double)?;
   if (glMatrixScaledEXT == null) {
     glMatrixScaledEXT = tryCall(() =>
         Pointer<NativeFunction<GlMatrixScaledEXTNative>>.fromAddress(
                 _glGetProcAddress('glMatrixScaledEXT'))
-            .asFunction<GlMatrixScaledEXT>());
+            .asFunction<GlMatrixScaledEXT>()) as void Function(int, double, double, double)?;
   }
   glMatrixTranslatefEXT = tryCall(() =>
       lib.lookupFunction<GlMatrixTranslatefEXTNative, GlMatrixTranslatefEXT>(
-          'glMatrixTranslatefEXT'));
+          'glMatrixTranslatefEXT')) as void Function(int, double, double, double)?;
   if (glMatrixTranslatefEXT == null) {
     glMatrixTranslatefEXT = tryCall(() =>
         Pointer<NativeFunction<GlMatrixTranslatefEXTNative>>.fromAddress(
                 _glGetProcAddress('glMatrixTranslatefEXT'))
-            .asFunction<GlMatrixTranslatefEXT>());
+            .asFunction<GlMatrixTranslatefEXT>()) as void Function(int, double, double, double)?;
   }
   glMatrixTranslatedEXT = tryCall(() =>
       lib.lookupFunction<GlMatrixTranslatedEXTNative, GlMatrixTranslatedEXT>(
-          'glMatrixTranslatedEXT'));
+          'glMatrixTranslatedEXT')) as void Function(int, double, double, double)?;
   if (glMatrixTranslatedEXT == null) {
     glMatrixTranslatedEXT = tryCall(() =>
         Pointer<NativeFunction<GlMatrixTranslatedEXTNative>>.fromAddress(
                 _glGetProcAddress('glMatrixTranslatedEXT'))
-            .asFunction<GlMatrixTranslatedEXT>());
+            .asFunction<GlMatrixTranslatedEXT>()) as void Function(int, double, double, double)?;
   }
   glMatrixFrustumEXT = tryCall(() =>
       lib.lookupFunction<GlMatrixFrustumEXTNative, GlMatrixFrustumEXT>(
-          'glMatrixFrustumEXT'));
+          'glMatrixFrustumEXT')) as void Function(int, double, double, double, double, double, double)?;
   if (glMatrixFrustumEXT == null) {
     glMatrixFrustumEXT = tryCall(() =>
         Pointer<NativeFunction<GlMatrixFrustumEXTNative>>.fromAddress(
                 _glGetProcAddress('glMatrixFrustumEXT'))
-            .asFunction<GlMatrixFrustumEXT>());
+            .asFunction<GlMatrixFrustumEXT>()) as void Function(int, double, double, double, double, double, double)?;
   }
   glMatrixOrthoEXT = tryCall(() =>
       lib.lookupFunction<GlMatrixOrthoEXTNative, GlMatrixOrthoEXT>(
-          'glMatrixOrthoEXT'));
+          'glMatrixOrthoEXT')) as void Function(int, double, double, double, double, double, double)?;
   if (glMatrixOrthoEXT == null) {
     glMatrixOrthoEXT = tryCall(() =>
         Pointer<NativeFunction<GlMatrixOrthoEXTNative>>.fromAddress(
                 _glGetProcAddress('glMatrixOrthoEXT'))
-            .asFunction<GlMatrixOrthoEXT>());
+            .asFunction<GlMatrixOrthoEXT>()) as void Function(int, double, double, double, double, double, double)?;
   }
   glMatrixPopEXT = tryCall(() => lib
-      .lookupFunction<GlMatrixPopEXTNative, GlMatrixPopEXT>('glMatrixPopEXT'));
+      .lookupFunction<GlMatrixPopEXTNative, GlMatrixPopEXT>('glMatrixPopEXT')) as void Function(int)?;
   if (glMatrixPopEXT == null) {
     glMatrixPopEXT = tryCall(() =>
         Pointer<NativeFunction<GlMatrixPopEXTNative>>.fromAddress(
                 _glGetProcAddress('glMatrixPopEXT'))
-            .asFunction<GlMatrixPopEXT>());
+            .asFunction<GlMatrixPopEXT>()) as void Function(int)?;
   }
   glMatrixPushEXT = tryCall(() =>
       lib.lookupFunction<GlMatrixPushEXTNative, GlMatrixPushEXT>(
-          'glMatrixPushEXT'));
+          'glMatrixPushEXT')) as void Function(int)?;
   if (glMatrixPushEXT == null) {
     glMatrixPushEXT = tryCall(() =>
         Pointer<NativeFunction<GlMatrixPushEXTNative>>.fromAddress(
                 _glGetProcAddress('glMatrixPushEXT'))
-            .asFunction<GlMatrixPushEXT>());
+            .asFunction<GlMatrixPushEXT>()) as void Function(int)?;
   }
   glClientAttribDefaultEXT = tryCall(() => lib.lookupFunction<
       GlClientAttribDefaultEXTNative,
-      GlClientAttribDefaultEXT>('glClientAttribDefaultEXT'));
+      GlClientAttribDefaultEXT>('glClientAttribDefaultEXT')) as void Function(int)?;
   if (glClientAttribDefaultEXT == null) {
     glClientAttribDefaultEXT = tryCall(() =>
         Pointer<NativeFunction<GlClientAttribDefaultEXTNative>>.fromAddress(
                 _glGetProcAddress('glClientAttribDefaultEXT'))
-            .asFunction<GlClientAttribDefaultEXT>());
+            .asFunction<GlClientAttribDefaultEXT>()) as void Function(int)?;
   }
   glPushClientAttribDefaultEXT = tryCall(() => lib.lookupFunction<
       GlPushClientAttribDefaultEXTNative,
-      GlPushClientAttribDefaultEXT>('glPushClientAttribDefaultEXT'));
+      GlPushClientAttribDefaultEXT>('glPushClientAttribDefaultEXT')) as void Function(int)?;
   if (glPushClientAttribDefaultEXT == null) {
     glPushClientAttribDefaultEXT = tryCall(() =>
         Pointer<NativeFunction<GlPushClientAttribDefaultEXTNative>>.fromAddress(
                 _glGetProcAddress('glPushClientAttribDefaultEXT'))
-            .asFunction<GlPushClientAttribDefaultEXT>());
+            .asFunction<GlPushClientAttribDefaultEXT>()) as void Function(int)?;
   }
   glTextureParameterfEXT = tryCall(() =>
       lib.lookupFunction<GlTextureParameterfEXTNative, GlTextureParameterfEXT>(
-          'glTextureParameterfEXT'));
+          'glTextureParameterfEXT')) as void Function(int, int, int, double)?;
   if (glTextureParameterfEXT == null) {
     glTextureParameterfEXT = tryCall(() =>
         Pointer<NativeFunction<GlTextureParameterfEXTNative>>.fromAddress(
                 _glGetProcAddress('glTextureParameterfEXT'))
-            .asFunction<GlTextureParameterfEXT>());
+            .asFunction<GlTextureParameterfEXT>()) as void Function(int, int, int, double)?;
   }
   glTextureParameterfvEXT = tryCall(() => lib.lookupFunction<
       GlTextureParameterfvEXTNative,
-      GlTextureParameterfvEXT>('glTextureParameterfvEXT'));
+      GlTextureParameterfvEXT>('glTextureParameterfvEXT')) as void Function(int, int, int, Pointer<Float>)?;
   if (glTextureParameterfvEXT == null) {
     glTextureParameterfvEXT = tryCall(() =>
         Pointer<NativeFunction<GlTextureParameterfvEXTNative>>.fromAddress(
                 _glGetProcAddress('glTextureParameterfvEXT'))
-            .asFunction<GlTextureParameterfvEXT>());
+            .asFunction<GlTextureParameterfvEXT>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glTextureParameteriEXT = tryCall(() =>
       lib.lookupFunction<GlTextureParameteriEXTNative, GlTextureParameteriEXT>(
-          'glTextureParameteriEXT'));
+          'glTextureParameteriEXT')) as void Function(int, int, int, int)?;
   if (glTextureParameteriEXT == null) {
     glTextureParameteriEXT = tryCall(() =>
         Pointer<NativeFunction<GlTextureParameteriEXTNative>>.fromAddress(
                 _glGetProcAddress('glTextureParameteriEXT'))
-            .asFunction<GlTextureParameteriEXT>());
+            .asFunction<GlTextureParameteriEXT>()) as void Function(int, int, int, int)?;
   }
   glTextureParameterivEXT = tryCall(() => lib.lookupFunction<
       GlTextureParameterivEXTNative,
-      GlTextureParameterivEXT>('glTextureParameterivEXT'));
+      GlTextureParameterivEXT>('glTextureParameterivEXT')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glTextureParameterivEXT == null) {
     glTextureParameterivEXT = tryCall(() =>
         Pointer<NativeFunction<GlTextureParameterivEXTNative>>.fromAddress(
                 _glGetProcAddress('glTextureParameterivEXT'))
-            .asFunction<GlTextureParameterivEXT>());
+            .asFunction<GlTextureParameterivEXT>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glTextureImage1DEXT = tryCall(() =>
       lib.lookupFunction<GlTextureImage1DEXTNative, GlTextureImage1DEXT>(
-          'glTextureImage1DEXT'));
+          'glTextureImage1DEXT')) as void Function(int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glTextureImage1DEXT == null) {
     glTextureImage1DEXT = tryCall(() =>
         Pointer<NativeFunction<GlTextureImage1DEXTNative>>.fromAddress(
                 _glGetProcAddress('glTextureImage1DEXT'))
-            .asFunction<GlTextureImage1DEXT>());
+            .asFunction<GlTextureImage1DEXT>()) as void Function(int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glTextureImage2DEXT = tryCall(() =>
       lib.lookupFunction<GlTextureImage2DEXTNative, GlTextureImage2DEXT>(
-          'glTextureImage2DEXT'));
+          'glTextureImage2DEXT')) as void Function(int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glTextureImage2DEXT == null) {
     glTextureImage2DEXT = tryCall(() =>
         Pointer<NativeFunction<GlTextureImage2DEXTNative>>.fromAddress(
                 _glGetProcAddress('glTextureImage2DEXT'))
-            .asFunction<GlTextureImage2DEXT>());
+            .asFunction<GlTextureImage2DEXT>()) as void Function(int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glTextureSubImage1DEXT = tryCall(() =>
       lib.lookupFunction<GlTextureSubImage1DEXTNative, GlTextureSubImage1DEXT>(
-          'glTextureSubImage1DEXT'));
+          'glTextureSubImage1DEXT')) as void Function(int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glTextureSubImage1DEXT == null) {
     glTextureSubImage1DEXT = tryCall(() =>
         Pointer<NativeFunction<GlTextureSubImage1DEXTNative>>.fromAddress(
                 _glGetProcAddress('glTextureSubImage1DEXT'))
-            .asFunction<GlTextureSubImage1DEXT>());
+            .asFunction<GlTextureSubImage1DEXT>()) as void Function(int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glTextureSubImage2DEXT = tryCall(() =>
       lib.lookupFunction<GlTextureSubImage2DEXTNative, GlTextureSubImage2DEXT>(
-          'glTextureSubImage2DEXT'));
+          'glTextureSubImage2DEXT')) as void Function(int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glTextureSubImage2DEXT == null) {
     glTextureSubImage2DEXT = tryCall(() =>
         Pointer<NativeFunction<GlTextureSubImage2DEXTNative>>.fromAddress(
                 _glGetProcAddress('glTextureSubImage2DEXT'))
-            .asFunction<GlTextureSubImage2DEXT>());
+            .asFunction<GlTextureSubImage2DEXT>()) as void Function(int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glCopyTextureImage1DEXT = tryCall(() => lib.lookupFunction<
       GlCopyTextureImage1DEXTNative,
-      GlCopyTextureImage1DEXT>('glCopyTextureImage1DEXT'));
+      GlCopyTextureImage1DEXT>('glCopyTextureImage1DEXT')) as void Function(int, int, int, int, int, int, int, int)?;
   if (glCopyTextureImage1DEXT == null) {
     glCopyTextureImage1DEXT = tryCall(() =>
         Pointer<NativeFunction<GlCopyTextureImage1DEXTNative>>.fromAddress(
                 _glGetProcAddress('glCopyTextureImage1DEXT'))
-            .asFunction<GlCopyTextureImage1DEXT>());
+            .asFunction<GlCopyTextureImage1DEXT>()) as void Function(int, int, int, int, int, int, int, int)?;
   }
   glCopyTextureImage2DEXT = tryCall(() => lib.lookupFunction<
       GlCopyTextureImage2DEXTNative,
-      GlCopyTextureImage2DEXT>('glCopyTextureImage2DEXT'));
+      GlCopyTextureImage2DEXT>('glCopyTextureImage2DEXT')) as void Function(int, int, int, int, int, int, int, int, int)?;
   if (glCopyTextureImage2DEXT == null) {
     glCopyTextureImage2DEXT = tryCall(() =>
         Pointer<NativeFunction<GlCopyTextureImage2DEXTNative>>.fromAddress(
                 _glGetProcAddress('glCopyTextureImage2DEXT'))
-            .asFunction<GlCopyTextureImage2DEXT>());
+            .asFunction<GlCopyTextureImage2DEXT>()) as void Function(int, int, int, int, int, int, int, int, int)?;
   }
   glCopyTextureSubImage1DEXT = tryCall(() => lib.lookupFunction<
       GlCopyTextureSubImage1DEXTNative,
-      GlCopyTextureSubImage1DEXT>('glCopyTextureSubImage1DEXT'));
+      GlCopyTextureSubImage1DEXT>('glCopyTextureSubImage1DEXT')) as void Function(int, int, int, int, int, int, int)?;
   if (glCopyTextureSubImage1DEXT == null) {
     glCopyTextureSubImage1DEXT = tryCall(() =>
         Pointer<NativeFunction<GlCopyTextureSubImage1DEXTNative>>.fromAddress(
                 _glGetProcAddress('glCopyTextureSubImage1DEXT'))
-            .asFunction<GlCopyTextureSubImage1DEXT>());
+            .asFunction<GlCopyTextureSubImage1DEXT>()) as void Function(int, int, int, int, int, int, int)?;
   }
   glCopyTextureSubImage2DEXT = tryCall(() => lib.lookupFunction<
       GlCopyTextureSubImage2DEXTNative,
-      GlCopyTextureSubImage2DEXT>('glCopyTextureSubImage2DEXT'));
+      GlCopyTextureSubImage2DEXT>('glCopyTextureSubImage2DEXT')) as void Function(int, int, int, int, int, int, int, int, int)?;
   if (glCopyTextureSubImage2DEXT == null) {
     glCopyTextureSubImage2DEXT = tryCall(() =>
         Pointer<NativeFunction<GlCopyTextureSubImage2DEXTNative>>.fromAddress(
                 _glGetProcAddress('glCopyTextureSubImage2DEXT'))
-            .asFunction<GlCopyTextureSubImage2DEXT>());
+            .asFunction<GlCopyTextureSubImage2DEXT>()) as void Function(int, int, int, int, int, int, int, int, int)?;
   }
   glGetTextureImageEXT = tryCall(() =>
       lib.lookupFunction<GlGetTextureImageEXTNative, GlGetTextureImageEXT>(
-          'glGetTextureImageEXT'));
+          'glGetTextureImageEXT')) as void Function(int, int, int, int, int, Pointer<NativeType>)?;
   if (glGetTextureImageEXT == null) {
     glGetTextureImageEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetTextureImageEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetTextureImageEXT'))
-            .asFunction<GlGetTextureImageEXT>());
+            .asFunction<GlGetTextureImageEXT>()) as void Function(int, int, int, int, int, Pointer<NativeType>)?;
   }
   glGetTextureParameterfvEXT = tryCall(() => lib.lookupFunction<
       GlGetTextureParameterfvEXTNative,
-      GlGetTextureParameterfvEXT>('glGetTextureParameterfvEXT'));
+      GlGetTextureParameterfvEXT>('glGetTextureParameterfvEXT')) as void Function(int, int, int, Pointer<Float>)?;
   if (glGetTextureParameterfvEXT == null) {
     glGetTextureParameterfvEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetTextureParameterfvEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetTextureParameterfvEXT'))
-            .asFunction<GlGetTextureParameterfvEXT>());
+            .asFunction<GlGetTextureParameterfvEXT>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glGetTextureParameterivEXT = tryCall(() => lib.lookupFunction<
       GlGetTextureParameterivEXTNative,
-      GlGetTextureParameterivEXT>('glGetTextureParameterivEXT'));
+      GlGetTextureParameterivEXT>('glGetTextureParameterivEXT')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glGetTextureParameterivEXT == null) {
     glGetTextureParameterivEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetTextureParameterivEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetTextureParameterivEXT'))
-            .asFunction<GlGetTextureParameterivEXT>());
+            .asFunction<GlGetTextureParameterivEXT>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glGetTextureLevelParameterfvEXT = tryCall(() => lib.lookupFunction<
       GlGetTextureLevelParameterfvEXTNative,
-      GlGetTextureLevelParameterfvEXT>('glGetTextureLevelParameterfvEXT'));
+      GlGetTextureLevelParameterfvEXT>('glGetTextureLevelParameterfvEXT')) as void Function(int, int, int, int, Pointer<Float>)?;
   if (glGetTextureLevelParameterfvEXT == null) {
     glGetTextureLevelParameterfvEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetTextureLevelParameterfvEXTNative>>.fromAddress(
             _glGetProcAddress('glGetTextureLevelParameterfvEXT'))
-        .asFunction<GlGetTextureLevelParameterfvEXT>());
+        .asFunction<GlGetTextureLevelParameterfvEXT>()) as void Function(int, int, int, int, Pointer<Float>)?;
   }
   glGetTextureLevelParameterivEXT = tryCall(() => lib.lookupFunction<
       GlGetTextureLevelParameterivEXTNative,
-      GlGetTextureLevelParameterivEXT>('glGetTextureLevelParameterivEXT'));
+      GlGetTextureLevelParameterivEXT>('glGetTextureLevelParameterivEXT')) as void Function(int, int, int, int, Pointer<Int32>)?;
   if (glGetTextureLevelParameterivEXT == null) {
     glGetTextureLevelParameterivEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetTextureLevelParameterivEXTNative>>.fromAddress(
             _glGetProcAddress('glGetTextureLevelParameterivEXT'))
-        .asFunction<GlGetTextureLevelParameterivEXT>());
+        .asFunction<GlGetTextureLevelParameterivEXT>()) as void Function(int, int, int, int, Pointer<Int32>)?;
   }
   glTextureImage3DEXT = tryCall(() =>
       lib.lookupFunction<GlTextureImage3DEXTNative, GlTextureImage3DEXT>(
-          'glTextureImage3DEXT'));
+          'glTextureImage3DEXT')) as void Function(int, int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glTextureImage3DEXT == null) {
     glTextureImage3DEXT = tryCall(() =>
         Pointer<NativeFunction<GlTextureImage3DEXTNative>>.fromAddress(
                 _glGetProcAddress('glTextureImage3DEXT'))
-            .asFunction<GlTextureImage3DEXT>());
+            .asFunction<GlTextureImage3DEXT>()) as void Function(int, int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glTextureSubImage3DEXT = tryCall(() =>
       lib.lookupFunction<GlTextureSubImage3DEXTNative, GlTextureSubImage3DEXT>(
-          'glTextureSubImage3DEXT'));
+          'glTextureSubImage3DEXT')) as void Function(int, int, int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glTextureSubImage3DEXT == null) {
     glTextureSubImage3DEXT = tryCall(() =>
         Pointer<NativeFunction<GlTextureSubImage3DEXTNative>>.fromAddress(
                 _glGetProcAddress('glTextureSubImage3DEXT'))
-            .asFunction<GlTextureSubImage3DEXT>());
+            .asFunction<GlTextureSubImage3DEXT>()) as void Function(int, int, int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glCopyTextureSubImage3DEXT = tryCall(() => lib.lookupFunction<
       GlCopyTextureSubImage3DEXTNative,
-      GlCopyTextureSubImage3DEXT>('glCopyTextureSubImage3DEXT'));
+      GlCopyTextureSubImage3DEXT>('glCopyTextureSubImage3DEXT')) as void Function(int, int, int, int, int, int, int, int, int, int)?;
   if (glCopyTextureSubImage3DEXT == null) {
     glCopyTextureSubImage3DEXT = tryCall(() =>
         Pointer<NativeFunction<GlCopyTextureSubImage3DEXTNative>>.fromAddress(
                 _glGetProcAddress('glCopyTextureSubImage3DEXT'))
-            .asFunction<GlCopyTextureSubImage3DEXT>());
+            .asFunction<GlCopyTextureSubImage3DEXT>()) as void Function(int, int, int, int, int, int, int, int, int, int)?;
   }
   glBindMultiTextureEXT = tryCall(() =>
       lib.lookupFunction<GlBindMultiTextureEXTNative, GlBindMultiTextureEXT>(
-          'glBindMultiTextureEXT'));
+          'glBindMultiTextureEXT')) as void Function(int, int, int)?;
   if (glBindMultiTextureEXT == null) {
     glBindMultiTextureEXT = tryCall(() =>
         Pointer<NativeFunction<GlBindMultiTextureEXTNative>>.fromAddress(
                 _glGetProcAddress('glBindMultiTextureEXT'))
-            .asFunction<GlBindMultiTextureEXT>());
+            .asFunction<GlBindMultiTextureEXT>()) as void Function(int, int, int)?;
   }
   glMultiTexCoordPointerEXT = tryCall(() => lib.lookupFunction<
       GlMultiTexCoordPointerEXTNative,
-      GlMultiTexCoordPointerEXT>('glMultiTexCoordPointerEXT'));
+      GlMultiTexCoordPointerEXT>('glMultiTexCoordPointerEXT')) as void Function(int, int, int, int, int)?;
   if (glMultiTexCoordPointerEXT == null) {
     glMultiTexCoordPointerEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexCoordPointerEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexCoordPointerEXT'))
-            .asFunction<GlMultiTexCoordPointerEXT>());
+            .asFunction<GlMultiTexCoordPointerEXT>()) as void Function(int, int, int, int, int)?;
   }
   glMultiTexEnvfEXT = tryCall(() =>
       lib.lookupFunction<GlMultiTexEnvfEXTNative, GlMultiTexEnvfEXT>(
-          'glMultiTexEnvfEXT'));
+          'glMultiTexEnvfEXT')) as void Function(int, int, int, double)?;
   if (glMultiTexEnvfEXT == null) {
     glMultiTexEnvfEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexEnvfEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexEnvfEXT'))
-            .asFunction<GlMultiTexEnvfEXT>());
+            .asFunction<GlMultiTexEnvfEXT>()) as void Function(int, int, int, double)?;
   }
   glMultiTexEnvfvEXT = tryCall(() =>
       lib.lookupFunction<GlMultiTexEnvfvEXTNative, GlMultiTexEnvfvEXT>(
-          'glMultiTexEnvfvEXT'));
+          'glMultiTexEnvfvEXT')) as void Function(int, int, int, Pointer<Float>)?;
   if (glMultiTexEnvfvEXT == null) {
     glMultiTexEnvfvEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexEnvfvEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexEnvfvEXT'))
-            .asFunction<GlMultiTexEnvfvEXT>());
+            .asFunction<GlMultiTexEnvfvEXT>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glMultiTexEnviEXT = tryCall(() =>
       lib.lookupFunction<GlMultiTexEnviEXTNative, GlMultiTexEnviEXT>(
-          'glMultiTexEnviEXT'));
+          'glMultiTexEnviEXT')) as void Function(int, int, int, int)?;
   if (glMultiTexEnviEXT == null) {
     glMultiTexEnviEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexEnviEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexEnviEXT'))
-            .asFunction<GlMultiTexEnviEXT>());
+            .asFunction<GlMultiTexEnviEXT>()) as void Function(int, int, int, int)?;
   }
   glMultiTexEnvivEXT = tryCall(() =>
       lib.lookupFunction<GlMultiTexEnvivEXTNative, GlMultiTexEnvivEXT>(
-          'glMultiTexEnvivEXT'));
+          'glMultiTexEnvivEXT')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glMultiTexEnvivEXT == null) {
     glMultiTexEnvivEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexEnvivEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexEnvivEXT'))
-            .asFunction<GlMultiTexEnvivEXT>());
+            .asFunction<GlMultiTexEnvivEXT>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glMultiTexGendEXT = tryCall(() =>
       lib.lookupFunction<GlMultiTexGendEXTNative, GlMultiTexGendEXT>(
-          'glMultiTexGendEXT'));
+          'glMultiTexGendEXT')) as void Function(int, int, int, double)?;
   if (glMultiTexGendEXT == null) {
     glMultiTexGendEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexGendEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexGendEXT'))
-            .asFunction<GlMultiTexGendEXT>());
+            .asFunction<GlMultiTexGendEXT>()) as void Function(int, int, int, double)?;
   }
   glMultiTexGendvEXT = tryCall(() =>
       lib.lookupFunction<GlMultiTexGendvEXTNative, GlMultiTexGendvEXT>(
-          'glMultiTexGendvEXT'));
+          'glMultiTexGendvEXT')) as void Function(int, int, int, Pointer<Double>)?;
   if (glMultiTexGendvEXT == null) {
     glMultiTexGendvEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexGendvEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexGendvEXT'))
-            .asFunction<GlMultiTexGendvEXT>());
+            .asFunction<GlMultiTexGendvEXT>()) as void Function(int, int, int, Pointer<Double>)?;
   }
   glMultiTexGenfEXT = tryCall(() =>
       lib.lookupFunction<GlMultiTexGenfEXTNative, GlMultiTexGenfEXT>(
-          'glMultiTexGenfEXT'));
+          'glMultiTexGenfEXT')) as void Function(int, int, int, double)?;
   if (glMultiTexGenfEXT == null) {
     glMultiTexGenfEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexGenfEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexGenfEXT'))
-            .asFunction<GlMultiTexGenfEXT>());
+            .asFunction<GlMultiTexGenfEXT>()) as void Function(int, int, int, double)?;
   }
   glMultiTexGenfvEXT = tryCall(() =>
       lib.lookupFunction<GlMultiTexGenfvEXTNative, GlMultiTexGenfvEXT>(
-          'glMultiTexGenfvEXT'));
+          'glMultiTexGenfvEXT')) as void Function(int, int, int, Pointer<Float>)?;
   if (glMultiTexGenfvEXT == null) {
     glMultiTexGenfvEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexGenfvEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexGenfvEXT'))
-            .asFunction<GlMultiTexGenfvEXT>());
+            .asFunction<GlMultiTexGenfvEXT>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glMultiTexGeniEXT = tryCall(() =>
       lib.lookupFunction<GlMultiTexGeniEXTNative, GlMultiTexGeniEXT>(
-          'glMultiTexGeniEXT'));
+          'glMultiTexGeniEXT')) as void Function(int, int, int, int)?;
   if (glMultiTexGeniEXT == null) {
     glMultiTexGeniEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexGeniEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexGeniEXT'))
-            .asFunction<GlMultiTexGeniEXT>());
+            .asFunction<GlMultiTexGeniEXT>()) as void Function(int, int, int, int)?;
   }
   glMultiTexGenivEXT = tryCall(() =>
       lib.lookupFunction<GlMultiTexGenivEXTNative, GlMultiTexGenivEXT>(
-          'glMultiTexGenivEXT'));
+          'glMultiTexGenivEXT')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glMultiTexGenivEXT == null) {
     glMultiTexGenivEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexGenivEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexGenivEXT'))
-            .asFunction<GlMultiTexGenivEXT>());
+            .asFunction<GlMultiTexGenivEXT>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glGetMultiTexEnvfvEXT = tryCall(() =>
       lib.lookupFunction<GlGetMultiTexEnvfvEXTNative, GlGetMultiTexEnvfvEXT>(
-          'glGetMultiTexEnvfvEXT'));
+          'glGetMultiTexEnvfvEXT')) as void Function(int, int, int, Pointer<Float>)?;
   if (glGetMultiTexEnvfvEXT == null) {
     glGetMultiTexEnvfvEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetMultiTexEnvfvEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetMultiTexEnvfvEXT'))
-            .asFunction<GlGetMultiTexEnvfvEXT>());
+            .asFunction<GlGetMultiTexEnvfvEXT>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glGetMultiTexEnvivEXT = tryCall(() =>
       lib.lookupFunction<GlGetMultiTexEnvivEXTNative, GlGetMultiTexEnvivEXT>(
-          'glGetMultiTexEnvivEXT'));
+          'glGetMultiTexEnvivEXT')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glGetMultiTexEnvivEXT == null) {
     glGetMultiTexEnvivEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetMultiTexEnvivEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetMultiTexEnvivEXT'))
-            .asFunction<GlGetMultiTexEnvivEXT>());
+            .asFunction<GlGetMultiTexEnvivEXT>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glGetMultiTexGendvEXT = tryCall(() =>
       lib.lookupFunction<GlGetMultiTexGendvEXTNative, GlGetMultiTexGendvEXT>(
-          'glGetMultiTexGendvEXT'));
+          'glGetMultiTexGendvEXT')) as void Function(int, int, int, Pointer<Double>)?;
   if (glGetMultiTexGendvEXT == null) {
     glGetMultiTexGendvEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetMultiTexGendvEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetMultiTexGendvEXT'))
-            .asFunction<GlGetMultiTexGendvEXT>());
+            .asFunction<GlGetMultiTexGendvEXT>()) as void Function(int, int, int, Pointer<Double>)?;
   }
   glGetMultiTexGenfvEXT = tryCall(() =>
       lib.lookupFunction<GlGetMultiTexGenfvEXTNative, GlGetMultiTexGenfvEXT>(
-          'glGetMultiTexGenfvEXT'));
+          'glGetMultiTexGenfvEXT')) as void Function(int, int, int, Pointer<Float>)?;
   if (glGetMultiTexGenfvEXT == null) {
     glGetMultiTexGenfvEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetMultiTexGenfvEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetMultiTexGenfvEXT'))
-            .asFunction<GlGetMultiTexGenfvEXT>());
+            .asFunction<GlGetMultiTexGenfvEXT>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glGetMultiTexGenivEXT = tryCall(() =>
       lib.lookupFunction<GlGetMultiTexGenivEXTNative, GlGetMultiTexGenivEXT>(
-          'glGetMultiTexGenivEXT'));
+          'glGetMultiTexGenivEXT')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glGetMultiTexGenivEXT == null) {
     glGetMultiTexGenivEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetMultiTexGenivEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetMultiTexGenivEXT'))
-            .asFunction<GlGetMultiTexGenivEXT>());
+            .asFunction<GlGetMultiTexGenivEXT>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glMultiTexParameteriEXT = tryCall(() => lib.lookupFunction<
       GlMultiTexParameteriEXTNative,
-      GlMultiTexParameteriEXT>('glMultiTexParameteriEXT'));
+      GlMultiTexParameteriEXT>('glMultiTexParameteriEXT')) as void Function(int, int, int, int)?;
   if (glMultiTexParameteriEXT == null) {
     glMultiTexParameteriEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexParameteriEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexParameteriEXT'))
-            .asFunction<GlMultiTexParameteriEXT>());
+            .asFunction<GlMultiTexParameteriEXT>()) as void Function(int, int, int, int)?;
   }
   glMultiTexParameterivEXT = tryCall(() => lib.lookupFunction<
       GlMultiTexParameterivEXTNative,
-      GlMultiTexParameterivEXT>('glMultiTexParameterivEXT'));
+      GlMultiTexParameterivEXT>('glMultiTexParameterivEXT')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glMultiTexParameterivEXT == null) {
     glMultiTexParameterivEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexParameterivEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexParameterivEXT'))
-            .asFunction<GlMultiTexParameterivEXT>());
+            .asFunction<GlMultiTexParameterivEXT>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glMultiTexParameterfEXT = tryCall(() => lib.lookupFunction<
       GlMultiTexParameterfEXTNative,
-      GlMultiTexParameterfEXT>('glMultiTexParameterfEXT'));
+      GlMultiTexParameterfEXT>('glMultiTexParameterfEXT')) as void Function(int, int, int, double)?;
   if (glMultiTexParameterfEXT == null) {
     glMultiTexParameterfEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexParameterfEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexParameterfEXT'))
-            .asFunction<GlMultiTexParameterfEXT>());
+            .asFunction<GlMultiTexParameterfEXT>()) as void Function(int, int, int, double)?;
   }
   glMultiTexParameterfvEXT = tryCall(() => lib.lookupFunction<
       GlMultiTexParameterfvEXTNative,
-      GlMultiTexParameterfvEXT>('glMultiTexParameterfvEXT'));
+      GlMultiTexParameterfvEXT>('glMultiTexParameterfvEXT')) as void Function(int, int, int, Pointer<Float>)?;
   if (glMultiTexParameterfvEXT == null) {
     glMultiTexParameterfvEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexParameterfvEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexParameterfvEXT'))
-            .asFunction<GlMultiTexParameterfvEXT>());
+            .asFunction<GlMultiTexParameterfvEXT>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glMultiTexImage1DEXT = tryCall(() =>
       lib.lookupFunction<GlMultiTexImage1DEXTNative, GlMultiTexImage1DEXT>(
-          'glMultiTexImage1DEXT'));
+          'glMultiTexImage1DEXT')) as void Function(int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glMultiTexImage1DEXT == null) {
     glMultiTexImage1DEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexImage1DEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexImage1DEXT'))
-            .asFunction<GlMultiTexImage1DEXT>());
+            .asFunction<GlMultiTexImage1DEXT>()) as void Function(int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glMultiTexImage2DEXT = tryCall(() =>
       lib.lookupFunction<GlMultiTexImage2DEXTNative, GlMultiTexImage2DEXT>(
-          'glMultiTexImage2DEXT'));
+          'glMultiTexImage2DEXT')) as void Function(int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glMultiTexImage2DEXT == null) {
     glMultiTexImage2DEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexImage2DEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexImage2DEXT'))
-            .asFunction<GlMultiTexImage2DEXT>());
+            .asFunction<GlMultiTexImage2DEXT>()) as void Function(int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glMultiTexSubImage1DEXT = tryCall(() => lib.lookupFunction<
       GlMultiTexSubImage1DEXTNative,
-      GlMultiTexSubImage1DEXT>('glMultiTexSubImage1DEXT'));
+      GlMultiTexSubImage1DEXT>('glMultiTexSubImage1DEXT')) as void Function(int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glMultiTexSubImage1DEXT == null) {
     glMultiTexSubImage1DEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexSubImage1DEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexSubImage1DEXT'))
-            .asFunction<GlMultiTexSubImage1DEXT>());
+            .asFunction<GlMultiTexSubImage1DEXT>()) as void Function(int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glMultiTexSubImage2DEXT = tryCall(() => lib.lookupFunction<
       GlMultiTexSubImage2DEXTNative,
-      GlMultiTexSubImage2DEXT>('glMultiTexSubImage2DEXT'));
+      GlMultiTexSubImage2DEXT>('glMultiTexSubImage2DEXT')) as void Function(int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glMultiTexSubImage2DEXT == null) {
     glMultiTexSubImage2DEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexSubImage2DEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexSubImage2DEXT'))
-            .asFunction<GlMultiTexSubImage2DEXT>());
+            .asFunction<GlMultiTexSubImage2DEXT>()) as void Function(int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glCopyMultiTexImage1DEXT = tryCall(() => lib.lookupFunction<
       GlCopyMultiTexImage1DEXTNative,
-      GlCopyMultiTexImage1DEXT>('glCopyMultiTexImage1DEXT'));
+      GlCopyMultiTexImage1DEXT>('glCopyMultiTexImage1DEXT')) as void Function(int, int, int, int, int, int, int, int)?;
   if (glCopyMultiTexImage1DEXT == null) {
     glCopyMultiTexImage1DEXT = tryCall(() =>
         Pointer<NativeFunction<GlCopyMultiTexImage1DEXTNative>>.fromAddress(
                 _glGetProcAddress('glCopyMultiTexImage1DEXT'))
-            .asFunction<GlCopyMultiTexImage1DEXT>());
+            .asFunction<GlCopyMultiTexImage1DEXT>()) as void Function(int, int, int, int, int, int, int, int)?;
   }
   glCopyMultiTexImage2DEXT = tryCall(() => lib.lookupFunction<
       GlCopyMultiTexImage2DEXTNative,
-      GlCopyMultiTexImage2DEXT>('glCopyMultiTexImage2DEXT'));
+      GlCopyMultiTexImage2DEXT>('glCopyMultiTexImage2DEXT')) as void Function(int, int, int, int, int, int, int, int, int)?;
   if (glCopyMultiTexImage2DEXT == null) {
     glCopyMultiTexImage2DEXT = tryCall(() =>
         Pointer<NativeFunction<GlCopyMultiTexImage2DEXTNative>>.fromAddress(
                 _glGetProcAddress('glCopyMultiTexImage2DEXT'))
-            .asFunction<GlCopyMultiTexImage2DEXT>());
+            .asFunction<GlCopyMultiTexImage2DEXT>()) as void Function(int, int, int, int, int, int, int, int, int)?;
   }
   glCopyMultiTexSubImage1DEXT = tryCall(() => lib.lookupFunction<
       GlCopyMultiTexSubImage1DEXTNative,
-      GlCopyMultiTexSubImage1DEXT>('glCopyMultiTexSubImage1DEXT'));
+      GlCopyMultiTexSubImage1DEXT>('glCopyMultiTexSubImage1DEXT')) as void Function(int, int, int, int, int, int, int)?;
   if (glCopyMultiTexSubImage1DEXT == null) {
     glCopyMultiTexSubImage1DEXT = tryCall(() =>
         Pointer<NativeFunction<GlCopyMultiTexSubImage1DEXTNative>>.fromAddress(
                 _glGetProcAddress('glCopyMultiTexSubImage1DEXT'))
-            .asFunction<GlCopyMultiTexSubImage1DEXT>());
+            .asFunction<GlCopyMultiTexSubImage1DEXT>()) as void Function(int, int, int, int, int, int, int)?;
   }
   glCopyMultiTexSubImage2DEXT = tryCall(() => lib.lookupFunction<
       GlCopyMultiTexSubImage2DEXTNative,
-      GlCopyMultiTexSubImage2DEXT>('glCopyMultiTexSubImage2DEXT'));
+      GlCopyMultiTexSubImage2DEXT>('glCopyMultiTexSubImage2DEXT')) as void Function(int, int, int, int, int, int, int, int, int)?;
   if (glCopyMultiTexSubImage2DEXT == null) {
     glCopyMultiTexSubImage2DEXT = tryCall(() =>
         Pointer<NativeFunction<GlCopyMultiTexSubImage2DEXTNative>>.fromAddress(
                 _glGetProcAddress('glCopyMultiTexSubImage2DEXT'))
-            .asFunction<GlCopyMultiTexSubImage2DEXT>());
+            .asFunction<GlCopyMultiTexSubImage2DEXT>()) as void Function(int, int, int, int, int, int, int, int, int)?;
   }
   glGetMultiTexImageEXT = tryCall(() =>
       lib.lookupFunction<GlGetMultiTexImageEXTNative, GlGetMultiTexImageEXT>(
-          'glGetMultiTexImageEXT'));
+          'glGetMultiTexImageEXT')) as void Function(int, int, int, int, int, Pointer<NativeType>)?;
   if (glGetMultiTexImageEXT == null) {
     glGetMultiTexImageEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetMultiTexImageEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetMultiTexImageEXT'))
-            .asFunction<GlGetMultiTexImageEXT>());
+            .asFunction<GlGetMultiTexImageEXT>()) as void Function(int, int, int, int, int, Pointer<NativeType>)?;
   }
   glGetMultiTexParameterfvEXT = tryCall(() => lib.lookupFunction<
       GlGetMultiTexParameterfvEXTNative,
-      GlGetMultiTexParameterfvEXT>('glGetMultiTexParameterfvEXT'));
+      GlGetMultiTexParameterfvEXT>('glGetMultiTexParameterfvEXT')) as void Function(int, int, int, Pointer<Float>)?;
   if (glGetMultiTexParameterfvEXT == null) {
     glGetMultiTexParameterfvEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetMultiTexParameterfvEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetMultiTexParameterfvEXT'))
-            .asFunction<GlGetMultiTexParameterfvEXT>());
+            .asFunction<GlGetMultiTexParameterfvEXT>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glGetMultiTexParameterivEXT = tryCall(() => lib.lookupFunction<
       GlGetMultiTexParameterivEXTNative,
-      GlGetMultiTexParameterivEXT>('glGetMultiTexParameterivEXT'));
+      GlGetMultiTexParameterivEXT>('glGetMultiTexParameterivEXT')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glGetMultiTexParameterivEXT == null) {
     glGetMultiTexParameterivEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetMultiTexParameterivEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetMultiTexParameterivEXT'))
-            .asFunction<GlGetMultiTexParameterivEXT>());
+            .asFunction<GlGetMultiTexParameterivEXT>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glGetMultiTexLevelParameterfvEXT = tryCall(() => lib.lookupFunction<
       GlGetMultiTexLevelParameterfvEXTNative,
-      GlGetMultiTexLevelParameterfvEXT>('glGetMultiTexLevelParameterfvEXT'));
+      GlGetMultiTexLevelParameterfvEXT>('glGetMultiTexLevelParameterfvEXT')) as void Function(int, int, int, int, Pointer<Float>)?;
   if (glGetMultiTexLevelParameterfvEXT == null) {
     glGetMultiTexLevelParameterfvEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetMultiTexLevelParameterfvEXTNative>>.fromAddress(
             _glGetProcAddress('glGetMultiTexLevelParameterfvEXT'))
-        .asFunction<GlGetMultiTexLevelParameterfvEXT>());
+        .asFunction<GlGetMultiTexLevelParameterfvEXT>()) as void Function(int, int, int, int, Pointer<Float>)?;
   }
   glGetMultiTexLevelParameterivEXT = tryCall(() => lib.lookupFunction<
       GlGetMultiTexLevelParameterivEXTNative,
-      GlGetMultiTexLevelParameterivEXT>('glGetMultiTexLevelParameterivEXT'));
+      GlGetMultiTexLevelParameterivEXT>('glGetMultiTexLevelParameterivEXT')) as void Function(int, int, int, int, Pointer<Int32>)?;
   if (glGetMultiTexLevelParameterivEXT == null) {
     glGetMultiTexLevelParameterivEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetMultiTexLevelParameterivEXTNative>>.fromAddress(
             _glGetProcAddress('glGetMultiTexLevelParameterivEXT'))
-        .asFunction<GlGetMultiTexLevelParameterivEXT>());
+        .asFunction<GlGetMultiTexLevelParameterivEXT>()) as void Function(int, int, int, int, Pointer<Int32>)?;
   }
   glMultiTexImage3DEXT = tryCall(() =>
       lib.lookupFunction<GlMultiTexImage3DEXTNative, GlMultiTexImage3DEXT>(
-          'glMultiTexImage3DEXT'));
+          'glMultiTexImage3DEXT')) as void Function(int, int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glMultiTexImage3DEXT == null) {
     glMultiTexImage3DEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexImage3DEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexImage3DEXT'))
-            .asFunction<GlMultiTexImage3DEXT>());
+            .asFunction<GlMultiTexImage3DEXT>()) as void Function(int, int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glMultiTexSubImage3DEXT = tryCall(() => lib.lookupFunction<
       GlMultiTexSubImage3DEXTNative,
-      GlMultiTexSubImage3DEXT>('glMultiTexSubImage3DEXT'));
+      GlMultiTexSubImage3DEXT>('glMultiTexSubImage3DEXT')) as void Function(int, int, int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glMultiTexSubImage3DEXT == null) {
     glMultiTexSubImage3DEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexSubImage3DEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexSubImage3DEXT'))
-            .asFunction<GlMultiTexSubImage3DEXT>());
+            .asFunction<GlMultiTexSubImage3DEXT>()) as void Function(int, int, int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glCopyMultiTexSubImage3DEXT = tryCall(() => lib.lookupFunction<
       GlCopyMultiTexSubImage3DEXTNative,
-      GlCopyMultiTexSubImage3DEXT>('glCopyMultiTexSubImage3DEXT'));
+      GlCopyMultiTexSubImage3DEXT>('glCopyMultiTexSubImage3DEXT')) as void Function(int, int, int, int, int, int, int, int, int, int)?;
   if (glCopyMultiTexSubImage3DEXT == null) {
     glCopyMultiTexSubImage3DEXT = tryCall(() =>
         Pointer<NativeFunction<GlCopyMultiTexSubImage3DEXTNative>>.fromAddress(
                 _glGetProcAddress('glCopyMultiTexSubImage3DEXT'))
-            .asFunction<GlCopyMultiTexSubImage3DEXT>());
+            .asFunction<GlCopyMultiTexSubImage3DEXT>()) as void Function(int, int, int, int, int, int, int, int, int, int)?;
   }
   glEnableClientStateIndexedEXT = tryCall(() => lib.lookupFunction<
       GlEnableClientStateIndexedEXTNative,
-      GlEnableClientStateIndexedEXT>('glEnableClientStateIndexedEXT'));
+      GlEnableClientStateIndexedEXT>('glEnableClientStateIndexedEXT')) as void Function(int, int)?;
   if (glEnableClientStateIndexedEXT == null) {
     glEnableClientStateIndexedEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlEnableClientStateIndexedEXTNative>>.fromAddress(
             _glGetProcAddress('glEnableClientStateIndexedEXT'))
-        .asFunction<GlEnableClientStateIndexedEXT>());
+        .asFunction<GlEnableClientStateIndexedEXT>()) as void Function(int, int)?;
   }
   glDisableClientStateIndexedEXT = tryCall(() => lib.lookupFunction<
       GlDisableClientStateIndexedEXTNative,
-      GlDisableClientStateIndexedEXT>('glDisableClientStateIndexedEXT'));
+      GlDisableClientStateIndexedEXT>('glDisableClientStateIndexedEXT')) as void Function(int, int)?;
   if (glDisableClientStateIndexedEXT == null) {
     glDisableClientStateIndexedEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlDisableClientStateIndexedEXTNative>>.fromAddress(
             _glGetProcAddress('glDisableClientStateIndexedEXT'))
-        .asFunction<GlDisableClientStateIndexedEXT>());
+        .asFunction<GlDisableClientStateIndexedEXT>()) as void Function(int, int)?;
   }
   glGetFloatIndexedvEXT = tryCall(() =>
       lib.lookupFunction<GlGetFloatIndexedvEXTNative, GlGetFloatIndexedvEXT>(
-          'glGetFloatIndexedvEXT'));
+          'glGetFloatIndexedvEXT')) as void Function(int, int, Pointer<Float>)?;
   if (glGetFloatIndexedvEXT == null) {
     glGetFloatIndexedvEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetFloatIndexedvEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetFloatIndexedvEXT'))
-            .asFunction<GlGetFloatIndexedvEXT>());
+            .asFunction<GlGetFloatIndexedvEXT>()) as void Function(int, int, Pointer<Float>)?;
   }
   glGetDoubleIndexedvEXT = tryCall(() =>
       lib.lookupFunction<GlGetDoubleIndexedvEXTNative, GlGetDoubleIndexedvEXT>(
-          'glGetDoubleIndexedvEXT'));
+          'glGetDoubleIndexedvEXT')) as void Function(int, int, Pointer<Double>)?;
   if (glGetDoubleIndexedvEXT == null) {
     glGetDoubleIndexedvEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetDoubleIndexedvEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetDoubleIndexedvEXT'))
-            .asFunction<GlGetDoubleIndexedvEXT>());
+            .asFunction<GlGetDoubleIndexedvEXT>()) as void Function(int, int, Pointer<Double>)?;
   }
   glGetPointerIndexedvEXT = tryCall(() => lib.lookupFunction<
       GlGetPointerIndexedvEXTNative,
-      GlGetPointerIndexedvEXT>('glGetPointerIndexedvEXT'));
+      GlGetPointerIndexedvEXT>('glGetPointerIndexedvEXT')) as void Function(int, int, Pointer<NativeType>)?;
   if (glGetPointerIndexedvEXT == null) {
     glGetPointerIndexedvEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetPointerIndexedvEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetPointerIndexedvEXT'))
-            .asFunction<GlGetPointerIndexedvEXT>());
+            .asFunction<GlGetPointerIndexedvEXT>()) as void Function(int, int, Pointer<NativeType>)?;
   }
   glEnableIndexedEXT = tryCall(() =>
       lib.lookupFunction<GlEnableIndexedEXTNative, GlEnableIndexedEXT>(
-          'glEnableIndexedEXT'));
+          'glEnableIndexedEXT')) as void Function(int, int)?;
   if (glEnableIndexedEXT == null) {
     glEnableIndexedEXT = tryCall(() =>
         Pointer<NativeFunction<GlEnableIndexedEXTNative>>.fromAddress(
                 _glGetProcAddress('glEnableIndexedEXT'))
-            .asFunction<GlEnableIndexedEXT>());
+            .asFunction<GlEnableIndexedEXT>()) as void Function(int, int)?;
   }
   glDisableIndexedEXT = tryCall(() =>
       lib.lookupFunction<GlDisableIndexedEXTNative, GlDisableIndexedEXT>(
-          'glDisableIndexedEXT'));
+          'glDisableIndexedEXT')) as void Function(int, int)?;
   if (glDisableIndexedEXT == null) {
     glDisableIndexedEXT = tryCall(() =>
         Pointer<NativeFunction<GlDisableIndexedEXTNative>>.fromAddress(
                 _glGetProcAddress('glDisableIndexedEXT'))
-            .asFunction<GlDisableIndexedEXT>());
+            .asFunction<GlDisableIndexedEXT>()) as void Function(int, int)?;
   }
   glIsEnabledIndexedEXT = tryCall(() =>
       lib.lookupFunction<GlIsEnabledIndexedEXTNative, GlIsEnabledIndexedEXT>(
-          'glIsEnabledIndexedEXT'));
+          'glIsEnabledIndexedEXT')) as int Function(int, int)?;
   if (glIsEnabledIndexedEXT == null) {
     glIsEnabledIndexedEXT = tryCall(() =>
         Pointer<NativeFunction<GlIsEnabledIndexedEXTNative>>.fromAddress(
                 _glGetProcAddress('glIsEnabledIndexedEXT'))
-            .asFunction<GlIsEnabledIndexedEXT>());
+            .asFunction<GlIsEnabledIndexedEXT>()) as int Function(int, int)?;
   }
   glGetIntegerIndexedvEXT = tryCall(() => lib.lookupFunction<
       GlGetIntegerIndexedvEXTNative,
-      GlGetIntegerIndexedvEXT>('glGetIntegerIndexedvEXT'));
+      GlGetIntegerIndexedvEXT>('glGetIntegerIndexedvEXT')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetIntegerIndexedvEXT == null) {
     glGetIntegerIndexedvEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetIntegerIndexedvEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetIntegerIndexedvEXT'))
-            .asFunction<GlGetIntegerIndexedvEXT>());
+            .asFunction<GlGetIntegerIndexedvEXT>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glGetBooleanIndexedvEXT = tryCall(() => lib.lookupFunction<
       GlGetBooleanIndexedvEXTNative,
-      GlGetBooleanIndexedvEXT>('glGetBooleanIndexedvEXT'));
+      GlGetBooleanIndexedvEXT>('glGetBooleanIndexedvEXT')) as void Function(int, int, Pointer<NativeType>)?;
   if (glGetBooleanIndexedvEXT == null) {
     glGetBooleanIndexedvEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetBooleanIndexedvEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetBooleanIndexedvEXT'))
-            .asFunction<GlGetBooleanIndexedvEXT>());
+            .asFunction<GlGetBooleanIndexedvEXT>()) as void Function(int, int, Pointer<NativeType>)?;
   }
   glCompressedTextureImage3DEXT = tryCall(() => lib.lookupFunction<
       GlCompressedTextureImage3DEXTNative,
-      GlCompressedTextureImage3DEXT>('glCompressedTextureImage3DEXT'));
+      GlCompressedTextureImage3DEXT>('glCompressedTextureImage3DEXT')) as void Function(int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glCompressedTextureImage3DEXT == null) {
     glCompressedTextureImage3DEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlCompressedTextureImage3DEXTNative>>.fromAddress(
             _glGetProcAddress('glCompressedTextureImage3DEXT'))
-        .asFunction<GlCompressedTextureImage3DEXT>());
+        .asFunction<GlCompressedTextureImage3DEXT>()) as void Function(int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glCompressedTextureImage2DEXT = tryCall(() => lib.lookupFunction<
       GlCompressedTextureImage2DEXTNative,
-      GlCompressedTextureImage2DEXT>('glCompressedTextureImage2DEXT'));
+      GlCompressedTextureImage2DEXT>('glCompressedTextureImage2DEXT')) as void Function(int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glCompressedTextureImage2DEXT == null) {
     glCompressedTextureImage2DEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlCompressedTextureImage2DEXTNative>>.fromAddress(
             _glGetProcAddress('glCompressedTextureImage2DEXT'))
-        .asFunction<GlCompressedTextureImage2DEXT>());
+        .asFunction<GlCompressedTextureImage2DEXT>()) as void Function(int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glCompressedTextureImage1DEXT = tryCall(() => lib.lookupFunction<
       GlCompressedTextureImage1DEXTNative,
-      GlCompressedTextureImage1DEXT>('glCompressedTextureImage1DEXT'));
+      GlCompressedTextureImage1DEXT>('glCompressedTextureImage1DEXT')) as void Function(int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glCompressedTextureImage1DEXT == null) {
     glCompressedTextureImage1DEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlCompressedTextureImage1DEXTNative>>.fromAddress(
             _glGetProcAddress('glCompressedTextureImage1DEXT'))
-        .asFunction<GlCompressedTextureImage1DEXT>());
+        .asFunction<GlCompressedTextureImage1DEXT>()) as void Function(int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glCompressedTextureSubImage3DEXT = tryCall(() => lib.lookupFunction<
       GlCompressedTextureSubImage3DEXTNative,
-      GlCompressedTextureSubImage3DEXT>('glCompressedTextureSubImage3DEXT'));
+      GlCompressedTextureSubImage3DEXT>('glCompressedTextureSubImage3DEXT')) as void Function(int, int, int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glCompressedTextureSubImage3DEXT == null) {
     glCompressedTextureSubImage3DEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlCompressedTextureSubImage3DEXTNative>>.fromAddress(
             _glGetProcAddress('glCompressedTextureSubImage3DEXT'))
-        .asFunction<GlCompressedTextureSubImage3DEXT>());
+        .asFunction<GlCompressedTextureSubImage3DEXT>()) as void Function(int, int, int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glCompressedTextureSubImage2DEXT = tryCall(() => lib.lookupFunction<
       GlCompressedTextureSubImage2DEXTNative,
-      GlCompressedTextureSubImage2DEXT>('glCompressedTextureSubImage2DEXT'));
+      GlCompressedTextureSubImage2DEXT>('glCompressedTextureSubImage2DEXT')) as void Function(int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glCompressedTextureSubImage2DEXT == null) {
     glCompressedTextureSubImage2DEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlCompressedTextureSubImage2DEXTNative>>.fromAddress(
             _glGetProcAddress('glCompressedTextureSubImage2DEXT'))
-        .asFunction<GlCompressedTextureSubImage2DEXT>());
+        .asFunction<GlCompressedTextureSubImage2DEXT>()) as void Function(int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glCompressedTextureSubImage1DEXT = tryCall(() => lib.lookupFunction<
       GlCompressedTextureSubImage1DEXTNative,
-      GlCompressedTextureSubImage1DEXT>('glCompressedTextureSubImage1DEXT'));
+      GlCompressedTextureSubImage1DEXT>('glCompressedTextureSubImage1DEXT')) as void Function(int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glCompressedTextureSubImage1DEXT == null) {
     glCompressedTextureSubImage1DEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlCompressedTextureSubImage1DEXTNative>>.fromAddress(
             _glGetProcAddress('glCompressedTextureSubImage1DEXT'))
-        .asFunction<GlCompressedTextureSubImage1DEXT>());
+        .asFunction<GlCompressedTextureSubImage1DEXT>()) as void Function(int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glGetCompressedTextureImageEXT = tryCall(() => lib.lookupFunction<
       GlGetCompressedTextureImageEXTNative,
-      GlGetCompressedTextureImageEXT>('glGetCompressedTextureImageEXT'));
+      GlGetCompressedTextureImageEXT>('glGetCompressedTextureImageEXT')) as void Function(int, int, int, Pointer<NativeType>)?;
   if (glGetCompressedTextureImageEXT == null) {
     glGetCompressedTextureImageEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetCompressedTextureImageEXTNative>>.fromAddress(
             _glGetProcAddress('glGetCompressedTextureImageEXT'))
-        .asFunction<GlGetCompressedTextureImageEXT>());
+        .asFunction<GlGetCompressedTextureImageEXT>()) as void Function(int, int, int, Pointer<NativeType>)?;
   }
   glCompressedMultiTexImage3DEXT = tryCall(() => lib.lookupFunction<
       GlCompressedMultiTexImage3DEXTNative,
-      GlCompressedMultiTexImage3DEXT>('glCompressedMultiTexImage3DEXT'));
+      GlCompressedMultiTexImage3DEXT>('glCompressedMultiTexImage3DEXT')) as void Function(int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glCompressedMultiTexImage3DEXT == null) {
     glCompressedMultiTexImage3DEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlCompressedMultiTexImage3DEXTNative>>.fromAddress(
             _glGetProcAddress('glCompressedMultiTexImage3DEXT'))
-        .asFunction<GlCompressedMultiTexImage3DEXT>());
+        .asFunction<GlCompressedMultiTexImage3DEXT>()) as void Function(int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glCompressedMultiTexImage2DEXT = tryCall(() => lib.lookupFunction<
       GlCompressedMultiTexImage2DEXTNative,
-      GlCompressedMultiTexImage2DEXT>('glCompressedMultiTexImage2DEXT'));
+      GlCompressedMultiTexImage2DEXT>('glCompressedMultiTexImage2DEXT')) as void Function(int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glCompressedMultiTexImage2DEXT == null) {
     glCompressedMultiTexImage2DEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlCompressedMultiTexImage2DEXTNative>>.fromAddress(
             _glGetProcAddress('glCompressedMultiTexImage2DEXT'))
-        .asFunction<GlCompressedMultiTexImage2DEXT>());
+        .asFunction<GlCompressedMultiTexImage2DEXT>()) as void Function(int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glCompressedMultiTexImage1DEXT = tryCall(() => lib.lookupFunction<
       GlCompressedMultiTexImage1DEXTNative,
-      GlCompressedMultiTexImage1DEXT>('glCompressedMultiTexImage1DEXT'));
+      GlCompressedMultiTexImage1DEXT>('glCompressedMultiTexImage1DEXT')) as void Function(int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glCompressedMultiTexImage1DEXT == null) {
     glCompressedMultiTexImage1DEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlCompressedMultiTexImage1DEXTNative>>.fromAddress(
             _glGetProcAddress('glCompressedMultiTexImage1DEXT'))
-        .asFunction<GlCompressedMultiTexImage1DEXT>());
+        .asFunction<GlCompressedMultiTexImage1DEXT>()) as void Function(int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glCompressedMultiTexSubImage3DEXT = tryCall(() => lib.lookupFunction<
       GlCompressedMultiTexSubImage3DEXTNative,
-      GlCompressedMultiTexSubImage3DEXT>('glCompressedMultiTexSubImage3DEXT'));
+      GlCompressedMultiTexSubImage3DEXT>('glCompressedMultiTexSubImage3DEXT')) as void Function(int, int, int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glCompressedMultiTexSubImage3DEXT == null) {
     glCompressedMultiTexSubImage3DEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlCompressedMultiTexSubImage3DEXTNative>>.fromAddress(
             _glGetProcAddress('glCompressedMultiTexSubImage3DEXT'))
-        .asFunction<GlCompressedMultiTexSubImage3DEXT>());
+        .asFunction<GlCompressedMultiTexSubImage3DEXT>()) as void Function(int, int, int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glCompressedMultiTexSubImage2DEXT = tryCall(() => lib.lookupFunction<
       GlCompressedMultiTexSubImage2DEXTNative,
-      GlCompressedMultiTexSubImage2DEXT>('glCompressedMultiTexSubImage2DEXT'));
+      GlCompressedMultiTexSubImage2DEXT>('glCompressedMultiTexSubImage2DEXT')) as void Function(int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glCompressedMultiTexSubImage2DEXT == null) {
     glCompressedMultiTexSubImage2DEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlCompressedMultiTexSubImage2DEXTNative>>.fromAddress(
             _glGetProcAddress('glCompressedMultiTexSubImage2DEXT'))
-        .asFunction<GlCompressedMultiTexSubImage2DEXT>());
+        .asFunction<GlCompressedMultiTexSubImage2DEXT>()) as void Function(int, int, int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glCompressedMultiTexSubImage1DEXT = tryCall(() => lib.lookupFunction<
       GlCompressedMultiTexSubImage1DEXTNative,
-      GlCompressedMultiTexSubImage1DEXT>('glCompressedMultiTexSubImage1DEXT'));
+      GlCompressedMultiTexSubImage1DEXT>('glCompressedMultiTexSubImage1DEXT')) as void Function(int, int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glCompressedMultiTexSubImage1DEXT == null) {
     glCompressedMultiTexSubImage1DEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlCompressedMultiTexSubImage1DEXTNative>>.fromAddress(
             _glGetProcAddress('glCompressedMultiTexSubImage1DEXT'))
-        .asFunction<GlCompressedMultiTexSubImage1DEXT>());
+        .asFunction<GlCompressedMultiTexSubImage1DEXT>()) as void Function(int, int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glGetCompressedMultiTexImageEXT = tryCall(() => lib.lookupFunction<
       GlGetCompressedMultiTexImageEXTNative,
-      GlGetCompressedMultiTexImageEXT>('glGetCompressedMultiTexImageEXT'));
+      GlGetCompressedMultiTexImageEXT>('glGetCompressedMultiTexImageEXT')) as void Function(int, int, int, Pointer<NativeType>)?;
   if (glGetCompressedMultiTexImageEXT == null) {
     glGetCompressedMultiTexImageEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetCompressedMultiTexImageEXTNative>>.fromAddress(
             _glGetProcAddress('glGetCompressedMultiTexImageEXT'))
-        .asFunction<GlGetCompressedMultiTexImageEXT>());
+        .asFunction<GlGetCompressedMultiTexImageEXT>()) as void Function(int, int, int, Pointer<NativeType>)?;
   }
   glMatrixLoadTransposefEXT = tryCall(() => lib.lookupFunction<
       GlMatrixLoadTransposefEXTNative,
-      GlMatrixLoadTransposefEXT>('glMatrixLoadTransposefEXT'));
+      GlMatrixLoadTransposefEXT>('glMatrixLoadTransposefEXT')) as void Function(int, Pointer<Float>)?;
   if (glMatrixLoadTransposefEXT == null) {
     glMatrixLoadTransposefEXT = tryCall(() =>
         Pointer<NativeFunction<GlMatrixLoadTransposefEXTNative>>.fromAddress(
                 _glGetProcAddress('glMatrixLoadTransposefEXT'))
-            .asFunction<GlMatrixLoadTransposefEXT>());
+            .asFunction<GlMatrixLoadTransposefEXT>()) as void Function(int, Pointer<Float>)?;
   }
   glMatrixLoadTransposedEXT = tryCall(() => lib.lookupFunction<
       GlMatrixLoadTransposedEXTNative,
-      GlMatrixLoadTransposedEXT>('glMatrixLoadTransposedEXT'));
+      GlMatrixLoadTransposedEXT>('glMatrixLoadTransposedEXT')) as void Function(int, Pointer<Double>)?;
   if (glMatrixLoadTransposedEXT == null) {
     glMatrixLoadTransposedEXT = tryCall(() =>
         Pointer<NativeFunction<GlMatrixLoadTransposedEXTNative>>.fromAddress(
                 _glGetProcAddress('glMatrixLoadTransposedEXT'))
-            .asFunction<GlMatrixLoadTransposedEXT>());
+            .asFunction<GlMatrixLoadTransposedEXT>()) as void Function(int, Pointer<Double>)?;
   }
   glMatrixMultTransposefEXT = tryCall(() => lib.lookupFunction<
       GlMatrixMultTransposefEXTNative,
-      GlMatrixMultTransposefEXT>('glMatrixMultTransposefEXT'));
+      GlMatrixMultTransposefEXT>('glMatrixMultTransposefEXT')) as void Function(int, Pointer<Float>)?;
   if (glMatrixMultTransposefEXT == null) {
     glMatrixMultTransposefEXT = tryCall(() =>
         Pointer<NativeFunction<GlMatrixMultTransposefEXTNative>>.fromAddress(
                 _glGetProcAddress('glMatrixMultTransposefEXT'))
-            .asFunction<GlMatrixMultTransposefEXT>());
+            .asFunction<GlMatrixMultTransposefEXT>()) as void Function(int, Pointer<Float>)?;
   }
   glMatrixMultTransposedEXT = tryCall(() => lib.lookupFunction<
       GlMatrixMultTransposedEXTNative,
-      GlMatrixMultTransposedEXT>('glMatrixMultTransposedEXT'));
+      GlMatrixMultTransposedEXT>('glMatrixMultTransposedEXT')) as void Function(int, Pointer<Double>)?;
   if (glMatrixMultTransposedEXT == null) {
     glMatrixMultTransposedEXT = tryCall(() =>
         Pointer<NativeFunction<GlMatrixMultTransposedEXTNative>>.fromAddress(
                 _glGetProcAddress('glMatrixMultTransposedEXT'))
-            .asFunction<GlMatrixMultTransposedEXT>());
+            .asFunction<GlMatrixMultTransposedEXT>()) as void Function(int, Pointer<Double>)?;
   }
   glNamedBufferDataEXT = tryCall(() =>
       lib.lookupFunction<GlNamedBufferDataEXTNative, GlNamedBufferDataEXT>(
-          'glNamedBufferDataEXT'));
+          'glNamedBufferDataEXT')) as void Function(int, int, Pointer<NativeType>, int)?;
   if (glNamedBufferDataEXT == null) {
     glNamedBufferDataEXT = tryCall(() =>
         Pointer<NativeFunction<GlNamedBufferDataEXTNative>>.fromAddress(
                 _glGetProcAddress('glNamedBufferDataEXT'))
-            .asFunction<GlNamedBufferDataEXT>());
+            .asFunction<GlNamedBufferDataEXT>()) as void Function(int, int, Pointer<NativeType>, int)?;
   }
   glNamedBufferSubDataEXT = tryCall(() => lib.lookupFunction<
       GlNamedBufferSubDataEXTNative,
-      GlNamedBufferSubDataEXT>('glNamedBufferSubDataEXT'));
+      GlNamedBufferSubDataEXT>('glNamedBufferSubDataEXT')) as void Function(int, int, int, Pointer<NativeType>)?;
   if (glNamedBufferSubDataEXT == null) {
     glNamedBufferSubDataEXT = tryCall(() =>
         Pointer<NativeFunction<GlNamedBufferSubDataEXTNative>>.fromAddress(
                 _glGetProcAddress('glNamedBufferSubDataEXT'))
-            .asFunction<GlNamedBufferSubDataEXT>());
+            .asFunction<GlNamedBufferSubDataEXT>()) as void Function(int, int, int, Pointer<NativeType>)?;
   }
   glMapNamedBufferEXT = tryCall(() =>
       lib.lookupFunction<GlMapNamedBufferEXTNative, GlMapNamedBufferEXT>(
-          'glMapNamedBufferEXT'));
+          'glMapNamedBufferEXT')) as Pointer<NativeType> Function(int, int)?;
   if (glMapNamedBufferEXT == null) {
     glMapNamedBufferEXT = tryCall(() =>
         Pointer<NativeFunction<GlMapNamedBufferEXTNative>>.fromAddress(
                 _glGetProcAddress('glMapNamedBufferEXT'))
-            .asFunction<GlMapNamedBufferEXT>());
+            .asFunction<GlMapNamedBufferEXT>()) as Pointer<NativeType> Function(int, int)?;
   }
   glUnmapNamedBufferEXT = tryCall(() =>
       lib.lookupFunction<GlUnmapNamedBufferEXTNative, GlUnmapNamedBufferEXT>(
-          'glUnmapNamedBufferEXT'));
+          'glUnmapNamedBufferEXT')) as int Function(int)?;
   if (glUnmapNamedBufferEXT == null) {
     glUnmapNamedBufferEXT = tryCall(() =>
         Pointer<NativeFunction<GlUnmapNamedBufferEXTNative>>.fromAddress(
                 _glGetProcAddress('glUnmapNamedBufferEXT'))
-            .asFunction<GlUnmapNamedBufferEXT>());
+            .asFunction<GlUnmapNamedBufferEXT>()) as int Function(int)?;
   }
   glGetNamedBufferParameterivEXT = tryCall(() => lib.lookupFunction<
       GlGetNamedBufferParameterivEXTNative,
-      GlGetNamedBufferParameterivEXT>('glGetNamedBufferParameterivEXT'));
+      GlGetNamedBufferParameterivEXT>('glGetNamedBufferParameterivEXT')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetNamedBufferParameterivEXT == null) {
     glGetNamedBufferParameterivEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetNamedBufferParameterivEXTNative>>.fromAddress(
             _glGetProcAddress('glGetNamedBufferParameterivEXT'))
-        .asFunction<GlGetNamedBufferParameterivEXT>());
+        .asFunction<GlGetNamedBufferParameterivEXT>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glGetNamedBufferPointervEXT = tryCall(() => lib.lookupFunction<
       GlGetNamedBufferPointervEXTNative,
-      GlGetNamedBufferPointervEXT>('glGetNamedBufferPointervEXT'));
+      GlGetNamedBufferPointervEXT>('glGetNamedBufferPointervEXT')) as void Function(int, int, Pointer<NativeType>)?;
   if (glGetNamedBufferPointervEXT == null) {
     glGetNamedBufferPointervEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetNamedBufferPointervEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetNamedBufferPointervEXT'))
-            .asFunction<GlGetNamedBufferPointervEXT>());
+            .asFunction<GlGetNamedBufferPointervEXT>()) as void Function(int, int, Pointer<NativeType>)?;
   }
   glGetNamedBufferSubDataEXT = tryCall(() => lib.lookupFunction<
       GlGetNamedBufferSubDataEXTNative,
-      GlGetNamedBufferSubDataEXT>('glGetNamedBufferSubDataEXT'));
+      GlGetNamedBufferSubDataEXT>('glGetNamedBufferSubDataEXT')) as void Function(int, int, int, Pointer<NativeType>)?;
   if (glGetNamedBufferSubDataEXT == null) {
     glGetNamedBufferSubDataEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetNamedBufferSubDataEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetNamedBufferSubDataEXT'))
-            .asFunction<GlGetNamedBufferSubDataEXT>());
+            .asFunction<GlGetNamedBufferSubDataEXT>()) as void Function(int, int, int, Pointer<NativeType>)?;
   }
   glProgramUniform1fEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform1fEXTNative, GlProgramUniform1fEXT>(
-          'glProgramUniform1fEXT'));
+          'glProgramUniform1fEXT')) as void Function(int, int, double)?;
   if (glProgramUniform1fEXT == null) {
     glProgramUniform1fEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform1fEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform1fEXT'))
-            .asFunction<GlProgramUniform1fEXT>());
+            .asFunction<GlProgramUniform1fEXT>()) as void Function(int, int, double)?;
   }
   glProgramUniform2fEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform2fEXTNative, GlProgramUniform2fEXT>(
-          'glProgramUniform2fEXT'));
+          'glProgramUniform2fEXT')) as void Function(int, int, double, double)?;
   if (glProgramUniform2fEXT == null) {
     glProgramUniform2fEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform2fEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform2fEXT'))
-            .asFunction<GlProgramUniform2fEXT>());
+            .asFunction<GlProgramUniform2fEXT>()) as void Function(int, int, double, double)?;
   }
   glProgramUniform3fEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform3fEXTNative, GlProgramUniform3fEXT>(
-          'glProgramUniform3fEXT'));
+          'glProgramUniform3fEXT')) as void Function(int, int, double, double, double)?;
   if (glProgramUniform3fEXT == null) {
     glProgramUniform3fEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform3fEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform3fEXT'))
-            .asFunction<GlProgramUniform3fEXT>());
+            .asFunction<GlProgramUniform3fEXT>()) as void Function(int, int, double, double, double)?;
   }
   glProgramUniform4fEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform4fEXTNative, GlProgramUniform4fEXT>(
-          'glProgramUniform4fEXT'));
+          'glProgramUniform4fEXT')) as void Function(int, int, double, double, double, double)?;
   if (glProgramUniform4fEXT == null) {
     glProgramUniform4fEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform4fEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform4fEXT'))
-            .asFunction<GlProgramUniform4fEXT>());
+            .asFunction<GlProgramUniform4fEXT>()) as void Function(int, int, double, double, double, double)?;
   }
   glProgramUniform1iEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform1iEXTNative, GlProgramUniform1iEXT>(
-          'glProgramUniform1iEXT'));
+          'glProgramUniform1iEXT')) as void Function(int, int, int)?;
   if (glProgramUniform1iEXT == null) {
     glProgramUniform1iEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform1iEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform1iEXT'))
-            .asFunction<GlProgramUniform1iEXT>());
+            .asFunction<GlProgramUniform1iEXT>()) as void Function(int, int, int)?;
   }
   glProgramUniform2iEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform2iEXTNative, GlProgramUniform2iEXT>(
-          'glProgramUniform2iEXT'));
+          'glProgramUniform2iEXT')) as void Function(int, int, int, int)?;
   if (glProgramUniform2iEXT == null) {
     glProgramUniform2iEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform2iEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform2iEXT'))
-            .asFunction<GlProgramUniform2iEXT>());
+            .asFunction<GlProgramUniform2iEXT>()) as void Function(int, int, int, int)?;
   }
   glProgramUniform3iEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform3iEXTNative, GlProgramUniform3iEXT>(
-          'glProgramUniform3iEXT'));
+          'glProgramUniform3iEXT')) as void Function(int, int, int, int, int)?;
   if (glProgramUniform3iEXT == null) {
     glProgramUniform3iEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform3iEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform3iEXT'))
-            .asFunction<GlProgramUniform3iEXT>());
+            .asFunction<GlProgramUniform3iEXT>()) as void Function(int, int, int, int, int)?;
   }
   glProgramUniform4iEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform4iEXTNative, GlProgramUniform4iEXT>(
-          'glProgramUniform4iEXT'));
+          'glProgramUniform4iEXT')) as void Function(int, int, int, int, int, int)?;
   if (glProgramUniform4iEXT == null) {
     glProgramUniform4iEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform4iEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform4iEXT'))
-            .asFunction<GlProgramUniform4iEXT>());
+            .asFunction<GlProgramUniform4iEXT>()) as void Function(int, int, int, int, int, int)?;
   }
   glProgramUniform1fvEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform1fvEXTNative, GlProgramUniform1fvEXT>(
-          'glProgramUniform1fvEXT'));
+          'glProgramUniform1fvEXT')) as void Function(int, int, int, Pointer<Float>)?;
   if (glProgramUniform1fvEXT == null) {
     glProgramUniform1fvEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform1fvEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform1fvEXT'))
-            .asFunction<GlProgramUniform1fvEXT>());
+            .asFunction<GlProgramUniform1fvEXT>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glProgramUniform2fvEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform2fvEXTNative, GlProgramUniform2fvEXT>(
-          'glProgramUniform2fvEXT'));
+          'glProgramUniform2fvEXT')) as void Function(int, int, int, Pointer<Float>)?;
   if (glProgramUniform2fvEXT == null) {
     glProgramUniform2fvEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform2fvEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform2fvEXT'))
-            .asFunction<GlProgramUniform2fvEXT>());
+            .asFunction<GlProgramUniform2fvEXT>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glProgramUniform3fvEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform3fvEXTNative, GlProgramUniform3fvEXT>(
-          'glProgramUniform3fvEXT'));
+          'glProgramUniform3fvEXT')) as void Function(int, int, int, Pointer<Float>)?;
   if (glProgramUniform3fvEXT == null) {
     glProgramUniform3fvEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform3fvEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform3fvEXT'))
-            .asFunction<GlProgramUniform3fvEXT>());
+            .asFunction<GlProgramUniform3fvEXT>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glProgramUniform4fvEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform4fvEXTNative, GlProgramUniform4fvEXT>(
-          'glProgramUniform4fvEXT'));
+          'glProgramUniform4fvEXT')) as void Function(int, int, int, Pointer<Float>)?;
   if (glProgramUniform4fvEXT == null) {
     glProgramUniform4fvEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform4fvEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform4fvEXT'))
-            .asFunction<GlProgramUniform4fvEXT>());
+            .asFunction<GlProgramUniform4fvEXT>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glProgramUniform1ivEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform1ivEXTNative, GlProgramUniform1ivEXT>(
-          'glProgramUniform1ivEXT'));
+          'glProgramUniform1ivEXT')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glProgramUniform1ivEXT == null) {
     glProgramUniform1ivEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform1ivEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform1ivEXT'))
-            .asFunction<GlProgramUniform1ivEXT>());
+            .asFunction<GlProgramUniform1ivEXT>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glProgramUniform2ivEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform2ivEXTNative, GlProgramUniform2ivEXT>(
-          'glProgramUniform2ivEXT'));
+          'glProgramUniform2ivEXT')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glProgramUniform2ivEXT == null) {
     glProgramUniform2ivEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform2ivEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform2ivEXT'))
-            .asFunction<GlProgramUniform2ivEXT>());
+            .asFunction<GlProgramUniform2ivEXT>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glProgramUniform3ivEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform3ivEXTNative, GlProgramUniform3ivEXT>(
-          'glProgramUniform3ivEXT'));
+          'glProgramUniform3ivEXT')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glProgramUniform3ivEXT == null) {
     glProgramUniform3ivEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform3ivEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform3ivEXT'))
-            .asFunction<GlProgramUniform3ivEXT>());
+            .asFunction<GlProgramUniform3ivEXT>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glProgramUniform4ivEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform4ivEXTNative, GlProgramUniform4ivEXT>(
-          'glProgramUniform4ivEXT'));
+          'glProgramUniform4ivEXT')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glProgramUniform4ivEXT == null) {
     glProgramUniform4ivEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform4ivEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform4ivEXT'))
-            .asFunction<GlProgramUniform4ivEXT>());
+            .asFunction<GlProgramUniform4ivEXT>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glProgramUniformMatrix2fvEXT = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix2fvEXTNative,
-      GlProgramUniformMatrix2fvEXT>('glProgramUniformMatrix2fvEXT'));
+      GlProgramUniformMatrix2fvEXT>('glProgramUniformMatrix2fvEXT')) as void Function(int, int, int, int, Pointer<Float>)?;
   if (glProgramUniformMatrix2fvEXT == null) {
     glProgramUniformMatrix2fvEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformMatrix2fvEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformMatrix2fvEXT'))
-            .asFunction<GlProgramUniformMatrix2fvEXT>());
+            .asFunction<GlProgramUniformMatrix2fvEXT>()) as void Function(int, int, int, int, Pointer<Float>)?;
   }
   glProgramUniformMatrix3fvEXT = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix3fvEXTNative,
-      GlProgramUniformMatrix3fvEXT>('glProgramUniformMatrix3fvEXT'));
+      GlProgramUniformMatrix3fvEXT>('glProgramUniformMatrix3fvEXT')) as void Function(int, int, int, int, Pointer<Float>)?;
   if (glProgramUniformMatrix3fvEXT == null) {
     glProgramUniformMatrix3fvEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformMatrix3fvEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformMatrix3fvEXT'))
-            .asFunction<GlProgramUniformMatrix3fvEXT>());
+            .asFunction<GlProgramUniformMatrix3fvEXT>()) as void Function(int, int, int, int, Pointer<Float>)?;
   }
   glProgramUniformMatrix4fvEXT = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix4fvEXTNative,
-      GlProgramUniformMatrix4fvEXT>('glProgramUniformMatrix4fvEXT'));
+      GlProgramUniformMatrix4fvEXT>('glProgramUniformMatrix4fvEXT')) as void Function(int, int, int, int, Pointer<Float>)?;
   if (glProgramUniformMatrix4fvEXT == null) {
     glProgramUniformMatrix4fvEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformMatrix4fvEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformMatrix4fvEXT'))
-            .asFunction<GlProgramUniformMatrix4fvEXT>());
+            .asFunction<GlProgramUniformMatrix4fvEXT>()) as void Function(int, int, int, int, Pointer<Float>)?;
   }
   glProgramUniformMatrix2x3fvEXT = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix2x3fvEXTNative,
-      GlProgramUniformMatrix2x3fvEXT>('glProgramUniformMatrix2x3fvEXT'));
+      GlProgramUniformMatrix2x3fvEXT>('glProgramUniformMatrix2x3fvEXT')) as void Function(int, int, int, int, Pointer<Float>)?;
   if (glProgramUniformMatrix2x3fvEXT == null) {
     glProgramUniformMatrix2x3fvEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlProgramUniformMatrix2x3fvEXTNative>>.fromAddress(
             _glGetProcAddress('glProgramUniformMatrix2x3fvEXT'))
-        .asFunction<GlProgramUniformMatrix2x3fvEXT>());
+        .asFunction<GlProgramUniformMatrix2x3fvEXT>()) as void Function(int, int, int, int, Pointer<Float>)?;
   }
   glProgramUniformMatrix3x2fvEXT = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix3x2fvEXTNative,
-      GlProgramUniformMatrix3x2fvEXT>('glProgramUniformMatrix3x2fvEXT'));
+      GlProgramUniformMatrix3x2fvEXT>('glProgramUniformMatrix3x2fvEXT')) as void Function(int, int, int, int, Pointer<Float>)?;
   if (glProgramUniformMatrix3x2fvEXT == null) {
     glProgramUniformMatrix3x2fvEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlProgramUniformMatrix3x2fvEXTNative>>.fromAddress(
             _glGetProcAddress('glProgramUniformMatrix3x2fvEXT'))
-        .asFunction<GlProgramUniformMatrix3x2fvEXT>());
+        .asFunction<GlProgramUniformMatrix3x2fvEXT>()) as void Function(int, int, int, int, Pointer<Float>)?;
   }
   glProgramUniformMatrix2x4fvEXT = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix2x4fvEXTNative,
-      GlProgramUniformMatrix2x4fvEXT>('glProgramUniformMatrix2x4fvEXT'));
+      GlProgramUniformMatrix2x4fvEXT>('glProgramUniformMatrix2x4fvEXT')) as void Function(int, int, int, int, Pointer<Float>)?;
   if (glProgramUniformMatrix2x4fvEXT == null) {
     glProgramUniformMatrix2x4fvEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlProgramUniformMatrix2x4fvEXTNative>>.fromAddress(
             _glGetProcAddress('glProgramUniformMatrix2x4fvEXT'))
-        .asFunction<GlProgramUniformMatrix2x4fvEXT>());
+        .asFunction<GlProgramUniformMatrix2x4fvEXT>()) as void Function(int, int, int, int, Pointer<Float>)?;
   }
   glProgramUniformMatrix4x2fvEXT = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix4x2fvEXTNative,
-      GlProgramUniformMatrix4x2fvEXT>('glProgramUniformMatrix4x2fvEXT'));
+      GlProgramUniformMatrix4x2fvEXT>('glProgramUniformMatrix4x2fvEXT')) as void Function(int, int, int, int, Pointer<Float>)?;
   if (glProgramUniformMatrix4x2fvEXT == null) {
     glProgramUniformMatrix4x2fvEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlProgramUniformMatrix4x2fvEXTNative>>.fromAddress(
             _glGetProcAddress('glProgramUniformMatrix4x2fvEXT'))
-        .asFunction<GlProgramUniformMatrix4x2fvEXT>());
+        .asFunction<GlProgramUniformMatrix4x2fvEXT>()) as void Function(int, int, int, int, Pointer<Float>)?;
   }
   glProgramUniformMatrix3x4fvEXT = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix3x4fvEXTNative,
-      GlProgramUniformMatrix3x4fvEXT>('glProgramUniformMatrix3x4fvEXT'));
+      GlProgramUniformMatrix3x4fvEXT>('glProgramUniformMatrix3x4fvEXT')) as void Function(int, int, int, int, Pointer<Float>)?;
   if (glProgramUniformMatrix3x4fvEXT == null) {
     glProgramUniformMatrix3x4fvEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlProgramUniformMatrix3x4fvEXTNative>>.fromAddress(
             _glGetProcAddress('glProgramUniformMatrix3x4fvEXT'))
-        .asFunction<GlProgramUniformMatrix3x4fvEXT>());
+        .asFunction<GlProgramUniformMatrix3x4fvEXT>()) as void Function(int, int, int, int, Pointer<Float>)?;
   }
   glProgramUniformMatrix4x3fvEXT = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix4x3fvEXTNative,
-      GlProgramUniformMatrix4x3fvEXT>('glProgramUniformMatrix4x3fvEXT'));
+      GlProgramUniformMatrix4x3fvEXT>('glProgramUniformMatrix4x3fvEXT')) as void Function(int, int, int, int, Pointer<Float>)?;
   if (glProgramUniformMatrix4x3fvEXT == null) {
     glProgramUniformMatrix4x3fvEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlProgramUniformMatrix4x3fvEXTNative>>.fromAddress(
             _glGetProcAddress('glProgramUniformMatrix4x3fvEXT'))
-        .asFunction<GlProgramUniformMatrix4x3fvEXT>());
+        .asFunction<GlProgramUniformMatrix4x3fvEXT>()) as void Function(int, int, int, int, Pointer<Float>)?;
   }
   glTextureBufferEXT = tryCall(() =>
       lib.lookupFunction<GlTextureBufferEXTNative, GlTextureBufferEXT>(
-          'glTextureBufferEXT'));
+          'glTextureBufferEXT')) as void Function(int, int, int, int)?;
   if (glTextureBufferEXT == null) {
     glTextureBufferEXT = tryCall(() =>
         Pointer<NativeFunction<GlTextureBufferEXTNative>>.fromAddress(
                 _glGetProcAddress('glTextureBufferEXT'))
-            .asFunction<GlTextureBufferEXT>());
+            .asFunction<GlTextureBufferEXT>()) as void Function(int, int, int, int)?;
   }
   glMultiTexBufferEXT = tryCall(() =>
       lib.lookupFunction<GlMultiTexBufferEXTNative, GlMultiTexBufferEXT>(
-          'glMultiTexBufferEXT'));
+          'glMultiTexBufferEXT')) as void Function(int, int, int, int)?;
   if (glMultiTexBufferEXT == null) {
     glMultiTexBufferEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexBufferEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexBufferEXT'))
-            .asFunction<GlMultiTexBufferEXT>());
+            .asFunction<GlMultiTexBufferEXT>()) as void Function(int, int, int, int)?;
   }
   glTextureParameterIivEXT = tryCall(() => lib.lookupFunction<
       GlTextureParameterIivEXTNative,
-      GlTextureParameterIivEXT>('glTextureParameterIivEXT'));
+      GlTextureParameterIivEXT>('glTextureParameterIivEXT')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glTextureParameterIivEXT == null) {
     glTextureParameterIivEXT = tryCall(() =>
         Pointer<NativeFunction<GlTextureParameterIivEXTNative>>.fromAddress(
                 _glGetProcAddress('glTextureParameterIivEXT'))
-            .asFunction<GlTextureParameterIivEXT>());
+            .asFunction<GlTextureParameterIivEXT>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glTextureParameterIuivEXT = tryCall(() => lib.lookupFunction<
       GlTextureParameterIuivEXTNative,
-      GlTextureParameterIuivEXT>('glTextureParameterIuivEXT'));
+      GlTextureParameterIuivEXT>('glTextureParameterIuivEXT')) as void Function(int, int, int, Pointer<Uint32>)?;
   if (glTextureParameterIuivEXT == null) {
     glTextureParameterIuivEXT = tryCall(() =>
         Pointer<NativeFunction<GlTextureParameterIuivEXTNative>>.fromAddress(
                 _glGetProcAddress('glTextureParameterIuivEXT'))
-            .asFunction<GlTextureParameterIuivEXT>());
+            .asFunction<GlTextureParameterIuivEXT>()) as void Function(int, int, int, Pointer<Uint32>)?;
   }
   glGetTextureParameterIivEXT = tryCall(() => lib.lookupFunction<
       GlGetTextureParameterIivEXTNative,
-      GlGetTextureParameterIivEXT>('glGetTextureParameterIivEXT'));
+      GlGetTextureParameterIivEXT>('glGetTextureParameterIivEXT')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glGetTextureParameterIivEXT == null) {
     glGetTextureParameterIivEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetTextureParameterIivEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetTextureParameterIivEXT'))
-            .asFunction<GlGetTextureParameterIivEXT>());
+            .asFunction<GlGetTextureParameterIivEXT>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glGetTextureParameterIuivEXT = tryCall(() => lib.lookupFunction<
       GlGetTextureParameterIuivEXTNative,
-      GlGetTextureParameterIuivEXT>('glGetTextureParameterIuivEXT'));
+      GlGetTextureParameterIuivEXT>('glGetTextureParameterIuivEXT')) as void Function(int, int, int, Pointer<Uint32>)?;
   if (glGetTextureParameterIuivEXT == null) {
     glGetTextureParameterIuivEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetTextureParameterIuivEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetTextureParameterIuivEXT'))
-            .asFunction<GlGetTextureParameterIuivEXT>());
+            .asFunction<GlGetTextureParameterIuivEXT>()) as void Function(int, int, int, Pointer<Uint32>)?;
   }
   glMultiTexParameterIivEXT = tryCall(() => lib.lookupFunction<
       GlMultiTexParameterIivEXTNative,
-      GlMultiTexParameterIivEXT>('glMultiTexParameterIivEXT'));
+      GlMultiTexParameterIivEXT>('glMultiTexParameterIivEXT')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glMultiTexParameterIivEXT == null) {
     glMultiTexParameterIivEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexParameterIivEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexParameterIivEXT'))
-            .asFunction<GlMultiTexParameterIivEXT>());
+            .asFunction<GlMultiTexParameterIivEXT>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glMultiTexParameterIuivEXT = tryCall(() => lib.lookupFunction<
       GlMultiTexParameterIuivEXTNative,
-      GlMultiTexParameterIuivEXT>('glMultiTexParameterIuivEXT'));
+      GlMultiTexParameterIuivEXT>('glMultiTexParameterIuivEXT')) as void Function(int, int, int, Pointer<Uint32>)?;
   if (glMultiTexParameterIuivEXT == null) {
     glMultiTexParameterIuivEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexParameterIuivEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexParameterIuivEXT'))
-            .asFunction<GlMultiTexParameterIuivEXT>());
+            .asFunction<GlMultiTexParameterIuivEXT>()) as void Function(int, int, int, Pointer<Uint32>)?;
   }
   glGetMultiTexParameterIivEXT = tryCall(() => lib.lookupFunction<
       GlGetMultiTexParameterIivEXTNative,
-      GlGetMultiTexParameterIivEXT>('glGetMultiTexParameterIivEXT'));
+      GlGetMultiTexParameterIivEXT>('glGetMultiTexParameterIivEXT')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glGetMultiTexParameterIivEXT == null) {
     glGetMultiTexParameterIivEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetMultiTexParameterIivEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetMultiTexParameterIivEXT'))
-            .asFunction<GlGetMultiTexParameterIivEXT>());
+            .asFunction<GlGetMultiTexParameterIivEXT>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glGetMultiTexParameterIuivEXT = tryCall(() => lib.lookupFunction<
       GlGetMultiTexParameterIuivEXTNative,
-      GlGetMultiTexParameterIuivEXT>('glGetMultiTexParameterIuivEXT'));
+      GlGetMultiTexParameterIuivEXT>('glGetMultiTexParameterIuivEXT')) as void Function(int, int, int, Pointer<Uint32>)?;
   if (glGetMultiTexParameterIuivEXT == null) {
     glGetMultiTexParameterIuivEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetMultiTexParameterIuivEXTNative>>.fromAddress(
             _glGetProcAddress('glGetMultiTexParameterIuivEXT'))
-        .asFunction<GlGetMultiTexParameterIuivEXT>());
+        .asFunction<GlGetMultiTexParameterIuivEXT>()) as void Function(int, int, int, Pointer<Uint32>)?;
   }
   glProgramUniform1uiEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform1uiEXTNative, GlProgramUniform1uiEXT>(
-          'glProgramUniform1uiEXT'));
+          'glProgramUniform1uiEXT')) as void Function(int, int, int)?;
   if (glProgramUniform1uiEXT == null) {
     glProgramUniform1uiEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform1uiEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform1uiEXT'))
-            .asFunction<GlProgramUniform1uiEXT>());
+            .asFunction<GlProgramUniform1uiEXT>()) as void Function(int, int, int)?;
   }
   glProgramUniform2uiEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform2uiEXTNative, GlProgramUniform2uiEXT>(
-          'glProgramUniform2uiEXT'));
+          'glProgramUniform2uiEXT')) as void Function(int, int, int, int)?;
   if (glProgramUniform2uiEXT == null) {
     glProgramUniform2uiEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform2uiEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform2uiEXT'))
-            .asFunction<GlProgramUniform2uiEXT>());
+            .asFunction<GlProgramUniform2uiEXT>()) as void Function(int, int, int, int)?;
   }
   glProgramUniform3uiEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform3uiEXTNative, GlProgramUniform3uiEXT>(
-          'glProgramUniform3uiEXT'));
+          'glProgramUniform3uiEXT')) as void Function(int, int, int, int, int)?;
   if (glProgramUniform3uiEXT == null) {
     glProgramUniform3uiEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform3uiEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform3uiEXT'))
-            .asFunction<GlProgramUniform3uiEXT>());
+            .asFunction<GlProgramUniform3uiEXT>()) as void Function(int, int, int, int, int)?;
   }
   glProgramUniform4uiEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform4uiEXTNative, GlProgramUniform4uiEXT>(
-          'glProgramUniform4uiEXT'));
+          'glProgramUniform4uiEXT')) as void Function(int, int, int, int, int, int)?;
   if (glProgramUniform4uiEXT == null) {
     glProgramUniform4uiEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform4uiEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform4uiEXT'))
-            .asFunction<GlProgramUniform4uiEXT>());
+            .asFunction<GlProgramUniform4uiEXT>()) as void Function(int, int, int, int, int, int)?;
   }
   glProgramUniform1uivEXT = tryCall(() => lib.lookupFunction<
       GlProgramUniform1uivEXTNative,
-      GlProgramUniform1uivEXT>('glProgramUniform1uivEXT'));
+      GlProgramUniform1uivEXT>('glProgramUniform1uivEXT')) as void Function(int, int, int, Pointer<Uint32>)?;
   if (glProgramUniform1uivEXT == null) {
     glProgramUniform1uivEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform1uivEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform1uivEXT'))
-            .asFunction<GlProgramUniform1uivEXT>());
+            .asFunction<GlProgramUniform1uivEXT>()) as void Function(int, int, int, Pointer<Uint32>)?;
   }
   glProgramUniform2uivEXT = tryCall(() => lib.lookupFunction<
       GlProgramUniform2uivEXTNative,
-      GlProgramUniform2uivEXT>('glProgramUniform2uivEXT'));
+      GlProgramUniform2uivEXT>('glProgramUniform2uivEXT')) as void Function(int, int, int, Pointer<Uint32>)?;
   if (glProgramUniform2uivEXT == null) {
     glProgramUniform2uivEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform2uivEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform2uivEXT'))
-            .asFunction<GlProgramUniform2uivEXT>());
+            .asFunction<GlProgramUniform2uivEXT>()) as void Function(int, int, int, Pointer<Uint32>)?;
   }
   glProgramUniform3uivEXT = tryCall(() => lib.lookupFunction<
       GlProgramUniform3uivEXTNative,
-      GlProgramUniform3uivEXT>('glProgramUniform3uivEXT'));
+      GlProgramUniform3uivEXT>('glProgramUniform3uivEXT')) as void Function(int, int, int, Pointer<Uint32>)?;
   if (glProgramUniform3uivEXT == null) {
     glProgramUniform3uivEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform3uivEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform3uivEXT'))
-            .asFunction<GlProgramUniform3uivEXT>());
+            .asFunction<GlProgramUniform3uivEXT>()) as void Function(int, int, int, Pointer<Uint32>)?;
   }
   glProgramUniform4uivEXT = tryCall(() => lib.lookupFunction<
       GlProgramUniform4uivEXTNative,
-      GlProgramUniform4uivEXT>('glProgramUniform4uivEXT'));
+      GlProgramUniform4uivEXT>('glProgramUniform4uivEXT')) as void Function(int, int, int, Pointer<Uint32>)?;
   if (glProgramUniform4uivEXT == null) {
     glProgramUniform4uivEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform4uivEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform4uivEXT'))
-            .asFunction<GlProgramUniform4uivEXT>());
+            .asFunction<GlProgramUniform4uivEXT>()) as void Function(int, int, int, Pointer<Uint32>)?;
   }
   glNamedProgramLocalParameters4fvEXT = tryCall(() => lib.lookupFunction<
           GlNamedProgramLocalParameters4fvEXTNative,
           GlNamedProgramLocalParameters4fvEXT>(
-      'glNamedProgramLocalParameters4fvEXT'));
+      'glNamedProgramLocalParameters4fvEXT')) as void Function(int, int, int, int, Pointer<Float>)?;
   if (glNamedProgramLocalParameters4fvEXT == null) {
     glNamedProgramLocalParameters4fvEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedProgramLocalParameters4fvEXTNative>>.fromAddress(
             _glGetProcAddress('glNamedProgramLocalParameters4fvEXT'))
-        .asFunction<GlNamedProgramLocalParameters4fvEXT>());
+        .asFunction<GlNamedProgramLocalParameters4fvEXT>()) as void Function(int, int, int, int, Pointer<Float>)?;
   }
   glNamedProgramLocalParameterI4iEXT = tryCall(() => lib.lookupFunction<
           GlNamedProgramLocalParameterI4iEXTNative,
           GlNamedProgramLocalParameterI4iEXT>(
-      'glNamedProgramLocalParameterI4iEXT'));
+      'glNamedProgramLocalParameterI4iEXT')) as void Function(int, int, int, int, int, int, int)?;
   if (glNamedProgramLocalParameterI4iEXT == null) {
     glNamedProgramLocalParameterI4iEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedProgramLocalParameterI4iEXTNative>>.fromAddress(
             _glGetProcAddress('glNamedProgramLocalParameterI4iEXT'))
-        .asFunction<GlNamedProgramLocalParameterI4iEXT>());
+        .asFunction<GlNamedProgramLocalParameterI4iEXT>()) as void Function(int, int, int, int, int, int, int)?;
   }
   glNamedProgramLocalParameterI4ivEXT = tryCall(() => lib.lookupFunction<
           GlNamedProgramLocalParameterI4ivEXTNative,
           GlNamedProgramLocalParameterI4ivEXT>(
-      'glNamedProgramLocalParameterI4ivEXT'));
+      'glNamedProgramLocalParameterI4ivEXT')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glNamedProgramLocalParameterI4ivEXT == null) {
     glNamedProgramLocalParameterI4ivEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedProgramLocalParameterI4ivEXTNative>>.fromAddress(
             _glGetProcAddress('glNamedProgramLocalParameterI4ivEXT'))
-        .asFunction<GlNamedProgramLocalParameterI4ivEXT>());
+        .asFunction<GlNamedProgramLocalParameterI4ivEXT>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glNamedProgramLocalParametersI4ivEXT = tryCall(() => lib.lookupFunction<
           GlNamedProgramLocalParametersI4ivEXTNative,
           GlNamedProgramLocalParametersI4ivEXT>(
-      'glNamedProgramLocalParametersI4ivEXT'));
+      'glNamedProgramLocalParametersI4ivEXT')) as void Function(int, int, int, int, Pointer<Int32>)?;
   if (glNamedProgramLocalParametersI4ivEXT == null) {
     glNamedProgramLocalParametersI4ivEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedProgramLocalParametersI4ivEXTNative>>.fromAddress(
             _glGetProcAddress('glNamedProgramLocalParametersI4ivEXT'))
-        .asFunction<GlNamedProgramLocalParametersI4ivEXT>());
+        .asFunction<GlNamedProgramLocalParametersI4ivEXT>()) as void Function(int, int, int, int, Pointer<Int32>)?;
   }
   glNamedProgramLocalParameterI4uiEXT = tryCall(() => lib.lookupFunction<
           GlNamedProgramLocalParameterI4uiEXTNative,
           GlNamedProgramLocalParameterI4uiEXT>(
-      'glNamedProgramLocalParameterI4uiEXT'));
+      'glNamedProgramLocalParameterI4uiEXT')) as void Function(int, int, int, int, int, int, int)?;
   if (glNamedProgramLocalParameterI4uiEXT == null) {
     glNamedProgramLocalParameterI4uiEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedProgramLocalParameterI4uiEXTNative>>.fromAddress(
             _glGetProcAddress('glNamedProgramLocalParameterI4uiEXT'))
-        .asFunction<GlNamedProgramLocalParameterI4uiEXT>());
+        .asFunction<GlNamedProgramLocalParameterI4uiEXT>()) as void Function(int, int, int, int, int, int, int)?;
   }
   glNamedProgramLocalParameterI4uivEXT = tryCall(() => lib.lookupFunction<
           GlNamedProgramLocalParameterI4uivEXTNative,
           GlNamedProgramLocalParameterI4uivEXT>(
-      'glNamedProgramLocalParameterI4uivEXT'));
+      'glNamedProgramLocalParameterI4uivEXT')) as void Function(int, int, int, Pointer<Uint32>)?;
   if (glNamedProgramLocalParameterI4uivEXT == null) {
     glNamedProgramLocalParameterI4uivEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedProgramLocalParameterI4uivEXTNative>>.fromAddress(
             _glGetProcAddress('glNamedProgramLocalParameterI4uivEXT'))
-        .asFunction<GlNamedProgramLocalParameterI4uivEXT>());
+        .asFunction<GlNamedProgramLocalParameterI4uivEXT>()) as void Function(int, int, int, Pointer<Uint32>)?;
   }
   glNamedProgramLocalParametersI4uivEXT = tryCall(() => lib.lookupFunction<
           GlNamedProgramLocalParametersI4uivEXTNative,
           GlNamedProgramLocalParametersI4uivEXT>(
-      'glNamedProgramLocalParametersI4uivEXT'));
+      'glNamedProgramLocalParametersI4uivEXT')) as void Function(int, int, int, int, Pointer<Uint32>)?;
   if (glNamedProgramLocalParametersI4uivEXT == null) {
     glNamedProgramLocalParametersI4uivEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedProgramLocalParametersI4uivEXTNative>>.fromAddress(
             _glGetProcAddress('glNamedProgramLocalParametersI4uivEXT'))
-        .asFunction<GlNamedProgramLocalParametersI4uivEXT>());
+        .asFunction<GlNamedProgramLocalParametersI4uivEXT>()) as void Function(int, int, int, int, Pointer<Uint32>)?;
   }
   glGetNamedProgramLocalParameterIivEXT = tryCall(() => lib.lookupFunction<
           GlGetNamedProgramLocalParameterIivEXTNative,
           GlGetNamedProgramLocalParameterIivEXT>(
-      'glGetNamedProgramLocalParameterIivEXT'));
+      'glGetNamedProgramLocalParameterIivEXT')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glGetNamedProgramLocalParameterIivEXT == null) {
     glGetNamedProgramLocalParameterIivEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetNamedProgramLocalParameterIivEXTNative>>.fromAddress(
             _glGetProcAddress('glGetNamedProgramLocalParameterIivEXT'))
-        .asFunction<GlGetNamedProgramLocalParameterIivEXT>());
+        .asFunction<GlGetNamedProgramLocalParameterIivEXT>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glGetNamedProgramLocalParameterIuivEXT = tryCall(() => lib.lookupFunction<
           GlGetNamedProgramLocalParameterIuivEXTNative,
           GlGetNamedProgramLocalParameterIuivEXT>(
-      'glGetNamedProgramLocalParameterIuivEXT'));
+      'glGetNamedProgramLocalParameterIuivEXT')) as void Function(int, int, int, Pointer<Uint32>)?;
   if (glGetNamedProgramLocalParameterIuivEXT == null) {
     glGetNamedProgramLocalParameterIuivEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetNamedProgramLocalParameterIuivEXTNative>>.fromAddress(
             _glGetProcAddress('glGetNamedProgramLocalParameterIuivEXT'))
-        .asFunction<GlGetNamedProgramLocalParameterIuivEXT>());
+        .asFunction<GlGetNamedProgramLocalParameterIuivEXT>()) as void Function(int, int, int, Pointer<Uint32>)?;
   }
   glEnableClientStateiEXT = tryCall(() => lib.lookupFunction<
       GlEnableClientStateiEXTNative,
-      GlEnableClientStateiEXT>('glEnableClientStateiEXT'));
+      GlEnableClientStateiEXT>('glEnableClientStateiEXT')) as void Function(int, int)?;
   if (glEnableClientStateiEXT == null) {
     glEnableClientStateiEXT = tryCall(() =>
         Pointer<NativeFunction<GlEnableClientStateiEXTNative>>.fromAddress(
                 _glGetProcAddress('glEnableClientStateiEXT'))
-            .asFunction<GlEnableClientStateiEXT>());
+            .asFunction<GlEnableClientStateiEXT>()) as void Function(int, int)?;
   }
   glDisableClientStateiEXT = tryCall(() => lib.lookupFunction<
       GlDisableClientStateiEXTNative,
-      GlDisableClientStateiEXT>('glDisableClientStateiEXT'));
+      GlDisableClientStateiEXT>('glDisableClientStateiEXT')) as void Function(int, int)?;
   if (glDisableClientStateiEXT == null) {
     glDisableClientStateiEXT = tryCall(() =>
         Pointer<NativeFunction<GlDisableClientStateiEXTNative>>.fromAddress(
                 _glGetProcAddress('glDisableClientStateiEXT'))
-            .asFunction<GlDisableClientStateiEXT>());
+            .asFunction<GlDisableClientStateiEXT>()) as void Function(int, int)?;
   }
   glGetFloati_vEXT = tryCall(() =>
       lib.lookupFunction<GlGetFloati_vEXTNative, GlGetFloati_vEXT>(
-          'glGetFloati_vEXT'));
+          'glGetFloati_vEXT')) as void Function(int, int, Pointer<Float>)?;
   if (glGetFloati_vEXT == null) {
     glGetFloati_vEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetFloati_vEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetFloati_vEXT'))
-            .asFunction<GlGetFloati_vEXT>());
+            .asFunction<GlGetFloati_vEXT>()) as void Function(int, int, Pointer<Float>)?;
   }
   glGetDoublei_vEXT = tryCall(() =>
       lib.lookupFunction<GlGetDoublei_vEXTNative, GlGetDoublei_vEXT>(
-          'glGetDoublei_vEXT'));
+          'glGetDoublei_vEXT')) as void Function(int, int, Pointer<Double>)?;
   if (glGetDoublei_vEXT == null) {
     glGetDoublei_vEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetDoublei_vEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetDoublei_vEXT'))
-            .asFunction<GlGetDoublei_vEXT>());
+            .asFunction<GlGetDoublei_vEXT>()) as void Function(int, int, Pointer<Double>)?;
   }
   glGetPointeri_vEXT = tryCall(() =>
       lib.lookupFunction<GlGetPointeri_vEXTNative, GlGetPointeri_vEXT>(
-          'glGetPointeri_vEXT'));
+          'glGetPointeri_vEXT')) as void Function(int, int, Pointer<NativeType>)?;
   if (glGetPointeri_vEXT == null) {
     glGetPointeri_vEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetPointeri_vEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetPointeri_vEXT'))
-            .asFunction<GlGetPointeri_vEXT>());
+            .asFunction<GlGetPointeri_vEXT>()) as void Function(int, int, Pointer<NativeType>)?;
   }
   glNamedProgramStringEXT = tryCall(() => lib.lookupFunction<
       GlNamedProgramStringEXTNative,
-      GlNamedProgramStringEXT>('glNamedProgramStringEXT'));
+      GlNamedProgramStringEXT>('glNamedProgramStringEXT')) as void Function(int, int, int, int, Pointer<NativeType>)?;
   if (glNamedProgramStringEXT == null) {
     glNamedProgramStringEXT = tryCall(() =>
         Pointer<NativeFunction<GlNamedProgramStringEXTNative>>.fromAddress(
                 _glGetProcAddress('glNamedProgramStringEXT'))
-            .asFunction<GlNamedProgramStringEXT>());
+            .asFunction<GlNamedProgramStringEXT>()) as void Function(int, int, int, int, Pointer<NativeType>)?;
   }
   glNamedProgramLocalParameter4dEXT = tryCall(() => lib.lookupFunction<
       GlNamedProgramLocalParameter4dEXTNative,
-      GlNamedProgramLocalParameter4dEXT>('glNamedProgramLocalParameter4dEXT'));
+      GlNamedProgramLocalParameter4dEXT>('glNamedProgramLocalParameter4dEXT')) as void Function(int, int, int, double, double, double, double)?;
   if (glNamedProgramLocalParameter4dEXT == null) {
     glNamedProgramLocalParameter4dEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedProgramLocalParameter4dEXTNative>>.fromAddress(
             _glGetProcAddress('glNamedProgramLocalParameter4dEXT'))
-        .asFunction<GlNamedProgramLocalParameter4dEXT>());
+        .asFunction<GlNamedProgramLocalParameter4dEXT>()) as void Function(int, int, int, double, double, double, double)?;
   }
   glNamedProgramLocalParameter4dvEXT = tryCall(() => lib.lookupFunction<
           GlNamedProgramLocalParameter4dvEXTNative,
           GlNamedProgramLocalParameter4dvEXT>(
-      'glNamedProgramLocalParameter4dvEXT'));
+      'glNamedProgramLocalParameter4dvEXT')) as void Function(int, int, int, Pointer<Double>)?;
   if (glNamedProgramLocalParameter4dvEXT == null) {
     glNamedProgramLocalParameter4dvEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedProgramLocalParameter4dvEXTNative>>.fromAddress(
             _glGetProcAddress('glNamedProgramLocalParameter4dvEXT'))
-        .asFunction<GlNamedProgramLocalParameter4dvEXT>());
+        .asFunction<GlNamedProgramLocalParameter4dvEXT>()) as void Function(int, int, int, Pointer<Double>)?;
   }
   glNamedProgramLocalParameter4fEXT = tryCall(() => lib.lookupFunction<
       GlNamedProgramLocalParameter4fEXTNative,
-      GlNamedProgramLocalParameter4fEXT>('glNamedProgramLocalParameter4fEXT'));
+      GlNamedProgramLocalParameter4fEXT>('glNamedProgramLocalParameter4fEXT')) as void Function(int, int, int, double, double, double, double)?;
   if (glNamedProgramLocalParameter4fEXT == null) {
     glNamedProgramLocalParameter4fEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedProgramLocalParameter4fEXTNative>>.fromAddress(
             _glGetProcAddress('glNamedProgramLocalParameter4fEXT'))
-        .asFunction<GlNamedProgramLocalParameter4fEXT>());
+        .asFunction<GlNamedProgramLocalParameter4fEXT>()) as void Function(int, int, int, double, double, double, double)?;
   }
   glNamedProgramLocalParameter4fvEXT = tryCall(() => lib.lookupFunction<
           GlNamedProgramLocalParameter4fvEXTNative,
           GlNamedProgramLocalParameter4fvEXT>(
-      'glNamedProgramLocalParameter4fvEXT'));
+      'glNamedProgramLocalParameter4fvEXT')) as void Function(int, int, int, Pointer<Float>)?;
   if (glNamedProgramLocalParameter4fvEXT == null) {
     glNamedProgramLocalParameter4fvEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedProgramLocalParameter4fvEXTNative>>.fromAddress(
             _glGetProcAddress('glNamedProgramLocalParameter4fvEXT'))
-        .asFunction<GlNamedProgramLocalParameter4fvEXT>());
+        .asFunction<GlNamedProgramLocalParameter4fvEXT>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glGetNamedProgramLocalParameterdvEXT = tryCall(() => lib.lookupFunction<
           GlGetNamedProgramLocalParameterdvEXTNative,
           GlGetNamedProgramLocalParameterdvEXT>(
-      'glGetNamedProgramLocalParameterdvEXT'));
+      'glGetNamedProgramLocalParameterdvEXT')) as void Function(int, int, int, Pointer<Double>)?;
   if (glGetNamedProgramLocalParameterdvEXT == null) {
     glGetNamedProgramLocalParameterdvEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetNamedProgramLocalParameterdvEXTNative>>.fromAddress(
             _glGetProcAddress('glGetNamedProgramLocalParameterdvEXT'))
-        .asFunction<GlGetNamedProgramLocalParameterdvEXT>());
+        .asFunction<GlGetNamedProgramLocalParameterdvEXT>()) as void Function(int, int, int, Pointer<Double>)?;
   }
   glGetNamedProgramLocalParameterfvEXT = tryCall(() => lib.lookupFunction<
           GlGetNamedProgramLocalParameterfvEXTNative,
           GlGetNamedProgramLocalParameterfvEXT>(
-      'glGetNamedProgramLocalParameterfvEXT'));
+      'glGetNamedProgramLocalParameterfvEXT')) as void Function(int, int, int, Pointer<Float>)?;
   if (glGetNamedProgramLocalParameterfvEXT == null) {
     glGetNamedProgramLocalParameterfvEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetNamedProgramLocalParameterfvEXTNative>>.fromAddress(
             _glGetProcAddress('glGetNamedProgramLocalParameterfvEXT'))
-        .asFunction<GlGetNamedProgramLocalParameterfvEXT>());
+        .asFunction<GlGetNamedProgramLocalParameterfvEXT>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glGetNamedProgramivEXT = tryCall(() =>
       lib.lookupFunction<GlGetNamedProgramivEXTNative, GlGetNamedProgramivEXT>(
-          'glGetNamedProgramivEXT'));
+          'glGetNamedProgramivEXT')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glGetNamedProgramivEXT == null) {
     glGetNamedProgramivEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetNamedProgramivEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetNamedProgramivEXT'))
-            .asFunction<GlGetNamedProgramivEXT>());
+            .asFunction<GlGetNamedProgramivEXT>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glGetNamedProgramStringEXT = tryCall(() => lib.lookupFunction<
       GlGetNamedProgramStringEXTNative,
-      GlGetNamedProgramStringEXT>('glGetNamedProgramStringEXT'));
+      GlGetNamedProgramStringEXT>('glGetNamedProgramStringEXT')) as void Function(int, int, int, Pointer<NativeType>)?;
   if (glGetNamedProgramStringEXT == null) {
     glGetNamedProgramStringEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetNamedProgramStringEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetNamedProgramStringEXT'))
-            .asFunction<GlGetNamedProgramStringEXT>());
+            .asFunction<GlGetNamedProgramStringEXT>()) as void Function(int, int, int, Pointer<NativeType>)?;
   }
   glNamedRenderbufferStorageEXT = tryCall(() => lib.lookupFunction<
       GlNamedRenderbufferStorageEXTNative,
-      GlNamedRenderbufferStorageEXT>('glNamedRenderbufferStorageEXT'));
+      GlNamedRenderbufferStorageEXT>('glNamedRenderbufferStorageEXT')) as void Function(int, int, int, int)?;
   if (glNamedRenderbufferStorageEXT == null) {
     glNamedRenderbufferStorageEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedRenderbufferStorageEXTNative>>.fromAddress(
             _glGetProcAddress('glNamedRenderbufferStorageEXT'))
-        .asFunction<GlNamedRenderbufferStorageEXT>());
+        .asFunction<GlNamedRenderbufferStorageEXT>()) as void Function(int, int, int, int)?;
   }
   glGetNamedRenderbufferParameterivEXT = tryCall(() => lib.lookupFunction<
           GlGetNamedRenderbufferParameterivEXTNative,
           GlGetNamedRenderbufferParameterivEXT>(
-      'glGetNamedRenderbufferParameterivEXT'));
+      'glGetNamedRenderbufferParameterivEXT')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetNamedRenderbufferParameterivEXT == null) {
     glGetNamedRenderbufferParameterivEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetNamedRenderbufferParameterivEXTNative>>.fromAddress(
             _glGetProcAddress('glGetNamedRenderbufferParameterivEXT'))
-        .asFunction<GlGetNamedRenderbufferParameterivEXT>());
+        .asFunction<GlGetNamedRenderbufferParameterivEXT>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glNamedRenderbufferStorageMultisampleEXT = tryCall(() => lib.lookupFunction<
           GlNamedRenderbufferStorageMultisampleEXTNative,
           GlNamedRenderbufferStorageMultisampleEXT>(
-      'glNamedRenderbufferStorageMultisampleEXT'));
+      'glNamedRenderbufferStorageMultisampleEXT')) as void Function(int, int, int, int, int)?;
   if (glNamedRenderbufferStorageMultisampleEXT == null) {
     glNamedRenderbufferStorageMultisampleEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedRenderbufferStorageMultisampleEXTNative>>.fromAddress(
             _glGetProcAddress('glNamedRenderbufferStorageMultisampleEXT'))
-        .asFunction<GlNamedRenderbufferStorageMultisampleEXT>());
+        .asFunction<GlNamedRenderbufferStorageMultisampleEXT>()) as void Function(int, int, int, int, int)?;
   }
   glNamedRenderbufferStorageMultisampleCoverageEXT = tryCall(() =>
       lib.lookupFunction<GlNamedRenderbufferStorageMultisampleCoverageEXTNative,
               GlNamedRenderbufferStorageMultisampleCoverageEXT>(
-          'glNamedRenderbufferStorageMultisampleCoverageEXT'));
+          'glNamedRenderbufferStorageMultisampleCoverageEXT')) as void Function(int, int, int, int, int, int)?;
   if (glNamedRenderbufferStorageMultisampleCoverageEXT == null) {
     glNamedRenderbufferStorageMultisampleCoverageEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedRenderbufferStorageMultisampleCoverageEXTNative>>.fromAddress(
             _glGetProcAddress(
                 'glNamedRenderbufferStorageMultisampleCoverageEXT'))
-        .asFunction<GlNamedRenderbufferStorageMultisampleCoverageEXT>());
+        .asFunction<GlNamedRenderbufferStorageMultisampleCoverageEXT>()) as void Function(int, int, int, int, int, int)?;
   }
   glCheckNamedFramebufferStatusEXT = tryCall(() => lib.lookupFunction<
       GlCheckNamedFramebufferStatusEXTNative,
-      GlCheckNamedFramebufferStatusEXT>('glCheckNamedFramebufferStatusEXT'));
+      GlCheckNamedFramebufferStatusEXT>('glCheckNamedFramebufferStatusEXT')) as int Function(int, int)?;
   if (glCheckNamedFramebufferStatusEXT == null) {
     glCheckNamedFramebufferStatusEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlCheckNamedFramebufferStatusEXTNative>>.fromAddress(
             _glGetProcAddress('glCheckNamedFramebufferStatusEXT'))
-        .asFunction<GlCheckNamedFramebufferStatusEXT>());
+        .asFunction<GlCheckNamedFramebufferStatusEXT>()) as int Function(int, int)?;
   }
   glNamedFramebufferTexture1DEXT = tryCall(() => lib.lookupFunction<
       GlNamedFramebufferTexture1DEXTNative,
-      GlNamedFramebufferTexture1DEXT>('glNamedFramebufferTexture1DEXT'));
+      GlNamedFramebufferTexture1DEXT>('glNamedFramebufferTexture1DEXT')) as void Function(int, int, int, int, int)?;
   if (glNamedFramebufferTexture1DEXT == null) {
     glNamedFramebufferTexture1DEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedFramebufferTexture1DEXTNative>>.fromAddress(
             _glGetProcAddress('glNamedFramebufferTexture1DEXT'))
-        .asFunction<GlNamedFramebufferTexture1DEXT>());
+        .asFunction<GlNamedFramebufferTexture1DEXT>()) as void Function(int, int, int, int, int)?;
   }
   glNamedFramebufferTexture2DEXT = tryCall(() => lib.lookupFunction<
       GlNamedFramebufferTexture2DEXTNative,
-      GlNamedFramebufferTexture2DEXT>('glNamedFramebufferTexture2DEXT'));
+      GlNamedFramebufferTexture2DEXT>('glNamedFramebufferTexture2DEXT')) as void Function(int, int, int, int, int)?;
   if (glNamedFramebufferTexture2DEXT == null) {
     glNamedFramebufferTexture2DEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedFramebufferTexture2DEXTNative>>.fromAddress(
             _glGetProcAddress('glNamedFramebufferTexture2DEXT'))
-        .asFunction<GlNamedFramebufferTexture2DEXT>());
+        .asFunction<GlNamedFramebufferTexture2DEXT>()) as void Function(int, int, int, int, int)?;
   }
   glNamedFramebufferTexture3DEXT = tryCall(() => lib.lookupFunction<
       GlNamedFramebufferTexture3DEXTNative,
-      GlNamedFramebufferTexture3DEXT>('glNamedFramebufferTexture3DEXT'));
+      GlNamedFramebufferTexture3DEXT>('glNamedFramebufferTexture3DEXT')) as void Function(int, int, int, int, int, int)?;
   if (glNamedFramebufferTexture3DEXT == null) {
     glNamedFramebufferTexture3DEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedFramebufferTexture3DEXTNative>>.fromAddress(
             _glGetProcAddress('glNamedFramebufferTexture3DEXT'))
-        .asFunction<GlNamedFramebufferTexture3DEXT>());
+        .asFunction<GlNamedFramebufferTexture3DEXT>()) as void Function(int, int, int, int, int, int)?;
   }
   glNamedFramebufferRenderbufferEXT = tryCall(() => lib.lookupFunction<
       GlNamedFramebufferRenderbufferEXTNative,
-      GlNamedFramebufferRenderbufferEXT>('glNamedFramebufferRenderbufferEXT'));
+      GlNamedFramebufferRenderbufferEXT>('glNamedFramebufferRenderbufferEXT')) as void Function(int, int, int, int)?;
   if (glNamedFramebufferRenderbufferEXT == null) {
     glNamedFramebufferRenderbufferEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedFramebufferRenderbufferEXTNative>>.fromAddress(
             _glGetProcAddress('glNamedFramebufferRenderbufferEXT'))
-        .asFunction<GlNamedFramebufferRenderbufferEXT>());
+        .asFunction<GlNamedFramebufferRenderbufferEXT>()) as void Function(int, int, int, int)?;
   }
   glGetNamedFramebufferAttachmentParameterivEXT = tryCall(() =>
       lib.lookupFunction<GlGetNamedFramebufferAttachmentParameterivEXTNative,
               GlGetNamedFramebufferAttachmentParameterivEXT>(
-          'glGetNamedFramebufferAttachmentParameterivEXT'));
+          'glGetNamedFramebufferAttachmentParameterivEXT')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glGetNamedFramebufferAttachmentParameterivEXT == null) {
     glGetNamedFramebufferAttachmentParameterivEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetNamedFramebufferAttachmentParameterivEXTNative>>.fromAddress(
             _glGetProcAddress('glGetNamedFramebufferAttachmentParameterivEXT'))
-        .asFunction<GlGetNamedFramebufferAttachmentParameterivEXT>());
+        .asFunction<GlGetNamedFramebufferAttachmentParameterivEXT>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glGenerateTextureMipmapEXT = tryCall(() => lib.lookupFunction<
       GlGenerateTextureMipmapEXTNative,
-      GlGenerateTextureMipmapEXT>('glGenerateTextureMipmapEXT'));
+      GlGenerateTextureMipmapEXT>('glGenerateTextureMipmapEXT')) as void Function(int, int)?;
   if (glGenerateTextureMipmapEXT == null) {
     glGenerateTextureMipmapEXT = tryCall(() =>
         Pointer<NativeFunction<GlGenerateTextureMipmapEXTNative>>.fromAddress(
                 _glGetProcAddress('glGenerateTextureMipmapEXT'))
-            .asFunction<GlGenerateTextureMipmapEXT>());
+            .asFunction<GlGenerateTextureMipmapEXT>()) as void Function(int, int)?;
   }
   glGenerateMultiTexMipmapEXT = tryCall(() => lib.lookupFunction<
       GlGenerateMultiTexMipmapEXTNative,
-      GlGenerateMultiTexMipmapEXT>('glGenerateMultiTexMipmapEXT'));
+      GlGenerateMultiTexMipmapEXT>('glGenerateMultiTexMipmapEXT')) as void Function(int, int)?;
   if (glGenerateMultiTexMipmapEXT == null) {
     glGenerateMultiTexMipmapEXT = tryCall(() =>
         Pointer<NativeFunction<GlGenerateMultiTexMipmapEXTNative>>.fromAddress(
                 _glGetProcAddress('glGenerateMultiTexMipmapEXT'))
-            .asFunction<GlGenerateMultiTexMipmapEXT>());
+            .asFunction<GlGenerateMultiTexMipmapEXT>()) as void Function(int, int)?;
   }
   glFramebufferDrawBufferEXT = tryCall(() => lib.lookupFunction<
       GlFramebufferDrawBufferEXTNative,
-      GlFramebufferDrawBufferEXT>('glFramebufferDrawBufferEXT'));
+      GlFramebufferDrawBufferEXT>('glFramebufferDrawBufferEXT')) as void Function(int, int)?;
   if (glFramebufferDrawBufferEXT == null) {
     glFramebufferDrawBufferEXT = tryCall(() =>
         Pointer<NativeFunction<GlFramebufferDrawBufferEXTNative>>.fromAddress(
                 _glGetProcAddress('glFramebufferDrawBufferEXT'))
-            .asFunction<GlFramebufferDrawBufferEXT>());
+            .asFunction<GlFramebufferDrawBufferEXT>()) as void Function(int, int)?;
   }
   glFramebufferDrawBuffersEXT = tryCall(() => lib.lookupFunction<
       GlFramebufferDrawBuffersEXTNative,
-      GlFramebufferDrawBuffersEXT>('glFramebufferDrawBuffersEXT'));
+      GlFramebufferDrawBuffersEXT>('glFramebufferDrawBuffersEXT')) as void Function(int, int, Pointer<Uint32>)?;
   if (glFramebufferDrawBuffersEXT == null) {
     glFramebufferDrawBuffersEXT = tryCall(() =>
         Pointer<NativeFunction<GlFramebufferDrawBuffersEXTNative>>.fromAddress(
                 _glGetProcAddress('glFramebufferDrawBuffersEXT'))
-            .asFunction<GlFramebufferDrawBuffersEXT>());
+            .asFunction<GlFramebufferDrawBuffersEXT>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glFramebufferReadBufferEXT = tryCall(() => lib.lookupFunction<
       GlFramebufferReadBufferEXTNative,
-      GlFramebufferReadBufferEXT>('glFramebufferReadBufferEXT'));
+      GlFramebufferReadBufferEXT>('glFramebufferReadBufferEXT')) as void Function(int, int)?;
   if (glFramebufferReadBufferEXT == null) {
     glFramebufferReadBufferEXT = tryCall(() =>
         Pointer<NativeFunction<GlFramebufferReadBufferEXTNative>>.fromAddress(
                 _glGetProcAddress('glFramebufferReadBufferEXT'))
-            .asFunction<GlFramebufferReadBufferEXT>());
+            .asFunction<GlFramebufferReadBufferEXT>()) as void Function(int, int)?;
   }
   glGetFramebufferParameterivEXT = tryCall(() => lib.lookupFunction<
       GlGetFramebufferParameterivEXTNative,
-      GlGetFramebufferParameterivEXT>('glGetFramebufferParameterivEXT'));
+      GlGetFramebufferParameterivEXT>('glGetFramebufferParameterivEXT')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetFramebufferParameterivEXT == null) {
     glGetFramebufferParameterivEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetFramebufferParameterivEXTNative>>.fromAddress(
             _glGetProcAddress('glGetFramebufferParameterivEXT'))
-        .asFunction<GlGetFramebufferParameterivEXT>());
+        .asFunction<GlGetFramebufferParameterivEXT>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glNamedCopyBufferSubDataEXT = tryCall(() => lib.lookupFunction<
       GlNamedCopyBufferSubDataEXTNative,
-      GlNamedCopyBufferSubDataEXT>('glNamedCopyBufferSubDataEXT'));
+      GlNamedCopyBufferSubDataEXT>('glNamedCopyBufferSubDataEXT')) as void Function(int, int, int, int, int)?;
   if (glNamedCopyBufferSubDataEXT == null) {
     glNamedCopyBufferSubDataEXT = tryCall(() =>
         Pointer<NativeFunction<GlNamedCopyBufferSubDataEXTNative>>.fromAddress(
                 _glGetProcAddress('glNamedCopyBufferSubDataEXT'))
-            .asFunction<GlNamedCopyBufferSubDataEXT>());
+            .asFunction<GlNamedCopyBufferSubDataEXT>()) as void Function(int, int, int, int, int)?;
   }
   glNamedFramebufferTextureEXT = tryCall(() => lib.lookupFunction<
       GlNamedFramebufferTextureEXTNative,
-      GlNamedFramebufferTextureEXT>('glNamedFramebufferTextureEXT'));
+      GlNamedFramebufferTextureEXT>('glNamedFramebufferTextureEXT')) as void Function(int, int, int, int)?;
   if (glNamedFramebufferTextureEXT == null) {
     glNamedFramebufferTextureEXT = tryCall(() =>
         Pointer<NativeFunction<GlNamedFramebufferTextureEXTNative>>.fromAddress(
                 _glGetProcAddress('glNamedFramebufferTextureEXT'))
-            .asFunction<GlNamedFramebufferTextureEXT>());
+            .asFunction<GlNamedFramebufferTextureEXT>()) as void Function(int, int, int, int)?;
   }
   glNamedFramebufferTextureLayerEXT = tryCall(() => lib.lookupFunction<
       GlNamedFramebufferTextureLayerEXTNative,
-      GlNamedFramebufferTextureLayerEXT>('glNamedFramebufferTextureLayerEXT'));
+      GlNamedFramebufferTextureLayerEXT>('glNamedFramebufferTextureLayerEXT')) as void Function(int, int, int, int, int)?;
   if (glNamedFramebufferTextureLayerEXT == null) {
     glNamedFramebufferTextureLayerEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedFramebufferTextureLayerEXTNative>>.fromAddress(
             _glGetProcAddress('glNamedFramebufferTextureLayerEXT'))
-        .asFunction<GlNamedFramebufferTextureLayerEXT>());
+        .asFunction<GlNamedFramebufferTextureLayerEXT>()) as void Function(int, int, int, int, int)?;
   }
   glNamedFramebufferTextureFaceEXT = tryCall(() => lib.lookupFunction<
       GlNamedFramebufferTextureFaceEXTNative,
-      GlNamedFramebufferTextureFaceEXT>('glNamedFramebufferTextureFaceEXT'));
+      GlNamedFramebufferTextureFaceEXT>('glNamedFramebufferTextureFaceEXT')) as void Function(int, int, int, int, int)?;
   if (glNamedFramebufferTextureFaceEXT == null) {
     glNamedFramebufferTextureFaceEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedFramebufferTextureFaceEXTNative>>.fromAddress(
             _glGetProcAddress('glNamedFramebufferTextureFaceEXT'))
-        .asFunction<GlNamedFramebufferTextureFaceEXT>());
+        .asFunction<GlNamedFramebufferTextureFaceEXT>()) as void Function(int, int, int, int, int)?;
   }
   glTextureRenderbufferEXT = tryCall(() => lib.lookupFunction<
       GlTextureRenderbufferEXTNative,
-      GlTextureRenderbufferEXT>('glTextureRenderbufferEXT'));
+      GlTextureRenderbufferEXT>('glTextureRenderbufferEXT')) as void Function(int, int, int)?;
   if (glTextureRenderbufferEXT == null) {
     glTextureRenderbufferEXT = tryCall(() =>
         Pointer<NativeFunction<GlTextureRenderbufferEXTNative>>.fromAddress(
                 _glGetProcAddress('glTextureRenderbufferEXT'))
-            .asFunction<GlTextureRenderbufferEXT>());
+            .asFunction<GlTextureRenderbufferEXT>()) as void Function(int, int, int)?;
   }
   glMultiTexRenderbufferEXT = tryCall(() => lib.lookupFunction<
       GlMultiTexRenderbufferEXTNative,
-      GlMultiTexRenderbufferEXT>('glMultiTexRenderbufferEXT'));
+      GlMultiTexRenderbufferEXT>('glMultiTexRenderbufferEXT')) as void Function(int, int, int)?;
   if (glMultiTexRenderbufferEXT == null) {
     glMultiTexRenderbufferEXT = tryCall(() =>
         Pointer<NativeFunction<GlMultiTexRenderbufferEXTNative>>.fromAddress(
                 _glGetProcAddress('glMultiTexRenderbufferEXT'))
-            .asFunction<GlMultiTexRenderbufferEXT>());
+            .asFunction<GlMultiTexRenderbufferEXT>()) as void Function(int, int, int)?;
   }
   glVertexArrayVertexOffsetEXT = tryCall(() => lib.lookupFunction<
       GlVertexArrayVertexOffsetEXTNative,
-      GlVertexArrayVertexOffsetEXT>('glVertexArrayVertexOffsetEXT'));
+      GlVertexArrayVertexOffsetEXT>('glVertexArrayVertexOffsetEXT')) as void Function(int, int, int, int, int, int)?;
   if (glVertexArrayVertexOffsetEXT == null) {
     glVertexArrayVertexOffsetEXT = tryCall(() =>
         Pointer<NativeFunction<GlVertexArrayVertexOffsetEXTNative>>.fromAddress(
                 _glGetProcAddress('glVertexArrayVertexOffsetEXT'))
-            .asFunction<GlVertexArrayVertexOffsetEXT>());
+            .asFunction<GlVertexArrayVertexOffsetEXT>()) as void Function(int, int, int, int, int, int)?;
   }
   glVertexArrayColorOffsetEXT = tryCall(() => lib.lookupFunction<
       GlVertexArrayColorOffsetEXTNative,
-      GlVertexArrayColorOffsetEXT>('glVertexArrayColorOffsetEXT'));
+      GlVertexArrayColorOffsetEXT>('glVertexArrayColorOffsetEXT')) as void Function(int, int, int, int, int, int)?;
   if (glVertexArrayColorOffsetEXT == null) {
     glVertexArrayColorOffsetEXT = tryCall(() =>
         Pointer<NativeFunction<GlVertexArrayColorOffsetEXTNative>>.fromAddress(
                 _glGetProcAddress('glVertexArrayColorOffsetEXT'))
-            .asFunction<GlVertexArrayColorOffsetEXT>());
+            .asFunction<GlVertexArrayColorOffsetEXT>()) as void Function(int, int, int, int, int, int)?;
   }
   glVertexArrayEdgeFlagOffsetEXT = tryCall(() => lib.lookupFunction<
       GlVertexArrayEdgeFlagOffsetEXTNative,
-      GlVertexArrayEdgeFlagOffsetEXT>('glVertexArrayEdgeFlagOffsetEXT'));
+      GlVertexArrayEdgeFlagOffsetEXT>('glVertexArrayEdgeFlagOffsetEXT')) as void Function(int, int, int, int)?;
   if (glVertexArrayEdgeFlagOffsetEXT == null) {
     glVertexArrayEdgeFlagOffsetEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlVertexArrayEdgeFlagOffsetEXTNative>>.fromAddress(
             _glGetProcAddress('glVertexArrayEdgeFlagOffsetEXT'))
-        .asFunction<GlVertexArrayEdgeFlagOffsetEXT>());
+        .asFunction<GlVertexArrayEdgeFlagOffsetEXT>()) as void Function(int, int, int, int)?;
   }
   glVertexArrayIndexOffsetEXT = tryCall(() => lib.lookupFunction<
       GlVertexArrayIndexOffsetEXTNative,
-      GlVertexArrayIndexOffsetEXT>('glVertexArrayIndexOffsetEXT'));
+      GlVertexArrayIndexOffsetEXT>('glVertexArrayIndexOffsetEXT')) as void Function(int, int, int, int, int)?;
   if (glVertexArrayIndexOffsetEXT == null) {
     glVertexArrayIndexOffsetEXT = tryCall(() =>
         Pointer<NativeFunction<GlVertexArrayIndexOffsetEXTNative>>.fromAddress(
                 _glGetProcAddress('glVertexArrayIndexOffsetEXT'))
-            .asFunction<GlVertexArrayIndexOffsetEXT>());
+            .asFunction<GlVertexArrayIndexOffsetEXT>()) as void Function(int, int, int, int, int)?;
   }
   glVertexArrayNormalOffsetEXT = tryCall(() => lib.lookupFunction<
       GlVertexArrayNormalOffsetEXTNative,
-      GlVertexArrayNormalOffsetEXT>('glVertexArrayNormalOffsetEXT'));
+      GlVertexArrayNormalOffsetEXT>('glVertexArrayNormalOffsetEXT')) as void Function(int, int, int, int, int)?;
   if (glVertexArrayNormalOffsetEXT == null) {
     glVertexArrayNormalOffsetEXT = tryCall(() =>
         Pointer<NativeFunction<GlVertexArrayNormalOffsetEXTNative>>.fromAddress(
                 _glGetProcAddress('glVertexArrayNormalOffsetEXT'))
-            .asFunction<GlVertexArrayNormalOffsetEXT>());
+            .asFunction<GlVertexArrayNormalOffsetEXT>()) as void Function(int, int, int, int, int)?;
   }
   glVertexArrayTexCoordOffsetEXT = tryCall(() => lib.lookupFunction<
       GlVertexArrayTexCoordOffsetEXTNative,
-      GlVertexArrayTexCoordOffsetEXT>('glVertexArrayTexCoordOffsetEXT'));
+      GlVertexArrayTexCoordOffsetEXT>('glVertexArrayTexCoordOffsetEXT')) as void Function(int, int, int, int, int, int)?;
   if (glVertexArrayTexCoordOffsetEXT == null) {
     glVertexArrayTexCoordOffsetEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlVertexArrayTexCoordOffsetEXTNative>>.fromAddress(
             _glGetProcAddress('glVertexArrayTexCoordOffsetEXT'))
-        .asFunction<GlVertexArrayTexCoordOffsetEXT>());
+        .asFunction<GlVertexArrayTexCoordOffsetEXT>()) as void Function(int, int, int, int, int, int)?;
   }
   glVertexArrayMultiTexCoordOffsetEXT = tryCall(() => lib.lookupFunction<
           GlVertexArrayMultiTexCoordOffsetEXTNative,
           GlVertexArrayMultiTexCoordOffsetEXT>(
-      'glVertexArrayMultiTexCoordOffsetEXT'));
+      'glVertexArrayMultiTexCoordOffsetEXT')) as void Function(int, int, int, int, int, int, int)?;
   if (glVertexArrayMultiTexCoordOffsetEXT == null) {
     glVertexArrayMultiTexCoordOffsetEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlVertexArrayMultiTexCoordOffsetEXTNative>>.fromAddress(
             _glGetProcAddress('glVertexArrayMultiTexCoordOffsetEXT'))
-        .asFunction<GlVertexArrayMultiTexCoordOffsetEXT>());
+        .asFunction<GlVertexArrayMultiTexCoordOffsetEXT>()) as void Function(int, int, int, int, int, int, int)?;
   }
   glVertexArrayFogCoordOffsetEXT = tryCall(() => lib.lookupFunction<
       GlVertexArrayFogCoordOffsetEXTNative,
-      GlVertexArrayFogCoordOffsetEXT>('glVertexArrayFogCoordOffsetEXT'));
+      GlVertexArrayFogCoordOffsetEXT>('glVertexArrayFogCoordOffsetEXT')) as void Function(int, int, int, int, int)?;
   if (glVertexArrayFogCoordOffsetEXT == null) {
     glVertexArrayFogCoordOffsetEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlVertexArrayFogCoordOffsetEXTNative>>.fromAddress(
             _glGetProcAddress('glVertexArrayFogCoordOffsetEXT'))
-        .asFunction<GlVertexArrayFogCoordOffsetEXT>());
+        .asFunction<GlVertexArrayFogCoordOffsetEXT>()) as void Function(int, int, int, int, int)?;
   }
   glVertexArraySecondaryColorOffsetEXT = tryCall(() => lib.lookupFunction<
           GlVertexArraySecondaryColorOffsetEXTNative,
           GlVertexArraySecondaryColorOffsetEXT>(
-      'glVertexArraySecondaryColorOffsetEXT'));
+      'glVertexArraySecondaryColorOffsetEXT')) as void Function(int, int, int, int, int, int)?;
   if (glVertexArraySecondaryColorOffsetEXT == null) {
     glVertexArraySecondaryColorOffsetEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlVertexArraySecondaryColorOffsetEXTNative>>.fromAddress(
             _glGetProcAddress('glVertexArraySecondaryColorOffsetEXT'))
-        .asFunction<GlVertexArraySecondaryColorOffsetEXT>());
+        .asFunction<GlVertexArraySecondaryColorOffsetEXT>()) as void Function(int, int, int, int, int, int)?;
   }
   glVertexArrayVertexAttribOffsetEXT = tryCall(() => lib.lookupFunction<
           GlVertexArrayVertexAttribOffsetEXTNative,
           GlVertexArrayVertexAttribOffsetEXT>(
-      'glVertexArrayVertexAttribOffsetEXT'));
+      'glVertexArrayVertexAttribOffsetEXT')) as void Function(int, int, int, int, int, int, int, int)?;
   if (glVertexArrayVertexAttribOffsetEXT == null) {
     glVertexArrayVertexAttribOffsetEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlVertexArrayVertexAttribOffsetEXTNative>>.fromAddress(
             _glGetProcAddress('glVertexArrayVertexAttribOffsetEXT'))
-        .asFunction<GlVertexArrayVertexAttribOffsetEXT>());
+        .asFunction<GlVertexArrayVertexAttribOffsetEXT>()) as void Function(int, int, int, int, int, int, int, int)?;
   }
   glVertexArrayVertexAttribIOffsetEXT = tryCall(() => lib.lookupFunction<
           GlVertexArrayVertexAttribIOffsetEXTNative,
           GlVertexArrayVertexAttribIOffsetEXT>(
-      'glVertexArrayVertexAttribIOffsetEXT'));
+      'glVertexArrayVertexAttribIOffsetEXT')) as void Function(int, int, int, int, int, int, int)?;
   if (glVertexArrayVertexAttribIOffsetEXT == null) {
     glVertexArrayVertexAttribIOffsetEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlVertexArrayVertexAttribIOffsetEXTNative>>.fromAddress(
             _glGetProcAddress('glVertexArrayVertexAttribIOffsetEXT'))
-        .asFunction<GlVertexArrayVertexAttribIOffsetEXT>());
+        .asFunction<GlVertexArrayVertexAttribIOffsetEXT>()) as void Function(int, int, int, int, int, int, int)?;
   }
   glEnableVertexArrayEXT = tryCall(() =>
       lib.lookupFunction<GlEnableVertexArrayEXTNative, GlEnableVertexArrayEXT>(
-          'glEnableVertexArrayEXT'));
+          'glEnableVertexArrayEXT')) as void Function(int, int)?;
   if (glEnableVertexArrayEXT == null) {
     glEnableVertexArrayEXT = tryCall(() =>
         Pointer<NativeFunction<GlEnableVertexArrayEXTNative>>.fromAddress(
                 _glGetProcAddress('glEnableVertexArrayEXT'))
-            .asFunction<GlEnableVertexArrayEXT>());
+            .asFunction<GlEnableVertexArrayEXT>()) as void Function(int, int)?;
   }
   glDisableVertexArrayEXT = tryCall(() => lib.lookupFunction<
       GlDisableVertexArrayEXTNative,
-      GlDisableVertexArrayEXT>('glDisableVertexArrayEXT'));
+      GlDisableVertexArrayEXT>('glDisableVertexArrayEXT')) as void Function(int, int)?;
   if (glDisableVertexArrayEXT == null) {
     glDisableVertexArrayEXT = tryCall(() =>
         Pointer<NativeFunction<GlDisableVertexArrayEXTNative>>.fromAddress(
                 _glGetProcAddress('glDisableVertexArrayEXT'))
-            .asFunction<GlDisableVertexArrayEXT>());
+            .asFunction<GlDisableVertexArrayEXT>()) as void Function(int, int)?;
   }
   glEnableVertexArrayAttribEXT = tryCall(() => lib.lookupFunction<
       GlEnableVertexArrayAttribEXTNative,
-      GlEnableVertexArrayAttribEXT>('glEnableVertexArrayAttribEXT'));
+      GlEnableVertexArrayAttribEXT>('glEnableVertexArrayAttribEXT')) as void Function(int, int)?;
   if (glEnableVertexArrayAttribEXT == null) {
     glEnableVertexArrayAttribEXT = tryCall(() =>
         Pointer<NativeFunction<GlEnableVertexArrayAttribEXTNative>>.fromAddress(
                 _glGetProcAddress('glEnableVertexArrayAttribEXT'))
-            .asFunction<GlEnableVertexArrayAttribEXT>());
+            .asFunction<GlEnableVertexArrayAttribEXT>()) as void Function(int, int)?;
   }
   glDisableVertexArrayAttribEXT = tryCall(() => lib.lookupFunction<
       GlDisableVertexArrayAttribEXTNative,
-      GlDisableVertexArrayAttribEXT>('glDisableVertexArrayAttribEXT'));
+      GlDisableVertexArrayAttribEXT>('glDisableVertexArrayAttribEXT')) as void Function(int, int)?;
   if (glDisableVertexArrayAttribEXT == null) {
     glDisableVertexArrayAttribEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlDisableVertexArrayAttribEXTNative>>.fromAddress(
             _glGetProcAddress('glDisableVertexArrayAttribEXT'))
-        .asFunction<GlDisableVertexArrayAttribEXT>());
+        .asFunction<GlDisableVertexArrayAttribEXT>()) as void Function(int, int)?;
   }
   glGetVertexArrayIntegervEXT = tryCall(() => lib.lookupFunction<
       GlGetVertexArrayIntegervEXTNative,
-      GlGetVertexArrayIntegervEXT>('glGetVertexArrayIntegervEXT'));
+      GlGetVertexArrayIntegervEXT>('glGetVertexArrayIntegervEXT')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetVertexArrayIntegervEXT == null) {
     glGetVertexArrayIntegervEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetVertexArrayIntegervEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetVertexArrayIntegervEXT'))
-            .asFunction<GlGetVertexArrayIntegervEXT>());
+            .asFunction<GlGetVertexArrayIntegervEXT>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glGetVertexArrayPointervEXT = tryCall(() => lib.lookupFunction<
       GlGetVertexArrayPointervEXTNative,
-      GlGetVertexArrayPointervEXT>('glGetVertexArrayPointervEXT'));
+      GlGetVertexArrayPointervEXT>('glGetVertexArrayPointervEXT')) as void Function(int, int, Pointer<NativeType>)?;
   if (glGetVertexArrayPointervEXT == null) {
     glGetVertexArrayPointervEXT = tryCall(() =>
         Pointer<NativeFunction<GlGetVertexArrayPointervEXTNative>>.fromAddress(
                 _glGetProcAddress('glGetVertexArrayPointervEXT'))
-            .asFunction<GlGetVertexArrayPointervEXT>());
+            .asFunction<GlGetVertexArrayPointervEXT>()) as void Function(int, int, Pointer<NativeType>)?;
   }
   glGetVertexArrayIntegeri_vEXT = tryCall(() => lib.lookupFunction<
       GlGetVertexArrayIntegeri_vEXTNative,
-      GlGetVertexArrayIntegeri_vEXT>('glGetVertexArrayIntegeri_vEXT'));
+      GlGetVertexArrayIntegeri_vEXT>('glGetVertexArrayIntegeri_vEXT')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glGetVertexArrayIntegeri_vEXT == null) {
     glGetVertexArrayIntegeri_vEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetVertexArrayIntegeri_vEXTNative>>.fromAddress(
             _glGetProcAddress('glGetVertexArrayIntegeri_vEXT'))
-        .asFunction<GlGetVertexArrayIntegeri_vEXT>());
+        .asFunction<GlGetVertexArrayIntegeri_vEXT>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glGetVertexArrayPointeri_vEXT = tryCall(() => lib.lookupFunction<
       GlGetVertexArrayPointeri_vEXTNative,
-      GlGetVertexArrayPointeri_vEXT>('glGetVertexArrayPointeri_vEXT'));
+      GlGetVertexArrayPointeri_vEXT>('glGetVertexArrayPointeri_vEXT')) as void Function(int, int, int, Pointer<NativeType>)?;
   if (glGetVertexArrayPointeri_vEXT == null) {
     glGetVertexArrayPointeri_vEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetVertexArrayPointeri_vEXTNative>>.fromAddress(
             _glGetProcAddress('glGetVertexArrayPointeri_vEXT'))
-        .asFunction<GlGetVertexArrayPointeri_vEXT>());
+        .asFunction<GlGetVertexArrayPointeri_vEXT>()) as void Function(int, int, int, Pointer<NativeType>)?;
   }
   glMapNamedBufferRangeEXT = tryCall(() => lib.lookupFunction<
       GlMapNamedBufferRangeEXTNative,
-      GlMapNamedBufferRangeEXT>('glMapNamedBufferRangeEXT'));
+      GlMapNamedBufferRangeEXT>('glMapNamedBufferRangeEXT')) as Pointer<NativeType> Function(int, int, int, int)?;
   if (glMapNamedBufferRangeEXT == null) {
     glMapNamedBufferRangeEXT = tryCall(() =>
         Pointer<NativeFunction<GlMapNamedBufferRangeEXTNative>>.fromAddress(
                 _glGetProcAddress('glMapNamedBufferRangeEXT'))
-            .asFunction<GlMapNamedBufferRangeEXT>());
+            .asFunction<GlMapNamedBufferRangeEXT>()) as Pointer<NativeType> Function(int, int, int, int)?;
   }
   glFlushMappedNamedBufferRangeEXT = tryCall(() => lib.lookupFunction<
       GlFlushMappedNamedBufferRangeEXTNative,
-      GlFlushMappedNamedBufferRangeEXT>('glFlushMappedNamedBufferRangeEXT'));
+      GlFlushMappedNamedBufferRangeEXT>('glFlushMappedNamedBufferRangeEXT')) as void Function(int, int, int)?;
   if (glFlushMappedNamedBufferRangeEXT == null) {
     glFlushMappedNamedBufferRangeEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlFlushMappedNamedBufferRangeEXTNative>>.fromAddress(
             _glGetProcAddress('glFlushMappedNamedBufferRangeEXT'))
-        .asFunction<GlFlushMappedNamedBufferRangeEXT>());
+        .asFunction<GlFlushMappedNamedBufferRangeEXT>()) as void Function(int, int, int)?;
   }
   glNamedBufferStorageEXT = tryCall(() => lib.lookupFunction<
       GlNamedBufferStorageEXTNative,
-      GlNamedBufferStorageEXT>('glNamedBufferStorageEXT'));
+      GlNamedBufferStorageEXT>('glNamedBufferStorageEXT')) as void Function(int, int, Pointer<NativeType>, int)?;
   if (glNamedBufferStorageEXT == null) {
     glNamedBufferStorageEXT = tryCall(() =>
         Pointer<NativeFunction<GlNamedBufferStorageEXTNative>>.fromAddress(
                 _glGetProcAddress('glNamedBufferStorageEXT'))
-            .asFunction<GlNamedBufferStorageEXT>());
+            .asFunction<GlNamedBufferStorageEXT>()) as void Function(int, int, Pointer<NativeType>, int)?;
   }
   glClearNamedBufferDataEXT = tryCall(() => lib.lookupFunction<
       GlClearNamedBufferDataEXTNative,
-      GlClearNamedBufferDataEXT>('glClearNamedBufferDataEXT'));
+      GlClearNamedBufferDataEXT>('glClearNamedBufferDataEXT')) as void Function(int, int, int, int, Pointer<NativeType>)?;
   if (glClearNamedBufferDataEXT == null) {
     glClearNamedBufferDataEXT = tryCall(() =>
         Pointer<NativeFunction<GlClearNamedBufferDataEXTNative>>.fromAddress(
                 _glGetProcAddress('glClearNamedBufferDataEXT'))
-            .asFunction<GlClearNamedBufferDataEXT>());
+            .asFunction<GlClearNamedBufferDataEXT>()) as void Function(int, int, int, int, Pointer<NativeType>)?;
   }
   glClearNamedBufferSubDataEXT = tryCall(() => lib.lookupFunction<
       GlClearNamedBufferSubDataEXTNative,
-      GlClearNamedBufferSubDataEXT>('glClearNamedBufferSubDataEXT'));
+      GlClearNamedBufferSubDataEXT>('glClearNamedBufferSubDataEXT')) as void Function(int, int, int, int, int, int, Pointer<NativeType>)?;
   if (glClearNamedBufferSubDataEXT == null) {
     glClearNamedBufferSubDataEXT = tryCall(() =>
         Pointer<NativeFunction<GlClearNamedBufferSubDataEXTNative>>.fromAddress(
                 _glGetProcAddress('glClearNamedBufferSubDataEXT'))
-            .asFunction<GlClearNamedBufferSubDataEXT>());
+            .asFunction<GlClearNamedBufferSubDataEXT>()) as void Function(int, int, int, int, int, int, Pointer<NativeType>)?;
   }
   glNamedFramebufferParameteriEXT = tryCall(() => lib.lookupFunction<
       GlNamedFramebufferParameteriEXTNative,
-      GlNamedFramebufferParameteriEXT>('glNamedFramebufferParameteriEXT'));
+      GlNamedFramebufferParameteriEXT>('glNamedFramebufferParameteriEXT')) as void Function(int, int, int)?;
   if (glNamedFramebufferParameteriEXT == null) {
     glNamedFramebufferParameteriEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedFramebufferParameteriEXTNative>>.fromAddress(
             _glGetProcAddress('glNamedFramebufferParameteriEXT'))
-        .asFunction<GlNamedFramebufferParameteriEXT>());
+        .asFunction<GlNamedFramebufferParameteriEXT>()) as void Function(int, int, int)?;
   }
   glGetNamedFramebufferParameterivEXT = tryCall(() => lib.lookupFunction<
           GlGetNamedFramebufferParameterivEXTNative,
           GlGetNamedFramebufferParameterivEXT>(
-      'glGetNamedFramebufferParameterivEXT'));
+      'glGetNamedFramebufferParameterivEXT')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetNamedFramebufferParameterivEXT == null) {
     glGetNamedFramebufferParameterivEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetNamedFramebufferParameterivEXTNative>>.fromAddress(
             _glGetProcAddress('glGetNamedFramebufferParameterivEXT'))
-        .asFunction<GlGetNamedFramebufferParameterivEXT>());
+        .asFunction<GlGetNamedFramebufferParameterivEXT>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glProgramUniform1dEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform1dEXTNative, GlProgramUniform1dEXT>(
-          'glProgramUniform1dEXT'));
+          'glProgramUniform1dEXT')) as void Function(int, int, double)?;
   if (glProgramUniform1dEXT == null) {
     glProgramUniform1dEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform1dEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform1dEXT'))
-            .asFunction<GlProgramUniform1dEXT>());
+            .asFunction<GlProgramUniform1dEXT>()) as void Function(int, int, double)?;
   }
   glProgramUniform2dEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform2dEXTNative, GlProgramUniform2dEXT>(
-          'glProgramUniform2dEXT'));
+          'glProgramUniform2dEXT')) as void Function(int, int, double, double)?;
   if (glProgramUniform2dEXT == null) {
     glProgramUniform2dEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform2dEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform2dEXT'))
-            .asFunction<GlProgramUniform2dEXT>());
+            .asFunction<GlProgramUniform2dEXT>()) as void Function(int, int, double, double)?;
   }
   glProgramUniform3dEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform3dEXTNative, GlProgramUniform3dEXT>(
-          'glProgramUniform3dEXT'));
+          'glProgramUniform3dEXT')) as void Function(int, int, double, double, double)?;
   if (glProgramUniform3dEXT == null) {
     glProgramUniform3dEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform3dEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform3dEXT'))
-            .asFunction<GlProgramUniform3dEXT>());
+            .asFunction<GlProgramUniform3dEXT>()) as void Function(int, int, double, double, double)?;
   }
   glProgramUniform4dEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform4dEXTNative, GlProgramUniform4dEXT>(
-          'glProgramUniform4dEXT'));
+          'glProgramUniform4dEXT')) as void Function(int, int, double, double, double, double)?;
   if (glProgramUniform4dEXT == null) {
     glProgramUniform4dEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform4dEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform4dEXT'))
-            .asFunction<GlProgramUniform4dEXT>());
+            .asFunction<GlProgramUniform4dEXT>()) as void Function(int, int, double, double, double, double)?;
   }
   glProgramUniform1dvEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform1dvEXTNative, GlProgramUniform1dvEXT>(
-          'glProgramUniform1dvEXT'));
+          'glProgramUniform1dvEXT')) as void Function(int, int, int, Pointer<Double>)?;
   if (glProgramUniform1dvEXT == null) {
     glProgramUniform1dvEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform1dvEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform1dvEXT'))
-            .asFunction<GlProgramUniform1dvEXT>());
+            .asFunction<GlProgramUniform1dvEXT>()) as void Function(int, int, int, Pointer<Double>)?;
   }
   glProgramUniform2dvEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform2dvEXTNative, GlProgramUniform2dvEXT>(
-          'glProgramUniform2dvEXT'));
+          'glProgramUniform2dvEXT')) as void Function(int, int, int, Pointer<Double>)?;
   if (glProgramUniform2dvEXT == null) {
     glProgramUniform2dvEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform2dvEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform2dvEXT'))
-            .asFunction<GlProgramUniform2dvEXT>());
+            .asFunction<GlProgramUniform2dvEXT>()) as void Function(int, int, int, Pointer<Double>)?;
   }
   glProgramUniform3dvEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform3dvEXTNative, GlProgramUniform3dvEXT>(
-          'glProgramUniform3dvEXT'));
+          'glProgramUniform3dvEXT')) as void Function(int, int, int, Pointer<Double>)?;
   if (glProgramUniform3dvEXT == null) {
     glProgramUniform3dvEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform3dvEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform3dvEXT'))
-            .asFunction<GlProgramUniform3dvEXT>());
+            .asFunction<GlProgramUniform3dvEXT>()) as void Function(int, int, int, Pointer<Double>)?;
   }
   glProgramUniform4dvEXT = tryCall(() =>
       lib.lookupFunction<GlProgramUniform4dvEXTNative, GlProgramUniform4dvEXT>(
-          'glProgramUniform4dvEXT'));
+          'glProgramUniform4dvEXT')) as void Function(int, int, int, Pointer<Double>)?;
   if (glProgramUniform4dvEXT == null) {
     glProgramUniform4dvEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform4dvEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform4dvEXT'))
-            .asFunction<GlProgramUniform4dvEXT>());
+            .asFunction<GlProgramUniform4dvEXT>()) as void Function(int, int, int, Pointer<Double>)?;
   }
   glProgramUniformMatrix2dvEXT = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix2dvEXTNative,
-      GlProgramUniformMatrix2dvEXT>('glProgramUniformMatrix2dvEXT'));
+      GlProgramUniformMatrix2dvEXT>('glProgramUniformMatrix2dvEXT')) as void Function(int, int, int, int, Pointer<Double>)?;
   if (glProgramUniformMatrix2dvEXT == null) {
     glProgramUniformMatrix2dvEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformMatrix2dvEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformMatrix2dvEXT'))
-            .asFunction<GlProgramUniformMatrix2dvEXT>());
+            .asFunction<GlProgramUniformMatrix2dvEXT>()) as void Function(int, int, int, int, Pointer<Double>)?;
   }
   glProgramUniformMatrix3dvEXT = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix3dvEXTNative,
-      GlProgramUniformMatrix3dvEXT>('glProgramUniformMatrix3dvEXT'));
+      GlProgramUniformMatrix3dvEXT>('glProgramUniformMatrix3dvEXT')) as void Function(int, int, int, int, Pointer<Double>)?;
   if (glProgramUniformMatrix3dvEXT == null) {
     glProgramUniformMatrix3dvEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformMatrix3dvEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformMatrix3dvEXT'))
-            .asFunction<GlProgramUniformMatrix3dvEXT>());
+            .asFunction<GlProgramUniformMatrix3dvEXT>()) as void Function(int, int, int, int, Pointer<Double>)?;
   }
   glProgramUniformMatrix4dvEXT = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix4dvEXTNative,
-      GlProgramUniformMatrix4dvEXT>('glProgramUniformMatrix4dvEXT'));
+      GlProgramUniformMatrix4dvEXT>('glProgramUniformMatrix4dvEXT')) as void Function(int, int, int, int, Pointer<Double>)?;
   if (glProgramUniformMatrix4dvEXT == null) {
     glProgramUniformMatrix4dvEXT = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformMatrix4dvEXTNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformMatrix4dvEXT'))
-            .asFunction<GlProgramUniformMatrix4dvEXT>());
+            .asFunction<GlProgramUniformMatrix4dvEXT>()) as void Function(int, int, int, int, Pointer<Double>)?;
   }
   glProgramUniformMatrix2x3dvEXT = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix2x3dvEXTNative,
-      GlProgramUniformMatrix2x3dvEXT>('glProgramUniformMatrix2x3dvEXT'));
+      GlProgramUniformMatrix2x3dvEXT>('glProgramUniformMatrix2x3dvEXT')) as void Function(int, int, int, int, Pointer<Double>)?;
   if (glProgramUniformMatrix2x3dvEXT == null) {
     glProgramUniformMatrix2x3dvEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlProgramUniformMatrix2x3dvEXTNative>>.fromAddress(
             _glGetProcAddress('glProgramUniformMatrix2x3dvEXT'))
-        .asFunction<GlProgramUniformMatrix2x3dvEXT>());
+        .asFunction<GlProgramUniformMatrix2x3dvEXT>()) as void Function(int, int, int, int, Pointer<Double>)?;
   }
   glProgramUniformMatrix2x4dvEXT = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix2x4dvEXTNative,
-      GlProgramUniformMatrix2x4dvEXT>('glProgramUniformMatrix2x4dvEXT'));
+      GlProgramUniformMatrix2x4dvEXT>('glProgramUniformMatrix2x4dvEXT')) as void Function(int, int, int, int, Pointer<Double>)?;
   if (glProgramUniformMatrix2x4dvEXT == null) {
     glProgramUniformMatrix2x4dvEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlProgramUniformMatrix2x4dvEXTNative>>.fromAddress(
             _glGetProcAddress('glProgramUniformMatrix2x4dvEXT'))
-        .asFunction<GlProgramUniformMatrix2x4dvEXT>());
+        .asFunction<GlProgramUniformMatrix2x4dvEXT>()) as void Function(int, int, int, int, Pointer<Double>)?;
   }
   glProgramUniformMatrix3x2dvEXT = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix3x2dvEXTNative,
-      GlProgramUniformMatrix3x2dvEXT>('glProgramUniformMatrix3x2dvEXT'));
+      GlProgramUniformMatrix3x2dvEXT>('glProgramUniformMatrix3x2dvEXT')) as void Function(int, int, int, int, Pointer<Double>)?;
   if (glProgramUniformMatrix3x2dvEXT == null) {
     glProgramUniformMatrix3x2dvEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlProgramUniformMatrix3x2dvEXTNative>>.fromAddress(
             _glGetProcAddress('glProgramUniformMatrix3x2dvEXT'))
-        .asFunction<GlProgramUniformMatrix3x2dvEXT>());
+        .asFunction<GlProgramUniformMatrix3x2dvEXT>()) as void Function(int, int, int, int, Pointer<Double>)?;
   }
   glProgramUniformMatrix3x4dvEXT = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix3x4dvEXTNative,
-      GlProgramUniformMatrix3x4dvEXT>('glProgramUniformMatrix3x4dvEXT'));
+      GlProgramUniformMatrix3x4dvEXT>('glProgramUniformMatrix3x4dvEXT')) as void Function(int, int, int, int, Pointer<Double>)?;
   if (glProgramUniformMatrix3x4dvEXT == null) {
     glProgramUniformMatrix3x4dvEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlProgramUniformMatrix3x4dvEXTNative>>.fromAddress(
             _glGetProcAddress('glProgramUniformMatrix3x4dvEXT'))
-        .asFunction<GlProgramUniformMatrix3x4dvEXT>());
+        .asFunction<GlProgramUniformMatrix3x4dvEXT>()) as void Function(int, int, int, int, Pointer<Double>)?;
   }
   glProgramUniformMatrix4x2dvEXT = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix4x2dvEXTNative,
-      GlProgramUniformMatrix4x2dvEXT>('glProgramUniformMatrix4x2dvEXT'));
+      GlProgramUniformMatrix4x2dvEXT>('glProgramUniformMatrix4x2dvEXT')) as void Function(int, int, int, int, Pointer<Double>)?;
   if (glProgramUniformMatrix4x2dvEXT == null) {
     glProgramUniformMatrix4x2dvEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlProgramUniformMatrix4x2dvEXTNative>>.fromAddress(
             _glGetProcAddress('glProgramUniformMatrix4x2dvEXT'))
-        .asFunction<GlProgramUniformMatrix4x2dvEXT>());
+        .asFunction<GlProgramUniformMatrix4x2dvEXT>()) as void Function(int, int, int, int, Pointer<Double>)?;
   }
   glProgramUniformMatrix4x3dvEXT = tryCall(() => lib.lookupFunction<
       GlProgramUniformMatrix4x3dvEXTNative,
-      GlProgramUniformMatrix4x3dvEXT>('glProgramUniformMatrix4x3dvEXT'));
+      GlProgramUniformMatrix4x3dvEXT>('glProgramUniformMatrix4x3dvEXT')) as void Function(int, int, int, int, Pointer<Double>)?;
   if (glProgramUniformMatrix4x3dvEXT == null) {
     glProgramUniformMatrix4x3dvEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlProgramUniformMatrix4x3dvEXTNative>>.fromAddress(
             _glGetProcAddress('glProgramUniformMatrix4x3dvEXT'))
-        .asFunction<GlProgramUniformMatrix4x3dvEXT>());
+        .asFunction<GlProgramUniformMatrix4x3dvEXT>()) as void Function(int, int, int, int, Pointer<Double>)?;
   }
   glTextureBufferRangeEXT = tryCall(() => lib.lookupFunction<
       GlTextureBufferRangeEXTNative,
-      GlTextureBufferRangeEXT>('glTextureBufferRangeEXT'));
+      GlTextureBufferRangeEXT>('glTextureBufferRangeEXT')) as void Function(int, int, int, int, int, int)?;
   if (glTextureBufferRangeEXT == null) {
     glTextureBufferRangeEXT = tryCall(() =>
         Pointer<NativeFunction<GlTextureBufferRangeEXTNative>>.fromAddress(
                 _glGetProcAddress('glTextureBufferRangeEXT'))
-            .asFunction<GlTextureBufferRangeEXT>());
+            .asFunction<GlTextureBufferRangeEXT>()) as void Function(int, int, int, int, int, int)?;
   }
   glTextureStorage1DEXT = tryCall(() =>
       lib.lookupFunction<GlTextureStorage1DEXTNative, GlTextureStorage1DEXT>(
-          'glTextureStorage1DEXT'));
+          'glTextureStorage1DEXT')) as void Function(int, int, int, int, int)?;
   if (glTextureStorage1DEXT == null) {
     glTextureStorage1DEXT = tryCall(() =>
         Pointer<NativeFunction<GlTextureStorage1DEXTNative>>.fromAddress(
                 _glGetProcAddress('glTextureStorage1DEXT'))
-            .asFunction<GlTextureStorage1DEXT>());
+            .asFunction<GlTextureStorage1DEXT>()) as void Function(int, int, int, int, int)?;
   }
   glTextureStorage2DEXT = tryCall(() =>
       lib.lookupFunction<GlTextureStorage2DEXTNative, GlTextureStorage2DEXT>(
-          'glTextureStorage2DEXT'));
+          'glTextureStorage2DEXT')) as void Function(int, int, int, int, int, int)?;
   if (glTextureStorage2DEXT == null) {
     glTextureStorage2DEXT = tryCall(() =>
         Pointer<NativeFunction<GlTextureStorage2DEXTNative>>.fromAddress(
                 _glGetProcAddress('glTextureStorage2DEXT'))
-            .asFunction<GlTextureStorage2DEXT>());
+            .asFunction<GlTextureStorage2DEXT>()) as void Function(int, int, int, int, int, int)?;
   }
   glTextureStorage3DEXT = tryCall(() =>
       lib.lookupFunction<GlTextureStorage3DEXTNative, GlTextureStorage3DEXT>(
-          'glTextureStorage3DEXT'));
+          'glTextureStorage3DEXT')) as void Function(int, int, int, int, int, int, int)?;
   if (glTextureStorage3DEXT == null) {
     glTextureStorage3DEXT = tryCall(() =>
         Pointer<NativeFunction<GlTextureStorage3DEXTNative>>.fromAddress(
                 _glGetProcAddress('glTextureStorage3DEXT'))
-            .asFunction<GlTextureStorage3DEXT>());
+            .asFunction<GlTextureStorage3DEXT>()) as void Function(int, int, int, int, int, int, int)?;
   }
   glTextureStorage2DMultisampleEXT = tryCall(() => lib.lookupFunction<
       GlTextureStorage2DMultisampleEXTNative,
-      GlTextureStorage2DMultisampleEXT>('glTextureStorage2DMultisampleEXT'));
+      GlTextureStorage2DMultisampleEXT>('glTextureStorage2DMultisampleEXT')) as void Function(int, int, int, int, int, int, int)?;
   if (glTextureStorage2DMultisampleEXT == null) {
     glTextureStorage2DMultisampleEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlTextureStorage2DMultisampleEXTNative>>.fromAddress(
             _glGetProcAddress('glTextureStorage2DMultisampleEXT'))
-        .asFunction<GlTextureStorage2DMultisampleEXT>());
+        .asFunction<GlTextureStorage2DMultisampleEXT>()) as void Function(int, int, int, int, int, int, int)?;
   }
   glTextureStorage3DMultisampleEXT = tryCall(() => lib.lookupFunction<
       GlTextureStorage3DMultisampleEXTNative,
-      GlTextureStorage3DMultisampleEXT>('glTextureStorage3DMultisampleEXT'));
+      GlTextureStorage3DMultisampleEXT>('glTextureStorage3DMultisampleEXT')) as void Function(int, int, int, int, int, int, int, int)?;
   if (glTextureStorage3DMultisampleEXT == null) {
     glTextureStorage3DMultisampleEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlTextureStorage3DMultisampleEXTNative>>.fromAddress(
             _glGetProcAddress('glTextureStorage3DMultisampleEXT'))
-        .asFunction<GlTextureStorage3DMultisampleEXT>());
+        .asFunction<GlTextureStorage3DMultisampleEXT>()) as void Function(int, int, int, int, int, int, int, int)?;
   }
   glVertexArrayBindVertexBufferEXT = tryCall(() => lib.lookupFunction<
       GlVertexArrayBindVertexBufferEXTNative,
-      GlVertexArrayBindVertexBufferEXT>('glVertexArrayBindVertexBufferEXT'));
+      GlVertexArrayBindVertexBufferEXT>('glVertexArrayBindVertexBufferEXT')) as void Function(int, int, int, int, int)?;
   if (glVertexArrayBindVertexBufferEXT == null) {
     glVertexArrayBindVertexBufferEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlVertexArrayBindVertexBufferEXTNative>>.fromAddress(
             _glGetProcAddress('glVertexArrayBindVertexBufferEXT'))
-        .asFunction<GlVertexArrayBindVertexBufferEXT>());
+        .asFunction<GlVertexArrayBindVertexBufferEXT>()) as void Function(int, int, int, int, int)?;
   }
   glVertexArrayVertexAttribFormatEXT = tryCall(() => lib.lookupFunction<
           GlVertexArrayVertexAttribFormatEXTNative,
           GlVertexArrayVertexAttribFormatEXT>(
-      'glVertexArrayVertexAttribFormatEXT'));
+      'glVertexArrayVertexAttribFormatEXT')) as void Function(int, int, int, int, int, int)?;
   if (glVertexArrayVertexAttribFormatEXT == null) {
     glVertexArrayVertexAttribFormatEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlVertexArrayVertexAttribFormatEXTNative>>.fromAddress(
             _glGetProcAddress('glVertexArrayVertexAttribFormatEXT'))
-        .asFunction<GlVertexArrayVertexAttribFormatEXT>());
+        .asFunction<GlVertexArrayVertexAttribFormatEXT>()) as void Function(int, int, int, int, int, int)?;
   }
   glVertexArrayVertexAttribIFormatEXT = tryCall(() => lib.lookupFunction<
           GlVertexArrayVertexAttribIFormatEXTNative,
           GlVertexArrayVertexAttribIFormatEXT>(
-      'glVertexArrayVertexAttribIFormatEXT'));
+      'glVertexArrayVertexAttribIFormatEXT')) as void Function(int, int, int, int, int)?;
   if (glVertexArrayVertexAttribIFormatEXT == null) {
     glVertexArrayVertexAttribIFormatEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlVertexArrayVertexAttribIFormatEXTNative>>.fromAddress(
             _glGetProcAddress('glVertexArrayVertexAttribIFormatEXT'))
-        .asFunction<GlVertexArrayVertexAttribIFormatEXT>());
+        .asFunction<GlVertexArrayVertexAttribIFormatEXT>()) as void Function(int, int, int, int, int)?;
   }
   glVertexArrayVertexAttribLFormatEXT = tryCall(() => lib.lookupFunction<
           GlVertexArrayVertexAttribLFormatEXTNative,
           GlVertexArrayVertexAttribLFormatEXT>(
-      'glVertexArrayVertexAttribLFormatEXT'));
+      'glVertexArrayVertexAttribLFormatEXT')) as void Function(int, int, int, int, int)?;
   if (glVertexArrayVertexAttribLFormatEXT == null) {
     glVertexArrayVertexAttribLFormatEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlVertexArrayVertexAttribLFormatEXTNative>>.fromAddress(
             _glGetProcAddress('glVertexArrayVertexAttribLFormatEXT'))
-        .asFunction<GlVertexArrayVertexAttribLFormatEXT>());
+        .asFunction<GlVertexArrayVertexAttribLFormatEXT>()) as void Function(int, int, int, int, int)?;
   }
   glVertexArrayVertexAttribBindingEXT = tryCall(() => lib.lookupFunction<
           GlVertexArrayVertexAttribBindingEXTNative,
           GlVertexArrayVertexAttribBindingEXT>(
-      'glVertexArrayVertexAttribBindingEXT'));
+      'glVertexArrayVertexAttribBindingEXT')) as void Function(int, int, int)?;
   if (glVertexArrayVertexAttribBindingEXT == null) {
     glVertexArrayVertexAttribBindingEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlVertexArrayVertexAttribBindingEXTNative>>.fromAddress(
             _glGetProcAddress('glVertexArrayVertexAttribBindingEXT'))
-        .asFunction<GlVertexArrayVertexAttribBindingEXT>());
+        .asFunction<GlVertexArrayVertexAttribBindingEXT>()) as void Function(int, int, int)?;
   }
   glVertexArrayVertexBindingDivisorEXT = tryCall(() => lib.lookupFunction<
           GlVertexArrayVertexBindingDivisorEXTNative,
           GlVertexArrayVertexBindingDivisorEXT>(
-      'glVertexArrayVertexBindingDivisorEXT'));
+      'glVertexArrayVertexBindingDivisorEXT')) as void Function(int, int, int)?;
   if (glVertexArrayVertexBindingDivisorEXT == null) {
     glVertexArrayVertexBindingDivisorEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlVertexArrayVertexBindingDivisorEXTNative>>.fromAddress(
             _glGetProcAddress('glVertexArrayVertexBindingDivisorEXT'))
-        .asFunction<GlVertexArrayVertexBindingDivisorEXT>());
+        .asFunction<GlVertexArrayVertexBindingDivisorEXT>()) as void Function(int, int, int)?;
   }
   glVertexArrayVertexAttribLOffsetEXT = tryCall(() => lib.lookupFunction<
           GlVertexArrayVertexAttribLOffsetEXTNative,
           GlVertexArrayVertexAttribLOffsetEXT>(
-      'glVertexArrayVertexAttribLOffsetEXT'));
+      'glVertexArrayVertexAttribLOffsetEXT')) as void Function(int, int, int, int, int, int, int)?;
   if (glVertexArrayVertexAttribLOffsetEXT == null) {
     glVertexArrayVertexAttribLOffsetEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlVertexArrayVertexAttribLOffsetEXTNative>>.fromAddress(
             _glGetProcAddress('glVertexArrayVertexAttribLOffsetEXT'))
-        .asFunction<GlVertexArrayVertexAttribLOffsetEXT>());
+        .asFunction<GlVertexArrayVertexAttribLOffsetEXT>()) as void Function(int, int, int, int, int, int, int)?;
   }
   glTexturePageCommitmentEXT = tryCall(() => lib.lookupFunction<
       GlTexturePageCommitmentEXTNative,
-      GlTexturePageCommitmentEXT>('glTexturePageCommitmentEXT'));
+      GlTexturePageCommitmentEXT>('glTexturePageCommitmentEXT')) as void Function(int, int, int, int, int, int, int, int, int)?;
   if (glTexturePageCommitmentEXT == null) {
     glTexturePageCommitmentEXT = tryCall(() =>
         Pointer<NativeFunction<GlTexturePageCommitmentEXTNative>>.fromAddress(
                 _glGetProcAddress('glTexturePageCommitmentEXT'))
-            .asFunction<GlTexturePageCommitmentEXT>());
+            .asFunction<GlTexturePageCommitmentEXT>()) as void Function(int, int, int, int, int, int, int, int, int)?;
   }
   glVertexArrayVertexAttribDivisorEXT = tryCall(() => lib.lookupFunction<
           GlVertexArrayVertexAttribDivisorEXTNative,
           GlVertexArrayVertexAttribDivisorEXT>(
-      'glVertexArrayVertexAttribDivisorEXT'));
+      'glVertexArrayVertexAttribDivisorEXT')) as void Function(int, int, int)?;
   if (glVertexArrayVertexAttribDivisorEXT == null) {
     glVertexArrayVertexAttribDivisorEXT = tryCall(() => Pointer<
                 NativeFunction<
                     GlVertexArrayVertexAttribDivisorEXTNative>>.fromAddress(
             _glGetProcAddress('glVertexArrayVertexAttribDivisorEXT'))
-        .asFunction<GlVertexArrayVertexAttribDivisorEXT>());
+        .asFunction<GlVertexArrayVertexAttribDivisorEXT>()) as void Function(int, int, int)?;
   }
   glDrawArraysInstancedEXT = tryCall(() => lib.lookupFunction<
       GlDrawArraysInstancedEXTNative,
-      GlDrawArraysInstancedEXT>('glDrawArraysInstancedEXT'));
+      GlDrawArraysInstancedEXT>('glDrawArraysInstancedEXT')) as void Function(int, int, int, int)?;
   if (glDrawArraysInstancedEXT == null) {
     glDrawArraysInstancedEXT = tryCall(() =>
         Pointer<NativeFunction<GlDrawArraysInstancedEXTNative>>.fromAddress(
                 _glGetProcAddress('glDrawArraysInstancedEXT'))
-            .asFunction<GlDrawArraysInstancedEXT>());
+            .asFunction<GlDrawArraysInstancedEXT>()) as void Function(int, int, int, int)?;
   }
   glDrawElementsInstancedEXT = tryCall(() => lib.lookupFunction<
       GlDrawElementsInstancedEXTNative,
-      GlDrawElementsInstancedEXT>('glDrawElementsInstancedEXT'));
+      GlDrawElementsInstancedEXT>('glDrawElementsInstancedEXT')) as void Function(int, int, int, Pointer<NativeType>, int)?;
   if (glDrawElementsInstancedEXT == null) {
     glDrawElementsInstancedEXT = tryCall(() =>
         Pointer<NativeFunction<GlDrawElementsInstancedEXTNative>>.fromAddress(
                 _glGetProcAddress('glDrawElementsInstancedEXT'))
-            .asFunction<GlDrawElementsInstancedEXT>());
+            .asFunction<GlDrawElementsInstancedEXT>()) as void Function(int, int, int, Pointer<NativeType>, int)?;
   }
   glPolygonOffsetClampEXT = tryCall(() => lib.lookupFunction<
       GlPolygonOffsetClampEXTNative,
-      GlPolygonOffsetClampEXT>('glPolygonOffsetClampEXT'));
+      GlPolygonOffsetClampEXT>('glPolygonOffsetClampEXT')) as void Function(double, double, double)?;
   if (glPolygonOffsetClampEXT == null) {
     glPolygonOffsetClampEXT = tryCall(() =>
         Pointer<NativeFunction<GlPolygonOffsetClampEXTNative>>.fromAddress(
                 _glGetProcAddress('glPolygonOffsetClampEXT'))
-            .asFunction<GlPolygonOffsetClampEXT>());
+            .asFunction<GlPolygonOffsetClampEXT>()) as void Function(double, double, double)?;
   }
   glRasterSamplesEXT = tryCall(() =>
       lib.lookupFunction<GlRasterSamplesEXTNative, GlRasterSamplesEXT>(
-          'glRasterSamplesEXT'));
+          'glRasterSamplesEXT')) as void Function(int, int)?;
   if (glRasterSamplesEXT == null) {
     glRasterSamplesEXT = tryCall(() =>
         Pointer<NativeFunction<GlRasterSamplesEXTNative>>.fromAddress(
                 _glGetProcAddress('glRasterSamplesEXT'))
-            .asFunction<GlRasterSamplesEXT>());
+            .asFunction<GlRasterSamplesEXT>()) as void Function(int, int)?;
   }
   glUseShaderProgramEXT = tryCall(() =>
       lib.lookupFunction<GlUseShaderProgramEXTNative, GlUseShaderProgramEXT>(
-          'glUseShaderProgramEXT'));
+          'glUseShaderProgramEXT')) as void Function(int, int)?;
   if (glUseShaderProgramEXT == null) {
     glUseShaderProgramEXT = tryCall(() =>
         Pointer<NativeFunction<GlUseShaderProgramEXTNative>>.fromAddress(
                 _glGetProcAddress('glUseShaderProgramEXT'))
-            .asFunction<GlUseShaderProgramEXT>());
+            .asFunction<GlUseShaderProgramEXT>()) as void Function(int, int)?;
   }
   glActiveProgramEXT = tryCall(() =>
       lib.lookupFunction<GlActiveProgramEXTNative, GlActiveProgramEXT>(
-          'glActiveProgramEXT'));
+          'glActiveProgramEXT')) as void Function(int)?;
   if (glActiveProgramEXT == null) {
     glActiveProgramEXT = tryCall(() =>
         Pointer<NativeFunction<GlActiveProgramEXTNative>>.fromAddress(
                 _glGetProcAddress('glActiveProgramEXT'))
-            .asFunction<GlActiveProgramEXT>());
+            .asFunction<GlActiveProgramEXT>()) as void Function(int)?;
   }
   glCreateShaderProgramEXT = tryCall(() => lib.lookupFunction<
       GlCreateShaderProgramEXTNative,
-      GlCreateShaderProgramEXT>('glCreateShaderProgramEXT'));
+      GlCreateShaderProgramEXT>('glCreateShaderProgramEXT')) as int Function(int, Pointer<NativeType>)?;
   if (glCreateShaderProgramEXT == null) {
     glCreateShaderProgramEXT = tryCall(() =>
         Pointer<NativeFunction<GlCreateShaderProgramEXTNative>>.fromAddress(
                 _glGetProcAddress('glCreateShaderProgramEXT'))
-            .asFunction<GlCreateShaderProgramEXT>());
+            .asFunction<GlCreateShaderProgramEXT>()) as int Function(int, Pointer<NativeType>)?;
   }
   glFramebufferFetchBarrierEXT = tryCall(() => lib.lookupFunction<
       GlFramebufferFetchBarrierEXTNative,
-      GlFramebufferFetchBarrierEXT>('glFramebufferFetchBarrierEXT'));
+      GlFramebufferFetchBarrierEXT>('glFramebufferFetchBarrierEXT')) as void Function()?;
   if (glFramebufferFetchBarrierEXT == null) {
     glFramebufferFetchBarrierEXT = tryCall(() =>
         Pointer<NativeFunction<GlFramebufferFetchBarrierEXTNative>>.fromAddress(
                 _glGetProcAddress('glFramebufferFetchBarrierEXT'))
-            .asFunction<GlFramebufferFetchBarrierEXT>());
+            .asFunction<GlFramebufferFetchBarrierEXT>()) as void Function()?;
   }
   glWindowRectanglesEXT = tryCall(() =>
       lib.lookupFunction<GlWindowRectanglesEXTNative, GlWindowRectanglesEXT>(
-          'glWindowRectanglesEXT'));
+          'glWindowRectanglesEXT')) as void Function(int, int, Pointer<Int32>)?;
   if (glWindowRectanglesEXT == null) {
     glWindowRectanglesEXT = tryCall(() =>
         Pointer<NativeFunction<GlWindowRectanglesEXTNative>>.fromAddress(
                 _glGetProcAddress('glWindowRectanglesEXT'))
-            .asFunction<GlWindowRectanglesEXT>());
+            .asFunction<GlWindowRectanglesEXT>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glApplyFramebufferAttachmentCMAAINTEL = tryCall(() => lib.lookupFunction<
           GlApplyFramebufferAttachmentCMAAINTELNative,
           GlApplyFramebufferAttachmentCMAAINTEL>(
-      'glApplyFramebufferAttachmentCMAAINTEL'));
+      'glApplyFramebufferAttachmentCMAAINTEL')) as void Function()?;
   if (glApplyFramebufferAttachmentCMAAINTEL == null) {
     glApplyFramebufferAttachmentCMAAINTEL = tryCall(() => Pointer<
                 NativeFunction<
                     GlApplyFramebufferAttachmentCMAAINTELNative>>.fromAddress(
             _glGetProcAddress('glApplyFramebufferAttachmentCMAAINTEL'))
-        .asFunction<GlApplyFramebufferAttachmentCMAAINTEL>());
+        .asFunction<GlApplyFramebufferAttachmentCMAAINTEL>()) as void Function()?;
   }
   glBeginPerfQueryINTEL = tryCall(() =>
       lib.lookupFunction<GlBeginPerfQueryINTELNative, GlBeginPerfQueryINTEL>(
-          'glBeginPerfQueryINTEL'));
+          'glBeginPerfQueryINTEL')) as void Function(int)?;
   if (glBeginPerfQueryINTEL == null) {
     glBeginPerfQueryINTEL = tryCall(() =>
         Pointer<NativeFunction<GlBeginPerfQueryINTELNative>>.fromAddress(
                 _glGetProcAddress('glBeginPerfQueryINTEL'))
-            .asFunction<GlBeginPerfQueryINTEL>());
+            .asFunction<GlBeginPerfQueryINTEL>()) as void Function(int)?;
   }
   glCreatePerfQueryINTEL = tryCall(() =>
       lib.lookupFunction<GlCreatePerfQueryINTELNative, GlCreatePerfQueryINTEL>(
-          'glCreatePerfQueryINTEL'));
+          'glCreatePerfQueryINTEL')) as void Function(int, Pointer<Uint32>)?;
   if (glCreatePerfQueryINTEL == null) {
     glCreatePerfQueryINTEL = tryCall(() =>
         Pointer<NativeFunction<GlCreatePerfQueryINTELNative>>.fromAddress(
                 _glGetProcAddress('glCreatePerfQueryINTEL'))
-            .asFunction<GlCreatePerfQueryINTEL>());
+            .asFunction<GlCreatePerfQueryINTEL>()) as void Function(int, Pointer<Uint32>)?;
   }
   glDeletePerfQueryINTEL = tryCall(() =>
       lib.lookupFunction<GlDeletePerfQueryINTELNative, GlDeletePerfQueryINTEL>(
-          'glDeletePerfQueryINTEL'));
+          'glDeletePerfQueryINTEL')) as void Function(int)?;
   if (glDeletePerfQueryINTEL == null) {
     glDeletePerfQueryINTEL = tryCall(() =>
         Pointer<NativeFunction<GlDeletePerfQueryINTELNative>>.fromAddress(
                 _glGetProcAddress('glDeletePerfQueryINTEL'))
-            .asFunction<GlDeletePerfQueryINTEL>());
+            .asFunction<GlDeletePerfQueryINTEL>()) as void Function(int)?;
   }
   glEndPerfQueryINTEL = tryCall(() =>
       lib.lookupFunction<GlEndPerfQueryINTELNative, GlEndPerfQueryINTEL>(
-          'glEndPerfQueryINTEL'));
+          'glEndPerfQueryINTEL')) as void Function(int)?;
   if (glEndPerfQueryINTEL == null) {
     glEndPerfQueryINTEL = tryCall(() =>
         Pointer<NativeFunction<GlEndPerfQueryINTELNative>>.fromAddress(
                 _glGetProcAddress('glEndPerfQueryINTEL'))
-            .asFunction<GlEndPerfQueryINTEL>());
+            .asFunction<GlEndPerfQueryINTEL>()) as void Function(int)?;
   }
   glGetFirstPerfQueryIdINTEL = tryCall(() => lib.lookupFunction<
       GlGetFirstPerfQueryIdINTELNative,
-      GlGetFirstPerfQueryIdINTEL>('glGetFirstPerfQueryIdINTEL'));
+      GlGetFirstPerfQueryIdINTEL>('glGetFirstPerfQueryIdINTEL')) as void Function(Pointer<Uint32>)?;
   if (glGetFirstPerfQueryIdINTEL == null) {
     glGetFirstPerfQueryIdINTEL = tryCall(() =>
         Pointer<NativeFunction<GlGetFirstPerfQueryIdINTELNative>>.fromAddress(
                 _glGetProcAddress('glGetFirstPerfQueryIdINTEL'))
-            .asFunction<GlGetFirstPerfQueryIdINTEL>());
+            .asFunction<GlGetFirstPerfQueryIdINTEL>()) as void Function(Pointer<Uint32>)?;
   }
   glGetNextPerfQueryIdINTEL = tryCall(() => lib.lookupFunction<
       GlGetNextPerfQueryIdINTELNative,
-      GlGetNextPerfQueryIdINTEL>('glGetNextPerfQueryIdINTEL'));
+      GlGetNextPerfQueryIdINTEL>('glGetNextPerfQueryIdINTEL')) as void Function(int, Pointer<Uint32>)?;
   if (glGetNextPerfQueryIdINTEL == null) {
     glGetNextPerfQueryIdINTEL = tryCall(() =>
         Pointer<NativeFunction<GlGetNextPerfQueryIdINTELNative>>.fromAddress(
                 _glGetProcAddress('glGetNextPerfQueryIdINTEL'))
-            .asFunction<GlGetNextPerfQueryIdINTEL>());
+            .asFunction<GlGetNextPerfQueryIdINTEL>()) as void Function(int, Pointer<Uint32>)?;
   }
   glGetPerfCounterInfoINTEL = tryCall(() => lib.lookupFunction<
       GlGetPerfCounterInfoINTELNative,
-      GlGetPerfCounterInfoINTEL>('glGetPerfCounterInfoINTEL'));
+      GlGetPerfCounterInfoINTEL>('glGetPerfCounterInfoINTEL')) as void Function(int, int, int, Pointer<NativeType>, int, Pointer<NativeType>, Pointer<Uint32>, Pointer<Uint32>, Pointer<Uint32>, Pointer<Uint32>, Pointer<Uint64>)?;
   if (glGetPerfCounterInfoINTEL == null) {
     glGetPerfCounterInfoINTEL = tryCall(() =>
         Pointer<NativeFunction<GlGetPerfCounterInfoINTELNative>>.fromAddress(
                 _glGetProcAddress('glGetPerfCounterInfoINTEL'))
-            .asFunction<GlGetPerfCounterInfoINTEL>());
+            .asFunction<GlGetPerfCounterInfoINTEL>()) as void Function(int, int, int, Pointer<NativeType>, int, Pointer<NativeType>, Pointer<Uint32>, Pointer<Uint32>, Pointer<Uint32>, Pointer<Uint32>, Pointer<Uint64>)?;
   }
   glGetPerfQueryDataINTEL = tryCall(() => lib.lookupFunction<
       GlGetPerfQueryDataINTELNative,
-      GlGetPerfQueryDataINTEL>('glGetPerfQueryDataINTEL'));
+      GlGetPerfQueryDataINTEL>('glGetPerfQueryDataINTEL')) as void Function(int, int, int, Pointer<NativeType>, Pointer<Uint32>)?;
   if (glGetPerfQueryDataINTEL == null) {
     glGetPerfQueryDataINTEL = tryCall(() =>
         Pointer<NativeFunction<GlGetPerfQueryDataINTELNative>>.fromAddress(
                 _glGetProcAddress('glGetPerfQueryDataINTEL'))
-            .asFunction<GlGetPerfQueryDataINTEL>());
+            .asFunction<GlGetPerfQueryDataINTEL>()) as void Function(int, int, int, Pointer<NativeType>, Pointer<Uint32>)?;
   }
   glGetPerfQueryIdByNameINTEL = tryCall(() => lib.lookupFunction<
       GlGetPerfQueryIdByNameINTELNative,
-      GlGetPerfQueryIdByNameINTEL>('glGetPerfQueryIdByNameINTEL'));
+      GlGetPerfQueryIdByNameINTEL>('glGetPerfQueryIdByNameINTEL')) as void Function(Pointer<NativeType>, Pointer<Uint32>)?;
   if (glGetPerfQueryIdByNameINTEL == null) {
     glGetPerfQueryIdByNameINTEL = tryCall(() =>
         Pointer<NativeFunction<GlGetPerfQueryIdByNameINTELNative>>.fromAddress(
                 _glGetProcAddress('glGetPerfQueryIdByNameINTEL'))
-            .asFunction<GlGetPerfQueryIdByNameINTEL>());
+            .asFunction<GlGetPerfQueryIdByNameINTEL>()) as void Function(Pointer<NativeType>, Pointer<Uint32>)?;
   }
   glGetPerfQueryInfoINTEL = tryCall(() => lib.lookupFunction<
       GlGetPerfQueryInfoINTELNative,
-      GlGetPerfQueryInfoINTEL>('glGetPerfQueryInfoINTEL'));
+      GlGetPerfQueryInfoINTEL>('glGetPerfQueryInfoINTEL')) as void Function(int, int, Pointer<NativeType>, Pointer<Uint32>, Pointer<Uint32>, Pointer<Uint32>, Pointer<Uint32>)?;
   if (glGetPerfQueryInfoINTEL == null) {
     glGetPerfQueryInfoINTEL = tryCall(() =>
         Pointer<NativeFunction<GlGetPerfQueryInfoINTELNative>>.fromAddress(
                 _glGetProcAddress('glGetPerfQueryInfoINTEL'))
-            .asFunction<GlGetPerfQueryInfoINTEL>());
+            .asFunction<GlGetPerfQueryInfoINTEL>()) as void Function(int, int, Pointer<NativeType>, Pointer<Uint32>, Pointer<Uint32>, Pointer<Uint32>, Pointer<Uint32>)?;
   }
   glFramebufferParameteriMESA = tryCall(() => lib.lookupFunction<
       GlFramebufferParameteriMESANative,
-      GlFramebufferParameteriMESA>('glFramebufferParameteriMESA'));
+      GlFramebufferParameteriMESA>('glFramebufferParameteriMESA')) as void Function(int, int, int)?;
   if (glFramebufferParameteriMESA == null) {
     glFramebufferParameteriMESA = tryCall(() =>
         Pointer<NativeFunction<GlFramebufferParameteriMESANative>>.fromAddress(
                 _glGetProcAddress('glFramebufferParameteriMESA'))
-            .asFunction<GlFramebufferParameteriMESA>());
+            .asFunction<GlFramebufferParameteriMESA>()) as void Function(int, int, int)?;
   }
   glGetFramebufferParameterivMESA = tryCall(() => lib.lookupFunction<
       GlGetFramebufferParameterivMESANative,
-      GlGetFramebufferParameterivMESA>('glGetFramebufferParameterivMESA'));
+      GlGetFramebufferParameterivMESA>('glGetFramebufferParameterivMESA')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetFramebufferParameterivMESA == null) {
     glGetFramebufferParameterivMESA = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetFramebufferParameterivMESANative>>.fromAddress(
             _glGetProcAddress('glGetFramebufferParameterivMESA'))
-        .asFunction<GlGetFramebufferParameterivMESA>());
+        .asFunction<GlGetFramebufferParameterivMESA>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glMultiDrawArraysIndirectBindlessNV = tryCall(() => lib.lookupFunction<
           GlMultiDrawArraysIndirectBindlessNVNative,
           GlMultiDrawArraysIndirectBindlessNV>(
-      'glMultiDrawArraysIndirectBindlessNV'));
+      'glMultiDrawArraysIndirectBindlessNV')) as void Function(int, Pointer<NativeType>, int, int, int)?;
   if (glMultiDrawArraysIndirectBindlessNV == null) {
     glMultiDrawArraysIndirectBindlessNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlMultiDrawArraysIndirectBindlessNVNative>>.fromAddress(
             _glGetProcAddress('glMultiDrawArraysIndirectBindlessNV'))
-        .asFunction<GlMultiDrawArraysIndirectBindlessNV>());
+        .asFunction<GlMultiDrawArraysIndirectBindlessNV>()) as void Function(int, Pointer<NativeType>, int, int, int)?;
   }
   glMultiDrawElementsIndirectBindlessNV = tryCall(() => lib.lookupFunction<
           GlMultiDrawElementsIndirectBindlessNVNative,
           GlMultiDrawElementsIndirectBindlessNV>(
-      'glMultiDrawElementsIndirectBindlessNV'));
+      'glMultiDrawElementsIndirectBindlessNV')) as void Function(int, int, Pointer<NativeType>, int, int, int)?;
   if (glMultiDrawElementsIndirectBindlessNV == null) {
     glMultiDrawElementsIndirectBindlessNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlMultiDrawElementsIndirectBindlessNVNative>>.fromAddress(
             _glGetProcAddress('glMultiDrawElementsIndirectBindlessNV'))
-        .asFunction<GlMultiDrawElementsIndirectBindlessNV>());
+        .asFunction<GlMultiDrawElementsIndirectBindlessNV>()) as void Function(int, int, Pointer<NativeType>, int, int, int)?;
   }
   glMultiDrawArraysIndirectBindlessCountNV = tryCall(() => lib.lookupFunction<
           GlMultiDrawArraysIndirectBindlessCountNVNative,
           GlMultiDrawArraysIndirectBindlessCountNV>(
-      'glMultiDrawArraysIndirectBindlessCountNV'));
+      'glMultiDrawArraysIndirectBindlessCountNV')) as void Function(int, Pointer<NativeType>, int, int, int, int)?;
   if (glMultiDrawArraysIndirectBindlessCountNV == null) {
     glMultiDrawArraysIndirectBindlessCountNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlMultiDrawArraysIndirectBindlessCountNVNative>>.fromAddress(
             _glGetProcAddress('glMultiDrawArraysIndirectBindlessCountNV'))
-        .asFunction<GlMultiDrawArraysIndirectBindlessCountNV>());
+        .asFunction<GlMultiDrawArraysIndirectBindlessCountNV>()) as void Function(int, Pointer<NativeType>, int, int, int, int)?;
   }
   glMultiDrawElementsIndirectBindlessCountNV = tryCall(() => lib.lookupFunction<
           GlMultiDrawElementsIndirectBindlessCountNVNative,
           GlMultiDrawElementsIndirectBindlessCountNV>(
-      'glMultiDrawElementsIndirectBindlessCountNV'));
+      'glMultiDrawElementsIndirectBindlessCountNV')) as void Function(int, int, Pointer<NativeType>, int, int, int, int)?;
   if (glMultiDrawElementsIndirectBindlessCountNV == null) {
     glMultiDrawElementsIndirectBindlessCountNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlMultiDrawElementsIndirectBindlessCountNVNative>>.fromAddress(
             _glGetProcAddress('glMultiDrawElementsIndirectBindlessCountNV'))
-        .asFunction<GlMultiDrawElementsIndirectBindlessCountNV>());
+        .asFunction<GlMultiDrawElementsIndirectBindlessCountNV>()) as void Function(int, int, Pointer<NativeType>, int, int, int, int)?;
   }
   glGetTextureHandleNV = tryCall(() =>
       lib.lookupFunction<GlGetTextureHandleNVNative, GlGetTextureHandleNV>(
-          'glGetTextureHandleNV'));
+          'glGetTextureHandleNV')) as int Function(int)?;
   if (glGetTextureHandleNV == null) {
     glGetTextureHandleNV = tryCall(() =>
         Pointer<NativeFunction<GlGetTextureHandleNVNative>>.fromAddress(
                 _glGetProcAddress('glGetTextureHandleNV'))
-            .asFunction<GlGetTextureHandleNV>());
+            .asFunction<GlGetTextureHandleNV>()) as int Function(int)?;
   }
   glGetTextureSamplerHandleNV = tryCall(() => lib.lookupFunction<
       GlGetTextureSamplerHandleNVNative,
-      GlGetTextureSamplerHandleNV>('glGetTextureSamplerHandleNV'));
+      GlGetTextureSamplerHandleNV>('glGetTextureSamplerHandleNV')) as int Function(int, int)?;
   if (glGetTextureSamplerHandleNV == null) {
     glGetTextureSamplerHandleNV = tryCall(() =>
         Pointer<NativeFunction<GlGetTextureSamplerHandleNVNative>>.fromAddress(
                 _glGetProcAddress('glGetTextureSamplerHandleNV'))
-            .asFunction<GlGetTextureSamplerHandleNV>());
+            .asFunction<GlGetTextureSamplerHandleNV>()) as int Function(int, int)?;
   }
   glMakeTextureHandleResidentNV = tryCall(() => lib.lookupFunction<
       GlMakeTextureHandleResidentNVNative,
-      GlMakeTextureHandleResidentNV>('glMakeTextureHandleResidentNV'));
+      GlMakeTextureHandleResidentNV>('glMakeTextureHandleResidentNV')) as void Function(int)?;
   if (glMakeTextureHandleResidentNV == null) {
     glMakeTextureHandleResidentNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlMakeTextureHandleResidentNVNative>>.fromAddress(
             _glGetProcAddress('glMakeTextureHandleResidentNV'))
-        .asFunction<GlMakeTextureHandleResidentNV>());
+        .asFunction<GlMakeTextureHandleResidentNV>()) as void Function(int)?;
   }
   glMakeTextureHandleNonResidentNV = tryCall(() => lib.lookupFunction<
       GlMakeTextureHandleNonResidentNVNative,
-      GlMakeTextureHandleNonResidentNV>('glMakeTextureHandleNonResidentNV'));
+      GlMakeTextureHandleNonResidentNV>('glMakeTextureHandleNonResidentNV')) as void Function(int)?;
   if (glMakeTextureHandleNonResidentNV == null) {
     glMakeTextureHandleNonResidentNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlMakeTextureHandleNonResidentNVNative>>.fromAddress(
             _glGetProcAddress('glMakeTextureHandleNonResidentNV'))
-        .asFunction<GlMakeTextureHandleNonResidentNV>());
+        .asFunction<GlMakeTextureHandleNonResidentNV>()) as void Function(int)?;
   }
   glGetImageHandleNV = tryCall(() =>
       lib.lookupFunction<GlGetImageHandleNVNative, GlGetImageHandleNV>(
-          'glGetImageHandleNV'));
+          'glGetImageHandleNV')) as int Function(int, int, int, int, int)?;
   if (glGetImageHandleNV == null) {
     glGetImageHandleNV = tryCall(() =>
         Pointer<NativeFunction<GlGetImageHandleNVNative>>.fromAddress(
                 _glGetProcAddress('glGetImageHandleNV'))
-            .asFunction<GlGetImageHandleNV>());
+            .asFunction<GlGetImageHandleNV>()) as int Function(int, int, int, int, int)?;
   }
   glMakeImageHandleResidentNV = tryCall(() => lib.lookupFunction<
       GlMakeImageHandleResidentNVNative,
-      GlMakeImageHandleResidentNV>('glMakeImageHandleResidentNV'));
+      GlMakeImageHandleResidentNV>('glMakeImageHandleResidentNV')) as void Function(int, int)?;
   if (glMakeImageHandleResidentNV == null) {
     glMakeImageHandleResidentNV = tryCall(() =>
         Pointer<NativeFunction<GlMakeImageHandleResidentNVNative>>.fromAddress(
                 _glGetProcAddress('glMakeImageHandleResidentNV'))
-            .asFunction<GlMakeImageHandleResidentNV>());
+            .asFunction<GlMakeImageHandleResidentNV>()) as void Function(int, int)?;
   }
   glMakeImageHandleNonResidentNV = tryCall(() => lib.lookupFunction<
       GlMakeImageHandleNonResidentNVNative,
-      GlMakeImageHandleNonResidentNV>('glMakeImageHandleNonResidentNV'));
+      GlMakeImageHandleNonResidentNV>('glMakeImageHandleNonResidentNV')) as void Function(int)?;
   if (glMakeImageHandleNonResidentNV == null) {
     glMakeImageHandleNonResidentNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlMakeImageHandleNonResidentNVNative>>.fromAddress(
             _glGetProcAddress('glMakeImageHandleNonResidentNV'))
-        .asFunction<GlMakeImageHandleNonResidentNV>());
+        .asFunction<GlMakeImageHandleNonResidentNV>()) as void Function(int)?;
   }
   glUniformHandleui64NV = tryCall(() =>
       lib.lookupFunction<GlUniformHandleui64NVNative, GlUniformHandleui64NV>(
-          'glUniformHandleui64NV'));
+          'glUniformHandleui64NV')) as void Function(int, int)?;
   if (glUniformHandleui64NV == null) {
     glUniformHandleui64NV = tryCall(() =>
         Pointer<NativeFunction<GlUniformHandleui64NVNative>>.fromAddress(
                 _glGetProcAddress('glUniformHandleui64NV'))
-            .asFunction<GlUniformHandleui64NV>());
+            .asFunction<GlUniformHandleui64NV>()) as void Function(int, int)?;
   }
   glUniformHandleui64vNV = tryCall(() =>
       lib.lookupFunction<GlUniformHandleui64vNVNative, GlUniformHandleui64vNV>(
-          'glUniformHandleui64vNV'));
+          'glUniformHandleui64vNV')) as void Function(int, int, Pointer<Uint64>)?;
   if (glUniformHandleui64vNV == null) {
     glUniformHandleui64vNV = tryCall(() =>
         Pointer<NativeFunction<GlUniformHandleui64vNVNative>>.fromAddress(
                 _glGetProcAddress('glUniformHandleui64vNV'))
-            .asFunction<GlUniformHandleui64vNV>());
+            .asFunction<GlUniformHandleui64vNV>()) as void Function(int, int, Pointer<Uint64>)?;
   }
   glProgramUniformHandleui64NV = tryCall(() => lib.lookupFunction<
       GlProgramUniformHandleui64NVNative,
-      GlProgramUniformHandleui64NV>('glProgramUniformHandleui64NV'));
+      GlProgramUniformHandleui64NV>('glProgramUniformHandleui64NV')) as void Function(int, int, int)?;
   if (glProgramUniformHandleui64NV == null) {
     glProgramUniformHandleui64NV = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformHandleui64NVNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformHandleui64NV'))
-            .asFunction<GlProgramUniformHandleui64NV>());
+            .asFunction<GlProgramUniformHandleui64NV>()) as void Function(int, int, int)?;
   }
   glProgramUniformHandleui64vNV = tryCall(() => lib.lookupFunction<
       GlProgramUniformHandleui64vNVNative,
-      GlProgramUniformHandleui64vNV>('glProgramUniformHandleui64vNV'));
+      GlProgramUniformHandleui64vNV>('glProgramUniformHandleui64vNV')) as void Function(int, int, int, Pointer<Uint64>)?;
   if (glProgramUniformHandleui64vNV == null) {
     glProgramUniformHandleui64vNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlProgramUniformHandleui64vNVNative>>.fromAddress(
             _glGetProcAddress('glProgramUniformHandleui64vNV'))
-        .asFunction<GlProgramUniformHandleui64vNV>());
+        .asFunction<GlProgramUniformHandleui64vNV>()) as void Function(int, int, int, Pointer<Uint64>)?;
   }
   glIsTextureHandleResidentNV = tryCall(() => lib.lookupFunction<
       GlIsTextureHandleResidentNVNative,
-      GlIsTextureHandleResidentNV>('glIsTextureHandleResidentNV'));
+      GlIsTextureHandleResidentNV>('glIsTextureHandleResidentNV')) as int Function(int)?;
   if (glIsTextureHandleResidentNV == null) {
     glIsTextureHandleResidentNV = tryCall(() =>
         Pointer<NativeFunction<GlIsTextureHandleResidentNVNative>>.fromAddress(
                 _glGetProcAddress('glIsTextureHandleResidentNV'))
-            .asFunction<GlIsTextureHandleResidentNV>());
+            .asFunction<GlIsTextureHandleResidentNV>()) as int Function(int)?;
   }
   glIsImageHandleResidentNV = tryCall(() => lib.lookupFunction<
       GlIsImageHandleResidentNVNative,
-      GlIsImageHandleResidentNV>('glIsImageHandleResidentNV'));
+      GlIsImageHandleResidentNV>('glIsImageHandleResidentNV')) as int Function(int)?;
   if (glIsImageHandleResidentNV == null) {
     glIsImageHandleResidentNV = tryCall(() =>
         Pointer<NativeFunction<GlIsImageHandleResidentNVNative>>.fromAddress(
                 _glGetProcAddress('glIsImageHandleResidentNV'))
-            .asFunction<GlIsImageHandleResidentNV>());
+            .asFunction<GlIsImageHandleResidentNV>()) as int Function(int)?;
   }
   glBlendParameteriNV = tryCall(() =>
       lib.lookupFunction<GlBlendParameteriNVNative, GlBlendParameteriNV>(
-          'glBlendParameteriNV'));
+          'glBlendParameteriNV')) as void Function(int, int)?;
   if (glBlendParameteriNV == null) {
     glBlendParameteriNV = tryCall(() =>
         Pointer<NativeFunction<GlBlendParameteriNVNative>>.fromAddress(
                 _glGetProcAddress('glBlendParameteriNV'))
-            .asFunction<GlBlendParameteriNV>());
+            .asFunction<GlBlendParameteriNV>()) as void Function(int, int)?;
   }
   glBlendBarrierNV = tryCall(() =>
       lib.lookupFunction<GlBlendBarrierNVNative, GlBlendBarrierNV>(
-          'glBlendBarrierNV'));
+          'glBlendBarrierNV')) as void Function()?;
   if (glBlendBarrierNV == null) {
     glBlendBarrierNV = tryCall(() =>
         Pointer<NativeFunction<GlBlendBarrierNVNative>>.fromAddress(
                 _glGetProcAddress('glBlendBarrierNV'))
-            .asFunction<GlBlendBarrierNV>());
+            .asFunction<GlBlendBarrierNV>()) as void Function()?;
   }
   glViewportPositionWScaleNV = tryCall(() => lib.lookupFunction<
       GlViewportPositionWScaleNVNative,
-      GlViewportPositionWScaleNV>('glViewportPositionWScaleNV'));
+      GlViewportPositionWScaleNV>('glViewportPositionWScaleNV')) as void Function(int, double, double)?;
   if (glViewportPositionWScaleNV == null) {
     glViewportPositionWScaleNV = tryCall(() =>
         Pointer<NativeFunction<GlViewportPositionWScaleNVNative>>.fromAddress(
                 _glGetProcAddress('glViewportPositionWScaleNV'))
-            .asFunction<GlViewportPositionWScaleNV>());
+            .asFunction<GlViewportPositionWScaleNV>()) as void Function(int, double, double)?;
   }
   glCreateStatesNV = tryCall(() =>
       lib.lookupFunction<GlCreateStatesNVNative, GlCreateStatesNV>(
-          'glCreateStatesNV'));
+          'glCreateStatesNV')) as void Function(int, Pointer<Uint32>)?;
   if (glCreateStatesNV == null) {
     glCreateStatesNV = tryCall(() =>
         Pointer<NativeFunction<GlCreateStatesNVNative>>.fromAddress(
                 _glGetProcAddress('glCreateStatesNV'))
-            .asFunction<GlCreateStatesNV>());
+            .asFunction<GlCreateStatesNV>()) as void Function(int, Pointer<Uint32>)?;
   }
   glDeleteStatesNV = tryCall(() =>
       lib.lookupFunction<GlDeleteStatesNVNative, GlDeleteStatesNV>(
-          'glDeleteStatesNV'));
+          'glDeleteStatesNV')) as void Function(int, Pointer<Uint32>)?;
   if (glDeleteStatesNV == null) {
     glDeleteStatesNV = tryCall(() =>
         Pointer<NativeFunction<GlDeleteStatesNVNative>>.fromAddress(
                 _glGetProcAddress('glDeleteStatesNV'))
-            .asFunction<GlDeleteStatesNV>());
+            .asFunction<GlDeleteStatesNV>()) as void Function(int, Pointer<Uint32>)?;
   }
   glIsStateNV = tryCall(
-      () => lib.lookupFunction<GlIsStateNVNative, GlIsStateNV>('glIsStateNV'));
+      () => lib.lookupFunction<GlIsStateNVNative, GlIsStateNV>('glIsStateNV')) as int Function(int)?;
   if (glIsStateNV == null) {
     glIsStateNV = tryCall(() =>
         Pointer<NativeFunction<GlIsStateNVNative>>.fromAddress(
                 _glGetProcAddress('glIsStateNV'))
-            .asFunction<GlIsStateNV>());
+            .asFunction<GlIsStateNV>()) as int Function(int)?;
   }
   glStateCaptureNV = tryCall(() =>
       lib.lookupFunction<GlStateCaptureNVNative, GlStateCaptureNV>(
-          'glStateCaptureNV'));
+          'glStateCaptureNV')) as void Function(int, int)?;
   if (glStateCaptureNV == null) {
     glStateCaptureNV = tryCall(() =>
         Pointer<NativeFunction<GlStateCaptureNVNative>>.fromAddress(
                 _glGetProcAddress('glStateCaptureNV'))
-            .asFunction<GlStateCaptureNV>());
+            .asFunction<GlStateCaptureNV>()) as void Function(int, int)?;
   }
   glGetCommandHeaderNV = tryCall(() =>
       lib.lookupFunction<GlGetCommandHeaderNVNative, GlGetCommandHeaderNV>(
-          'glGetCommandHeaderNV'));
+          'glGetCommandHeaderNV')) as int Function(int, int)?;
   if (glGetCommandHeaderNV == null) {
     glGetCommandHeaderNV = tryCall(() =>
         Pointer<NativeFunction<GlGetCommandHeaderNVNative>>.fromAddress(
                 _glGetProcAddress('glGetCommandHeaderNV'))
-            .asFunction<GlGetCommandHeaderNV>());
+            .asFunction<GlGetCommandHeaderNV>()) as int Function(int, int)?;
   }
   glGetStageIndexNV = tryCall(() =>
       lib.lookupFunction<GlGetStageIndexNVNative, GlGetStageIndexNV>(
-          'glGetStageIndexNV'));
+          'glGetStageIndexNV')) as int Function(int)?;
   if (glGetStageIndexNV == null) {
     glGetStageIndexNV = tryCall(() =>
         Pointer<NativeFunction<GlGetStageIndexNVNative>>.fromAddress(
                 _glGetProcAddress('glGetStageIndexNV'))
-            .asFunction<GlGetStageIndexNV>());
+            .asFunction<GlGetStageIndexNV>()) as int Function(int)?;
   }
   glDrawCommandsNV = tryCall(() =>
       lib.lookupFunction<GlDrawCommandsNVNative, GlDrawCommandsNV>(
-          'glDrawCommandsNV'));
+          'glDrawCommandsNV')) as void Function(int, int, Pointer<Int64>, Pointer<Int32>, int)?;
   if (glDrawCommandsNV == null) {
     glDrawCommandsNV = tryCall(() =>
         Pointer<NativeFunction<GlDrawCommandsNVNative>>.fromAddress(
                 _glGetProcAddress('glDrawCommandsNV'))
-            .asFunction<GlDrawCommandsNV>());
+            .asFunction<GlDrawCommandsNV>()) as void Function(int, int, Pointer<Int64>, Pointer<Int32>, int)?;
   }
   glDrawCommandsAddressNV = tryCall(() => lib.lookupFunction<
       GlDrawCommandsAddressNVNative,
-      GlDrawCommandsAddressNV>('glDrawCommandsAddressNV'));
+      GlDrawCommandsAddressNV>('glDrawCommandsAddressNV')) as void Function(int, Pointer<Uint64>, Pointer<Int32>, int)?;
   if (glDrawCommandsAddressNV == null) {
     glDrawCommandsAddressNV = tryCall(() =>
         Pointer<NativeFunction<GlDrawCommandsAddressNVNative>>.fromAddress(
                 _glGetProcAddress('glDrawCommandsAddressNV'))
-            .asFunction<GlDrawCommandsAddressNV>());
+            .asFunction<GlDrawCommandsAddressNV>()) as void Function(int, Pointer<Uint64>, Pointer<Int32>, int)?;
   }
   glDrawCommandsStatesNV = tryCall(() =>
       lib.lookupFunction<GlDrawCommandsStatesNVNative, GlDrawCommandsStatesNV>(
-          'glDrawCommandsStatesNV'));
+          'glDrawCommandsStatesNV')) as void Function(int, Pointer<Int64>, Pointer<Int32>, Pointer<Uint32>, Pointer<Uint32>, int)?;
   if (glDrawCommandsStatesNV == null) {
     glDrawCommandsStatesNV = tryCall(() =>
         Pointer<NativeFunction<GlDrawCommandsStatesNVNative>>.fromAddress(
                 _glGetProcAddress('glDrawCommandsStatesNV'))
-            .asFunction<GlDrawCommandsStatesNV>());
+            .asFunction<GlDrawCommandsStatesNV>()) as void Function(int, Pointer<Int64>, Pointer<Int32>, Pointer<Uint32>, Pointer<Uint32>, int)?;
   }
   glDrawCommandsStatesAddressNV = tryCall(() => lib.lookupFunction<
       GlDrawCommandsStatesAddressNVNative,
-      GlDrawCommandsStatesAddressNV>('glDrawCommandsStatesAddressNV'));
+      GlDrawCommandsStatesAddressNV>('glDrawCommandsStatesAddressNV')) as void Function(Pointer<Uint64>, Pointer<Int32>, Pointer<Uint32>, Pointer<Uint32>, int)?;
   if (glDrawCommandsStatesAddressNV == null) {
     glDrawCommandsStatesAddressNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlDrawCommandsStatesAddressNVNative>>.fromAddress(
             _glGetProcAddress('glDrawCommandsStatesAddressNV'))
-        .asFunction<GlDrawCommandsStatesAddressNV>());
+        .asFunction<GlDrawCommandsStatesAddressNV>()) as void Function(Pointer<Uint64>, Pointer<Int32>, Pointer<Uint32>, Pointer<Uint32>, int)?;
   }
   glCreateCommandListsNV = tryCall(() =>
       lib.lookupFunction<GlCreateCommandListsNVNative, GlCreateCommandListsNV>(
-          'glCreateCommandListsNV'));
+          'glCreateCommandListsNV')) as void Function(int, Pointer<Uint32>)?;
   if (glCreateCommandListsNV == null) {
     glCreateCommandListsNV = tryCall(() =>
         Pointer<NativeFunction<GlCreateCommandListsNVNative>>.fromAddress(
                 _glGetProcAddress('glCreateCommandListsNV'))
-            .asFunction<GlCreateCommandListsNV>());
+            .asFunction<GlCreateCommandListsNV>()) as void Function(int, Pointer<Uint32>)?;
   }
   glDeleteCommandListsNV = tryCall(() =>
       lib.lookupFunction<GlDeleteCommandListsNVNative, GlDeleteCommandListsNV>(
-          'glDeleteCommandListsNV'));
+          'glDeleteCommandListsNV')) as void Function(int, Pointer<Uint32>)?;
   if (glDeleteCommandListsNV == null) {
     glDeleteCommandListsNV = tryCall(() =>
         Pointer<NativeFunction<GlDeleteCommandListsNVNative>>.fromAddress(
                 _glGetProcAddress('glDeleteCommandListsNV'))
-            .asFunction<GlDeleteCommandListsNV>());
+            .asFunction<GlDeleteCommandListsNV>()) as void Function(int, Pointer<Uint32>)?;
   }
   glIsCommandListNV = tryCall(() =>
       lib.lookupFunction<GlIsCommandListNVNative, GlIsCommandListNV>(
-          'glIsCommandListNV'));
+          'glIsCommandListNV')) as int Function(int)?;
   if (glIsCommandListNV == null) {
     glIsCommandListNV = tryCall(() =>
         Pointer<NativeFunction<GlIsCommandListNVNative>>.fromAddress(
                 _glGetProcAddress('glIsCommandListNV'))
-            .asFunction<GlIsCommandListNV>());
+            .asFunction<GlIsCommandListNV>()) as int Function(int)?;
   }
   glListDrawCommandsStatesClientNV = tryCall(() => lib.lookupFunction<
       GlListDrawCommandsStatesClientNVNative,
-      GlListDrawCommandsStatesClientNV>('glListDrawCommandsStatesClientNV'));
+      GlListDrawCommandsStatesClientNV>('glListDrawCommandsStatesClientNV')) as void Function(int, int, Pointer<NativeType>, Pointer<Int32>, Pointer<Uint32>, Pointer<Uint32>, int)?;
   if (glListDrawCommandsStatesClientNV == null) {
     glListDrawCommandsStatesClientNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlListDrawCommandsStatesClientNVNative>>.fromAddress(
             _glGetProcAddress('glListDrawCommandsStatesClientNV'))
-        .asFunction<GlListDrawCommandsStatesClientNV>());
+        .asFunction<GlListDrawCommandsStatesClientNV>()) as void Function(int, int, Pointer<NativeType>, Pointer<Int32>, Pointer<Uint32>, Pointer<Uint32>, int)?;
   }
   glCommandListSegmentsNV = tryCall(() => lib.lookupFunction<
       GlCommandListSegmentsNVNative,
-      GlCommandListSegmentsNV>('glCommandListSegmentsNV'));
+      GlCommandListSegmentsNV>('glCommandListSegmentsNV')) as void Function(int, int)?;
   if (glCommandListSegmentsNV == null) {
     glCommandListSegmentsNV = tryCall(() =>
         Pointer<NativeFunction<GlCommandListSegmentsNVNative>>.fromAddress(
                 _glGetProcAddress('glCommandListSegmentsNV'))
-            .asFunction<GlCommandListSegmentsNV>());
+            .asFunction<GlCommandListSegmentsNV>()) as void Function(int, int)?;
   }
   glCompileCommandListNV = tryCall(() =>
       lib.lookupFunction<GlCompileCommandListNVNative, GlCompileCommandListNV>(
-          'glCompileCommandListNV'));
+          'glCompileCommandListNV')) as void Function(int)?;
   if (glCompileCommandListNV == null) {
     glCompileCommandListNV = tryCall(() =>
         Pointer<NativeFunction<GlCompileCommandListNVNative>>.fromAddress(
                 _glGetProcAddress('glCompileCommandListNV'))
-            .asFunction<GlCompileCommandListNV>());
+            .asFunction<GlCompileCommandListNV>()) as void Function(int)?;
   }
   glCallCommandListNV = tryCall(() =>
       lib.lookupFunction<GlCallCommandListNVNative, GlCallCommandListNV>(
-          'glCallCommandListNV'));
+          'glCallCommandListNV')) as void Function(int)?;
   if (glCallCommandListNV == null) {
     glCallCommandListNV = tryCall(() =>
         Pointer<NativeFunction<GlCallCommandListNVNative>>.fromAddress(
                 _glGetProcAddress('glCallCommandListNV'))
-            .asFunction<GlCallCommandListNV>());
+            .asFunction<GlCallCommandListNV>()) as void Function(int)?;
   }
   glBeginConditionalRenderNV = tryCall(() => lib.lookupFunction<
       GlBeginConditionalRenderNVNative,
-      GlBeginConditionalRenderNV>('glBeginConditionalRenderNV'));
+      GlBeginConditionalRenderNV>('glBeginConditionalRenderNV')) as void Function(int, int)?;
   if (glBeginConditionalRenderNV == null) {
     glBeginConditionalRenderNV = tryCall(() =>
         Pointer<NativeFunction<GlBeginConditionalRenderNVNative>>.fromAddress(
                 _glGetProcAddress('glBeginConditionalRenderNV'))
-            .asFunction<GlBeginConditionalRenderNV>());
+            .asFunction<GlBeginConditionalRenderNV>()) as void Function(int, int)?;
   }
   glEndConditionalRenderNV = tryCall(() => lib.lookupFunction<
       GlEndConditionalRenderNVNative,
-      GlEndConditionalRenderNV>('glEndConditionalRenderNV'));
+      GlEndConditionalRenderNV>('glEndConditionalRenderNV')) as void Function()?;
   if (glEndConditionalRenderNV == null) {
     glEndConditionalRenderNV = tryCall(() =>
         Pointer<NativeFunction<GlEndConditionalRenderNVNative>>.fromAddress(
                 _glGetProcAddress('glEndConditionalRenderNV'))
-            .asFunction<GlEndConditionalRenderNV>());
+            .asFunction<GlEndConditionalRenderNV>()) as void Function()?;
   }
   glSubpixelPrecisionBiasNV = tryCall(() => lib.lookupFunction<
       GlSubpixelPrecisionBiasNVNative,
-      GlSubpixelPrecisionBiasNV>('glSubpixelPrecisionBiasNV'));
+      GlSubpixelPrecisionBiasNV>('glSubpixelPrecisionBiasNV')) as void Function(int, int)?;
   if (glSubpixelPrecisionBiasNV == null) {
     glSubpixelPrecisionBiasNV = tryCall(() =>
         Pointer<NativeFunction<GlSubpixelPrecisionBiasNVNative>>.fromAddress(
                 _glGetProcAddress('glSubpixelPrecisionBiasNV'))
-            .asFunction<GlSubpixelPrecisionBiasNV>());
+            .asFunction<GlSubpixelPrecisionBiasNV>()) as void Function(int, int)?;
   }
   glConservativeRasterParameterfNV = tryCall(() => lib.lookupFunction<
       GlConservativeRasterParameterfNVNative,
-      GlConservativeRasterParameterfNV>('glConservativeRasterParameterfNV'));
+      GlConservativeRasterParameterfNV>('glConservativeRasterParameterfNV')) as void Function(int, double)?;
   if (glConservativeRasterParameterfNV == null) {
     glConservativeRasterParameterfNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlConservativeRasterParameterfNVNative>>.fromAddress(
             _glGetProcAddress('glConservativeRasterParameterfNV'))
-        .asFunction<GlConservativeRasterParameterfNV>());
+        .asFunction<GlConservativeRasterParameterfNV>()) as void Function(int, double)?;
   }
   glConservativeRasterParameteriNV = tryCall(() => lib.lookupFunction<
       GlConservativeRasterParameteriNVNative,
-      GlConservativeRasterParameteriNV>('glConservativeRasterParameteriNV'));
+      GlConservativeRasterParameteriNV>('glConservativeRasterParameteriNV')) as void Function(int, int)?;
   if (glConservativeRasterParameteriNV == null) {
     glConservativeRasterParameteriNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlConservativeRasterParameteriNVNative>>.fromAddress(
             _glGetProcAddress('glConservativeRasterParameteriNV'))
-        .asFunction<GlConservativeRasterParameteriNV>());
+        .asFunction<GlConservativeRasterParameteriNV>()) as void Function(int, int)?;
   }
   glDepthRangedNV = tryCall(() =>
       lib.lookupFunction<GlDepthRangedNVNative, GlDepthRangedNV>(
-          'glDepthRangedNV'));
+          'glDepthRangedNV')) as void Function(double, double)?;
   if (glDepthRangedNV == null) {
     glDepthRangedNV = tryCall(() =>
         Pointer<NativeFunction<GlDepthRangedNVNative>>.fromAddress(
                 _glGetProcAddress('glDepthRangedNV'))
-            .asFunction<GlDepthRangedNV>());
+            .asFunction<GlDepthRangedNV>()) as void Function(double, double)?;
   }
   glClearDepthdNV = tryCall(() =>
       lib.lookupFunction<GlClearDepthdNVNative, GlClearDepthdNV>(
-          'glClearDepthdNV'));
+          'glClearDepthdNV')) as void Function(double)?;
   if (glClearDepthdNV == null) {
     glClearDepthdNV = tryCall(() =>
         Pointer<NativeFunction<GlClearDepthdNVNative>>.fromAddress(
                 _glGetProcAddress('glClearDepthdNV'))
-            .asFunction<GlClearDepthdNV>());
+            .asFunction<GlClearDepthdNV>()) as void Function(double)?;
   }
   glDepthBoundsdNV = tryCall(() =>
       lib.lookupFunction<GlDepthBoundsdNVNative, GlDepthBoundsdNV>(
-          'glDepthBoundsdNV'));
+          'glDepthBoundsdNV')) as void Function(double, double)?;
   if (glDepthBoundsdNV == null) {
     glDepthBoundsdNV = tryCall(() =>
         Pointer<NativeFunction<GlDepthBoundsdNVNative>>.fromAddress(
                 _glGetProcAddress('glDepthBoundsdNV'))
-            .asFunction<GlDepthBoundsdNV>());
+            .asFunction<GlDepthBoundsdNV>()) as void Function(double, double)?;
   }
   glDrawVkImageNV = tryCall(() =>
       lib.lookupFunction<GlDrawVkImageNVNative, GlDrawVkImageNV>(
-          'glDrawVkImageNV'));
+          'glDrawVkImageNV')) as void Function(int, int, double, double, double, double, double, double, double, double, double)?;
   if (glDrawVkImageNV == null) {
     glDrawVkImageNV = tryCall(() =>
         Pointer<NativeFunction<GlDrawVkImageNVNative>>.fromAddress(
                 _glGetProcAddress('glDrawVkImageNV'))
-            .asFunction<GlDrawVkImageNV>());
+            .asFunction<GlDrawVkImageNV>()) as void Function(int, int, double, double, double, double, double, double, double, double, double)?;
   }
   glGetVkProcAddrNV = tryCall(() =>
       lib.lookupFunction<GlGetVkProcAddrNVNative, GlGetVkProcAddrNV>(
-          'glGetVkProcAddrNV'));
+          'glGetVkProcAddrNV')) as Pointer<NativeType> Function(Pointer<NativeType>)?;
   if (glGetVkProcAddrNV == null) {
     glGetVkProcAddrNV = tryCall(() =>
         Pointer<NativeFunction<GlGetVkProcAddrNVNative>>.fromAddress(
                 _glGetProcAddress('glGetVkProcAddrNV'))
-            .asFunction<GlGetVkProcAddrNV>());
+            .asFunction<GlGetVkProcAddrNV>()) as Pointer<NativeType> Function(Pointer<NativeType>)?;
   }
   glWaitVkSemaphoreNV = tryCall(() =>
       lib.lookupFunction<GlWaitVkSemaphoreNVNative, GlWaitVkSemaphoreNV>(
-          'glWaitVkSemaphoreNV'));
+          'glWaitVkSemaphoreNV')) as void Function(int)?;
   if (glWaitVkSemaphoreNV == null) {
     glWaitVkSemaphoreNV = tryCall(() =>
         Pointer<NativeFunction<GlWaitVkSemaphoreNVNative>>.fromAddress(
                 _glGetProcAddress('glWaitVkSemaphoreNV'))
-            .asFunction<GlWaitVkSemaphoreNV>());
+            .asFunction<GlWaitVkSemaphoreNV>()) as void Function(int)?;
   }
   glSignalVkSemaphoreNV = tryCall(() =>
       lib.lookupFunction<GlSignalVkSemaphoreNVNative, GlSignalVkSemaphoreNV>(
-          'glSignalVkSemaphoreNV'));
+          'glSignalVkSemaphoreNV')) as void Function(int)?;
   if (glSignalVkSemaphoreNV == null) {
     glSignalVkSemaphoreNV = tryCall(() =>
         Pointer<NativeFunction<GlSignalVkSemaphoreNVNative>>.fromAddress(
                 _glGetProcAddress('glSignalVkSemaphoreNV'))
-            .asFunction<GlSignalVkSemaphoreNV>());
+            .asFunction<GlSignalVkSemaphoreNV>()) as void Function(int)?;
   }
   glSignalVkFenceNV = tryCall(() =>
       lib.lookupFunction<GlSignalVkFenceNVNative, GlSignalVkFenceNV>(
-          'glSignalVkFenceNV'));
+          'glSignalVkFenceNV')) as void Function(int)?;
   if (glSignalVkFenceNV == null) {
     glSignalVkFenceNV = tryCall(() =>
         Pointer<NativeFunction<GlSignalVkFenceNVNative>>.fromAddress(
                 _glGetProcAddress('glSignalVkFenceNV'))
-            .asFunction<GlSignalVkFenceNV>());
+            .asFunction<GlSignalVkFenceNV>()) as void Function(int)?;
   }
   glFragmentCoverageColorNV = tryCall(() => lib.lookupFunction<
       GlFragmentCoverageColorNVNative,
-      GlFragmentCoverageColorNV>('glFragmentCoverageColorNV'));
+      GlFragmentCoverageColorNV>('glFragmentCoverageColorNV')) as void Function(int)?;
   if (glFragmentCoverageColorNV == null) {
     glFragmentCoverageColorNV = tryCall(() =>
         Pointer<NativeFunction<GlFragmentCoverageColorNVNative>>.fromAddress(
                 _glGetProcAddress('glFragmentCoverageColorNV'))
-            .asFunction<GlFragmentCoverageColorNV>());
+            .asFunction<GlFragmentCoverageColorNV>()) as void Function(int)?;
   }
   glCoverageModulationTableNV = tryCall(() => lib.lookupFunction<
       GlCoverageModulationTableNVNative,
-      GlCoverageModulationTableNV>('glCoverageModulationTableNV'));
+      GlCoverageModulationTableNV>('glCoverageModulationTableNV')) as void Function(int, Pointer<Float>)?;
   if (glCoverageModulationTableNV == null) {
     glCoverageModulationTableNV = tryCall(() =>
         Pointer<NativeFunction<GlCoverageModulationTableNVNative>>.fromAddress(
                 _glGetProcAddress('glCoverageModulationTableNV'))
-            .asFunction<GlCoverageModulationTableNV>());
+            .asFunction<GlCoverageModulationTableNV>()) as void Function(int, Pointer<Float>)?;
   }
   glGetCoverageModulationTableNV = tryCall(() => lib.lookupFunction<
       GlGetCoverageModulationTableNVNative,
-      GlGetCoverageModulationTableNV>('glGetCoverageModulationTableNV'));
+      GlGetCoverageModulationTableNV>('glGetCoverageModulationTableNV')) as void Function(int, Pointer<Float>)?;
   if (glGetCoverageModulationTableNV == null) {
     glGetCoverageModulationTableNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetCoverageModulationTableNVNative>>.fromAddress(
             _glGetProcAddress('glGetCoverageModulationTableNV'))
-        .asFunction<GlGetCoverageModulationTableNV>());
+        .asFunction<GlGetCoverageModulationTableNV>()) as void Function(int, Pointer<Float>)?;
   }
   glCoverageModulationNV = tryCall(() =>
       lib.lookupFunction<GlCoverageModulationNVNative, GlCoverageModulationNV>(
-          'glCoverageModulationNV'));
+          'glCoverageModulationNV')) as void Function(int)?;
   if (glCoverageModulationNV == null) {
     glCoverageModulationNV = tryCall(() =>
         Pointer<NativeFunction<GlCoverageModulationNVNative>>.fromAddress(
                 _glGetProcAddress('glCoverageModulationNV'))
-            .asFunction<GlCoverageModulationNV>());
+            .asFunction<GlCoverageModulationNV>()) as void Function(int)?;
   }
   glRenderbufferStorageMultisampleCoverageNV = tryCall(() => lib.lookupFunction<
           GlRenderbufferStorageMultisampleCoverageNVNative,
           GlRenderbufferStorageMultisampleCoverageNV>(
-      'glRenderbufferStorageMultisampleCoverageNV'));
+      'glRenderbufferStorageMultisampleCoverageNV')) as void Function(int, int, int, int, int, int)?;
   if (glRenderbufferStorageMultisampleCoverageNV == null) {
     glRenderbufferStorageMultisampleCoverageNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlRenderbufferStorageMultisampleCoverageNVNative>>.fromAddress(
             _glGetProcAddress('glRenderbufferStorageMultisampleCoverageNV'))
-        .asFunction<GlRenderbufferStorageMultisampleCoverageNV>());
+        .asFunction<GlRenderbufferStorageMultisampleCoverageNV>()) as void Function(int, int, int, int, int, int)?;
   }
   glUniform1i64NV = tryCall(() =>
       lib.lookupFunction<GlUniform1i64NVNative, GlUniform1i64NV>(
-          'glUniform1i64NV'));
+          'glUniform1i64NV')) as void Function(int, int)?;
   if (glUniform1i64NV == null) {
     glUniform1i64NV = tryCall(() =>
         Pointer<NativeFunction<GlUniform1i64NVNative>>.fromAddress(
                 _glGetProcAddress('glUniform1i64NV'))
-            .asFunction<GlUniform1i64NV>());
+            .asFunction<GlUniform1i64NV>()) as void Function(int, int)?;
   }
   glUniform2i64NV = tryCall(() =>
       lib.lookupFunction<GlUniform2i64NVNative, GlUniform2i64NV>(
-          'glUniform2i64NV'));
+          'glUniform2i64NV')) as void Function(int, int, int)?;
   if (glUniform2i64NV == null) {
     glUniform2i64NV = tryCall(() =>
         Pointer<NativeFunction<GlUniform2i64NVNative>>.fromAddress(
                 _glGetProcAddress('glUniform2i64NV'))
-            .asFunction<GlUniform2i64NV>());
+            .asFunction<GlUniform2i64NV>()) as void Function(int, int, int)?;
   }
   glUniform3i64NV = tryCall(() =>
       lib.lookupFunction<GlUniform3i64NVNative, GlUniform3i64NV>(
-          'glUniform3i64NV'));
+          'glUniform3i64NV')) as void Function(int, int, int, int)?;
   if (glUniform3i64NV == null) {
     glUniform3i64NV = tryCall(() =>
         Pointer<NativeFunction<GlUniform3i64NVNative>>.fromAddress(
                 _glGetProcAddress('glUniform3i64NV'))
-            .asFunction<GlUniform3i64NV>());
+            .asFunction<GlUniform3i64NV>()) as void Function(int, int, int, int)?;
   }
   glUniform4i64NV = tryCall(() =>
       lib.lookupFunction<GlUniform4i64NVNative, GlUniform4i64NV>(
-          'glUniform4i64NV'));
+          'glUniform4i64NV')) as void Function(int, int, int, int, int)?;
   if (glUniform4i64NV == null) {
     glUniform4i64NV = tryCall(() =>
         Pointer<NativeFunction<GlUniform4i64NVNative>>.fromAddress(
                 _glGetProcAddress('glUniform4i64NV'))
-            .asFunction<GlUniform4i64NV>());
+            .asFunction<GlUniform4i64NV>()) as void Function(int, int, int, int, int)?;
   }
   glUniform1i64vNV = tryCall(() =>
       lib.lookupFunction<GlUniform1i64vNVNative, GlUniform1i64vNV>(
-          'glUniform1i64vNV'));
+          'glUniform1i64vNV')) as void Function(int, int, Pointer<Int64>)?;
   if (glUniform1i64vNV == null) {
     glUniform1i64vNV = tryCall(() =>
         Pointer<NativeFunction<GlUniform1i64vNVNative>>.fromAddress(
                 _glGetProcAddress('glUniform1i64vNV'))
-            .asFunction<GlUniform1i64vNV>());
+            .asFunction<GlUniform1i64vNV>()) as void Function(int, int, Pointer<Int64>)?;
   }
   glUniform2i64vNV = tryCall(() =>
       lib.lookupFunction<GlUniform2i64vNVNative, GlUniform2i64vNV>(
-          'glUniform2i64vNV'));
+          'glUniform2i64vNV')) as void Function(int, int, Pointer<Int64>)?;
   if (glUniform2i64vNV == null) {
     glUniform2i64vNV = tryCall(() =>
         Pointer<NativeFunction<GlUniform2i64vNVNative>>.fromAddress(
                 _glGetProcAddress('glUniform2i64vNV'))
-            .asFunction<GlUniform2i64vNV>());
+            .asFunction<GlUniform2i64vNV>()) as void Function(int, int, Pointer<Int64>)?;
   }
   glUniform3i64vNV = tryCall(() =>
       lib.lookupFunction<GlUniform3i64vNVNative, GlUniform3i64vNV>(
-          'glUniform3i64vNV'));
+          'glUniform3i64vNV')) as void Function(int, int, Pointer<Int64>)?;
   if (glUniform3i64vNV == null) {
     glUniform3i64vNV = tryCall(() =>
         Pointer<NativeFunction<GlUniform3i64vNVNative>>.fromAddress(
                 _glGetProcAddress('glUniform3i64vNV'))
-            .asFunction<GlUniform3i64vNV>());
+            .asFunction<GlUniform3i64vNV>()) as void Function(int, int, Pointer<Int64>)?;
   }
   glUniform4i64vNV = tryCall(() =>
       lib.lookupFunction<GlUniform4i64vNVNative, GlUniform4i64vNV>(
-          'glUniform4i64vNV'));
+          'glUniform4i64vNV')) as void Function(int, int, Pointer<Int64>)?;
   if (glUniform4i64vNV == null) {
     glUniform4i64vNV = tryCall(() =>
         Pointer<NativeFunction<GlUniform4i64vNVNative>>.fromAddress(
                 _glGetProcAddress('glUniform4i64vNV'))
-            .asFunction<GlUniform4i64vNV>());
+            .asFunction<GlUniform4i64vNV>()) as void Function(int, int, Pointer<Int64>)?;
   }
   glUniform1ui64NV = tryCall(() =>
       lib.lookupFunction<GlUniform1ui64NVNative, GlUniform1ui64NV>(
-          'glUniform1ui64NV'));
+          'glUniform1ui64NV')) as void Function(int, int)?;
   if (glUniform1ui64NV == null) {
     glUniform1ui64NV = tryCall(() =>
         Pointer<NativeFunction<GlUniform1ui64NVNative>>.fromAddress(
                 _glGetProcAddress('glUniform1ui64NV'))
-            .asFunction<GlUniform1ui64NV>());
+            .asFunction<GlUniform1ui64NV>()) as void Function(int, int)?;
   }
   glUniform2ui64NV = tryCall(() =>
       lib.lookupFunction<GlUniform2ui64NVNative, GlUniform2ui64NV>(
-          'glUniform2ui64NV'));
+          'glUniform2ui64NV')) as void Function(int, int, int)?;
   if (glUniform2ui64NV == null) {
     glUniform2ui64NV = tryCall(() =>
         Pointer<NativeFunction<GlUniform2ui64NVNative>>.fromAddress(
                 _glGetProcAddress('glUniform2ui64NV'))
-            .asFunction<GlUniform2ui64NV>());
+            .asFunction<GlUniform2ui64NV>()) as void Function(int, int, int)?;
   }
   glUniform3ui64NV = tryCall(() =>
       lib.lookupFunction<GlUniform3ui64NVNative, GlUniform3ui64NV>(
-          'glUniform3ui64NV'));
+          'glUniform3ui64NV')) as void Function(int, int, int, int)?;
   if (glUniform3ui64NV == null) {
     glUniform3ui64NV = tryCall(() =>
         Pointer<NativeFunction<GlUniform3ui64NVNative>>.fromAddress(
                 _glGetProcAddress('glUniform3ui64NV'))
-            .asFunction<GlUniform3ui64NV>());
+            .asFunction<GlUniform3ui64NV>()) as void Function(int, int, int, int)?;
   }
   glUniform4ui64NV = tryCall(() =>
       lib.lookupFunction<GlUniform4ui64NVNative, GlUniform4ui64NV>(
-          'glUniform4ui64NV'));
+          'glUniform4ui64NV')) as void Function(int, int, int, int, int)?;
   if (glUniform4ui64NV == null) {
     glUniform4ui64NV = tryCall(() =>
         Pointer<NativeFunction<GlUniform4ui64NVNative>>.fromAddress(
                 _glGetProcAddress('glUniform4ui64NV'))
-            .asFunction<GlUniform4ui64NV>());
+            .asFunction<GlUniform4ui64NV>()) as void Function(int, int, int, int, int)?;
   }
   glUniform1ui64vNV = tryCall(() =>
       lib.lookupFunction<GlUniform1ui64vNVNative, GlUniform1ui64vNV>(
-          'glUniform1ui64vNV'));
+          'glUniform1ui64vNV')) as void Function(int, int, Pointer<Uint64>)?;
   if (glUniform1ui64vNV == null) {
     glUniform1ui64vNV = tryCall(() =>
         Pointer<NativeFunction<GlUniform1ui64vNVNative>>.fromAddress(
                 _glGetProcAddress('glUniform1ui64vNV'))
-            .asFunction<GlUniform1ui64vNV>());
+            .asFunction<GlUniform1ui64vNV>()) as void Function(int, int, Pointer<Uint64>)?;
   }
   glUniform2ui64vNV = tryCall(() =>
       lib.lookupFunction<GlUniform2ui64vNVNative, GlUniform2ui64vNV>(
-          'glUniform2ui64vNV'));
+          'glUniform2ui64vNV')) as void Function(int, int, Pointer<Uint64>)?;
   if (glUniform2ui64vNV == null) {
     glUniform2ui64vNV = tryCall(() =>
         Pointer<NativeFunction<GlUniform2ui64vNVNative>>.fromAddress(
                 _glGetProcAddress('glUniform2ui64vNV'))
-            .asFunction<GlUniform2ui64vNV>());
+            .asFunction<GlUniform2ui64vNV>()) as void Function(int, int, Pointer<Uint64>)?;
   }
   glUniform3ui64vNV = tryCall(() =>
       lib.lookupFunction<GlUniform3ui64vNVNative, GlUniform3ui64vNV>(
-          'glUniform3ui64vNV'));
+          'glUniform3ui64vNV')) as void Function(int, int, Pointer<Uint64>)?;
   if (glUniform3ui64vNV == null) {
     glUniform3ui64vNV = tryCall(() =>
         Pointer<NativeFunction<GlUniform3ui64vNVNative>>.fromAddress(
                 _glGetProcAddress('glUniform3ui64vNV'))
-            .asFunction<GlUniform3ui64vNV>());
+            .asFunction<GlUniform3ui64vNV>()) as void Function(int, int, Pointer<Uint64>)?;
   }
   glUniform4ui64vNV = tryCall(() =>
       lib.lookupFunction<GlUniform4ui64vNVNative, GlUniform4ui64vNV>(
-          'glUniform4ui64vNV'));
+          'glUniform4ui64vNV')) as void Function(int, int, Pointer<Uint64>)?;
   if (glUniform4ui64vNV == null) {
     glUniform4ui64vNV = tryCall(() =>
         Pointer<NativeFunction<GlUniform4ui64vNVNative>>.fromAddress(
                 _glGetProcAddress('glUniform4ui64vNV'))
-            .asFunction<GlUniform4ui64vNV>());
+            .asFunction<GlUniform4ui64vNV>()) as void Function(int, int, Pointer<Uint64>)?;
   }
   glGetUniformi64vNV = tryCall(() =>
       lib.lookupFunction<GlGetUniformi64vNVNative, GlGetUniformi64vNV>(
-          'glGetUniformi64vNV'));
+          'glGetUniformi64vNV')) as void Function(int, int, Pointer<Int64>)?;
   if (glGetUniformi64vNV == null) {
     glGetUniformi64vNV = tryCall(() =>
         Pointer<NativeFunction<GlGetUniformi64vNVNative>>.fromAddress(
                 _glGetProcAddress('glGetUniformi64vNV'))
-            .asFunction<GlGetUniformi64vNV>());
+            .asFunction<GlGetUniformi64vNV>()) as void Function(int, int, Pointer<Int64>)?;
   }
   glProgramUniform1i64NV = tryCall(() =>
       lib.lookupFunction<GlProgramUniform1i64NVNative, GlProgramUniform1i64NV>(
-          'glProgramUniform1i64NV'));
+          'glProgramUniform1i64NV')) as void Function(int, int, int)?;
   if (glProgramUniform1i64NV == null) {
     glProgramUniform1i64NV = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform1i64NVNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform1i64NV'))
-            .asFunction<GlProgramUniform1i64NV>());
+            .asFunction<GlProgramUniform1i64NV>()) as void Function(int, int, int)?;
   }
   glProgramUniform2i64NV = tryCall(() =>
       lib.lookupFunction<GlProgramUniform2i64NVNative, GlProgramUniform2i64NV>(
-          'glProgramUniform2i64NV'));
+          'glProgramUniform2i64NV')) as void Function(int, int, int, int)?;
   if (glProgramUniform2i64NV == null) {
     glProgramUniform2i64NV = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform2i64NVNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform2i64NV'))
-            .asFunction<GlProgramUniform2i64NV>());
+            .asFunction<GlProgramUniform2i64NV>()) as void Function(int, int, int, int)?;
   }
   glProgramUniform3i64NV = tryCall(() =>
       lib.lookupFunction<GlProgramUniform3i64NVNative, GlProgramUniform3i64NV>(
-          'glProgramUniform3i64NV'));
+          'glProgramUniform3i64NV')) as void Function(int, int, int, int, int)?;
   if (glProgramUniform3i64NV == null) {
     glProgramUniform3i64NV = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform3i64NVNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform3i64NV'))
-            .asFunction<GlProgramUniform3i64NV>());
+            .asFunction<GlProgramUniform3i64NV>()) as void Function(int, int, int, int, int)?;
   }
   glProgramUniform4i64NV = tryCall(() =>
       lib.lookupFunction<GlProgramUniform4i64NVNative, GlProgramUniform4i64NV>(
-          'glProgramUniform4i64NV'));
+          'glProgramUniform4i64NV')) as void Function(int, int, int, int, int, int)?;
   if (glProgramUniform4i64NV == null) {
     glProgramUniform4i64NV = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform4i64NVNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform4i64NV'))
-            .asFunction<GlProgramUniform4i64NV>());
+            .asFunction<GlProgramUniform4i64NV>()) as void Function(int, int, int, int, int, int)?;
   }
   glProgramUniform1i64vNV = tryCall(() => lib.lookupFunction<
       GlProgramUniform1i64vNVNative,
-      GlProgramUniform1i64vNV>('glProgramUniform1i64vNV'));
+      GlProgramUniform1i64vNV>('glProgramUniform1i64vNV')) as void Function(int, int, int, Pointer<Int64>)?;
   if (glProgramUniform1i64vNV == null) {
     glProgramUniform1i64vNV = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform1i64vNVNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform1i64vNV'))
-            .asFunction<GlProgramUniform1i64vNV>());
+            .asFunction<GlProgramUniform1i64vNV>()) as void Function(int, int, int, Pointer<Int64>)?;
   }
   glProgramUniform2i64vNV = tryCall(() => lib.lookupFunction<
       GlProgramUniform2i64vNVNative,
-      GlProgramUniform2i64vNV>('glProgramUniform2i64vNV'));
+      GlProgramUniform2i64vNV>('glProgramUniform2i64vNV')) as void Function(int, int, int, Pointer<Int64>)?;
   if (glProgramUniform2i64vNV == null) {
     glProgramUniform2i64vNV = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform2i64vNVNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform2i64vNV'))
-            .asFunction<GlProgramUniform2i64vNV>());
+            .asFunction<GlProgramUniform2i64vNV>()) as void Function(int, int, int, Pointer<Int64>)?;
   }
   glProgramUniform3i64vNV = tryCall(() => lib.lookupFunction<
       GlProgramUniform3i64vNVNative,
-      GlProgramUniform3i64vNV>('glProgramUniform3i64vNV'));
+      GlProgramUniform3i64vNV>('glProgramUniform3i64vNV')) as void Function(int, int, int, Pointer<Int64>)?;
   if (glProgramUniform3i64vNV == null) {
     glProgramUniform3i64vNV = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform3i64vNVNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform3i64vNV'))
-            .asFunction<GlProgramUniform3i64vNV>());
+            .asFunction<GlProgramUniform3i64vNV>()) as void Function(int, int, int, Pointer<Int64>)?;
   }
   glProgramUniform4i64vNV = tryCall(() => lib.lookupFunction<
       GlProgramUniform4i64vNVNative,
-      GlProgramUniform4i64vNV>('glProgramUniform4i64vNV'));
+      GlProgramUniform4i64vNV>('glProgramUniform4i64vNV')) as void Function(int, int, int, Pointer<Int64>)?;
   if (glProgramUniform4i64vNV == null) {
     glProgramUniform4i64vNV = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform4i64vNVNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform4i64vNV'))
-            .asFunction<GlProgramUniform4i64vNV>());
+            .asFunction<GlProgramUniform4i64vNV>()) as void Function(int, int, int, Pointer<Int64>)?;
   }
   glProgramUniform1ui64NV = tryCall(() => lib.lookupFunction<
       GlProgramUniform1ui64NVNative,
-      GlProgramUniform1ui64NV>('glProgramUniform1ui64NV'));
+      GlProgramUniform1ui64NV>('glProgramUniform1ui64NV')) as void Function(int, int, int)?;
   if (glProgramUniform1ui64NV == null) {
     glProgramUniform1ui64NV = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform1ui64NVNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform1ui64NV'))
-            .asFunction<GlProgramUniform1ui64NV>());
+            .asFunction<GlProgramUniform1ui64NV>()) as void Function(int, int, int)?;
   }
   glProgramUniform2ui64NV = tryCall(() => lib.lookupFunction<
       GlProgramUniform2ui64NVNative,
-      GlProgramUniform2ui64NV>('glProgramUniform2ui64NV'));
+      GlProgramUniform2ui64NV>('glProgramUniform2ui64NV')) as void Function(int, int, int, int)?;
   if (glProgramUniform2ui64NV == null) {
     glProgramUniform2ui64NV = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform2ui64NVNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform2ui64NV'))
-            .asFunction<GlProgramUniform2ui64NV>());
+            .asFunction<GlProgramUniform2ui64NV>()) as void Function(int, int, int, int)?;
   }
   glProgramUniform3ui64NV = tryCall(() => lib.lookupFunction<
       GlProgramUniform3ui64NVNative,
-      GlProgramUniform3ui64NV>('glProgramUniform3ui64NV'));
+      GlProgramUniform3ui64NV>('glProgramUniform3ui64NV')) as void Function(int, int, int, int, int)?;
   if (glProgramUniform3ui64NV == null) {
     glProgramUniform3ui64NV = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform3ui64NVNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform3ui64NV'))
-            .asFunction<GlProgramUniform3ui64NV>());
+            .asFunction<GlProgramUniform3ui64NV>()) as void Function(int, int, int, int, int)?;
   }
   glProgramUniform4ui64NV = tryCall(() => lib.lookupFunction<
       GlProgramUniform4ui64NVNative,
-      GlProgramUniform4ui64NV>('glProgramUniform4ui64NV'));
+      GlProgramUniform4ui64NV>('glProgramUniform4ui64NV')) as void Function(int, int, int, int, int, int)?;
   if (glProgramUniform4ui64NV == null) {
     glProgramUniform4ui64NV = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform4ui64NVNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform4ui64NV'))
-            .asFunction<GlProgramUniform4ui64NV>());
+            .asFunction<GlProgramUniform4ui64NV>()) as void Function(int, int, int, int, int, int)?;
   }
   glProgramUniform1ui64vNV = tryCall(() => lib.lookupFunction<
       GlProgramUniform1ui64vNVNative,
-      GlProgramUniform1ui64vNV>('glProgramUniform1ui64vNV'));
+      GlProgramUniform1ui64vNV>('glProgramUniform1ui64vNV')) as void Function(int, int, int, Pointer<Uint64>)?;
   if (glProgramUniform1ui64vNV == null) {
     glProgramUniform1ui64vNV = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform1ui64vNVNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform1ui64vNV'))
-            .asFunction<GlProgramUniform1ui64vNV>());
+            .asFunction<GlProgramUniform1ui64vNV>()) as void Function(int, int, int, Pointer<Uint64>)?;
   }
   glProgramUniform2ui64vNV = tryCall(() => lib.lookupFunction<
       GlProgramUniform2ui64vNVNative,
-      GlProgramUniform2ui64vNV>('glProgramUniform2ui64vNV'));
+      GlProgramUniform2ui64vNV>('glProgramUniform2ui64vNV')) as void Function(int, int, int, Pointer<Uint64>)?;
   if (glProgramUniform2ui64vNV == null) {
     glProgramUniform2ui64vNV = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform2ui64vNVNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform2ui64vNV'))
-            .asFunction<GlProgramUniform2ui64vNV>());
+            .asFunction<GlProgramUniform2ui64vNV>()) as void Function(int, int, int, Pointer<Uint64>)?;
   }
   glProgramUniform3ui64vNV = tryCall(() => lib.lookupFunction<
       GlProgramUniform3ui64vNVNative,
-      GlProgramUniform3ui64vNV>('glProgramUniform3ui64vNV'));
+      GlProgramUniform3ui64vNV>('glProgramUniform3ui64vNV')) as void Function(int, int, int, Pointer<Uint64>)?;
   if (glProgramUniform3ui64vNV == null) {
     glProgramUniform3ui64vNV = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform3ui64vNVNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform3ui64vNV'))
-            .asFunction<GlProgramUniform3ui64vNV>());
+            .asFunction<GlProgramUniform3ui64vNV>()) as void Function(int, int, int, Pointer<Uint64>)?;
   }
   glProgramUniform4ui64vNV = tryCall(() => lib.lookupFunction<
       GlProgramUniform4ui64vNVNative,
-      GlProgramUniform4ui64vNV>('glProgramUniform4ui64vNV'));
+      GlProgramUniform4ui64vNV>('glProgramUniform4ui64vNV')) as void Function(int, int, int, Pointer<Uint64>)?;
   if (glProgramUniform4ui64vNV == null) {
     glProgramUniform4ui64vNV = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniform4ui64vNVNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniform4ui64vNV'))
-            .asFunction<GlProgramUniform4ui64vNV>());
+            .asFunction<GlProgramUniform4ui64vNV>()) as void Function(int, int, int, Pointer<Uint64>)?;
   }
   glGetInternalformatSampleivNV = tryCall(() => lib.lookupFunction<
       GlGetInternalformatSampleivNVNative,
-      GlGetInternalformatSampleivNV>('glGetInternalformatSampleivNV'));
+      GlGetInternalformatSampleivNV>('glGetInternalformatSampleivNV')) as void Function(int, int, int, int, int, Pointer<Int32>)?;
   if (glGetInternalformatSampleivNV == null) {
     glGetInternalformatSampleivNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetInternalformatSampleivNVNative>>.fromAddress(
             _glGetProcAddress('glGetInternalformatSampleivNV'))
-        .asFunction<GlGetInternalformatSampleivNV>());
+        .asFunction<GlGetInternalformatSampleivNV>()) as void Function(int, int, int, int, int, Pointer<Int32>)?;
   }
   glGetMemoryObjectDetachedResourcesuivNV = tryCall(() => lib.lookupFunction<
           GlGetMemoryObjectDetachedResourcesuivNVNative,
           GlGetMemoryObjectDetachedResourcesuivNV>(
-      'glGetMemoryObjectDetachedResourcesuivNV'));
+      'glGetMemoryObjectDetachedResourcesuivNV')) as void Function(int, int, int, int, Pointer<Uint32>)?;
   if (glGetMemoryObjectDetachedResourcesuivNV == null) {
     glGetMemoryObjectDetachedResourcesuivNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetMemoryObjectDetachedResourcesuivNVNative>>.fromAddress(
             _glGetProcAddress('glGetMemoryObjectDetachedResourcesuivNV'))
-        .asFunction<GlGetMemoryObjectDetachedResourcesuivNV>());
+        .asFunction<GlGetMemoryObjectDetachedResourcesuivNV>()) as void Function(int, int, int, int, Pointer<Uint32>)?;
   }
   glResetMemoryObjectParameterNV = tryCall(() => lib.lookupFunction<
       GlResetMemoryObjectParameterNVNative,
-      GlResetMemoryObjectParameterNV>('glResetMemoryObjectParameterNV'));
+      GlResetMemoryObjectParameterNV>('glResetMemoryObjectParameterNV')) as void Function(int, int)?;
   if (glResetMemoryObjectParameterNV == null) {
     glResetMemoryObjectParameterNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlResetMemoryObjectParameterNVNative>>.fromAddress(
             _glGetProcAddress('glResetMemoryObjectParameterNV'))
-        .asFunction<GlResetMemoryObjectParameterNV>());
+        .asFunction<GlResetMemoryObjectParameterNV>()) as void Function(int, int)?;
   }
   glTexAttachMemoryNV = tryCall(() =>
       lib.lookupFunction<GlTexAttachMemoryNVNative, GlTexAttachMemoryNV>(
-          'glTexAttachMemoryNV'));
+          'glTexAttachMemoryNV')) as void Function(int, int, int)?;
   if (glTexAttachMemoryNV == null) {
     glTexAttachMemoryNV = tryCall(() =>
         Pointer<NativeFunction<GlTexAttachMemoryNVNative>>.fromAddress(
                 _glGetProcAddress('glTexAttachMemoryNV'))
-            .asFunction<GlTexAttachMemoryNV>());
+            .asFunction<GlTexAttachMemoryNV>()) as void Function(int, int, int)?;
   }
   glBufferAttachMemoryNV = tryCall(() =>
       lib.lookupFunction<GlBufferAttachMemoryNVNative, GlBufferAttachMemoryNV>(
-          'glBufferAttachMemoryNV'));
+          'glBufferAttachMemoryNV')) as void Function(int, int, int)?;
   if (glBufferAttachMemoryNV == null) {
     glBufferAttachMemoryNV = tryCall(() =>
         Pointer<NativeFunction<GlBufferAttachMemoryNVNative>>.fromAddress(
                 _glGetProcAddress('glBufferAttachMemoryNV'))
-            .asFunction<GlBufferAttachMemoryNV>());
+            .asFunction<GlBufferAttachMemoryNV>()) as void Function(int, int, int)?;
   }
   glTextureAttachMemoryNV = tryCall(() => lib.lookupFunction<
       GlTextureAttachMemoryNVNative,
-      GlTextureAttachMemoryNV>('glTextureAttachMemoryNV'));
+      GlTextureAttachMemoryNV>('glTextureAttachMemoryNV')) as void Function(int, int, int)?;
   if (glTextureAttachMemoryNV == null) {
     glTextureAttachMemoryNV = tryCall(() =>
         Pointer<NativeFunction<GlTextureAttachMemoryNVNative>>.fromAddress(
                 _glGetProcAddress('glTextureAttachMemoryNV'))
-            .asFunction<GlTextureAttachMemoryNV>());
+            .asFunction<GlTextureAttachMemoryNV>()) as void Function(int, int, int)?;
   }
   glNamedBufferAttachMemoryNV = tryCall(() => lib.lookupFunction<
       GlNamedBufferAttachMemoryNVNative,
-      GlNamedBufferAttachMemoryNV>('glNamedBufferAttachMemoryNV'));
+      GlNamedBufferAttachMemoryNV>('glNamedBufferAttachMemoryNV')) as void Function(int, int, int)?;
   if (glNamedBufferAttachMemoryNV == null) {
     glNamedBufferAttachMemoryNV = tryCall(() =>
         Pointer<NativeFunction<GlNamedBufferAttachMemoryNVNative>>.fromAddress(
                 _glGetProcAddress('glNamedBufferAttachMemoryNV'))
-            .asFunction<GlNamedBufferAttachMemoryNV>());
+            .asFunction<GlNamedBufferAttachMemoryNV>()) as void Function(int, int, int)?;
   }
   glBufferPageCommitmentMemNV = tryCall(() => lib.lookupFunction<
       GlBufferPageCommitmentMemNVNative,
-      GlBufferPageCommitmentMemNV>('glBufferPageCommitmentMemNV'));
+      GlBufferPageCommitmentMemNV>('glBufferPageCommitmentMemNV')) as void Function(int, int, int, int, int, int)?;
   if (glBufferPageCommitmentMemNV == null) {
     glBufferPageCommitmentMemNV = tryCall(() =>
         Pointer<NativeFunction<GlBufferPageCommitmentMemNVNative>>.fromAddress(
                 _glGetProcAddress('glBufferPageCommitmentMemNV'))
-            .asFunction<GlBufferPageCommitmentMemNV>());
+            .asFunction<GlBufferPageCommitmentMemNV>()) as void Function(int, int, int, int, int, int)?;
   }
   glTexPageCommitmentMemNV = tryCall(() => lib.lookupFunction<
       GlTexPageCommitmentMemNVNative,
-      GlTexPageCommitmentMemNV>('glTexPageCommitmentMemNV'));
+      GlTexPageCommitmentMemNV>('glTexPageCommitmentMemNV')) as void Function(int, int, int, int, int, int, int, int, int, int, int, int)?;
   if (glTexPageCommitmentMemNV == null) {
     glTexPageCommitmentMemNV = tryCall(() =>
         Pointer<NativeFunction<GlTexPageCommitmentMemNVNative>>.fromAddress(
                 _glGetProcAddress('glTexPageCommitmentMemNV'))
-            .asFunction<GlTexPageCommitmentMemNV>());
+            .asFunction<GlTexPageCommitmentMemNV>()) as void Function(int, int, int, int, int, int, int, int, int, int, int, int)?;
   }
   glNamedBufferPageCommitmentMemNV = tryCall(() => lib.lookupFunction<
       GlNamedBufferPageCommitmentMemNVNative,
-      GlNamedBufferPageCommitmentMemNV>('glNamedBufferPageCommitmentMemNV'));
+      GlNamedBufferPageCommitmentMemNV>('glNamedBufferPageCommitmentMemNV')) as void Function(int, int, int, int, int, int)?;
   if (glNamedBufferPageCommitmentMemNV == null) {
     glNamedBufferPageCommitmentMemNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedBufferPageCommitmentMemNVNative>>.fromAddress(
             _glGetProcAddress('glNamedBufferPageCommitmentMemNV'))
-        .asFunction<GlNamedBufferPageCommitmentMemNV>());
+        .asFunction<GlNamedBufferPageCommitmentMemNV>()) as void Function(int, int, int, int, int, int)?;
   }
   glTexturePageCommitmentMemNV = tryCall(() => lib.lookupFunction<
       GlTexturePageCommitmentMemNVNative,
-      GlTexturePageCommitmentMemNV>('glTexturePageCommitmentMemNV'));
+      GlTexturePageCommitmentMemNV>('glTexturePageCommitmentMemNV')) as void Function(int, int, int, int, int, int, int, int, int, int, int, int)?;
   if (glTexturePageCommitmentMemNV == null) {
     glTexturePageCommitmentMemNV = tryCall(() =>
         Pointer<NativeFunction<GlTexturePageCommitmentMemNVNative>>.fromAddress(
                 _glGetProcAddress('glTexturePageCommitmentMemNV'))
-            .asFunction<GlTexturePageCommitmentMemNV>());
+            .asFunction<GlTexturePageCommitmentMemNV>()) as void Function(int, int, int, int, int, int, int, int, int, int, int, int)?;
   }
   glDrawMeshTasksNV = tryCall(() =>
       lib.lookupFunction<GlDrawMeshTasksNVNative, GlDrawMeshTasksNV>(
-          'glDrawMeshTasksNV'));
+          'glDrawMeshTasksNV')) as void Function(int, int)?;
   if (glDrawMeshTasksNV == null) {
     glDrawMeshTasksNV = tryCall(() =>
         Pointer<NativeFunction<GlDrawMeshTasksNVNative>>.fromAddress(
                 _glGetProcAddress('glDrawMeshTasksNV'))
-            .asFunction<GlDrawMeshTasksNV>());
+            .asFunction<GlDrawMeshTasksNV>()) as void Function(int, int)?;
   }
   glDrawMeshTasksIndirectNV = tryCall(() => lib.lookupFunction<
       GlDrawMeshTasksIndirectNVNative,
-      GlDrawMeshTasksIndirectNV>('glDrawMeshTasksIndirectNV'));
+      GlDrawMeshTasksIndirectNV>('glDrawMeshTasksIndirectNV')) as void Function(int)?;
   if (glDrawMeshTasksIndirectNV == null) {
     glDrawMeshTasksIndirectNV = tryCall(() =>
         Pointer<NativeFunction<GlDrawMeshTasksIndirectNVNative>>.fromAddress(
                 _glGetProcAddress('glDrawMeshTasksIndirectNV'))
-            .asFunction<GlDrawMeshTasksIndirectNV>());
+            .asFunction<GlDrawMeshTasksIndirectNV>()) as void Function(int)?;
   }
   glMultiDrawMeshTasksIndirectNV = tryCall(() => lib.lookupFunction<
       GlMultiDrawMeshTasksIndirectNVNative,
-      GlMultiDrawMeshTasksIndirectNV>('glMultiDrawMeshTasksIndirectNV'));
+      GlMultiDrawMeshTasksIndirectNV>('glMultiDrawMeshTasksIndirectNV')) as void Function(int, int, int)?;
   if (glMultiDrawMeshTasksIndirectNV == null) {
     glMultiDrawMeshTasksIndirectNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlMultiDrawMeshTasksIndirectNVNative>>.fromAddress(
             _glGetProcAddress('glMultiDrawMeshTasksIndirectNV'))
-        .asFunction<GlMultiDrawMeshTasksIndirectNV>());
+        .asFunction<GlMultiDrawMeshTasksIndirectNV>()) as void Function(int, int, int)?;
   }
   glMultiDrawMeshTasksIndirectCountNV = tryCall(() => lib.lookupFunction<
           GlMultiDrawMeshTasksIndirectCountNVNative,
           GlMultiDrawMeshTasksIndirectCountNV>(
-      'glMultiDrawMeshTasksIndirectCountNV'));
+      'glMultiDrawMeshTasksIndirectCountNV')) as void Function(int, int, int, int)?;
   if (glMultiDrawMeshTasksIndirectCountNV == null) {
     glMultiDrawMeshTasksIndirectCountNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlMultiDrawMeshTasksIndirectCountNVNative>>.fromAddress(
             _glGetProcAddress('glMultiDrawMeshTasksIndirectCountNV'))
-        .asFunction<GlMultiDrawMeshTasksIndirectCountNV>());
+        .asFunction<GlMultiDrawMeshTasksIndirectCountNV>()) as void Function(int, int, int, int)?;
   }
   glGenPathsNV = tryCall(() =>
-      lib.lookupFunction<GlGenPathsNVNative, GlGenPathsNV>('glGenPathsNV'));
+      lib.lookupFunction<GlGenPathsNVNative, GlGenPathsNV>('glGenPathsNV')) as int Function(int)?;
   if (glGenPathsNV == null) {
     glGenPathsNV = tryCall(() =>
         Pointer<NativeFunction<GlGenPathsNVNative>>.fromAddress(
                 _glGetProcAddress('glGenPathsNV'))
-            .asFunction<GlGenPathsNV>());
+            .asFunction<GlGenPathsNV>()) as int Function(int)?;
   }
   glDeletePathsNV = tryCall(() =>
       lib.lookupFunction<GlDeletePathsNVNative, GlDeletePathsNV>(
-          'glDeletePathsNV'));
+          'glDeletePathsNV')) as void Function(int, int)?;
   if (glDeletePathsNV == null) {
     glDeletePathsNV = tryCall(() =>
         Pointer<NativeFunction<GlDeletePathsNVNative>>.fromAddress(
                 _glGetProcAddress('glDeletePathsNV'))
-            .asFunction<GlDeletePathsNV>());
+            .asFunction<GlDeletePathsNV>()) as void Function(int, int)?;
   }
   glIsPathNV = tryCall(
-      () => lib.lookupFunction<GlIsPathNVNative, GlIsPathNV>('glIsPathNV'));
+      () => lib.lookupFunction<GlIsPathNVNative, GlIsPathNV>('glIsPathNV')) as int Function(int)?;
   if (glIsPathNV == null) {
     glIsPathNV = tryCall(() =>
         Pointer<NativeFunction<GlIsPathNVNative>>.fromAddress(
                 _glGetProcAddress('glIsPathNV'))
-            .asFunction<GlIsPathNV>());
+            .asFunction<GlIsPathNV>()) as int Function(int)?;
   }
   glPathCommandsNV = tryCall(() =>
       lib.lookupFunction<GlPathCommandsNVNative, GlPathCommandsNV>(
-          'glPathCommandsNV'));
+          'glPathCommandsNV')) as void Function(int, int, Pointer<NativeType>, int, int, Pointer<NativeType>)?;
   if (glPathCommandsNV == null) {
     glPathCommandsNV = tryCall(() =>
         Pointer<NativeFunction<GlPathCommandsNVNative>>.fromAddress(
                 _glGetProcAddress('glPathCommandsNV'))
-            .asFunction<GlPathCommandsNV>());
+            .asFunction<GlPathCommandsNV>()) as void Function(int, int, Pointer<NativeType>, int, int, Pointer<NativeType>)?;
   }
   glPathCoordsNV = tryCall(() => lib
-      .lookupFunction<GlPathCoordsNVNative, GlPathCoordsNV>('glPathCoordsNV'));
+      .lookupFunction<GlPathCoordsNVNative, GlPathCoordsNV>('glPathCoordsNV')) as void Function(int, int, int, Pointer<NativeType>)?;
   if (glPathCoordsNV == null) {
     glPathCoordsNV = tryCall(() =>
         Pointer<NativeFunction<GlPathCoordsNVNative>>.fromAddress(
                 _glGetProcAddress('glPathCoordsNV'))
-            .asFunction<GlPathCoordsNV>());
+            .asFunction<GlPathCoordsNV>()) as void Function(int, int, int, Pointer<NativeType>)?;
   }
   glPathSubCommandsNV = tryCall(() =>
       lib.lookupFunction<GlPathSubCommandsNVNative, GlPathSubCommandsNV>(
-          'glPathSubCommandsNV'));
+          'glPathSubCommandsNV')) as void Function(int, int, int, int, Pointer<NativeType>, int, int, Pointer<NativeType>)?;
   if (glPathSubCommandsNV == null) {
     glPathSubCommandsNV = tryCall(() =>
         Pointer<NativeFunction<GlPathSubCommandsNVNative>>.fromAddress(
                 _glGetProcAddress('glPathSubCommandsNV'))
-            .asFunction<GlPathSubCommandsNV>());
+            .asFunction<GlPathSubCommandsNV>()) as void Function(int, int, int, int, Pointer<NativeType>, int, int, Pointer<NativeType>)?;
   }
   glPathSubCoordsNV = tryCall(() =>
       lib.lookupFunction<GlPathSubCoordsNVNative, GlPathSubCoordsNV>(
-          'glPathSubCoordsNV'));
+          'glPathSubCoordsNV')) as void Function(int, int, int, int, Pointer<NativeType>)?;
   if (glPathSubCoordsNV == null) {
     glPathSubCoordsNV = tryCall(() =>
         Pointer<NativeFunction<GlPathSubCoordsNVNative>>.fromAddress(
                 _glGetProcAddress('glPathSubCoordsNV'))
-            .asFunction<GlPathSubCoordsNV>());
+            .asFunction<GlPathSubCoordsNV>()) as void Function(int, int, int, int, Pointer<NativeType>)?;
   }
   glPathStringNV = tryCall(() => lib
-      .lookupFunction<GlPathStringNVNative, GlPathStringNV>('glPathStringNV'));
+      .lookupFunction<GlPathStringNVNative, GlPathStringNV>('glPathStringNV')) as void Function(int, int, int, Pointer<NativeType>)?;
   if (glPathStringNV == null) {
     glPathStringNV = tryCall(() =>
         Pointer<NativeFunction<GlPathStringNVNative>>.fromAddress(
                 _glGetProcAddress('glPathStringNV'))
-            .asFunction<GlPathStringNV>());
+            .asFunction<GlPathStringNV>()) as void Function(int, int, int, Pointer<NativeType>)?;
   }
   glPathGlyphsNV = tryCall(() => lib
-      .lookupFunction<GlPathGlyphsNVNative, GlPathGlyphsNV>('glPathGlyphsNV'));
+      .lookupFunction<GlPathGlyphsNVNative, GlPathGlyphsNV>('glPathGlyphsNV')) as void Function(int, int, Pointer<NativeType>, int, int, int, Pointer<NativeType>, int, int, double)?;
   if (glPathGlyphsNV == null) {
     glPathGlyphsNV = tryCall(() =>
         Pointer<NativeFunction<GlPathGlyphsNVNative>>.fromAddress(
                 _glGetProcAddress('glPathGlyphsNV'))
-            .asFunction<GlPathGlyphsNV>());
+            .asFunction<GlPathGlyphsNV>()) as void Function(int, int, Pointer<NativeType>, int, int, int, Pointer<NativeType>, int, int, double)?;
   }
   glPathGlyphRangeNV = tryCall(() =>
       lib.lookupFunction<GlPathGlyphRangeNVNative, GlPathGlyphRangeNV>(
-          'glPathGlyphRangeNV'));
+          'glPathGlyphRangeNV')) as void Function(int, int, Pointer<NativeType>, int, int, int, int, int, double)?;
   if (glPathGlyphRangeNV == null) {
     glPathGlyphRangeNV = tryCall(() =>
         Pointer<NativeFunction<GlPathGlyphRangeNVNative>>.fromAddress(
                 _glGetProcAddress('glPathGlyphRangeNV'))
-            .asFunction<GlPathGlyphRangeNV>());
+            .asFunction<GlPathGlyphRangeNV>()) as void Function(int, int, Pointer<NativeType>, int, int, int, int, int, double)?;
   }
   glWeightPathsNV = tryCall(() =>
       lib.lookupFunction<GlWeightPathsNVNative, GlWeightPathsNV>(
-          'glWeightPathsNV'));
+          'glWeightPathsNV')) as void Function(int, int, Pointer<Uint32>, Pointer<Float>)?;
   if (glWeightPathsNV == null) {
     glWeightPathsNV = tryCall(() =>
         Pointer<NativeFunction<GlWeightPathsNVNative>>.fromAddress(
                 _glGetProcAddress('glWeightPathsNV'))
-            .asFunction<GlWeightPathsNV>());
+            .asFunction<GlWeightPathsNV>()) as void Function(int, int, Pointer<Uint32>, Pointer<Float>)?;
   }
   glCopyPathNV = tryCall(() =>
-      lib.lookupFunction<GlCopyPathNVNative, GlCopyPathNV>('glCopyPathNV'));
+      lib.lookupFunction<GlCopyPathNVNative, GlCopyPathNV>('glCopyPathNV')) as void Function(int, int)?;
   if (glCopyPathNV == null) {
     glCopyPathNV = tryCall(() =>
         Pointer<NativeFunction<GlCopyPathNVNative>>.fromAddress(
                 _glGetProcAddress('glCopyPathNV'))
-            .asFunction<GlCopyPathNV>());
+            .asFunction<GlCopyPathNV>()) as void Function(int, int)?;
   }
   glInterpolatePathsNV = tryCall(() =>
       lib.lookupFunction<GlInterpolatePathsNVNative, GlInterpolatePathsNV>(
-          'glInterpolatePathsNV'));
+          'glInterpolatePathsNV')) as void Function(int, int, int, double)?;
   if (glInterpolatePathsNV == null) {
     glInterpolatePathsNV = tryCall(() =>
         Pointer<NativeFunction<GlInterpolatePathsNVNative>>.fromAddress(
                 _glGetProcAddress('glInterpolatePathsNV'))
-            .asFunction<GlInterpolatePathsNV>());
+            .asFunction<GlInterpolatePathsNV>()) as void Function(int, int, int, double)?;
   }
   glTransformPathNV = tryCall(() =>
       lib.lookupFunction<GlTransformPathNVNative, GlTransformPathNV>(
-          'glTransformPathNV'));
+          'glTransformPathNV')) as void Function(int, int, int, Pointer<Float>)?;
   if (glTransformPathNV == null) {
     glTransformPathNV = tryCall(() =>
         Pointer<NativeFunction<GlTransformPathNVNative>>.fromAddress(
                 _glGetProcAddress('glTransformPathNV'))
-            .asFunction<GlTransformPathNV>());
+            .asFunction<GlTransformPathNV>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glPathParameterivNV = tryCall(() =>
       lib.lookupFunction<GlPathParameterivNVNative, GlPathParameterivNV>(
-          'glPathParameterivNV'));
+          'glPathParameterivNV')) as void Function(int, int, Pointer<Int32>)?;
   if (glPathParameterivNV == null) {
     glPathParameterivNV = tryCall(() =>
         Pointer<NativeFunction<GlPathParameterivNVNative>>.fromAddress(
                 _glGetProcAddress('glPathParameterivNV'))
-            .asFunction<GlPathParameterivNV>());
+            .asFunction<GlPathParameterivNV>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glPathParameteriNV = tryCall(() =>
       lib.lookupFunction<GlPathParameteriNVNative, GlPathParameteriNV>(
-          'glPathParameteriNV'));
+          'glPathParameteriNV')) as void Function(int, int, int)?;
   if (glPathParameteriNV == null) {
     glPathParameteriNV = tryCall(() =>
         Pointer<NativeFunction<GlPathParameteriNVNative>>.fromAddress(
                 _glGetProcAddress('glPathParameteriNV'))
-            .asFunction<GlPathParameteriNV>());
+            .asFunction<GlPathParameteriNV>()) as void Function(int, int, int)?;
   }
   glPathParameterfvNV = tryCall(() =>
       lib.lookupFunction<GlPathParameterfvNVNative, GlPathParameterfvNV>(
-          'glPathParameterfvNV'));
+          'glPathParameterfvNV')) as void Function(int, int, Pointer<Float>)?;
   if (glPathParameterfvNV == null) {
     glPathParameterfvNV = tryCall(() =>
         Pointer<NativeFunction<GlPathParameterfvNVNative>>.fromAddress(
                 _glGetProcAddress('glPathParameterfvNV'))
-            .asFunction<GlPathParameterfvNV>());
+            .asFunction<GlPathParameterfvNV>()) as void Function(int, int, Pointer<Float>)?;
   }
   glPathParameterfNV = tryCall(() =>
       lib.lookupFunction<GlPathParameterfNVNative, GlPathParameterfNV>(
-          'glPathParameterfNV'));
+          'glPathParameterfNV')) as void Function(int, int, double)?;
   if (glPathParameterfNV == null) {
     glPathParameterfNV = tryCall(() =>
         Pointer<NativeFunction<GlPathParameterfNVNative>>.fromAddress(
                 _glGetProcAddress('glPathParameterfNV'))
-            .asFunction<GlPathParameterfNV>());
+            .asFunction<GlPathParameterfNV>()) as void Function(int, int, double)?;
   }
   glPathDashArrayNV = tryCall(() =>
       lib.lookupFunction<GlPathDashArrayNVNative, GlPathDashArrayNV>(
-          'glPathDashArrayNV'));
+          'glPathDashArrayNV')) as void Function(int, int, Pointer<Float>)?;
   if (glPathDashArrayNV == null) {
     glPathDashArrayNV = tryCall(() =>
         Pointer<NativeFunction<GlPathDashArrayNVNative>>.fromAddress(
                 _glGetProcAddress('glPathDashArrayNV'))
-            .asFunction<GlPathDashArrayNV>());
+            .asFunction<GlPathDashArrayNV>()) as void Function(int, int, Pointer<Float>)?;
   }
   glPathStencilFuncNV = tryCall(() =>
       lib.lookupFunction<GlPathStencilFuncNVNative, GlPathStencilFuncNV>(
-          'glPathStencilFuncNV'));
+          'glPathStencilFuncNV')) as void Function(int, int, int)?;
   if (glPathStencilFuncNV == null) {
     glPathStencilFuncNV = tryCall(() =>
         Pointer<NativeFunction<GlPathStencilFuncNVNative>>.fromAddress(
                 _glGetProcAddress('glPathStencilFuncNV'))
-            .asFunction<GlPathStencilFuncNV>());
+            .asFunction<GlPathStencilFuncNV>()) as void Function(int, int, int)?;
   }
   glPathStencilDepthOffsetNV = tryCall(() => lib.lookupFunction<
       GlPathStencilDepthOffsetNVNative,
-      GlPathStencilDepthOffsetNV>('glPathStencilDepthOffsetNV'));
+      GlPathStencilDepthOffsetNV>('glPathStencilDepthOffsetNV')) as void Function(double, double)?;
   if (glPathStencilDepthOffsetNV == null) {
     glPathStencilDepthOffsetNV = tryCall(() =>
         Pointer<NativeFunction<GlPathStencilDepthOffsetNVNative>>.fromAddress(
                 _glGetProcAddress('glPathStencilDepthOffsetNV'))
-            .asFunction<GlPathStencilDepthOffsetNV>());
+            .asFunction<GlPathStencilDepthOffsetNV>()) as void Function(double, double)?;
   }
   glStencilFillPathNV = tryCall(() =>
       lib.lookupFunction<GlStencilFillPathNVNative, GlStencilFillPathNV>(
-          'glStencilFillPathNV'));
+          'glStencilFillPathNV')) as void Function(int, int, int)?;
   if (glStencilFillPathNV == null) {
     glStencilFillPathNV = tryCall(() =>
         Pointer<NativeFunction<GlStencilFillPathNVNative>>.fromAddress(
                 _glGetProcAddress('glStencilFillPathNV'))
-            .asFunction<GlStencilFillPathNV>());
+            .asFunction<GlStencilFillPathNV>()) as void Function(int, int, int)?;
   }
   glStencilStrokePathNV = tryCall(() =>
       lib.lookupFunction<GlStencilStrokePathNVNative, GlStencilStrokePathNV>(
-          'glStencilStrokePathNV'));
+          'glStencilStrokePathNV')) as void Function(int, int, int)?;
   if (glStencilStrokePathNV == null) {
     glStencilStrokePathNV = tryCall(() =>
         Pointer<NativeFunction<GlStencilStrokePathNVNative>>.fromAddress(
                 _glGetProcAddress('glStencilStrokePathNV'))
-            .asFunction<GlStencilStrokePathNV>());
+            .asFunction<GlStencilStrokePathNV>()) as void Function(int, int, int)?;
   }
   glStencilFillPathInstancedNV = tryCall(() => lib.lookupFunction<
       GlStencilFillPathInstancedNVNative,
-      GlStencilFillPathInstancedNV>('glStencilFillPathInstancedNV'));
+      GlStencilFillPathInstancedNV>('glStencilFillPathInstancedNV')) as void Function(int, int, Pointer<NativeType>, int, int, int, int, Pointer<Float>)?;
   if (glStencilFillPathInstancedNV == null) {
     glStencilFillPathInstancedNV = tryCall(() =>
         Pointer<NativeFunction<GlStencilFillPathInstancedNVNative>>.fromAddress(
                 _glGetProcAddress('glStencilFillPathInstancedNV'))
-            .asFunction<GlStencilFillPathInstancedNV>());
+            .asFunction<GlStencilFillPathInstancedNV>()) as void Function(int, int, Pointer<NativeType>, int, int, int, int, Pointer<Float>)?;
   }
   glStencilStrokePathInstancedNV = tryCall(() => lib.lookupFunction<
       GlStencilStrokePathInstancedNVNative,
-      GlStencilStrokePathInstancedNV>('glStencilStrokePathInstancedNV'));
+      GlStencilStrokePathInstancedNV>('glStencilStrokePathInstancedNV')) as void Function(int, int, Pointer<NativeType>, int, int, int, int, Pointer<Float>)?;
   if (glStencilStrokePathInstancedNV == null) {
     glStencilStrokePathInstancedNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlStencilStrokePathInstancedNVNative>>.fromAddress(
             _glGetProcAddress('glStencilStrokePathInstancedNV'))
-        .asFunction<GlStencilStrokePathInstancedNV>());
+        .asFunction<GlStencilStrokePathInstancedNV>()) as void Function(int, int, Pointer<NativeType>, int, int, int, int, Pointer<Float>)?;
   }
   glPathCoverDepthFuncNV = tryCall(() =>
       lib.lookupFunction<GlPathCoverDepthFuncNVNative, GlPathCoverDepthFuncNV>(
-          'glPathCoverDepthFuncNV'));
+          'glPathCoverDepthFuncNV')) as void Function(int)?;
   if (glPathCoverDepthFuncNV == null) {
     glPathCoverDepthFuncNV = tryCall(() =>
         Pointer<NativeFunction<GlPathCoverDepthFuncNVNative>>.fromAddress(
                 _glGetProcAddress('glPathCoverDepthFuncNV'))
-            .asFunction<GlPathCoverDepthFuncNV>());
+            .asFunction<GlPathCoverDepthFuncNV>()) as void Function(int)?;
   }
   glCoverFillPathNV = tryCall(() =>
       lib.lookupFunction<GlCoverFillPathNVNative, GlCoverFillPathNV>(
-          'glCoverFillPathNV'));
+          'glCoverFillPathNV')) as void Function(int, int)?;
   if (glCoverFillPathNV == null) {
     glCoverFillPathNV = tryCall(() =>
         Pointer<NativeFunction<GlCoverFillPathNVNative>>.fromAddress(
                 _glGetProcAddress('glCoverFillPathNV'))
-            .asFunction<GlCoverFillPathNV>());
+            .asFunction<GlCoverFillPathNV>()) as void Function(int, int)?;
   }
   glCoverStrokePathNV = tryCall(() =>
       lib.lookupFunction<GlCoverStrokePathNVNative, GlCoverStrokePathNV>(
-          'glCoverStrokePathNV'));
+          'glCoverStrokePathNV')) as void Function(int, int)?;
   if (glCoverStrokePathNV == null) {
     glCoverStrokePathNV = tryCall(() =>
         Pointer<NativeFunction<GlCoverStrokePathNVNative>>.fromAddress(
                 _glGetProcAddress('glCoverStrokePathNV'))
-            .asFunction<GlCoverStrokePathNV>());
+            .asFunction<GlCoverStrokePathNV>()) as void Function(int, int)?;
   }
   glCoverFillPathInstancedNV = tryCall(() => lib.lookupFunction<
       GlCoverFillPathInstancedNVNative,
-      GlCoverFillPathInstancedNV>('glCoverFillPathInstancedNV'));
+      GlCoverFillPathInstancedNV>('glCoverFillPathInstancedNV')) as void Function(int, int, Pointer<NativeType>, int, int, int, Pointer<Float>)?;
   if (glCoverFillPathInstancedNV == null) {
     glCoverFillPathInstancedNV = tryCall(() =>
         Pointer<NativeFunction<GlCoverFillPathInstancedNVNative>>.fromAddress(
                 _glGetProcAddress('glCoverFillPathInstancedNV'))
-            .asFunction<GlCoverFillPathInstancedNV>());
+            .asFunction<GlCoverFillPathInstancedNV>()) as void Function(int, int, Pointer<NativeType>, int, int, int, Pointer<Float>)?;
   }
   glCoverStrokePathInstancedNV = tryCall(() => lib.lookupFunction<
       GlCoverStrokePathInstancedNVNative,
-      GlCoverStrokePathInstancedNV>('glCoverStrokePathInstancedNV'));
+      GlCoverStrokePathInstancedNV>('glCoverStrokePathInstancedNV')) as void Function(int, int, Pointer<NativeType>, int, int, int, Pointer<Float>)?;
   if (glCoverStrokePathInstancedNV == null) {
     glCoverStrokePathInstancedNV = tryCall(() =>
         Pointer<NativeFunction<GlCoverStrokePathInstancedNVNative>>.fromAddress(
                 _glGetProcAddress('glCoverStrokePathInstancedNV'))
-            .asFunction<GlCoverStrokePathInstancedNV>());
+            .asFunction<GlCoverStrokePathInstancedNV>()) as void Function(int, int, Pointer<NativeType>, int, int, int, Pointer<Float>)?;
   }
   glGetPathParameterivNV = tryCall(() =>
       lib.lookupFunction<GlGetPathParameterivNVNative, GlGetPathParameterivNV>(
-          'glGetPathParameterivNV'));
+          'glGetPathParameterivNV')) as void Function(int, int, Pointer<Int32>)?;
   if (glGetPathParameterivNV == null) {
     glGetPathParameterivNV = tryCall(() =>
         Pointer<NativeFunction<GlGetPathParameterivNVNative>>.fromAddress(
                 _glGetProcAddress('glGetPathParameterivNV'))
-            .asFunction<GlGetPathParameterivNV>());
+            .asFunction<GlGetPathParameterivNV>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glGetPathParameterfvNV = tryCall(() =>
       lib.lookupFunction<GlGetPathParameterfvNVNative, GlGetPathParameterfvNV>(
-          'glGetPathParameterfvNV'));
+          'glGetPathParameterfvNV')) as void Function(int, int, Pointer<Float>)?;
   if (glGetPathParameterfvNV == null) {
     glGetPathParameterfvNV = tryCall(() =>
         Pointer<NativeFunction<GlGetPathParameterfvNVNative>>.fromAddress(
                 _glGetProcAddress('glGetPathParameterfvNV'))
-            .asFunction<GlGetPathParameterfvNV>());
+            .asFunction<GlGetPathParameterfvNV>()) as void Function(int, int, Pointer<Float>)?;
   }
   glGetPathCommandsNV = tryCall(() =>
       lib.lookupFunction<GlGetPathCommandsNVNative, GlGetPathCommandsNV>(
-          'glGetPathCommandsNV'));
+          'glGetPathCommandsNV')) as void Function(int, Pointer<Uint8>)?;
   if (glGetPathCommandsNV == null) {
     glGetPathCommandsNV = tryCall(() =>
         Pointer<NativeFunction<GlGetPathCommandsNVNative>>.fromAddress(
                 _glGetProcAddress('glGetPathCommandsNV'))
-            .asFunction<GlGetPathCommandsNV>());
+            .asFunction<GlGetPathCommandsNV>()) as void Function(int, Pointer<Uint8>)?;
   }
   glGetPathCoordsNV = tryCall(() =>
       lib.lookupFunction<GlGetPathCoordsNVNative, GlGetPathCoordsNV>(
-          'glGetPathCoordsNV'));
+          'glGetPathCoordsNV')) as void Function(int, Pointer<Float>)?;
   if (glGetPathCoordsNV == null) {
     glGetPathCoordsNV = tryCall(() =>
         Pointer<NativeFunction<GlGetPathCoordsNVNative>>.fromAddress(
                 _glGetProcAddress('glGetPathCoordsNV'))
-            .asFunction<GlGetPathCoordsNV>());
+            .asFunction<GlGetPathCoordsNV>()) as void Function(int, Pointer<Float>)?;
   }
   glGetPathDashArrayNV = tryCall(() =>
       lib.lookupFunction<GlGetPathDashArrayNVNative, GlGetPathDashArrayNV>(
-          'glGetPathDashArrayNV'));
+          'glGetPathDashArrayNV')) as void Function(int, Pointer<Float>)?;
   if (glGetPathDashArrayNV == null) {
     glGetPathDashArrayNV = tryCall(() =>
         Pointer<NativeFunction<GlGetPathDashArrayNVNative>>.fromAddress(
                 _glGetProcAddress('glGetPathDashArrayNV'))
-            .asFunction<GlGetPathDashArrayNV>());
+            .asFunction<GlGetPathDashArrayNV>()) as void Function(int, Pointer<Float>)?;
   }
   glGetPathMetricsNV = tryCall(() =>
       lib.lookupFunction<GlGetPathMetricsNVNative, GlGetPathMetricsNV>(
-          'glGetPathMetricsNV'));
+          'glGetPathMetricsNV')) as void Function(int, int, int, Pointer<NativeType>, int, int, Pointer<Float>)?;
   if (glGetPathMetricsNV == null) {
     glGetPathMetricsNV = tryCall(() =>
         Pointer<NativeFunction<GlGetPathMetricsNVNative>>.fromAddress(
                 _glGetProcAddress('glGetPathMetricsNV'))
-            .asFunction<GlGetPathMetricsNV>());
+            .asFunction<GlGetPathMetricsNV>()) as void Function(int, int, int, Pointer<NativeType>, int, int, Pointer<Float>)?;
   }
   glGetPathMetricRangeNV = tryCall(() =>
       lib.lookupFunction<GlGetPathMetricRangeNVNative, GlGetPathMetricRangeNV>(
-          'glGetPathMetricRangeNV'));
+          'glGetPathMetricRangeNV')) as void Function(int, int, int, int, Pointer<Float>)?;
   if (glGetPathMetricRangeNV == null) {
     glGetPathMetricRangeNV = tryCall(() =>
         Pointer<NativeFunction<GlGetPathMetricRangeNVNative>>.fromAddress(
                 _glGetProcAddress('glGetPathMetricRangeNV'))
-            .asFunction<GlGetPathMetricRangeNV>());
+            .asFunction<GlGetPathMetricRangeNV>()) as void Function(int, int, int, int, Pointer<Float>)?;
   }
   glGetPathSpacingNV = tryCall(() =>
       lib.lookupFunction<GlGetPathSpacingNVNative, GlGetPathSpacingNV>(
-          'glGetPathSpacingNV'));
+          'glGetPathSpacingNV')) as void Function(int, int, int, Pointer<NativeType>, int, double, double, int, Pointer<Float>)?;
   if (glGetPathSpacingNV == null) {
     glGetPathSpacingNV = tryCall(() =>
         Pointer<NativeFunction<GlGetPathSpacingNVNative>>.fromAddress(
                 _glGetProcAddress('glGetPathSpacingNV'))
-            .asFunction<GlGetPathSpacingNV>());
+            .asFunction<GlGetPathSpacingNV>()) as void Function(int, int, int, Pointer<NativeType>, int, double, double, int, Pointer<Float>)?;
   }
   glIsPointInFillPathNV = tryCall(() =>
       lib.lookupFunction<GlIsPointInFillPathNVNative, GlIsPointInFillPathNV>(
-          'glIsPointInFillPathNV'));
+          'glIsPointInFillPathNV')) as int Function(int, int, double, double)?;
   if (glIsPointInFillPathNV == null) {
     glIsPointInFillPathNV = tryCall(() =>
         Pointer<NativeFunction<GlIsPointInFillPathNVNative>>.fromAddress(
                 _glGetProcAddress('glIsPointInFillPathNV'))
-            .asFunction<GlIsPointInFillPathNV>());
+            .asFunction<GlIsPointInFillPathNV>()) as int Function(int, int, double, double)?;
   }
   glIsPointInStrokePathNV = tryCall(() => lib.lookupFunction<
       GlIsPointInStrokePathNVNative,
-      GlIsPointInStrokePathNV>('glIsPointInStrokePathNV'));
+      GlIsPointInStrokePathNV>('glIsPointInStrokePathNV')) as int Function(int, double, double)?;
   if (glIsPointInStrokePathNV == null) {
     glIsPointInStrokePathNV = tryCall(() =>
         Pointer<NativeFunction<GlIsPointInStrokePathNVNative>>.fromAddress(
                 _glGetProcAddress('glIsPointInStrokePathNV'))
-            .asFunction<GlIsPointInStrokePathNV>());
+            .asFunction<GlIsPointInStrokePathNV>()) as int Function(int, double, double)?;
   }
   glGetPathLengthNV = tryCall(() =>
       lib.lookupFunction<GlGetPathLengthNVNative, GlGetPathLengthNV>(
-          'glGetPathLengthNV'));
+          'glGetPathLengthNV')) as double Function(int, int, int)?;
   if (glGetPathLengthNV == null) {
     glGetPathLengthNV = tryCall(() =>
         Pointer<NativeFunction<GlGetPathLengthNVNative>>.fromAddress(
                 _glGetProcAddress('glGetPathLengthNV'))
-            .asFunction<GlGetPathLengthNV>());
+            .asFunction<GlGetPathLengthNV>()) as double Function(int, int, int)?;
   }
   glPointAlongPathNV = tryCall(() =>
       lib.lookupFunction<GlPointAlongPathNVNative, GlPointAlongPathNV>(
-          'glPointAlongPathNV'));
+          'glPointAlongPathNV')) as int Function(int, int, int, double, Pointer<Float>, Pointer<Float>, Pointer<Float>, Pointer<Float>)?;
   if (glPointAlongPathNV == null) {
     glPointAlongPathNV = tryCall(() =>
         Pointer<NativeFunction<GlPointAlongPathNVNative>>.fromAddress(
                 _glGetProcAddress('glPointAlongPathNV'))
-            .asFunction<GlPointAlongPathNV>());
+            .asFunction<GlPointAlongPathNV>()) as int Function(int, int, int, double, Pointer<Float>, Pointer<Float>, Pointer<Float>, Pointer<Float>)?;
   }
   glMatrixLoad3x2fNV = tryCall(() =>
       lib.lookupFunction<GlMatrixLoad3x2fNVNative, GlMatrixLoad3x2fNV>(
-          'glMatrixLoad3x2fNV'));
+          'glMatrixLoad3x2fNV')) as void Function(int, Pointer<Float>)?;
   if (glMatrixLoad3x2fNV == null) {
     glMatrixLoad3x2fNV = tryCall(() =>
         Pointer<NativeFunction<GlMatrixLoad3x2fNVNative>>.fromAddress(
                 _glGetProcAddress('glMatrixLoad3x2fNV'))
-            .asFunction<GlMatrixLoad3x2fNV>());
+            .asFunction<GlMatrixLoad3x2fNV>()) as void Function(int, Pointer<Float>)?;
   }
   glMatrixLoad3x3fNV = tryCall(() =>
       lib.lookupFunction<GlMatrixLoad3x3fNVNative, GlMatrixLoad3x3fNV>(
-          'glMatrixLoad3x3fNV'));
+          'glMatrixLoad3x3fNV')) as void Function(int, Pointer<Float>)?;
   if (glMatrixLoad3x3fNV == null) {
     glMatrixLoad3x3fNV = tryCall(() =>
         Pointer<NativeFunction<GlMatrixLoad3x3fNVNative>>.fromAddress(
                 _glGetProcAddress('glMatrixLoad3x3fNV'))
-            .asFunction<GlMatrixLoad3x3fNV>());
+            .asFunction<GlMatrixLoad3x3fNV>()) as void Function(int, Pointer<Float>)?;
   }
   glMatrixLoadTranspose3x3fNV = tryCall(() => lib.lookupFunction<
       GlMatrixLoadTranspose3x3fNVNative,
-      GlMatrixLoadTranspose3x3fNV>('glMatrixLoadTranspose3x3fNV'));
+      GlMatrixLoadTranspose3x3fNV>('glMatrixLoadTranspose3x3fNV')) as void Function(int, Pointer<Float>)?;
   if (glMatrixLoadTranspose3x3fNV == null) {
     glMatrixLoadTranspose3x3fNV = tryCall(() =>
         Pointer<NativeFunction<GlMatrixLoadTranspose3x3fNVNative>>.fromAddress(
                 _glGetProcAddress('glMatrixLoadTranspose3x3fNV'))
-            .asFunction<GlMatrixLoadTranspose3x3fNV>());
+            .asFunction<GlMatrixLoadTranspose3x3fNV>()) as void Function(int, Pointer<Float>)?;
   }
   glMatrixMult3x2fNV = tryCall(() =>
       lib.lookupFunction<GlMatrixMult3x2fNVNative, GlMatrixMult3x2fNV>(
-          'glMatrixMult3x2fNV'));
+          'glMatrixMult3x2fNV')) as void Function(int, Pointer<Float>)?;
   if (glMatrixMult3x2fNV == null) {
     glMatrixMult3x2fNV = tryCall(() =>
         Pointer<NativeFunction<GlMatrixMult3x2fNVNative>>.fromAddress(
                 _glGetProcAddress('glMatrixMult3x2fNV'))
-            .asFunction<GlMatrixMult3x2fNV>());
+            .asFunction<GlMatrixMult3x2fNV>()) as void Function(int, Pointer<Float>)?;
   }
   glMatrixMult3x3fNV = tryCall(() =>
       lib.lookupFunction<GlMatrixMult3x3fNVNative, GlMatrixMult3x3fNV>(
-          'glMatrixMult3x3fNV'));
+          'glMatrixMult3x3fNV')) as void Function(int, Pointer<Float>)?;
   if (glMatrixMult3x3fNV == null) {
     glMatrixMult3x3fNV = tryCall(() =>
         Pointer<NativeFunction<GlMatrixMult3x3fNVNative>>.fromAddress(
                 _glGetProcAddress('glMatrixMult3x3fNV'))
-            .asFunction<GlMatrixMult3x3fNV>());
+            .asFunction<GlMatrixMult3x3fNV>()) as void Function(int, Pointer<Float>)?;
   }
   glMatrixMultTranspose3x3fNV = tryCall(() => lib.lookupFunction<
       GlMatrixMultTranspose3x3fNVNative,
-      GlMatrixMultTranspose3x3fNV>('glMatrixMultTranspose3x3fNV'));
+      GlMatrixMultTranspose3x3fNV>('glMatrixMultTranspose3x3fNV')) as void Function(int, Pointer<Float>)?;
   if (glMatrixMultTranspose3x3fNV == null) {
     glMatrixMultTranspose3x3fNV = tryCall(() =>
         Pointer<NativeFunction<GlMatrixMultTranspose3x3fNVNative>>.fromAddress(
                 _glGetProcAddress('glMatrixMultTranspose3x3fNV'))
-            .asFunction<GlMatrixMultTranspose3x3fNV>());
+            .asFunction<GlMatrixMultTranspose3x3fNV>()) as void Function(int, Pointer<Float>)?;
   }
   glStencilThenCoverFillPathNV = tryCall(() => lib.lookupFunction<
       GlStencilThenCoverFillPathNVNative,
-      GlStencilThenCoverFillPathNV>('glStencilThenCoverFillPathNV'));
+      GlStencilThenCoverFillPathNV>('glStencilThenCoverFillPathNV')) as void Function(int, int, int, int)?;
   if (glStencilThenCoverFillPathNV == null) {
     glStencilThenCoverFillPathNV = tryCall(() =>
         Pointer<NativeFunction<GlStencilThenCoverFillPathNVNative>>.fromAddress(
                 _glGetProcAddress('glStencilThenCoverFillPathNV'))
-            .asFunction<GlStencilThenCoverFillPathNV>());
+            .asFunction<GlStencilThenCoverFillPathNV>()) as void Function(int, int, int, int)?;
   }
   glStencilThenCoverStrokePathNV = tryCall(() => lib.lookupFunction<
       GlStencilThenCoverStrokePathNVNative,
-      GlStencilThenCoverStrokePathNV>('glStencilThenCoverStrokePathNV'));
+      GlStencilThenCoverStrokePathNV>('glStencilThenCoverStrokePathNV')) as void Function(int, int, int, int)?;
   if (glStencilThenCoverStrokePathNV == null) {
     glStencilThenCoverStrokePathNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlStencilThenCoverStrokePathNVNative>>.fromAddress(
             _glGetProcAddress('glStencilThenCoverStrokePathNV'))
-        .asFunction<GlStencilThenCoverStrokePathNV>());
+        .asFunction<GlStencilThenCoverStrokePathNV>()) as void Function(int, int, int, int)?;
   }
   glStencilThenCoverFillPathInstancedNV = tryCall(() => lib.lookupFunction<
           GlStencilThenCoverFillPathInstancedNVNative,
           GlStencilThenCoverFillPathInstancedNV>(
-      'glStencilThenCoverFillPathInstancedNV'));
+      'glStencilThenCoverFillPathInstancedNV')) as void Function(int, int, Pointer<NativeType>, int, int, int, int, int, Pointer<Float>)?;
   if (glStencilThenCoverFillPathInstancedNV == null) {
     glStencilThenCoverFillPathInstancedNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlStencilThenCoverFillPathInstancedNVNative>>.fromAddress(
             _glGetProcAddress('glStencilThenCoverFillPathInstancedNV'))
-        .asFunction<GlStencilThenCoverFillPathInstancedNV>());
+        .asFunction<GlStencilThenCoverFillPathInstancedNV>()) as void Function(int, int, Pointer<NativeType>, int, int, int, int, int, Pointer<Float>)?;
   }
   glStencilThenCoverStrokePathInstancedNV = tryCall(() => lib.lookupFunction<
           GlStencilThenCoverStrokePathInstancedNVNative,
           GlStencilThenCoverStrokePathInstancedNV>(
-      'glStencilThenCoverStrokePathInstancedNV'));
+      'glStencilThenCoverStrokePathInstancedNV')) as void Function(int, int, Pointer<NativeType>, int, int, int, int, int, Pointer<Float>)?;
   if (glStencilThenCoverStrokePathInstancedNV == null) {
     glStencilThenCoverStrokePathInstancedNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlStencilThenCoverStrokePathInstancedNVNative>>.fromAddress(
             _glGetProcAddress('glStencilThenCoverStrokePathInstancedNV'))
-        .asFunction<GlStencilThenCoverStrokePathInstancedNV>());
+        .asFunction<GlStencilThenCoverStrokePathInstancedNV>()) as void Function(int, int, Pointer<NativeType>, int, int, int, int, int, Pointer<Float>)?;
   }
   glPathGlyphIndexRangeNV = tryCall(() => lib.lookupFunction<
       GlPathGlyphIndexRangeNVNative,
-      GlPathGlyphIndexRangeNV>('glPathGlyphIndexRangeNV'));
+      GlPathGlyphIndexRangeNV>('glPathGlyphIndexRangeNV')) as int Function(int, Pointer<NativeType>, int, int, double, Pointer<Uint32>)?;
   if (glPathGlyphIndexRangeNV == null) {
     glPathGlyphIndexRangeNV = tryCall(() =>
         Pointer<NativeFunction<GlPathGlyphIndexRangeNVNative>>.fromAddress(
                 _glGetProcAddress('glPathGlyphIndexRangeNV'))
-            .asFunction<GlPathGlyphIndexRangeNV>());
+            .asFunction<GlPathGlyphIndexRangeNV>()) as int Function(int, Pointer<NativeType>, int, int, double, Pointer<Uint32>)?;
   }
   glPathGlyphIndexArrayNV = tryCall(() => lib.lookupFunction<
       GlPathGlyphIndexArrayNVNative,
-      GlPathGlyphIndexArrayNV>('glPathGlyphIndexArrayNV'));
+      GlPathGlyphIndexArrayNV>('glPathGlyphIndexArrayNV')) as int Function(int, int, Pointer<NativeType>, int, int, int, int, double)?;
   if (glPathGlyphIndexArrayNV == null) {
     glPathGlyphIndexArrayNV = tryCall(() =>
         Pointer<NativeFunction<GlPathGlyphIndexArrayNVNative>>.fromAddress(
                 _glGetProcAddress('glPathGlyphIndexArrayNV'))
-            .asFunction<GlPathGlyphIndexArrayNV>());
+            .asFunction<GlPathGlyphIndexArrayNV>()) as int Function(int, int, Pointer<NativeType>, int, int, int, int, double)?;
   }
   glPathMemoryGlyphIndexArrayNV = tryCall(() => lib.lookupFunction<
       GlPathMemoryGlyphIndexArrayNVNative,
-      GlPathMemoryGlyphIndexArrayNV>('glPathMemoryGlyphIndexArrayNV'));
+      GlPathMemoryGlyphIndexArrayNV>('glPathMemoryGlyphIndexArrayNV')) as int Function(int, int, int, Pointer<NativeType>, int, int, int, int, double)?;
   if (glPathMemoryGlyphIndexArrayNV == null) {
     glPathMemoryGlyphIndexArrayNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlPathMemoryGlyphIndexArrayNVNative>>.fromAddress(
             _glGetProcAddress('glPathMemoryGlyphIndexArrayNV'))
-        .asFunction<GlPathMemoryGlyphIndexArrayNV>());
+        .asFunction<GlPathMemoryGlyphIndexArrayNV>()) as int Function(int, int, int, Pointer<NativeType>, int, int, int, int, double)?;
   }
   glProgramPathFragmentInputGenNV = tryCall(() => lib.lookupFunction<
       GlProgramPathFragmentInputGenNVNative,
-      GlProgramPathFragmentInputGenNV>('glProgramPathFragmentInputGenNV'));
+      GlProgramPathFragmentInputGenNV>('glProgramPathFragmentInputGenNV')) as void Function(int, int, int, int, Pointer<Float>)?;
   if (glProgramPathFragmentInputGenNV == null) {
     glProgramPathFragmentInputGenNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlProgramPathFragmentInputGenNVNative>>.fromAddress(
             _glGetProcAddress('glProgramPathFragmentInputGenNV'))
-        .asFunction<GlProgramPathFragmentInputGenNV>());
+        .asFunction<GlProgramPathFragmentInputGenNV>()) as void Function(int, int, int, int, Pointer<Float>)?;
   }
   glGetProgramResourcefvNV = tryCall(() => lib.lookupFunction<
       GlGetProgramResourcefvNVNative,
-      GlGetProgramResourcefvNV>('glGetProgramResourcefvNV'));
+      GlGetProgramResourcefvNV>('glGetProgramResourcefvNV')) as void Function(int, int, int, int, Pointer<Uint32>, int, Pointer<Int32>, Pointer<Float>)?;
   if (glGetProgramResourcefvNV == null) {
     glGetProgramResourcefvNV = tryCall(() =>
         Pointer<NativeFunction<GlGetProgramResourcefvNVNative>>.fromAddress(
                 _glGetProcAddress('glGetProgramResourcefvNV'))
-            .asFunction<GlGetProgramResourcefvNV>());
+            .asFunction<GlGetProgramResourcefvNV>()) as void Function(int, int, int, int, Pointer<Uint32>, int, Pointer<Int32>, Pointer<Float>)?;
   }
   glFramebufferSampleLocationsfvNV = tryCall(() => lib.lookupFunction<
       GlFramebufferSampleLocationsfvNVNative,
-      GlFramebufferSampleLocationsfvNV>('glFramebufferSampleLocationsfvNV'));
+      GlFramebufferSampleLocationsfvNV>('glFramebufferSampleLocationsfvNV')) as void Function(int, int, int, Pointer<Float>)?;
   if (glFramebufferSampleLocationsfvNV == null) {
     glFramebufferSampleLocationsfvNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlFramebufferSampleLocationsfvNVNative>>.fromAddress(
             _glGetProcAddress('glFramebufferSampleLocationsfvNV'))
-        .asFunction<GlFramebufferSampleLocationsfvNV>());
+        .asFunction<GlFramebufferSampleLocationsfvNV>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glNamedFramebufferSampleLocationsfvNV = tryCall(() => lib.lookupFunction<
           GlNamedFramebufferSampleLocationsfvNVNative,
           GlNamedFramebufferSampleLocationsfvNV>(
-      'glNamedFramebufferSampleLocationsfvNV'));
+      'glNamedFramebufferSampleLocationsfvNV')) as void Function(int, int, int, Pointer<Float>)?;
   if (glNamedFramebufferSampleLocationsfvNV == null) {
     glNamedFramebufferSampleLocationsfvNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlNamedFramebufferSampleLocationsfvNVNative>>.fromAddress(
             _glGetProcAddress('glNamedFramebufferSampleLocationsfvNV'))
-        .asFunction<GlNamedFramebufferSampleLocationsfvNV>());
+        .asFunction<GlNamedFramebufferSampleLocationsfvNV>()) as void Function(int, int, int, Pointer<Float>)?;
   }
   glResolveDepthValuesNV = tryCall(() =>
       lib.lookupFunction<GlResolveDepthValuesNVNative, GlResolveDepthValuesNV>(
-          'glResolveDepthValuesNV'));
+          'glResolveDepthValuesNV')) as void Function()?;
   if (glResolveDepthValuesNV == null) {
     glResolveDepthValuesNV = tryCall(() =>
         Pointer<NativeFunction<GlResolveDepthValuesNVNative>>.fromAddress(
                 _glGetProcAddress('glResolveDepthValuesNV'))
-            .asFunction<GlResolveDepthValuesNV>());
+            .asFunction<GlResolveDepthValuesNV>()) as void Function()?;
   }
   glScissorExclusiveNV = tryCall(() =>
       lib.lookupFunction<GlScissorExclusiveNVNative, GlScissorExclusiveNV>(
-          'glScissorExclusiveNV'));
+          'glScissorExclusiveNV')) as void Function(int, int, int, int)?;
   if (glScissorExclusiveNV == null) {
     glScissorExclusiveNV = tryCall(() =>
         Pointer<NativeFunction<GlScissorExclusiveNVNative>>.fromAddress(
                 _glGetProcAddress('glScissorExclusiveNV'))
-            .asFunction<GlScissorExclusiveNV>());
+            .asFunction<GlScissorExclusiveNV>()) as void Function(int, int, int, int)?;
   }
   glScissorExclusiveArrayvNV = tryCall(() => lib.lookupFunction<
       GlScissorExclusiveArrayvNVNative,
-      GlScissorExclusiveArrayvNV>('glScissorExclusiveArrayvNV'));
+      GlScissorExclusiveArrayvNV>('glScissorExclusiveArrayvNV')) as void Function(int, int, Pointer<Int32>)?;
   if (glScissorExclusiveArrayvNV == null) {
     glScissorExclusiveArrayvNV = tryCall(() =>
         Pointer<NativeFunction<GlScissorExclusiveArrayvNVNative>>.fromAddress(
                 _glGetProcAddress('glScissorExclusiveArrayvNV'))
-            .asFunction<GlScissorExclusiveArrayvNV>());
+            .asFunction<GlScissorExclusiveArrayvNV>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glMakeBufferResidentNV = tryCall(() =>
       lib.lookupFunction<GlMakeBufferResidentNVNative, GlMakeBufferResidentNV>(
-          'glMakeBufferResidentNV'));
+          'glMakeBufferResidentNV')) as void Function(int, int)?;
   if (glMakeBufferResidentNV == null) {
     glMakeBufferResidentNV = tryCall(() =>
         Pointer<NativeFunction<GlMakeBufferResidentNVNative>>.fromAddress(
                 _glGetProcAddress('glMakeBufferResidentNV'))
-            .asFunction<GlMakeBufferResidentNV>());
+            .asFunction<GlMakeBufferResidentNV>()) as void Function(int, int)?;
   }
   glMakeBufferNonResidentNV = tryCall(() => lib.lookupFunction<
       GlMakeBufferNonResidentNVNative,
-      GlMakeBufferNonResidentNV>('glMakeBufferNonResidentNV'));
+      GlMakeBufferNonResidentNV>('glMakeBufferNonResidentNV')) as void Function(int)?;
   if (glMakeBufferNonResidentNV == null) {
     glMakeBufferNonResidentNV = tryCall(() =>
         Pointer<NativeFunction<GlMakeBufferNonResidentNVNative>>.fromAddress(
                 _glGetProcAddress('glMakeBufferNonResidentNV'))
-            .asFunction<GlMakeBufferNonResidentNV>());
+            .asFunction<GlMakeBufferNonResidentNV>()) as void Function(int)?;
   }
   glIsBufferResidentNV = tryCall(() =>
       lib.lookupFunction<GlIsBufferResidentNVNative, GlIsBufferResidentNV>(
-          'glIsBufferResidentNV'));
+          'glIsBufferResidentNV')) as int Function(int)?;
   if (glIsBufferResidentNV == null) {
     glIsBufferResidentNV = tryCall(() =>
         Pointer<NativeFunction<GlIsBufferResidentNVNative>>.fromAddress(
                 _glGetProcAddress('glIsBufferResidentNV'))
-            .asFunction<GlIsBufferResidentNV>());
+            .asFunction<GlIsBufferResidentNV>()) as int Function(int)?;
   }
   glMakeNamedBufferResidentNV = tryCall(() => lib.lookupFunction<
       GlMakeNamedBufferResidentNVNative,
-      GlMakeNamedBufferResidentNV>('glMakeNamedBufferResidentNV'));
+      GlMakeNamedBufferResidentNV>('glMakeNamedBufferResidentNV')) as void Function(int, int)?;
   if (glMakeNamedBufferResidentNV == null) {
     glMakeNamedBufferResidentNV = tryCall(() =>
         Pointer<NativeFunction<GlMakeNamedBufferResidentNVNative>>.fromAddress(
                 _glGetProcAddress('glMakeNamedBufferResidentNV'))
-            .asFunction<GlMakeNamedBufferResidentNV>());
+            .asFunction<GlMakeNamedBufferResidentNV>()) as void Function(int, int)?;
   }
   glMakeNamedBufferNonResidentNV = tryCall(() => lib.lookupFunction<
       GlMakeNamedBufferNonResidentNVNative,
-      GlMakeNamedBufferNonResidentNV>('glMakeNamedBufferNonResidentNV'));
+      GlMakeNamedBufferNonResidentNV>('glMakeNamedBufferNonResidentNV')) as void Function(int)?;
   if (glMakeNamedBufferNonResidentNV == null) {
     glMakeNamedBufferNonResidentNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlMakeNamedBufferNonResidentNVNative>>.fromAddress(
             _glGetProcAddress('glMakeNamedBufferNonResidentNV'))
-        .asFunction<GlMakeNamedBufferNonResidentNV>());
+        .asFunction<GlMakeNamedBufferNonResidentNV>()) as void Function(int)?;
   }
   glIsNamedBufferResidentNV = tryCall(() => lib.lookupFunction<
       GlIsNamedBufferResidentNVNative,
-      GlIsNamedBufferResidentNV>('glIsNamedBufferResidentNV'));
+      GlIsNamedBufferResidentNV>('glIsNamedBufferResidentNV')) as int Function(int)?;
   if (glIsNamedBufferResidentNV == null) {
     glIsNamedBufferResidentNV = tryCall(() =>
         Pointer<NativeFunction<GlIsNamedBufferResidentNVNative>>.fromAddress(
                 _glGetProcAddress('glIsNamedBufferResidentNV'))
-            .asFunction<GlIsNamedBufferResidentNV>());
+            .asFunction<GlIsNamedBufferResidentNV>()) as int Function(int)?;
   }
   glGetBufferParameterui64vNV = tryCall(() => lib.lookupFunction<
       GlGetBufferParameterui64vNVNative,
-      GlGetBufferParameterui64vNV>('glGetBufferParameterui64vNV'));
+      GlGetBufferParameterui64vNV>('glGetBufferParameterui64vNV')) as void Function(int, int, Pointer<Uint64>)?;
   if (glGetBufferParameterui64vNV == null) {
     glGetBufferParameterui64vNV = tryCall(() =>
         Pointer<NativeFunction<GlGetBufferParameterui64vNVNative>>.fromAddress(
                 _glGetProcAddress('glGetBufferParameterui64vNV'))
-            .asFunction<GlGetBufferParameterui64vNV>());
+            .asFunction<GlGetBufferParameterui64vNV>()) as void Function(int, int, Pointer<Uint64>)?;
   }
   glGetNamedBufferParameterui64vNV = tryCall(() => lib.lookupFunction<
       GlGetNamedBufferParameterui64vNVNative,
-      GlGetNamedBufferParameterui64vNV>('glGetNamedBufferParameterui64vNV'));
+      GlGetNamedBufferParameterui64vNV>('glGetNamedBufferParameterui64vNV')) as void Function(int, int, Pointer<Uint64>)?;
   if (glGetNamedBufferParameterui64vNV == null) {
     glGetNamedBufferParameterui64vNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetNamedBufferParameterui64vNVNative>>.fromAddress(
             _glGetProcAddress('glGetNamedBufferParameterui64vNV'))
-        .asFunction<GlGetNamedBufferParameterui64vNV>());
+        .asFunction<GlGetNamedBufferParameterui64vNV>()) as void Function(int, int, Pointer<Uint64>)?;
   }
   glGetIntegerui64vNV = tryCall(() =>
       lib.lookupFunction<GlGetIntegerui64vNVNative, GlGetIntegerui64vNV>(
-          'glGetIntegerui64vNV'));
+          'glGetIntegerui64vNV')) as void Function(int, Pointer<Uint64>)?;
   if (glGetIntegerui64vNV == null) {
     glGetIntegerui64vNV = tryCall(() =>
         Pointer<NativeFunction<GlGetIntegerui64vNVNative>>.fromAddress(
                 _glGetProcAddress('glGetIntegerui64vNV'))
-            .asFunction<GlGetIntegerui64vNV>());
+            .asFunction<GlGetIntegerui64vNV>()) as void Function(int, Pointer<Uint64>)?;
   }
   glUniformui64NV = tryCall(() =>
       lib.lookupFunction<GlUniformui64NVNative, GlUniformui64NV>(
-          'glUniformui64NV'));
+          'glUniformui64NV')) as void Function(int, int)?;
   if (glUniformui64NV == null) {
     glUniformui64NV = tryCall(() =>
         Pointer<NativeFunction<GlUniformui64NVNative>>.fromAddress(
                 _glGetProcAddress('glUniformui64NV'))
-            .asFunction<GlUniformui64NV>());
+            .asFunction<GlUniformui64NV>()) as void Function(int, int)?;
   }
   glUniformui64vNV = tryCall(() =>
       lib.lookupFunction<GlUniformui64vNVNative, GlUniformui64vNV>(
-          'glUniformui64vNV'));
+          'glUniformui64vNV')) as void Function(int, int, Pointer<Uint64>)?;
   if (glUniformui64vNV == null) {
     glUniformui64vNV = tryCall(() =>
         Pointer<NativeFunction<GlUniformui64vNVNative>>.fromAddress(
                 _glGetProcAddress('glUniformui64vNV'))
-            .asFunction<GlUniformui64vNV>());
+            .asFunction<GlUniformui64vNV>()) as void Function(int, int, Pointer<Uint64>)?;
   }
   glGetUniformui64vNV = tryCall(() =>
       lib.lookupFunction<GlGetUniformui64vNVNative, GlGetUniformui64vNV>(
-          'glGetUniformui64vNV'));
+          'glGetUniformui64vNV')) as void Function(int, int, Pointer<Uint64>)?;
   if (glGetUniformui64vNV == null) {
     glGetUniformui64vNV = tryCall(() =>
         Pointer<NativeFunction<GlGetUniformui64vNVNative>>.fromAddress(
                 _glGetProcAddress('glGetUniformui64vNV'))
-            .asFunction<GlGetUniformui64vNV>());
+            .asFunction<GlGetUniformui64vNV>()) as void Function(int, int, Pointer<Uint64>)?;
   }
   glProgramUniformui64NV = tryCall(() =>
       lib.lookupFunction<GlProgramUniformui64NVNative, GlProgramUniformui64NV>(
-          'glProgramUniformui64NV'));
+          'glProgramUniformui64NV')) as void Function(int, int, int)?;
   if (glProgramUniformui64NV == null) {
     glProgramUniformui64NV = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformui64NVNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformui64NV'))
-            .asFunction<GlProgramUniformui64NV>());
+            .asFunction<GlProgramUniformui64NV>()) as void Function(int, int, int)?;
   }
   glProgramUniformui64vNV = tryCall(() => lib.lookupFunction<
       GlProgramUniformui64vNVNative,
-      GlProgramUniformui64vNV>('glProgramUniformui64vNV'));
+      GlProgramUniformui64vNV>('glProgramUniformui64vNV')) as void Function(int, int, int, Pointer<Uint64>)?;
   if (glProgramUniformui64vNV == null) {
     glProgramUniformui64vNV = tryCall(() =>
         Pointer<NativeFunction<GlProgramUniformui64vNVNative>>.fromAddress(
                 _glGetProcAddress('glProgramUniformui64vNV'))
-            .asFunction<GlProgramUniformui64vNV>());
+            .asFunction<GlProgramUniformui64vNV>()) as void Function(int, int, int, Pointer<Uint64>)?;
   }
   glBindShadingRateImageNV = tryCall(() => lib.lookupFunction<
       GlBindShadingRateImageNVNative,
-      GlBindShadingRateImageNV>('glBindShadingRateImageNV'));
+      GlBindShadingRateImageNV>('glBindShadingRateImageNV')) as void Function(int)?;
   if (glBindShadingRateImageNV == null) {
     glBindShadingRateImageNV = tryCall(() =>
         Pointer<NativeFunction<GlBindShadingRateImageNVNative>>.fromAddress(
                 _glGetProcAddress('glBindShadingRateImageNV'))
-            .asFunction<GlBindShadingRateImageNV>());
+            .asFunction<GlBindShadingRateImageNV>()) as void Function(int)?;
   }
   glGetShadingRateImagePaletteNV = tryCall(() => lib.lookupFunction<
       GlGetShadingRateImagePaletteNVNative,
-      GlGetShadingRateImagePaletteNV>('glGetShadingRateImagePaletteNV'));
+      GlGetShadingRateImagePaletteNV>('glGetShadingRateImagePaletteNV')) as void Function(int, int, Pointer<Uint32>)?;
   if (glGetShadingRateImagePaletteNV == null) {
     glGetShadingRateImagePaletteNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetShadingRateImagePaletteNVNative>>.fromAddress(
             _glGetProcAddress('glGetShadingRateImagePaletteNV'))
-        .asFunction<GlGetShadingRateImagePaletteNV>());
+        .asFunction<GlGetShadingRateImagePaletteNV>()) as void Function(int, int, Pointer<Uint32>)?;
   }
   glGetShadingRateSampleLocationivNV = tryCall(() => lib.lookupFunction<
           GlGetShadingRateSampleLocationivNVNative,
           GlGetShadingRateSampleLocationivNV>(
-      'glGetShadingRateSampleLocationivNV'));
+      'glGetShadingRateSampleLocationivNV')) as void Function(int, int, int, Pointer<Int32>)?;
   if (glGetShadingRateSampleLocationivNV == null) {
     glGetShadingRateSampleLocationivNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlGetShadingRateSampleLocationivNVNative>>.fromAddress(
             _glGetProcAddress('glGetShadingRateSampleLocationivNV'))
-        .asFunction<GlGetShadingRateSampleLocationivNV>());
+        .asFunction<GlGetShadingRateSampleLocationivNV>()) as void Function(int, int, int, Pointer<Int32>)?;
   }
   glShadingRateImageBarrierNV = tryCall(() => lib.lookupFunction<
       GlShadingRateImageBarrierNVNative,
-      GlShadingRateImageBarrierNV>('glShadingRateImageBarrierNV'));
+      GlShadingRateImageBarrierNV>('glShadingRateImageBarrierNV')) as void Function(int)?;
   if (glShadingRateImageBarrierNV == null) {
     glShadingRateImageBarrierNV = tryCall(() =>
         Pointer<NativeFunction<GlShadingRateImageBarrierNVNative>>.fromAddress(
                 _glGetProcAddress('glShadingRateImageBarrierNV'))
-            .asFunction<GlShadingRateImageBarrierNV>());
+            .asFunction<GlShadingRateImageBarrierNV>()) as void Function(int)?;
   }
   glShadingRateImagePaletteNV = tryCall(() => lib.lookupFunction<
       GlShadingRateImagePaletteNVNative,
-      GlShadingRateImagePaletteNV>('glShadingRateImagePaletteNV'));
+      GlShadingRateImagePaletteNV>('glShadingRateImagePaletteNV')) as void Function(int, int, int, Pointer<Uint32>)?;
   if (glShadingRateImagePaletteNV == null) {
     glShadingRateImagePaletteNV = tryCall(() =>
         Pointer<NativeFunction<GlShadingRateImagePaletteNVNative>>.fromAddress(
                 _glGetProcAddress('glShadingRateImagePaletteNV'))
-            .asFunction<GlShadingRateImagePaletteNV>());
+            .asFunction<GlShadingRateImagePaletteNV>()) as void Function(int, int, int, Pointer<Uint32>)?;
   }
   glShadingRateSampleOrderNV = tryCall(() => lib.lookupFunction<
       GlShadingRateSampleOrderNVNative,
-      GlShadingRateSampleOrderNV>('glShadingRateSampleOrderNV'));
+      GlShadingRateSampleOrderNV>('glShadingRateSampleOrderNV')) as void Function(int)?;
   if (glShadingRateSampleOrderNV == null) {
     glShadingRateSampleOrderNV = tryCall(() =>
         Pointer<NativeFunction<GlShadingRateSampleOrderNVNative>>.fromAddress(
                 _glGetProcAddress('glShadingRateSampleOrderNV'))
-            .asFunction<GlShadingRateSampleOrderNV>());
+            .asFunction<GlShadingRateSampleOrderNV>()) as void Function(int)?;
   }
   glShadingRateSampleOrderCustomNV = tryCall(() => lib.lookupFunction<
       GlShadingRateSampleOrderCustomNVNative,
-      GlShadingRateSampleOrderCustomNV>('glShadingRateSampleOrderCustomNV'));
+      GlShadingRateSampleOrderCustomNV>('glShadingRateSampleOrderCustomNV')) as void Function(int, int, Pointer<Int32>)?;
   if (glShadingRateSampleOrderCustomNV == null) {
     glShadingRateSampleOrderCustomNV = tryCall(() => Pointer<
                 NativeFunction<
                     GlShadingRateSampleOrderCustomNVNative>>.fromAddress(
             _glGetProcAddress('glShadingRateSampleOrderCustomNV'))
-        .asFunction<GlShadingRateSampleOrderCustomNV>());
+        .asFunction<GlShadingRateSampleOrderCustomNV>()) as void Function(int, int, Pointer<Int32>)?;
   }
   glTextureBarrierNV = tryCall(() =>
       lib.lookupFunction<GlTextureBarrierNVNative, GlTextureBarrierNV>(
-          'glTextureBarrierNV'));
+          'glTextureBarrierNV')) as void Function()?;
   if (glTextureBarrierNV == null) {
     glTextureBarrierNV = tryCall(() =>
         Pointer<NativeFunction<GlTextureBarrierNVNative>>.fromAddress(
                 _glGetProcAddress('glTextureBarrierNV'))
-            .asFunction<GlTextureBarrierNV>());
+            .asFunction<GlTextureBarrierNV>()) as void Function()?;
   }
   glVertexAttribL1i64NV = tryCall(() =>
       lib.lookupFunction<GlVertexAttribL1i64NVNative, GlVertexAttribL1i64NV>(
-          'glVertexAttribL1i64NV'));
+          'glVertexAttribL1i64NV')) as void Function(int, int)?;
   if (glVertexAttribL1i64NV == null) {
     glVertexAttribL1i64NV = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL1i64NVNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL1i64NV'))
-            .asFunction<GlVertexAttribL1i64NV>());
+            .asFunction<GlVertexAttribL1i64NV>()) as void Function(int, int)?;
   }
   glVertexAttribL2i64NV = tryCall(() =>
       lib.lookupFunction<GlVertexAttribL2i64NVNative, GlVertexAttribL2i64NV>(
-          'glVertexAttribL2i64NV'));
+          'glVertexAttribL2i64NV')) as void Function(int, int, int)?;
   if (glVertexAttribL2i64NV == null) {
     glVertexAttribL2i64NV = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL2i64NVNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL2i64NV'))
-            .asFunction<GlVertexAttribL2i64NV>());
+            .asFunction<GlVertexAttribL2i64NV>()) as void Function(int, int, int)?;
   }
   glVertexAttribL3i64NV = tryCall(() =>
       lib.lookupFunction<GlVertexAttribL3i64NVNative, GlVertexAttribL3i64NV>(
-          'glVertexAttribL3i64NV'));
+          'glVertexAttribL3i64NV')) as void Function(int, int, int, int)?;
   if (glVertexAttribL3i64NV == null) {
     glVertexAttribL3i64NV = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL3i64NVNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL3i64NV'))
-            .asFunction<GlVertexAttribL3i64NV>());
+            .asFunction<GlVertexAttribL3i64NV>()) as void Function(int, int, int, int)?;
   }
   glVertexAttribL4i64NV = tryCall(() =>
       lib.lookupFunction<GlVertexAttribL4i64NVNative, GlVertexAttribL4i64NV>(
-          'glVertexAttribL4i64NV'));
+          'glVertexAttribL4i64NV')) as void Function(int, int, int, int, int)?;
   if (glVertexAttribL4i64NV == null) {
     glVertexAttribL4i64NV = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL4i64NVNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL4i64NV'))
-            .asFunction<GlVertexAttribL4i64NV>());
+            .asFunction<GlVertexAttribL4i64NV>()) as void Function(int, int, int, int, int)?;
   }
   glVertexAttribL1i64vNV = tryCall(() =>
       lib.lookupFunction<GlVertexAttribL1i64vNVNative, GlVertexAttribL1i64vNV>(
-          'glVertexAttribL1i64vNV'));
+          'glVertexAttribL1i64vNV')) as void Function(int, Pointer<Int64>)?;
   if (glVertexAttribL1i64vNV == null) {
     glVertexAttribL1i64vNV = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL1i64vNVNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL1i64vNV'))
-            .asFunction<GlVertexAttribL1i64vNV>());
+            .asFunction<GlVertexAttribL1i64vNV>()) as void Function(int, Pointer<Int64>)?;
   }
   glVertexAttribL2i64vNV = tryCall(() =>
       lib.lookupFunction<GlVertexAttribL2i64vNVNative, GlVertexAttribL2i64vNV>(
-          'glVertexAttribL2i64vNV'));
+          'glVertexAttribL2i64vNV')) as void Function(int, Pointer<Int64>)?;
   if (glVertexAttribL2i64vNV == null) {
     glVertexAttribL2i64vNV = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL2i64vNVNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL2i64vNV'))
-            .asFunction<GlVertexAttribL2i64vNV>());
+            .asFunction<GlVertexAttribL2i64vNV>()) as void Function(int, Pointer<Int64>)?;
   }
   glVertexAttribL3i64vNV = tryCall(() =>
       lib.lookupFunction<GlVertexAttribL3i64vNVNative, GlVertexAttribL3i64vNV>(
-          'glVertexAttribL3i64vNV'));
+          'glVertexAttribL3i64vNV')) as void Function(int, Pointer<Int64>)?;
   if (glVertexAttribL3i64vNV == null) {
     glVertexAttribL3i64vNV = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL3i64vNVNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL3i64vNV'))
-            .asFunction<GlVertexAttribL3i64vNV>());
+            .asFunction<GlVertexAttribL3i64vNV>()) as void Function(int, Pointer<Int64>)?;
   }
   glVertexAttribL4i64vNV = tryCall(() =>
       lib.lookupFunction<GlVertexAttribL4i64vNVNative, GlVertexAttribL4i64vNV>(
-          'glVertexAttribL4i64vNV'));
+          'glVertexAttribL4i64vNV')) as void Function(int, Pointer<Int64>)?;
   if (glVertexAttribL4i64vNV == null) {
     glVertexAttribL4i64vNV = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL4i64vNVNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL4i64vNV'))
-            .asFunction<GlVertexAttribL4i64vNV>());
+            .asFunction<GlVertexAttribL4i64vNV>()) as void Function(int, Pointer<Int64>)?;
   }
   glVertexAttribL1ui64NV = tryCall(() =>
       lib.lookupFunction<GlVertexAttribL1ui64NVNative, GlVertexAttribL1ui64NV>(
-          'glVertexAttribL1ui64NV'));
+          'glVertexAttribL1ui64NV')) as void Function(int, int)?;
   if (glVertexAttribL1ui64NV == null) {
     glVertexAttribL1ui64NV = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL1ui64NVNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL1ui64NV'))
-            .asFunction<GlVertexAttribL1ui64NV>());
+            .asFunction<GlVertexAttribL1ui64NV>()) as void Function(int, int)?;
   }
   glVertexAttribL2ui64NV = tryCall(() =>
       lib.lookupFunction<GlVertexAttribL2ui64NVNative, GlVertexAttribL2ui64NV>(
-          'glVertexAttribL2ui64NV'));
+          'glVertexAttribL2ui64NV')) as void Function(int, int, int)?;
   if (glVertexAttribL2ui64NV == null) {
     glVertexAttribL2ui64NV = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL2ui64NVNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL2ui64NV'))
-            .asFunction<GlVertexAttribL2ui64NV>());
+            .asFunction<GlVertexAttribL2ui64NV>()) as void Function(int, int, int)?;
   }
   glVertexAttribL3ui64NV = tryCall(() =>
       lib.lookupFunction<GlVertexAttribL3ui64NVNative, GlVertexAttribL3ui64NV>(
-          'glVertexAttribL3ui64NV'));
+          'glVertexAttribL3ui64NV')) as void Function(int, int, int, int)?;
   if (glVertexAttribL3ui64NV == null) {
     glVertexAttribL3ui64NV = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL3ui64NVNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL3ui64NV'))
-            .asFunction<GlVertexAttribL3ui64NV>());
+            .asFunction<GlVertexAttribL3ui64NV>()) as void Function(int, int, int, int)?;
   }
   glVertexAttribL4ui64NV = tryCall(() =>
       lib.lookupFunction<GlVertexAttribL4ui64NVNative, GlVertexAttribL4ui64NV>(
-          'glVertexAttribL4ui64NV'));
+          'glVertexAttribL4ui64NV')) as void Function(int, int, int, int, int)?;
   if (glVertexAttribL4ui64NV == null) {
     glVertexAttribL4ui64NV = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL4ui64NVNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL4ui64NV'))
-            .asFunction<GlVertexAttribL4ui64NV>());
+            .asFunction<GlVertexAttribL4ui64NV>()) as void Function(int, int, int, int, int)?;
   }
   glVertexAttribL1ui64vNV = tryCall(() => lib.lookupFunction<
       GlVertexAttribL1ui64vNVNative,
-      GlVertexAttribL1ui64vNV>('glVertexAttribL1ui64vNV'));
+      GlVertexAttribL1ui64vNV>('glVertexAttribL1ui64vNV')) as void Function(int, Pointer<Uint64>)?;
   if (glVertexAttribL1ui64vNV == null) {
     glVertexAttribL1ui64vNV = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL1ui64vNVNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL1ui64vNV'))
-            .asFunction<GlVertexAttribL1ui64vNV>());
+            .asFunction<GlVertexAttribL1ui64vNV>()) as void Function(int, Pointer<Uint64>)?;
   }
   glVertexAttribL2ui64vNV = tryCall(() => lib.lookupFunction<
       GlVertexAttribL2ui64vNVNative,
-      GlVertexAttribL2ui64vNV>('glVertexAttribL2ui64vNV'));
+      GlVertexAttribL2ui64vNV>('glVertexAttribL2ui64vNV')) as void Function(int, Pointer<Uint64>)?;
   if (glVertexAttribL2ui64vNV == null) {
     glVertexAttribL2ui64vNV = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL2ui64vNVNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL2ui64vNV'))
-            .asFunction<GlVertexAttribL2ui64vNV>());
+            .asFunction<GlVertexAttribL2ui64vNV>()) as void Function(int, Pointer<Uint64>)?;
   }
   glVertexAttribL3ui64vNV = tryCall(() => lib.lookupFunction<
       GlVertexAttribL3ui64vNVNative,
-      GlVertexAttribL3ui64vNV>('glVertexAttribL3ui64vNV'));
+      GlVertexAttribL3ui64vNV>('glVertexAttribL3ui64vNV')) as void Function(int, Pointer<Uint64>)?;
   if (glVertexAttribL3ui64vNV == null) {
     glVertexAttribL3ui64vNV = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL3ui64vNVNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL3ui64vNV'))
-            .asFunction<GlVertexAttribL3ui64vNV>());
+            .asFunction<GlVertexAttribL3ui64vNV>()) as void Function(int, Pointer<Uint64>)?;
   }
   glVertexAttribL4ui64vNV = tryCall(() => lib.lookupFunction<
       GlVertexAttribL4ui64vNVNative,
-      GlVertexAttribL4ui64vNV>('glVertexAttribL4ui64vNV'));
+      GlVertexAttribL4ui64vNV>('glVertexAttribL4ui64vNV')) as void Function(int, Pointer<Uint64>)?;
   if (glVertexAttribL4ui64vNV == null) {
     glVertexAttribL4ui64vNV = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribL4ui64vNVNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribL4ui64vNV'))
-            .asFunction<GlVertexAttribL4ui64vNV>());
+            .asFunction<GlVertexAttribL4ui64vNV>()) as void Function(int, Pointer<Uint64>)?;
   }
   glGetVertexAttribLi64vNV = tryCall(() => lib.lookupFunction<
       GlGetVertexAttribLi64vNVNative,
-      GlGetVertexAttribLi64vNV>('glGetVertexAttribLi64vNV'));
+      GlGetVertexAttribLi64vNV>('glGetVertexAttribLi64vNV')) as void Function(int, int, Pointer<Int64>)?;
   if (glGetVertexAttribLi64vNV == null) {
     glGetVertexAttribLi64vNV = tryCall(() =>
         Pointer<NativeFunction<GlGetVertexAttribLi64vNVNative>>.fromAddress(
                 _glGetProcAddress('glGetVertexAttribLi64vNV'))
-            .asFunction<GlGetVertexAttribLi64vNV>());
+            .asFunction<GlGetVertexAttribLi64vNV>()) as void Function(int, int, Pointer<Int64>)?;
   }
   glGetVertexAttribLui64vNV = tryCall(() => lib.lookupFunction<
       GlGetVertexAttribLui64vNVNative,
-      GlGetVertexAttribLui64vNV>('glGetVertexAttribLui64vNV'));
+      GlGetVertexAttribLui64vNV>('glGetVertexAttribLui64vNV')) as void Function(int, int, Pointer<Uint64>)?;
   if (glGetVertexAttribLui64vNV == null) {
     glGetVertexAttribLui64vNV = tryCall(() =>
         Pointer<NativeFunction<GlGetVertexAttribLui64vNVNative>>.fromAddress(
                 _glGetProcAddress('glGetVertexAttribLui64vNV'))
-            .asFunction<GlGetVertexAttribLui64vNV>());
+            .asFunction<GlGetVertexAttribLui64vNV>()) as void Function(int, int, Pointer<Uint64>)?;
   }
   glVertexAttribLFormatNV = tryCall(() => lib.lookupFunction<
       GlVertexAttribLFormatNVNative,
-      GlVertexAttribLFormatNV>('glVertexAttribLFormatNV'));
+      GlVertexAttribLFormatNV>('glVertexAttribLFormatNV')) as void Function(int, int, int, int)?;
   if (glVertexAttribLFormatNV == null) {
     glVertexAttribLFormatNV = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribLFormatNVNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribLFormatNV'))
-            .asFunction<GlVertexAttribLFormatNV>());
+            .asFunction<GlVertexAttribLFormatNV>()) as void Function(int, int, int, int)?;
   }
   glBufferAddressRangeNV = tryCall(() =>
       lib.lookupFunction<GlBufferAddressRangeNVNative, GlBufferAddressRangeNV>(
-          'glBufferAddressRangeNV'));
+          'glBufferAddressRangeNV')) as void Function(int, int, int, int)?;
   if (glBufferAddressRangeNV == null) {
     glBufferAddressRangeNV = tryCall(() =>
         Pointer<NativeFunction<GlBufferAddressRangeNVNative>>.fromAddress(
                 _glGetProcAddress('glBufferAddressRangeNV'))
-            .asFunction<GlBufferAddressRangeNV>());
+            .asFunction<GlBufferAddressRangeNV>()) as void Function(int, int, int, int)?;
   }
   glVertexFormatNV = tryCall(() =>
       lib.lookupFunction<GlVertexFormatNVNative, GlVertexFormatNV>(
-          'glVertexFormatNV'));
+          'glVertexFormatNV')) as void Function(int, int, int)?;
   if (glVertexFormatNV == null) {
     glVertexFormatNV = tryCall(() =>
         Pointer<NativeFunction<GlVertexFormatNVNative>>.fromAddress(
                 _glGetProcAddress('glVertexFormatNV'))
-            .asFunction<GlVertexFormatNV>());
+            .asFunction<GlVertexFormatNV>()) as void Function(int, int, int)?;
   }
   glNormalFormatNV = tryCall(() =>
       lib.lookupFunction<GlNormalFormatNVNative, GlNormalFormatNV>(
-          'glNormalFormatNV'));
+          'glNormalFormatNV')) as void Function(int, int)?;
   if (glNormalFormatNV == null) {
     glNormalFormatNV = tryCall(() =>
         Pointer<NativeFunction<GlNormalFormatNVNative>>.fromAddress(
                 _glGetProcAddress('glNormalFormatNV'))
-            .asFunction<GlNormalFormatNV>());
+            .asFunction<GlNormalFormatNV>()) as void Function(int, int)?;
   }
   glColorFormatNV = tryCall(() =>
       lib.lookupFunction<GlColorFormatNVNative, GlColorFormatNV>(
-          'glColorFormatNV'));
+          'glColorFormatNV')) as void Function(int, int, int)?;
   if (glColorFormatNV == null) {
     glColorFormatNV = tryCall(() =>
         Pointer<NativeFunction<GlColorFormatNVNative>>.fromAddress(
                 _glGetProcAddress('glColorFormatNV'))
-            .asFunction<GlColorFormatNV>());
+            .asFunction<GlColorFormatNV>()) as void Function(int, int, int)?;
   }
   glIndexFormatNV = tryCall(() =>
       lib.lookupFunction<GlIndexFormatNVNative, GlIndexFormatNV>(
-          'glIndexFormatNV'));
+          'glIndexFormatNV')) as void Function(int, int)?;
   if (glIndexFormatNV == null) {
     glIndexFormatNV = tryCall(() =>
         Pointer<NativeFunction<GlIndexFormatNVNative>>.fromAddress(
                 _glGetProcAddress('glIndexFormatNV'))
-            .asFunction<GlIndexFormatNV>());
+            .asFunction<GlIndexFormatNV>()) as void Function(int, int)?;
   }
   glTexCoordFormatNV = tryCall(() =>
       lib.lookupFunction<GlTexCoordFormatNVNative, GlTexCoordFormatNV>(
-          'glTexCoordFormatNV'));
+          'glTexCoordFormatNV')) as void Function(int, int, int)?;
   if (glTexCoordFormatNV == null) {
     glTexCoordFormatNV = tryCall(() =>
         Pointer<NativeFunction<GlTexCoordFormatNVNative>>.fromAddress(
                 _glGetProcAddress('glTexCoordFormatNV'))
-            .asFunction<GlTexCoordFormatNV>());
+            .asFunction<GlTexCoordFormatNV>()) as void Function(int, int, int)?;
   }
   glEdgeFlagFormatNV = tryCall(() =>
       lib.lookupFunction<GlEdgeFlagFormatNVNative, GlEdgeFlagFormatNV>(
-          'glEdgeFlagFormatNV'));
+          'glEdgeFlagFormatNV')) as void Function(int)?;
   if (glEdgeFlagFormatNV == null) {
     glEdgeFlagFormatNV = tryCall(() =>
         Pointer<NativeFunction<GlEdgeFlagFormatNVNative>>.fromAddress(
                 _glGetProcAddress('glEdgeFlagFormatNV'))
-            .asFunction<GlEdgeFlagFormatNV>());
+            .asFunction<GlEdgeFlagFormatNV>()) as void Function(int)?;
   }
   glSecondaryColorFormatNV = tryCall(() => lib.lookupFunction<
       GlSecondaryColorFormatNVNative,
-      GlSecondaryColorFormatNV>('glSecondaryColorFormatNV'));
+      GlSecondaryColorFormatNV>('glSecondaryColorFormatNV')) as void Function(int, int, int)?;
   if (glSecondaryColorFormatNV == null) {
     glSecondaryColorFormatNV = tryCall(() =>
         Pointer<NativeFunction<GlSecondaryColorFormatNVNative>>.fromAddress(
                 _glGetProcAddress('glSecondaryColorFormatNV'))
-            .asFunction<GlSecondaryColorFormatNV>());
+            .asFunction<GlSecondaryColorFormatNV>()) as void Function(int, int, int)?;
   }
   glFogCoordFormatNV = tryCall(() =>
       lib.lookupFunction<GlFogCoordFormatNVNative, GlFogCoordFormatNV>(
-          'glFogCoordFormatNV'));
+          'glFogCoordFormatNV')) as void Function(int, int)?;
   if (glFogCoordFormatNV == null) {
     glFogCoordFormatNV = tryCall(() =>
         Pointer<NativeFunction<GlFogCoordFormatNVNative>>.fromAddress(
                 _glGetProcAddress('glFogCoordFormatNV'))
-            .asFunction<GlFogCoordFormatNV>());
+            .asFunction<GlFogCoordFormatNV>()) as void Function(int, int)?;
   }
   glVertexAttribFormatNV = tryCall(() =>
       lib.lookupFunction<GlVertexAttribFormatNVNative, GlVertexAttribFormatNV>(
-          'glVertexAttribFormatNV'));
+          'glVertexAttribFormatNV')) as void Function(int, int, int, int, int)?;
   if (glVertexAttribFormatNV == null) {
     glVertexAttribFormatNV = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribFormatNVNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribFormatNV'))
-            .asFunction<GlVertexAttribFormatNV>());
+            .asFunction<GlVertexAttribFormatNV>()) as void Function(int, int, int, int, int)?;
   }
   glVertexAttribIFormatNV = tryCall(() => lib.lookupFunction<
       GlVertexAttribIFormatNVNative,
-      GlVertexAttribIFormatNV>('glVertexAttribIFormatNV'));
+      GlVertexAttribIFormatNV>('glVertexAttribIFormatNV')) as void Function(int, int, int, int)?;
   if (glVertexAttribIFormatNV == null) {
     glVertexAttribIFormatNV = tryCall(() =>
         Pointer<NativeFunction<GlVertexAttribIFormatNVNative>>.fromAddress(
                 _glGetProcAddress('glVertexAttribIFormatNV'))
-            .asFunction<GlVertexAttribIFormatNV>());
+            .asFunction<GlVertexAttribIFormatNV>()) as void Function(int, int, int, int)?;
   }
   glGetIntegerui64i_vNV = tryCall(() =>
       lib.lookupFunction<GlGetIntegerui64i_vNVNative, GlGetIntegerui64i_vNV>(
-          'glGetIntegerui64i_vNV'));
+          'glGetIntegerui64i_vNV')) as void Function(int, int, Pointer<Uint64>)?;
   if (glGetIntegerui64i_vNV == null) {
     glGetIntegerui64i_vNV = tryCall(() =>
         Pointer<NativeFunction<GlGetIntegerui64i_vNVNative>>.fromAddress(
                 _glGetProcAddress('glGetIntegerui64i_vNV'))
-            .asFunction<GlGetIntegerui64i_vNV>());
+            .asFunction<GlGetIntegerui64i_vNV>()) as void Function(int, int, Pointer<Uint64>)?;
   }
   glViewportSwizzleNV = tryCall(() =>
       lib.lookupFunction<GlViewportSwizzleNVNative, GlViewportSwizzleNV>(
-          'glViewportSwizzleNV'));
+          'glViewportSwizzleNV')) as void Function(int, int, int, int, int)?;
   if (glViewportSwizzleNV == null) {
     glViewportSwizzleNV = tryCall(() =>
         Pointer<NativeFunction<GlViewportSwizzleNVNative>>.fromAddress(
                 _glGetProcAddress('glViewportSwizzleNV'))
-            .asFunction<GlViewportSwizzleNV>());
+            .asFunction<GlViewportSwizzleNV>()) as void Function(int, int, int, int, int)?;
   }
   glFramebufferTextureMultiviewOVR = tryCall(() => lib.lookupFunction<
       GlFramebufferTextureMultiviewOVRNative,
-      GlFramebufferTextureMultiviewOVR>('glFramebufferTextureMultiviewOVR'));
+      GlFramebufferTextureMultiviewOVR>('glFramebufferTextureMultiviewOVR')) as void Function(int, int, int, int, int, int)?;
   if (glFramebufferTextureMultiviewOVR == null) {
     glFramebufferTextureMultiviewOVR = tryCall(() => Pointer<
                 NativeFunction<
                     GlFramebufferTextureMultiviewOVRNative>>.fromAddress(
             _glGetProcAddress('glFramebufferTextureMultiviewOVR'))
-        .asFunction<GlFramebufferTextureMultiviewOVR>());
+        .asFunction<GlFramebufferTextureMultiviewOVR>()) as void Function(int, int, int, int, int, int)?;
   }
 }
